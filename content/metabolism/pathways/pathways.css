@@ -1,0 +1,156 @@
+body {
+  background-color: #ffffff;
+}
+
+.carousel-control .glyphicon-triangle-left,
+.carousel-control .glyphicon-triangle-right
+ {
+  position: absolute;
+  top: 50%;
+  z-index: 50;
+  display: inline-block;
+}
+
+.carousel-control .glyphicon-triangle-left {
+  left: 50%;
+  margin-left: -10px;
+}
+
+.carousel-control .glyphicon-triangle-right,
+ {
+  right: 50%;
+  margin-right: -10px;
+}
+
+/* Non-Bootstrap items */
+
+.pointer-link:hover {
+  cursor:pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .carousel-control .glyphicon-triangle-left,
+  .carousel-control .glyphicon-triangle-right {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    font-size: 30px;
+  }
+  .carousel-control .glyphicon-triangle-left{
+    margin-left: -15px;
+  }
+  .carousel-control .glyphicon-triangle-right{
+    margin-right: -15px;
+  }
+
+}
+
+/* Selection boxes */
+.btn-group button {
+	color: #333;
+	display:inline-block;
+	text-align: center;
+	height: 35px;
+	line-height: 35px;
+	padding: 0 12px;
+	cursor: pointer;
+	border: none;
+	border-radius: 0px;
+}
+
+.btn-group button:disabled {
+	color: #000;
+	-webkit-box-shadow: inset 0px 0px 7px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 0px 7px 0px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 0px 7px 0px rgba(0,0,0,0.75);
+	opacity: 1;
+}
+
+.btn-group {
+	margin: 0 auto;
+}
+
+#pathwaySelection {
+	margin:0 auto 5px auto;
+	width:100%;
+}
+
+#pathwaySelection button {
+	width: 33.3333333%;
+	background-color: #FCC324;
+}
+#pathwaySelection button:disabled {
+	background-color: #F29E22;
+}
+
+#nutrientSelection button {
+	background-color: #73E5C2;
+}
+#nutrientSelection button:disabled {
+	background-color: #52CC9D;
+}
+
+#cellSelection button {
+	background-color: #EA806E;
+}
+#cellSelection button:disabled {
+	background-color: #D16159;
+}
+
+.path-rule {
+	height: 1px;
+	background-color: #777777;
+	margin-top: 17.5px;
+}
+
+/* Carousel */
+#pathSlideContainer {
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+.carousel-fade .carousel-inner .item {
+	opacity: 0;
+	-webkit-transition-property: opacity;
+	transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+	opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+	-webkit-transform: none;
+	transform: none;
+	left: 0;
+	opacity: 0;
+	z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+	opacity: 1;
+}
+.carousel-fade .carousel-control {
+	z-index: 2;
+	background-repeat: no-repeat;
+}
+
+.carousel-indicators {
+  bottom: -37px;
+  width: 80%;
+  margin-left: -40%;
+}
+
+.carousel-indicators li {
+  width: 12px;
+  height: 12px;
+  margin: 2px;
+  border-radius: 12px;
+  background-color: #666;
+}
+
+.carousel-indicators .active {
+  margin: 1px;
+  width: 14px;
+  height: 14px;
+  background-color: #933;
+}

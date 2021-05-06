@@ -1,0 +1,35 @@
+#lives{
+   margin-bottom: 30px;
+}
+
+#lives img {
+   width: 60%;
+   float: left;
+   margin: 0 20px 0 0;
+}
+
+.flip-cc {
+    -ms-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+.flip-c {
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.flip-back {
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.early, .modern {
+    -webkit-transition: all 1.2s ease-in-out;
+    -moz-transition: all 1.2s ease-in-out;
+    -o-transition: all 1.2s ease-in-out;
+    -ms-transition: all 1.2s ease-in-out;
+	transition: all 1.2s ease-in-out;
+}

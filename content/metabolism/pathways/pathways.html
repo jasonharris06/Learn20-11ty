@@ -1,0 +1,557 @@
+<html>
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600,400|Fjord+One' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="pathways.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+	<script src='/lib/knockout.js'></script>
+	<script src='js/pathwaysvm.js'></script>
+</head>
+<body>
+	<section class="row">
+		<div class="path-rule col-md-4 col-sm-3 hidden-xs"></div>
+		<div class="col-md-4 col-sm-6 col-xs-12">
+			<div id="pathwaySelection" class="btn-group" role="group">
+				<button type="button" class="btn btn-default" data-bind="disable: pathway() == 'celltype', click: function() { pathway('celltype') }">Cell Type</button>
+				<button type="button" class="btn btn-default" data-bind="disable: pathway() == 'burn', click: function() { pathway('burn') }">Burning</button>
+				<button type="button" class="btn btn-default" data-bind="disable: pathway() == 'store', click: function() { pathway('store') }">Storing</button>
+			</div>
+		</div>
+		<div class="path-rule col-md-4 col-sm-3 hidden-xs"></div>
+	</section>
+	<section class="row pod pod-no-border" style="text-align: center;">
+		<div id="nutrientSelection" class="btn-group" data-bind="visible: pathway() == 'burn' || pathway() == 'store'">
+			<button type="button" class="btn btn-default" data-bind="disable: nutrient() == 'carbs', click: function() { nutrient('carbs') }">Carbohydrates</button>
+			<button type="button" class="btn btn-default" data-bind="disable: nutrient() == 'protein', click: function() { nutrient('protein') }">Protein</button>
+			<button type="button" class="btn btn-default" data-bind="disable: nutrient() == 'fat', click: function() { nutrient('fat') }">Fat</button>
+		</div>
+		<div id="cellSelection" class="btn-group" data-bind="visible: pathway() == 'celltype'" style="display: none;">
+			<button type="button" class="btn btn-default" data-bind="disable: celltype() == 'brain', click: function() { celltype('brain') }">Brain</button>
+			<button type="button" class="btn btn-default" data-bind="disable: celltype() == 'adipose', click: function() { celltype('adipose') }">Fat</button>
+			<button type="button" class="btn btn-default" data-bind="disable: celltype() == 'muscle', click: function() { celltype('muscle') }">Muscle</button>
+			<button type="button" class="btn btn-default" data-bind="disable: celltype() == 'blood', click: function() { celltype('blood') }">Blood</button>
+			<button type="button" class="btn btn-default" data-bind="disable: celltype() == 'liver', click: function() { celltype('liver') }">Liver</button>
+		</div>
+	</section>
+	<section class="row pod">
+
+		<div class="col-lg-10 col-lg-offset-1" id="pathSlideContainer">
+			<div id="carb-ex" class="carousel slide carousel-fade" data-interval="false" data-bind="visible: nutrient() == 'carbs' && pathway() == 'burn'" style="background-image: url(slides/carb-extract/CarbBreakdown-33.svg); display: none;">
+				<ol class="carousel-indicators">
+					<li data-target="#carb-ex" data-slide-to="0" class="active"></li>
+					<li data-target="#carb-ex" data-slide-to="1"></li>
+					<li data-target="#carb-ex" data-slide-to="2"></li>
+					<li data-target="#carb-ex" data-slide-to="3"></li>
+					<li data-target="#carb-ex" data-slide-to="4"></li>
+					<li data-target="#carb-ex" data-slide-to="5"></li>
+					<li data-target="#carb-ex" data-slide-to="6"></li>
+					<li data-target="#carb-ex" data-slide-to="7"></li>
+					<li data-target="#carb-ex" data-slide-to="8"></li>
+					<li data-target="#carb-ex" data-slide-to="9"></li>
+					<li data-target="#carb-ex" data-slide-to="10"></li>
+					<li data-target="#carb-ex" data-slide-to="11"></li>
+					<li data-target="#carb-ex" data-slide-to="12"></li>
+					<li data-target="#carb-ex" data-slide-to="13"></li>
+					<li data-target="#carb-ex" data-slide-to="14"></li>
+					<li data-target="#carb-ex" data-slide-to="15"></li>
+					<li data-target="#carb-ex" data-slide-to="16"></li>
+					<li data-target="#carb-ex" data-slide-to="17"></li>
+					<li data-target="#carb-ex" data-slide-to="18"></li>
+					<li data-target="#carb-ex" data-slide-to="19"></li>
+					<li data-target="#carb-ex" data-slide-to="20"></li>
+					<li data-target="#carb-ex" data-slide-to="21"></li>
+					<li data-target="#carb-ex" data-slide-to="22"></li>
+					<li data-target="#carb-ex" data-slide-to="23"></li>
+					<li data-target="#carb-ex" data-slide-to="24"></li>
+					<li data-target="#carb-ex" data-slide-to="25"></li>
+					<li data-target="#carb-ex" data-slide-to="26"></li>
+					<li data-target="#carb-ex" data-slide-to="27"></li>
+					<li data-target="#carb-ex" data-slide-to="28"></li>
+					<li data-target="#carb-ex" data-slide-to="29"></li>
+					<li data-target="#carb-ex" data-slide-to="30"></li>
+					<li data-target="#carb-ex" data-slide-to="31"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="item active"><img src="slides/carb-extract/CarbBreakdown-01.svg" data-no-retina alt="carb extraction 1"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-extract/CarbBreakdown-02.svg" data-no-retina  alt="carb extraction 2"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-extract/CarbBreakdown-03.svg" data-no-retina  alt="carb extraction 3"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-extract/CarbBreakdown-04.svg" data-no-retina  alt="carb extraction 4"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-extract/CarbBreakdown-05.svg" data-no-retina  alt="carb extraction 5"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-extract/CarbBreakdown-06.svg" data-no-retina  alt="carb extraction 6"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-extract/CarbBreakdown-07.svg" data-no-retina  alt="carb extraction 7"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-extract/CarbBreakdown-08.svg" data-no-retina  alt="carb extraction 8"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-extract/CarbBreakdown-09.svg" data-no-retina  alt="carb extraction 9"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-extract/CarbBreakdown-10.svg" data-no-retina  alt="carb extraction 10"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-extract/CarbBreakdown-11.svg" data-no-retina  alt="carb extraction 11"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-extract/CarbBreakdown-12.svg" data-no-retina  alt="carb extraction 12"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-extract/CarbBreakdown-13.svg" data-no-retina  alt="carb extraction 13"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-extract/CarbBreakdown-14.svg" data-no-retina  alt="carb extraction 14"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-extract/CarbBreakdown-15.svg" data-no-retina  alt="carb extraction 15"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-extract/CarbBreakdown-16.svg" data-no-retina  alt="carb extraction 16"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-extract/CarbBreakdown-17.svg" data-no-retina  alt="carb extraction 17"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-extract/CarbBreakdown-18.svg" data-no-retina  alt="carb extraction 17"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-extract/CarbBreakdown-19.svg" data-no-retina  alt="carb extraction 17"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-extract/CarbBreakdown-20.svg" data-no-retina  alt="carb extraction 20"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-extract/CarbBreakdown-21.svg" data-no-retina  alt="carb extraction 21"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-extract/CarbBreakdown-22.svg" data-no-retina  alt="carb extraction 22"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-extract/CarbBreakdown-23.svg" data-no-retina  alt="carb extraction 23"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-extract/CarbBreakdown-24.svg" data-no-retina  alt="carb extraction 24"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-extract/CarbBreakdown-25.svg" data-no-retina  alt="carb extraction 25"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-extract/CarbBreakdown-26.svg" data-no-retina  alt="carb extraction 26"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-extract/CarbBreakdown-27.svg" data-no-retina  alt="carb extraction 27"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-extract/CarbBreakdown-28.svg" data-no-retina  alt="carb extraction 28"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-extract/CarbBreakdown-29.svg" data-no-retina  alt="carb extraction 29"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-extract/CarbBreakdown-30.svg" data-no-retina  alt="carb extraction 30"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-extract/CarbBreakdown-31.svg" data-no-retina  alt="carb extraction 31"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-extract/CarbBreakdown-32.svg" data-no-retina  alt="carb extraction 32"></div>
+				</div>
+				<a class="left carousel-control" href="#carb-ex" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-triangle-left"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carb-ex" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-triangle-right"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<div id="carb-st" class="carousel slide carousel-fade" data-interval="false" data-bind="visible: nutrient() == 'carbs' && pathway() == 'store'" style="background-image: url(slides/carb-store/CarbStore-24.svg); display: none;">
+				<ol class="carousel-indicators">
+					<li data-target="#carb-st" data-slide-to="0" class="active"></li>
+					<li data-target="#carb-st" data-slide-to="1"></li>
+					<li data-target="#carb-st" data-slide-to="2"></li>
+					<li data-target="#carb-st" data-slide-to="3"></li>
+					<li data-target="#carb-st" data-slide-to="4"></li>
+					<li data-target="#carb-st" data-slide-to="5"></li>
+					<li data-target="#carb-st" data-slide-to="6"></li>
+					<li data-target="#carb-st" data-slide-to="7"></li>
+					<li data-target="#carb-st" data-slide-to="8"></li>
+					<li data-target="#carb-st" data-slide-to="9"></li>
+					<li data-target="#carb-st" data-slide-to="10"></li>
+					<li data-target="#carb-st" data-slide-to="11"></li>
+					<li data-target="#carb-st" data-slide-to="12"></li>
+					<li data-target="#carb-st" data-slide-to="13"></li>
+					<li data-target="#carb-st" data-slide-to="14"></li>
+					<li data-target="#carb-st" data-slide-to="15"></li>
+					<li data-target="#carb-st" data-slide-to="16"></li>
+					<li data-target="#carb-st" data-slide-to="17"></li>
+					<li data-target="#carb-st" data-slide-to="18"></li>
+					<li data-target="#carb-st" data-slide-to="19"></li>
+					<li data-target="#carb-st" data-slide-to="20"></li>
+					<li data-target="#carb-st" data-slide-to="21"></li>
+					<li data-target="#carb-st" data-slide-to="22"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="item active"><img src="slides/carb-store/CarbStore-01.svg" data-no-retina alt="carb storage 1"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-store/CarbStore-02.svg" data-no-retina  alt="carb storage 2"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-store/CarbStore-03.svg" data-no-retina  alt="carb storage 3"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-store/CarbStore-04.svg" data-no-retina  alt="carb storage 4"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-store/CarbStore-05.svg" data-no-retina  alt="carb storage 5"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-store/CarbStore-06.svg" data-no-retina  alt="carb storage 6"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-store/CarbStore-07.svg" data-no-retina  alt="carb storage 7"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-store/CarbStore-08.svg" data-no-retina  alt="carb storage 8"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-store/CarbStore-09.svg" data-no-retina  alt="carb storage 9"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-store/CarbStore-10.svg" data-no-retina  alt="carb storage 10"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-store/CarbStore-11.svg" data-no-retina  alt="carb storage 11"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-store/CarbStore-12.svg" data-no-retina  alt="carb storage 12"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-store/CarbStore-13.svg" data-no-retina  alt="carb storage 13"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-store/CarbStore-14.svg" data-no-retina  alt="carb storage 14"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-store/CarbStore-15.svg" data-no-retina  alt="carb storage 15"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-store/CarbStore-16.svg" data-no-retina  alt="carb storage 16"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-store/CarbStore-17.svg" data-no-retina  alt="carb storage 17"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-store/CarbStore-18.svg" data-no-retina  alt="carb storage 18"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-store/CarbStore-19.svg" data-no-retina  alt="carb storage 19"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-store/CarbStore-20.svg" data-no-retina  alt="carb storage 20"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-store/CarbStore-21.svg" data-no-retina  alt="carb storage 21"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-store/CarbStore-22.svg" data-no-retina  alt="carb storage 22"></div>
+					<div class="item"><img data-lazy-load-src="slides/carb-store/CarbStore-23.svg" data-no-retina  alt="carb storage 23"></div>
+				</div>
+				<a class="left carousel-control" href="#carb-st" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-triangle-left"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carb-st" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-triangle-right"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<div id="fat-ex" class="carousel slide carousel-fade" data-interval="false" data-bind="visible: nutrient() == 'fat' && pathway() == 'burn'" style="background-image: url(slides/fat-extract/FatBreakdown-30.svg); display: none;">
+				<ol class="carousel-indicators">
+					<li data-target="#fat-ex" data-slide-to="0" class="active"></li>
+					<li data-target="#fat-ex" data-slide-to="1"></li>
+					<li data-target="#fat-ex" data-slide-to="2"></li>
+					<li data-target="#fat-ex" data-slide-to="3"></li>
+					<li data-target="#fat-ex" data-slide-to="4"></li>
+					<li data-target="#fat-ex" data-slide-to="5"></li>
+					<li data-target="#fat-ex" data-slide-to="6"></li>
+					<li data-target="#fat-ex" data-slide-to="7"></li>
+					<li data-target="#fat-ex" data-slide-to="8"></li>
+					<li data-target="#fat-ex" data-slide-to="9"></li>
+					<li data-target="#fat-ex" data-slide-to="10"></li>
+					<li data-target="#fat-ex" data-slide-to="11"></li>
+					<li data-target="#fat-ex" data-slide-to="12"></li>
+					<li data-target="#fat-ex" data-slide-to="13"></li>
+					<li data-target="#fat-ex" data-slide-to="14"></li>
+					<li data-target="#fat-ex" data-slide-to="15"></li>
+					<li data-target="#fat-ex" data-slide-to="16"></li>
+					<li data-target="#fat-ex" data-slide-to="17"></li>
+					<li data-target="#fat-ex" data-slide-to="18"></li>
+					<li data-target="#fat-ex" data-slide-to="19"></li>
+					<li data-target="#fat-ex" data-slide-to="20"></li>
+					<li data-target="#fat-ex" data-slide-to="21"></li>
+					<li data-target="#fat-ex" data-slide-to="22"></li>
+					<li data-target="#fat-ex" data-slide-to="23"></li>
+					<li data-target="#fat-ex" data-slide-to="24"></li>
+					<li data-target="#fat-ex" data-slide-to="25"></li>
+					<li data-target="#fat-ex" data-slide-to="26"></li>
+					<li data-target="#fat-ex" data-slide-to="27"></li>
+					<li data-target="#fat-ex" data-slide-to="28"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="item active"><img src="slides/fat-extract/FatBreakdown-01.svg" data-no-retina alt="fat extraction 1"></div>
+					<div class="item"><img data-lazy-load-src="slides/fat-extract/FatBreakdown-02.svg" data-no-retina  alt="fat extraction 2"></div>
+					<div class="item"><img data-lazy-load-src="slides/fat-extract/FatBreakdown-03.svg" data-no-retina  alt="fat extraction 3"></div>
+					<div class="item"><img data-lazy-load-src="slides/fat-extract/FatBreakdown-04.svg" data-no-retina  alt="fat extraction 4"></div>
+					<div class="item"><img data-lazy-load-src="slides/fat-extract/FatBreakdown-05.svg" data-no-retina  alt="fat extraction 5"></div>
+					<div class="item"><img data-lazy-load-src="slides/fat-extract/FatBreakdown-06.svg" data-no-retina  alt="fat extraction 6"></div>
+					<div class="item"><img data-lazy-load-src="slides/fat-extract/FatBreakdown-07.svg" data-no-retina  alt="fat extraction 7"></div>
+					<div class="item"><img data-lazy-load-src="slides/fat-extract/FatBreakdown-08.svg" data-no-retina  alt="fat extraction 8"></div>
+					<div class="item"><img data-lazy-load-src="slides/fat-extract/FatBreakdown-09.svg" data-no-retina  alt="fat extraction 9"></div>
+					<div class="item"><img data-lazy-load-src="slides/fat-extract/FatBreakdown-10.svg" data-no-retina  alt="fat extraction 10"></div>
+					<div class="item"><img data-lazy-load-src="slides/fat-extract/FatBreakdown-11.svg" data-no-retina  alt="fat extraction 11"></div>
+					<div class="item"><img data-lazy-load-src="slides/fat-extract/FatBreakdown-12.svg" data-no-retina  alt="fat extraction 12"></div>
+					<div class="item"><img data-lazy-load-src="slides/fat-extract/FatBreakdown-13.svg" data-no-retina  alt="fat extraction 13"></div>
+					<div class="item"><img data-lazy-load-src="slides/fat-extract/FatBreakdown-14.svg" data-no-retina  alt="fat extraction 14"></div>
+					<div class="item"><img data-lazy-load-src="slides/fat-extract/FatBreakdown-15.svg" data-no-retina  alt="fat extraction 15"></div>
+					<div class="item"><img data-lazy-load-src="slides/fat-extract/FatBreakdown-16.svg" data-no-retina  alt="fat extraction 16"></div>
+					<div class="item"><img data-lazy-load-src="slides/fat-extract/FatBreakdown-17.svg" data-no-retina  alt="fat extraction 17"></div>
+					<div class="item"><img data-lazy-load-src="slides/fat-extract/FatBreakdown-18.svg" data-no-retina  alt="fat extraction 18"></div>
+					<div class="item"><img data-lazy-load-src="slides/fat-extract/FatBreakdown-19.svg" data-no-retina  alt="fat extraction 19"></div>
+					<div class="item"><img data-lazy-load-src="slides/fat-extract/FatBreakdown-20.svg" data-no-retina  alt="fat extraction 20"></div>
+					<div class="item"><img data-lazy-load-src="slides/fat-extract/FatBreakdown-21.svg" data-no-retina  alt="fat extraction 21"></div>
+					<div class="item"><img data-lazy-load-src="slides/fat-extract/FatBreakdown-22.svg" data-no-retina  alt="fat extraction 22"></div>
+					<div class="item"><img data-lazy-load-src="slides/fat-extract/FatBreakdown-23.svg" data-no-retina  alt="fat extraction 23"></div>
+					<div class="item"><img data-lazy-load-src="slides/fat-extract/FatBreakdown-24.svg" data-no-retina  alt="fat extraction 24"></div>
+					<div class="item"><img data-lazy-load-src="slides/fat-extract/FatBreakdown-25.svg" data-no-retina  alt="fat extraction 25"></div>
+					<div class="item"><img data-lazy-load-src="slides/fat-extract/FatBreakdown-26.svg" data-no-retina  alt="fat extraction 26"></div>
+					<div class="item"><img data-lazy-load-src="slides/fat-extract/FatBreakdown-27.svg" data-no-retina  alt="fat extraction 27"></div>
+					<div class="item"><img data-lazy-load-src="slides/fat-extract/FatBreakdown-28.svg" data-no-retina  alt="fat extraction 28"></div>
+					<div class="item"><img data-lazy-load-src="slides/fat-extract/FatBreakdown-29.svg" data-no-retina  alt="fat extraction 29"></div>
+				</div>
+				<a class="left carousel-control" href="#fat-ex" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-triangle-left"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#fat-ex" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-triangle-right"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<div id="fat-st" class="carousel slide carousel-fade" data-interval="false" data-bind="visible: nutrient() == 'fat' && pathway() == 'store'" style="background-image: url(slides/fat-store/FatStore-05.svg); display: none;">
+				<ol class="carousel-indicators">
+					<li data-target="#fat-st" data-slide-to="0" class="active"></li>
+					<li data-target="#fat-st" data-slide-to="1"></li>
+					<li data-target="#fat-st" data-slide-to="2"></li>
+					<li data-target="#fat-st" data-slide-to="3"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="item active"><img src="slides/fat-store/FatStore-01.svg" class="img-responsive" data-no-retina alt="fat storage 1"></div>
+					<div class="item lazy-load"><img data-lazy-load-src="slides/fat-store/FatStore-02.svg" class="img-responsive" data-no-retina alt="fat storage 2"></div>
+					<div class="item lazy-load"><img data-lazy-load-src="slides/fat-store/FatStore-03.svg" class="img-responsive" data-no-retina alt="fat storage 3"></div>
+					<div class="item lazy-load"><img data-lazy-load-src="slides/fat-store/FatStore-04.svg" class="img-responsive" data-no-retina alt="fat storage 4"></div>
+				</div>
+				<a class="left carousel-control" href="#fat-st" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-triangle-left"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#fat-st" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-triangle-right"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<div id="aa-ex" class="carousel slide carousel-fade" data-interval="false" data-bind="visible: nutrient() == 'protein' && pathway() == 'burn'" style="background-image: url(slides/aa-extract/AABreakdown-33.svg); display: none;">
+				<ol class="carousel-indicators">
+					<li data-target="#aa-ex" data-slide-to="0" class="active"></li>
+					<li data-target="#aa-ex" data-slide-to="1"></li>
+					<li data-target="#aa-ex" data-slide-to="2"></li>
+					<li data-target="#aa-ex" data-slide-to="3"></li>
+					<li data-target="#aa-ex" data-slide-to="4"></li>
+					<li data-target="#aa-ex" data-slide-to="5"></li>
+					<li data-target="#aa-ex" data-slide-to="6"></li>
+					<li data-target="#aa-ex" data-slide-to="7"></li>
+					<li data-target="#aa-ex" data-slide-to="8"></li>
+					<li data-target="#aa-ex" data-slide-to="9"></li>
+					<li data-target="#aa-ex" data-slide-to="10"></li>
+					<li data-target="#aa-ex" data-slide-to="11"></li>
+					<li data-target="#aa-ex" data-slide-to="12"></li>
+					<li data-target="#aa-ex" data-slide-to="13"></li>
+					<li data-target="#aa-ex" data-slide-to="14"></li>
+					<li data-target="#aa-ex" data-slide-to="15"></li>
+					<li data-target="#aa-ex" data-slide-to="16"></li>
+					<li data-target="#aa-ex" data-slide-to="17"></li>
+					<li data-target="#aa-ex" data-slide-to="18"></li>
+					<li data-target="#aa-ex" data-slide-to="19"></li>
+					<li data-target="#aa-ex" data-slide-to="20"></li>
+					<li data-target="#aa-ex" data-slide-to="21"></li>
+					<li data-target="#aa-ex" data-slide-to="22"></li>
+					<li data-target="#aa-ex" data-slide-to="23"></li>
+					<li data-target="#aa-ex" data-slide-to="24"></li>
+					<li data-target="#aa-ex" data-slide-to="25"></li>
+					<li data-target="#aa-ex" data-slide-to="26"></li>
+					<li data-target="#aa-ex" data-slide-to="27"></li>
+					<li data-target="#aa-ex" data-slide-to="28"></li>
+					<li data-target="#aa-ex" data-slide-to="29"></li>
+					<li data-target="#aa-ex" data-slide-to="30"></li>
+					<li data-target="#aa-ex" data-slide-to="31"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="item active"><img src="slides/aa-extract/AABreakdown-01.svg" data-no-retina alt="amino acid extraction 1"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-extract/AABreakdown-02.svg" data-no-retina  alt="amino acid extraction 2"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-extract/AABreakdown-03.svg" data-no-retina  alt="amino acid extraction 3"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-extract/AABreakdown-04.svg" data-no-retina  alt="amino acid extraction 4"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-extract/AABreakdown-05.svg" data-no-retina  alt="amino acid extraction 5"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-extract/AABreakdown-06.svg" data-no-retina  alt="amino acid extraction 6"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-extract/AABreakdown-07.svg" data-no-retina  alt="amino acid extraction 7"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-extract/AABreakdown-08.svg" data-no-retina  alt="amino acid extraction 8"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-extract/AABreakdown-09.svg" data-no-retina  alt="amino acid extraction 9"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-extract/AABreakdown-10.svg" data-no-retina  alt="amino acid extraction 10"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-extract/AABreakdown-11.svg" data-no-retina  alt="amino acid extraction 11"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-extract/AABreakdown-12.svg" data-no-retina  alt="amino acid extraction 12"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-extract/AABreakdown-13.svg"  data-no-retina alt="amino acid extraction 13"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-extract/AABreakdown-14.svg" data-no-retina  alt="amino acid extraction 14"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-extract/AABreakdown-15.svg" data-no-retina  alt="amino acid extraction 15"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-extract/AABreakdown-16.svg" data-no-retina  alt="amino acid extraction 16"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-extract/AABreakdown-17.svg" data-no-retina  alt="amino acid extraction 17"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-extract/AABreakdown-18.svg" data-no-retina  alt="amino acid extraction 18"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-extract/AABreakdown-19.svg" data-no-retina  alt="amino acid extraction 19"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-extract/AABreakdown-20.svg" data-no-retina  alt="amino acid extraction 20"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-extract/AABreakdown-21.svg" data-no-retina  alt="amino acid extraction 21"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-extract/AABreakdown-22.svg" data-no-retina  alt="amino acid extraction 22"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-extract/AABreakdown-23.svg" data-no-retina  alt="amino acid extraction 23"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-extract/AABreakdown-24.svg" data-no-retina  alt="amino acid extraction 24"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-extract/AABreakdown-25.svg" data-no-retina  alt="amino acid extraction 25"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-extract/AABreakdown-26.svg" data-no-retina  alt="amino acid extraction 26"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-extract/AABreakdown-27.svg" data-no-retina  alt="amino acid extraction 27"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-extract/AABreakdown-28.svg" data-no-retina  alt="amino acid extraction 28"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-extract/AABreakdown-29.svg" data-no-retina  alt="amino acid extraction 29"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-extract/AABreakdown-30.svg" data-no-retina  alt="amino acid extraction 30"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-extract/AABreakdown-31.svg" data-no-retina  alt="amino acid extraction 31"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-extract/AABreakdown-32.svg"  data-no-retina alt="amino acid extraction 32"></div>
+				</div>
+				<a class="left carousel-control" href="#aa-ex" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-triangle-left"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#aa-ex" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-triangle-right"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<div id="aa-st" class="carousel slide carousel-fade" data-interval="false" data-bind="visible: nutrient() == 'protein' && pathway() == 'store'" style="background-image: url(slides/aa-store/AA-Store-28.svg); display: none;">
+				<ol class="carousel-indicators">
+					<li data-target="#aa-st" data-slide-to="0" class="active"></li>
+					<li data-target="#aa-st" data-slide-to="1"></li>
+					<li data-target="#aa-st" data-slide-to="2"></li>
+					<li data-target="#aa-st" data-slide-to="3"></li>
+					<li data-target="#aa-st" data-slide-to="4"></li>
+					<li data-target="#aa-st" data-slide-to="5"></li>
+					<li data-target="#aa-st" data-slide-to="6"></li>
+					<li data-target="#aa-st" data-slide-to="7"></li>
+					<li data-target="#aa-st" data-slide-to="8"></li>
+					<li data-target="#aa-st" data-slide-to="9"></li>
+					<li data-target="#aa-st" data-slide-to="10"></li>
+					<li data-target="#aa-st" data-slide-to="11"></li>
+					<li data-target="#aa-st" data-slide-to="12"></li>
+					<li data-target="#aa-st" data-slide-to="13"></li>
+					<li data-target="#aa-st" data-slide-to="14"></li>
+					<li data-target="#aa-st" data-slide-to="15"></li>
+					<li data-target="#aa-st" data-slide-to="16"></li>
+					<li data-target="#aa-st" data-slide-to="17"></li>
+					<li data-target="#aa-st" data-slide-to="18"></li>
+					<li data-target="#aa-st" data-slide-to="19"></li>
+					<li data-target="#aa-st" data-slide-to="20"></li>
+					<li data-target="#aa-st" data-slide-to="21"></li>
+					<li data-target="#aa-st" data-slide-to="22"></li>
+					<li data-target="#aa-st" data-slide-to="23"></li>
+					<li data-target="#aa-st" data-slide-to="24"></li>
+					<li data-target="#aa-st" data-slide-to="25"></li>
+					<li data-target="#aa-st" data-slide-to="26"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="item active"><img src="slides/aa-store/AA-Store-01.svg" data-no-retina alt="storing amino acid 1"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-store/AA-Store-02.svg" data-no-retina  alt="storing amino acid 2"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-store/AA-Store-03.svg" data-no-retina  alt="storing amino acid 3"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-store/AA-Store-04.svg" data-no-retina  alt="storing amino acid 4"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-store/AA-Store-05.svg" data-no-retina  alt="storing amino acid 5"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-store/AA-Store-06.svg" data-no-retina  alt="storing amino acid 6"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-store/AA-Store-07.svg" data-no-retina  alt="storing amino acid 7"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-store/AA-Store-08.svg" data-no-retina  alt="storing amino acid 8"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-store/AA-Store-09.svg" data-no-retina  alt="storing amino acid 9"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-store/AA-Store-10.svg" data-no-retina  alt="storing amino acid 10"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-store/AA-Store-11.svg" data-no-retina  alt="storing amino acid 11"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-store/AA-Store-12.svg" data-no-retina  alt="storing amino acid 12"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-store/AA-Store-13.svg" data-no-retina  alt="storing amino acid 13"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-store/AA-Store-14.svg" data-no-retina  alt="storing amino acid 14"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-store/AA-Store-15.svg" data-no-retina  alt="storing amino acid 15"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-store/AA-Store-16.svg" data-no-retina  alt="storing amino acid 16"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-store/AA-Store-17.svg" data-no-retina  alt="storing amino acid 17"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-store/AA-Store-18.svg" data-no-retina  alt="storing amino acid 18"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-store/AA-Store-19.svg" data-no-retina  alt="storing amino acid 19"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-store/AA-Store-20.svg" data-no-retina  alt="storing amino acid 20"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-store/AA-Store-21.svg" data-no-retina  alt="storing amino acid 21"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-store/AA-Store-22.svg" data-no-retina  alt="storing amino acid 22"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-store/AA-Store-23.svg" data-no-retina  alt="storing amino acid 23"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-store/AA-Store-24.svg" data-no-retina  alt="storing amino acid 24"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-store/AA-Store-25.svg" data-no-retina  alt="storing amino acid 25"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-store/AA-Store-26.svg" data-no-retina  alt="storing amino acid 26"></div>
+					<div class="item"><img data-lazy-load-src="slides/aa-store/AA-Store-27.svg" data-no-retina  alt="storing amino acid 27"></div>
+				</div>
+				<a class="left carousel-control" href="#aa-st" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-triangle-left"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#aa-st" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-triangle-right"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<div id="liver" class="carousel slide carousel-fade" data-interval="false" data-bind="visible: celltype() == 'liver' && pathway() == 'celltype'" style="background-image: url(slides/liver/Liver-11.svg); display: none;">
+				<ol class="carousel-indicators">
+					<li data-target="#liver" data-slide-to="0" class="active"></li>
+					<li data-target="#liver" data-slide-to="1"></li>
+					<li data-target="#liver" data-slide-to="2"></li>
+					<li data-target="#liver" data-slide-to="3"></li>
+					<li data-target="#liver" data-slide-to="4"></li>
+					<li data-target="#liver" data-slide-to="5"></li>
+					<li data-target="#liver" data-slide-to="6"></li>
+					<li data-target="#liver" data-slide-to="7"></li>
+					<li data-target="#liver" data-slide-to="8"></li>
+					<li data-target="#liver" data-slide-to="9"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="item active"><img src="slides/liver/Liver-01.svg" data-no-retina  alt="liver pathways 1"></div>
+					<div class="item"><img data-lazy-load-src="slides/liver/Liver-02.svg" data-no-retina  alt="liver pathways 2"></div>
+					<div class="item"><img data-lazy-load-src="slides/liver/Liver-03.svg" data-no-retina  alt="liver pathways 3"></div>
+					<div class="item"><img data-lazy-load-src="slides/liver/Liver-04.svg" data-no-retina  alt="liver pathways 4"></div>
+					<div class="item"><img data-lazy-load-src="slides/liver/Liver-05.svg" data-no-retina  alt="liver pathways 5"></div>
+					<div class="item"><img data-lazy-load-src="slides/liver/Liver-06.svg" data-no-retina  alt="liver pathways 6"></div>
+					<div class="item"><img data-lazy-load-src="slides/liver/Liver-07.svg" data-no-retina  alt="liver pathways 7"></div>
+					<div class="item"><img data-lazy-load-src="slides/liver/Liver-08.svg" data-no-retina  alt="liver pathways 8"></div>
+					<div class="item"><img data-lazy-load-src="slides/liver/Liver-09.svg" data-no-retina  alt="liver pathways 9"></div>
+					<div class="item"><img data-lazy-load-src="slides/liver/Liver-10.svg" data-no-retina  alt="liver pathways 10"></div>
+				</div>
+				<a class="left carousel-control" href="#liver" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-triangle-left"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#liver" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-triangle-right"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<div id="muscle" class="carousel slide carousel-fade" data-interval="false" data-bind="visible: celltype() == 'muscle' && pathway() == 'celltype'" style="background-image: url(slides/muscle/Muscle-07.svg); display: none;">
+				<ol class="carousel-indicators">
+					<li data-target="#muscle" data-slide-to="0" class="active"></li>
+					<li data-target="#muscle" data-slide-to="1"></li>
+					<li data-target="#muscle" data-slide-to="2"></li>
+					<li data-target="#muscle" data-slide-to="3"></li>
+					<li data-target="#muscle" data-slide-to="4"></li>
+					<li data-target="#muscle" data-slide-to="5"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="item active"><img src="slides/muscle/Muscle-01.svg" data-no-retina  alt="muscle pathways 1"></div>
+					<div class="item"><img data-lazy-load-src="slides/muscle/Muscle-02.svg" data-no-retina  alt="muscle pathways 2"></div>
+					<div class="item"><img data-lazy-load-src="slides/muscle/Muscle-03.svg" data-no-retina  alt="muscle pathways 3"></div>
+					<div class="item"><img data-lazy-load-src="slides/muscle/Muscle-04.svg" data-no-retina  alt="muscle pathways 4"></div>
+					<div class="item"><img data-lazy-load-src="slides/muscle/Muscle-05.svg" data-no-retina  alt="muscle pathways 5"></div>
+					<div class="item"><img data-lazy-load-src="slides/muscle/Muscle-06.svg" data-no-retina  alt="muscle pathways 6"></div>
+				</div>
+				<a class="left carousel-control" href="#muscle" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-triangle-left"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#muscle" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-triangle-right"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<div id="adipose" class="carousel slide carousel-fade" data-interval="false" data-bind="visible: celltype() == 'adipose' && pathway() == 'celltype'" style="background-image: url(slides/adipose/Adipose-09.svg); display: none;">
+				<ol class="carousel-indicators">
+					<li data-target="#adipose" data-slide-to="0" class="active"></li>
+					<li data-target="#adipose" data-slide-to="1"></li>
+					<li data-target="#adipose" data-slide-to="2"></li>
+					<li data-target="#adipose" data-slide-to="3"></li>
+					<li data-target="#adipose" data-slide-to="4"></li>
+					<li data-target="#adipose" data-slide-to="5"></li>
+					<li data-target="#adipose" data-slide-to="6"></li>
+					<li data-target="#adipose" data-slide-to="7"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="item active"><img src="slides/adipose/Adipose-01.svg" data-no-retina   alt="adipose pathways 1"></div>
+					<div class="item"><img data-lazy-load-src="slides/adipose/Adipose-02.svg" data-no-retina  alt="adipose pathways 2"></div>
+					<div class="item"><img data-lazy-load-src="slides/adipose/Adipose-03.svg" data-no-retina  alt="adipose pathways 3"></div>
+					<div class="item"><img data-lazy-load-src="slides/adipose/Adipose-04.svg" data-no-retina  alt="adipose pathways 4"></div>
+					<div class="item"><img data-lazy-load-src="slides/adipose/Adipose-05.svg" data-no-retina  alt="adipose pathways 5"></div>
+					<div class="item"><img data-lazy-load-src="slides/adipose/Adipose-06.svg" data-no-retina  alt="adipose pathways 6"></div>
+					<div class="item"><img data-lazy-load-src="slides/adipose/Adipose-07.svg" data-no-retina  alt="adipose pathways 7"></div>
+					<div class="item"><img data-lazy-load-src="slides/adipose/Adipose-08.svg" data-no-retina  alt="adipose pathways 8"></div>
+				</div>
+				<a class="left carousel-control" href="#adipose" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-triangle-left"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#adipose" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-triangle-right"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<div id="brain" class="carousel slide carousel-fade" data-interval="false" data-bind="visible: celltype() == 'brain' && pathway() == 'celltype'" style="background-image: url(slides/brain/Brain-04.svg); display: none;">
+				<ol class="carousel-indicators">
+					<li data-target="#brain" data-slide-to="0" class="active"></li>
+					<li data-target="#brain" data-slide-to="1"></li>
+					<li data-target="#brain" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="item active"><img src="slides/brain/Brain-01.svg" data-no-retina alt="brain pathways 1"></div>
+					<div class="item"><img data-lazy-load-src="slides/brain/Brain-02.svg" data-no-retina alt="brain pathways 2"></div>
+					<div class="item"><img data-lazy-load-src="slides/brain/Brain-03.svg" data-no-retina alt="brain pathways 3"></div>
+				</div>
+				<a class="left carousel-control" href="#brain" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-triangle-left"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#brain" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-triangle-right"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<div id="rbc" class="carousel slide carousel-fade" data-interval="false" data-bind="visible: celltype() == 'blood' && pathway() == 'celltype'" style="background-image: url(slides/rbc/RBC-04.svg); display: none;">
+				<ol class="carousel-indicators">
+					<li data-target="#rbc" data-slide-to="0" class="active"></li>
+					<li data-target="#rbc" data-slide-to="1"></li>
+					<li data-target="#rbc" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="item active"><img src="slides/rbc/RBC-01.svg" data-no-retina alt="rbc pathways 1"></div>
+					<div class="item"><img data-lazy-load-src="slides/rbc/RBC-02.svg" data-no-retina alt="rbc pathways 2"></div>
+					<div class="item"><img data-lazy-load-src="slides/rbc/RBC-03.svg" data-no-retina alt="rbc pathways 3"></div>
+				</div>
+				<a class="left carousel-control" href="#rbc" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-triangle-left"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#rbc" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-triangle-right"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<div id="title-card" data-bind="visible: pathway() == ''" style="">
+				<img src="slides/PathwaysTitleCard.svg" data-no-retina alt="Pathways Title Card">
+			</div>
+		</div>
+
+	</section>
+
+
+</body>
+</html>

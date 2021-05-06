@@ -1,0 +1,461 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/learnpage.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Great Salt Lake: Places to Visit</title>
+<!-- InstanceEndEditable -->
+ 
+<link rel="stylesheet" type="text/css" href="/css/base.css" />
+<link rel="stylesheet" type="text/css" href="/css/lightview.css" />
+<!--<script src="http://www.google.com/jsapi" type="text/javascript"></script>-->
+<script type="text/javascript">
+var d = new Date();
+var curr_year = d.getFullYear();
+</script>
+
+<script type="text/javascript" src="/code/js/learn.js" ></script>
+
+
+<!-- InstanceBeginEditable name="head" -->
+<link type="text/css" href="css/custom-theme/jquerycustom.css" rel="stylesheet" />	
+<style type="text/css">
+  
+  #map_canvas { height: 600px; width: 540px;  }
+  #infopanel { float:left; margin-right: 15px;}
+  
+	
+</style>
+<script type="text/javascript" src="/code/js/jquery.js"></script>
+<script type="text/javascript" src="js/jquerycustom.js"></script>
+<script type="text/javascript">
+
+$(function(){
+
+				// Accordion
+				$("#accordion").accordion({ header: "h3", collapsible: true });
+				$("#accordion").accordion( "activate" , false )
+			});
+
+</script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false">
+</script>
+<script type="text/javascript">
+
+	
+	
+function initialize() {
+  var myLatlng = new google.maps.LatLng(41.203, -112.460);
+  var myOptions = {
+    zoom: 9,
+    center: myLatlng,
+    mapTypeId: google.maps.MapTypeId.HYBRID
+  }
+  var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+  var wetImage = 'images/wetland.png';
+  var waterImage = 'images/openwater.png';
+  var sjLatlng = new google.maps.LatLng(41.4377, -112.6687);
+  var sjMarker = new google.maps.Marker({
+        position: sjLatlng, 
+        map: map,
+		  icon: waterImage,
+        title:"Spiral Jetty"
+    });
+  google.maps.event.addListener(sjMarker, 'click', function() {
+      $("#accordion").accordion( "activate" , "h3#sj" )
+    });
+  var lsLatlng = new google.maps.LatLng(41.6990, -112.8991);
+  var lsMarker = new google.maps.Marker({
+        position: lsLatlng, 
+        map: map,
+		  icon: wetImage,
+        title:"Locamotive Springs"
+    });
+	 google.maps.event.addListener(lsMarker, 'click', function() {
+		 $("#accordion").accordion( "activate" , "h3#ls" )
+      
+    });
+  var brlLatlng = new google.maps.LatLng(41.4792, -112.2663);
+  var brlMarker = new google.maps.Marker({
+        position: brlLatlng, 
+        map: map,
+		  icon: wetImage,
+        title:"Bear River Bird Refuge Loop"
+    });
+	 google.maps.event.addListener(brlMarker, 'click', function() {
+      $("#accordion").accordion( "activate" , "h3#brl" )
+    });
+  var breLatlng = new google.maps.LatLng(41.5077, -112.0688);
+  var breMarker = new google.maps.Marker({
+        position: breLatlng, 
+        map: map,
+		  icon: wetImage,
+        title:"Bear River Bird Refuge Education Center"
+    });
+	 google.maps.event.addListener(breMarker, 'click', function() {
+      $("#accordion").accordion( "activate" , "h3#bre" )
+    });
+  var siLatlng = new google.maps.LatLng(40.9240, -112.5071);
+  var siMarker = new google.maps.Marker({
+        position: siLatlng, 
+        map: map,
+		  icon: waterImage,
+        title:"Stansbury Island Interpretive Area"
+    });
+	 google.maps.event.addListener(siMarker, 'click', function() {
+      $("#accordion").accordion( "activate" , "h3#si" )
+    });
+  var amLatlng = new google.maps.LatLng(41.0606, -112.2386);
+  var amMarker = new google.maps.Marker({
+        position: amLatlng, 
+        map: map,
+		  icon: waterImage,
+        title:"Antelope Island Marina"
+    });
+	 google.maps.event.addListener(amMarker, 'click', function() {
+      $("#accordion").accordion( "activate" , "h3#am" )
+    });
+  var bbLatlng = new google.maps.LatLng(41.04945, -112.2595);
+  var bbMarker = new google.maps.Marker({
+        position: bbLatlng, 
+        map: map,
+		  icon: waterImage,
+        title:"Bridger Bay"
+    });
+	 google.maps.event.addListener(bbMarker, 'click', function() {
+      $("#accordion").accordion( "activate" , "h3#bb" )
+    });
+  var spLatlng = new google.maps.LatLng(41.0401, -112.0255);
+  var spMarker = new google.maps.Marker({
+        position: spLatlng, 
+        map: map,
+		  icon: wetImage,
+        title:"GSL Shorelands Preserve"
+    });
+	 google.maps.event.addListener(spMarker, 'click', function() {
+      $("#accordion").accordion( "activate" , "h3#sp" )
+    });
+	 var ncLatlng = new google.maps.LatLng(40.9615, -111.9288);
+  var ncMarker = new google.maps.Marker({
+        position: ncLatlng, 
+        map: map,
+		  icon: wetImage,
+        title:"GSL Nature Center"
+    });
+	 google.maps.event.addListener(ncMarker, 'click', function() {
+     $("#accordion").accordion( "activate" , "h3#nc" )
+    });
+	 var dlLatlng = new google.maps.LatLng(40.9542, -111.91682);
+  var dlMarker = new google.maps.Marker({
+        position: dlLatlng, 
+        map: map,
+		  icon: wetImage,
+        title:"Farmington Bay Bird Refuge Driving Loop"
+    });
+	 google.maps.event.addListener(dlMarker, 'click', function() {
+      $("#accordion").accordion( "activate" , "h3#dl" )
+    });
+	 var aiLatlng = new google.maps.LatLng(41.0892, -112.12067);
+  var aiMarker = new google.maps.Marker({
+        position: aiLatlng, 
+        map: map,
+		  icon: waterImage,
+        title:"Antelope Island Entrance"
+    });
+	 google.maps.event.addListener(aiMarker, 'click', function() {
+      $("#accordion").accordion( "activate" , "h3#ai" )
+    });
+	  var lcLatlng = new google.maps.LatLng(40.76979, -112.15438);
+  var lcMarker = new google.maps.Marker({
+        position: lcLatlng, 
+        map: map,
+		  icon: waterImage,
+        title:"Lee Creek Area"
+    });
+	 google.maps.event.addListener(lcMarker, 'click', function() {
+      $("#accordion").accordion( "activate" , "h3#lc" )
+    });
+	 var saLatlng = new google.maps.LatLng(40.747216,-112.188209);
+  var saMarker = new google.maps.Marker({
+        position: saLatlng, 
+        map: map,
+		  icon: waterImage,
+        title:"Saltair"
+    });
+	 google.maps.event.addListener(saMarker, 'click', function() {
+      $("#accordion").accordion( "activate" , "h3#sa" )
+    });
+	 var slmLatlng = new google.maps.LatLng(40.733584,-112.211416);
+  var slmMarker = new google.maps.Marker({
+        position: slmLatlng, 
+        map: map,
+		  icon: waterImage,
+        title:"Great Salt Lake Marina"
+    });
+	 google.maps.event.addListener(slmMarker, 'click', function() {
+      $("#accordion").accordion( "activate" , "h3#slm" )
+    });
+}
+
+
+  
+function loadScript() {
+  var script = document.createElement("script");
+  script.type = "text/javascript";
+  script.src = "http://maps.google.com/maps/api/js?sensor=false&callback=initialize";
+  document.body.appendChild(script);
+}
+  
+window.onload = loadScript;
+</script>
+
+<!-- InstanceEndEditable -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-126620-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+</head>
+
+<body>
+<div id="extcontainer">
+
+<div id="main">
+	
+<div id="header">
+	<img src="/images/page/spacer.gif" alt="" width="974" height="130" usemap="#Map" style="float:left;" />
+<map name="Map" id="Map"><area shape="rect" coords="109,82,252,127" href="http://www.utah.edu" alt="University of Utah" />
+	<area shape="rect" coords="107,23,381,78" href="/" alt="Learn.Genetics" />
+	<area shape="rect" coords="786,25,962,77" href="http://teach.genetics.utah.edu/" alt="Teach.Genetics" />
+	<area shape="rect" coords="821,81,965,124" href="http://learn.genetics.utah.edu/search/" alt="search" />
+</map>
+	<div style="position:absolute; top :96px; right:180px; height: 20px; width: 215px;">
+		<span style="float:right;"><a href="/es/">En Espa&ntilde;ol</a> | <a href="/gslc/">About Us</a> | <a href="http://teach.genetics.utah.edu/gslc/feedback.cfm">Feedback</a></span>
+	</div>
+</div> 
+<!--header-->
+<div id="content">
+<!-- InstanceBeginEditable name="Content" -->
+
+
+<div id="infopanel">
+		<div id="accordion">
+			<div>
+				<h3 id="ls"><a href="#">Locomotive Springs</a></h3>
+				<div>
+                test
+                </div>
+			</div>
+			<div>
+				<h3 id="sj"><a href="#">Spiral Jetty</a></h3>
+				<div>Phasellus mattis tincidunt nibh.</div>
+			</div>
+			<div>
+				<h3 id="brl"><a href="#">Bear River Bird Refuge Loop Road</a></h3>
+				<div>Nam dui erat, auctor a, dignissim quis.</div>
+			</div>
+         <div>
+				<h3 id="bre"><a href="#">Bear River Bird Refuge Education Center</a></h3>
+				<div>Nam dui erat.</div>
+			</div>
+         <div>
+				<h3 id="bb"><a href="#">Bridger Bay</a></h3>
+				<div>Nam dui erat.</div>
+			</div>
+         <div>
+				<h3 id="am"><a href="#">Antelope Island Marina</a></h3>
+				<div>Nam dui erat.</div>
+			</div>
+         <div>
+				<h3 id="ai"><a href="#">Antelope Island Entrance</a></h3>
+				<div>Nam dui erat.</div>
+			</div>
+         <div>
+				<h3 id="sp"><a href="#">GSL Shorelands Preserve</a></h3>
+				<div>Nam dui erat.</div>
+			</div>
+         <div>
+				<h3 id="nc"><a href="#">GSL Nature Center at Farmington Bay</a></h3>
+				<div>Nam dui erat.</div>
+			</div>
+         <div>
+				<h3 id="dl"><a href="#">Farmington Bay Bird Refuge Loop Road</a></h3>
+				<div>Nam dui erat.</div>
+			</div>
+         <div>
+				<h3 id="lc"><a href="#">Lee Creek Area</a></h3>
+				<div>Nam dui erat.</div>
+			</div>
+         <div>
+				<h3 id="sa"><a href="#">Saltair</a></h3>
+				<div>Nam dui erat.</div>
+			</div>
+         <div>
+				<h3 id="slm"><a href="#">Great Salt Lake Marina</a></h3>
+				<div>Nam dui erat.</div>
+			</div>
+         <div>
+				<h3 id="si"><a href="#">Stansbury Island Interpretive Area</a></h3>
+				<div>Nam dui erat.</div>
+			</div>
+		</div>
+      
+      
+<!--<dl>
+	<dt><a href="#">Locomotive Springs</a></dt>
+	<dd id="ls">
+	<ul>
+		<li>Photo</li>
+		<li>Description</li>
+		<li>Directions</li>
+	</ul>
+	</dd>
+	<dt><a href="#">Spiral Jetty</a></dt>
+	<dd id="sj">
+	<ul>
+		<li>Photo</li>
+		<li>Description</li>
+		<li>Directions</li>
+	</ul>
+	</dd>
+   <dt><a href="#">Bear River Bird Refuge Loop Road</a></dt>
+	<dd id="brl">
+	<ul>
+		<li>Photo</li>
+		<li>Description</li>
+		<li>Directions</li>
+	</ul>
+	</dd>
+   <dt><a href="#">Bear River Bird Refuge Education Center</a></dt>
+	<dd id="bre">
+	<ul>
+		<li>Photo</li>
+		<li>Description</li>
+		<li>Directions</li>
+	</ul>
+	</dd>
+   <dt><a href="#">Bridger Bay</a></dt>
+	<dd id="bb">
+	<ul>
+		<li>Photo</li>
+		<li>Description</li>
+		<li>Directions</li>
+	</ul>
+	</dd>
+   <dt><a href="#">Antelope Island Marina</a></dt>
+	<dd id="am">
+	<ul>
+		<li>Photo</li>
+		<li>Description</li>
+		<li>Directions</li>
+	</ul>
+	</dd>
+   <dt><a href="#">Antelope Island Entrance</a></dt>
+	<dd id="ai">
+	<ul>
+		<li>Photo</li>
+		<li>Description</li>
+		<li>Directions</li>
+	</ul>
+	</dd>
+   <dt><a href="#">GSL Shorelands Preserve</a></dt>
+	<dd id="sp">
+	<ul>
+		<li>Photo</li>
+		<li>Description</li>
+		<li>Directions</li>
+	</ul>
+	</dd>
+   <dt><a href="#">GSL Nature Center at Farmington Bay</a></dt>
+	<dd id="nc">
+	<ul>
+		<li>Photo</li>
+		<li>Description</li>
+		<li>Directions</li>
+	</ul>
+	</dd>
+   <dt><a href="#">Farmington Bay Bird Refuge Loop Road</a></dt>
+	<dd id="dl">
+	<ul>
+		<li>Photo</li>
+		<li>Description</li>
+		<li>Directions</li>
+	</ul>
+	</dd>
+   <dt><a href="#">Lee Creek Area</a></dt>
+	<dd id="lc">
+	<ul>
+		<li>Photo</li>
+		<li>Description</li>
+		<li>Directions</li>
+	</ul>
+	</dd>
+   <dt><a href="#">Saltair</a></dt>
+	<dd id="sa">
+	<ul>
+		<li>Photo</li>
+		<li>Description</li>
+		<li>Directions</li>
+	</ul>
+	</dd>
+   <dt><a href="#">Great Salt Lake Marina</a></dt>
+	<dd id="slm">
+	<ul>
+		<li>Photo</li>
+		<li>Description</li>
+		<li>Directions</li>
+	</ul>
+	</dd>
+   <dt><a href="#" >Stansbury Island Interpretive Area</a></dt>
+	<dd id="si">
+	<ul>
+		<li>Photo</li>
+		<li>Description</li>
+		<li>Directions</li>
+	</ul>
+	</dd>
+</dl>-->
+</div>
+<div id="map_canvas"></div>
+
+<!-- InstanceEndEditable --></div> <!--content-->
+<div id="footer">
+	<div style=" padding-left:38px; padding-top:5px; float:left;color:#999999; font-size:10px;">
+  <a href="http://www.utah.edu/disclaimer/">Disclaimer</a> &nbsp;&nbsp;
+   <a href="/gslc/privacy.html">Privacy Policy</a> &nbsp;&nbsp;
+   <a href="/gslc/permissions.html">Permissions</a> &nbsp;&nbsp;
+  <br /> 
+   &copy;<script type="text/javascript">document.write(curr_year);</script>&nbsp;&nbsp; |  &nbsp;&nbsp;
+   
+   383 Colorow Dr, Salt Lake City, Utah 84108, (801) 585-3470 &nbsp;&nbsp;
+   
+   </div>
+   
+   	<div style=" padding-right:33px; padding-top:7px; float:right;">
+        <span style=" color:#999999; font-size:10px; ">
+        <script type="text/javascript">
+        		lgcite(document.title);
+        </script>
+        <br />
+         
+         </span>
+    </div>
+</div> <!--footer-->
+</div> 
+<!--main-->
+
+
+
+</div> <!--extcontainer-->
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,17 @@
+{
+    "subtitleChapters":
+    [
+        {
+            "chapterName":"Main Menu",
+            "chapterDetails":
+            [
+                {
+                    "interactableName":"",
+                    "mainSubtitle":"Flow cytometry is a tool that can be used to get information about your blood. In this virtual lab, you will use flow cytometry to do a complete blood count, diagnose a type of leukemia (a blood cancer), and look for any signs of cancer that remain after treatment.",
+                    "timelineName":"",
+                    "timelienTime":""
+                }
+            ]
+        }
+    ]
+}

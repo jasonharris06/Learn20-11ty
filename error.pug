@@ -1,0 +1,6 @@
+extends /shared/layout
+block breadcrumb
+block content
+   +pod(message + '<br>' + error.status)
+      .uk-width-1-1
+         pre.uk-animation-shake #{error.stack}

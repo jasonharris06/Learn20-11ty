@@ -1,0 +1,112 @@
+svg {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+svg g{
+	font-weight: 300;
+	-webkit-transition: opacity 0.4s;
+	transition: opacity 0.4s;
+}
+
+svg .label {
+    -webkit-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+svg .hidden {
+	display: none;
+}
+
+svg .faded {
+	opacity: 0.25;
+}
+
+svg .transparent {
+	opacity: 0;
+}
+
+svg .button {
+	cursor: pointer;
+	pointer-events: all;
+}
+
+svg .disabled {
+	opacity: 0.25;
+	pointer-events: none;
+}
+
+
+#ui rect, #ui text, #ui g{
+	-webkit-transition: stroke 0.4s, fill 0.4s, opacity 0.4s;
+	transition: stroke 0.4s, fill 0.4s, opacity 0.4s;
+}
+
+.sectionButton {
+	cursor: pointer;
+	pointer-events: all;
+}
+
+.sectionButton > rect {
+	stroke-width: 2.5;
+	stroke: #878787;
+	fill: #707070;
+}
+.sectionButton > text {
+	fill: #878787;
+}
+.sectionButton rect.selectShadow {
+	fill: none;
+	stroke: #000000;
+	opacity: 0;
+}
+
+.sectionGroup rect {
+	stroke: #EDB811;
+	fill: #707070;
+}
+.sectionGroup text, text.sectionGroup {
+	fill: #EDB811;
+}
+
+.sectionSelected > rect {
+	stroke: #FFFFFF;
+	fill: #FFFFFF;
+}
+.sectionSelected rect.selectShadow {
+	opacity: 0.25;
+}
+
+
+#concentration rect {
+	-webkit-transition: width 0.4s;
+	transition: width 0.4s;
+}
+
+svg .greenArrow {
+	fill: #91EDC5;
+}
+svg .redArrow {
+	fill: #F7C5C4;
+}
+svg .yellowArrow {
+	fill: #F9F4B4;
+}
+
+svg .stateIcon {
+	-webkit-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+}
+
+svg .stateIcon .transparent {
+	opacity:0;
+}
+
+svg .noTransition {
+    -webkit-transition: none;
+    transition: none;
+}

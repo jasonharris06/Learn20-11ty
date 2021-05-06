@@ -1,0 +1,368 @@
+---json
+{
+  "page":{
+    "title": "Learn.Genetics",
+    "type": "homePage",
+    "createDate": "2018-08-07"
+  }
+}
+  
+---
+
+extends /shared/layout
+block append head
+  style.
+    .homeSubsection { background-color: #fff; margin-top: 20px; padding-bottom: 1px; }
+    //- .homeItems > a:nth-child(even) { width: 224px; margin-left: 1px; }
+    //- .homeItemsDbl > a:nth-child(2n+3) { width: 224px; margin-left: 1px; }
+    .homeItem { height: 128px; overflow: hidden; position: relative; background-color: #CACACA; background-size: cover; }
+    .homeItemTitle { color: #fff; font-size:14px; font-weight: 600; text-transform: uppercase; position: absolute; bottom: 20px; left: 15px; z-index: 10; pointer-events: none; text-shadow: 0px 1px 2px rgba(0, 0, 0, 1); padding-right: 10px; }
+    .homeItemRollover { width: 100%; height: 58px; float: left; z-index: 0; position: absolute; bottom: -78px; pointer-events: none; transition: bottom 0.25s cubic-bezier(.09,1.6,.7,.85); background: #777777;
+      background: -moz-linear-gradient(top, #777777 0%, #545454 100%);
+      background: -webkit-linear-gradient(top, #777777 0%,#545454 100%);
+      background: -ms-linear-gradient(top, #777777 0%,#545454 100%);
+      background: linear-gradient(to bottom, #777777 0%,#545454 100%);}
+    .homeItem .twoline { height: 78px; }
+    .gradientOverlay { height: 128px; pointer-events: none; transition: opacity 0.2s ease;
+      background: -moz-linear-gradient(top,  rgba(192,0,0,0.4) 0%, rgba(127,0,100,0.8) 100%); /* FF3.6+ */
+      background: -webkit-linear-gradient(top,  rgba(192,0,0,0.4) 0%,rgba(127,0,100,0.8) 100%); /* Chrome10+,Safari5.1+ */
+      background: -ms-linear-gradient(top,  rgba(192,0,0,0.4) 0%,rgba(127,0,100,0.8) 100%); /* IE10+ */
+      background: linear-gradient(to bottom,  rgba(192,0,0,0.4) 0%,rgba(127,0,100,0.8) 100%); /* W3C */
+    }
+    //- .doublewide { width: 450px; }
+    .indexboxtitlebox { background-color: #545454; margin: 0; }
+    .indexboxtitlebox h2 { font-weight:300; font-size:20px; text-transform: uppercase; padding: 20px 15px 8px 15px; color: #FFFFFF; margin: 0; }
+
+  style.
+    #tour > .gradientOverlay { background: -moz-linear-gradient(top,  rgba(186,100,155,0.6) 0%, rgba(98,95,152,0.8) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  rgba(186,100,155,0.6) 0%,rgba(98,95,152,0.8) 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top,  rgba(186,100,155,0.6) 0%,rgba(98,95,152,0.8) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(186,100,155,0.6) 0%,rgba(98,95,152,0.8) 100%); /* W3C */ }
+    #characteristics > .gradientOverlay { background: -moz-linear-gradient(top,  rgba(192,0,0,0.5) 0%, rgba(127,0,100,0.9) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  rgba(192,0,0,0.5) 0%,rgba(127,0,100,0.9) 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top,  rgba(192,0,0,0.5) 0%,rgba(127,0,100,0.9) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(192,0,0,0.5) 0%,rgba(127,0,100,0.9) 100%); /* W3C */ }
+    #molecules > .gradientOverlay { background: -moz-linear-gradient(top,  rgba(43,223,138,0.6) 0%,rgba(0,110,170,0.8) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  rgba(43,223,138,0.6) 0%,rgba(0,110,170,0.8) 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top,  rgba(43,223,138,0.6) 0%,rgba(0,110,170,0.8) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(43,223,138,0.6) 0%,rgba(0,110,170,0.8) 100%); /* W3C */ }
+    #geneticVariation > .gradientOverlay { background: -moz-linear-gradient(top,  rgba(0,171,233,0.6) 0%, rgba(113,47,253,0.8) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  rgba(0,171,233,0.6) 0%, rgba(113,47,253,0.8) 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top,  rgba(0,171,233,0.6) 0%, rgba(113,47,253,0.8) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,171,233,0.6) 0%, rgba(113,47,253,0.8) 100%); /* W3C */ }
+    #chromosomes > .gradientOverlay { background: -moz-linear-gradient(top,  rgba(218,153,0,0.8) 0%, rgba(189,59,0,0.9) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  rgba(218,153,0,0.8) 0%, rgba(189,59,0,0.9) 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top,  rgba(218,153,0,0.8) 0%, rgba(189,59,0,0.9) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(218,153,0,0.8) 0%, rgba(189,59,0,0.9) 100%); /* W3C */ }
+    #cells > .gradientOverlay { background: -moz-linear-gradient(top,  rgba(248,167,105,0.6) 0%, rgba(5,145,137,0.8) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  rgba(248,167,105,0.6) 0%, rgba(5,145,137,0.8) 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top,  rgba(248,167,105,0.6) 0%, rgba(5,145,137,0.8) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(248,167,105,0.6) 0%, rgba(5,145,137,0.8) 100%); /* W3C */ }
+    #epigenetics > .gradientOverlay { background: -moz-linear-gradient(top,  rgba(25,139,149,0.6) 0%, rgba(229,181,25,0.8) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  rgba(25,139,149,0.6) 0%, rgba(229,181,25,0.8) 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top,  rgba(25,139,149,0.6) 0%, rgba(229,181,25,0.8) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(25,139,149,0.6) 0%, rgba(229,181,25,0.8) 100%); /* W3C */ }
+    #selection > .gradientOverlay { background: -moz-linear-gradient(top,  rgba(192,0,0,0.7) 0%, rgba(127,0,100,0.9) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  rgba(192,0,0,0.7) 0%,rgba(127,0,100,0.9) 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top,  rgba(192,0,0,0.7) 0%,rgba(127,0,100,0.9) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(192,0,0,0.7) 0%,rgba(127,0,100,0.9) 100%); /* W3C */ }
+    #microbiome > .gradientOverlay { background: -moz-linear-gradient(top,  rgba(248,203,70,0.8) 0%, rgba(189,59,109,0.9) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  rgba(248,203,70,0.8) 0%, rgba(189,59,109,0.9) 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top,  rgba(248,203,70,0.8) 0%, rgba(189,59,109,0.9) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(248,203,70,0.8) 0%, rgba(189,59,109,0.9) 100%); /* W3C */ }
+    #astrobiology > .gradientOverlay { background: -moz-linear-gradient(top,  rgba(191,53,0,0.8) 0%, rgba(0,165,233,0.9) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  rgba(191,53,0,0.8) 0%, rgba(0,165,233,0.9) 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top,  rgba(191,53,0,0.8) 0%, rgba(0,165,233,0.9) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(191,53,0,0.8) 0%, rgba(0,165,233,0.9) 100%); /* W3C */ }
+    #gsl > .gradientOverlay { background: -moz-linear-gradient(top,  rgba(0,171,233,0.6) 0%, rgba(113,47,253,0.8) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  rgba(0,171,233,0.6) 0%, rgba(113,47,253,0.8) 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top,  rgba(0,171,233,0.6) 0%, rgba(113,47,253,0.8) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,171,233,0.6) 0%, rgba(113,47,253,0.8) 100%); /* W3C */ }
+    #stemcells > .gradientOverlay { background: -moz-linear-gradient(top,  rgba(219,206,46,0.7) 0%, rgba(51,133,94,1) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  rgba(219,206,46,0.7) 0%, rgba(51,133,94,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top,  rgba(219,206,46,0.7) 0%, rgba(51,133,94,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(219,206,46,0.7) 0%, rgba(51,133,94,1) 100%); /* W3C */ }
+    #cloning > .gradientOverlay { background: -moz-linear-gradient(top,  rgba(0,171,233,0.7) 0%, rgba(113,47,253,0.9) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  rgba(0,171,233,0.7) 0%, rgba(113,47,253,0.9) 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top,  rgba(0,171,233,0.7) 0%, rgba(113,47,253,0.9) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,171,233,0.7) 0%, rgba(113,47,253,0.9) 100%); /* W3C */ }
+    #genetherapy > .gradientOverlay { background: -moz-linear-gradient(top,  rgba(127,186,229,0.8) 0%, rgba(182,134,170,0.9) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  rgba(127,186,229,0.8) 0%, rgba(182,134,170,0.9) 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top,  rgba(127,186,229,0.8) 0%, rgba(182,134,170,0.9) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(127,186,229,0.8) 0%, rgba(182,134,170,0.9) 100%); /* W3C */ }
+    #science > .gradientOverlay { background: -moz-linear-gradient(top,  rgba(219,206,46,0.7) 0%, rgba(51,133,43,1) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  rgba(219,206,46,0.7) 0%, rgba(51,133,43,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top,  rgba(219,206,46,0.7) 0%, rgba(51,133,43,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(219,206,46,0.7) 0%, rgba(51,133,43,1) 100%); /* W3C */ }
+    #disorders > .gradientOverlay { background: -moz-linear-gradient(top,  rgba(248,203,70,0.8) 0%, rgba(189,59,109,0.9) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  rgba(248,203,70,0.8) 0%, rgba(189,59,109,0.9) 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top,  rgba(248,203,70,0.8) 0%, rgba(189,59,109,0.9) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(248,203,70,0.8) 0%, rgba(189,59,109,0.9) 100%); /* W3C */ }
+    #pharma > .gradientOverlay { background: -moz-linear-gradient(top,  rgba(202,93,255,0.7) 0%, rgba(63,121,255,0.8) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  rgba(202,93,255,0.7) 0%, rgba(63,121,255,0.8) 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top,  rgba(202,93,255,0.7) 0%, rgba(63,121,255,0.8) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(202,93,255,0.7) 0%, rgba(63,121,255,0.8) 100%); /* W3C */ }
+    #memory > .gradientOverlay { background: -moz-linear-gradient(top,  rgba(202,93,255,0.7) 0%, rgba(63,121,255,0.8) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  rgba(202,93,255,0.7) 0%, rgba(63,121,255,0.8) 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top,  rgba(202,93,255,0.7) 0%, rgba(63,121,255,0.8) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(202,93,255,0.7) 0%, rgba(63,121,255,0.8) 100%); /* W3C */ }
+    #neuroscience > .gradientOverlay { background: -moz-linear-gradient(top,  rgba(191,53,0,0.8) 0%, rgba(0,165,233,0.9) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  rgba(191,53,0,0.8) 0%, rgba(0,165,233,0.9) 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top,  rgba(191,53,0,0.8) 0%, rgba(0,165,233,0.9) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(191,53,0,0.8) 0%, rgba(0,165,233,0.9) 100%); /* W3C */ }
+    #familyhealth > .gradientOverlay { background: -moz-linear-gradient(top,  rgba(0,135,155,0.8) 0%, rgba(202,100,18,0.9) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  rgba(0,135,155,0.8) 0%, rgba(202,100,18,0.9) 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top,  rgba(0,135,155,0.8) 0%, rgba(202,100,18,0.9) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,135,155,0.8) 0%, rgba(202,100,18,0.9) 100%); /* W3C */ }
+    #addiction > .gradientOverlay { background: -moz-linear-gradient(top,  rgba(219,206,46,0.7) 0%, rgba(28,156,198,0.9) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  rgba(219,206,46,0.7) 0%, rgba(28,156,198,0.9) 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top,  rgba(219,206,46,0.7) 0%, rgba(28,156,198,0.9) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(219,206,46,0.7) 0%, rgba(28,156,198,0.9) 100%); /* W3C */ }
+    #labs > .gradientOverlay { background: -moz-linear-gradient(top,  rgba(219,206,46,0.7) 0%, rgba(51,133,94,1) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  rgba(219,206,46,0.7) 0%, rgba(51,133,94,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top,  rgba(219,206,46,0.7) 0%, rgba(51,133,94,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(219,206,46,0.7) 0%, rgba(51,133,94,1) 100%); /* W3C */ }
+    #math > .gradientOverlay, #flowers > .gradientOverlay { background: -moz-linear-gradient(top,  rgba(192,0,0,0.6) 0%, rgba(127,0,100,0.9) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  rgba(192,0,0,0.6) 0%,rgba(127,0,100,0.9) 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top,  rgba(192,0,0,0.6) 0%,rgba(127,0,100,0.9) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(192,0,0,0.6) 0%,rgba(127,0,100,0.9) 100%); /* W3C */ }
+    #pigeons > .gradientOverlay { background: -moz-linear-gradient(top,  rgba(219,206,46,0.7) 0%, rgba(51,133,94,1) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  rgba(219,206,46,0.7) 0%, rgba(51,133,94,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top,  rgba(219,206,46,0.7) 0%, rgba(51,133,94,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(219,206,46,0.7) 0%, rgba(51,133,94,1) 100%); /* W3C */ }
+    #modelearth > .gradientOverlay { background: -moz-linear-gradient(top,  rgba(219,206,46,0.7) 0%, rgba(51,133,43,1) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  rgba(219,206,46,0.7) 0%, rgba(51,133,43,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top,  rgba(219,206,46,0.7) 0%, rgba(51,133,43,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(219,206,46,0.7) 0%, rgba(51,133,43,1) 100%); /* W3C */ }
+    #cotton > .gradientOverlay { background: -moz-linear-gradient(top,  rgba(0,171,233,0.6) 0%, rgba(113,47,253,0.8) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  rgba(0,171,233,0.6) 0%, rgba(113,47,253,0.8) 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top,  rgba(0,171,233,0.6) 0%, rgba(113,47,253,0.8) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,171,233,0.6) 0%, rgba(113,47,253,0.8) 100%); /* W3C */ }
+    #herbivores > .gradientOverlay { background: -moz-linear-gradient(top,  rgba(219,206,46,0.7) 0%, rgba(51,133,94,1) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  rgba(219,206,46,0.7) 0%, rgba(51,133,94,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top,  rgba(219,206,46,0.7) 0%, rgba(51,133,94,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(219,206,46,0.7) 0%, rgba(51,133,94,1) 100%); /* W3C */ }
+    #unityoflife > .gradientOverlay { background: -moz-linear-gradient(top,  rgba(0,171,233,0.7) 0%, rgba(113,47,253,0.9) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  rgba(0,171,233,0.7) 0%, rgba(113,47,253,0.9) 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top,  rgba(0,171,233,0.7) 0%, rgba(113,47,253,0.9) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,171,233,0.7) 0%, rgba(113,47,253,0.9) 100%); /* W3C */ }
+block append headscripts
+
+block append endscripts
+  script(type='text/javascript').
+    var spotItemWidth = 470;
+    var numSpotItems = 5;
+    var minSpotOffset = -695;
+    var maxSpotOffset = 1185;
+    $(document).ready(function (e) {
+    var spotItems = $("#spotlightItems").children();
+    $("#rightArrow")
+    .mouseenter(function () {
+    $(this).children(".rollover").css("right", "-10px");
+    })
+    .mouseleave(function () {
+    $(this).children(".rollover").css("right", "-60px");
+    })
+    .click(function () {
+    $("#spotlightItems").children().animate({
+    left: "-=470"
+    }, 500, "easeInOutQuart", function () {
+    var str = $(this).css("left");
+    if (Number(str.substring(0, str.length - 2)) < minSpotOffset) {
+    $(this).css("left", (1185).toString() + "px");
+    }
+    });
+    });
+    $("#leftArrow")
+    .mouseenter(function () {
+    $(this).children(".rollover").css("left", "-10px");
+    })
+    .mouseleave(function () {
+    $(this).children(".rollover").css("left", "-60px");
+    })
+    .click(function () {
+    $("#spotlightItems").children().animate({
+    left: "+=470"
+    }, 500, "easeInOutQuart", function () {
+    var str = $(this).css("left");
+    if (Number(str.substring(0, str.length - 2)) > maxSpotOffset) {
+    $(this).css("left", (-695).toString() + "px");
+    }
+    });
+    });
+    $("a.homeItem").mouseenter(function () {
+    $(this).find("div.homeItemRollover").css("bottom", "-10px");
+    $(this).find("div.gradientOverlay").css("opacity", "0.3");
+    })
+    .mouseleave(function () {
+    $(this).find("div.homeItemRollover").css("bottom", "-78px");
+    $(this).find("div.gradientOverlay").css("opacity", "1");
+    });
+    });
+block breadcrumb
+block content
+  .lg-section
+    .uk-container.uk-container-center(style="padding-bottom:20px")
+      .uk-grid
+        .uk-width-medium-1-2
+          .homeSubsection
+            .indexboxtitlebox
+              h2 Genetics
+            .uk-grid.uk-grid-collapse
+              a#tour.homeItem.uk-width-1-1.uk-width-small-1-3.uk-width-medium-1-2(href='/content/basics/', style='background-image: url(/images/home/tour.jpg);')
+                .gradientOverlay
+                .homeItemTitle
+                  | Basic Genetics
+                .homeItemRollover.twoline
+              a#pigeons.homeItem.uk-width-1-1.uk-width-small-1-3.uk-width-medium-1-2(href='/content/pigeons/', style='background-image: url(/images/home/pigeons.jpg);')
+                .gradientOverlay
+                .homeItemTitle
+                  | Pigeon Breeding:
+                  br
+                  | Genetics at Work
+                .homeItemRollover.twoline
+              //- a#selection.homeItem.uk-width-1-1.uk-width-small-1-3.uk-width-medium-1-2(href='/content/selection/', style='background-image: url(/images/home/selection.jpg);')
+              //-   .gradientOverlay
+              //-   .homeItemTitle
+              //-     | Variation +
+              //-     br
+              //-     | Selection &amp; Time
+              //-   .homeItemRollover.twoline
+              a#epigenetics.homeItem.uk-width-1-1.uk-width-small-1-3.uk-width-medium-1-2(href='/content/epigenetics/', style='background-image: url(/images/home/epigenetics.jpg);')
+                .gradientOverlay
+                .homeItemTitle Epigenetics
+                .homeItemRollover
+              a#science.homeItem.uk-width-1-1.uk-width-small-1-3.uk-width-medium-1-2(href='/content/science/', style='background-image: url(/images/home/tools.jpg);')
+                .gradientOverlay
+                .homeItemTitle Genetic Science
+                .homeItemRollover
+              div(style='clear: both')
+          .homeSubsection
+            .indexboxtitlebox
+              h2 Cell Biology
+            .uk-grid.uk-grid-collapse
+              a#cells.homeItem.uk-width-1-1.uk-width-small-1-3.uk-width-medium-1-1(href='/content/cells/', style='background-image: url(/images/home/cellsDBL.jpg);')
+                .gradientOverlay
+                .homeItemTitle Amazing Cells
+                .homeItemRollover.doublewide
+              a#stemcells.homeItem.uk-width-1-1.uk-width-small-1-3.uk-width-medium-1-2(href='/content/stemcells/', style='background-image: url(/images/home/stemcells.jpg);')
+                .gradientOverlay
+                .homeItemTitle Stem Cells
+                .homeItemRollover
+              a#cloning.homeItem.uk-width-1-1.uk-width-small-1-3.uk-width-medium-1-2(href='/content/cloning/', style='background-image: url(/images/home/cloning.jpg);')
+                .gradientOverlay
+                .homeItemTitle Cloning
+                .homeItemRollover
+              div(style='clear: both')
+          .homeSubsection
+            .indexboxtitlebox
+              h2 Plants
+            .uk-grid.uk-grid-collapse
+              a#flowers.homeItem.uk-width-1-1.uk-width-small-1-3.uk-width-medium-1-1(href='/content/flowers/', style='background-image: url(/images/home/flowersDBL.jpg);')
+                .gradientOverlay
+                .homeItemTitle Flowering Plants<br/>&amp; Their Pollinators
+                .homeItemRollover.twoline
+              a#cotton.homeItem.uk-width-1-1.uk-width-small-1-3.uk-width-medium-1-2(href='/content/cotton/', style='background-image: url(/images/home/cottonDBL.jpg);')
+                .gradientOverlay
+                .homeItemTitle Cotton
+                .homeItemRollover
+              a#herbivores.homeItem.uk-width-1-1.uk-width-small-1-3.uk-width-medium-1-2(href='/content/herbivores/', style='background-image: url(/images/home/herbivores.jpg);')
+                .gradientOverlay
+                .homeItemTitle Insect Herbivores <br/>vs. Plants
+                .homeItemRollover.twoline
+          .homeSubsection
+            .indexboxtitlebox
+              h2 Ecology
+            .uk-grid.uk-grid-collapse
+              a#microbiome.homeItem.uk-width-1-1.uk-width-small-1-3.uk-width-medium-1-2(href='/content/microbiome/', style='background-image: url(/images/home/microbiome.jpg);')
+                .gradientOverlay
+                .homeItemTitle
+                  | The Human
+                  br
+                  | Microbiome
+                .homeItemRollover.twoline
+              a#modelearth.homeItem.uk-width-1-1.uk-width-small-1-3.uk-width-medium-1-2(href='/content/earth/', style='background-image: url(/images/home/modelearth.jpg);')
+                .gradientOverlay
+                .homeItemTitle Model Earth
+                .homeItemRollover
+              a#astrobiology.homeItem.uk-width-1-1.uk-width-small-1-3.uk-width-medium-1-2(href='/content/astrobiology/', style='background-image: url(/images/home/astrobiology.jpg);')
+                .gradientOverlay
+                .homeItemTitle Astrobiology
+                .homeItemRollover
+              a#gsl.homeItem.uk-width-1-1.uk-width-small-1-3.uk-width-medium-1-2(href='/content/gsl/', style='background-image: url(/images/home/gsl.jpg);')
+                .gradientOverlay
+                .homeItemTitle Extreme Environments: Great Salt Lake
+                .homeItemRollover.twoline
+              div(style='clear: both')
+        .uk-width-medium-1-2
+          .homeSubsection
+            .indexboxtitlebox
+              h2 Evolution
+            .uk-grid.uk-grid-collapse
+              a#unityoflife.homeItem.uk-width-1-1.uk-width-small-1-3.uk-width-medium-1-1(href='/content/evolution/', style='background-image: url(/images/home/evolutionDBL.jpg);')
+                .gradientOverlay
+                .homeItemTitle DNA &amp; the Unity of Life
+                .homeItemRollover.doublewide
+              div(style='clear: both')
+          .homeSubsection
+            .indexboxtitlebox
+              h2 Human Health
+            .uk-grid.uk-grid-collapse
+              a#metabolism.homeItem.uk-width-1-1.uk-width-small-1-3.uk-width-medium-1-1(href='/content/metabolism/', style='background-image: url(/images/home/metabolism.jpg);')
+                .gradientOverlay
+                .homeItemTitle Metabolism: From Food To Fuel
+                .homeItemRollover.doublewide
+              a#pharma.homeItem.uk-width-1-1.uk-width-small-1-3.uk-width-medium-1-2(href='/content/precision/', style='background-image: url(/images/home/pharma.jpg);')
+                .gradientOverlay
+                .homeItemTitle Precision Medicine
+                .homeItemRollover
+              a#disorders.homeItem.uk-width-1-1.uk-width-small-1-3.uk-width-medium-1-2(href='/content/disorders/', style='background-image: url(/images/home/disorders.jpg);')
+                .gradientOverlay
+                .homeItemTitle Genetic Disorders
+                .homeItemRollover
+              a#familyhealth.homeItem.uk-width-1-1.uk-width-small-1-3.uk-width-medium-1-2(href='/content/history/', style='background-image: url(/images/home/familyhealth.jpg);')
+                .gradientOverlay
+                .homeItemTitle Family Health History
+                .homeItemRollover
+              a#genetherapy.homeItem.uk-width-1-1.uk-width-small-1-3.uk-width-medium-1-2(href='/content/genetherapy/', style='background-image: url(/images/home/genetherapy.jpg);')
+                .gradientOverlay
+                .homeItemTitle Gene Therapy
+                .homeItemRollover
+              div(style='clear: both')
+          .homeSubsection
+            .indexboxtitlebox
+              h2 Neuroscience
+            .uk-grid.uk-grid-collapse
+              a#neuroscience.homeItem.uk-width-1-1.uk-width-small-1-3.uk-width-medium-1-2(href='/content/neuroscience/', style='background-image: url(/images/home/neuroscience.jpg);')
+                .gradientOverlay
+                .homeItemTitle Basic Neuroscience
+                .homeItemRollover
+              a#astrobiology.homeItem.uk-width-1-1.uk-width-small-1-3.uk-width-medium-1-2(href='/content/senses/', style='background-image: url(/images/home/sensory.jpg);')
+                .gradientOverlay
+                .homeItemTitle Sensory Systems
+                .homeItemRollover
+              a#memory.homeItem.uk-width-1-1.uk-width-small-1-3.uk-width-medium-1-2(href='/content/memory/', style='background-image: url(/images/home/memory.jpg);')
+                .gradientOverlay
+                .homeItemTitle Memory, Attention, <br>&amp; Distraction
+                .homeItemRollover.twoline
+              a#addiction.homeItem.uk-width-1-1.uk-width-small-1-3.uk-width-medium-1-2(href='/content/addiction/', style='background-image: url(/images/home/addiction.jpg);')
+                .gradientOverlay
+                .homeItemTitle
+                  | Addiction:
+                  br
+                  | Genetics &amp; the Brain
+                .homeItemRollover.twoline
+              div(style='clear: both')
+          .homeSubsection
+            .indexboxtitlebox
+              h2 Science Tools
+            .uk-grid.uk-grid-collapse
+              a#labs.homeItem.uk-width-1-1.uk-width-small-1-3.uk-width-medium-1-2(href='/content/labs/', style='background-image: url(/images/home/virtualLabs.jpg);')
+                .gradientOverlay
+                .homeItemTitle Virtual Labs
+                .homeItemRollover
+              a#math.homeItem.uk-width-1-1.uk-width-small-1-3.uk-width-medium-1-2(href='/content/math/', style='background-image: url(/images/home/math.jpg);')
+                .gradientOverlay
+                .homeItemTitle Mathematics
+                .homeItemRollover
+          
