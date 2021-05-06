@@ -1,0 +1,28 @@
+extends /shared/layout
+block content
+   +pageTitle()(teach="cloning")
+   .lg-section
+      .uk-container.uk-container-center
+         .uk-grid
+            .uk-width-medium-1-2
+               h2 About Cloning
+               .lg-index-items
+                  +index-item('What is Cloning?','explore','whatiscloning','images/whatiscloning.jpg')
+                     p Learn the basics about cloning and see how it&rsquo;s done.
+                  +index-item('Why Clone?','learn more','whyclone','images/whyclone.jpg')
+                     p Evaluate the reasons for using cloning technologies.
+                  +index-item('The History of Cloning','learn more','clonezone','images/clonezone.jpg')
+                     p Explore the history of cloning technologies.
+                  +index-item('Cloning Myths','learn more','cloningmyths','images/cloningmyths.jpg')
+                     p Here we help you separate the facts from the fiction.
+
+            .uk-width-medium-1-2
+               h2 Explore Cloning
+               .lg-index-items
+                  +index-item('Click and Clone','interactive explore','clickandclone','images/clickandclone.jpg')
+                     p Try it yourself in the mouse cloning laboratory.
+                  +index-item('Is it Cloning? Or Not?','interactive explore','cloningornot','images/cloningornot.jpg')
+                     p Test your cloning savvy with this interactive quiz.
+
+
+            +bottom-menu("",'sepagosh')

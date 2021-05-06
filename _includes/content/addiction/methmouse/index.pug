@@ -1,0 +1,52 @@
+extends /shared/layout
+block headscripts
+  style.
+    .progress {
+      width: 70%;
+      height: 20px;
+      position: absolute;
+      top: 50%;
+      left: 15%;
+      padding: 2px;
+      border: 1px solid #fff;
+    }
+    .full {
+      background: white;
+      height: 100%;
+    }
+    .limit-width {
+      padding: 0 200px 0 225px;
+    }
+    @media (max-width: 1220px) {
+      .limit-width {
+        padding: 0 100px 0 125px;
+      }
+    }
+    @media (max-width: 820px) {
+      .limit-width {
+        padding: 0 50px 0 75px;
+      }
+    }
+    @media (max-width: 600px) {
+      .limit-width {
+        padding: 0 0 0 25px;
+      }
+    }
+block content
+  +pageTitle
+  +pod('')
+    .uk-width-1-1.limit-width
+      div(id="gameContainer" style="width: 100%; padding-top:74.2%; margin:0 50px")
+      p
+        | Note:
+        br
+        br
+        | Methamphetamine influences multiple neurotransmitter systems, affecting many regions of the brain.
+        br
+        |  The molecules and mechanisms presented here are just part of the story.
+
+
+block append endscripts
+  script(src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js")
+  script(src="Build/UnityLoader.js")
+  script(src="methmouse.js")

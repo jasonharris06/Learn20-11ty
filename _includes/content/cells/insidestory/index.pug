@@ -1,0 +1,66 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   script(src='/Scripts/AC_RunActiveContent.js', type='text/javascript')
+
+   +pod('Signals Travel Into Cells')
+
+      .uk-width-medium-6-10
+         p
+            | Cells communicate by sending and receiving signals. Signals may come from the environment, or they may come from
+            | other cells. In order to trigger a response, these signals must be transmitted across the cell membrane. Sometimes
+            | the signal itself can cross the membrane. Other times the signal works by interacting with receptor proteins that
+            | contact both the outside and inside of the cell. In this case, only cells that have the correct receptors on their
+            | surfaces will respond to the signal.
+      .uk-width-medium-4-10
+         figure
+            div
+               iframe.uk-responsive-width(src="//player.vimeo.com/video/151064691", width="500", height="333", frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+
+
+            p
+               | Many signals are transmitted into a cell by first binding to a receptor protein. Here a signal (yellow) activates a receptor (orange)
+               | by causing it to change shape, thereby passing information into the cell.
+
+   +pod('Signals Pass From Protein to Protein')
+
+      .uk-width-medium-6-10
+         p
+            | Once inside the cell, the signal continues on its way. Its ultimate destination depends on the nature of the
+            | signal, with some signals traveling to the nucleus or to other structures inside the cell. Signals most often
+            | move through the cell by passing from protein to protein, each protein modifying the next in some way. Collectively,
+            | the proteins that relay a signal to its destination make up a signaling pathway. A signaling pathway can have few
+            | or many steps. Some signaling pathways branch out in different directions, sending signals to more than one place
+            | in the cell. As a signal is transferred from protein to protein, it can also be amplified. By dividing and amplifying
+            | a signal, the cell can convert a small signal into a large response.
+
+      .uk-width-medium-4-10
+         figure
+            img(src='images/signalTransduction.jpg', alt='Signal Transduction')
+            p
+               | A
+               strong signaling pathway
+               | : the message is transferred from the receptor (1) to other proteins inside the cell. The proteins work together
+               |          like runners in a relay race to carry the signal to its destination or destinations.
+   +pod('Proteins Direct Cellular Responses')
+      .uk-width-1-1
+         p
+            | Once a signal reaches its target molecule (usually a protein), it works to change the behavior of the cell.
+            | Depending on the signaling molecules involved, the cell can respond in a variety of ways.
+         p
+      .uk-width-1-1
+         figure
+            img(src='images/Responses.jpg', alt='Responses')
+   +pod('Cells Integrate Multiple Signals')
+      .uk-width-medium-6-10
+         p
+            | Each cell receives a complex combination of signals which simultaneously trigger many different signaling pathways.
+            | Each step in a signaling pathway provides an opportunity for cross-talk between different signals. Through cross-talk,
+            | the cell integrates information from many different signaling pathways to initiate an appropriate response.
+
+      .uk-width-medium-4-10
+         figure
+            img(src='images/TwoPathways.jpg', alt='Two pathways', width='340', height='216')
+            p
+               | Combinations of signals are important. Here, a cell responds only when both the yellow and the purple signals are present.

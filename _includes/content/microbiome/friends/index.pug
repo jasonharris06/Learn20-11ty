@@ -1,0 +1,14 @@
+extends /shared/layout
+
+block append headscripts
+  style
+    .edgeLoad-EDGE-15754422 { visibility:hidden; }
+
+block content
+  +pageTitle
+  +pod('')
+    .uk-width-medium-1-1.uk-text-center
+      #stage.EDGE-15754422
+
+block append endscripts
+  script(src="ClickableHuman3_edgePreload.js")

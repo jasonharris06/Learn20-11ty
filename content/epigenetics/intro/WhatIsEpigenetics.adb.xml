@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+ <tt xml:lang="en" xmlns="http://www.w3.org/2006/04/ttaf1"  xmlns:tts="http://www.w3.org/2006/04/ttaf1#styling">
+  <head>
+	<styling>
+	    <style id="1" tts:textAlign="center" tts:color="#555555" tts:backgroundColor="#DDDDDD" tts:fontSize="16" tts:fontFamily="Verdana" tts:wrapOption="wrap"/>
+	</styling>
+  </head>
+  <body>
+   <div xml:lang="en" style="1">
+    <p begin="00:00:01.59" dur="00:00:05.73">DNA contains the instructions for<br />building all the parts of the body.</p>
+    <p begin="00:00:07.32" dur="00:00:04.32">But DNA is only half the story.</p>
+    <p begin="00:00:11.64" dur="00:00:07.57">The DNA in our bodies is wrapped around proteins called histones.</p>
+    <p begin="00:00:19.21" dur="00:00:04.83">Both the DNA and histones are covered with chemical tags.</p>
+    <p begin="00:00:24.04" dur="00:00:04.14">This second layer of structure is called the epigenome.</p>
+    <p begin="00:00:28.18" dur="00:00:06.62">The epigenome shapes the physical structure of the genome.</p>
+    <p begin="00:00:36.90" dur="00:00:05.82">It tightly wraps inactive genes, making them unreadable.</p>
+    <p begin="00:00:43.94" dur="00:00:05.58">It relaxes active genes, making them easily accessible.</p>
+    <p begin="00:00:51.99" dur="00:00:04.94">Different sets of genes are active in different cell types.</p>
+    <p begin="00:01:00.54" dur="00:00:04.32">The DNA code remains fixed for life.</p>
+    <p begin="00:01:04.86" dur="00:00:03.57">But the epigenome is flexible.</p>
+    <p begin="00:01:08.43" dur="00:00:08.11">Epigenetic tags react to signals from the<br />outside world such as diet and stress.</p>
+    <p begin="00:01:19.93" dur="00:00:05.32">The epigenome adjusts specific genes in<br />our genomic landscape in response</p>
+    <p begin="00:01:25.25" dur="00:00:01.81">to our rapidly changing environment.</p>
+   </div>
+  </body>
+</tt>

@@ -1,0 +1,79 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('What is Light?')
+      .uk-width-medium-4-10
+         p.
+            Visible light—the light we can see—is a tiny part of the electromagnetic spectrum. A common measure of electromagnetic radiation is wavelength: the distance between waves. At one end of the spectrum are very long waves; radio waves can be up to 100,000 meters long. At the opposite end are very short waves; gamma rays are less than 10 picometers (10-12 or 0.000000000001 meter) long.
+         p.
+            No matter the wavelength, electromagnetic radiation travels at a constant velocity—what we call the speed of light. Shorter waves carry more energy, so they pack more punch. That's why radio waves and microwaves are harmless, ultraviolet rays can give us a sunburn, and gamma rays can kill us dead.
+      .uk-width-medium-6-10
+         figure
+            img(src='electromagneticspectrum.jpg', alt='electromagnetic spectrum')
+            p Visible light ranges from about 390 to 770 nanometers (1 nanometer is 10-9 or 0.000000001 meters). Other wavelengths are invisible to us.
+
+   +pod('What is so special about visible light?')
+      .uk-width-medium-6-10
+         p.
+            Nothing, really. Other than the fact that we can see it, visible light it is no more special than any other part of the electromagnetic spectrum.
+         p.
+            In our typical self-centered fashion, humans came up with the term "visible light" to define all of the wavelengths of the electromagnetic spectrum that we can see. There are many other animals that can see wavelengths that are invisible to us—wavelengths that are both longer (infrared) and shorter (ultraviolet).
+         p.
+            Humans evolved the ability to detect the wavelengths of light that are the most informative for helping us survive and reproduce in our particular environment. Similarly, other animals are able to see the wavelengths of light that are most useful to them in their environments.
+         +well
+            | For more information about other animal eyes and how eyes evolve, visit: 
+            a(href='/content/selection/eye') Eye Evolution.
+      .uk-width-medium-4-10
+         figure
+            img(src="beeviper.jpg", alt=beviper)
+            p What an animal can see closely matches what it needs to succeed in its environment. Bees can detect patterns on flowers in the ultraviolet range that are invisible to us. Some snakes have pit organs that can detect the body heat of their prey, which is in the infrared range.
+
+   +pod('How do eyes detect light?')
+      .uk-width-medium-4-10
+         figure
+            img(src="opsins.jpg", alt='opsin')
+
+      .uk-width-medium-6-10
+         p.
+            Light-detecting sensory cells are called photoreceptors. Photoreceptors cells come in many shapes, sizes, and configurations, but they all have something in common: they are packed full of light-sensitive proteins called opsins (OP-sinz).
+         p.
+            When a photon (the smallest detectable unit of light) bumps into an opsin molecule, the protein absorbs its energy and temporarily changes shape. This is the first step in a signaling chain that ultimately travels to the brain (or, in some other animals, a more basic control center).
+         p.
+            There are many types of opsin proteins. Each type has a slightly different shape and structure that makes it sensitive to light within a particular range of wavelengths.
+
+   +pod('How does color vision work?')
+      .uk-width-medium-4-10
+         p.
+            Light itself has no color. What we call "color" is a subjective experience that arises from the eye's ability to tell the difference between different wavelengths of light. So while we have no way of knowing whether a particular animal—or even another person—sees color the same way we do, we do know that many are able to distinguish between wavelengths.
+         p.
+            The way photoreceptors work, the sensitivity across its range is shaped like a bell curve. If an animal has just one type of photoreceptor, it cannot see in color. For example, in the top image, green light will look brighter than blue, but this animal's eye has no way to tell the difference between wavelengths.
+         p.
+            In order to see color, an animal needs at least two types of photoreceptors that are sensitive to different wavelengths of light (middle image). It's the relative activation of both photoreceptor types that provides information about wavelength.
+         p.
+            The more types of photoreceptors an animal has, the more wavelengths it can tell apart. In the middle image, for example yellow and red have the same activation pattern, so the animal wouldn't be able to tell them apart. But in the bottom image,  the patterns are different, so they would be perceived differently.
+      .uk-width-medium-6-10
+         figure
+            img(src="colorvision.jpg", alt='color vision')
+            p Each curve represents a photoreceptor's activation profile across a range of wavelengths. Circles show the activation levels for particular "colors" (wavelengths) of light. The more types of photoreceptors an animal has that are sensitive to different wavelengths, the more "colors" it can perceive. The photoreceptor ranges above are hypothetical, but they are similar to a nautilus (top), cat or dog (middle), and human (bottom).
+
+   +pod('Other ways to detect color and more')
+      .uk-width-medium-6-10
+         include otherways.pug
+         
+      .uk-width-medium-4-10
+         p
+            | In people and other mammals, a photoreceptor's wavelength sensitivity is determined mainly by the type of opsin protein it has. But some animal eyes have physical properties that allow them to detect light and color in other ways. Many animals have innovations that allow them to see things that we cannot.
+         
+   
+   +references
+      p
+         | Bowmaker, JK (2008). Evolution of vertebrate visual pigments. Vision Research, 48, 2022-2041. doi: 10.1016/j.visres.2008.03.025 
+      p
+         | Lamb, TD (2013). Evolution of Phototransduction, Vertebrate Receptors and Retina. Webvision: The Organization of the Retina and Visual System. Kolb, H, Fernandez, E &amp; Nelson R, Eds. Salt Lake City: University of Utah Health Sciences Center. Accessed 17 March, 2017, from  
+         a(href="https://www.ncbi.nlm.nih.gov/books/NBK153508/") https://www.ncbi.nlm.nih.gov/books/NBK153508/
+      p
+         | Nilsson, D-E, Land, MF (2012). Animal Eyes, second edition. Oxford: Oxford University Press.
+         
+   block append endscripts
+      script(src="/lib/slideshow.js")
+      script(src="/lib/slideshow-fx.js")

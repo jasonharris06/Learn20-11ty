@@ -1,0 +1,121 @@
+extends /shared/layout
+block content
+   +pageTitle
+   | @section headlate{
+   style.
+      table {
+      border: 1px solid #737373;
+      }
+      td {
+      background: #f1f1f1;
+      height: 30px;
+      }
+      .tabhead {
+      background: #ffffff; /* Old browsers */
+      background: -moz-linear-gradient(top,  #ffffff 0%, #d8d8d8 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#d8d8d8)); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top,  #ffffff 0%,#d8d8d8 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top,  #ffffff 0%,#d8d8d8 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top,  #ffffff 0%,#d8d8d8 100%); /* IE10+ */
+      background: linear-gradient(to bottom,  #ffffff 0%,#d8d8d8 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d8d8d8',GradientType=0 ); /* IE6-9 */
+      height: 40px;
+      border-bottom: 1px solid #737373;
+      }
+      .col1 {
+      width: 40px;
+      padding-left: 10px;
+      }
+      .col2 {
+      }
+      .col3 {
+      }
+      .col4 {
+      text-align:right;
+      padding-right: 10px;
+      }
+      th{
+      text-align: center;
+      }
+   | }
+   +pod('')
+      .uk-width-medium-4-10
+         figure
+            img(src='Pigeonetics Album (web).jpg', height='352', width='352', alt='Album cover', style='border: 1px solid black;')
+            |          
+            p
+      |    
+      .uk-width-medium-6-10
+         table(style="width: 100%")
+            tr.tabhead
+               th(scope='col')
+                  strong #
+               |       
+               th(scope='col')
+                  strong Title
+               |       
+               th(scope='col')
+                  strong Artist
+               |       
+               th(scope='col')
+                  strong Length
+            |       
+            tr
+               td.col1 1
+               |       
+               td.col2
+                  a(href='album/Pigeonetics Original Demo.mp3') Pigeonetics Original Demo
+               |       
+               td.col3 Kagan Breitenbach
+               |       
+               td.col4 02:37
+            |       
+            tr
+               td.col1 2
+               |       
+               td.col2
+                  a(href='album/Pigeonetics_ Part 1.mp3') Pigeonetics Part 1
+               |       
+               td.col3 Kagan Breitenbach
+               |       
+               td.col4 02:16
+            |       
+            tr
+               td.col1 3
+               |       
+               td.col2
+                  a(href='album/Pigeonetics_ Part 2.mp3') Pigeonetics Part 2
+               |       
+               td.col3 Kagan Breitenbach
+               |       
+               td.col4 02:15
+            |       
+            tr
+               td.col1 4
+               |       
+               td.col2
+                  a(href='album/Pigeonetics_ Part 3.mp3') Pigeonetics Part 3
+               |       
+               td.col3 Kagan Breitenbach
+               |       
+               td.col4 02:31
+            |       
+            tr
+               td.col1 5
+               |       
+               td.col2
+                  a(href='album/Pigeonetics Finale.mp3') Pigeonetics Finale
+               |       
+               td.col3 Kagan Breitenbach
+               |       
+               td.col4 00:27
+         |       
+         |       
+         div(style='text-align: center; width: 220px; padding: 10px 10px 10px 10px; margin: 20px auto 20px auto; background: #f1f1f1; border: 1px solid #737373')
+            a(href='tracks.zip') Download Album
+            |  
+            br
+            |           
+            a(href='Pigeonetics Sheet Music.pdf') Pigeonetics Sheet Music
+   
+   

@@ -1,0 +1,86 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-5-10
+         p
+            | Some pigeons have smooth heads, like their wild ancestors had. But on some domestic pigeons, the feathers on the back of the head and neck stand up to form a crest.
+         p
+            | Both of the pigeons pictured to the right are colored 
+            a(href='../spread/') spread
+            |  blue. The one on the right has a small crest, while the one on the left has no crest.
+      |     
+      .uk-width-medium-5-10
+         img(src='images/crest.jpg', alt='Crest', width='488', height='200')
+   +pod('Alleles and Inheritance')
+      |     
+      .uk-width-medium-5-10
+         img(src='images/crest-alleles.jpg', alt='Crest Alleles', width='472', height='220')
+      |     
+      .uk-width-medium-5-10
+         p
+            | In pigeons, one gene controls the presence or absence of a crest. This gene comes in 2 different versions, or alleles: &lsquo;crest&rsquo; and &lsquo;no crest&rsquo; (&apos;no crest&apos; is also called wild type).
+         p
+            | Pigeons inherit two copies of the 
+            em crest
+            |  gene, one from each parent. The two alleles together make up a bird&apos;s &quot;genotype.&quot; What we see, also called the &quot;phenotype,&quot; is the physical outcome of these two alleles.
+         p
+            | The &lsquo;no crest&rsquo; allele is dominant to the &lsquo;crest&rsquo; allele. To have a crest, a bird must have two copies of the &lsquo;crest&rsquo; allele.
+   +pod('From DNA to Protein: Finding the Gene for Crest')
+      |     
+      .uk-width-medium-5-10
+         p
+            | Inherited characteristics are the products of proteins, and proteins are coded for by genes. Ultimately, the differences in our (and pigeons&rsquo;) inherited characteristics arise from differences in the DNA sequences of our genes.  DNA differences can affect how a protein functions, or when and where a protein is made.
+         p
+            | In 2013, a group of researchers at the University of Utah, led by professor Mike Shapiro, identified the genetic variation that causes the crest phentoype.
+         p
+            | To find the 
+            em crest
+            |  gene, the research team looked at the genomes of 42 pigeons (representing 37 breeds, plus 2 feral birds and a closely related species) some with crests and some without. They compared the DNA sequences, and they found a region of DNA that was different between crested and non-crested birds. The region contained one gene, called 
+            em EphB2
+            |  (short for Ephrin receptor B2).
+         p
+            | When the researchers looked at another 130 birds, they saw a 100% correlation: all birds with crests had two copies of the &lsquo;crest&rsquo; version of 
+            em EphB2
+            | , and all birds without crests had at at least one copy, and more often two, of the &lsquo;no crest&rsquo; version of 
+            em EphB2
+            | .
+         p
+            | Groups of 3 nucleotides along a stretch of DNA code for specific amino acids in a protein. The protein-coding portions of the &lsquo;crest&rsquo; and &lsquo;no crest&rsquo; alleles differ by just one nucleotide, and they code for proteins that differ by just one amino acid. A small portion of the DNA and amino acid sequeces are shown on the right.
+      |     
+      .uk-width-medium-5-10
+         img(src='images/crest-gene-protein.jpg', alt='Crest from DNA to Protein', width='487', height='466')
+   +pod('The &lsquo;Crest&rsquo; and &lsquo;No Crest&rsquo; Alleles Code for Slightly Different Proteins')
+      |     
+      .uk-width-medium-5-10
+         img(src='images/crest-protein-function.jpg', alt='Crest Protein Function', width='336', height='426')
+      |     
+      .uk-width-medium-5-10
+         p
+            | The crest phenotype is visible very early, while a chick is still developing inside the egg. As soon as neck and head feathers appear, they start to grow &ldquo;backward.&rdquo; Instead of pointing down toward the tail, the feathers point upward toward the top of the head. The EPHB2 protein appears to have something to do with setting up feather orientation even earlier in development.
+         p
+            | The &apos;no crest&apos; allele codes for a protein that functions normally. It sits in the cell membrane, and when a certain signal from outside the cell attaches to it, it transmits a signal to the inside of the cell.
+         p
+            | The &apos;crest&apos; allele codes for a protein that is broken. The one amino acid difference changes the shape of the protein, making it unable to transmit the signal.*
+         p
+            | A bird with two normal alleles makes only normal EPHB2 protein. When a bird has one normal (i.e., &lsquo;no crest&rsquo;) and one broken (i.e., &lsquo;crest&rsquo;) allele, its cells make both normal and broken protein. There still is enough of the functioning protein around to transmit the signal. But a bird with two broken alleles makes only broken EPHB2 protein, which can&rsquo;t transmit the signal. We don&rsquo;t understand exactly how, but when the signal can&apos;t get through, the neck feathers grow upside-down&mdash;and the bird has a crest.
+         |         
+         p
+            | *This is the most likely explanation, based on DNA sequence and what we know about related proteins.  However, we would need to do more experiments to know for sure.
+   +pod('Other Genes Influence Crest Size and Shape')
+      |     
+      .uk-width-medium-5-10
+         p
+            | While one gene controls whether a pigeon has a crest or not, a variety of other genes influence crest size and shape. These genes are often called &ldquo;modifier&rdquo; genes&mdash;you can think of them as genes that modify the basic crest phenotype.
+         p
+            | All of the birds shown on the right carry two copies of the &lsquo;crest&rsquo; allele. Some of the crests are subtle, and others are quite extreme. The differences are due to different modifier alleles. There are probably several modifiers, each with slightly different effects. These genes were likely selected for by multiple breeders who were working with different breeds.
+         p
+            | We don&rsquo;t understand the inheritance of these modifier genes, or exactly how they affect crest. If they behave like other modifiers, they may code for proteins that interact directly with EPHB2 or other proteins in the same molecular pathway.
+         |         
+         p
+            a(href='../references/') References
+      |     
+      .uk-width-medium-5-10
+         img(src='images/crest-1.jpg', alt='Crest', width='488', height='324')
+   
+   

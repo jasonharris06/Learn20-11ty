@@ -1,0 +1,109 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-6-10
+         p
+            | Small variations in our DNA can correlate with differences in the way individuals respond
+            | to a medication or in their risk for getting a disease. Often, these variations occur
+            | within the DNA letters that make up the protein-coding portion of a gene, influencing
+            | how the protein works.
+         | &#x9;&#x9;
+         p
+            | Changing the protein-coding sequence isn&apos;t the only way to affect a gene, though.
+            | Changing the level of gene expression&mdash;thus increasing or decreasing the amount of RNA or
+            | protein that is made from it&mdash;can influence biological processes just as dramatically.
+      .uk-width-medium-4-10
+         +well
+            p
+               | A major focus in genetic science is to examine how differences in gene expression correlate with drug response or disease risk. Learn more about personalized medicine in
+               a(href='/content/precision/')  Precision Medicine
+   +pod('Gene expression and obesity')
+      .uk-width-medium-4-10
+         figure
+            img(src='images/obesityStudy.png', height='697', width='352', alt='Obesity study')
+            p
+      .uk-width-medium-6-10
+         p
+            | Let&apos;s look at obesity as an example of how gene expression can correlate
+            | with disease risk:
+         | &#x9;&#x9;
+         p
+            | Obesity is a major health risk in America that threatens children and adults alike. It
+            | can lead to heart disease, high blood pressure, and diabetes, especially as people age. A
+            | complex medical condition, obesity is influenced by diet, exercise, metabolism, and genetics.
+         | &#x9;&#x9;
+         p
+            | Shan, age 17, is more than 40 pounds overweight relative to his height. His parents and
+            | grandparents are all overweight as well.
+         | &#x9;&#x9;
+         p
+            | Allen is similar to Shan with respect to age, height, diet, and exercise habits, but he
+            | is not overweight. Furthermore, no one in Allen&apos;s family is overweight.
+         | &#x9;&#x9;
+         p
+            | Both Shan&apos;s and Allen&apos;s families volunteer to participate in a university study to
+            | identify genes that play a role in obesity. How will the researchers approach this question?
+         +well
+            p
+               | Gene expression profiles can be read using
+               a(href='/content/labs/microarray/')  DNA microarray
+               |  technology.
+   +pod('Measuring levels of gene expression')
+      .uk-width-medium-4-10
+         figure
+            img(src='images/GeneExpression.png', height='1135', width='352', alt='gene expression')
+            p
+
+      .uk-width-medium-6-10
+         p
+            | Three generations of family members provide cell samples (liver and fat cells) to the
+            | researchers. Liver and fat cells were chosen because they are important in metabolism
+            | and making fats.
+         | &#x9;&#x9;
+         ul
+            li
+               | The researchers will use an approach called gene expression profiling to identify
+               | active and inactive genes in a cell or tissue.
+            | &#x9;&#x9;&#x9;
+            li
+               | Expression profiling then tells the scientist which genes may play a role in obesity.
+            | &#x9;&#x9;&#x9;
+            li
+               | Scientists run similar expression profile studies on all the family members, as well
+               | as on those of other study participants.
+         | &#x9;&#x9;
+         p
+            | Once the scientists compare the results from everyone in the study, they have a good
+            | idea which genes play a role in obesity. This information can be used in several future applications:
+
+         p
+            | 1. Creating diagnostic tests to predict whether a patient has a genetic predisposition to obesity.
+         | &#x9;&#x9;
+         | &#x9;&#x9;&#x9;&#x9;
+         ul
+            li
+               | One test might examine the DNA sequence of a person&apos;s obesity-related genes,
+               | in order to detect genetic signatures that predict a predisposition to obesity.
+            | &#x9;&#x9;&#x9;&#x9;&#x9;
+            li
+               | Another test might examine a tissue sample for abnormal gene expression patterns
+               | that indicate a predisposition to obesity.
+         | &#x9;&#x9;
+         p 2. Designing Drugs
+         | &#x9;&#x9;
+         | &#x9;&#x9;&#x9;&#x9;
+         ul
+            li
+               | Designing drugs intended to treat or prevent obesity. This could be done by
+               | isolating the protein products of the identified obesity genes, determining their molecular
+               | structures and functions, and making drugs to inhibit them.
+            | &#x9;&#x9;&#x9;&#x9;&#x9;
+            li
+               | Designing drugs to control expression of obesity genes. These drugs
+               | would interact directly with DNA in key cells and tissues to prevent genes that are
+               | activated in obesity from being turned on&mdash;or, conversely, to prevent genes that are
+               | inactivated during obesity from being turned off.
+
+      .uk-width-medium-6-10
+         +bottom-menu("",'sepagsep')

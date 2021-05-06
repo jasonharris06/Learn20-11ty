@@ -1,0 +1,73 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-5-10
+         p
+            | In the most straightforward cases, gene therapy adds a functional copy of a gene to cells that have only non-functional copies.
+            a(href='../tools/') Gene Delivery: Tools of the Trade
+            |  summarizes the viral and non-viral vectors most commonly used for this type of gene delivery.
+         p
+            | But there are times when simply adding a working copy of the gene won&apos;t solve the problem. In these cases, scientists have had to think outside the box to come up other approaches.
+         p
+            | To address the below situations, you could prevent the cell from making the protein the gene encodes, repair the gene, or find a work-around aimed at blocking or eliminating the protein.
+
+      .uk-width-medium-5-10
+         figure
+            img(src='images/dom_neg.svg', data-uk-svg, alt='Dominant Negative')
+      .uk-width-medium-1-3
+         p
+            strong Dominant negative
+            br
+            | Some mutations in genes lead to the production of a dominant-negative protein. A dominant-negative protein may block a normal protein from doing its job (for an example, see Pachyonychia congenita). In this case, adding a functional copy of the gene won&apos;t help, because the dominant-negative protein will still be there causing problems.
+      .uk-width-medium-1-3
+         p
+            strong Gain-of-function
+            br
+            | A gain-of-function mutation makes a protein that acts abnormally, causing problems all on its own. For example, let&apos;s say a signal activates protein X, which then tells the cell to start growing and dividing. A gain-of-function mutation may make protein X activate cell growth even when there&apos;s no signal, leading to cancer.
+      .uk-width-medium-1-3
+         p
+            strong Improper regulation
+            br
+            | Sometimes a disorder can involve a protein that is functioning as it should&mdash;but there&apos;s a problem with where, when, or how much protein is being made. These are problems of gene regulation: genes need to be turned &quot;on&quot; in the right place, at the right time, and to the right level.
+   +pod('Repairing mutations')
+      .uk-width-medium-7-10
+         p
+            | A few techniques are aimed at replace a defective copy of a gene with a working copy.
+         p
+            | The term SMaRT&trade; stands for &quot;Spliceosome-Mediated RNA Trans-splicing.&quot; This technique targets and repairs the messenger RNA (mRNA) transcripts copied from the mutated gene. Rather than attempting to replace the entire gene, this technique repairs just the section of the mRNA transcript that contains the mutation.
+         p
+            | Several different viral vectors have been developed to repair mutations directly in the DNA. This gene editing technique uses enzymes designed to target specific DNA sequences. The enzymes cut out the faulty sequence and replace it with a functional copy.
+
+      .uk-width-medium-3-10
+   +pod('Gene silencing')
+      |
+      .uk-width-medium-5-10
+         p
+            | Gene silencing is an approach used to turn a gene &quot;off&quot; so that no protein is made from it. Gene-silencing approaches to gene therapy can target a gene&apos;s DNA directly, or they can target mRNA transcripts made from the gene.
+         p
+            | Gene editing, in addition to repairing mutations as described above, can be used to introduce a mutation into a gene&apos;s DNA sequence so that no protein is made from it.
+         p
+            | Triple-helix-forming oligonucleotide gene therapy targets the DNA sequence of a mutated gene to prevent its transcription. This technique delivers short, single-stranded pieces of DNA, called oligonucleotides, that bind specifically in the groove between a gene&apos;s two DNA strands. This binding makes a triple-helix structure that blocks the DNA from being transcribed into mRNA.
+         p
+            | RNA interference takes advantage of the cell&apos;s natural virus-killing machinery, which recognizes and destroys double-stranded RNA. This technique introduces a short piece of RNA with a nucleotide sequence that is complementary to a portion of a gene&apos;s mRNA transcript. The short piece of RNA will find and attach to its complementary sequence, forming a double-stranded RNA molecule, which the cell then destroys.
+         p
+            | Ribozyme gene therapy targets the mRNA transcripts copied from the gene. Ribozymes are RNA molecules that act as enzymes. Most often, they act as molecular scissors that cut RNA. In ribozyme gene therapy, ribozymes are designed to find and destroy mRNA encoded by the mutated gene so that no protein can be made from it.
+         +well
+            | To learn more about ribozymes and RNA-based gene silencing, visit
+            a(href='/content/basics/beyond') Beyond the Central Dogma
+            | .
+      .uk-width-medium-5-10
+         figure
+            img(src='images/triple_helix.svg', alt='Triple-helix-forming oligonucleotides', data-uk-svg)
+         figure
+            img(src='images/ribozyme.gif', alt='Ribozymes')
+
+   +pod('Genetically modifying immune cells to target specific molecules')
+      .uk-width-medium-7-10
+         p
+            | As part of its natural function, the immune system makes large numbers of white blood cells, each of which recognizes a particular molecule (or antigen) that represents a threat to the body. Researchers have learned how to isolate an individual&apos;s immune cells and genetically engineer them through gene therapy to recognize a specific antigen, such as a protein on the surface of a cancer cell. When returned to the patient, these modified cells will find and destroy any cells that carry the antigen.
+         p
+            | In an expansion of this technique, the immune cells can be further modified to make a product, such as a drug, toxin, or signal. When placed back into the patient, the immune cells will not only attack the cells that carry the antigen, but also release the disease-fighting product.
+      |
+      .uk-width-medium-3-10

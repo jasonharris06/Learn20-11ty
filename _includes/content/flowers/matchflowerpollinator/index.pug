@@ -1,0 +1,86 @@
+extend /shared/layout
+
+block append head
+    link(rel='stylesheet' href='matching.css')
+
+block content
+    +pageTitle
+    +pod('')
+        .uk-width-medium-5-10
+            p
+                | When a pollinator favors a certain flower type, it is because both partners have traits that work well together. In fact, 
+                | there are often several sets of corresponding traits that reinforce the relationship, bringing pollinators back again and 
+                | again to their favorite flowers.
+        
+        .uk-width-medium-5-10
+            +well
+                p
+                    strong Related Content: 
+                    br
+                    | Visit our 
+                    a(href="https://learn.genetics.utah.edu/content/flowers/flowertraits/") Flower Traits Slideshow
+                    |  to learn more about why pollinators visit certain flowers.
+        
+        .uk-width-medium-5-10
+            p            
+                strong Instructions:
+            p
+                | Look at the flowers and pollinators below. Do you notice any traits that would make a good pair?
+            p
+                | Click on the pollinator and flower titles below to learn more about the pollinators and flowers.
+                | Drag each pollinator to the flower it is most likely to visit.
+        
+        .uk-width-medium-5-10
+            p
+                | Here are a few questions to consider when making your matches:
+                ul
+                    li Can the pollinator reach the flower's nectar or pollen?
+                    li Does the pollinator need a place to land while it feeds?
+                    li Will pollen stick to the pollinator? Does it need to?
+                    li Can the pollinator detect the signals (like color or scent) produced by the flower?
+                    li Will the scent produced by a flower be appealing to the pollinator?                      
+            
+    +pod('')
+        #cards.uk-width-5-10
+            h2
+                a(href="#pollinators" data-uk-modal) Pollinators
+            #pollinators.uk-modal
+                .uk-modal-dialog
+                    a.uk-modal-close.uk-close
+                    h2 Pollinators
+                    br
+                    include ptraits.pug        
+            #cardPile.clearfix
+
+        #cards.uk-width-5-10
+            h2 
+                a(href="#flowers" data-uk-modal) Flowers
+            #flowers.uk-modal
+                .uk-modal-dialog
+                    a.uk-modal-close.uk-close
+                    h2 Flowers
+                    br
+                    include ftraits.pug
+            #cardSlots.clearfix
+
+        #successMessage.modal
+            .modal-content
+                #middle
+                    h2 Congratulations!
+                    br
+                    button(onclick='init()') 
+                        strong Play Again
+        p
+            | In nature, some of these flowers may be visited by several different types of pollinators. This activity shows 
+            | the most common pairs.
+
+    +photocredits
+        p
+            | Hawkmoth: Specimen Collection, Natural History Museum of London
+        p
+            | Honey possum: photo by Don Bradshaw, University of Western Australia
+            
+    block append endscripts
+        script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js") 
+        script(type="text/javascript" src="matchflowerpollinator.js")
+        script(type="text/javascript" src="cardflip.js")

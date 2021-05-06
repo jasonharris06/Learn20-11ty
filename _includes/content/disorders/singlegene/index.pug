@@ -1,0 +1,71 @@
+extends /shared/layout
+block append endscripts
+   script(src="/lib/accordion.js")
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-6-10
+         figure
+            img(src='images/chr-gene-prot.jpg')
+            p A gene codes for a protein, which does a job in the body. The effects of a genetic disorder depend on the protein’s job.
+      .uk-width-medium-4-10
+         p
+            | A single gene disorder is caused by variations (or mutations) in the DNA sequence of a specific gene. The DNA changes affect the product that the gene codes for—usually a protein—causing it to be altered or missing. The features of each disorder are related to the specific gene that is affected and the job that the protein has in the body.
+         p
+            | Some genetic disorders are so serious that children who have them are extremely sick or cannot survive after birth. Others are relatively easy to manage, and with proper care, people who have them have very fulfilling lives. The chances of a good outcome are much higher if the condition is identified soon after birth, or even before. 
+         +well
+            | To learn more about the DNA, genes, proteins, and mutation, visit the Tour of Basics Genetics in the 
+            a(href='/content/basics/') Basic Genetics
+            |  section. 
+   +pod('Single gene disorders can be inherited from parents')
+      .uk-width-medium-4-10
+         p
+            | Because they are caused by specific gene variations, many single-gene disorders run in families. When one or both parents are carriers of a genetic disorder, they have a chance of passing it to their children—even if they themselves are healthy.
+         p
+            | The chance of a person passing a genetic disorder to their children depends on the characteristics of the disease, including the inheritance pattern. 
+         p
+            | If someone knows that a genetic disorder runs in their family, they can have a genetic test to find out if they have disease-causing gene variations. Some people choose to be tested before having children. However, people are not always aware when their families have been affected by a genetic disorder. They may not connect it to a pregnancy loss or a baby being sick, especially if it happened a long time ago.
+         p
+            | In some cases, single gene disorders are caused by new (also called de novo) mutations. These mutations happen during egg or sperm formation in the parents, or soon after egg and sperm come together to form an embryo. In these cases, the parents do not carry the genetic variation in their other cells, and there is little chance that they would have a second child with the same disorder. Still, the child with the disorder can pass the affected gene, and the disorder, to their children. Tracking down the genetic basis in these cases can be challenging, often requiring extensive testing.
+      .uk-width-medium-6-10
+         figure
+            img(src='images/pedigree.jpg')
+            p Some single-gene disorders “run in the family.” A pedigree chart like this can help families and medical professionals recognize inheritance patterns—in this case, X-linked recessive inheritance.
+         +well
+            | To learn more about how single gene disorders are inherited, visit 
+            a(href='/content/disorders/inheritance/') Inheritance Patterns for Single Gene Disorders
+   +pod('Testing for Single Gene Disorders')
+      .uk-width-medium-5-10
+         figure
+            img(src='images/blood_draw.jpg')
+            p Genetic testing for both diagnosis and carrier status is usually done on DNA from a blood sample or a cheek swab.
+      .uk-width-medium-4-10
+         p
+            | For many single-gene disorders, the genetic basis is well understood, and the disease-causing gene variants can be identified with genetic testing. People are tested for two main reasons: to find out if they have a particular genetic disorder, or to find out if they are a carrier.
+      .uk-width-medium-5-10
+         p
+            u Making a diagnosis
+            br
+            | A doctor may order testing for a specific disorder or set of disorders based on a person's symptoms or characteristics. If symptoms tend to appear later in life, a person may wish to be tested when they are younger, especially if they know the disorder runs in their family, and if there is something they can do to prevent or delay resulting medical problems. 
+         p
+            | Many genetic disorders are identified in newborn babies through newborn genetic screening, even before symptoms appear. Many of the newborn screening tests look at chemicals in the blood that are signs of a disorder. A positive screening result is usually followed by genetic testing on a DNA sample.
+         +well
+            h3 Related content
+            a(href='/conent/disorders/counselors') Genetic Counselors
+            br
+            a(href='/content/disorders/screening') What is Newborn Genetic Screening?
+            br
+            a(href='/content/disorders/whatpreimplantation') What is Preimplantation Genetic Testing
+      .uk-width-medium-5-10
+         p
+            u Identifying carrier status
+            br
+            | Genetic testing can also reveal whether a person is a carrier of a genetic disorder. A carrier does not have the disorder themselves, but they have an increased risk of having a child with the disorder.
+         p
+            | Increasingly commonly, even people with no known family history of a genetic disorder learn of their carrier status through genetic testing before they try to have children. Some doctors and genetic counselors recommend specific genetic tests based on their patients' ethnic backgrounds. However, for many reasons, they are becoming more likely to recommend expanded carrier screening—a single test that looks at dozens of genes. And direct-to-consumer genetic testing kits provide some information about carrier status for some of the most common causes of genetic disorders.  
+         p
+            | Carriers of a genetic disorder who wish to have a child can use preimplantation genetic testing to greatly increase their chances of having a healthy baby.
+
+block append endscripts
+   script(src="/lib/slideshow.js")
+   script(src="/lib/slideshow-fx.js")

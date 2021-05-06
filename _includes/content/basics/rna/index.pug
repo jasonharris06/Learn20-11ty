@@ -1,0 +1,36 @@
+extends /shared/layout
+block content
+  +pageTitle
+
+  // Adobe Edge Runtime
+  script(type='text/javascript', charset='utf-8', src='dna_vs_rna_edgePreload.js')
+  style.
+    .edgeLoad-EDGE-838644348 { visibility:hidden; }
+    #stage {line-height: normal}
+  // Adobe Edge Runtime End
+
+  +pod('')
+    .uk-width-1-1.uk-text-center
+      #stage.EDGE-838644348
+  +pod('Structure Leads To Function')
+    .uk-width-medium-6-10
+      figure
+        img.lg-no-shadow(src='images/versatile_rna.jpg', alt='RNA molecule')
+        p
+          | Even though RNA molecules are made from just 4 simple building blocks, RNA
+          | can take on a variety of shapes and carry out many different functions.
+    .uk-width-medium-4-10
+      p
+        | The key to RNA&apos;s versatility is its chemical structure. It&apos;s made from just 4 simple building
+        | blocks, yet RNA can take on a nearly infinite variety of shapes. And its three-dimensional shape
+        | in part determines what an RNA molecule can do.
+      p
+        | Even though RNA is single-stranded (unlike DNA, which is made up of two strands), it can still form
+        | complementary base pairs. Complementary sections within a single strand of RNA can base-pair with each
+        | other, causing the molecule to fold in on itself and form a complex, three-dimensional shape.
+      p
+        | The sequence of bases along the RNA strand determines how it will fold. In this way, the sequence of
+        | bases determines the strand&apos;s three-dimensional shape. Changing the bases will change both the molecule&apos;s
+        | shape and its function. It is this flexibility that makes RNA such a versatile molecule.
+    .uk-width-medium-6-10
+  +bottom-menu("",'sepagosh')

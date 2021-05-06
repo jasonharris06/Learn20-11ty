@@ -1,0 +1,143 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+
+
+   style(type='text/css', media='screen').
+      #flashContent { width:100%; height:100%;margin: auto; }
+
+
+   +pod('')
+      .uk-width-1-1.uk-text-center
+         #flashContent
+            object#Microarray(classid='clsid:d27cdb6e-ae6d-11cf-96b8-444553540000', width='930', height='551', align='middle')
+               param(name='movie', value='Microarray.swf')
+               | &#x9;&#x9;&#x9;&#x9;
+               param(name='quality', value='high')
+               | &#x9;&#x9;&#x9;&#x9;
+               param(name='bgcolor', value='#ffffff')
+               | &#x9;&#x9;&#x9;&#x9;
+               param(name='play', value='true')
+               | &#x9;&#x9;&#x9;&#x9;
+               param(name='loop', value='false')
+               | &#x9;&#x9;&#x9;&#x9;
+               param(name='wmode', value='opaque')
+               | &#x9;&#x9;&#x9;&#x9;
+               param(name='scale', value='noborder')
+               | &#x9;&#x9;&#x9;&#x9;
+               param(name='menu', value='false')
+               | &#x9;&#x9;&#x9;&#x9;
+               param(name='devicefont', value='false')
+               | &#x9;&#x9;&#x9;&#x9;
+               param(name='salign', value='')
+               | &#x9;&#x9;&#x9;&#x9;
+               param(name='allowScriptAccess', value='sameDomain')
+               //if !IE
+               | &#x9;&#x9;&#x9;&#x9;
+               object(type='application/x-shockwave-flash', data='Microarray.swf', width='930', height='551')
+                  param(name='movie', value='Microarray.swf')
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;
+                  param(name='quality', value='high')
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;
+                  param(name='bgcolor', value='#ffffff')
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;
+                  param(name='play', value='true')
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;
+                  param(name='loop', value='false')
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;
+                  param(name='wmode', value='opaque')
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;
+                  param(name='scale', value='noborder')
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;
+                  param(name='menu', value='false')
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;
+                  param(name='devicefont', value='false')
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;
+                  param(name='salign', value='')
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;
+                  param(name='allowScriptAccess', value='sameDomain')
+                  // <![endif]
+                  a(href='http://www.adobe.com/go/getflash')
+                     img(src='http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif', alt='Get Adobe Flash player')
+                  //if !IE
+               // <![endif]
+
+      .uk-width-medium-2-10
+      .uk-width-medium-6-10
+         p
+            | DNA microarray analysis is one of the fastest-growing new technologies in the field of
+            | genetic research. Scientists are using DNA microarrays to investigate everything from cancer
+            | to pest control. Now you can do your own DNA microarray experiment! Here you will use a DNA
+            | microarray to investigate the differences between a healthy cell and a cancer cell.
+      .uk-width-medium-2-10
+
+   +pod('Microarray Analysis')
+      |
+      .uk-width-medium-6-10
+         p
+            | The human genome contains approximately 21,000 genes. At any given moment, each of
+            | our cells has some combination of these genes turned on, and others are turned off.
+            | How do scientists figure out which are on and which are off?
+         | &#x9;&#x9;
+         p
+            | Scientists can answer this question for any cell sample or tissue by gene expression profiling,
+            | using a technique called microarray (pronounced MY-crow-ah-ray) analysis.
+         |
+         p
+            | Microarray analysis involves breaking open a cell, isolating its genetic contents,
+            | identifying all the genes that are turned on in that particular cell, and generating a list of those genes.
+      |
+      .uk-width-medium-4-10
+         +well
+            p DNA microarray analysis is a technique that scientists use to determine whether genes are on or off.
+
+         +well
+            p Scientists know a gene is on in a cell if its mRNA is present.
+   +pod('What is a DNA Microarray?')
+      |
+      .uk-width-medium-6-10
+         p A DNA micorarray allows scientists to perform an experiment on thousands of genes at the same time.
+
+         ul.lg-list
+            li Each spot on a microarray contains multiple identical strands of DNA.
+            li The DNA sequence on each spot is unique.
+            li Each spot represents one gene.
+            li Thousands of spots are arrayed in orderly rows and columns on a solid surface (usually glass).
+            li The precise location and sequence of each spot is recorded in a computer database.
+            li Microarrays can be the size of a microscope slide, or even smaller.
+
+      .uk-width-medium-4-10
+         figure
+            img.lg-no-shadow(src='images/WhatIsMicroarray1.jpg', height='555', width='352', alt='What is a microarray?')
+
+      .uk-width-1-1
+         +well
+            h3 Additional Resources
+
+            ul
+               li
+                  a(href='http://www.affymetrix.com/about_affymetrix/outreach/educator/index.affx', target='_blank') Educator Resources
+                  | &#x9;&#x9;from Affymetrix, a manufacturer of microarrays. Includes, among many
+                  | &#x9;&#x9;other things, photographs, a description of Affymetrix&apos;s unique manufacturing method,
+                  | &#x9;&#x9;and a discussion of ethics and policy issues. You can even order your own free
+                  | &#x9;&#x9;demonstration microarray!
+               | &#x9;&#x9;
+               li
+                  a(href='http://www.agilent.com/about/newsroom/lsca/imagelibrary/images/cag_42_microarray_dna_print.jpg', target='_blank') Photo
+                  |  of a microarray
+                  | &#x9;&#x9;&#x9;manufactured by Agilent Technologies
+               | &#x9;&#x9;
+               li
+                  a(href='http://www.agilent.com/about/newsroom/lsca/imagelibrary/images/cag_48_genome.jpg', target='_blank') Fluorescent image
+                  |  of a microarray manufactured
+                  | &#x9;&#x9;&#x9;by Agilent Technologies
+               | &#x9;&#x9;
+               li
+                  | Find out how DNA microarray analysis is being used to
+                  a(href='http://pcwww.liv.ac.uk/~hranson/page41.html', target='_blank') study insecticide resistance
+                  |  in African
+                  | &#x9;&#x9;&#x9;malaria-carrying mosquitoes.
+
+   +bottom-menu("",'sepagsep')
+   script(src="/ruffle/ruffle.js")

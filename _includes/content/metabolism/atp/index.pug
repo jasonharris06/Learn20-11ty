@@ -1,0 +1,129 @@
+extends /shared/layout
+
+block content
+   +pageTitle
+      
+   +pod('')
+      .uk-width-medium-4-10
+         p.
+            Without ATP, we couldn't form a thought or move a muscle. ATP keeps our nerves firing and our heart beating. It's our body's “energy currency."
+         p.
+            It’s the main energy currency not only in our cells, but in all forms of life on the planet. All cells make it (it doesn't travel from cell to cell), and they use it to power nearly all of their processes.
+            
+         +well 
+            div.
+               ATP stands for adenosine triphosphate
+         
+      .uk-width-medium-6-10
+         img(src="images/atpways.svg" alt="Multiple ways to show ATP")
+         
+   +pod('ATP Holds Energy')
+      .uk-width-medium-4-10
+         p.
+            ATP is like a tiny battery. A rechargeable AA battery is basically a package of energy that can be used to power any number of electronic devices—a remote control, a flashlight, a game controller.
+         p.
+            Similarly, a molecule of ATP holds a little bit of chemical energy, and it can power something within the cell. This single molecule can power a motor protein that makes a muscle cell contract, a transport protein that makes a nerve cell fire, a ribosome (the molecular machine that can build these and other proteins), and much more.
+         p.
+            ATP is often called the cell’s “energy currency.” Like money can buy any item in a store, this one molecule can power almost any process in a cell.
+      
+      .uk-width-medium-6-10
+         figure
+            img.lg-no-shadow(src="images/ATP-battery.jpg" alt="Battery")
+            p Much like a standard battery can power multiple electronic devices, ATP can power many molecular processes.
+      
+      
+   +pod('ATP is Recyclable')
+      .uk-width-medium-4-10
+         p.
+            The cell doesn’t have to make ATP from scratch every time it needs some energy. Like a rechargeable battery, ATP can also be recharged and reused.
+         p.
+            ADP, the “uncharged” version of the molecule, stands for adenosine diphosphate. The word diphosphate indicates that the molecule has 2 phosphate (PO<sub>3</sub>) groups. To “charge” ADP, the cell adds a third phosphate group, converting ADP to ATP. ATP stands for adenosine triphosphate. The word triphosphate indicates that the molecule has 3 phosphate groups. 
+         p.
+            ATP stores energy within the bonds between phosphate groups, especially the second and third. This bond is a source of potential chemical energy, and it’s kind of like a compressed spring. Getting the energy back out requires a protein (or in some cases RNA) that (1) breaks the third phosphate group off and (2) uses the energy released, like when a spring uncoils, to do something: drive a chemical reaction, move part of the protein, or transport something (see below).
+         p.
+            The cell can make and break ATP extremely quickly. A working muscle cell makes and uses about 10 million molecules of ATP every second!
+            
+      .uk-width-medium-6-10
+         figure
+            img(src="images/atpspring.svg" alt="atp spring") 
+            p.uk-text-small The ADP portion of the molecule stays the same. Adding a third phosphate group (phosphorylation) adds energy, like compressing a spring. Removing the phosphate group (hydrolysis) releases energy, like freeing a spring to uncoil.
+      
+   +pod('Top Uses for ATP')
+      .uk-width-medium-10-10
+         
+         ul.uk-tab(data-uk-tab, data-uk-switcher="{connect:'#atp', animation: 'fade'}")
+            li.uk-active 
+               a(href="") Chemical
+            li
+               a(href="") Mechanical
+            li
+               a(href="") Transport
+         ul#atp.uk-switcher
+            li
+               p.
+                  Energy from ATP is used to fuel all manner of chemical reactions, including those required for copying DNA and building proteins. In these reactions, enzymes oversee the transfer of energy from ATP hydrolysis to the formation of another chemical bond.
+               p.
+                  The work that ATP does falls into three general categories: chemical, mechanical, and transport. In other words, the energy from ATP can be used to drive a chemical reaction, move something, or push a molecule from one side of a membrane to another. The biggest users of ATP are listed below. The illustration shows how an enzyme (tRNA synthetase) uses ATP to "charge" a tRNA molecule, attaching an amino acid that will be used for building a protein.
+               p.
+                  Most of our cells steadily make proteins and carry out other repairs as part of their routine maintenance. Some cells, like the ones that make up our skin and the lining of our digestive tract, are actively dividing to replace cells that are lost every day. DNA replication and protein synthesis are especially high in these cells.
+               img(src="images/ATPChemical.svg" alt="ATP Chemical")
+            li
+               p.
+                  ATP powers the “motor” proteins that do the small-scale work of shuttling cargo around inside of cells, as well as the large-scale work of making our muscles contract. The molecular details of muscle contraction are shown below. Motor proteins are one shape when bound to ATP. Hydrolysis of ATP to ADP causes a conformational change—the protein changes shape—that generates a mechanical force.
+               p.
+                  Motor proteins that carry tiny packets of cargo literally walk along the cell’s cytoskeleton, breaking one molecule of ATP with every step. To move our muscles, many thousands of motor proteins myosin work together, breaking many molecules of ATP at a time to generate a remarkable amount of force.
+               img(src="images/atpmech.svg" alt="ATP Mechanical")
+            li
+               p.
+                  ATP-powered “pumps” in brain cells are the human body’s biggest energy users, at least when we’re at rest. These molecular pumps set up the electrochemical gradients that enable neurons to communicate with one another.
+               p.
+                  The sole job of pump proteins is to move molecules from one side of a cell’s membrane to another, against their concentration gradients. There are different kinds of pumps, each of which moves specific ions, such as sodium (Na<sup>+</sup>), potassium (K<sup>+</sup>), or protons (H<sup>+</sup>). A calcium (Ca<sup>++</sup>) pump is shown below. Some pumps move other types of small molecules.
+               img(src="images/ATPTransport.svg" alt="ATP Transport")
+      
+   +pod('Two Ways for Making ATP')
+      .uk-width-medium-4-10
+         p.
+            As our cells oxidize carbon-based molecules from our food, some of the energy held within their chemical bonds is released. Our whole complex metabolic system is arranged to capture some of this energy and put it to work. If ATP is like a battery, then cellular respiration is like a battery charger.
+         p.
+            Our cells have two ways to make ATP: substrate-level phosphorylation and oxidative phosphorylation. Plants have a third. During photosynthesis, they use energy from sunlight to make ATP.
+         h3 Substrate-level Phosphorylation
+         p.
+            This process involves an enzyme (a type of protein) which transfers a phosphate group from a substrate (in this case, a carbon-based molecule from food) to ADP.
+         p.
+            The ATP generated during glycolysis and the citric acid cycle come about in this way, accounting for 4 ATPs per glucose molecule.
+         h3 Oxidative Phosphorylation
+         p.
+            This process generates most of the ATP we use—up to 27 for each molecule of glucose.
+         p.
+            As enzymes break apart the molecules from food, they transfer hydrogen atoms (made of a proton and an electron) to the carrier molecules FAD and NAD. The carriers deliver these protons and electrons to the mitochondrial membrane.
+         p.
+            The movement of electrons along the electron transport chain powers pumps that move protons into the space between the two mitochondrial membranes. The protons then diffuse back across the membrane through ATP synthase, a remarkable molecular machine that uses the energy from proton diffusion to “charge” molecules of ATP.
+      
+      .uk-width-medium-6-10
+         figure
+            img(src="images/ATPSubPhos.svg" alt="oxidative phosphorylation")
+            p.uk-text-small Substrate-level Phosphorylation
+            img(src="images/oxiphos.svg" alt="oxidative phosphorylation")
+            p.uk-text-small Oxidative Phosphorylation
+      
+   +pod('ATP is a Nucleotide')
+      .uk-width-medium-4-10
+         p.
+            ATP not only stores energy, it is one of the building blocks of RNA—along with UTP, CTP, and GTP. Molecular machines inside all cells, called RNA polymerases, link these building blocks together into long chains to make messenger, transfer, ribosomal, and other types of RNA.
+         p.
+            Each nucleotide holds the energy needed to add itself to the growing chain. As RNA is being built (a process called transcription), two phosphates are cleaved off the incoming nucleotide, and the energy from that bond is redirected into forming a new bond with the nucleotide in front of it.
+         p.
+            DNA is built using a similar process, only the building blocks are dATP, dTTP, dCTP, and dGTP. The “d” indicates that the nucleotides contain the sugar deoxyribose instead of ribose (the difference is that deoxyribose has one less oxygen atom).
+         p.
+            Like ATP, GTP can also be used to hold and transfer energy. During the citric acid cycle, for example, GTP acts as an intermediate energy holder, ultimately transferring its third phosphate group to ADP to generate ATP. GTP also powers some of the steps of protein synthesis.
+      
+      .uk-width-medium-6-10
+         figure
+            img(src="images/ATPnucleotide.svg" alt="ATP")
+            
+         +well
+            h3 Related links
+            p 
+               |Learn more about RNA, visit 
+               a(href="/content/molecules/centraldogma/") RNA's Role in the Central Dogma
+               |.

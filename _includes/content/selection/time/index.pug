@@ -1,0 +1,41 @@
+extends /shared/layout
+block append head
+   style.
+      .timeBox { margin-left:20px; background-color:#B4352E; width:880px; }
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-3-4.uk-container-center
+         p.
+            Scroll through the page below to get an idea of the immensity of geologic time. 
+   .lg-section
+      .uk-container.uk-container-center
+         .timeBox(style='background-color:#fff; background-image:url(legend.gif); width:281px; height:71px; margin-bottom:20px;')
+         .timeBox(style='background-color:#DF6079; height:45455px;')
+            img(src='precamTitle2.gif', alt='', width='412', height='347', style='')
+            br
+         .timeBox(style='background-color:#809F73; height:610px;')
+            img(src='cambrianTitle2.gif', alt='', width='880', height='140', style='')
+         .timeBox(style='background-color:#009980; height:507px;')
+            img(src='ordoTitle2.gif', alt='', width='880', height='235', style='')
+         .timeBox(style='background-color:#AFD5C0; height:307px;')
+            img(src='silurianTitle2.gif', alt='', width='880', height='142', style='')
+         .timeBox(style='background-color:#BF925A; height:645px;')
+            img(src='devonianTitle2.gif', alt='', width='880', height='188', style='')
+         .timeBox(style='background-color:#69A3A3; height:684px;')
+            img(src='carboniferousTitle2.gif', alt='', width='880', height='191', style='')
+         .timeBox(style='background-color:#D36247; height:545px;')
+            img(src='permianTitle2.gif', alt='', width='880', height='244', style='')
+         .timeBox(style='background-color:#804E8D; height:584px;')
+            img(src='triassicTitle2.gif', alt='', width='880', height='192', style='')
+         .timeBox(style='background-color:#81C4DD; height:615px;')
+            img(src='jurassicTitle2.gif', alt='', width='880', height='188', style='')
+         .timeBox(style='background-color:#74AB64; height:915px;')
+            img(src='cretaceousTitle2.gif', alt='', width='880', height='193', style='')
+         .timeBox(style='background-color:#EBA270; height:483px;')
+            img(src='paleogeneTitle2.gif', alt='', width='880', height='248', style='')
+         .timeBox(style='background-color:#F7C53E; height:232px;')
+            img(src='neogeneTitle2.gif', alt='', width='880', height='191', style='')
+         .timeBox(style='height:29px; margin-bottom:0px; background-image:url(quaternaryBox.gif);')
+         .timeBox(style='margin-left:19px; background-image:url(quaternary.gif); height:223px; width:884px; margin-bottom:80px;')
+      

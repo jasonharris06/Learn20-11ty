@@ -1,0 +1,96 @@
+extends /shared/layout
+block content
+    +pageTitle
+    +pod('')
+        .uk-width-1-1
+            p
+                | Each of our cells holds billions of letters of DNA. Within this code are tens of thousands of genes that together make up the instructions 
+                | for building a person.
+            p
+                | This massive amount of DNA is divided into smaller chunks called chromosomes. Each chromosome is a single DNA molecule with attached proteins 
+                | called histones. Humans have 46 chromosomes in all. They keep DNA organized, untangled, and accessible to the cellular machinery that reads it.
+            p
+                | When a cell gets ready to divide, it first copies all of its DNA. Then the chromosomes change form&mdash;they condense. As the cell divides, 
+                | condensed chromosomes keep DNA organized and untangled. After cell division, the chromosomes return to their relaxed state. This makes their 
+                | genes accessible once again.
+        
+            .lg-hype
+                +hype(2120, 715, 'WhatAreChromosomes.hyperesources/whatarechromosomes_hype_generated_script.js?65161', 'whatarechromosomes_hype_container')
+
+    +pod('Each Chromosome Has Many Genes')
+        .uk-width-medium-6-10
+            img(src='images/many-genes.jpg')
+        
+        .uk-width-medium-4-10
+            p
+                | The human genome includes 21,000 or so genes, spread out along 3 billion base pairs of DNA. This DNA is distributed among 23 chromosomes, of 
+                | which we have two sets. We inherit one set from each parent.
+            p
+                | Each chromosome includes a single, linear molecule of DNA with its own set of genes. Chromosomes are numbered according to their size, and 
+                | genes are arranged along them in a specific order. So a gene near the tip of the short arm of chromosome 4 in one person will be found in 
+                | the same location in everyone. This means that each of our genes can be mapped to a specific place on a specific chromosome.
+
+    +pod('Genes and Much More')
+        .uk-width-medium-6-10
+            p
+                | A gene is a segment of DNA instructions for building a particular RNA or protein molecule. Genes are very important, and they get a lot of 
+                | attention. Yet they make up just 3% of our genome. Each gene is like an island separated by vast stretches of non-coding DNA&mdash;that is 
+                | DNA that does not code for a product. Some of this DNA holds information about which cells should make proteins, when they should make it, 
+                | and how much they should make. Other segments were left by viruses that infected our ancestors many generations ago. There is some DNA that 
+                | we know is important&mdash;it is conserved between species&mdash;but we are not sure exatly why that is. Some DNA appears to have no function.
+            p
+                | DNA in other organisms is more than just genes too, though the amount of non-coding DNA varies a lot among species. Bacteria have the smallest 
+                | genomes, and around 90% of their DNA codes for RNA or protein. At the other end of the spectrum, some plants and protists have enormous genomes, 
+                | with genes making up as little as 1% of the total DNA.
+
+        .uk-width-medium-4-10
+            img(src='images/chr-coding-noncoding.jpg' alt='coding and non-coding DNA')
+
+    +pod('Chromosomes Vary in Number and Type')
+        .uk-width-medium-6-10
+            figure
+                img(src='images/numbers and types.jpg' alt='numbers and types of chromosomes')
+                p
+                    | Different organisms have different numbers of chromosomes. Organisms that appear more complex do not always have more chromosomes or genes than 
+                    | less-complex ones.
+
+        .uk-width-medium-4-10
+            p
+                | Humans have 23 pairs of chromosomes. The first 22 pairs are called autosomes. The last pair are called sex chromosomes, and they are different between 
+                | males and females. Most females have two X chromosomes (XX), and most males have an X and a Y (XY).
+            p
+                | Most other species have different numbers of chromosome pairs than we do. Species also vary in the number of chromosome sets they have. In some species 
+                | of bees and ants, males have just one copy of every chromosome (they develop from unfertilized eggs), while females have two. Some species of plants 
+                | have four or more copies of each chromosome. Bacteria have just a single chromosome, arranged in a ring.
+            p
+                | Species also differ in how chromosomes specify sex. In birds, the sex chromosomes are called Z and W. Females are ZW and males are ZZ. The tiny roundworm 
+                em C. elegans
+                |  has just one type of sex chromosome called X. Those with one X chromosome (known as XO) become male, and those with two X chromosomes become hermaphrodites, 
+                | meaning they make both eggs and sperm. The platypus has ten sex chromosomes. Females have five pairs of X chromosomes, and males have five X chromosomes 
+                | and five Y chromosomes. Some turtles do not use sex chromosomes at all. The sex of a baby turtle depends on how warm it was during a critical period as it 
+                | developed inside its egg.
+
+    +pod('Proteins Control Access to Genes')
+        .uk-width-medium-6-10
+            p
+                | DNA is covered with proteins called histones. DNA wraps around the histones the way sewing thread wraps around a spool. By wrapping DNA more or less tightly, 
+                | histones control which genes are active (being read to build proteins) and which genes are not.
+            p
+                | When a cell gets ready to divide, additional histones attach to DNA, coiling it even tighter.
+            +well
+                p
+                    | To learn more about how histones can help regulate access to DNA, visit 
+                    a(href='https://learn.genetics.utah.edu/content/epigenetics/intro/') The Epigenome at a Glance
+                    | .
+
+        .uk-width-medium-4-10
+            figure
+                img(src='images/dna-wrap.jpg' alt='DNA wrapping around a histone')
+
+    +references
+        p
+            | Gil, R., &amp; Latorre, A. (2012). Factors behind junk DNA in bacteria. Genes, 3(4), 634-50. 
+        p
+            | Pennisi, E. (2012). ENCODE Project Writes Eulogy for Junk DNA. Science, 337(6099), 1159-1161.
+        p
+            | Shabalina, S. A., &amp; Spiridonov, N. A. (2004). The mammalian transciptome and the function of non-coding DNA sequences. Genome Biology, 5(105).

@@ -1,0 +1,54 @@
+extends /shared/layout
+block content
+   +pageTitle()(teach="gsl")
+   .lg-section
+      .uk-container.uk-container-center
+         .uk-grid
+            .uk-width-medium-4-10
+               h2 Living Factors
+               .lg-index-items
+                  .lg-index-box-text
+                     p.
+                        Great Salt Lake is teeming with life. The organisms that live in and around Great Salt Lake depend on one another and their environment for survival.
+                  +index-item('Great Salt Lake Food Web','interactive explore','foodweb','images/foodweb.jpg')
+                     p Learn about the producers and consumers that make up the Great Salt Lake food web.
+                  +index-item('Brine Shrimp Life Cycle','interactive explore','artemia','images/artemia.jpg')
+                     p.
+                        Brine shrimp are the largest animals that live in Great Salt Lake. This unique organism has several adaptations that help it survive in its extreme environment.
+                  +index-item('Microbes at Work','learn more','microbes','images/microbes.jpg')
+                     p Microbes are everywhere, and they play many important roles in the natural world.
+                  +index-item('Investigating Microbial Diversity: Then and Now','learn more','diversity','images/diversity.jpg')
+                     p.
+                        Microbes are some of the oldest and most diverse live forms on the planet. Read about how scientists study these tiny creatures.
+
+            .uk-width-medium-6-10
+               h2 Non-Living Factors
+               .lg-index-items
+                  .lg-index-box-text
+                     p.
+                        An ecosystem is largely shaped by its physical environment, including factors such as climate, geology, and mineral content. These non-living factors determine which organisms survive and thrive in an ecosystem.
+                  +index-item('Meet the Microenvironments','interactive explore','micro','images/micro.jpg')
+                     p.
+                        Great Salt Lake is divided into a variety of regions, each with its own defining characteristics.
+                  +index-item('Physical Characteristics of Great Salt Lake','learn more','physical_char','images/physical_char.jpg')
+                     p The physical environment in and around Great Salt Lake is varied, dynamic, and often extreme.
+                  +index-item('Water In, Water Out','interactive explore','water','images/water.jpg')
+                     p Lake level and salinity are influenced by how much water flows in and out.
+                  +index-item('Great Salt Lake From Space','explore','space','images/space.jpg')
+                     p See two and a half years of changes compressed into 30 seconds.
+                  +index-item('Monitoring and Studying Great Salt Lake','learn more','monitor','images/monitor.jpg')
+                     p Scientists work to understand human-lake interactions and maximize the lake&apos;s resources.
+                  +index-item('Great Salt Lake Throughout the Year','interactive explore','year','images/year.jpg')
+                     p.
+                        No matter when you visit Great Salt Lake, there&apos;s always something to see. This guide will tell you what to look for in any season.
+                  //- +index-item('Where To Go','interactive map','map','images/map.jpg')
+                  //-    p.
+                  //-       Explore this interactive map to see logistics, directions, and information about several places to visit.
+
+         p
+            a(href="http://teach.genetics.utah.edu/content/gsl/")  Teacher resources 
+            |  — Visit our companion site for wet labs, paper-based activities, scientist lectures, and more.
+
+            br
+
+            +bottom-menu("credits",'westminster')

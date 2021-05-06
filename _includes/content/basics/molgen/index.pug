@@ -1,0 +1,27 @@
+extends /shared/layout
+block append head
+   style.
+      .lg-responsive {
+         max-width: 100%!important;
+         max-height: auto;
+         height: 281px;
+      }
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-small-1-3
+         ul.uk-tab.uk-tab-left(data-uk-tab, data-uk-switcher="{connect:'#dna', animation: 'slide-right'}")
+            li <a href="">Introduction</a>
+            li <a href="">The Four Types of DNA</a>
+            li <a href="">Autosomal DNA</a>
+            li <a href="">X Chromosome DNA</a>
+            li <a href="">Y Chromosome DNA</a>
+            li <a href="">Mitochondrial DNA</a>
+      .uk-width-small-2-3.uk-text-center
+         ul#dna.uk-switcher
+            li: iframe.lg-responsive(src='//player.vimeo.com/video/149068330', width='500', height='281', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+            li: iframe.lg-responsive(src='//player.vimeo.com/video/150930109', width='500', height='281', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+            li: iframe.lg-responsive(src='//player.vimeo.com/video/150936375', width='500', height='281', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+            li: iframe.lg-responsive(src='//player.vimeo.com/video/150940106', width='500', height='281', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+            li: iframe.lg-responsive(src='//player.vimeo.com/video/151049456', width='500', height='281', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+            li: iframe.lg-responsive(src='//player.vimeo.com/video/151051555', width='500', height='281', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)

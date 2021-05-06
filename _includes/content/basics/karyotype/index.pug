@@ -1,0 +1,29 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   script(src='/Scripts/AC_RunActiveContent.js', type='text/javascript')
+
+   +pod('')
+      .uk-width-medium-6-10
+         p.
+            A karyotype is an organized profile of a person&apos;s chromosomes. Two chromosomes specify sex, XX for female and 
+            XY for male.  The rest are arranged in pairs, numbered 1 through 22, from largest to smallest. This arrangement helps
+            scientists quickly identify chromosomal alterations that may result in a genetic disorder.
+         p.
+            To make a karyotype, scientists take a picture of the chromosome from one cell, cut them out, and arrange them using
+            size, banding pattern, and centromere position as guides.
+      .uk-width-medium-4-10
+         +well
+            a(href='karyotype_paper.pdf') View a printable PDF
+            |  of a karyotype
+   +pod('')
+      .uk-width-1-1.uk-text-center
+         script(type='text/javascript').
+            AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','858','height','630','src','karyotype_try_it','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','karyotype_try_it' ); //end AC code
+         noscript
+            p Javascript is required to view this content.
+
+   +bottom-menu('','hhmi')
+
+   script(src="/ruffle/ruffle.js")

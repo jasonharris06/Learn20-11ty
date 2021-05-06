@@ -1,0 +1,26 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-1-1
+         include shirts.pug
+
+   +pod('Uses beyond t-shirts')
+      .uk-width-medium-1-1
+         include uses.pug
+
+   +pod('There are multiple types of cotton')
+      .uk-width-medium-1-1
+         include types.pug
+         br
+      .uk-width-medium-6-10
+         +well
+            h3 Related links
+            | Learn more about what it takes to make a t-shirt:
+            a(href="http://apps.npr.org/tshirt/#/title" target="_blank")  NPR's Planet Money Makes a T-shirt
+
+
+
+   block append endscripts
+      script(src="/lib/slideshow.js")
+      script(src="/lib/slideshow-fx.js")

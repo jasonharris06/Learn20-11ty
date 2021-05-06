@@ -1,0 +1,11 @@
+extends /shared/layout
+block append head
+   link(rel="stylesheet" href="app.css")
+block content
+   +pageTitle
+
+   +pod('')
+      .uk-width-medium-1-1
+         #root
+block append endscripts
+  script(src="app.bundle.js", type='text/javascript', charset='utf-8')

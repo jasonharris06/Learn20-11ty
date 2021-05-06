@@ -1,0 +1,18 @@
+extends /shared/layout
+
+block content
+   +pageTitle()(teach="memory")
+   .lg-section
+      .uk-container.uk-container-center
+         .uk-grid
+            .uk-width-medium-5-10
+               h2  Middle School Evolution
+               .lg-index-items
+                  +index-item('Shape Shifters', 'interactive explore', 'shapeshifters', '/images/placeholder1.jpg')
+                     p Lorem ipsum dolor sit amet. 
+            .uk-width-medium-5-10
+
+         .lg-bottom-menu
+            ul.uk-subnav.uk-subnav-line
+               li 
+                  //- +bottom-menu("credits",'sepaiob')

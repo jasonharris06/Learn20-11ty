@@ -1,0 +1,449 @@
+extends /shared/layout
+block append headscripts
+   link(rel="stylesheet" href="../evo-curriculum.css" type="text/css")
+
+block append endscripts
+   script(src="/lib/accordion.js")
+
+block content
+   +pageTitle
+   .lg-section
+      .uk-container.uk-container-center
+         #guidingLabel
+            div Guiding Question:
+            #guidingQuestion How do the differences in DNA arise that lead to differences in characteristics of organisms?
+         .uk-grid
+            .uk-width-1-1
+               p
+               em Answer: Mutation gives rise to new alleles. Alleles are shuffled during sexual reproduction, increasing genetic variation in a population.
+
+               p
+               |  Following the Common Ancestry module, a natural question is, If organisms evolve from a common ancestor, how do they become so different over time? This module moves from considering the unity of life (in the preceeding Shared Biochemistry and Common Ancestry modules) and begins an explanation of how life diversifies. (
+               em Broadly: Random genetic variation is acted upon by natural selection over many generations, eventually leading to speciation over time.
+               |  ) The focus of this module is on the origins of genetic variation:
+
+               ul
+                  li Mutation gives rise to variations in genes, called alleles.
+                  li During sexual reproduction, allele shuffling generates new allele combinations.
+                  li Mutation and allele shuffling increase variation within a population.
+
+               p In later modules, students will learn how natural selection acts on genetic variation and how speciation occurs.
+
+               p Note: This module contains two shifts in thinking that you may want to make explicit to students where appropriate:
+
+               ol
+                  li We shift from comparing the similarities among organisms to examining what makes them different.
+                  li We look at genetic variation first at the individual level (mutation), then at the population level (sexual reproduction).
+
+               p Argumentation practice in this module:
+
+               ul
+                  li Identifying reasoning that links a given claim and its supporting evidence.
+
+               p
+               |  Use each activity in the sequence listed. Select each activity title for specific learning objectives (
+               em listed in italics
+               | ), implementation instructions, links, teacher guides, and downloads.
+               br
+
+               .subheader.title Introduction
+               .uk-accordion(data-uk-accordion={collapse: false, showfirst: false})
+                  .lg-accordian-container
+                     .uk-accordion-title Canine Similarities and Differences
+                     .uk-accordion-content
+                        .uk-grid
+                           .uk-width-medium-1-2.uk-width-small-1
+                              .lg-content-header Description
+                              p
+                              em There are similarities and differences in traits among related species, within populations, and between individuals.
+
+                              p This introductory slide presentation is intended to stimulate a shift in thinking about similarities among living things to noting their differences. It depicts increasingly specific levels of classification: canid species, domestic dog breeds, and individual Dalmatians (a breed of dog). The presentation concludes by introducing the idea that variations in genes underlie differences in traits.
+
+                              p As you project this presentation to the whole class, pause between slides and have students write out similarities and differences on a “T” diagram for each level of classification. You may also generate the T diagram as a whole class, or discuss similarities and differences rather than writing them out.
+
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Estimated Time
+                              p 10 minutes
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Materials Needed
+                              p Computer or tablet, projector, blank paper
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Downloads &amp; Links
+                              p
+                                 a(href="/content/evo/canine/" target="_blank") Canine Similarities and Differences
+
+                  .subheader.question How do variations in DNA arise?
+                  .lg-accordian-container
+                     .uk-accordion-title What is Mutation?
+                     .uk-accordion-content
+                        .uk-grid
+                           .uk-width-medium-1-2.uk-width-small-1
+                              .lg-content-header Description
+                              p
+                                 em Mutation is a natural process that generates variation in DNA sequences
+                              p This brief video introduces mutation at the DNA level. Use this video to introduce mutation as the source of variation in genes. The next two activities will explore the mechanism and result of mutation in further detail.
+                              p You may wish to review the ideas in "Mutation Generates New Alleles", just under the video.
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Estimated Time
+                              p 5 minutes
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Materials Needed
+                              p Internet access, projector
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Downloads &amp; Links
+                              p
+                                 a(href="/content/basics/mutation" target="_blank") What is Mutation?
+                              p
+                                 a(href="dna-gene-allele.jpg" target="_blank") DNA, gene, allele infographic
+
+                     .uk-accordion-title Mutate a DNA Sequence
+                     .uk-accordion-content
+                        .uk-grid
+                           .uk-width-medium-1-2.uk-width-small-1
+                              .lg-content-header Description
+                              p
+                                 em During DNA replication, occasional errors change DNA sequences. This process is called mutation.
+                              p
+                                 em Changes in DNA sequences can lead to changes in proteins.
+
+                              p Begin this activity by reviewing the following:
+                              ul
+                                 li DNA replication follows base-paring rules: A-T, C-G
+                                 li Sometimes during DNA replication, a base is inserted, deleted, or substituted with a different one, changing the DNA sequence of a gene.
+                                 li Changes in the DNA sequence of a gene can lead to changes in the protein it codes for.
+
+                              p Using a paper model, students make a mutation of their choice (substitution, insertion, or deletion) in a gene during DNA replication. Then they transcribe and translate the mutated sequence to reveal the resulting amino acid sequence.
+
+                              p After completing the activity, students learn about the example gene and protein—Human Leukocyte Antigen (HLA-B)—including known variants.
+
+                              p
+                              |  Notes:
+                              br
+                              |  As in reality, the mutations students make are random. There will be variation in the resulting amino acid sequence.
+
+                              p Students may be tempted to skip using the “molecular machinery” (ribosome) in this model. Encourage them to use it as a visual reminder of where proteins are assembled.
+
+                              p You may wish to remind students that only mutations in germ cells (eggs or sperm) can be passed to offspring.  These mutations can generate new alleles that can pass from parent to offspring indefinetely.
+
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Estimated Time
+                              p 30-40 minutes
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Materials Needed
+                              p Copies, scissors, tape
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Downloads &amp; Links
+                              p Make one copy per student or pair:<br>
+                                 ul
+                                    li
+                                       a(href="MutationInstructuctions_16-10-18.pdf" target="_blank") Instructions 10/18/16
+                                    li
+                                       a(href="MutationCutouts_16-10-11.pdf" target="_blank") Cut Outs 10/11/16
+                              p
+                                 a(href="HumanHLA-B_16-10-11.pdf" target="_blank") Protein and variant information 10/11/16<br>
+                                 | Print out or project to the class.
+
+                     .uk-accordion-title The Outcome of Mutation
+                     .uk-accordion-content
+                        .uk-grid
+                           .uk-width-medium-1-2.uk-width-small-1
+                              .lg-content-header Description
+                              p
+                                 em Variations in DNA sequences lead to variations in proteins, which lead to variations in traits.
+                              p How does a difference in a gene’s DNA sequence lead to a difference in an observable trait? This piece explores 8 real examples of small differences in DNA that lead to remarkably different traits. As the information about each example is somewhat more detailed than required here, project this to the whole class and summarize a handful of examples (cheat sheet provided at right).
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Estimated Time
+                              p 10-15 minutes
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Materials Needed
+                              p computer or tablet, projector
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Downloads &amp; Links
+                              p
+                                 a(href="/content/basics/outcomes" target="_blank") Outcome of Mutation
+                              p
+                                 a(href="outcome of mutation_16-11-22.pdf" target="_blank") Outcome of Mutation Cheat Sheet 11/22/16
+
+                     .uk-accordion-title Mutation Frequency
+                     .uk-accordion-content
+                        .uk-grid
+                           .uk-width-medium-1-2.uk-width-small-1
+                              .lg-content-header Description
+                              p
+                                 em Mutation frequency can be calculated.
+                              p
+                                 em Only when it happens in gametes can mutation generate new alleles that can be passed to offspring.
+
+                              p This worksheet presents two examples and walks through the calculations for estimating how frequently mutations should occur in two populations.
+
+                              p For the first example, you may walk through it as a class, or ask students to do the calculations independently.
+
+                              p The second example is optional.  Use it if you and your students are already comfortable with scientific notation.
+
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Estimated Time
+                              p 20 minutes
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Materials Needed
+                              p copies
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Downloads &amp; Links
+                              p
+                                 a(href="mutation-frequency_17-01-30.pdf" target="_blank") Mutation Frequency 01/30/17
+
+                              p
+                                 a(href="mutation-frequency_key_17-05-19.pdf" target="_blank") Mutation Frequency Key 05/19/17
+
+
+                  .subheader.question How does sexual reproduction contribute to variation in a population?
+                  .lg-accordian-container
+                     .uk-accordion-title
+                        span What is Inheritance?
+                        .computer.optional
+                           svg
+                              use(xlink:href="../images/computer.svg#computer")
+                     .uk-accordion-content
+                        .uk-grid
+                           .uk-width-medium-1-2.uk-width-small-1
+                              .lg-content-header Description
+                              p
+                                 em During reproduction, genetic information [DNA] passes from parent to offspring.
+                              p
+                                 em During sexual reproduction, individuals inherit two copies of each gene, one from each parent.
+                              p
+                                 em Sexual reproduction contributes to genetic variation.
+
+                              p At this point in the sequence, we’ve explored how variations in genes (alleles) arise through mutation at the individual level. Here we begin to look at genetic variation in populations by examining how sexual reproduction “shuffles” existing alleles, increasing variation within a group. Highlight this shift in focus for your students.
+
+                              p This introductory video provides a very general overview of asexual and sexual reproduction and how sexual reproduction contributes to genetic variation. Subsequent activities will focus on allele shuffling in further detail.
+
+                              p Project to the whole class or have students watch individually.
+
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Estimated Time
+                              p 5 minutes
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Materials Needed
+                              p Internet access
+                              p Projector if viewing as a class
+                              p Headphones if students explore
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Downloads &amp; Links
+                              p
+                                 a(href="/content/basics/inheritance" target="_blank") What is Inheritance?
+
+                     .uk-accordion-title
+                        span Allele Shuffling
+                        .computer.optional
+                           svg
+                              use(xlink:href="../images/computer.svg#computer")
+                     .uk-accordion-content
+                        .uk-grid
+                           .uk-width-medium-1-2.uk-width-small-1
+                              .lg-content-header Description
+                              p
+                                 em Variations in the DNA sequences of genes are called alleles.
+                              p
+                                 em Alleles are shuffled during sexual reproduction (recombination, independent assortment, and fertilization).
+                              p
+                                 em Allele shuffling during sexual reproduction contributes to genetic variation in a population.
+
+                              p This video offers a more detailed look at how alleles are shuffled during sexual reproduction. It highlights how recombination, gamete formation (independent assortment), and random pairing of gametes each contribute to genetic and phenotypic variation.
+
+                              p Project to the whole class or have students view individually.
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Estimated Time
+                              p 10 minutes
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Materials Needed
+                              p Computer or tablet,
+                              p Projector if viewing as a class
+                              p Headphones if students explore
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Downloads &amp; Links
+                              p
+                                 a(href="../heredity/allele/" target="_blank") Allele Shuffling Video
+
+                     .uk-accordion-title Build-A-Bird
+                     .uk-accordion-content
+                        .uk-grid
+                           .uk-width-medium-1-2.uk-width-small-1
+                              .lg-content-header Description
+                              p
+                                 em Variations in the DNA sequences of genes are called alleles.
+                              p
+                                 em Alleles are shuffled during sexual reproduction (recombination, independent assortment, and random fertilization).
+                              p
+                                 em Allele shuffling during sexual reproduction contributes to genetic variation in a population.
+
+                              p This paper model of sexual reproduction uses real pigeon traits to demonstrate how two parents can produce highly varied offspring. Students recombine parental chromosomes, make gametes, then randomly combine two gametes. Finally, they decode the resulting allele combinations to draw the traits of a pigeon offspring.
+
+                              p Note: For simplicity, we’ve placed alleles on one chromosome.
+
+                              p After students complete their pigeons, hang them (along with the gametes they used to make them) all on a large wall space or white board. Discuss the following:
+
+                              Ul
+                                 li Where the alleles came from in the first place (answer: in a previous geneation, there was a mutation in a reproductive cell)
+                                 li How allele “shuffling” during sexual reproduction contributes to genetic and phenotypic variation in offspring
+                                 li The amount of genetic and phenotypic variation you see in the offspring from just two pigeons
+
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Estimated Time
+                              p 45 minutes
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Materials Needed
+                              p Copies, scissors, tape, colored pencils
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Downloads &amp; Links
+                              p
+                                 a(href="Build-a-Bird_17-03-29.pdf" target="_blank") Student pages 03/29/2017<br>
+                                 | Make one copy per student.
+                              p
+                                 a(href="PigeonChromosomes_16-10-10.pdf" target="_blank") Chromosome cut-outs 10/10/16
+                              p
+                                 a(href="/content/pigeons" target="_blank") More information about pigeon traits (optional)
+
+                     .uk-accordion-title Genetic Variation
+                     .uk-accordion-content
+                        .uk-grid
+                           .uk-width-medium-1-2.uk-width-small-1
+                              .lg-content-header Description
+                              p
+                                 em DNA variations that arise through mutation can be beneficial, harmful, or neutral (to the organism).
+                                 em DNA variations that decrease viability or reproduction are not propagated, so they are eliminated from the population.
+                                 em Most DNA variations have no effect on viability or reproduction, and through random chance many are maintained in the population.
+
+                              p This video highlights the context-dependency of harmful, helpful, and neutral genetic variations. A common misconception is that all mutations and their resulting traits are “bad.” After viewing this video, emphasize to your students that whether a variation is harmful, helpful, or neutral depends on the circumstances in which an organism is living. Take a moment to underscore how genetic variation contributes to a population’s resiliency.
+
+                              p Project to the whole class and discuss.
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Estimated Time
+                              p 5 minutes
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Materials Needed
+                              p Computer or tablet, projector
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Downloads &amp; Links
+                              p
+                                 a(href="../heredity/variation/" target="_blank") Genetic Variation Video
+
+                     .subheader.argumentation Argumentation
+                     .uk-accordion-title Identifying Reasoning
+                     .uk-accordion-content
+                        .uk-grid
+                           .uk-width-medium-1-2.uk-width-small-1
+                              .lg-content-header Description
+                              p
+                                 em (Argumentation) In a scientific argument, reasoning is the justification for why the evidence supports the claim; it contains logic and relevant science ideas.
+                              p
+                                 em (Argumentation practice) Identify reasoning that links a given claim and its supporting evidence.
+
+                              p Next Argumentation practice (Natural Selection):
+
+                              p Students generate a claim from evidence and write a scientific argument.
+
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Estimated Time
+                              p 20 minutes
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Materials Needed
+                              p copies
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Downloads &amp; Links
+                              p
+                                 a(href="identifying-reasoning_170208.pdf" target="_blank") Identifying Appropriate Reasoning 02/08/17<br>
+                                 | Make one copy per student.
+
+                              p
+                                 a(href="identifying-reasoning_key_170208.pdf" target="_blank") Identifying Appropriate Reasoning Key 02/08/17
+
+                     .subheader.title Assessment
+                     .uk-accordion-title
+                        span Explaining Genetic Variation in Populations
+                        .computer.optional
+                           svg
+                              use(xlink:href="../images/computer.svg#computer")
+                     .uk-accordion-content
+                        .uk-grid
+                           .uk-width-medium-1-2.uk-width-small-1
+                              .lg-content-header Description
+
+                              p Review the science ideas you have covered in this module:
+
+                              ul
+                                 li Mutation gives rise to variations in genes, called alleles.
+                                 li During sexual reproduction, allele shuffling generates new allele combinations.
+                                 li Mutation and allele shuffling increase variation within a population.
+
+                              p Option A: If you are short on time, have students complete the Heredity Quiz.
+
+                              p Option B: If you have more time, have students complete the following sense-making activity:
+
+                              p According to NGSS, “models” are tools that represent ideas, explanations, and relationships. Models can take any form, including written explanations, drawings (with labels), PowerPoint presentations, posters, etc.
+
+                              p Instruct your students to create a “model” of your choice that addresses the following prompt:
+
+                              p Communicate how mutation and reproduction contribute to genetic variation within a population.
+
+                              ol
+                                 li Choose the Dalmatian breed of dogs, a population of pigeons, or your favorite example.
+                                 li Include answers to the following questions:
+                                 ol(type="a")
+                                   li How does mutation make new variations in genes (or alleles)?
+                                   li How does an allele end up in multiple individuals?
+                                   li How does reproduction (including recombination) generate individuals with different combinations of alleles?
+
+                              p
+                              | Tip: Students may use cut-outs from
+                              a(href="MutationCutouts_16-10-11.pdf" target="_blank")  Mutate a DNA Sequence
+                              |  and
+                              a(href="PigeonChromosomes_16-10-10.pdf" target="_blank")  Build-A-Bird
+                              |  when constructing their explanations.
+
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Estimated Time
+                              p 45 minutes
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Materials Needed
+                              p Varies
+                              p.uk-visible-small
+                           .uk-width-medium-1-6.uk-width-small-1
+                              .lg-content-header Downloads &amp; Links
+                              p
+                                 a(href="Explaining Genetic Variation in a Population Rubric.docx") Grading rubric 09/29/16
+                              p
+                                 a(href="dna-gene-allele.jpg" target="_blank") DNA, gene, allele infographic 02/10/17
+                              p
+                                 a(href="Heredity Quiz and key_2017-02-13.docx" target="_blank") Heredity quiz and key (Word file) 02/13/17

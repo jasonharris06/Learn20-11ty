@@ -1,0 +1,333 @@
+mixin pod(podtitle)
+  if attributes.podtype == 'no-border'
+    article.lg-pod.lg-pod-no-border.lg-section
+      unless podtitle == ''
+        .lg-section.lg-pod-title
+          .uk-container.uk-container-center
+            h2 !{podtitle}
+      .uk-container.uk-container-center
+        div(data-uk-grid-margin).lg-pod-body.uk-grid
+          block
+  else
+    article.lg-pod.lg-section
+      unless podtitle == ''
+        .lg-section.lg-pod-title
+          .uk-container.uk-container-center
+            h2 !{podtitle}
+      .uk-container.uk-container-center
+        div(data-uk-grid-margin).lg-pod-body.uk-grid
+          block
+mixin minipod(podtitle)
+  article.lg-minipod
+    unless podtitle == ''
+      h3.lg-minipod-title #{podtitle}
+    div.lg-minipod-body.uk-grid
+      block
+mixin pageTitle
+  .lg-section.lg-page-title
+    .uk-container.uk-container-center
+      .uk-flex(style="justify-content:space-between;flex-wrap:wrap;")
+       h1 #{page.title}
+       if attributes.teach=='opioids'
+        a.lg-button-primary(href='https://teach.genetics.utah.edu/beta/' + attributes.teach)
+          div View Teach.Genetics for Classroom Materials
+       else if attributes.teach!=undefined
+        a.lg-button-primary(href='https://teach.genetics.utah.edu/content/' + attributes.teach)
+          div View Teach.Genetics for Classroom Materials
+mixin oldFlash(iName, whenReady)    
+  .uk-width-1-1
+    p.uk-text-left
+      i Where is #{iName}?<br>
+      strong
+        small Our #{iName} interactive was built using Adobe Flash which is no longer supported in modern web browsers. We are actively converting our old Flash pieces into new formats that will be supported long into the future. We hope to have #{iName} back online in #{whenReady}.
+   
+
+mixin index-item(title, badgeText, link, image)
+   a.lg-index-item(href=link, target=attributes.target)
+    case badgeText
+      when 'explore'
+       .uk-panel-badge.uk-badge.green #{badgeText}
+      when 'interactive explore'
+       .uk-panel-badge.uk-badge.redish #{badgeText}
+      when 'learn more'
+       .uk-panel-badge.uk-badge.blue #{badgeText}
+      when 'paper'
+       .uk-panel-badge.uk-badge.gray #{badgeText}
+      when 'worksheet'
+       .uk-panel-badge.uk-badge.gray #{badgeText}
+      when 'video'
+       .uk-panel-badge.uk-badge.gold #{badgeText}
+      when 'album'
+       .uk-panel-badge.uk-badge.gold #{badgeText}
+      when 'tour'
+       .uk-panel-badge.uk-badge.blue #{badgeText}
+      when 'slideshow'
+       .uk-panel-badge.uk-badge.gold #{badgeText}
+      when 'pdf'
+       .uk-panel-badge.uk-badge.gray #{badgeText}
+      when 'external'
+       .uk-panel-badge.uk-badge.gray #{badgeText}
+      default
+       .uk-panel-badge.uk-badge.gray #{badgeText}
+    .lg-index-image(style="background-image: url(" + image + ")")
+    .lg-index-title !{title}
+    block
+mixin flash(src, w, h, constrain)
+  - constrain = constrain || false;
+  - aspect = ((h/w)*100).toFixed(2);
+  - outerStyle = "margin:auto;";
+  - if(constrain) outerStyle += " max-width:"+w+"px;";
+    .uk-width-1-1.uk-text-center
+      div(style=outerStyle)
+        div(style="padding-top:"+aspect+"%; position:relative; overflow:hidden;")
+          object(type='application/x-shockwave-flash', data=src, style="position:absolute; top:0; left:0;" width='100%', height='100%')
+            param(name='quality', value='high')
+            param(name='scale', value='default')
+            param(name='wmode', value='opaque')
+mixin ruffle(w, h, swfPath, containerId, maxWidth)
+  - containerId = containerId || "ruffle-container"
+  - maxWidth = maxWidth || "100%"
+  - var aspect = ((h/w)*100).toFixed(2);
+  div(style="max-width:"+maxWidth+"; margin:auto")
+    div(style="padding-top:"+aspect+"%; position:relative; overflow:hidden;")
+      .uk-width-1-1(id=containerId style="height:100%; position:absolute; top:0; left: 0")
+        script(type='text/javascript').
+          window.RufflePlayer = window.RufflePlayer || {};
+          window.addEventListener("load", (event) => {
+            const ruffle = window.RufflePlayer.newest();
+            const player = ruffle.createPlayer();
+            const container = document.getElementById("#{containerId}");
+            container.appendChild(player);
+            player.setAttribute("width", "100%");
+            player.setAttribute("height", "100%");
+            player.load("#{swfPath}");
+          });
+        block
+mixin vimeo(vimeoNumber, w, h)
+  - w = w || '1920';
+  - h = h || '1080';
+  .uk-width-1-1.uk-text-center
+    iframe.uk-responsive-width(src='https://player.vimeo.com/video/' + vimeoNumber, width=w, height=h, frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+    block
+mixin hype(w, h, scriptSrc, hypeId, containerId, outerContainerId)
+  - var outerContainerId = outerContainerId || 'hypeContainer';
+  - var containerId = containerId || 'controlledWidth';
+  - var aspect = ((h/w)*100).toFixed(2);
+  div(id=outerContainerId style="padding-top:"+aspect+"%; position:relative; overflow:hidden;")
+    .uk-width-1-1(id=containerId style="position:absolute; top:0;")
+      div(id=hypeId style="width: "+ w +"px; height: "+ h +"px; position: relative; overflow: hidden; transform-origin: top left;")
+        script(type='text/javascript', charset='utf-8', src=scriptSrc)
+        script.
+          function callback(c, h) {
+            return function() {
+              var pad = parseInt(window.getComputedStyle(c).paddingLeft);
+              var newScale = (c.offsetWidth - pad) / "#{w}";
+              h.style.transform = "scale(" + newScale + "," + newScale + ")";
+            }
+          }
+
+          var container = document.getElementById("#{containerId}");
+          var hype = document.getElementById("#{hypeId}");
+          var cb = callback(container, hype);
+          cb();
+          window.addEventListener('resize', cb);
+        block
+mixin well
+  .uk-panel.uk-panel-box.lg-well
+    block
+mixin references
+  .lg-section
+    .uk-container.uk-container-center
+      a(href="#references" data-uk-modal) References
+      #references.uk-modal
+        .uk-modal-dialog
+          a.uk-modal-close.uk-close
+          h2 References
+          block
+mixin credits
+  .lg-section
+    .uk-container.uk-container-center
+      a(href="#credits" data-uk-modal) Credits
+      #credits.uk-modal
+        .uk-modal-dialog
+          a.uk-modal-close.uk-close
+          h1 Credits
+          block
+mixin imagecredits
+  .lg-section
+    .uk-container.uk-container-center
+      a(href="#imagecredits" data-uk-modal) Image Credits
+      #imagecredits.uk-modal
+        .uk-modal-dialog
+          a.uk-modal-close.uk-close
+          h2 Image Credits
+          block
+mixin photocredits
+  .lg-section
+    .uk-container.uk-container-center
+      a(data-uk-toggle="{target:'.togdiv', animation:'uk-animation-slide-bottom'}") Photo Credits
+      .togdiv.uk-hidden
+        .uk-text-small
+          block
+mixin miscon(misconception,reality)
+  .uk-panel.uk-panel-box.lg-miscon-box
+    .lg-miscon-text
+      i.uk-icon-thumbs-down
+      span &nbsp;MISCONCEPTION
+    .lg-miscon-body !{misconception}
+    br
+    .lg-miscon-text
+      i.uk-icon-thumbs-up
+      span &nbsp;REALITY
+    .lg-miscon-body !{reality}
+mixin toggle(linktext)
+  a(data-uk-toggle="{target:'.togdiv',animation:'uk-animation-slide-left'}") #{linktext}
+  .togdiv.uk-hidden
+    block
+mixin bottom-menu(credits,funding)
+  .lg-section
+    .uk-container.uk-container-center
+      .lg-bottom-menu
+        ul.uk-subnav.uk-subnav-line
+          unless credits == ''
+            li
+              a(href=credits) Credits
+          unless funding == ''
+            li
+              +funding(funding)
+mixin funding(funder)
+  a(href="#funding" data-uk-modal) Funding
+  #funding.uk-modal
+    .uk-modal-dialog
+      a.uk-modal-close.uk-close
+      case funder
+        when 'sepaiob'
+          .lg-funding
+            .lg-funding-logo
+              img(src="/images/logos/sepalogo.png")
+            p Supported by a Science Education Partnership Award (SEPA) Grant No. R25OD011129.
+            p The contents provided here are solely the responsibility of the authors and do not necessarily represent the official views of NIH.
+        when 'sepagsep'
+          .lg-funding
+            .lg-funding-logo
+              img(src="/images/logos/sepalogo.png")
+            p Supported by a Science Education Partnership Award (SEPA) Grant No. R25RR023288 from the National Center for Research Resources.
+            p The contents provided here are solely the responsibility of the authors and do not necessarily represent the official views of NIH.
+        when 'sepagosh'
+          .lg-funding
+            .lg-funding-logo
+              img(src="/images/logos/sepalogo.png")
+            p This work was supported by Science Education Partnership Awards (Nos. R25RR023288 and 1R25GM021903) from the National Institute of General Medical Sciences of the National Institutes of Health.
+            p The contents provided here are solely the responsibility of the authors and do not necessarily represent the official views of NIH.
+        when 'sepanigms'
+          .lg-funding
+            .lg-funding-logo
+              img(src="/images/logos/sepalogo.png")
+            p This work was supported by a Science Education Partnership Award (1R25GM021903) from the National Institute of General Medical Sciences of the National Institutes of Health. The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health
+        when 'sedapa'
+          .lg-funding
+            .lg-funding-logo
+              img(src="/images/logos/sedapa.png")
+              img(src="/images/logos/utbod.png")
+            p The content here is based upon work funded by the Utah State Board of Education (2018/19) and a Science Education Drug Abuse Partnership Award (SEDAPA), from The National Institute on Drug Abuse, National Institutes of Health; Grant Number R25DA15461.
+            p The contents provided here are solely the responsibility of the authors and do not necessarily represent the official views of the funders.
+        when 'sedapasenses'
+          .lg-funding
+            .lg-funding-logo
+              img(src="/images/logos/sedapa.png")
+            p The project was supported by Grant Number R25DA033031 from the National Institute On Drug Abuse. The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institute On Drug Abuse or the National Institutes of Health.
+        when 'sepametabolism'
+          .lg-funding
+            .lg-funding-logo
+              img(src="/images/logos/sepalogo.png")
+            p Metabolism: From Food to Fuel was a collaborative project between The Genetic Science Learning Center at The University of Utah, a group of expert scientists, and a cohort of experienced, talented master teachers from around the United States. This work was supported by a Science Education Partnership Award, sponsored by the National Institutes of Health. Award number R25OD011129.
+        when 'hhmi'
+          .lg-funding
+            .lg-funding-logo
+              img(src="/images/logos/hhmilogo.jpg")
+            p Funding provided by grant 51006109 from the Howard Hughes Medical Institute, Precollege Science Education Initiative for Biomedical Research.
+        when 'smgf'
+          .lg-funding
+            .lg-funding-logo
+              img(src="/images/logos/hhmilogo.jpg")
+            p Funding provided by grant 51006109 from the Howard Hughes Medical Institute, Precollege Science Education Initiative for Biomedical Research.
+        when 'burton'
+          .lg-funding
+            p Funding provided by a gift from the R. Harold Burton Foundation.
+        when 'westminster'
+          .lg-funding
+            .lg-funding-logo
+              img(src="/images/logos/westminster.gif")
+            p Funded by the Great Salt Lake Institute at Westminster College
+        when 'nbs'
+          .lg-funding
+            p.
+              Funded by grant R01HG006266 from the NIH Eunice Kennedy Shriver National Institute of Child Health and Human
+              Development, and the NIH National Human Genome Research Institute, both part of the National Institutes of
+              Health. The contents provided here are solely the responsibility of the authors and do not necessarily
+              represent the official views of NIH.
+        when 'uuph'
+          .lg-funding
+            p.
+              The Precision Medicine module was funded by the Program in Personalized Health at the University of Utah.
+        when 'nsf'
+          .lg-funding
+            .lg-funding-logo
+              img(src="/images/logos/nsf.png")
+            p This material is based upon work supported by the National Science Foundation under Grant No. DRL-1418136.
+            p Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+        when 'nsf-cotton'
+          .lg-funding
+            .lg-funding-logo
+              img(src="/images/logos/nsf.png")
+            p This material is based upon work supported by the National Science Foundation under Program Award #1339412.
+            p Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+            .lg-funding-logo
+              img(src="/images/logos/cilogo.png")
+            p Additional support provided by Cotton Incorporated.
+        when 'nsf-flowers'
+          .lg-funding
+            .lg-funding-logo
+              img(src="/images/logos/nsf.png")
+            p This material is based upon work supported by the National Science Foundation under Program Award #1558083.
+            p Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation. 
+        when 'nsf-mites'
+          .lg-funding
+            .lg-funding-logo
+              img(src="/images/logos/nsf.png")
+            p This material is based upon work supported by the National Science Foundation under Program Awards: #1457346, “Evolutionary genetics of a cosmopolitan generalist herbivore”; and #1444449; “Genomics of Resistance to Mite Herbivores Associated with Drought Stress in Cereals.”
+            p Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+        when 'nsf-evolution'
+          .lg-funding
+            .lg-funding-logo
+              img(src="/images/logos/nsf.png")
+            p This material is based upon work supported by the National Science Foundation under Grant Nos. DRL-1222869 and DRL-1418136.
+            p Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+        when 'nsf-philosophy'
+          .lg-funding
+            .lg-funding-logo
+              img(src="/images/logos/nsf.png")
+              br
+              img(src="/images/logos/uphilo.png" width="50%")
+              img(src="/images/logos/philbio.png" width="50%")
+            p This material is based upon work supported by the National Science Foundation under Program Award #1557117, "Evolution and the Levels of Lineage"; the University of Utah Department of Philosophy; and the University of Utah Philosophy of Biology Lab.
+            p Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the funders.
+        when 'niaidmicrobiome'
+          .lg-funding
+            .lg-funding-logo
+              img(src="/images/logos/niaid.gif")
+            p This work was supported by an award from the National Institute of Allergy and Infectious Diseases, one of the National Institutes of Health. Grant number R25AI095212
+        when 'pigeonshapiro'
+          .lg-funding
+            .lg-funding-logo
+            p Pigeon Breeding: Genetics at Work was a collaborative project between The Genetic Science Learning Center and Associate Professor of Biology Michael D. Shapiro, PhD, at The University of Utah. This work was supported in part by a Career Award from the National Science Foundation, DEB-1149160.
+        when 'nsf-model'
+          .lg-funding
+            .lg-funding-logo
+              img(src="/images/logos/water_logos.jpg")
+            p This work was supported by awards from the National Science Foundation to both the CI-Water Project: A Utah-Wyoming Cyberinfrastructure Water Modeling Collaboration (EPS-1135482) and iUtah: innovative Urban Transitions and Aridregion Hydro-sustainability (IIA-1208732). Both projects are NSF EPSCoR (Experimental Program to Stimulate Competitive Research)​ grants for Utah.
+        when 'qmul'
+          .lg-funding
+            .lg-funding-logo
+              img(src="/images/logos/qmul_logo.jpg")
+            p Supported by the Queen Mary University of London Westfield Fund for Enhancing the Student Experience.

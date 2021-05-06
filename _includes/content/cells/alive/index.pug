@@ -1,0 +1,34 @@
+extends /shared/layout
+block append headscripts
+  style.
+    #container {
+      background: #333;
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    #aspect {
+      /* padding-top: 56.25%; */
+      padding-top: 75%;
+      position: relative;
+    }
+    #root {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      touch-action: none;
+    }
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-1-1
+        #container
+          #aspect
+            #root
+
+block append endscripts
+  script(src='./js/app.bundle.js', type='text/javascript', charset='utf-8')

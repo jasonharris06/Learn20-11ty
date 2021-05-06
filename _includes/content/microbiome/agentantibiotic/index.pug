@@ -1,0 +1,86 @@
+extends /shared/layout
+block headscripts
+  style.
+    .progress {
+      width: 70%;
+      height: 20px;
+      position: absolute;
+      top: 50%;
+      left: 15%;
+      padding: 2px;
+      border: 1px solid #fff;
+    }
+    .full {
+      background: white;
+      height: 100%;
+    }
+    #playButton {
+      display: none;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      pointer-events: 'none';
+      transition: opacity 0.33s;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+    }
+    #playIcon {
+      width: 0;
+      height: 0;
+      border-top: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+      border-left: 50px solid #fff;
+    }
+
+block content
+  +pageTitle
+
+  +pod('')
+    .uk-width-1-1(style="position: relative;")
+      div(id="gameContainer" style="width: 100%; padding-top:56.25%")
+      div(id="playButton")
+        div(id="playIcon")
+
+
+  +pod('Disclaimer')
+    .uk-width-medium-6-10
+      p.
+        This is a game, not a real infection. In the interest of creating a fun gaming experience, many peripheral details relevant to actual bacterial infections and antibiotic treatment have been glossed over or omitted altogether. ​​​
+
+  +pod('Do antibiotics really cause intestinal distress?')
+    .uk-width-medium-6-10
+      p.
+        Yes, absolutely! Antibiotics really do kill indiscriminately, and not just in the colon. Of course not everyone experiences problems, but antibiotics kill beneficial microbes all around the body, leading to side effects that include not only diarrhea, but also yeast infections and skin rashes. And the drugs themselves can cause additional side effects, including allergic reactions.
+      p.
+        Antibiotic-associated diarrhea happens when antibiotics taken to treat an infection cause an imbalance in the intestinal microbial population. Most of the time, this type of diarrhea clears up on its own after a few days. But sometimes it gets worse. The colon can become painful and inflamed, and in some cases, harmful bacteria such as C. difficile bloom, making it more difficult for healthy bacteria to repopulate the colon.
+      p.
+        Some studies suggest that it can take months or even years for our microbial ecosystems to fully recover from a single course of antibiotics. The long-term effects of antibiotics, especially in young children, are still poorly understood.
+      p.
+        Visit <a href="../friends/">Your Microbial Friends</a> to learn more about how bacteria and other microbes keep us healthy.
+
+  +pod("Does that mean we shouldn't take antibiotics?")
+    .uk-width-medium-6-10
+      p.
+        No. Without question, antibiotics save lives. When they are appropriately prescribed, they are safe and effective.
+      p.
+        Most problems arise when antibiotics are used inappropriately, when patients don't follow instructions, or when patients have other problems that complicate treatment. And many bacterial infections—like minor sinus, lung, and ear infections—will clear up on their own, without antibiotics.
+      p.
+        If you are prescribed antibiotics, it is very important to carefully follow your doctor's and pharmacist's instructions.
+
+  +pod('Can we use good bacteria to combat antibiotic side effects?')
+    .uk-width-medium-6-10
+      p.
+        You can't buy a "Good Bacteria" bomb at your local grocery store. And the jury is still out on over-the-counter probiotics. No study to date (as of January, 2014) has provided solid evidence​ that they work, but there's also no evidence that they do any harm. However, new, effective treatments may be on their way. A few companies are working on ways to grow healthy gut bacteria in the lab. They hope these bacteria can one day be given as a pill to help restore microbial balance in the colon. This therapy is based on what doctors have learned from doing fecal transplants. Desperately sick patients can often be cured after receiving a sample of fecal microbes—yep, that's poop—from a spouse or a relative. The new therapies under development take away much of the "yuck" factor.
+
+  +pod('Can bacteria really become resistant to antibiotics?')
+    .uk-width-medium-6-10
+      p.
+        Yes, and they really can share resistance genes. You can learn more about antibiotics and antibiotic resistance by visiting our <a href="../antibiotics/">What is an Antibiotic</a> and <a href="../resistance/">Antibiotic Resistance​</a> pages.
+      p.
+        Over time, antibiotic resistance has become more of a problem. When resistant strains of bacteria start to spread, doctors are left with fewer tools for treating infections. To kill resistant strains, doctors are forced to use stronger drugs that have more side effects. When you are prescribed antibiotics, you can help slow the spread of resistant strains by following instructions and taking the full prescription, even after you feel better.
+block append endscripts
+  script(src="Build/UnityLoader.js")
+  script(src="aa.js")

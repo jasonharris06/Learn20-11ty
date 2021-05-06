@@ -1,0 +1,49 @@
+extends /shared/layout
+block content
+  +pageTitle()(teach="senses")
+  .lg-section
+    .uk-container.uk-container-center
+      .uk-grid
+        .uk-width-medium-5-10
+          h2 Touch
+          .lg-index-items
+            +index-item('Touch App','interactive explore', 'touchapp', 'images/touchapp.jpg')
+              p How does our skin know the difference between an icicle and a match? See how in a simplified slice of skin.
+            +index-item('Touch: Additional Information', 'learn more', 'touch', 'images/touch.jpg')
+              p Learn about the sensory endings in skin and what tunes each one to a particular type of signal.
+          h2 Hearing
+          .lg-index-items
+            +index-item('Hearing App','interactive explore', 'hearingapp', 'images/hearingapp.png')
+              p How does the anatomy of the inner ear separate and detect sound waves? Preview and download Hear.
+            +index-item('Hearing: Additional Information', 'learn more', 'hearing', 'images/hearing.jpg')
+              p Find out about the properties of sound, and learn how our ears convert vibrations to nerve signals.
+          h2 Proprioception
+          .lg-index-items
+            +index-item('Balance App','interactive explore', 'balanceapp', 'images/balanceapp.png')
+              p Download Balance, then spin, shake, and watch. This app responds to your movements in real time, showing how the inner ear senses rotation, gravity, and acceleration.
+            +index-item('Proprioception', 'learn more', 'proprioception', 'images/proprioception.jpg')
+              p Proprioception keeps us aware of our moving parts and tells us which way is up. Learn more about the inputs and outputs that influence body awareness.
+        .uk-width-medium-5-10
+          h2 Vision
+          .lg-index-items
+            +index-item('See App','interactive explore', 'seeapp', 'images/see.png')
+              p Have you ever wondered what your dog sees? Download See and look through the eyes of a dog, an octopus, a color blind person, and more.
+            +index-item('Vision: Additional Information', 'learn more', 'vision', 'images/vision.jpg')
+              p Find out what makes visible light 'visible' and how color vision works.
+            +index-item('Eye Evolution', 'explore', 'eye', 'images/EyeEvolution.png')
+              p Natural selection has generated a diverse collection of eyes, from simple to complex, that help animals sense their surroundings.
+            +index-item('Foundational Toolkit Genes', 'learn more', 'toolkit', 'images/FoundationalToolkitGenes.png')
+              p Learn about some basic genetic components for building an eye.
+          h2 Taste &amp; Smell
+          .lg-index-items
+            +index-item('Taste &amp; Smell App','interactive explore', 'smellandtasteapp', 'images/smellandtasteapp.png')
+              p See how the nose and the tongue sense chemicals, and learn the difference between taste and flavor.
+            +index-item('Taste &amp; Smell: Additional Information', 'learn more', 'smellandtaste', 'images/smellandtaste.jpg')
+              p Learn how our genes and our experience make taste and smell preferences so highly individual. 
+          h2 Other senses
+          .lg-index-items
+            +index-item('The Twenty Senses', 'learn more', 'twentysenses', 'images/twentysenses.jpg')
+              p Sensory systems use a limited number of protein receptors in different ways to detect a broad array of signals.
+            +index-item('Sensory Systems Work Together', 'learn more', 'worktogether', 'images/worktogether.jpg')
+              p No sensory system works in isolation. Learn how sensory systems work together to build our everyday experiences.              
+      +bottom-menu('credits','sedapasenses')

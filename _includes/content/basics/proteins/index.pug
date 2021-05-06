@@ -1,0 +1,61 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   +pod("")
+      .uk-width-1-1.uk-text-center
+         iframe.uk-responsive-width(src='https://player.vimeo.com/video/198701439', width='920', height='520', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+         a.uk-button.uk-button-success(href="../inheritance/", data-uk-button)
+            | Next Stop: What is Inheritance?
+
+   +pod("Proteins are the workhorses of our bodies")
+      .uk-width-medium-4-10
+         p
+            | Proteins make up about 42% of the dry weight of our bodies. The protein collagen—which holds our skin, tendons, muscles, and bones together—makes up about a quarter of the body's total protein.
+         p
+            | All of our cells and even blood are packed with protein molecules. This watercolor painting by David S. Goodsell shows part of a red blood cell, in the upper left, filled with hemoglobin molecules. The right side of the painting shows blood serum, containing yellow, Y-shaped antibodies and other proteins. In purple, proteins poke through the blood cell's membrane. 
+
+      .uk-width-medium-6-10
+         figure
+            img(src="images/blood.jpg", alt="blood")
+            p Illustration by David S. Goodsell, The Scripps Research Institute. doi: 10.2210/rcsb_pdb/goodsell-gallery-003
+
+   +pod("Proteins are versatile")
+      .uk-width-medium-6-10
+         figure
+            img.lg-no-shadow(src="images/versatile.jpg", alt="versatile proteins")
+            p A protein's three-dimensional shape is uniquely suited to its function. The 20 different amino acid building blocks can be arranged in different ways to form a nearly infinite assortment of protein shapes.
+
+      .uk-width-medium-4-10
+         p
+            | Different arrangements of amino acids can make proteins that are extremely strong, as in silk fibers, or flexible and elastic, as in the elastin in our skin. And like pieces of a jigsaw puzzle, proteins can interlock with other molecules. For example, each type of antibody in our blood has a unique arrangement of amino acids at its tips that can attach to a specific pathogen, marking it for destruction by the immune system. 
+
+   +pod("Proteins work together")
+      .uk-width-medium-4-10
+         p
+            | Proteins need to physically interact with each other and with other molecules to do their work. These interactions might activate an enzyme, turn on a gene, or communicate a message from one cell to another. 
+         p
+            | Interactions between proteins depend not just on their shape but also on their chemical properties: positively and negatively charged amino acids are attracted to each other; hydrophobic residues cluster together, away from water. These physical properties allow proteins to interact in specific ways.
+
+      .uk-width-medium-6-10
+         figure
+            img.lg-no-shadow(src="images/proteasome.jpg", alt="proteasome")
+            p Multiple proteins can come together to build a molecular machine. In the proteasome shown above, proteins encoded by different genes come together to form a capsule where damaged and unneeded proteins are destroyed.
+
+   +pod("Proteins change shape")
+      .uk-width-medium-6-10
+         figure
+            img.lg-no-shadow(src="images/ligand-gated-channel.jpg", alt="ligand-gated channel")
+      .uk-width-medium-4-10
+         p
+            | Cells are alive with motion, much of it driven by proteins. Many proteins are flexible and dynamic. Motor proteins, for example, bend and swing to literally walk across the cell's cytoskeleton. And when the neurotransmitter acetylcholine binds to its receptor, the entire protein molecule shifts, causing a hole to open up at its center. Sodium ions pass through the opening, starting a chain reaction that will fire a nerve signal across the brain.
+
+   +pod("Proteins are recycled")
+      .uk-width-medium-4-10
+         p
+            | Like us, plants and animals are made of proteins. When we eat them, we eat protein. High-protein foods such as beans, meat, fish, cheese, eggs, and nuts give us both energy and building blocks to grow and maintain a healthy body.
+         p
+            | The proteins we eat are broken down into their individual amino acid building blocks. We reuse these amino acids to build new proteins.
+      .uk-width-medium-6-10
+         figure
+            img.lg-no-shadow(src="images/recycled.jpg", alt="dietary protein")

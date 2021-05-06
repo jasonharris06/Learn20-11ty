@@ -1,0 +1,13 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   script(src='/Scripts/AC_RunActiveContent.js', type='text/javascript')
+
+   +pod('')
+      .uk-width-medium-1-1.uk-text-center
+         script(type='text/javascript').
+            AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0','width','780','height','611','src','clickandclone','quality','high','pluginspage','http://www.macromedia.com/go/getflashplayer','movie','clickandclone' ); //end AC code
+         noscript
+            p Javascript is required to view this content.
+   script(src="/ruffle/ruffle.js")

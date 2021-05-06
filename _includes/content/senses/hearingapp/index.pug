@@ -1,0 +1,37 @@
+extends /shared/layout
+block append head
+   style.
+      .flexHeader {
+         display: flex;
+         width: 100%;
+         justify-content: space-between;
+         align-items: flex-end;
+      }
+      .appstore {
+         width: 120px;
+      }
+      @media screen and (min-width: 800px) {
+         .appstore {
+           width: 160px;
+         }
+      }
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-4-10
+         a(href='https://itunes.apple.com/us/app/hear-neuroscience/id1208547621' style="margin-right: 25px;")
+            img.appstore(src="../images/App_Store.svg" width="200" height="66.6")
+         p
+            | How does the anatomy of the inner ear separate and detect sound waves? Watch different sound frequencies light up the inner ear. You can even make your own sounds!
+      .uk-width-medium-6-10
+         h3 App Screenshots
+         include hearingshots.pug
+
+   +references
+      p Kandel, ER, Schwartz, JH, Jessell, TM, Siegelbaum, SA &amp; Hudspeth, AJ. (2013). Principles of Neural Science, fifth edition. McGraw Hill Medical.
+      p Reichenbach, T &amp; Hudspeth, AJ (2014). The physics of hearing: fluid mechanics and the active process of the inner ear. Reports on Progressives in Physics, 77, 076601. doi:  10.1088/0034-4885/77/7/076601
+
+
+   block append endscripts
+      script(src="/lib/slideshow.js")
+      script(src="/lib/slideshow-fx.js")

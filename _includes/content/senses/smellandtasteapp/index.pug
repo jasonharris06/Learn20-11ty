@@ -1,0 +1,50 @@
+extends /shared/layout
+block append head
+   style.
+      .flexHeader {
+         display: flex;
+         width: 100%;
+         justify-content: space-between;
+         align-items: flex-end;
+      }
+      .slideContainer {
+         max-width: 550px;
+         margin: auto;
+      }
+      .appstore {
+         width: 120px;
+      }
+      @media screen and (min-width: 800px) {
+         .appstore {
+           width: 160px;
+         }
+      }
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-4-10
+         a(href='https://itunes.apple.com/us/app/taste-smell-neuroscience/id1219014060' style="margin-right: 25px;")
+            img.appstore(src="../images/App_Store.svg" width="200" height="66.6")
+         p
+            | See how the nose and the tongue sense chemicals, and learn the difference between taste and flavor.
+      .uk-width-medium-6-10
+         h3 App Screenshots
+         .slideContainer
+            include stshots.pug
+            
+   +references
+      p
+         | Axel, R (2006). The molecular logic of smell. Scientific American, September 2006, 69-75.
+      p
+         | DeMaria, S. &amp; Ngai, J (2010). The cell biology of smell. The Journal of Cell Biology, 191, 3, 443-452. doi: 10.1083/jcb.201003144
+      p
+         | Chaudhari, N &amp; Roper, SD (2010). The cell biology of taste. The Journal of Cell Biology, 190, 3, 285-296. doi: 10.1083/jcb.201008163 
+      p
+         | Kandel, ER, Schwartz, JH, Jessell, TM, Siegelbaum, SA &amp; Hudspeth, AJ. (2013). Principles of Neural Science, fifth edition. McGraw Hill Medical.
+      p
+         | Smith, DV &amp; Margolskee, RF (2006). Making sense of taste. Scientific American, September 2006, 85-92.
+
+
+   block append endscripts
+      script(src="/lib/slideshow.js")
+      script(src="/lib/slideshow-fx.js")

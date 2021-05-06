@@ -1,0 +1,139 @@
+extends /shared/layout
+block headscripts
+  link(href="https://fonts.googleapis.com/css?family=Open+Sans:400i" rel="stylesheet")
+  link(rel="stylesheet" href="dial-a-flower.css")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js")
+
+block content
+  +pageTitle
+  article.lg-pod.lg-section
+    .uk-container.uk-container-center
+      #daf-outer-container
+        #daf-container.uk-width-1-1
+          #daf-content
+            #row-1.daf-row
+              #pick-container
+                .daf-h2.pulsate Pick a Flower
+                .daf-button-container
+                  #lewisii-button.daf-button
+                    img(src="Lewisii.png")
+                    .daf-button-label M. lewisii
+                  #cardinalis-button.daf-button
+                    img(src="Cardinalis.png")
+                    .daf-button-label M. cardinalis
+              #target-container.faded
+                .daf-h1 Target Flower
+                .daf-flower
+                  #target-lewisii.flower-container(style="display: none;")
+                    #target-lewisii-petal.lewisii(style="background-color: rgb(232,51,100)")
+                    #target-lewisii-guides.lewisii-guides(style="background-color: rgb(239, 139, 33)")
+                  #target-cardinalis.flower-container(style="display: none;")
+                    #target-cardinalis-petal.cardinalis(style="background-color: rgb(212,6,4)")
+                    #target-cardinalis-guides.cardinalis-guides(style="background-color: rgb(229, 97, 10)")
+              #user-container.faded
+                .daf-h1 Your Flower
+                .daf-flower
+                  #user-lewisii.flower-container(style="display: none;")
+                    #user-lewisii-petal.lewisii
+                    #user-lewisii-guides.lewisii-guides
+                  #user-cardinalis.flower-container(style="display: none;")
+                    #user-cardinalis-petal.cardinalis
+                    #user-cardinalis-guides.cardinalis-guides
+            #row-2.daf-row.faded
+              #petal-genes.output-pane
+                .antho-gene
+                .caro-gene
+              #petal-proteins.output-pane
+                #pp1.protein.antho(style="top: 8px; left: 20px;")
+                #pp2.protein.caro(style="top: 8px; left: 60px; transform: rotate(-54deg);")
+                #pp3.protein.antho(style="top: 5px; left: 100px; transform: rotate(-16deg);")
+                #pp4.protein.caro(style="top: 2px; left: 144px; transform: rotate(41deg);")
+                #pp5.protein.caro(style="top: 42px; left: 9px; transform: rotate(-51deg);")
+                #pp6.protein.antho(style="top: 36px; left: 44px; transform: rotate(-33deg);")
+                #pp7.protein.caro(style="top: 31px; left: 84px; transform: rotate(58deg);")
+                #pp8.protein.caro(style="top: 29px; left: 125px; transform: rotate(-7deg);")
+                #pp9.protein.caro(style="top: 69px; left: 35px; transform: rotate(-21deg);")
+                #pp10.protein.caro(style="top: 62px; left: 73px; transform: rotate(24deg);")
+                #pp11.protein.antho(style="top: 62px; left: 111px; transform: rotate(-48deg);")
+                #pp12.protein.antho(style="top: 53px; left: 146px; transform: rotate(40deg);")
+                #pp13.protein.antho(style="top: 93px; left: 8px; transform: rotate(17deg);")
+                #pp14.protein.antho(style="top: 97px; left: 55px; transform: rotate(-14deg);")
+                #pp15.protein.caro(style="top: 94px; left: 99px; transform: rotate(12deg);")
+                #pp16.protein.antho(style="top: 86px; left: 127px; transform: rotate(40deg);")
+              #petal-sliders.slider-section
+                .slider-title Petals:
+                .slider-box
+                  .slider-container
+                    input#petal-antho-slider.slider(type="range" min="0" max="100")
+                    label Anthocyanins
+                  .low-high
+                    span LOW
+                    span HIGH
+                  .slider-container
+                    input#petal-caro-slider.slider(type="range" min="0" max="100")
+                    label Carotenoids
+            #row-3.daf-row.faded
+              #genes-label Genes
+              #proteins-label Proteins
+              #guide-genes.output-pane
+                .antho-gene
+                .caro-gene
+              #guide-proteins.output-pane
+                #gp1.protein.antho(style="top: 8px; left: 20px;")
+                #gp2.protein.caro(style="top: 8px; left: 60px; transform: rotate(-54deg);")
+                #gp3.protein.antho(style="top: 5px; left: 100px; transform: rotate(-16deg);")
+                #gp4.protein.caro(style="top: 2px; left: 144px; transform: rotate(41deg);")
+                #gp5.protein.caro(style="top: 42px; left: 9px; transform: rotate(-51deg);")
+                #gp6.protein.antho(style="top: 36px; left: 44px; transform: rotate(-33deg);")
+                #gp7.protein.caro(style="top: 31px; left: 84px; transform: rotate(58deg);")
+                #gp8.protein.caro(style="top: 29px; left: 125px; transform: rotate(-7deg);")
+                #gp9.protein.caro(style="top: 69px; left: 35px; transform: rotate(-21deg);")
+                #gp10.protein.caro(style="top: 62px; left: 73px; transform: rotate(24deg);")
+                #gp11.protein.antho(style="top: 62px; left: 111px; transform: rotate(-48deg);")
+                #gp12.protein.antho(style="top: 53px; left: 146px; transform: rotate(40deg);")
+                #gp13.protein.antho(style="top: 93px; left: 8px; transform: rotate(17deg);")
+                #gp14.protein.antho(style="top: 97px; left: 55px; transform: rotate(-14deg);")
+                #gp15.protein.caro(style="top: 94px; left: 99px; transform: rotate(12deg);")
+                #gp16.protein.antho(style="top: 86px; left: 127px; transform: rotate(40deg);")
+              #guide-sliders.slider-section
+                .slider-title Nectar Guides:
+                .slider-box
+                  .slider-container
+                    input#guide-antho-slider.slider(type="range" min="0" max="100")
+                    label Anthocyanins
+                  .low-high
+                    span LOW
+                    span HIGH
+                  .slider-container
+                    input#guide-caro-slider.slider(type="range" min="0" max="100")
+                    label Carotenoids
+          //- img(src="./mock.jpg", style="width: 100%; height: 100%; position: absolute; top: 0px; left: 0px; opacity: 0.25;")
+
+  +pod("Gene Regulation and Flower Color")
+    .uk-width-medium-5-10
+      p
+        | Flower color is genetically determined. Genes code for the protein machinery needed to build pigment molecules. As the proteins do their job, the pigments they build collect in flower cells. We see the pigments as color.
+      p
+        | In the activity above, you act as a regulatory protein that controls gene activity. By turning genes up or down, you fine-tune the amount and type of pigment-producing protein machinery made. Different types and amounts of machinery produce different types and amounts of pigment. Flower color changes.
+      p
+        | The regulatory proteins that control when, where, and how much protein is made from a gene are called transcription factors. It’s because of transcription factors that even though all the cells of a flower have the same genes, they can make different colors. With different colors, patterns are created.
+      p
+        | Transcription factors aren’t unique to flowers. They contribute to many traits in plants and in animals—including many of your own!
+
+    .uk-width-medium-5-10
+      +well
+        h3 Related Content
+        p
+          | The 
+          a(href="https://learn.genetics.utah.edu/content/flowers/genetics/") Genetics of Flower Color
+          |  take a deepter look at how flower color is genetically controlled.
+        p
+          | For more on general gene regulation, visit 
+          a(href="https://learn.genetics.utah.edu/content/basics/geneanatomy/") Anatomy of a Gene
+          |  and 
+          a(href="https://learn.genetics.utah.edu/content/basics/newtricks/") Old Genes, New Tricks
+          | .
+
+
+block append endscripts
+  script(src="mixer.js")

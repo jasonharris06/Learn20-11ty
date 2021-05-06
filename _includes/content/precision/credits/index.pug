@@ -1,0 +1,449 @@
+extends /shared/layout
+block append head
+   style.
+      table {width:100%}
+      td {width:50%}
+block content
+   +pageTitle   
+   +pod('')
+      .uk-width-medium-1-2
+         p.
+            The Precision Medicine module was funded by the Program in Personalized Health at the University of Utah.
+      .uk-width-medium-1-2
+
+         
+   +pod("Science Advisors")
+      .uk-width-medium-1-1
+         p The Genetic Science Learning Center would like to thank our science advisors, who provided valuable feedback and guidance as we developed our online materials.
+      .uk-width-medium-1-2
+         table
+            tr
+               td 
+                  strong Diana Brixner
+                  | , RPh, PhD 
+                  br
+                  | Professor of Pharmacotherapy 
+                  br
+                  | Executive Director, Outcomes Research Center 
+                  br
+                  | Director of Outcomes, Program in Personalized Health 
+                  br
+                  | University of Utah College of Pharmacy
+                  br
+                  br
+                  
+            tr
+               td
+                  strong Emily Coonrod
+                  | , PhD
+                  br
+                  | Manager, Program in Personalized Health
+                  br
+                  | Senior Vice President of Health Sciences, Research Unit
+                  br
+                  | University of Utah School of Medicine
+                  br
+                  br
+                  
+            tr
+               td
+                  strong Willard Dere
+                  | , MD, FACP
+                  br
+                  | Executive Director, Program in Personalized Health
+                  br
+                  | Co-Director, Center for Clinical & Translational Science
+                  br
+                  | Professor of Internal Medicine
+                  br
+                  | University of Utah School of Medicine
+                  br
+                  br
+
+            tr
+               td
+                  strong Wendy Kohlmann
+                  | , MA, CGC
+                  br
+                  | Director, Genetic Counseling Shared Resource
+                  br
+                  | Adjunct Assistant Professor, Population Health Sciences
+                  br
+                  | Huntsman Cancer Institute
+                  br
+                  br
+                  
+            tr
+               td
+                  strong Dean Y. Li
+                  | , MD, PhD
+                  br
+                  | Associate Vice President for Research, University of Utah Health Sciences
+                  br
+                  | Vice Dean for Research, School of Medicine
+                  br
+                  | Director, Molecular Medicine Program
+                  br
+                  | Chief Science Officer, University of Utah Health Sciences
+                  br
+                  | President and CEO, ARUP Laboratories
+                  br
+                  | Director, Molecular Medicine Program
+                  br
+                  br
+                  
+            tr
+               td
+                  strong Mark Munger
+                  | , PharmD, FCCP, FACC
+                  br
+                  | Professor of Pharmacotherapy
+                  br
+                  | Associate Dean for Academic Affairs, College of Pharmacy
+                  br
+                  | Adjunct Professor of Internal Medicine
+                  br
+                  | University of Utah
+                  br
+                  br
+                  
+            tr
+               td
+                  strong Joshua Schiffman
+                  | , MD
+                  br
+                  | Professor of Pediatrics
+                  br
+                  | Adjunct Professor of Oncological Sciences
+                  br
+                  | Education Director, Program in Personalized Health
+                  br
+                  | University of Utah School of Medicine
+                  br
+                  | Medical Director, High-Risk Pediatric Cancer Clinic, Huntsman Cancer Institute
+                  br
+                  | Division of Hematology/Oncology, Primary Children’s Medical Center
+                  br
+                  br
+                  
+            tr
+               td
+                  strong Michael Varner
+                  | , MD
+                  br
+                  | Professor of Obstetrics & Gynecology, Maternal Fetal Medicine Division
+                  br
+                  | Associate Director for Women's Health, Program in Personalized Health
+                  br
+                  | University of Utah School of Medicine
+                  br
+                  br
+
+      .uk-width-medium-1-2
+         figure
+            img(src="")
+   
+   +pod("Genetic Science Learning Center Staff")
+      .uk-width-medium-1-1
+         p The following GSLC staff contributed to the Precision Medicine module:
+      .uk-width-medium-1-2
+         table
+            tr
+               td Peter Anderson
+            tr
+               td Kagan Breitenbach
+            tr
+               td Sheila Homburger
+            tr
+               td Sam Katz
+            tr
+               td Ryan Perkins
+            tr
+               td Kevin Pompei
+            tr
+               td Louisa Stark
+            tr
+               td Mathew Weaver
+               
+   +pod("Video Interviewees")
+      .uk-width-medium-1-1
+         p A special thanks goes out to everyone who participated in the interviews for the Precision Medicine video series:
+      .uk-width-medium-1-1
+         table
+            tr
+               td
+                  strong Pinar Bayrak-Toydemir
+                  | , MD, PhD
+                  br
+                  | Medical Director, Molecular Genetics and Genomics Laboratories
+                  br
+                  | ARUP Laboratories
+                  br
+                  | Associate Professor of Clinical Pathology
+                  br
+                  | Adjunct Associate Professor of Pediatrics
+                  br
+                  | University of Utah School of Medicine 
+                  br
+                  br
+               td
+                  img(src='images/Pinar Bayrak-Toydemir.jpg')
+                  
+            tr
+               td
+                  strong Michael Boehnke
+                  | , PhD
+                  br
+                  | Richard G. Cornell Distinguished University Professor of Biostatistics
+                  br
+                  | Director, Center for Statistical Genetics
+                  br
+                  | Director, Genome Science Training Program
+                  br
+                  | University of Michigan School of Public Health
+                  br
+                  br
+               td
+                  img(src='images/Michael Boehnke.jpg')
+            tr
+               td
+                  strong Diana Brixner
+                  | , RPh, PhD 
+                  br
+                  | Professor of Pharmacotherapy
+                  br
+                  | Executive Director, Outcomes Research Center, College of Pharmacy
+                  br
+                  | Director of Outcomes, Program in Personalized Health
+                  br
+                  | University of Utah
+                  br
+                  br
+               td
+                  img(src='images/Diana Brixner.jpg')
+                  
+            tr
+               td
+                  strong Mary Bronner
+                  | , MD
+                  br
+                  | Senior Leader, Biorepository and Molecular Pathology Shared Resource,
+                  | Huntsman Cancer Institute 
+                  br
+                  | Division Chief, Anatomic and Molecular Oncologic Pathology,
+                  | ARUP Laboratories
+                  br
+                  | Carl R. Kjeldsberg Presidential Endowed Chair & Professor of Pathology,
+                  | University of Utah School of Medicine
+                  br
+                  br
+               td
+                  img(src='images/Mary Bronner.jpg')
+
+            tr
+               td
+                  strong Willard Dere
+                  | , MD, FACP
+                  br
+                  | Executive Director, Program in Personalized Health
+                  br
+                  | Co-Director, Center for Clinical & Translational Science
+                  br
+                  | Professor of Internal Medicine
+                  br
+                  | University of Utah School of Medicine
+                  br
+                  br
+               td
+                  img(src='images/Will Dere.jpg')
+                  
+            tr
+               td
+                  strong Karen Eilbeck
+                  | , MSc, PhD
+                  br
+                  | Associate Professor of Biomedical Informatics
+                  br
+                  | Adjunct Associate Professor of Human Genetics
+                  br
+                  | University of Utah 
+                  br
+                  br
+               td
+                  img(src='images/Karen Eilbeck.jpg')
+                  
+            tr
+               td
+                  strong Lynn Jorde
+                  | , PhD
+                  br
+                  | HA and Edna Benning Presidential Professor and Chair, Department of Human Genetics
+                  br
+                  | Adjunct Professor, Department of Anthropology
+                  br
+                  | Executive Director, Utah Genome Project
+                  br
+                  | University of Utah School of Medicine
+                  br
+                  br
+               td
+                  img(src='images/Lynn Jorde.jpg')
+                  
+            tr
+               td
+                  strong Rong Mao
+                  | , MD
+                  br
+                  | Medical Director, Molecular Genetics and Genomics 
+                  br
+                  | ARUP Laboratories
+                  br
+                  | Associate Professor of Pathology
+                  br
+                  | Co-Director, Clinical Medical Genetics Fellowship Program
+                  br
+                  | University of Utah
+                  br
+                  br
+               td
+                  img(src='images/Rong Mao.jpg')
+               
+            tr
+               td
+                  strong Gwendolyn McMillin
+                  | , PhD
+                  br
+                  | Medical Director, Toxicology and Pharmacogenetics 
+                  br
+                  | ARUP Laboratories
+                  br
+                  | Professor of Pathology, University of Utah School of Medicine
+                  br
+                  br
+               td
+                  img(src='images/Gwen McMillin.jpg')
+            tr
+               td
+                  strong Matthew Might
+                  | , PhD
+                  br
+                  | Associate Professor, School of Computing, University of Utah
+                  br
+                  | Presidential Scholar, University of Utah
+                  br
+                  | Associate Professor, Visiting, Harvard Medical School
+                  br
+                  | Strategist, Executive Office of the President, The White House
+                  br
+                  | President, NGLY1.org
+                  br
+                  | Scientific Advisor & Co-founder, Pairnomix, LLC
+                  br
+                  br
+               td
+                  img(src='images/Matt Might.jpg')
+      
+            tr
+               td
+                  strong Robert Schlaberg
+                  | , MD, Dr Med, MPH
+                  br
+                  | Medical Director, Microbial Amplified Detection, Virology, and Fecal Chemistry 
+                  br
+                  | Assistant Medical Director, Virology and Molecular Infectious Disease 
+                  | ARUP Laboratories
+                  br
+                  | Assistant Professor of Clinical Pathology, University of Utah School of Medicine 
+                  br
+                  br
+               td
+                  img(src='images/Robert Schlaberg.jpg')
+      
+            tr
+               td
+                  strong Richard Weinshilboum
+                  | , MD
+                  br
+                  | Professor of Pharmacology
+                  br
+                  | Professor of Medicine
+                  br
+                  | Mary Lou and John H. Dasburg Professor of Cancer Genomics Research
+                  | Director, Pharmacogenomics Program, Mayo Center for Individualized Medicine
+                  br
+                  | Mayo Clinic and Medical School
+                  br
+                  br
+               td
+                  img(src='images/Richard Weinshilboum.jpg')
+                  
+            tr
+               td
+                  strong Mark Yandell
+                  | , PhD
+                  br
+                  | HA & Edna Benning Presidential Endowed Chair
+                  br
+                  | Professor of Human Genetics
+                  br
+                  | Co-Director, USTAR Center for Genetic Discovery
+                  br
+                  | Associate Director and Chief Data Strategist, Program in Personalized Health
+                  | University of Utah
+                  br
+                  br
+               td
+                  img(src='images/Mark Yandell.jpg')
+                  
+   +pod('Other Contributors')
+      .uk-width-medium-6-10
+         table
+            tr
+               td Franklin Timpson 
+            tr
+               td Chris Manfre
+
+         h3 ARUP Laboratories
+         table
+            tr
+               td Samantha Barker
+            tr
+               td Matthew Campbell 
+            tr
+               td Mike Graczyk 
+            tr
+               td Jennifer Hunter 
+            tr
+               td Chance LaSalle
+            tr
+               td Josh Maguire 
+            tr
+               td Peta Owens-Liston 
+            tr
+               td Scott Pew 
+            tr
+               td John Rigby 
+            tr
+               td Clint Wilcox 
+               
+         h3 University of Utah Health Sciences Office of Public Affairs
+         table
+            tr
+               td Joe Borgenicht
+            tr
+               td Charlie Ehlert
+            tr
+               td Jen Pilgren
+            tr
+               td Kirsten Stewart 
+               
+   +pod('Special thanks')
+      .uk-width-medium-6-10
+         p 
+         | Kiara Palmer and Carla Easter, National Human Genome Research Institute 
+         | Anthony Oliver, Love Communications
+
+   +pod('')
+      .uk-width-medium-6-10
+         p 
+         em Footage from “The Secret of Our Lives” was provided by the National Human Genome Research Institute.

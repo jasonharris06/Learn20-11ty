@@ -1,0 +1,57 @@
+extends /shared/layout
+block content
+   +pageTitle
+   .lg-section
+      .uk-container.uk-container-center
+         .uk-grid
+            .uk-width-medium-5-10
+               h2 What are Genetic Disorders?
+               .lg-index-items
+                  .lg-index-box-text
+                     p.
+                        A genetic disorder is a condition that is caused by an abnormality in an individual's DNA. Abnormalities can be as small as a single-base mutation in just one gene, or they can involve the addition or subtraction of entire chromosomes. To learn more about the different types of genetic disorders and see some specific examples, browse through the pages below.
+                  +index-item('Extra Or Missing Chromosomes', 'learn more', 'extraormissing', 'images/extraormissing.jpg')
+                     p Find out about aneuploidy, a type of genetic disorder where people have too many or too few chromosomes. 
+                  +index-item('Examples of Aneuploidy', 'learn more', 'aneuploidy', 'images/aneuploidy.jpg')
+                     p Read about specific examples of aneuploidy.
+                  +index-item('Chromosomal Rearrangements', 'learn more', 'rearrangements', 'images/chromosomal.png')
+                     p Learn about genetic disorders where pieces of chromosomes are inserted, deleted, or moved around.
+                  +index-item('Examples of Unbalanced Chromosomal Arrangements', 'learn more', 'unbalanced', 'images/unbalanced.jpg')
+                     p Read about specific examples of unbalanced chromosomal arrangements.
+                  +index-item('Single Gene Disorders','learn more','singlegene','images/singlegene.jpg')
+                     p Learn about disorders that are caused by a defect in just one gene.
+                  +index-item('Inheritance Patterns for Single Gene Disorders','learn more','inheritance','images/inheritance.jpg')
+                     p Find out how single gene disorders can be inherited.
+                  +index-item('Examples of Single Gene Disorders', 'learn more', 'singlegeneeg', 'images/singlegeneeg.jpg')
+                     p Read about specific examples of single gene disorders.
+                  +index-item('Examples of Multifactorial Disorders','learn more','multifactorial','images/multifactorial.jpg')
+                     p Take a look at complex diseases that are influenced by both genes and the environment.
+               h2 Genetic Health Professionals
+               .lg-index-items
+                  +index-item('Genetic Counselors','learn more','counselors','images/counselors.jpg')
+                     p These health professionals assist families that are affected by genetic disorders.
+            .uk-width-medium-5-10
+               h2 Preimplantation Genetic Testing      
+               .lg-index-items
+                  .lg-index-box-text
+                     p.
+                        Preimplantation genetic testing can be used to detect genetic disorders in embryos before they are allowed to implant in the uterus.
+                  +index-item('What is Preimplantation Genetic Testing?', 'learn more', 'whatispgt', 'images/whatispgt.png')
+                     p Learn the basics about preimplantation genetic testing, and what makes it different from other types of genetic tests.
+                  +index-item('How Preimplantation Genetic Testing Works', 'learn more', 'howpgtworks', 'images/howpgtworks.png')
+                     p What makes a condition a good candidate for testing? What's the difference between <i>screening and diagnosis</i>? Find out here, along with more about the testing processes. 
+                  //- +index-item('Ethical, Legal, and Social Issues Around Preimplantation Genetic Testing', 'learn more', 'ethical', 'images/ethical.jpg')
+                  //-    p What are the implications of letting parents choose the traits of their children? Is there a difference between letting parents choose disease status, sex, or other traits, like hair color or eye color? What if embryos could be tested for athletic ability or intelligence?
+                     
+               h2 Newborn Genetic Screening
+               .lg-index-items
+                  .lg-index-box-text
+                     p.
+                        Shortly after birth, all newborn babies in the US are screened for a panel of treatable genetic disorders.
+                  +index-item('What is Newborn Genetic Screening?','learn more','screening','images/screening.jpg')
+                     p Find out about the genetic screening that&apos;s done for nearly every baby soon after they&apos;re born.
+                  +index-item('Leftover Bloodspot Samples','learn more','spots','images/spots.jpg')
+                     p See what happens to the leftover blood samples after they&apos;re used for newborn screening.
+   
+               //.uk-width-medium-5-10
+                     +bottom-menu("credits")

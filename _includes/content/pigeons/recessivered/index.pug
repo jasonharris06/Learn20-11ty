@@ -1,0 +1,151 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-5-10
+         p Birds with recessive red coloring are a solid shade of reddish-brown.
+         p
+            | Recessive red looks very different from the ash-red phenotype caused by the
+            a(href='../color/')
+               em  color
+            |  gene. Recessive red is also genetically different from both
+            em  color
+            |  and
+            a(href='../spread/')
+               em  spread
+            | .
+         p
+            | The bird to the right is not only recessive red, it also has a
+            a(href='../crest/')  crest
+            |  and a
+            a(href='../footfeathering/')  muff
+            | . If you came across it in your neighborhood, you may not even recognize it as a pigeon&mdash;but it is.
+      |
+      .uk-width-medium-5-10
+         img(src='images/rec-red.jpg', alt='Recessive Red', width='352', height='279')
+
+   +pod('Alleles and Inheritance')
+      .uk-width-medium-5-10
+         img(src='images/rec-red-1.jpg', alt='Alleles and Inheritance', width='487', height='189')
+      |
+      .uk-width-medium-5-10
+         p
+            | In pigeons, one gene controls the presence or absence of recessive red coloring. This gene comes in 2 different versions, or alleles: &lsquo;recessive red&rsquo; and what we call &lsquo;not recessive red,&rsquo; which is also considered &lsquo;wild-type.&rsquo;
+         p
+            | Pigeons inherit two copies of the 
+            em recessive red
+            |  gene, one from each parent. The two alleles together make up a bird&apos;s &quot;genotype.&rdquo; What we see, also called the &quot;phenotype,&quot; reflects the interactions of these two alleles.
+         p
+            | As the name implies, the &lsquo;recessive red&rsquo; allele is recessive to the &lsquo;not recessive red&rsquo; allele. To have recessive red coloring, a bird must have two copies of the &lsquo;recessive red&rsquo; allele.
+   +pod('Genes and Epistasis')
+      |
+      .uk-width-medium-5-10
+         p
+            | The gene that controls recessive red is seperate from the gene that controls 
+            a(href='../color/') color
+            | . For one, 
+            em color
+            |  is sex-linked and recessive red is not. Also, recessive red is 
+            a(href='../epistasis/') epistatic
+            |  to color. That is, whatever the underlying 
+            em color
+            |  alleles, a bird with two 
+            em recessive red
+            |  alleles will always have recessive red coloring.
+         p
+            | You may have noticed that the recessive red color distribution looks similar to the 
+            a(href='../spread/') spread
+            |  phenotype. While the two look the same, they are controlled by separate genes. In fact, the recessive red phenotype is different from any of the spread phenotypes, regardless of the underlying color&ndash;even ash-red. (Spread  ash-red birds are a very light reddish shade; recessive red birds are much darker.)
+         |
+         p
+            | Recessive red is also epistatic to spread. Notice the illustration to the right: both of the recessive red birds look the same, regardless of whether they have a 
+            em spread
+            |  allele or not.
+         p
+            | Also shown on the right, recessive red is epistatic to 
+            a(href='../pattern/') pattern
+            | . Because pigment in recesive red birds is distributed evenly in all feathers, any underlying pattern is hidden.
+         p
+            | It is important to remember that even though recessive red birds show no color, spread, or pattern phenotype, they always have two alleles for each of those genes (except remember that females have just one color allele).
+         p
+            | The genes that control recessive red, spread, color, and pattern all affect the synthesis and distribution of pigment molecules called melanins. The interactions among these genes are what cause their epistatic relationships. Genes that interact epistatically are often parts of the same biochemical pathways.
+      |
+      .uk-width-medium-5-10
+         img(src='images/rec-red-2.jpg', alt='Genes and Epistasis', width='487', height='610')
+         |
+         br
+   +pod('From Gene to Protein: How Recessive Red Works')
+      |
+      .uk-width-medium-5-10
+         .uk-text-small Inside the melanocyte (pigment-making cell) ...
+         |
+         img(src='images/rec-red-3a.jpg', alt='How Recessive Red Works')
+         br
+         br
+         +well
+            | Variations in the 
+            em Sox10
+            |  gene affect color in other animals, including mice and chickens.
+         |
+         p
+            a(href='../references/') References
+      |
+      .uk-width-medium-5-10
+         p
+            | On the surface, we can see two things are happening with the melanin pigments in recessive red birds. First, the feathers have mostly red melanin, with very little black and brown. Second, the melanin is distributed evenly in all feathers, disrupting any underlying 
+            em pattern
+            |  or 
+            em spread
+            |  genotype.
+         p
+            | Inside a bird&rsquo;s cells, the molecular mechanism of recessive red is fairly complex and not completely understood. But the parts we do understand are interesting and worth the effort to learn.
+         p
+            | The 
+            em color
+            |  and the 
+            em recessive red
+            |  genes both affect the synthesis of pigments called melanins, which are made in structures called melanosomes in cells called melanocytes. But the two genes code for proteins that work on different steps of melanin synthesis. The 
+            em color
+            |  gene is 
+            em Tyrp1
+            | , and it codes for the TYRP1 protein. (For more details, visit 
+            a(href='../color/') color
+            | .) The 
+            em recessive red
+            |  gene is called 
+            em Sox10
+            | , and it codes for the SOX10 protein.
+         p
+            | The SOX10 protein&rsquo;s normal function is to switch other genes &lsquo;on,&rsquo; including 
+            em Tyrp1
+            | . When genes are switched on, proteins are made from them, and the proteins are available to do their jobs.
+         p
+            | The &lsquo;not recessive red&rsquo; allele is a &ldquo;normal&rdquo; version of the 
+            em Sox10
+            |  gene. The gene is normally turned on in melanocytes. The SOX10 protein that&rsquo;s made from it switches the 
+            em Tyrp1
+            |  gene on, and TYRP1 protein is made (or in the case of the brown allele, not made). TYRP1 then goes off to do its job in the melanin synthesis pathway.
+         p
+            | The &lsquo;recessive red&rsquo; allele is a &ldquo;broken&rdquo; version of 
+            em Sox10
+            | . The allele is missing a large chunk of DNA that allows it to be switched on in melanocytes. While it can still be switched on in other cells, its activity is very low in melanocytes. When a bird has just one broken 
+            em Sox10
+            |  allele, the other allele still makes enough SOX10 protein to switch on 
+            em color/Tyrp1
+            |  (and other genes). But when both alleles are broken, little SOX10 protein is made, and the genes it regulates stay switched off. This mechanism explains the recessive inheritance pattern of recessive red.
+         p
+            | The reason recessive red is epistatic to color is because recessive red works &ldquo;upstream&rdquo; of color. If you think of melanin production as an assembly line, the &lsquo;recessive red&rsquo; allele shuts down the assembly line at an earlier step, prior to the step that TYRP1 protein carries out.
+         p
+            | We can deduce that SOX10 works on additional genes beyond 
+            em Tyrp1
+            | , because removing just TYRP1 activity causes the brown phenotype. Brown differs from recessive red in both pigment color and distribution across the body.
+         |
+         p
+            | While we don&rsquo;t understand molecularly why recessive red birds also have a spread-like phenotype, a reasonable guess is that SOX10 protein operates upstream and in the same molecular pathway as the 
+            em spread
+            |  gene.
+         |
+         +well
+            | Changes to DNA sequence in a gene&apos;s regulatory switches can affect when, where, and how much protein is made from that gene.  Changes to switches are important drivers of evolutionary change.  For more examples, visit 
+            a(href='/content/selection/newtricks/') Old Genes, New Tricks
+            | .

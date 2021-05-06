@@ -1,0 +1,102 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-5-10
+         p
+            | For lots of different organisms—humans, mice, and even a few exotic creatures like seahorses—we’ve figured out the whole genome. We know on which chromosomes specific genes are located, and we also know the order of the millions of bases that make up each chromosome. We organize this information into a “map” of each genome. 
+         p
+            | A genome contains all of the instructions for building and operating an organism. Having a genome map helps us do things like diagnose and treat diseases, improve crops, track down the basis of inherited traits, and much more. 
+         p
+            | Read on to learn more about what it takes to build a genome map.
+            
+         +well
+            p 
+               | Genome maps and DNA sequences are used across many areas of biology. Visit the following pages to learn more:
+               br
+               a(href='http://learn.genetics.utah.edu/content/precision/') Precision Medicine
+               br
+               a(href='http://learn.genetics.utah.edu/content/disorders/') Genetic Disorders 
+               br
+               a(href='http://learn.genetics.utah.edu/content/microbiome/') The Human Microbiome  
+      
+      .uk-width-medium-5-10
+         figure
+            img(src='images/1GenomeMap.jpg')
+            p A genome is all of an organism's DNA, including a complete set of its genes. It contains massive amounts of information, often many millions or even billions of nucleotides in all.
+      
+
+         
+               
+   +pod('De novo vs. reference sequencing')
+      .uk-width-medium-5-10
+         p
+            | Mapping a species' genome for the first time is a lot of work. But once you've done it, you have a reference sequence that you can use as a basis for comparison. 
+         p
+            | The human genome is a great example. The first map took twenty years to complete. The second was published just three years later, and four more the following year. One reason for the increase in speed is that there have been tremendous advances in technology. But another factor is that any newly sequenced human genome is assembled using another human genome as a reference. Once you know the order and sequence of all of the genes, you just need to figure out the 1 out of 1,000 or so nucleotides where that individual's genes vary.
+         p
+            | Scientists very often make their reference genomes publically available online. There it is available to help researchers around the world do any kind of genetic studies on that organism.
+         
+         +well   
+            p
+               | Today, a human genome can be sequenced in a day. To learn more about the advances that make this possible, visit 
+               a(href='http://learn.genetics.utah.edu/content/precision/time/') Why the Time is Right
+      
+      .uk-width-medium-5-10
+         figure
+            img(src='images/2GenomeMap.jpg')
+            p A genome is all of an organism's DNA, including a complete set of its genes. It contains massive amounts of information, often many millions or even billions of nucleotides in all.
+
+   +pod('Some Assembly Required')
+      .uk-width-medium-5-10
+         p
+            | Putting together a genome map for the first time is a big job. One issue is that genomes contain a huge amount of information—billions of base pairs in complex organisms like crops, pets, and people. Another issue is that current DNA sequencing technology limits us to being able to read only a few hundred to a few thousand bases at a time. You can't just put a chromosome into a machine and read its whole sequence. 
+         p
+            | To get around the limitations of technology, we break up a genome into millions of pieces that are short enough to sequence. Once we know the sequence of the pieces, we stitch them back together to make a complete genome. In other words, sequencing technology can provide details about individual puzzle pieces, but it takes another step to figure out how those pieces fit together to make entire chromosomes. The final challenge is understanding what all of the sequences mean: which parts are genes, and what those genes do.
+
+      .uk-width-medium-5-10
+         figure
+            img(src='images/3GenomeMap.jpg')
+            p To sequence a long stretch of DNA, you first need multiple copies of it. If you chop them up into smaller pieces, each copy in different places, you get a series of overlapping fragments, each of which is short enough to read. Once you have the sequences, a computer program can finding all the places of overlap and stitch the fragments together into longer DNA sequences called contigs, short for contiguous.
+
+   +pod('Mapping at different levels of detail')
+      .uk-width-medium-10-10
+         p
+            | On its own, sequencing and assembling short fragments of DNA generally won't give you enough information to map an entire genome. For example, if a genome contains a lot of repetitive DNA sequences or multiple copies of very similar genes (both are very common scenarios), it won't work to just match up short overlapping DNA sequences—there would be too many possible solutions to the puzzle. 
+         p
+            | To make a genome map, researchers generally combine information from multiple methods, some of which are described below. With the help of computer software, fragments of a genome generated from different kinds of mapping can be computationally stitched together.
+      .uk-width-medium-6-10
+         div(style='padding-left:40px')   
+            h3
+               | Chromosome staining 
+            p
+               | Using specific sequences of DNA that have fluorescent dyes on them, it is possible to visualizing the positions of genes on chromosomes. Whole, condensed chromosomes are visible under a microscope. Through complementary base pairing, single strands of DNA will bind to specific sequences in chromosomes. And the fluorescent dyes make these regions light up under the microscope. 
+      .uk-width-medium-4-10
+         figure
+            img(src='images/5GenomeMap.jpg')
+      .uk-width-medium-6-10
+         div(style='padding-left:40px')   
+            h3
+               | Optical mapping
+            p
+               | Researchers use optical mapping to measure the distances between specific, short DNA sequences (or markers). This method uses DNA fragments that are 100 to 150 times longer what can be read with DNA sequencing, often providing enough information to read through repetitive or duplicated segments of DNA. To learn more about this technique, visit 
+               a(href='/content/cotton/physical') Physical Mapping.
+      .uk-width-medium-4-10
+         figure
+            img(src='images/6GenomeMap.jpg')
+      
+   +pod('Depth of Coverage')
+      .uk-width-medium-5-10
+         p
+            | Depth of coverage refers to the degree to which individual sequencing "reads" overlap one another across the genome. Individual DNA sequencing reads often have small errors, sort of like typos, and areas where the sequence is a little unclear. For example, it may be difficult to tell whether there are 3 T's in a row or 4. 
+         p
+            | By looking at multiple overlapping reads that cover the same area, it is possible to spot errors and clear up ambiguity. And the more overlapping reads you have—say 2 out of 3 reads agree, or 4 out of 5—the easier it is to find and disregard the errors. 
+         p
+            | Greater depth of coverage also makes it possible to tell the difference between errors and genetic variation. For organisms with two parents, each individual has two copies of every chromosome. Those two copies are nearly but not exactly identical. If half of the reads show an A at a certain position, and half show G, then both are probably correct—they're just reading from different chromosomes.
+         p
+            | For sequencing a new genome for the first time, researchers usually aim for about 50x coverage (that is, 50 overlapping fragments at each position). For detecting human genetic variation in comparison to a reference genome, 10x to 30x coverage is usually deep enough.
+   
+      .uk-width-medium-5-10
+         figure
+            img(src='images/4GenomeMap.jpg')
+            p We can be more confident about the accuracy of a genome map in regions of the genome that have the greatest depth of coverage, or information overlap between multiple fragments of DNA sequence. 

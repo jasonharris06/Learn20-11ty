@@ -1,0 +1,159 @@
+extends /shared/layout
+
+block content
+    +pageTitle
+    +pod('')
+        .uk-width-1-1
+            p 
+                a(href="#experts" data-uk-modal) Learn more about the experts
+                |  in the videos on this page.
+                //- Pop-up for experts information
+                #experts.uk-modal
+                    .uk-modal-dialog
+                        a.uk-modal-close.uk-close
+                        h2 Experts
+                        p
+
+                        img(src='images/garland.png' alt='garland' width='50%')
+                        p
+                            strong Eric Garland, PhD, LCSW
+                            br
+                            i Associate Dean for Research, College of Social Work
+                            br
+                            i Distinguished Endowed Chair and Professor of Social Work
+                            br
+                            i Director, Center on Mindfulness and Integrative Health Intervention Development
+                            br
+                            i University of Utah
+                        p Dr. Garland’s work focuses on developing novel therapies to address treatment for addiction, stress, chronic pain, and other conditions.
+                        p
+                        
+                        img(src='images/gordon.png' alt='gordon' width='50%')
+                        p
+                            strong Adam Gordon, MD, MPH
+                            br
+                            i Professor of Medicine and Psychiatry, University of Utah School of Medicine
+                            br
+                            i Chief of Addiction Medicine, Salt Lake City VA Healthcare System
+                            br
+                            i Director, PARCKA (Program for Addiction Research, Clinical Care, Knowledge, and Advocacy)
+                        p Dr. Gordon is a physician and researcher with over 20 years of experience helping patients access high-quality care for their addictive disorders. 
+                        p
+
+                        img(src='images/hanson.png' alt='hanson' width='50%')
+                        p
+                            strong Glen Hanson, DDS, PhD
+                            br
+                            i Professor of Pharmacology
+                            br
+                            i Vice Dean, School of Dentistry
+                            br
+                            i University of Utah
+                        p Dr. Hanson is an expert on how drugs affect areas of the brain involved in addiction, goal seeking, and compulsive behavior. From 2001 to 2003 he served as interim director of the National Institute of Drug Abuse.
+                        p
+
+                        img(src='images/sadler.png' alt='sadler' width='50%')
+                        p
+                            strong Peter Sadler
+                            br
+                            i Program Manager, Utah Naloxone
+                        p Retired after a long career in law enforcement, Mr. Sadler now teaches about the benefits of naloxone and works to provide the drug to those who can make a difference.
+
+    +pod('Stigma is Harmful')
+        .uk-width-medium-5-10
+            p
+                i “If she just put her mind to it, she could stop using.” “Drug addicts are hopeless criminals. The world would be better off without them.”
+            p
+                | Substance use disorder is fraught with stigma. Based on negative stereotypes and false assumptions, stigmas promote shame and discrimination, and they make us think less of the person they’re attached to.
+            
+        .uk-width-medium-5-10
+            p
+                | When you shift out of negative attitudes around substance use disorder, you can begin to treat those affected by it with empathy and respect. Listen to what the experts have to say, and think about how you can check your assumptions and shift your thinking.
+
+        .uk-width-medium-4-10
+            ul.uk-tab.uk-tab-right(data-uk-switcher="{connect:'#videos', animation: 'slide-right'}")
+                li <a href="">What does a drug user look like?</a>
+                li <a href="">Is substance use disorder a choice?</a>
+                li <a href="">Do my words and attitudes matter?</a>
+                li <a href="">What about relapse?</a>
+        .uk-width-medium-6-10
+            ul#videos.uk-switcher
+                li: iframe.lg-responsive(src='//player.vimeo.com/video/345268593', width='600', height='337', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+                li: iframe.lg-responsive(src='//player.vimeo.com/video/345268599', width='600', height='337', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+                li: iframe.lg-responsive(src='//player.vimeo.com/video/345268623', width='600', height='337', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+                li: iframe.lg-responsive(src='//player.vimeo.com/video/345268642', width='600', height='337', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+    
+    +pod('Harm Reduction')
+        .uk-width-medium-4-10
+            p
+                | Harm reduction means reducing the chance something bad will happen. We use harm reduction tactics every day. Installing smoke detectors, keeping passwords private, and storing medications out of children’s reach are just a few ways we keep ourselves and the people we care about safe.
+            p
+                | When it comes to substance use disorders, harm reduction is the same. The goal is to keep people who use drugs and their families, friends, and communities as safe as possible. Harm reduction reduces death from overdose. It also connects people to healthcare, treatment, and social support.
+            p
+                | There are many examples of evidence-based, public health interventions for harm reduction:
+                ul
+                    li Clean needles prevent the spread of HIV and hepatitis. When a syringe exchange program was introduced in New York City in the early 1990s, it reduced the incidence of HIV infection in people who use injected drugs from 54% in 1990 to 3% in 2012.
+                    li Medically supervised, safer spaces for drug consumption keep people from injecting alone or in dangerous places. Research shows the sites do not increase crime in surrounding neighborhoods. But they do save lives. In 2017, one such location in Vancouver, Canada, responded to over 2,000 overdoses. Not one person died. The sites also connect people to basic medical treatment (like wound care) and social support. Many people who use the sites end up in treatment programs.
+                    li Drug checking (also known as drug testing or adulterant screening) helps people who use drugs know they are free from dangerous additives like fentanyl.
+                    li Good Samaritan Laws in many places protect people who call 911 when they witness an overdose, even if illegal drugs are involved.
+                    li Drug courts that connect people to evidence-based treatment methods reduce rates of re-offending.
+                    li Community access to naloxone, a medication that reverses an opioid overdose, saves lives. From 1996 to 2014, naloxone was used by people with no medical training to reverse more than 26,000 overdoses in the United States.
+
+
+        .uk-width-medium-6-10
+            //- Harm Reduction Video 1 goes here
+            +vimeo('345268743')
+            p
+            +vimeo('345268692')
+            figure
+                p Peter Sadler describes harm reduction, and highlights naloxone as an example that's decreasing deaths from opioid overdose.
+            +well
+                p Naloxone is a medication that blocks the effects of opioid drugs. To learn more, visit the 
+                    a(href='http://www.utahnaloxone.org') Utah Naloxone website
+                    | .
+    
+    +pod('How Naloxone Works')
+        .uk-width-medium-5-10
+            //- Harm Reduction Video 2 goes here Naxloxone Offers second chances
+            +vimeo('336646703')
+            figure
+                p Peter Sadler describes how naloxone reverses an opioid overdose.
+
+        .uk-width-medium-5-10(style="padding:0 0 0 25px;")
+            div(style="padding-top:66.66%; position:relative; overflow:hidden;")
+                #controlledWidth.uk-width-1-1(style="position:absolute; top:0;")
+                    div(id="naloxone_hype_container" style="position:relative;width:600px;height:400px;overflow:hidden; transform-origin:top left;")
+                        script(type="text/javascript" charset="utf-8" src="naloxone.hyperesources/naloxone_hype_generated_script.js?24524")
+            figure
+                p Naloxone binds opioid receptors, blocking effects of the drugs.
+            
+    
+    +references
+        p
+            | Harm Reduction Coalition (2016). Alternatives to public injection. Retrieved 28 June 2019 from 
+            a(href="https://harmreduction.org/wp-content/uploads/2016/05/Alternatives-to-Public-Injection-report.pdf") https://harmreduction.org/wp-content/uploads/2016/05/Alternatives-to-Public-Injection-report.pdf
+            | .
+        p
+            | New York State Department of Health AIDS Institute, &amp; New York State Department of Health AIDS Institute. (2014). Comprehensive harm reduction reverses the trend in new HIV infections.
+        p
+            | Potier, C., Laprévote, V., Dubois-Arber, F., Cottencin, O., &amp; Rolland, B. (2014). Supervised injection services: what has been demonstrated? A systematic literature review. Drug and Alcohol Dependence, 145, 48-68.
+        p
+            | Vancouver Coastal Health (2017). Insite user statistics. Retrieved 28 June 2019 from 
+            a(href="http://www.vch.ca/public-health/harm-reduction/supervised-consumption-sites/insite-user-statistics") http://www.vch.ca/public-health/harm-reduction/supervised-consumption-sites/insite-user-statistics
+            | .
+
+block append endscripts
+   script.
+      $(document).ready(function() {
+         var container = document.getElementById('controlledWidth');
+         var item = document.getElementById('naloxone_hype_container');
+
+         function updateItemWidth () {
+            var pad = parseInt(window.getComputedStyle(container).paddingLeft);
+            var newScale = (container.offsetWidth - pad) / 600;
+            item.style.transform = "scale(" + newScale + "," + newScale + ")";
+         };
+
+         updateItemWidth();
+         window.addEventListener('resize', updateItemWidth);
+      });

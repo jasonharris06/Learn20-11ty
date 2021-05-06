@@ -1,0 +1,84 @@
+extends /shared/layout
+block append endscripts
+   script(src="/lib/accordion.js")
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-6-10
+         p
+            | A mode of inheritance, or inheritance pattern, describes how a disorder passes from parents to children. Single gene disorders have different modes of inheritance. A genetic disorder’s inheritance pattern is influenced by three things: 
+         ol
+            li The type of chromosome the disease-causing gene is located on;
+            li The job of the gene product; and
+            li The how the changes to the gene affect the gene product.
+         p
+            | To see how some of these details play out, visit our pages that describe 
+            a(href='/content/disorders/singlegeneeg/') specific single-gene genetic disorders.
+   +pod('Single gene disorders have different modes of inheritance')
+      .uk-width-medium-6-10
+         p
+            | A mode of inheritance, or inheritance pattern, describes how a disorder passes from parents to children. 
+      .uk-width-1-1
+         include mode.pug
+         hr
+      .uk-width-medium-4-10
+         p
+            u Autosomal dominant inheritance
+            br
+            | Genetic disorders that follow this inheritance pattern are caused by genes on the autosomes, which are the non-sex chromosomes. People inherit two copies of each autosome: one from each parent. There are 22 autosomes in all, so they account for most of our genes.
+         p
+            | Dominant means that a person will have the genetic disorder if they have just one disease-causing copy of a gene. "Dominance" has nothing to do with how a gene is inherited, but with the function of the specific product it codes for. 
+         p
+            | With a dominant inheritance pattern, genetic disorders pass from an affected parent to an affected child. With some genetic disorders, including Huntington Disease, symptoms appear later in life, often after a person has already had children. 
+         p
+            | Families affected by these disorders tend to be well aware of them. Some seek out genetic testing for themselves before they have children.
+      .uk-width-medium-6-10
+         include autodom.pug
+      .uk-width-1-1
+         hr
+      .uk-width-medium-6-10
+         include autorec.pug
+      .uk-width-medium-4-10
+         p
+            u Autosomal recessive inheritance
+            br
+            | Genetic disorders that follow this inheritance pattern are caused by genes on the autosomes.
+         p
+            | Recessive means that the disorder is caused by having two disease-causing copies of a gene. One copy must be inherited from each parent. A person with just one disease-causing allele does not have the disorder, but they are a "carrier." A carrier has an increased risk of having a child with the disorder. For a child to have the disorder, both parents must be either carriers or affected.
+         p
+            | Most disorders that follow a recessive inheritance pattern are caused by having non-working copies of a gene. That is, no protein product is made from the gene, or the protein product is made but it is altered so that it cannot do its job. Often a person who has one working copy can still make enough of the protein product so that they have no effects. But having no functional copies of the gene causes the effects of the disorder. 
+         p
+            | Many of the people who are carriers do not know that a genetic disorder is even an issue in their family. Few seek out genetic testing for themselves before they have children. And those who learn that they are carriers have the tricky task of deciding what to do with that information. Should they tell other family members, who may also be carriers? How should they tell them?
+      .uk-width-1-1
+         hr
+      .uk-width-medium-6-10
+         p
+            u Semi-dominant inheritance
+            br
+            | A disorder with a semi-dominance inheritance pattern is somewhere between dominant and recessive. Having two non-functional copies of the gene causes the full-blown disorder. But having one non-functional copy causes a less severe form. 
+         p
+            | Sometimes one genetic disorder can have more than one inheritance pattern. This is because the gene that causes it may be affected in different ways. The type of inheritance pattern depends on the specific changes to the gene and the gene product.      
+      .uk-width-1-1
+         hr            
+      .uk-width-medium-4-10
+         p
+            u X-linked inheritance
+            br
+            | X-linked genetic disorders are caused by genes on the X chromosome. X and Y are the sex chromosomes, and they specify whether a person is female (usually XX) or male (usually XY). Genetic disorders with an X-linked inheritance pattern affect males and females differently. 
+         p
+            | Like autosomal disorders, X-linked genetic disorders can follow dominant or recessive inheritance patterns. Most X-linked genetic disorders are recessive. Dominant ones are rare: one of the parents would also have the disorder, and people with these disorders rarely have children.
+         p
+            | For X-linked recessive disorders, males are affected much more often than females. To have the disorder, males need just one copy of the gene variation—which they inherit from their mothers. The mothers are unaffected carriers. This pattern comes about because males have a single X chromosome, which comes from their mother (their Y chromosome comes from their father). Since females inherit two X chromosomes, one from each parent, they usually have one functional copy of the gene.
+         p
+            | Though it happens rarely, a girl can end up with a disorder if she inherits two non-functioning copies of a gene—one from a carrier mother and one from an affected father. 
+         p
+            | There are two rare exceptions to this pattern. Girls with Turner syndrome, who have just one X chromosome, are more susceptible to X-linked disorders. And XXY boys, who have two X chromosomes, are less susceptible.
+         p
+            | Most families affected by these disorders are well aware of them. Some seek out genetic testing for themselves before they have children.
+      .uk-width-medium-6-10
+         include xlinked.pug
+
+block append endscripts
+   script(src="/lib/slideshow.js")
+   script(src="/lib/slideshow-fx.js")
+         

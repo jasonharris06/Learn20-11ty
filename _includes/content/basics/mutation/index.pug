@@ -1,0 +1,123 @@
+extends /shared/layout
+block content
+   +pageTitle   
+   
+   +pod("")
+      .uk-width-1-1.uk-text-center
+         iframe.uk-responsive-width(src='https://player.vimeo.com/video/167950516', width='920', height='520', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+         a.uk-button.uk-button-success(href="../", data-uk-button)
+            | Return to the Tour index
+   +pod("")
+     .uk-width-1-1.uk-text-center
+       img(src="images/dna-gene-allele.jpg" alt="dna explained")
+   +pod('Mutation Generates New Alleles')
+      .uk-width-medium-6-10
+         p
+            | The whole human family is one species with the same genes. Mutation creates slightly
+            | different versions of the same genes, called alleles. These small differences in DNA sequence
+            | make every individual unique. They account for the variation we see in human hair color, skin
+            | color, height, shape, behavior, and susceptibility to disease. Individuals in other species
+            | vary too, in both physical appearance and behavior.
+         |       
+         p
+            | Genetic variation is useful because it helps populations change over time. Variations that
+            | help an organism survive and reproduce are passed on to the next generation. Variations that
+            | hinder survival and reproduction are eliminated from the population. This process of natural
+            | selection can lead to significant changes in the appearance, behavior, or physiology of
+            | individuals in a population, in just a few generations.
+         |       
+         p
+            | Once new alleles arise, meiosis and sexual reproduction combine different alleles in new
+            | ways to increase genetic variation.
+      |    
+      .uk-width-medium-4-10
+         figure
+            img(src='images/mut6.jpg', height='317', width='352', alt='alleles')
+            |          
+            p
+   +pod('Mutation vs. variation')
+      |    
+      .uk-width-medium-6-10
+         p
+            | It&apos;s useful to think of mutation as a process that creates genetic variation. We often refer
+            | to a mutation as a thing&mdash;the genetic variation itself. This approach can be useful when it comes
+            | to a gene associated with a disease: the disease allele carries a mutation, a DNA change that
+            | compromises the protein&apos;s function. However, this approach gives mutation a bad name.
+         |       
+         p
+            | It&rsquo;s important to remember that losing the function of a gene doesn&rsquo;t always affect health.
+            | For example, most mammals have hundreds of genes that code for olfactory receptors, proteins
+            | that help us smell. Losing one of these genes probably doesn&rsquo;t make all that much difference.
+         |       
+         p
+            | In contrast to variations that cause disease, there are many more examples of variations that
+            | are neither good nor bad, but just different&mdash;like blood types and eye color. Just like with
+            | disease alleles, the process of mutation creates these more neutral variations. But with neutral
+            | variations, it can be impossible to tell which allele is the &quot;normal&quot; one that existed first
+            | and which is the &quot;mutant&quot;&mdash;and the distinction is often meaningless.
+      |    
+      .uk-width-medium-4-10
+         figure
+            img(src='images/mut2.jpg', height='340', width='352', alt='alleles')
+            |          
+            p
+   +pod('Proteins and switches')
+      .uk-width-medium-6-10
+         p
+            | Mutation creates variations in protein-coding portions of genes that can affect the protein
+            | itself. But even more often, it creates variations in the &quot;switches&quot; that control when and
+            | where a protein is active and how much protein is made.
+         |       
+         p
+            | Lactase is an enzyme that helps infants break down lactose, a sugar in milk. Normally the
+            | gene that codes for lactase is active in babies and then turned off at about age four. When people
+            | who don&apos;t make lactase consume milk, they experience gas, nausea, and discomfort. But some people
+            | have a variation in a genetic switch that keeps the lactase gene active. This variation is
+            | called &quot;lactase persistence,&quot; and people who have it can keep milk in their diets even as adults.
+      .uk-width-medium-4-10
+         figure
+            img(src='images/mut3.jpg', height='340', width='352', alt='switches')
+   +pod('Other drivers of mutation: Environmental agents')
+      .uk-width-medium-6-10
+         p
+            | Radiation, chemicals, byproducts of cellular metabolism, free radicals, ultraviolet rays from
+            | the sun&mdash;these agents damage thousands of nucleotides in each of our cells every day. They
+            | affect the nucleotides themselves: converting one base to another, knocking a base off its
+            | backbone, or even causing a break in the DNA strand.
+      .uk-width-medium-4-10
+         figure
+            img(src='images/mut4.jpg', height='340', width='352', alt='agents')
+
+   +pod('DNA Repair')
+      .uk-width-medium-6-10
+         p
+            | Most of the time, mutation is reversed. DNA repair machines are constantly at work in our
+            | cells, fixing mismatched nucleotides and splicing broken DNA strands back together. Yet some
+            | DNA changes remain. If a cell accumulates too many changes&mdash;if its DNA is so damaged that
+            | repair machinery cannot fix it&mdash;it either stops dividing or it self-destructs. If any of
+            | these processes go wrong, the cell could become cancerous.
+         |       
+         p
+            | When we put on sun screen, we are protecting ourselves against mutation in somatic
+            | cells&mdash;the cells that make up the body and are not involved in reproduction.&ZeroWidthSpace; Only when DNA
+            | changes are carried in egg and sperm cells are they passed to the next generation. Believe
+            | it or not, a certain amount of sloppiness is built into the system. Without mutation there
+            | would be no variation, and without variation there would be no evolution.
+      |    
+      .uk-width-medium-4-10
+         figure
+            img(src='images/mut5.jpg', height='340', width='352', alt='repair')
+   
+   +references
+        p
+            | Baer, C. F., Miyamoto, M. M., & Denver, D. R. (2007). Mutation rate variation in multicellular eukaryotes: causes and consequences. Nature Reviews Genetics, 8(8), 619-631.
+        p
+            | Barnes, D. E., & Lindahl, T. (2004). Repair and genetic consequences of endogenous DNA base damage in mammalian cells. Annu. Rev. Genet., 38, 445-476.
+        p
+            | Campbell, C. D., & Eichler, E. E. (2013). Properties and rates of germline mutations in humans. Trends in Genetics, 29(10), 575-584.
+        p
+            | Hoeijmakers, J. H. (2009). DNA damage, aging, and cancer. New England Journal of Medicine, 361(15), 1475-1485.
+        p
+            | Jackson, S. P., & Bartek, J. (2009). The DNA-damage response in human biology and disease. Nature, 461(7267), 1071-1078.
+        p
+            | Roach, J. C., Glusman, G., Smit, A. F., Huff, C. D., Hubley, R., Shannon, P. T., ... & Shendure, J. (2010). Analysis of genetic inheritance in a family quartet by whole-genome sequencing. Science, 328(5978), 636-639. doi:10.1126/science.1186802

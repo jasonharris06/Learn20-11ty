@@ -1,0 +1,26 @@
+//- extends /shared/layout
+
+//- block content
+//-    +pageTitle
+//-    article.lg-pod.lg-section
+//-       .uk-container.uk-container-center(style="padding:0 100px;")
+//-            div(style="padding-top:75%; position:relative; overflow:hidden;")
+//-                #controlledWidth.uk-width-1-1(style="position:absolute; top:0;")
+//-                    div(id="rewardbehavior_hype_container" style="margin:auto; position:relative; width:1000px; height:750px; overflow:hidden; transform-origin:top left;" hyp_dn="RewardBehavior")
+//-                        script(type="text/javascript" charset="utf-8" src="rewardbehavior.hyperesources/rewardbehavior_hype_generated_script.js?59360")
+
+//- block append endscripts
+//-    script.
+//-       $(document).ready(function() {
+//-          var container = document.getElementById('controlledWidth');
+//-          var item = document.getElementById('rewardbehavior_hype_container');
+
+//-          function updateItemWidth () {
+//-             var pad = parseInt(window.getComputedStyle(container).paddingLeft);
+//-             var newScale = (container.offsetWidth - pad) / 1000;
+//-             item.style.transform = "scale(" + newScale + "," + newScale + ")";
+//-          };
+
+//-          updateItemWidth();
+//-          window.addEventListener('resize', updateItemWidth);
+//-       });

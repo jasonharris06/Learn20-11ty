@@ -1,0 +1,30 @@
+extends /shared/layout
+block content
+   +pageTitle()(teach="genetherapy")
+   .lg-section
+      .uk-container.uk-container-center
+         .uk-grid
+            .uk-width-medium-1-2
+               .lg-index-items
+                  +index-item('What Is Gene Therapy?','explore','intro','images/intro.jpg')
+                     p.
+                        Explore the what&apos;s and why&apos;s of gene therapy research, includingan in-depth look at the genetic 
+                        disorder cystic fibrosis and how gene therapy could potentially be used to treat it.
+                  +index-item('Gene Delivery: Tools of the Trade','interactive explore','tools','images/tools.jpg')
+                     p Explore the methods for delivering genes into cells.
+                  +index-item('Space Doctor','interactive explore','doctor','images/doctor.jpg')
+                     p You are the doctor! Design and test gene therapy treatments with ailing aliens.
+            .uk-width-medium-1-2
+               .lg-index-items
+                  +index-item('Challenges In Gene Therapy','learn more','challenges','images/challenges.jpg')
+                     p Researchers hoping to bring gene therapy to the clinic face unique challenges.
+                  +index-item('Approaches To Gene Therapy','learn more','approaches','images/approaches.jpg')
+                     p Beyond adding a working copy of a broken gene, gene therapy can also repair or eliminate broken genes.
+                  +index-item('Gene Therapy Successes','learn more','success','images/success.jpg')
+                     p The future of gene therapy is bright. Learn about some of its most encouraging success stories.
+                  +index-item('Gene Therapy Case Study: Cystic Fibrosis','learn more','casestudy','images/casestudy.jpg')
+                     p 
+
+         +bottom-menu("",'sepagsep')
+   
+   

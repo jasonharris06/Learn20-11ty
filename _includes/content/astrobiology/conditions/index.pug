@@ -1,0 +1,189 @@
+extends /shared/layout
+
+block append head
+   link(href='conditions.css', rel='stylesheet', type='text/css')
+
+
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-1-1.uk-text-center
+         #wrapper
+            #footnote
+            #audio_controls
+               #ccButton.audioControl
+               .divider
+               #muteButton.audioControl(onclick='toggleMute()')
+               .divider
+               #volumeContainer
+                  #volumeBar1.volumeBar(onclick='setVol(1)')
+                  #volumeBar2.volumeBar(onclick='setVol(2)')
+                  #volumeBar3.volumeBar(onclick='setVol(3)')
+                  #volumeBar4.volumeBar(onclick='setVol(4)')
+                  #volumeBar5.volumeBar(onclick='setVol(5)')
+
+            #slide_controls
+               #rewButton.slideButton(onclick='Rew()')
+                  #rewIcon
+               .divider
+               #fwdButton.slideButton(onclick='Fwd();startAudio();')
+                  #fwdIcon
+            video#video(width='880', height='495', data-setup='{}', preload='auto', webkit-playsinline='')
+               source(src='/content/astrobiology/conditions/video/ConditionsThatSupportLife.mp4', type='video/mp4')
+
+               source(src='/content/astrobiology/conditions/video/ConditionsThatSupportLife.webmhd.webm', type='video/webm')
+
+               source(src='/content/astrobiology/conditions/video/ConditionsThatSupportLife.oggtheora.ogv', type='video/ogg')
+
+               p Your browser doesn&apos;t support HTML5. Please upgrade.
+
+         div
+            audio#music(loop='loop', preload='auto')
+               source(src='/content/astrobiology/conditions/audio/CTSL.mp3', type='audio/mpeg')
+
+               source(src='/content/astrobiology/conditions/audio/CTSL.ogg', type='audio/ogg')
+
+               source(src='/content/astrobiology/conditions/audio/CTSL.wav', type='audio/wav')
+
+               p  Your browser doesn&apos;t support HTML5.  Please upgrade.
+         script(src='slide_control.js')
+   +pod('What makes a planet habitable?')
+
+      .uk-width-medium-6-10
+         figure
+            img(src='images/IdealHabitablePlanet.jpg', alt='Ideal Habitable Planet')
+
+            p
+
+         +well
+            p
+               a(href='http://www.nasa.gov/mission_pages/kepler/overview/index.html', target='_blank', style='letter-spacing:normal')
+                  | NASA&apos;s Kepler Mission is looking for habitable planets in our neighborhood of the Milky Way. Using their
+               a(href='http://www.planethunters.org', target='_blank', style='letter-spacing:normal') online tool
+               | , you can help
+               |          NASA in their search for new planets.
+
+      .uk-width-medium-4-10
+         p
+            | Even if we assume any habitable planet must be Earth-like (and it may not be), chances are
+            | we&apos;re not alone. Astrobiologists estimate that the Milky Way has 500 habitable planets, which
+            | fit the following criteria:
+
+         ul
+            li
+               | They&apos;re a comfortable distance away from a star similar to our sun. That is, they&apos;re far enough away to be
+               | out of the heavy heat and radiation zone, but not so far that they&apos;re extremely cold. This just-right distance
+               | is called the &quot;habitable zone.&quot;
+
+            li
+               | They&apos;re made of rock. Jupiter, Saturn, and Uranus in our solar system are made of gases, so we don&apos;t expect
+               | life to be able to survive there.
+
+            li
+               | They&apos;re big enough to have a molten core. Earth&apos;s core gives us a source of geothermal energy, it allows
+               | cycling of raw materials, and it sets up a magnetic field around the planet that protects us from radiation.
+               | Mars probably had a hot liquid core at one time, but because it&apos;s a smaller planet its heat dissipated more
+               | quickly.
+
+            li
+               | They are good candidates for having a protective atmosphere. The atmosphere holds carbon dioxide and other
+               | gases that keep the planet warm and protect its surface from radiation.
+
+   +pod('What about intelligent life?')
+
+      .uk-width-medium-6-10
+         p
+            | Even today, most Earth life is microbial. And microbes have been here for at least 3.5 billion
+            | yearsa very long time when you consider that the first rocks formed about 3.8 billion years ago.
+            | Given the number of potentially habitable planets within our home galaxy, chances are good that
+            | microbial life exists elsewhere.
+
+         p
+            | Whether more-complex life forms like plants and insects exist elsewhere is a bigger
+            | question. For 2.9 billion years or so, all life on Earth was microscopic. Multicellular,
+            | macroscopic algae and animals came onto the scene about 600 million years ago. That&apos;s about
+            | 17% of the total time that life has existed on Earth.
+
+         p
+            | It&apos;s very hard to say how likely we are to find other intelligent life forms. The oldest
+            | fossils of our species, Homo sapiens, are less than 200,000 years old. That&apos;s a geological
+            | microsecond, just 0.000057% of the time microbes have been around. If, like on Earth,
+            | intelligent life takes much longer to evolve than microbial life, it might be rare. But some
+            | galaxies and solar systems are much older than ours, so maybe other intelligent life has formed;
+            | however, it may be long dead. Finding living intelligent beings is a matter of both space and time.
+
+      .uk-width-medium-4-10
+         figure
+            img(src='images/SETI.jpg', alt='radio telescopes')
+
+   +pod('Looking for signs of life past or present')
+
+      .uk-width-medium-6-10
+         figure
+            img(src='images/MarsRiverBed.jpg', alt='mars landscapes')
+
+            p
+               | (Left) Evidence that there may have once been liquid water on the surface of mars.
+               br
+               |  (Right) Fossilized remains of underwater colonies of bacteria, called stromatolytes.
+
+      .uk-width-medium-4-10
+         p
+            | Just as conditions on Earth have changed drastically over time, so have conditions on other planets.
+            | When astrobiologists evaluate a planet, they look not just at its current conditions, but for signs
+            | that it could have been habitable in the past.
+
+         p
+            | Liquid water leaves behind a kind of footprint. Mars, for example, has what looks like dry
+            | river and lake beds, making astrobiologists wonder if the cold, dry planet could have once been
+            | covered with life. If it was, there may be enough remaining liquid water to sustain microbial
+            | life deep underground or under the frozen ice caps.
+
+         p
+            | Living things change their environment, leaving behind certain physical and chemical signatures. Even
+            | a planet that is lifeless today could have fossil evidence of ancient life forms. Fossils and chemical
+            | remnants can tell us a lot about what extinct life might have looked like.
+
+block append endscripts
+   script(src='popcorn.js')
+   script(src='popcorn.subtitle.js')
+   script(src='subtitles.js')
+   script(type='text/javascript').
+      if ('webkitAudioContext' in window) {
+        var myAudioContext = new webkitAudioContext();
+      }
+      var isIOS = false;
+      var isUnlocked = false;
+      function unlock() {
+        if (isIOS || this.unlocked)
+          return;
+        // create empty buffer and play it
+        var buffer = myAudioContext.createBuffer(1, 1, 22050);
+        var source = myAudioContext.createBufferSource();
+        source.buffer = buffer;
+        source.connect(myAudioContext.destination);
+        source.noteOn(0);
+        // by checking the play state after some time, we know if we're really unlocked
+        setTimeout(function () {
+          if ((source.playbackState === source.PLAYING_STATE || source.playbackState === source.FINISHED_STATE)) {
+            isUnlocked = true;
+          }
+        }, 200);
+      }
+      function startAudio() {
+        /* unlock();
+        request = new XMLHttpRequest();
+        request.open('GET', 'audio/CTSL.mp3', true);
+        request.responseType = 'arraybuffer';
+        request.addEventListener('load', bufferSound, false);
+        request.send();
+        var mySource;
+        function bufferSound(event) {
+        var request = event.target;
+        var source = myAudioContext.createBufferSource();
+        source.buffer = myAudioContext.createBuffer(request.response, false);
+        mySource = source;
+        source.connect(myAudioContext.destination);
+        source.noteOn(0);
+        } */
+      }

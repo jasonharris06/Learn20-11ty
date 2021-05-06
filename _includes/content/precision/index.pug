@@ -1,0 +1,51 @@
+extends /shared/layout
+block content
+   +pageTitle()(teach="precision")
+   .lg-section
+      .uk-container.uk-container-center
+         .uk-grid
+            .uk-width-medium-1-2
+               h2 Understanding Precision Medicine
+               .lg-index-items
+                  +index-item('What Is Precision Medicine?','explore','intro','images/intro.jpg')
+                     p Precision medicine guides healthcare decisions based on the differences that make each patient unique.
+                  +index-item('Why the Time is Right','learn more','time','images/time.jpg')
+                     p Learn about the advances that are making precision medicine more practical and affordable than ever.
+                  +index-item("Your Doctor's New Genetic Tools",'video','example','images/example.jpg')
+                     p Investigate a precision medicine test that is being used in the clinic today.
+                  +index-item("More Examples of Precision Medicine in Action",'learn more','action','images/action.jpg')
+                     p Learn about new approaches to cancer, tissue engineering, and more.
+                  +index-item('Making SNPs Make Sense','explore','snips','images/snips.jpg')
+                     p See how tiny variations in a person&apos;s DNA can help predict drug response or disease risk.
+                  +index-item('Measuring Gene Expression','learn more','expression','images/expression.jpg')
+                     p Examine how differences in gene expression correlate with drug response or disease risk.
+                  +index-item('Genetic Testing in Healthcare', 'video', 'testing', '/images/placeholder1.jpg')
+                     p Take a deep dive into genetic testing! Learn about the types of tests that can help predict and diagnose conditions with an underlying genetic cause.
+            .uk-width-medium-1-2
+               h2 Precision Medicine at the University of Utah
+               .lg-index-items
+                  +index-item('Genetic Science, Powered by Families','learn more','uofu','images/uofu.jpg')
+                     p.
+                        Discovery is the first step in bringing precision medicine to patients. Learn more about the history of
+                        genetic research  and gene discovery at the University of Utah.
+                  +index-item('Genomic Medicine: Solving Genetic Mysteries for Better Health','video','genomic-medicine','images/GenomicMedicine.png')
+                     p.
+                        Learn how University of Utah scientists searched one boy's DNA to pinpoint the cause of his rare disease.
+                  +index-item('Precision Cancer Care','learn more','cancer','images/cancer.jpg')
+                     p.
+                        The Huntsman Cancer Institute (HCI) at the University of Utah was founded on the idea that cancer care should be
+                        centered around the patient.
+                  +index-item('A Culture of Collaboration','learn more','collaboration','images/collaboration.jpg')
+                     p.
+                        See how experts from multiple disciplines work together both to make discoveries and to translate those
+                        discoveries into practices that help patients.
+                  +index-item('From Discovery to Diagnostics','learn more','diagnostics','images/diagnostics.jpg')
+                     p.
+                        Turning discoveries into diagnostics is key to bringing precision medicine to patients.
+                  +index-item('The Value of Precision Medicine','learn more','value','images/value.jpg')
+                     p.
+                        Precision medicine promises to bring better care to patients at a lower cost than traditional approaches.
+            .lg-bottom-menu
+               ul.uk-subnav.uk-subnav-line
+                  li
+                     +bottom-menu("credits","uuph")

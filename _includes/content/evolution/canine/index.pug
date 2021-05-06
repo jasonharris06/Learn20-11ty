@@ -1,0 +1,28 @@
+extends /shared/layout
+
+block append headscripts
+
+block content
+   +pageTitle
+   article.lg-pod.lg-section
+      .uk-container.uk-container-center
+         div(style="padding-top:56.25%; position:relative; overflow:hidden;")
+            #controlledWidth.uk-width-1-1(style="position:absolute; top:0;")
+               div(id="newcanine_hype_container" style="margin:auto; position:relative; width:1280px; height:720px; overflow:hidden; transform-origin:top left;" aria-live="polite")
+                  script(type="text/javascript" charset="utf-8" src="new_canine.hyperesources/newcanine_hype_generated_script.js?85581")
+
+block append endscripts
+   script.
+      $(document).ready(function() {
+         var container = document.getElementById('controlledWidth');
+         var item = document.getElementById('newcanine_hype_container');
+
+         function updateItemWidth () {
+            var pad = parseInt(window.getComputedStyle(container).paddingLeft);
+            var newScale = (container.offsetWidth - pad) / 1280; // could try using 'container.offsetWidth * 0.0009259259259' instead if performance is an issue
+            item.style.transform = "scale(" + newScale + "," + newScale + ")";
+         };
+
+         updateItemWidth();
+         window.addEventListener('resize', updateItemWidth);
+      });

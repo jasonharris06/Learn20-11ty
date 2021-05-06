@@ -1,0 +1,60 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-5-10
+         p
+            | A regular human cell has 46 chromosomes: 44 autosomes, which come in pairs, and 2 sex chromosomes, which specify whether someone is male (usually XY) or female (usually XX).
+         p
+            | The pairs of autosomes are called "homologous chromosomes." Homologous chromosomes have all of the same genes arranged in the same order, but there are small differences in the DNA letters of the genes.
+         p
+            | When cells divide to make more cells (mitosis) or reproductive cells (meiosis), and when reproductive cells join to make a new individual (fertilization), it is important that the new cells get the proper number of chromosomes. Read on to learn more about these processes.
+
+      .uk-width-medium-5-10
+         figure
+            img.lg-no-shadow(src='images/karyotype.jpg', alt='Karyotype')
+               
+   +pod('Mitosis')   
+      .uk-width-medium-5-10
+         p
+            | Before a cell divides to make two cells, it copies all of its chromosomes. These copies, called sister chromatids, are identical. Until the cell divides, the identical copies stay connected with each other by their middles (centromeres.) When the cell divides, the copies are pulled apart, and each new cell gets one identical copy of each chromosome. 
+         p
+            | This type of cell division is called mitosis, and it produces cells with a total of 46 chromosomes. Beginning soon after fertilization (see below), all of the cells in your body were made this way. Thus, every cell in your body has an identical set of chromosomes.
+
+      .uk-width-medium-5-10
+         figure
+            img.lg-no-shadow(src='images/mitosis.jpg', alt='Mitosis')
+
+   +pod('Meiosis')   
+      .uk-width-medium-5-10
+         p
+            | When egg and sperm form, they go through a special type of cell division called meiosis. One purpose of meiosis is to reduce the number of chromosomes by half. The other is to create genetic diversity.
+         p
+            | Meiosis begins like mitosis: the cell copies each chromosome. But unlike in mitosis, homologous chromosome pairs line up and exchange pieces-a process called recombination. Remember, homologous chromosomes have the same genes but with slight differences. Recombination increases genetic diversity by putting pieces of  slightly different chromosomes together.
+         p
+            | Next, the newly recombined homologous chromosomes are divided into two daughter cells. Then the sister chromatids are pulled apart into a total of four reproductive cells. Each of these cells has one copy each of 23 chromosomes, all with a unique combination of gene variations.
+
+      .uk-width-medium-5-10
+         figure
+            img.lg-no-shadow(src='images/meiosis.jpg', alt='Meiosis')
+   +pod('Fertilization')
+      .uk-width-medium-5-10
+         p
+            | Egg and sperm cells have just 23 chromosomes each. That's half as many chromosomes as regular cells. Through the process of fertilization, egg and sperm join to make a cell with 46 chromosomes (23 pairs), called a zygote.
+         p
+            | For each chromosome pair, one homologous chromosome came from each parent. They have the same genes arranged in the same order, but there are small variations in the DNA letters of those genes.
+         p 
+            | From here, the process begins again. Mitosis builds a person with an identical set of chromosomes in every cell. And meiosis generates reproductive cells with new combinations of gene variations.
+         +well
+            p Chromosomes are sometimes gained, lost, or rearranged during meiosis and fertilization, causing people to have genetic disorders. To learn more, visit: 
+            a(href='/content/disorders/extraormissing/') Extra or Missing Chromosomes 
+            | and 
+            a(href='/content/disorders/rearrangements/') Chromosomal Rearrangements
+            | .
+      .uk-width-medium-5-10
+         figure
+            img.lg-no-shadow(src='images/fertilization.jpg', alt='Fertilization')
+   
+   +bottom-menu("",'hhmi')
+   
+   

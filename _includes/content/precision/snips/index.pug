@@ -1,0 +1,144 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   +pod('')
+      .uk-width-medium-1-2
+         p
+            | Scientists are identifying, cataloging, and studying small genetic variations
+            | among humans that will lead to more specialized and effective medical treatments. What do
+            | these variations look like, and what exactly makes them informative?
+         p
+            | Researchers look for one or more
+            | single
+            | nucleotide polymorphisms (SNPs; pronounced &quot;snips&quot;).  SNPs are single-nucleotide
+            | substitutions of one base for another that occur in more than one percent of the
+            | general population.
+
+      .uk-width-medium-1-2
+         p
+            | The challenge for scientists is to identify SNPs that correlate with a particular effect in patients. Reliable SNPs could
+            | serve as predictive markers that inform our decisions about numerous aspects of
+            | medical care, including specific diseases, effectiveness of various drugs and
+            | adverse reactions to specific drugs.
+         p
+            | This pharmacogenetic approach could save time, money, and discomfort for
+            | millions of patients through accurate diagnoses and matching patients with
+            | appropriate medicines.
+         br
+      .uk-width-1-1
+         iframe.uk-responsive-width(src='RECOVER_SNPs Conversion.html', scrolling='no',  style='width: 965px; height: 330px; border: none;')
+   +pod('Finding SNPs in the human genome')
+
+      .uk-width-medium-6-10
+         p
+            | Scientists approach the problem of identifying, cataloging, and characterizing SNPs in two main ways:
+
+         ul
+            li
+               strong Genomic approaches
+               | . This approach is used by scientists who want to see the
+               | &#x9;&#x9;&#x9;big picture. Several large-scale projects have combined the efforts
+               | &#x9;&#x9;&#x9;of many institutions to identify and catalog all
+               | &#x9;&#x9;&#x9;of the SNPs in the 3-billion-base pair human genome. Each project involves hundreds of
+               | &#x9;&#x9;&#x9;scientists, who compare the genomes of numerous individuals to identify the differences.
+               | &#x9;&#x9;&#x9;These comparisons require a lot of computer-powered data analysis. As they work, scientists
+               | &#x9;&#x9;&#x9;sort and catalog their results in databases that are available to anyone over the Internet,
+               | &#x9;&#x9;&#x9;including other scientists and you.
+            li
+               strong Functional approaches
+               | . This approach is used by scientists who are interested
+               | &#x9;&#x9;&#x9;in a particular disease or drug response. The biological processes involved in
+               | &#x9;&#x9;&#x9;diseases and drug responses are controlled by the activities of many genes. Scientists
+               | &#x9;&#x9;&#x9;interested in a particular process select genes known to be involved in the
+               | &#x9;&#x9;&#x9;process and examine them in people who have a response or disease, as well as those
+               | &#x9;&#x9;&#x9;who don&apos;t. By comparing people&apos;s DNA sequences, scientists can identify SNPs that
+               | &#x9;&#x9;&#x9;correspond with a particular function or response.
+
+      .uk-width-medium-4-10
+         img(src='images/snp-detection.jpg', alt='How do scientists identify SNPs?', width='350', height='537')
+   +pod('SNP Quick Reference')
+
+      .uk-width-medium-4-10
+         img(src='images/snp-quick-ref.jpg', alt='SNP', width='350', height='389')
+
+      .uk-width-medium-6-10
+         p
+            | SNP (pronounced &quot;snip&quot;) stands for Single Nucleotide Polymorphism. SNPs are single-nucleotide
+            | substitutions of one base for another. Each SNP location in the genome can have up to four
+            | versions: one for each nucleotide, A, C, G, and T. A SNP and its distribution in a population
+            | might look like the images below and to the left.
+         | &#x9;&#x9;&#x9;
+         | &#x9;&#x9;&#x9;
+         p
+            | Not all single-nucleotide changes are SNPs, though. To be classified as a SNP, two or more
+            | versions of a sequence must each be present in at least one percent of the general population.
+         | &#x9;&#x9;&#x9;
+         | &#x9;&#x9;&#x9;
+         p
+            | SNPs occur throughout the human genomeabout one in every 300 nucleotide base
+            | pairs. This translates to about 10 million SNPs within the 3-billion-nucleotide human genome.
+   +pod('SNPs and disease-causing mutations: Not the same!')
+
+      .uk-width-medium-4-10
+         img(src='images/snp-pop-dist.jpg', alt='Population Distributions', width='350', height='242')
+
+         img(src='images/snp-types.jpg', alt='Differences in SNPs and disease-causing mutations', width='350', height='450')
+
+      .uk-width-medium-6-10
+         p
+            | If you know what a point mutation is, then the description of a SNP might
+            | sound similar. True, both are single-nucleotide differences in a DNA sequence,
+            | but SNPs should not be confused with disease-causing mutations.
+            | The image to the left shows some tell-tale differences:
+         | &#x9;&#x9;&#x9;
+         | &#x9;&#x9;&#x9;
+         p
+            | First, to be classified as a SNP, the change must be present in at least one percent of
+            | the general population. No known disease-causing mutation is this common.
+         | &#x9;&#x9;&#x9;
+         | &#x9;&#x9;&#x9;
+         p
+            | Second, most disease-causing mutations occur within a gene&apos;s coding or regulatory regions
+            | and affect the function of the protein encoded by the gene. Unlike mutations, SNPs are not
+            | necessarily located within genes, and they do not always affect the way a protein functions.
+            | SNPs are divided into two main categories:
+
+         div(style='padding-left: 25px;')
+            p
+               strong Linked SNPs
+               |  (also called indicative SNPs) do not reside within genes and do not affect
+               | &#x9;&#x9;&#x9;protein function. Nevertheless, they do correspond to a particular drug response or to the
+               | &#x9;&#x9;&#x9;risk for getting a certain disease.
+            | &#x9;&#x9;&#x9;
+            p
+               strong Causative SNPs
+               |  affect the way a protein functions, correlating with a
+               | &#x9;&#x9;&#x9;disease or influencing a person&apos;s response to medication. Causative SNPs come in two forms:
+
+            div(style='padding-left: 25px;')
+               p
+                  strong Coding SNPs
+                  | , located within the coding region of a gene, change the
+                  | &#x9;&#x9;&#x9;amino acid sequence of the gene&apos;s protein product.
+               | &#x9;&#x9;&#x9;
+               p
+                  strong Non-coding SNPs
+                  | , located within the gene&apos;s regulatory sequences,
+                  | &#x9;&#x9;&#x9;change the timing, location, or level of gene expression.
+   +pod('Additional Resources')
+      .uk-width-medium-6-10
+         p SNP and Haplotype Mapping Information and Databases
+         ul
+            li
+               a(href='http://www.ncbi.nlm.nih.gov/About/primer/snps.html') SNPs: Variations on a Theme
+               | , a Science Primer from the National Center for Biotechnology Information (NCBI).
+            li
+               a(href='http://www.ncbi.nlm.nih.gov/SNP') dbSNP
+               | , a database of human SNPs, from the National Center for Biotechnology Information (NCBI).
+            li
+               a(href='http://www.hapmap.org/') The International HapMap project
+               | , a partnership of scientists and funding agencies from Canada, China, Japan, Nigeria, the United Kingdom and the United States.
+            li
+               a(href='http://las.perkinelmer.com/content/snps/index.asp') SNP Scoring
+               | , from PerkinElmer, Inc. explains several SNP detection techniques

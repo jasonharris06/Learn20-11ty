@@ -1,0 +1,137 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-6-10
+         img(src='images/supplies_new.jpg', alt='Supplies', width='390', height='297')
+         |       
+         p
+            strong Materials you will need:
+            br
+            | &#x9;Electrophoresis chamber, gel form and comb
+            br
+            | &#x9;Power supply that produces 50-150 volts
+            br
+            | &#x9;Agar Agar granules
+            br
+            | &#x9;Salt solution
+            br
+            | &#x9;Commercial food colors 
+            br
+            | &#x9;Filter paper circles (cut out with hole punch)
+            br
+            | &#x9;Tweezers
+            br
+            | &#x9;Masking tape
+            br
+            | &#x9;Water
+      |    
+      .uk-width-medium-4-10
+         p
+            | Electrophoresis is a common lab technique used for separating DNA fragments. DNA samples are placed in a special gel
+            | and subjected to an electric field.
+         |       
+         p
+            | Because DNA is negatively-charged, it moves toward the positive electrode. The DNA fragments that are shortest will travel farthest,
+            | while the longest fragments will remain closest to the origin. Using the same basic principles, electrophoresis can also be
+            | used to separate RNA and proteins.
+         |       
+         p
+            | First, follow our step-by-step instructions to 
+            a(href='../build_gel_box.pdf') build a gel electrophoresis chamber
+            |  using inexpensive materials from local hardware and electronics stores.
+         |       
+         p
+            | Then follow the below procedure to simulate DNA electrophoresis using food colors from your kitchen pantry.
+
+   +pod('Melting The Agar')
+
+      .subSectionWide
+         p
+            | Add 1 gram agar to 100 milliliters of water in a glass container. We show a lab flask here, but you could use a small canning jar.
+         |       
+         p
+            | Heat the solution in the microwave oven on high power until it comes to a boil. Watch the solution closely; agar foams up and boils over easily.
+         |       
+         p
+            | Remove the container (protect your hand with a pot holder or folded paper towel) and gently swirl it to re-suspend any settled agar.
+         |       
+         p Continue this process until the agar dissolves completely.
+         |       
+         p Cool the agar until you can comfortably touch the flask.
+      |    
+      .subSectionNarrow
+         img(src='images/microwave_new2.jpg', alt='Microwave', width='320', height='295')
+   +pod('Pouring the Gel')
+      |    
+      .uk-width-medium-6-10
+         p Place tape across the ends of the gel form and place the comb in the form.
+         |       
+         p
+            | Pour cooled agar into the form. The agar should come at least half way up the comb teeth.
+         |       
+         p
+            | Immediately rinse and fill the agar flask with hot water to dissolve any remaining agar.
+         |       
+         p When the agar has solidified, carefully remove the comb.
+         |       
+         p Remove the tape from the ends of the gel form.
+      |    
+      .uk-width-medium-4-10
+         img(src='images/pouring-gel_new_lightened.jpg', alt='Pouring Gel', width='360', height='388')
+   +pod('Loading the Samples')
+      |    
+      .uk-width-medium-6-10
+         p
+            | Make a written record of which sample you will load in each well of the gel. You may find it helpful to load samples in every other well.
+         |       
+         p
+            | Place the gel form on a black or dark surface to help you see the wells in the agar.
+         |       
+         p
+            | Fold filter paper circle in half and hold sideways using tweezers. Dip filter paper into full-strength food color to saturate.
+         |       
+         p
+            | Gently ease the filter paper into the well. Be careful not to puncture the bottoms of the wells as you load each sample. Repeat for remaining colors.
+      |    
+      .uk-width-medium-4-10
+         img(src='images/loading_new.jpg', alt='Loading the Samples', width='370', height='345')
+   +pod('Setting Up the Gel Chamber')
+      |    
+      .uk-width-medium-6-10
+         p Place the gel in the electrophoresis chamber.
+         |       
+         p Make sure that the wells are closest to the negative (black) electrode.
+         |       
+         p
+            | To prepare the buffer, add a pinch of salt to one liter of tap water, deionized water, or distilled water (the water source that
+            | works for you may depend on your local water quality) and swirl to dissolve.
+         |       
+         p
+            | Fill each half of the chamber, adding solution until it is close to the top of the gel. Gently flood the gel from the end opposite
+            | the wells to minimize sample diffusion.
+         |       
+         p
+            | Place the lid on the chamber and connect the electrode leads to the power supply.
+         |       
+         p
+            | Connect the black lead to the negative terminal and the red lead to the positive terminal.
+      |    
+      .uk-width-medium-4-10
+         img(src='images/setup_new.jpg', alt='The Gel Chamber', width='375', height='277')
+   +pod('Running and Analyzing the Gel')
+      |    
+      .uk-width-medium-6-10
+         p Turn on the power supply and adjust the voltage to 50-100 volts.
+         |       
+         p Run the gel for 5-10 minutes.
+         |       
+         p
+            | Once the dyes have moved through the gel, turn off the power supply, disconnect the electrode leads, and remove the chamber lid.
+         |       
+         p
+            | Remove the gel from the electrophoresis chamber and analyze your results. Did some colors move further than others? Did some colors separate into two?
+      |    
+      .uk-width-medium-4-10
+         img(src='images/results_new.jpg', alt='Results', width='299', height='330')
+   

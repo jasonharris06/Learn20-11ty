@@ -1,0 +1,221 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod("")
+      .uk-width-1-1
+         .uk-text-center
+            button.uk-button.uk-button-primary(onclick="myFunction()" style="margin-bottom:20px;")
+               div(style="display:inline-block; clear:both; padding:10px;")
+                  h2(style="display:inline-block; color:#fff;") Download Now!
+            br
+            iframe.uk-responsive-width(src="//player.vimeo.com/video/154247425", width="920", height="518", frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+      .uk-width-medium-4-10
+         p.
+            Distractown was inspired by the work of researchers in the Department of Psychology at the University of Utah. Their
+            work has helped bring awareness to the impact of cognitive distraction on driving performance. [1, 2]
+      .uk-width-medium-6-10
+         +well
+            h3 Related links
+            p.
+               Watch a video of someone
+               doing <a href="https://www.washingtonpost.com/video/national/health-science/the-effect-of-distracted-driving-on-the-brain/2015/10/21/8a4579c8-7839-11e5-a5e2-40d6b2ad18dd_video.html">a very complex multitasking test</a>.
+               <br>
+               Find more news and videos at the University of
+               Utah's <a href="http://psych.utah.edu/research/labs/applied-basic-cognition-lab.php">Applied Cognition Lab</a>.
+   +pod("Multitasking is a myth")
+      .uk-width-medium-1-2
+         p.
+            The brain cannot fully pay attention to two tasks at the same time. When we attempt to multitask, we are really just switching our attention back and forth between tasks. For simple tasks, the brain can switch back and forth very quickly, making us feel like we are doing both at once. But especially for complex tasks, this type of switching takes time and it hurts our performance.
+         p.
+            Multitasking while driving can lead to three types of distraction:
+         ul
+            li
+               p.
+                  <strong>Manual</strong> distraction happens when we are trying to do too many things at once with our hands, for example taking
+                  your hands off the wheel to fumble with a bowl of cereal.
+            li
+               p.
+                  <strong>Visual</strong> distraction happens when we look back and forth between tasks, like when we take our eyes off the road
+                  to tune the radio or look in the back seat.
+            li
+               p.
+                  <strong>Cognitive</strong> distraction happens when multitasking interferes with the processing of information in the brain,
+                  like when we have a phone conversation while driving.
+         p.
+            Manual and visual distraction seem more obvious and believable than cognitive distraction. Yet cognitive distraction
+            is just as real. And it can be even more dangerous than the others because often we don't even realize that it's happening.
+         p.
+            The examples above relate to driving, but the costs of multitasking extend into all realms of our lives. A good rule
+            of thumb is that we do our best when we focus on one task at a time.
+      .uk-width-medium-1-2
+         figure
+            img(src="images/tunnel.jpg")
+            img(src="images/notunnel.jpg")
+            p.
+               Cognitive distraction causes drivers to experience a type of "tunnel vision." They move their eyes less from side
+               to side, and they are less likely to notice things in the periphery—pedestrians, cyclists, exit signs, traffic
+               signals. Distraction also slows reaction times
+   +pod("Fully half of all people are below average")
+      .uk-width-medium-1-2
+         p.
+            Do you think you are an exceptional multitasker? Or at least better than average? You're probably not. Here's why:
+         p.uk-margin-large-left.
+            Most people overestimate their own multi-tasking ability. In one study [3], 70% of participants (193 out of 277)
+            claimed their multitasking ability was above average.
+         p.uk-margin-large-left.
+            People who think they're good at multitasking are not so good at it. As a group, those who thought they were the
+            best at multitasking were actually worse than average.
+         p.uk-margin-large-left.
+            People who think they are good multitaskers are more likely to talk on the phone while driving. Yet as we've seen
+            above, these are the people who are the least capable of carrying out two tasks at once.
+         p.uk-margin-large-left.
+            Multitasking ability doesn't get better with practice. In fact, it may even get worse. It actually takes habitual
+            multitaskers longer to switch between tasks compared to people who multitask less often. They are also more likely
+            to get distracted while trying to focus on a single task. [4]
+      .uk-width-medium-1-2
+         figure
+            img(src="images/couple.jpg")
+            p.
+               We tend to overrate ourselves on more than just multitasking. Most people rate their looks, driving ability,
+               intelligence, and more as better than average—yet according to the definition of the word average, this cannot
+               be the case. This bias is called illusory superiority.
+   +pod("The cost of distracted driving")
+      .uk-width-medium-1-2
+         p.
+            The National Safety Council estimates that 1 in 4 car crashes involves cell phone use.
+         p.
+            A person talking on a cell phone has about the same level of impairment as a drunk driver (0.08 BAC). Both groups are
+            4 times more likely than average to be in an accident. Going hands-free does not improve this number.
+         p.
+            Distractions that take drivers' hands off the wheel or eyes off the road are even more dangerous. The National Safety
+            Council estimates that texting increases crash risk by at least 8 times and as much as 23 times.
+
+         +well
+            h3 Related Links
+            p.
+               For true stories about the consequences of distracted driving, visit the US Department of Transportation's YouTube channel <a href="https://www.youtube.com/playlist?list=PLD027FA703901B38E">Faces of Distracted Driving</a>.
+            p.
+               To learn more about distracted driving, visit <a href="http://www.distraction.gov">distraction.gov</a> or the <a href="http://www.nsc.org/learn/NSC-Initiatives/Pages/distracted-driving.aspx">National Safety Council</a> website on distracted driving.
+
+
+      .uk-width-medium-1-2
+         figure
+            img(src="images/dash.jpg")
+            p.
+               The hands-free navigation systems built into many types of cars and smartphones are also dangerously distracting.
+               <a target="_blank" href="https://www.youtube.com/watch?v=1825Gdr9LFM">Watch
+               a video</a>
+
+
+
+   +references
+      p.
+         [1] Strayer, D.L. &amp; Drews, F.A. (2007). Cell-phone–induced driver distraction. Current Directions in Psychological
+         Science, 16:3, 128-131.
+         <br>
+         In this study, researchers showed that even hands-free phone conversations made the test subjects worse drivers (in a
+         driving simulator, so no one would get hurt). Even though the drivers didn't take their eyes off the road, their
+         brains were distracted enough that they didn't noticing everything that was in front of them—a type of
+         inattention blindness.
+      p.
+         [2] Watson, J.M. &amp; Strayer, D.L. (2010). Supertaskers: profiles in extraordinary multitasking ability.
+         <br>
+         In this study, the researchers used an even harder multitasking test. Subjects answered math questions and memorized
+         words while also driving (again in a driving simulator). While this test was probably more demanding than most cell
+         phone conversations, it was easier to standardize the test and measure the effect across multiple trials. When subjects
+         in this study (with a few exceptions) were multitasking, they did worse on all of the tasks compared to when they were
+         doing just one of them.
+      p.
+         [3] Sanbonmatsu, D.M., Strayer, D.L., Medeiros-Ward, N. &amp; Watson, J.M. (2013). Who multi-tasks and why? Multi-tasking
+         ability, perceived multi-tasking ability, impulsivity, and sensation seeking. PLoS one, 8:1, e54402. doi:
+         10.1371/journal.pone.0054402
+      p.
+         [4] Ophir, E., Nas, C. &amp; Wagner, A.D. (2009). Cognitive control in media multitaskers. Proceedings of the National
+         Academy of Sciences of the USA, 106, 15583-15587. doi: 10.1073/pnas.0903620106
+      p.
+         [5] Strayer, D.L., Turrill, J., Cooper, J.M., Coleman, J.R., Medeiros-Ward, N. &amp; Biondi, F. (2015). Assessing
+         cognitive distraction in the automobile. Human Factors, 57:8, 1300-1324. doi: 10.1177/0018720815575149
+      p.
+         National Safety Council. Distracted driving: one call can change everything. Retrieved 11 February, 2016, from
+         http://www.nsc.org/learn/NSC-Initiatives/Pages/distracted-driving.aspx
+      p.
+         Strayer, D.L., Watson, J.M. &amp; Drews, F.A. (2011). Cognitive distraction while multitasking in the automobile. The
+         Psychology of Learning and Motivation, 54, 29-57. doi: 10.1016/B978-0-12-385527.00002-4.
+
+block append endscripts
+   script.
+      function myFunction() {
+         var unknown = '-';
+         var os = unknown;
+         var nAgt = navigator.userAgent;
+         var clientStrings = [
+            {s:'Windows 10', r:/(Windows 10.0|Windows NT 10.0)/},
+            {s:'Windows 8.1', r:/(Windows 8.1|Windows NT 6.3)/},
+            {s:'Windows 8', r:/(Windows 8|Windows NT 6.2)/},
+            {s:'Windows 7', r:/(Windows 7|Windows NT 6.1)/},
+            {s:'Windows Vista', r:/Windows NT 6.0/},
+            {s:'Windows Server 2003', r:/Windows NT 5.2/},
+            {s:'Windows XP', r:/(Windows NT 5.1|Windows XP)/},
+            {s:'Windows 2000', r:/(Windows NT 5.0|Windows 2000)/},
+            {s:'Windows ME', r:/(Win 9x 4.90|Windows ME)/},
+            {s:'Windows 98', r:/(Windows 98|Win98)/},
+            {s:'Windows 95', r:/(Windows 95|Win95|Windows_95)/},
+            {s:'Windows NT 4.0', r:/(Windows NT 4.0|WinNT4.0|WinNT|Windows NT)/},
+            {s:'Windows CE', r:/Windows CE/},
+            {s:'Windows 3.11', r:/Win16/},
+            {s:'Android', r:/Android/},
+            {s:'Open BSD', r:/OpenBSD/},
+            {s:'Sun OS', r:/SunOS/},
+            {s:'Linux', r:/(Linux|X11)/},
+            {s:'iOS', r:/(iPhone|iPad|iPod)/},
+            {s:'Mac OS X', r:/Mac OS X/},
+            {s:'Mac OS', r:/(MacPPC|MacIntel|Mac_PowerPC|Macintosh)/},
+            {s:'QNX', r:/QNX/},
+            {s:'UNIX', r:/UNIX/},
+            {s:'BeOS', r:/BeOS/},
+            {s:'OS/2', r:/OS\/2/},
+            {s:'Search Bot', r:/(nuhk|Googlebot|Yammybot|Openbot|Slurp|MSNBot|Ask Jeeves\/Teoma|ia_archiver)/}
+         ];
+         for (var id in clientStrings) {
+            var cs = clientStrings[id];
+            if (cs.r.test(nAgt)) {
+                os = cs.s;
+                break;
+            }
+         }
+
+         var osVersion = unknown;
+         var fileURL = "";
+
+         if (/Windows/.test(os)) {
+            osVersion = /Windows (.*)/.exec(os)[1];
+            os = 'Windows';
+         }
+
+         if(os == 'Mac OS X') {
+            osVersion = /Mac OS X (10[\.\_\d]+)/.exec(nAgt)[1];
+            window.open('Distractown_OSX.zip', '_self');
+         }else if(os == 'Windows') {
+            window.open('Distractown_PC.zip', 'self');
+         }else {
+            alert("Sorry, we haven't made Distractown available on your operating system yet.");
+         }
+
+         //- switch (os) {
+         //-    case 'Mac OS X':
+         //-        osVersion = /Mac OS X (10[\.\_\d]+)/.exec(nAgt)[1];
+         //-        window.open('DistractownOSX.zip', '_self');
+         //-        break;
+         //-
+         //-    case 'Android':
+         //-        osVersion = /Android ([\.\_\d]+)/.exec(nAgt)[1];
+         //-        break;
+         //-
+         //-    case 'iOS':
+         //-        osVersion = /OS (\d+)_(\d+)_?(\d+)?/.exec(nVer);
+         //-        osVersion = osVersion[1] + '.' + osVersion[2] + '.' + (osVersion[3] | 0);
+         //-        break;
+         //- }
+
+
+      }

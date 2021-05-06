@@ -1,0 +1,10 @@
+extends /shared/layout
+block content
+  +pageTitle
+  +pod('')
+    .uk-width-1-1
+      div(id="gameContainer" style="width: 100%; padding-top:56.25%")
+block append endscripts
+  script(src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js")
+  script(src="Build/UnityLoader.js")
+  script(src="building.js")

@@ -1,0 +1,33 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('Physical Mapping')
+      .uk-width-medium-6-10
+         p
+            | Some genomes are particularly challenging for scientists to piece back together using just short, overlapping DNA sequences. In particular, genomes from some organisms have an unusual amount of repetitive sequences, stemming from gene, chromosome, and even whole genome duplication events. Plants are often challenging in this way, and cotton—with two complete genomes that are very similar—presents an even greater challenge. 
+         p
+            | To solve challenging genomes, researchers can make what are called “physical maps.” These low-resolution maps don't have sequence-level detail, but they do have information about the spacing between specific, short segments of DNA. Physical maps serve as sort of a rough scaffold on top of which the sequence-level information can be assembled.
+      
+      .uk-width-medium-4-10
+         figure
+            img(src='images/rope.jpg')
+   
+   +pod('The Process')
+      .uk-width-medium-6-10
+         p
+            | As with DNA sequencing, the first step of physical mapping is to take multiple copies of the genome and cut them into smaller pieces. For physical mapping, however, the pieces are about 150 times longer than what is used for DNA sequencing.
+         p
+            | Next, the pieces are placed on a microchip, and an electrical current is passed across the chip, causing the DNA strands to straighten out and line up in parallel strands. 
+            Then a modified restriction enzyme is applied. Restriction enzymes normally cut both strands DNA at specific recognition sequences (typically 4 to 8 letters long). But the modified enzymes only “nick” the DNA, cutting one strand instead of two. 
+         p
+            | In a type of physical mapping called optical mapping, the modified restriction enzymes also add a fluorescent molecule to the DNA. The restriction sites can then be directly visualized on the chip by looking at the fluorescent molecules with a microscope and camera. 
+         p
+            | Photographic software records the distance between fluorescent markers along each piece of DNA. Information about individual pieces can then be combined into contigs that show the spacing of restriction sites across very long stretches of DNA. 
+         p
+            | To get even more information, researchers can apply multiple types of restriction enzymes to their DNA fragments. Each restriction enzyme nicks the DNA at a different recognition sequence, and each adds a tag that is a different color.
+
+      .uk-width-medium-4-10
+         figure
+            img(src='')
+            p Restriction enzymes cut DNA molecules at specific recognition sequences. 
+               

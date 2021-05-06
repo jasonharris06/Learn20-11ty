@@ -1,0 +1,44 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-1-1
+         p.uk-text-center
+                  strong
+                     small
+                        | This page has content that requires the Flash Player plug-in. Unfortunately, we can't do anything on our end to improve your experience with Flash. If you are using an iOS device, please note that these devices do not support Flash. We are slowly working on replacing our popular Flash-based content and will update this content as it becomes available. If you would like to help us as we work on these updates, please consider donating 
+                        a(href="https://umarket.utah.edu/ugive/index.php?gift_id=2787&special=%20Learn.Genetics%20website%20MD11595-40165") here
+                        | .
+                        
+   script(src='/Scripts/AC_RunActiveContent.js', type='text/javascript')
+
+   +pod("")
+      .uk-width-1-1.uk-text-center
+         script(type="text/javascript").
+            AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','720','height','520','src','fireflymon8','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','fireflymon8' );
+   +pod('Why do fireflies glow?')
+      .uk-width-medium-6-10
+         p
+            | One reason that fireflies glow is to attract a
+            | mate. Males and females of the same species will flash
+            | signals back and forth as a way of communicating. Each
+            | firefly species has its own particular pattern. For example,
+            | the fireflies of one species will fly around in the night sky
+            | and dive steeply just as the flash begins and turn upward to make a
+            | distinctive J-shaped pattern of light.
+            | Female fireflies hang out on a tree branch or in the
+            | grass while the males fly around showing off their best
+            | flashes. When a female recognizes the flash from a male of
+            | the same species, she will answer with her best flash.
+         p
+            | Another reason that fireflies glow is to avoid
+            | predators. Fireflies are filled with a nasty tasting
+            | chemical called lucibufagens, and after a predator gets a mouthful, it
+            | quickly learns to associate the firefly&apos;s glow with this bad
+            | taste! So not only does the flashing help attract a mate, but
+            | it also warns predators to stay away.
+         p
+            | One species of firefly that can&apos;t make its own lucibufagens acquires it by eating others that can. To lure victims, these fireflies mimic the flashing pattern of another species. When the unsuspecting male approaches to find a mate, he instead becomes a tasty treat to the tricky firefly.
+      .uk-width-medium-4-10
+         figure
+            img(src='images/lfff.jpg')

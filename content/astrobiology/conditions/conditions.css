@@ -1,0 +1,198 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+#audio_controls {
+	width:190px;
+	height:45px;
+	background-image:url(/content/astrobiology/conditions/images/audio_bg.png);
+	position:absolute;
+	bottom:0;
+    z-index: 10;
+}
+
+.audioControl {
+	width:40px;
+	height:36px;
+	margin-top:9px;
+	float:left;
+}
+
+.audioControl:hover {
+	cursor: pointer;
+}
+
+.divider {
+	width:1px;
+	height:36px;
+	margin-top:9px;
+	background-color:#fff;
+	opacity:0.8;
+	float:left;
+}
+
+#muteButton {
+	background-image: url(/content/astrobiology/conditions/images/not_muted.png);
+}
+
+#ccButton {
+	background-image: url(/content/astrobiology/conditions/images/cc_off.png);
+}
+
+#volumeContainer {
+	width:55px;
+	height:45px;
+	padding-left:9px;
+	float: left;
+}
+
+.volumeBar {
+	width:6px;
+	float: left;
+	opacity: 0.9;
+	background-color:#fff;
+	margin-right:3px;
+	border-radius:2px;
+	-moz-border-radius:2px;
+}
+
+.volumeBar:hover {
+	cursor: pointer;
+}
+
+#volumeBar1 {
+	height:7px; 
+	margin-top:31px;
+}
+#volumeBar2 {
+	height:11px; 
+	margin-top:27px;
+}
+#volumeBar3 {
+	height:15px; 
+	margin-top:23px;
+}
+#volumeBar4 {
+	height:19px; 
+	margin-top:19px;
+	opacity: 0.4;
+}
+#volumeBar5 {
+	height:23px; 
+	margin-top:15px;
+	opacity: 0.4;
+}
+
+#slide_controls {
+	width:506px;
+	height:72px;
+	background-image:url(/content/astrobiology/conditions/images/fwd_rew_bg.png);
+	position:absolute;
+	bottom:0;
+	left:198px;
+    z-index: 10;
+}
+
+#slide_controls .divider {
+	margin-top: 22px;
+	height: 50px;
+}
+
+.slideButton {
+	width:175px;
+	height:50px;
+	float:left;
+}
+.slideButton:hover {
+	cursor: pointer;
+}
+
+#rewButton {
+	margin: 22px 0px 0px 77px;
+}
+
+#fwdButton {
+	margin: 22px 0px 0px 0px;
+}
+
+#rewIcon {
+	width:30px;
+	height:30px;
+	background-image:url(/content/astrobiology/conditions/images/no_rew.png);
+	margin: 9px 0px 0px 67px;
+}
+
+#fwdIcon {
+	width:30px;
+	height:30px;
+	background-image:url(/content/astrobiology/conditions/images/fwd.png);
+	margin: 9px 0px 0px 72px;
+}
+
+.button_fwdrew{
+  text-align: center;
+  cursor: pointer;
+  background: #333;
+  color: white;
+  padding:0 1em;
+  height: 2.4em;
+  width: 60px;
+  font-family: Helvetica, sans-serif;
+  font-weight:100;
+  font-size:1em;
+  text-transform:uppercase;
+  white-space:nowrap;
+  border-radius: .625em;
+  position:absolute;
+  margin-top:252px;
+  
+}
+
+#video{
+	float:left;
+}
+
+#sideleft {
+	height:504px;
+	width:60px;
+	background: #333;
+	float:left;
+}
+
+#sideright {
+	height:504px;
+	width:60px;
+	background: #333;
+	float:left;
+}
+
+#video_controls {
+	width:1016px;
+	height:44px;
+	background-color: #333;
+  	color: #fff;
+  	font-family: Verdana, sans-serif;
+  	font-size: 12px;
+  	text-transform: uppercase;
+  	display: table;
+}
+
+#wrapper {
+	width:880px;
+	height:495px;
+	position: relative;
+    margin: 0 auto;
+}
+
+#footnote {
+	position: absolute;
+	color: white;
+	text-shadow: black 2px 2px 6px;
+	font-weight: bold;
+	text-align: center;
+	font-size: 16px;
+	width: 896px;
+	bottom: 70px;
+}
+
+

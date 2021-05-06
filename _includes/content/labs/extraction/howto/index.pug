@@ -1,0 +1,117 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-6-10
+         p
+            | First, you need to find something that contains DNA. Since DNA is the blueprint for life, everything living contains DNA.
+         p
+            | For this experiment, we like to use green split peas. But there are lots of other DNA sources too, such as:
+         p
+            ul
+               li Spinach
+               li Chicken liver
+               li Strawberries
+               li Broccoli
+         p Certain sources of DNA should not be used, such as:
+         p
+            ul
+               li Your family pet, Fido the dog
+               li Your little sister&apos;s big toe
+               li Bugs you caught in the yard
+      .uk-width-medium-4-10
+         img(src='images/GreenSplitPeas.jpg', alt='Green Split Peas', width='304', height='139')
+   +pod('Step 1: Blender Insanity!')
+      .uk-width-medium-6-10
+         p
+            | Put in a blender:
+         p
+            ul
+               li 1/2 cup of split peas (100ml)
+               li 1/8 teaspoon table salt (less than 1ml)
+               li 1 cup cold water (200ml)
+         p Blend on high for 15 seconds.
+         p
+            | The blender separates the pea cells from each other, so you now have a really thin pea-cell soup.
+      .uk-width-medium-4-10
+         img(src='images/Blender.jpg', alt='Blender', width='181', height='268')
+   +pod('Step 2: Soapy Peas')
+      .uk-width-medium-6-10
+         p
+            | Pour your thin pea-cell soup through a strainer into another container (like a measuring cup).
+         p Add 2 tablespoons liquid detergent (about 30ml) and swirl to mix.
+         p Let the mixture sit for 5-10 minutes.
+         p
+            | Pour the mixture into test tubes or other small glass containers, each about 1/3 full.
+
+         a(href='#detergent', data-uk-modal="{center:true}") Why am I adding detergent?
+
+      .uk-width-medium-4-10
+         img(src='images/StrainingPeas.jpg', alt='Straining Peas', width='241', height='251')
+
+   +pod('Step 3: Enzyme Power')
+
+      .uk-width-medium-6-10
+         p
+            | Add a pinch of enzymes to each test tube and stir gently. Be careful! If you stir too hard, you&apos;ll break up the DNA, making it harder to see.
+         p
+            | Use meat tenderizer for enzymes. If you can&apos;t find tenderizer, try using pineapple juice or contact lens cleaning solution.
+         a(href='#enzyme', data-uk-modal="{center:true}") Why Did I Add Meat Tenderizer?
+      .uk-width-medium-4-10
+         img(src='images/mtzer.jpg', alt='Enzymes', width='200', height='183')
+   +pod('Step 4: Alcohol Separation')
+      .uk-width-medium-6-10
+         p
+            | Tilt your test tube and slowly pour rubbing alcohol (70-95% isopropyl or ethyl alcohol) into the tube
+            | down the side so that it forms a layer on top of the pea mixture. Pour until you have about the same
+            | amount of alcohol in the tube as pea mixture.
+         p
+            | Alcohol is less dense than water, so it floats on top. Look for clumps of white stringy stuff where the water and alcohol layers meet.
+      .uk-width-medium-4-10
+         img(src="images/AlcoholAddition.jpg")
+   +pod('What is that Stringy Stuff?')
+      .uk-width-medium-6-10
+         p
+            | DNA is a long, stringy molecule. The salt that you added in step one helps it stick together.
+            | So what you see are clumps of tangled DNA molecules!
+
+         p
+            | DNA normally stays dissolved in water, but when salty DNA comes in contact with alcohol it becomes
+            | undissolved. This is called precipitation. The physical force of the DNA clumping together as it
+            | precipitates pulls more strands along with it as it rises into the alcohol.
+
+         p
+            | You can use a wooden stick or a straw to collect the DNA. If you want to save your DNA, you can transfer it to a small container filled with alcohol.
+
+      .uk-width-medium-4-10
+         img(src="images/dnalotslg.jpg")
+   +pod('You Have Just Completed DNA Extraction!')
+      .uk-width-medium-6-10
+         p
+            | Now that you&apos;ve successfully extracted DNA from one source, you&apos;re ready to experiment further. Try these ideas or some of your own:
+         p
+            | Experiment with other DNA sources. Which source gives you the most DNA? How can you compare them?
+         p
+            | Experiment with different soaps and detergents. Do powdered soaps work as well as liquid detergents? How about shampoo or body scrub?
+         p
+            | Experiment with leaving out or changing steps. We&apos;ve told you that you need each step, but is this true? Find out for yourself.
+            | Try leaving out a step or changing how much of each ingredient you use.
+         p
+            | Do only living organisms contain DNA? Try extracting DNA from things that you think might not have DNA.
+         //- p
+         //-    strong Want to conduct more DNA extraction experiments?
+         //-    |  Try out different soaps and detergents. Do powdered soaps work as well as liquid detergents?
+         p
+            a(href='#faq', data-uk-modal="{center:true}") Frequently Asked Questions
+         p
+            a(href='DNA_Extraction.pdf') Download a PDF version of this page
+
+      .uk-width-medium-4-10
+         img(src='images/detergents.jpg', alt='Detergents', width='281', height='186')
+
+   #detergent.uk-modal
+      include detergent/index
+   #enzyme.uk-modal
+      include enzyme/index
+   #faq.uk-modal
+      include faq/index

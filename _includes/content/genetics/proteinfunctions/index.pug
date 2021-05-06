@@ -1,0 +1,26 @@
+extends /shared/layout
+block headscripts
+  style.
+    .progress {
+      width: 70%;
+      height: 20px;
+      position: absolute;
+      top: 50%;
+      left: 15%;
+      padding: 2px;
+      border: 1px solid #fff;
+    }
+    .full {
+      background: white;
+      height: 100%;
+    }
+block content
+  +pageTitle
+  +pod('')
+    .uk-width-1-1
+      p This new interactive is still in progress. Updates will be coming soon!
+      div(id="gameContainer" style="width: 100%; padding-top:80%")
+block append endscripts
+  script(src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js")
+  script(src="Build/UnityLoader.js")
+  script(src="pf.js")

@@ -1,0 +1,29 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+
+
+   script(src='/Scripts/AC_RunActiveContent.js', type='text/javascript')
+   +pod('')
+      .uk-width-medium-5-10
+         p
+            | DNA is extracted from human cells for a variety of reasons. With a pure sample of DNA you can test a
+            | newborn for a genetic disease, analyze forensic evidence, or study a gene involved in cancer. Try this
+            | virtual laboratory to perform a cheek swab and extract DNA from human cells.
+         br
+      .uk-width-medium-5-10
+            +well
+               h3 Try It Yourself!
+               a(href="howto/") How To Extract DNA From Anything Living
+      .uk-width-1-1
+            script(type='text/javascript').
+               AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0','width','900','height','540','src','DNA_Extraction','quality','high','pluginspage','http://www.macromedia.com/go/getflashplayer','movie','DNA_Extraction' ); //end AC code
+            noscript
+               p Javascript is required to view this content.
+
+
+
+
+   +bottom-menu("",'sepagsep')
+   script(src="/ruffle/ruffle.js")

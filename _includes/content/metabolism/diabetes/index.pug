@@ -1,0 +1,69 @@
+extends /shared/layout
+
+block append head
+   link(href='https://fonts.googleapis.com/css?family=Cambay:400italic' rel='stylesheet' type='text/css')
+   style.
+
+      #diabetes-menu {
+         position:absolute;
+         max-width:920px;
+         top:-518px;
+      }
+
+      #Diabetes_Title {
+         position:absolute;
+         max-width:920px;
+         opacity:1;
+         pointer-events:none;
+         /*transition:opacity 1s;*/
+
+      }
+
+      #Dimmer {
+         opacity:0;
+         transition:opacity 1s;
+      }
+
+      #Drop-Down_Handle {
+         position:absolute;
+         opacity:0;
+         transition:opacity 1s;
+         pointer-events:none;
+      }
+
+      #Gradient_BG {
+         position:absolute;
+         max-width:920px;
+         opacity:1;
+         pointer-events:auto;
+      }
+      
+      #Start_Button {
+         position:absolute;
+      }
+      
+      #Start_Button_BG {
+         pointer-events:auto;
+      }
+      
+      /*#Click_To_Start {
+         opacity:1;
+      }*/
+
+block content
+   +pageTitle
+
+   +pod('')
+      .uk-width-1-1.uk-text-center(style="position:relative; overflow:hidden;")
+
+         include Opening_BG.svg
+         include Diabetes_Menu-Outline.svg
+         include Drop-Down_Handle.svg
+         include Diabetes_Title.svg
+
+         iframe#vidPlayer.uk-responsive-width(src='https://player.vimeo.com/video/166980886?api=1', width='920', height='518', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+
+block append endscripts
+   script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js")
+   script(src="scripts/MorphSVGPlugin.min.js")
+   script(src="scripts/diabetes_functions.js")

@@ -1,0 +1,52 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   //- Flash message
+   +pod('')
+      .uk-width-1-1
+         p.uk-text-center
+                  strong
+                     small
+                        | This page has content that requires the Flash Player plug-in. Unfortunately, we can't do anything on our end to improve your experience with Flash. If you are using an iOS device, please note that these devices do not support Flash. We are slowly working on replacing our popular Flash-based content and will update this content as it becomes available. If you would like to help us as we work on these updates, please consider donating 
+                        a(href="https://umarket.utah.edu/ugive/index.php?gift_id=2787&special=%20Learn.Genetics%20website%20MD11595-40165") here
+                        | .
+                        
+   script(src='/Scripts/AC_RunActiveContent.js', type='text/javascript')
+
+   +pod('')
+      .uk-width-1-1.uk-text-center   
+         script(type='text/javascript').
+            AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','874','height','690','src','pedigree','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','pedigree' ); //end AC code
+         noscript
+            p Javascript is required to view this content.
+         figure
+            p
+               | To learn more about the candidate gene approach, visit 
+               a(href='../candidate/') Discovering Addiction Genes Using the Candidate Gene Approach.
+
+      +photocredits
+         p
+            i What Is It?
+            |  Information Panel
+            br
+            i Slide 1 <br>
+            i Father
+            |  - Juanita De Paola
+            br
+            i Mother and Daughter
+            |  - Giuseppe Crimeni
+            br
+            i Son
+            |  - Natasha Turner
+            br
+            i Slide 5 <br>
+            i Woman
+            |  - Michel Collot
+            br
+            i Older Man
+            |  - Mark Karstad
+            br
+            i Younger Man
+            |  - Corey Ward
+   

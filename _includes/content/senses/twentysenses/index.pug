@@ -1,0 +1,122 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-4-10
+         p.
+            How many senses are there? Some say five. We describe six here (touch, hear, balance, see, taste, and smell). Others talk about 10, 12, even 20 or more senses.
+         p.
+            Why is there so much disagreement? One reason is that there is a lot of cross-talk between sensory systems, making it a little tricky to figure out where one ends and another begins. 
+         p.
+            Another reason is that you can divide the senses up in different ways depending on how you look at them. The "five senses" model is based on where the sensory cells are located in the body: the eye, mouth, nose, ear, and skin. The "twenty senses" model is based on the number of specialized cell types, the types of signals that activate them, and the types of responses they trigger.  
+         p.
+            Read on to learn how a small number of sensory receptors can be used in multiple ways to detect different types of information from the environment.
+         +well
+            p
+               | To learn more about the cross-talk between sensory systems, visit 
+               a(href='/content/senses/worktogether') Sensory Systems Work Together.
+      .uk-width-medium-6-10
+         figure
+            img(src='fivesenses.jpg' alt='illustration of brain with five senses')
+            p The five-senses model is based on where the sensory cells are located in the body: the eye, mouth, nose, ear, and skin.
+   
+   +pod('Sensory Receptors: A Basic Toolkit')
+      .uk-width-medium-6-10
+         p.
+            What all the senses have in common is that they collect some kind of information from the environment and convert it to a signal that can travel to the brain. 
+         p.
+            Sensory systems can be very diverse in their specializations, yet at the most basic level, there are just a few types of signals that animals can detect from their environments: light, motion, chemicals, and temperature. Each of these signals is detected by a different type of sensory receptor—a specialized protein molecule. 
+      .uk-width-medium-5-10
+         h3 Light
+         p.
+            Any animal that can detect light does so using proteins called opsins. When a photon (the smallest detectable unit of light) bumps into an opsin molecule, the protein absorbs its energy and temporarily changes shape. This is the first step in a signaling chain that ultimately travels to the brain (or, in some other animals, a more basic control center).
+         p.
+            Regardless of whether they're found in an ant,  a cow, or a giant squid, all opsin proteins have similar amino acid sequences and a similar shape, and they all have an embedded molecule of Vitamin A. 
+      .uk-width-medium-5-10
+         figure
+            img(src='receptors/light.jpg')
+      .uk-width-medium-5-10
+         h3 Motion
+         p.
+            Motion-sensitive proteins respond to mechanical signals—movement, stretch, or vibration. Most are channels that extend through the cell membrane. Activation through stretching or  movement causes the channels to open, allowing ions (charged molecules) to pass through. 
+         p.
+            Motion-detecting cells tend to have specialized structures that help them pick up a very particular type of signal.
+      .uk-width-medium-5-10
+         figure
+            img(src='receptors/stretch.jpg')
+      .uk-width-medium-5-10
+         h3 Chemicals
+         p.
+            Chemical-sensitive protein receptors are activated through physical interaction with specific types of molecules. Through a lock-and-key mechanism, a molecule with a specific shape attaches to its receptor.
+         p.
+            In some case (direct activation), this interaction opens a channel in the cell membrane, and in others (indirect activation) it causes activation of another protein inside the cell that carries the signal.
+      .uk-width-medium-5-10
+         figure
+            img(src='receptors/chemical.jpg')
+      .uk-width-medium-5-10
+         h3 Temperature
+         p.
+            Temperature sensors are modified versions of chemical sensors. Instead of responding to interactions with other molecules, they change shape in response to temperature.
+         p.
+            A few temperature-sensitive proteins are activated by both temperature and chemicals. In the mouth, they respond to molecules in "hot" peppers and in "cool" mint the same way they do to hot and cool temperatures. 
+      .uk-width-medium-5-10
+         figure
+            img(src='receptors/temperature.jpg')
+
+   +pod('One signal many responses')
+      .uk-width-medium-6-10
+         p.
+            The same type of protein receptor can be used for multiple purposes, sometimes within the same animal. Within each sensory organ, receptors sit in a certain context—cells with different shapes, or surrounding structures that amplify or fine-tune signals. Depending on the context, the receptors can detect different types of information, and depending how it's wired to the brain, this information can be used for different purposes. 
+         p.
+            You could consider each one of these uses a different sense.
+      .uk-width-medium-5-10
+         h3 Light
+         p.
+            Humans rely so much on vision that we often equate light detection with seeing. But in many animals light detection is also important for sensing time of day (circadian rhythms) and time of year. 
+         p.
+            Circadian rhythms are important for regulating behavior cycles, like when to sleep and when to eat. Time of year is important for knowing things like when to mate and when to hibernate. 
+      .uk-width-medium-5-10
+         figure
+            img(src='signal/light.jpg')
+            p Coral polyps use opsin proteins to orient themselves toward the sun and to coordinate the release of eggs and sperm. Image credit: G.P. Schmahl, NOAA FGBNMS Manager.
+      .uk-width-medium-5-10
+         h3 Motion
+         p.
+            Senses that rely on motion detection (mechanoreception) include hearing, balance, proprioception, and touch. It also includes more obscure things like osmotic pressure and bowel and bladder control. 
+         p.
+            To detect osmotic pressure, cells in the brain use stretch receptors to sense our level of hydration. When we're dehydrated, the cells shrink, deactivating stretch receptors, and triggering thirst. Similarly, stretch receptors on the bladder sense when it needs to be emptied.
+         p.
+            Some animals use mechanoreceptors in other ways. Fish have lateral-line organs along their sides that function much like the organs in our inner ears to sense water movement and vibrations from their prey and other fish. Insects can "hear" sound vibrations, but instead of ears they have specialized organs on their antennae (bees and flies), legs (crickets and grasshoppers), or abdomen.
+      .uk-width-medium-5-10
+         figure
+            img(src='signal/motion.jpg')
+            p Fish scales showing openings to lateral line organs. Inside the holes are motion-sensing structures much like the ones that sit inside our ears' balance organs, the semicircular canals.
+      .uk-width-medium-5-10
+         h3 Chemicals
+         p.
+            Taste and smell are chemicals: they rely on receptors that detect chemicals in food and in the environment. And though we associate pain and itch with touch, they too are chemical senses that are activated by the contents of broken-apart cells (pain) or irritants (itch). We also have internal sensors that respond to pH, carbon dioxide, and other chemicals that are important for homeostasis.
+         p.
+            In other animals, pheromone detection is important for finding a mate. Some moths can use their antennae to detect extremely low concentrations pheromones released by a potential mate from miles away.
+      .uk-width-medium-5-10
+         figure
+            img(src='signal/chemicals.jpg')
+            p The male cecropia moth uses chemical-sensing cells in its antennae to detect pheromones released by a female up to a mile away.
+      .uk-width-medium-5-10
+         h3 Temperature
+         p.
+            We have temperature-sensing receptors not only in our skin, but also inside our bodies. Internal temperature sensors are key for maintaining body temperature.
+         p.
+            Rattlesnakes and other pit vipers use heat-sensing pit organs to detect the body heat of their prey.
+      .uk-width-medium-5-10
+         figure
+            img(src='signal/temperature.jpg')
+            p Some predatory snakes use heat-sensing pit organs to sense the body heat of their prey.
+      .uk-width-medium-5-10
+
+   +references
+      p
+         | Gopfert, MC &amp; Hennig, RM (2016). Hearing in insects. Annual Review of Entomology, 61, 257-276. doi: 10.1146/annurev-ento-010715-023631
+      p
+         | Kandel, ER, Schwartz, JH, Jessell, TM, Siegelbaum, SA &amp; Hudspeth, AJ. (2013). Principles of Neural Science, fifth edition. McGraw Hill Medical.
+
+            

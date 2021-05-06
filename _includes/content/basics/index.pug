@@ -1,0 +1,112 @@
+extends /shared/layout
+block content
+  +pageTitle()(teach="dna")
+  .lg-section
+    .uk-container.uk-container-center
+      .uk-grid
+        .uk-width-medium-1-2
+          h2(style="background-color:#008bdd") Message from Learn.Genetics
+          .lg-index-box-text(style="margin-bottom: 20px")
+            p Learn.Genetics visitors,
+            p We’re asking for your help. For over 20 years, the Learn.Genetics website has provided engaging, multimedia educational materials at <em>no cost</em>. 
+            p Learn.Genetics is one of the most-used science websites. Tens of millions of visitors come to our site each year to find the science and health information they’re looking for. 
+            p <strong>If Learn.Genetics is useful to you, please take a moment to <a href="https://umarket.utah.edu/ugive/index.php?gift_id=2787&special=%20Learn.Genetics%20website%20MD11595-40165">donate</a></strong> – even a few dollars from each of our visitors would add up to a significant amount! 
+            p Your support will help us keep Learn.Genetics free and available to everyone. It will also help us develop new content for you.
+            p Please help us keep Learn.Genetics going!
+            p Thank you, <br>The Genetic Science Learning Center team – creators of Learn.Genetics
+
+          h2 More about Chromosomes
+          .lg-index-items
+            +index-item('How do Scientists Read Chromosomes?','learn more','readchromosomes','images/readchromosomes.jpg')
+              p To <q>read</q> a set of chromosomes, scientists look for key features to identify their similarities and differences.
+            +index-item('Make a Karyotype','interactive explore','karyotype','images/karyotype.jpg')
+              p Try your hand at organizing a profile of human chromosomes.
+            +index-item('Mitosis, Meiosis, and Fertilization','learn more','diagnose','images/diagnose.jpg')
+              p Certain genetic disorders can be diagnosed by looking at a person&apos;s chromosomes.
+            +index-item('Are Telomeres The Key To Aging And Cancer?','learn more','telomeres','images/telomeres.jpg')
+              p Protective tips at the end of our chromosomes get shorter as we age.
+            p.lg-index-box-text.
+              Related content from <a href="/content/pigeons/">Pigeon Breeding</a>:<br>
+              <a href="/content/pigeons/geneticlinkage/">Genetic Linkage</a><br>
+              <a href="/content/pigeons/sexlinkage/">Sex Linkage</a>
+
+          h2 More about inheritance
+          .lg-index-items
+            +index-item('What are dominant and recessive?','learn more','patterns','images/patterns.jpg')
+              p The terms dominant and recessive describe the inheritance patterns of certain traits. But what do they really mean?
+            +index-item('Sexual vs. Asexual Reproduction','interactive explore','reproduction','images/reproduction.jpg')
+              p Compare the two ways for organisms to pass genetic information to their offspring.
+            +index-item('The 4 Types of DNA and Molecular Genealogy','video','molgen','images/molgen.jpg')
+              p DNA analysis can help build the family tree. Find out about autosomal, x chromosome, y chromosome, and mitochondrial DNA.
+
+          h2 More about Proteins
+          .lg-index-items
+            +index-item('Types of Proteins','interactive explore','proteintypes','images/proteintypes.jpg')
+              p Explore the types of proteins and learn about their varied functions.
+            +index-item('Transcribe and Translate a Gene','interactive explore','txtl','images/txtl.jpg')
+              p See how cells &quot;read&quot; the information in a DNA sequence to build a protein—in a bit more detail.
+            +index-item("How a firefly's tail makes light",'video','firefly','images/firefly.jpg')
+              p Walk through protein synthesis with this animated example.
+            +index-item('Prions','learn more','prions','images/prions.jpg')
+              p Mad Cow and Creutzfeldt-Jakob are examples of prion diseases. What makes them unusual, and why are they controversial?
+          
+          h2 More about RNA
+          .lg-index-items
+            +index-item('RNA: The Versatile Molecule','explore','rna','images/rna.jpg')
+              p RNA&apos;s chemical structure gives it the flexibility to take on a variety of shapes and functions.
+            +index-item('RNA&apos;s Role In The Central Dogma','interactive explore','centraldogma','images/centraldogma.jpg')
+              p Learn the essential roles of the three most plentiful types of RNA messenger, transfer, and ribosomal in the processes of transcription and translation.
+            +index-item('Beyond the Central Dogma','learn more','beyond','images/beyond.jpg')
+              p Learn about some of the less-known roles of RNA.
+
+        .uk-width-medium-1-2
+          h2 Tour of Basic Genetics
+          .lg-index-items
+            +index-item('What are Traits?','video','traits','images/traits.jpg')
+              p Explore traits, the characteristics that make us unique.
+            +index-item('What are DNA & Genes?','video','dna','images/dna.jpg')
+              p Get to know the molecule that holds the instructions for building every living thing.
+            +index-item('What are Proteins?','video','proteins','images/proteins.jpg')
+              p Learn about proteins, the molecules we’re made of.
+            +index-item('What is Inheritance?','video','inheritance','images/inheritance.jpg')
+              p Learn how traits pass from parents to offspring.
+            +index-item('What is Mutation?','video','mutation','images/mutation.jpg')
+              p Take a look at how variation occurs.
+              
+          h2 More about Traits
+          .lg-index-items
+            +index-item('Observable Human Characteristics','learn more','observable','images/observable.jpg')
+              p Take a look at several inherited human characteristics and learn more about them. Which variations do you have?
+            +index-item('Traits Activities','learn more','activities','images/activities.jpg')
+              p Do these fun activities about inherited traits and disease risk with your family or at public gatherings.
+
+          h2 more about DNA &amp; Genes
+          .lg-index-items
+            +index-item('Build a DNA Molecule','interactive explore','builddna','images/builddna.jpg')
+              p Find out how the DNA code letters A, C, G, and T make a DNA molecule by building one yourself.
+            +index-item('Anatomy of a Gene','explore','geneanatomy','images/geneanatomy.jpg')
+              p Introns, exons, and regulatory sequences: Examine the parts of a gene from &quot;start&quot; to &quot;stop.&quot;
+            +index-item('Things You May Not KNow About DNA','video','dnathings','images/dnathings.jpg')
+              p Put an end to these common misconceptions about DNA and Heredity.
+            +index-item('How do Cells Read Genes?','learn more','dnacodes','images/dnacodes.jpg')
+              p See how cells interpret DNA sentences.
+            +index-item('PTC: The Genetics of Bitter Taste','learn more','ptc','images/ptc.jpg')
+              p An accidental discovery leads to important clues about human evolution.
+            +index-item('Genes and Blood Type','learn more','blood','images/blood.jpg')
+              p Take a look at the inheritance of the ABO blood typing system and the genes behind it.
+            +index-item('The Time of Our Lives','learn more','clockgenes','images/clockgenes.jpg')
+              p Learn about the genetic underpinnings of biological clocks.
+            +index-item('Old Genes, New Tricks', 'explore', 'newtricks', 'images/OldGenesNewTricks.png')
+              p Changes to regulatory switches give old genes new functions.
+            p.lg-index-box-text DNA Day is April 25th.  Check out the <a href='http://www.genome.gov/10506367'>NHGRI DNA Day </a> website.
+
+          h2 More about Mutation
+          .lg-index-items
+            +index-item('The Outcome of Mutation','interactive explore','outcomes','images/outcomes.jpg')
+              p Small changes to DNA can lead to big variations in traits.
+            +index-item('Homeotic Genes and Body Patterns','learn more','hoxgenes','images/hoxgenes.jpg')
+              p Bizarre mutations in fruit flies led to the discovery of genes that guide development.
+            +index-item('Test a Protein&apos;s Activity','interactive explore','neurofibromin','images/neurofibromin.jpg')
+              p Different versions of a gene (alleles) can code for proteins that work a little differently. See how this plays out inside a cell!
+            +index-item('Mutation and Haplotypes','explore','haplotype','images/haplotype.jpg')
+              p Genetic variations can provide clues about common ancestry.

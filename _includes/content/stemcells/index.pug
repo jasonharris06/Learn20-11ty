@@ -1,0 +1,30 @@
+extends /shared/layout
+block content
+   +pageTitle()(teach="stemcells")
+   .lg-section
+      .uk-container.uk-container-center
+         .uk-grid
+            .uk-width-medium-1-2
+               h2 What are Stem Cells?
+               .lg-index-items
+                  +index-item('The Nature of Stem Cells','explore','scintro','images/scintro.jpg')
+                     p Stem cells play many important roles in our bodies from embryonic development through adulthood.
+                  +index-item('Reversing Cell Differentiation','learn more','ips','images/ips.jpg')
+                     p Stem cells can now be created from differentiated cells.
+                  +index-item('Go, Go, Stem Cells','interactive explore','sctypes','images/sctypes.jpg')
+                     p Send activating signals to stem cells and watch them get to work!
+            .uk-width-medium-1-2
+               h2 Stem Cells in Medicine
+               .lg-index-items
+                  +index-item('Stem Cell Quick Reference','learn more','quickref','images/quickref.jpg')
+                     p Learn about some different types of stem cells and their potential for treating diseases.
+                  +index-item('Stem Cells in Use','learn more','sctoday','images/sctoday.jpg')
+                     p Stem cell therapies have been curing diseases for decades.
+                  +index-item('Unlocking Stem Cell Potential','explore','scfuture','images/scfuture.jpg')
+                     p Researchers are working on new ways to use stem cells in medicine.
+                  +index-item('The Stem Cell Debate: Is it Over?','learn more','scissues','images/scissues.jpg')
+                     p New developments in research are changing the conversation about stem cells.
+
+            +bottom-menu("",'sepagosh')
+   
+   

@@ -1,0 +1,32 @@
+extends /shared/layout
+block breadcrumb
+   .lg-section
+      .uk-container.uk-container-center
+         ul.uk-breadcrumb.lg-breadcrumb
+            li 
+               a(href='/') Home
+            li
+               span.uk-active #{page.title}
+               
+block content
+   +pageTitle
+   
+   +pod('')
+      .uk-width-1-1
+         p
+            | We collect no personal information about you when you visit our site unless you choose to provide
+            | it to us.  However, we do collect and store certain information automatically.
+         strong What We Collect Automatically
+         ul.lg-list
+            li The name of the domain and IP address from which you access the Internet.
+            li The date and time you access our site.
+            li The type of browser and the operating system you use to access our site.
+            li
+               | The Internet address of the Website (if any) from which you linked directly to our site.
+         p
+            | We use this information to determine the number and type of visitors to different pages on our
+            | site which helps us make our site more useful.
+         strong What We Collect If You Send Us Feedback
+         p
+            | You may choose to provide us with personal information through our Feedback page. We use this
+            | information to improve our service or to respond to your request.  

@@ -1,0 +1,55 @@
+extends /shared/layout
+block append endscripts
+   script(src="/lib/accordion.js")
+block content
+   +pageTitle
+   +pod('Aneuploidy')
+      .uk-width-medium-4-10
+         p
+            | A genetic condition where someone has either too many or two few chromosomes is called aneuploidy (AN-yoo-ploy-dee).
+         p
+            | A complete set of genetic information includes 23 pairs of chromosomes, which adds up to 46 chromosomes total. This number includes 22 pairs of autosomes, and one pair of sex chromosomes. Autosomes are numbered according to their size: chromosome 1 is the largest, and chromosome 22 is the smallest. The sex chromosomes are called X and Y. People with two X chromosomes (XX) are female, and those with an X and a Y (XY) are male—with some exceptions. 
+         p
+            | There are two common types of aneuploidy: monosomy (MOHN-oh-soh-mee) and trisomy (TRY-soh-mee). People with monosomy are missing a chromosome. So, for a particular chromosome, only one is present instead of two. People with trisomy have an extra copy of one of their chromosomes. So, for example, trisomy 18 means that there are 3 copies of chromosome 18.
+         p
+            | Each chromosome has many genes. The features of each type of aneuploidy are unique, and they are connected to the specific genes on the affected chromosomes. For some genes, it is important to have two copies. With too many or too few copies of a gene, the cell has trouble making the proper amount of the gene product.
+      .uk-width-6-10
+         figure
+            img(src='images/complete-genome.jpg')
+            p A complete set of genetic information includes 46 chromosomes: 22 pairs of autosomes and one pair of sex chromosomes.
+
+   +pod('How do people get aneuploidy?')
+      .uk-width-medium-6-10
+         include nondisjunction.pug
+         figure
+            p This slideshow shows how nondisjunction (unequal distribution of chromosomes) can happen during egg or sperm formation.
+         
+      .uk-width-medium-4-10
+         p
+            | People with aneuploidy do not inherit the condition from their parents. The parents have a full set of chromosomes, but the chromosomes are unevenly distributed to their children.  
+         p
+            | Sometimes the uneven distribution happens soon after fertilization, during cell division. But usually it happens during egg or sperm formation. Normally, each egg or sperm cell gets one copy of each chromosome. But if chromosomes separate unevenly, the resulting egg or sperm cell can end up with an extra or a missing chromosome. If this egg or sperm participates in fertilization, then the resulting embryo will have too many or too few chromosomes. As the embryo grows and the cells divide, the chromosomes are copied in every cell of the body.
+         p
+            | The risk of some types of aneuploidy increases with the age of the parents. For example, the risk of a mother having a child with trisomy 21 is 1 in 1,300 at age 25 and 1 in 30 at age 45.
+         +well
+            | To learn more about how chromosomes are distributed during cell division and gamete formation, visit 
+            a(href='/content/basics/diagnose') Mitosis, Meiosis, and Fertilization
+            | .
+
+   +pod('How do doctors diagnose aneuploidy?')
+      .uk-width-medium-4-10
+         p
+            | An early diagnosis is the first step in proper management.
+         p
+            | Most types of aneuploidy can be recognized by the features that they cause. When a doctor suspects that someone has aneuploidy, they can order a genetic test to make a diagnosis. DNA is collected from a blood sample or cheek swab, and the test reveals the number and arrangement of the person's chromosomes.
+         p
+            | Aneuploidy can also be diagnosed before birth. Prenatal genetic tests analyze a DNA sample from the developing baby during pregnancy. These tests measure the number and arrangement of all of the baby's chromosomes. Prenatal testing may be offered to mothers in certain high-risk groups.
+         p
+            | In some cases, key features of aneuploidy are visible in an ultrasound (which uses sound waves to look at the developing baby). Follow-up genetic testing can make a diagnosis.
+      .uk-width-medium-6-10
+         figure
+            img(src='images/diagnose.png')
+   
+   block append endscripts
+      script(src="/lib/slideshow.js")
+      script(src="/lib/slideshow-fx.js")

@@ -1,0 +1,29 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   +pod('')
+      .uk-width-1-1
+         //-  Padding below is calculated as (height/width)*100 of the edge piece  -//
+         .maintain-aspect-outer(style='padding-bottom:68.182%;')
+            .maintain-aspect-inner
+               //-  Give the iframe an id  -//
+               //-  Set the transform-origin to the top left corner  -//
+               iframe#typesOfProteins(src='layers.html', seamless='seamless', scrolling='no', style='width:880px; height:600px; border: none; transform-origin: 0% 0%;')
+      .uk-width-medium-6-10
+         +bottom-menu("",'hhmi')
+
+block append endscripts
+   script.
+      $(function() {
+         //-  id of the edge piece above  -//
+         var edgePiece = $('#typesOfProteins');
+         var EPParent = edgePiece[0].parentElement;
+
+         function resizeEdgePiece () {
+            edgePiece.css('transform', 'scale(' + (EPParent.offsetWidth / 880).toString() + ')');
+         }
+
+         resizeEdgePiece();
+         window.addEventListener('resize', resizeEdgePiece);
+      });

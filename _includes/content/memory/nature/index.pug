@@ -1,0 +1,21 @@
+extends /shared/layout
+
+block content
+   +pageTitle
+
+   +pod('')
+      .uk-width-medium-8-10
+         p On the KUER radio program Radio West, host Doug Fabrizio interviewed University of Utah researcher David Strayer about the positive effects of nature on the brain.
+
+         p
+            | The following video includes excerpts from the interview. Visit <a href="http://radiowest.kuer.org/post/rx-technology">The Rx for Technology</a> to listen to the full interview with Dr. Strayer and the late Clifford Nass.
+
+         p
+            iframe.uk-responsive-width(src='https://player.vimeo.com/video/171786554', width='900', height='506', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+
+         +well
+            h3 Related links
+            p.
+               Read more about how the brain can benefit from nature in <a href="http://ngm.nationalgeographic.com/2016/01/call-to-wild-text">This Is Your Brain on Nature</a>, an article from National Geographic.
+            p.
+               <a href="http://www.nature-rx.org">Nature Rx</a> takes a playful approach to a serious topic. Follow the link to see their spoof commercials and learn about the research that inspired them.

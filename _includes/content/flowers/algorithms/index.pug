@@ -1,0 +1,171 @@
+extend /shared/layout
+
+block content
+    +pageTitle
+    +pod('')
+        .uk-width-medium-7-10
+            p
+                | Nature is full of striking patterns. Zebra stripes, leopard spots, and spiral seashells are just a few of the endless examples.
+            p
+                | Have you ever wondered how these patterns form? It's a question that's fascinated researchers for a long time. The search for
+                | the answer spans several fields, including biology, chemistry, and math.
+        .uk-width-medium-4-10
+    +pod('Turing Patterns')
+        .uk-width-medium-4-10
+            div(style="padding-top:78.9%; position:relative; overflow:hidden;")
+                #controlledWidth1.uk-width-1-1(style="position:absolute; top:0;")
+                    div(id="visual1ladybug_hype_container" style="margin:auto; position:relative; width:550px; height:434px; overflow:hidden; transform-origin:top left;" aria-live="polite")
+                        script(type="text/javascript" charset="utf-8" src="Visual1Ladybug.hyperesources/visual1ladybug_hype_generated_script.js?79449")
+            br
+            figure
+                img.lg-no-shadow(src='images/Reaction_Diffusion.png' alt='reaction-diffusion model')
+                p
+                    | Examples of reaction-diffusion equations (top). Variables include the
+                    | amount of morphogen present, its diffusion rate, and how strongly the morphogens
+                    | affect one another. Many patterns can be modeled with the equations (bottom).
+                    | Patterns based on Kondo 2010.
+            +well
+                p
+                    | You can watch computer simulations of Turing patterns
+                    a(href='https://www.youtube.com/watch?v=MR79V9UmM6s') here
+                    | .
+
+        .uk-width-medium-5-10
+            p
+                | In 1952, the mathmatician Alan Turing proposed a model for how biological patterns form. Using mathematical equations, he
+                | described how substances spread through a space and react with one another to create patterns.
+            p
+                | He called the substances “morphogens”, an intentionally vague term. In the context of pattern formation, it can refer to 
+                | chemicals, genes, proteins, or even groups of cells. The important thing is that one morphogen &mdash; an activator &mdash; makes a change 
+                | that leads to a trait. A second morphogen &mdash; an inhibitor &mdash; stops the change. The activator increases its own activity, and it 
+                | turns on the inhibitor too. The activator and inhibitor diffuse, or spread, at different speeds.
+            p
+                | Turing’s model could explain the spots on a lady bug, for example. Let’s say “A” is an activating morphogen. It causes black
+                | pigment. “I” is an inhibitor that prevents the trait.
+            p
+                | Where “A” is produced, it makes more of itself. It diffuses slowly, so a lot of “A” builds up in a small area.
+            p
+                | “A” also turns on “I”. But “I” diffuses quickly. There’s a small amount overlapping with “A,” but most moves further away.
+            p
+                | As a result, “A” is high and “I” is low in a small area. Black pigment is made. Further away, “A” is low, but there’s plenty
+                | of “I”. No black pigment is made.
+            p
+                | Turing’s work is now known as the reaction-diffusion model. An important point is that it only requires two morphogens to establish a periodic pattern.
+                | In computer simulations, changing a small number of variables causes a dazzling variety of patterns. Many resemble those found in nature.           
+    
+    +pod('Formation of Petal Spots')
+        .uk-width-medium-5-10
+            p
+                | Many real-life patterns could form from the reaction-diffusion model. Proving they actually do is more difficult.
+            p
+                | The hunt’s been in progress for a long time, and verified examples of Turing patterns are still scarce. The few identified so
+                | far include zebrafish stripes, chick feather buds, mouse hair follicles, and flower petal spots.
+            p
+                | Two key pieces of evidence are needed to prove a pattern forms by reaction-diffusion. They are the identity of the activator, 
+                | and the identity of the inhibitor. In the monkeyflower <em>Mimulus lewisii</em>, researchers first solved this puzzle. Then, they tested 
+                | if the activator-inhibitor pair they found fit other predictions of the model.
+            p
+                | Monkeyflowers have nectar guides, spots of dark pink anthocyanin pigment on a yellow
+                | background, that attract pollinators. The guides form from the activator-inhibitor pair
+                | NECTAR GUIDE ANTHOCYANIN (NEGAN) and RED TONGUE (RTO). Both NEGAN and RTO
+                | are transcription factors, proteins whose job is to turn gene activity up or down.
+            p
+                | NEGAN and RTO fit the reaction-diffusion model well. NEGAN turns on genes needed to
+                | make anthocyanin pigment. It also activates itself and RTO. Once on, RTO inhibits
+                | NEGAN by competing for a specific partner protein they both need to do their jobs. RTO
+                | diffuses from where it’s made into neighboring cells, restricting NEGAN’s activity.
+
+        .uk-width-medium-6-10
+            //- Monkeyflower photo with nectar guides labeled
+            
+            figure
+                .container
+                    img(src='images/mflower-1.png' alt='monkeyflower petals' width="20%")
+                    img(src='images/mflower-2.png' alt='monkeyflower petals' width="20%")
+                    img(src='images/mflower-3.png' alt='monkeyflower petals' width="20%")
+                p
+                    | LEFT: Activator and Inhibitor, Normal Spots
+                    br
+                    | MIDDLE: No Activator, No Spots
+                    br
+                    | RIGHT: No Inhibitor, Expanded Spots
+                p
+                    | The pattern of anthocyanin spots on monkeyflower petals is a real-life example of the reaction-diffusion model. The
+                    | dissected monkeyflower petals above are from genetic experiments to test and expand the model.
+
+            figure
+                div(style="padding-top:58.33%; position:relative; overflow:hidden;")
+                    #controlledWidth2.uk-width-1-1(style="position:absolute; top:0;")
+                        div(id="checklisthype_hype_container" style="margin:auto; position:relative; width:500px;; overflow:hidden; transform-origin:top left;" aria-live="polite")
+                            script(type="text/javascript" charset="utf-8" src="ChecklistHype.hyperesources/checklisthype_hype_generated_script.js?56014")
+                p
+                    | The activator-inhibitor pair, NEGAN and RTO, fit predictions made by the reaction-diffusion model.
+
+    +pod('Patterns Influence Pollinator Choice')
+        .uk-width-medium-5-10
+            img(src='images/Monkeyflower Pattern.png' alt='patterns on monkeyflowers')
+            figure
+                img(src='images/Monkeyflower_patterns.png' alt='patterns on monkeyflowers')
+                p
+                    | Examples of pattern in different species of monkeyflower. M. rupicola (top left),
+                    | M. varigatus (top right), M. luteus (bottom left), and M. pictus (bottom right).
+
+        .uk-width-medium-5-10
+            p
+                | Flower patterns don’t just look nice, they’re also really important. Patterns help attract pollinators to a flower. The more
+                | pollinators visit a flower, the more likely it is to reproduce.
+            p
+                | In monkeyflowers, petal patterns affect pollinator choice. <em>M. luteus</em> is a species of monkeyflower that grows in the Andes 
+                | Mountains. Even within the species, patterns differ. Some flowers have broad patterns and are favored by hummingbirds. Others 
+                | have narrow patterns, and are favored by bees.
+            p
+                | Because patterns influence pollinator choice, it’s possible reaction-diffusion played a role in flower evolution. Small changes
+                | in reaction-diffusion networks have a big impact on pattern. This could be part of the reason we see so many diverse flower
+                | patterns today.
+
+    +references
+        p
+            | Ding, B., Patterson, E. L., Holalu, S., Li, J., Johnson, G. A., Stanley, L. E., ... &amp; Yuan, Y. W. (2018). Formation of periodic pigment spots by the reaction-diffusion mechanism. bioRxiv, 403600.
+        p
+            | Jung, H. S., Francis-West, P. H., Widelitz, R. B., Jiang, T. X., Ting-Berreth, S., Tickle, C., ... &amp; Chuong, C. M. (1998). Local inhibitory action of BMPs and their relationships with activators in feather formation: implications for periodic patterning. Developmental Biology, 196(1), 11-23.
+        p
+            | Kondo, S., &amp; Miura, T. (2010). Reaction-diffusion model as a framework for understanding biological pattern formation. Science, 329(5999), 1616-1620.
+        p
+            | Medel, R., Botto-Mahan, C., &amp; Kalin-Arroyo, M. (2003). Pollinator‐mediated selection on the nectar guide phenotype in the Andean monkey flower, Mimulus luteus. Ecology, 84(7), 1721-1732.
+        p
+            | Sick, S., Reinker, S., Timmer, J., &amp; Schlake, T. (2006). WNT and DKK determine hair follicle spacing through a reaction-diffusion mechanism. Science, 314(5804), 1447-1450.
+        p
+            | Torii, K. U. (2012). Two-dimensional spatial patterning in developmental systems. Trends in Cell Biology, 22(8), 438-446.
+        p
+            | Turing, A. M. (1990). The chemical basis of morphogenesis. Bulletin of Mathematical Biology, 52(1-2), 153-197.
+        p
+            | Yamaguchi, M., Yoshimoto, E., &amp; Kondo, S. (2007). Pattern regulation in the stripe of zebrafish suggests an underlying dynamic and autonomous mechanism. Proceedings of the National Academy of Sciences, 104(12), 4790-4793.
+        p
+            | Yuan, Y. W., Sagawa, J. M., Frost, L., Vela, J. P., &amp; Bradshaw Jr, H. D. (2014). Transcriptional control of floral anthocyanin pigmentation in monkeyflowers (Mimulus). New Phytologist, 204(4), 1013-1027.
+block append endscripts
+  script.
+    $(document).ready(function() {
+      var container1 = document.getElementById('controlledWidth1');
+      var item1 = document.getElementById('visual1ladybug_hype_container');
+      
+      var container2 = document.getElementById('controlledWidth2');
+      var item2 = document.getElementById('checklisthype_hype_container');
+
+      function updateItem1Width () {
+         var pad = parseInt(window.getComputedStyle(container1).paddingLeft);
+         var newScale = (container1.offsetWidth - pad) / 550;
+         item1.style.transform = "scale(" + newScale + "," + newScale + ")";
+      };
+      function updateItem2Width () {
+         var pad = parseInt(window.getComputedStyle(container2).paddingLeft);
+         var newScale = (container2.offsetWidth - pad) / 600;
+         item2.style.transform = "scale(" + newScale + "," + newScale + ")";
+      };
+      function updateBoth () {
+        updateItem1Width();
+        updateItem2Width();
+      }
+
+      updateBoth();
+      window.addEventListener('resize', updateBoth);
+    });

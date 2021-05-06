@@ -1,0 +1,132 @@
+#flowerContainer {
+        position: relative;
+        width: 100%;
+        padding-top: 86.5%;
+        overflow: hidden;
+      }
+
+      #toggleButton {
+        position: absolute;
+        top: 38%;
+        right: 10%;
+        z-index: 100;
+        font-size: 15px;
+        background-color: #b3497e;
+        padding: 5px 10px;
+        border-radius: 3px;
+        box-shadow: 0 1px 5px #00000099;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s, top 0.3s;
+      }
+      @media (max-width: 1220px) {
+        #toggleButton {
+          font-size: 12px;
+          padding: 3px 10px;
+        }
+      }
+      @media (max-width: 900px) {
+        #toggleButton {
+          font-size: 10px;
+          padding: 2px 10px;
+        }
+      }
+      @media (max-width: 768px) {
+        #toggleButton {
+          font-size: 15px;
+          padding: 5px 10px;
+        }
+      }
+      @media (max-width: 500px) {
+        #toggleButton {
+          font-size: 12px;
+          padding: 3px 10px;
+        }
+      }
+      #toggleButton:hover {
+        background-color: #d24a8e;
+      }
+      #toggleButton::after {
+        content: "Dissect Flower"
+      }
+      .expanded #toggleButton {
+        top: 30%;
+      }
+      .expanded #toggleButton::after {
+        content: "Mend Flower"
+      }
+
+      #labels {
+        position: absolute;
+        top: 0px;
+        font-family: 'Open Sans';
+        font-style: italic;
+        font-size: 93px;
+        opacity: 0;
+        transition: opacity 0.3s;
+        transition-delay: 0s;
+      }
+      .expanded #labels {
+        opacity: 0.65;
+        transition-delay: 0.2s;
+      }
+      .dashedLine {
+        fill:none;
+        stroke:#000000;
+        stroke-width:4;
+        stroke-dasharray:20,12;
+      }
+      .solidLine {
+        fill: none;
+        stroke: #000000;
+        stroke-width: 4.5;
+        stroke-linejoin: bevel;
+      }
+
+      .layer {
+        position: absolute;
+        top: 0px;
+        width: 65%;
+        will-change: transform;
+        transform: translate(0%, 38.5%);
+        transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+      }
+      .expanded #l13 {
+        transform: translate(0%, 38.5%);
+      }
+      .expanded #l12 {
+        transform: translate(28%, 0%);
+      }
+      .expanded #l11 {
+        transform: translate(48.6%, 16.5%);
+      }
+      .expanded #l10 {
+        transform: translate(52%, 42.5%);
+      }
+      .expanded #l9 {
+        transform: translate(31%, 16%);
+      }
+      .expanded #l8 {
+        transform: translate(34.5%, 38%);
+      }
+      .expanded #l7 {
+        transform: translate(23%, 26.5%);
+      }
+      .expanded #l6 {
+        transform: translate(25.5%, 11.7%);
+      }
+      .expanded #l5 {
+        transform: translate(42.8%, 26.7%);
+      }
+      .expanded #l4 {
+        transform: translate(12%, 12.4%);
+      }
+      .expanded #l3 {
+        transform: translate(32.6%, 52.9%);
+      }
+      .expanded #l2 {
+        transform: translate(0%, 38.5%);
+      }
+      .expanded #l1 {
+        transform: translate(32.6%, 52.9%);
+      }

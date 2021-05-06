@@ -1,0 +1,13 @@
+extends /shared/layout
+
+block append head
+  style.
+    #hypeContainer {
+      border: 1px solid #b2b2b2;
+    }
+
+block content
+  +pageTitle
+  article.lg-pod.lg-section
+    .uk-container.uk-container-center
+      +hype(1130, 740, 'Classical%20vs%20Molecular.hyperesources/classicalvsmolecular_hype_generated_script.js?70909', 'classicalvsmolecular_hype_container')

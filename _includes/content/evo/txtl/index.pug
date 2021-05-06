@@ -1,0 +1,269 @@
+extends /shared/layout
+
+block append head
+   link(href='https://fonts.googleapis.com/css?family=Cambay:400italic' rel='stylesheet' type='text/css')
+   style.
+
+      #txtl_container svg {
+         position:absolute;
+         pointer-events:none;
+         top: 0px;
+      }
+      
+      #Menu_PathData {
+         position:absolute;
+         opacity:0;
+         pointer-events:none;
+         top: 0px;
+      }
+      
+      #TXTL_Title {
+         visibility:visible;
+         position:absolute;
+         pointer-events:auto;
+      }
+      
+      /*-Menu Inline-*/
+
+      #Menu_BG {
+         position:absolute;
+         opacity:0;
+         pointer-events:none;
+         top: 0px;
+      }
+
+      #Menu_Buttons {
+         position:absolute;
+         opacity:0;
+         pointer-events:none;
+      }
+      
+      #MenuButtonPaths {
+         position:absolute;
+         pointer-events:none;
+      }
+
+      /*-Button 1 Inline-*/
+
+      #Gene_1_Glow {
+         opacity:0;
+      }
+
+      #Label-1_Circle {
+         opacity:0;
+      }
+
+      #Text_GeneOne {
+         opacity:0;
+      }
+      
+      #Text_TWNK {
+         opacity:0;
+      }
+      
+      #DNA_Helicase {
+         opacity:0;
+      }
+      
+      #LabelInset_1 {
+         opacity:0;
+      }
+
+      /*-Button 2 Inline-*/
+
+      #Gene_2_Glow {
+         opacity:0;
+      }
+      
+      #Label-2_Circle {
+         opacity:0;
+      }
+      
+      #Text_GeneTwo {
+         opacity:0;
+      }
+      
+      #Text_PSMA {
+         opacity:0;
+      }
+      
+      #Proteasome {
+         opacity:0;
+      }
+      
+      #LabelInset_2 {
+         opacity:0;
+      }
+      
+      /*-Button 3 Inline-*/
+
+      #Gene_3_Glow {
+         opacity:0;
+      }
+      
+      #Label-3_Circle {
+         opacity:0;
+      }
+      
+      #Text_GeneThree {
+         opacity:0;
+      }
+      
+      #Text_MT {
+         opacity:0;
+      }
+
+      #A_tRNA_Synth {
+         opacity:0;
+      }
+      
+      #LabelInset_3 {
+         opacity:0;
+      }
+
+
+      /*-Misc Buttons-*/
+
+
+      #Skip_Button_1 {
+         pointer-events:auto;
+      }
+
+
+      /*-TX Inline-*/
+
+
+      #TX_Interactive {
+         position:absolute;
+         opacity:0;
+         pointer-events:none;
+      }
+
+      #Free_Base {
+         opacity:0;
+         pointer-events:none;
+      }
+
+      #TX_Bases {
+         opacity:0;
+         pointer-events:none;
+      }
+      
+      #TX_Buttons {
+         opacity:0;
+         pointer-events:none;
+      }
+      
+      #Mopath_1 {
+         visibility:hidden;
+      }
+      
+      #G_TXCurrentLabel {
+         opacity:0;
+      }
+      
+      #C_TXCurrentLabel {
+         opacity:0;
+      }
+      
+      #A_TXCurrentLabel {
+         opacity:0;
+      }
+      
+      #T_TXCurrentLabel {
+         opacity:0;
+      }
+      
+      /*-TL Inline-*/
+      
+      
+      #TL_Interactive {
+         position:absolute;
+         opacity:0;
+         pointer-events:none;
+      }
+      
+      #tRNABody_f1 {
+         visibility:visible;
+      }
+      
+      #tRNABody_f2 {
+         visibility:hidden;
+      }
+      
+      #tRNABody_f3 {
+         visibility:hidden;
+      }
+      
+      #tRNABody_f4 {
+         visibility:hidden;
+      }
+      
+      #tRNABody_f5 {
+         visibility:hidden;
+      }
+      
+      #tRNABody_f6 {
+         visibility:hidden;
+      }
+      
+      #tRNABody_f7 {
+         visibility:hidden;
+      }
+      
+      #tRNABody_f8 {
+         visibility:hidden;
+      }
+      
+      #ColorPanel_1 {
+         opacity:0;
+         pointer-events:none;
+      }
+      
+      #ColorPanel_2 {
+         opacity:0;
+         pointer-events:none;
+      }
+      
+      #ColorPanel_3 {
+         opacity:0;
+         pointer-events:none;
+      }
+      
+      #ColorPanel_4 {
+         opacity:0;
+         pointer-events:none;
+      }
+      #txtl_container {
+        padding-top: 56.25%;
+        width: 100%;
+        position: relative;
+        background-color: #000;
+      }
+      #vidPlayer {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+      }
+      
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-1-1(style="position:relative; overflow:hidden;")
+        #txtl_container
+          iframe#vidPlayer(src='http://player.vimeo.com/video/210665208?api=1', width='1920', height='1080', frameborder='0', webkitallowfullscreen=false, mozallowfullscreen=false, allowfullscreen=false)
+          div(id="Menu_BG")
+            img(src="TXTL_MenuBG.jpg")
+
+          include Genes.svg
+          include Bases.svg
+          include Amino_Acids.svg
+          include SVG_TXTL.svg
+
+
+
+block append endscripts
+   script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js")
+   script(src="MorphSVGPlugin.min.js")
+   script(src="txtl_functions.js")

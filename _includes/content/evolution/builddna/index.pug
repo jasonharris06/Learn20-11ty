@@ -1,0 +1,59 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   //- Flash message
+   +pod('')
+      .uk-width-1-1
+         p.uk-text-center
+                  strong
+                     small
+                        | This page has content that requires the Flash Player plug-in. Unfortunately, we can't do anything on our end to improve your experience with Flash. If you are using an iOS device, please note that these devices do not support Flash. We are slowly working on replacing our popular Flash-based content and will update this content as it becomes available. If you would like to help us as we work on these updates, please consider donating 
+                        a(href="https://umarket.utah.edu/ugive/index.php?gift_id=2787&special=%20Learn.Genetics%20website%20MD11595-40165") here
+                        | .
+                        
+   script(src='/Scripts/AC_RunActiveContent.js', type='text/javascript')
+
+   +pod('')
+      .uk-width-1-1.uk-text-center
+         script(type='text/javascript').
+            AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','750','height','464','src','Loader','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','Loader' ); //end AC code
+         noscript
+            p Javascript is required to view this content.
+
+   +pod('Molecular machines copy DNA')
+      .uk-width-medium-6-10
+            p Your body produces billions of new cells every day. Each time one of your cells divides, it must first copy the genetic information contained within its nucleus. Copying the genetic information in one cell using this activity would take more than 95 years*, yet molecular machines in your cells accomplish this feat in about 6 to 8 hours.
+    
+            p In order to speed up the copying process, DNA replication begins at multiple locations along each chromosome. The two DNA strands are pulled apart and copied in both directions at the rate of about 50 nucleotides per second.**
+
+      .uk-width-1-1.uk-text-center
+         figure
+            img.lg-no-shadow(src='images/DNAsplit.jpg')
+            p It would take nearly 5,000 strands of DNA laid side by side to equal the width of a human hair. At the magnification shown here (about 7 million X), an average human chromosome would be about 621 kilometers (385 miles) long, or roughly the distance between San Francisco and Los Angeles, CA.  
+            a.uk-text-small(href='/content/cells/scale/') See the size of a nucleotide as compared to other objects
+
+   +pod('Complementary base pairing')   
+      .uk-width-medium-6-10
+         figure
+            img.lg-no-shadow(src='images/sidebyside2.jpg', height='388', width='526', style='float:left;')
+
+      .uk-width-medium-4-10
+         p.
+            These models are based on the molecular structure of real nucleotides. The grey and white circles on the models represent partial positive and negative charges that form hydrogen bonds between complementary bases. These bonds work kind of like tiny magnets to hold the two DNA strands together. Complementary base-pairing ensures that DNA strands are copied accurately, with just a few errors for each round of replication. Forces between neighboring nucleotides stack the bases on top of one another and twist the DNA strands into a double-helix.
+    
+   +pod('Notes')
+      .uk-width-medium-6-10
+         
+         p.uk-text-small *Assuming a rate of 2 base pairs per second x the 6 billion base pairs you inherit from your parents.
+         p.uk-text-small.
+            **DNA replication in one direction is straight-forward. But replication in the other direction happens a little 
+            differently. For an explanation, see the the animations below.
+         p.uk-text-small Animations of DNA replication on HHMI&apos;s Biointeractive: 
+            a(href='http://www.hhmi.org/biointeractive/dna/DNAi_replication_vo1.html', target='_blank') Basic detail
+            |  and 
+            a(href='http://www.hhmi.org/biointeractive/dna/DNAi_replication_vo2.html', target='_blank') Advanced detail
+
+
+      
+      

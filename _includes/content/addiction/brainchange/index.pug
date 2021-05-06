@@ -1,0 +1,82 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   //- Flash message
+   +pod('')
+      .uk-width-1-1
+         p.uk-text-center
+                  strong
+                     small
+                        | This page has content that requires the Flash Player plug-in. Unfortunately, we can't do anything on our end to improve your experience with Flash. If you are using an iOS device, please note that these devices do not support Flash. We are slowly working on replacing our popular Flash-based content and will update this content as it becomes available. If you would like to help us as we work on these updates, please consider donating 
+                        a(href="https://umarket.utah.edu/ugive/index.php?gift_id=2787&special=%20Learn.Genetics%20website%20MD11595-40165") here
+                        | .
+                        
+   script(src='/Scripts/AC_RunActiveContent.js', type='text/javascript')
+   +pod('Dopamine Levels Increase')
+      .uk-width-medium-6-10
+         p
+            | All addictive drugs affect brain pathways involving reward&mdash;that is, the dopamine system in the reward pathway.
+         p
+            | Within seconds to minutes of entering the body, drugs cause dramatic changes to synapses in the brain. By activating the brain&apos;s reward circuitry, drugs deliver a jolt of intense pleasure.
+         |    
+         .mediaSunk
+            p.caption
+               | All drugs of abuse activate the dopamine system in the reward pathway. --Dr. Glen Hanson
+            |             
+            audio(controls='')
+               source(src='Drugs_Dopamine (new).mp3')
+      |    
+      .uk-width-medium-4-10
+         figure
+            img.lg-no-shadow(src='changes-1.jpg', alt='changes')
+   +pod('Synapse Activity Decreases')
+      |    
+      .uk-width-medium-4-10
+         figure
+            img.lg-no-shadow(src='reduced_DAreceptors_Meth.jpg', alt='brain slices')  
+            p These brain scans highlight dopamine receptors, with areas of highest density shown in red. The meth abuser has severely reduced receptor levels. Other drugs, including alcohol, cocaine, and heroin, have the same effect. Images courtesy Dr. Nora Volkow, Brookhaven National Laboratory.
+      |    
+      .uk-width-medium-6-10
+         p
+            | Drugs of abuse affect the brain much more dramatically than natural rewards, such as food and social interactions. To bring stimulation down to a more manageable level, the brain must try to adapt.
+         p
+            | One way the brain compensates is to reduce the number of dopamine receptors at the synapse. In addition, sending neurons increase their number of dopamine transporters, more quickly clearing dopamine from the synapse. These changes make the brain less responsive to the drug, but they also decrease the brain&rsquo;s response to natural rewards.
+         p
+            | Because of these changes, after the user has &quot;come down,&quot; they will need more of the drug next time they want to get high. This response is commonly referred to as &quot;tolerance.&rdquo;
+   +pod('Brain Connections Are Rewired')
+      |    
+      .uk-width-medium-4-10
+         p
+            | As the brain continues to adapt to the presence of the drug, regions outside of the reward pathway are also affected. Over time, brain regions responsible for judgment, decision-making, learning, and memory begin to physically change, making certain behaviors &ldquo;hard-wired.&rdquo; In some brain regions, connections between neurons are pruned back. In others, neurons form more connections.
+         |       
+         p
+            | Once these changes take place, drug-seeking behavior becomes driven by habit, almost reflex. The drug user becomes a drug addict.
+         |         
+         .mediaSunk
+            p.caption
+               | Drug abuse causes fundamental, long-lasting changes in the brain. --Dr. Glen Hanson
+            |             
+            audio(controls='')
+               source(src='Fund_Brain_Change (new).mp3')
+      |    
+      .uk-width-medium-6-10
+         figure
+            img.lg-no-shadow(src='changes-3.jpg', width='487', height='248', alt='changes')
+            p After cocaine use, connections between neurons in the nucleus accumbens, part of the reward pathway, increase in number, size, and strength.
+   +pod('Changes Last Long After Use')
+      |    
+      .uk-width-medium-6-10
+         p
+            | Stopping drug use doesn&rsquo;t immediately return the brain to normal. Some drugs have toxic effects that can kill neurons&mdash;and most of these cells will not be replaced. And while changes to connections between neurons in the brain may not be permanent, some last for months. Some research suggests the changes may even last for years.
+         p
+            | Long-lasting brain changes can make it challenging for addicts to stay drug-free. They often experience intense cravings, leading to relapse.
+         p
+            | Click on the mouse to the right to morph between the PET scans of a normal brain and the brain of a former cocaine addict.
+      |    
+      .uk-width-medium-4-10
+         script(type='text/javascript').
+            AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0','width','360','height','310','src','PETmorph','quality','high','pluginspage','http://www.macromedia.com/go/getflashplayer','movie','PETmorph' ); //end AC code
+         noscript
+            p Javascript is required to view this content.
+   

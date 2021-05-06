@@ -1,0 +1,154 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   style(type='text/css', media='screen').
+      #flashContent { width:100%; height:100%; }
+
+   +pod('')
+      .uk-width-medium-5-10
+         p
+            | Gene therapy could be a way to fix a genetic problem at its source. By adding a corrected copy of a defective gene, gene therapy promises to help diseased tissues and organs work properly. This approach is different from traditional drug-based approaches, which may treat symptoms but not the underlying genetic problems.
+         p
+            | Most commonly, gene therapy uses a vector, typically a virus, to deliver a gene to the cells where it&apos;s needed. Once it&apos;s inside, the cell&apos;s gene-reading machinery uses the information in the gene to build RNA and protein molecules. The proteins (or RNA) can then carry out their job in the cells.
+         p
+            | But gene therapy is not a molecular bandage that will automatically fix any genetic problem. While many disorders or medical conditions can potentially be treated using gene therapy, others are not suitable for this approach. So what makes a condition a good candidate for gene therapy?
+
+      .uk-width-medium-5-10
+         #flashContent
+            object#understandingtheproblem2(classid='clsid:d27cdb6e-ae6d-11cf-96b8-444553540000', width='488', height='500', align='middle')
+               param(name='movie', value='understandingtheproblem2.swf')
+
+               param(name='quality', value='high')
+
+               param(name='bgcolor', value='#ffffff')
+
+               param(name='play', value='true')
+
+               param(name='loop', value='true')
+
+               param(name='wmode', value='window')
+
+               param(name='scale', value='showall')
+
+               param(name='menu', value='true')
+
+               param(name='devicefont', value='false')
+
+               param(name='salign', value='')
+
+               param(name='allowScriptAccess', value='sameDomain')
+               //if !IE
+
+               object(type='application/x-shockwave-flash', data='understandingtheproblem2.swf', width='488', height='500')
+                  param(name='movie', value='understandingtheproblem2.swf')
+
+                  param(name='quality', value='high')
+
+                  param(name='bgcolor', value='#ffffff')
+
+                  param(name='play', value='true')
+
+                  param(name='loop', value='true')
+
+                  param(name='wmode', value='window')
+
+                  param(name='scale', value='showall')
+
+                  param(name='menu', value='true')
+
+                  param(name='devicefont', value='false')
+
+                  param(name='salign', value='')
+
+                  param(name='allowScriptAccess', value='sameDomain')
+                  // <![endif]
+                  a(href='http://www.adobe.com/go/getflash')
+                     img(src='http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif', alt='Get Adobe Flash player')
+                  //if !IE
+               // <![endif]
+   +pod('Choosing Candidates For Gene Therapy')
+      .uk-width-medium-5-10
+         p
+            strong Could the condition be corrected by adding one or a few functional genes?
+            br
+            | For you to even consider gene therapy, the answer must be &quot;yes.&quot; For instance,
+            a(href='/content/disorders/singlegene/')  genetic disorders caused by mutations in single genes
+            |  tend to be good candidates for gene therapy, while
+            a(href='/content/history/')  diseases involving many genes and environmental factors
+            |  tend to be poor candidates.
+         p
+            strong Do you know which genes are involved?
+            br
+            | If you plan to treat a genetic flaw, you need to know which gene(s) to pursue. You must also have a DNA copy of the gene available in your laboratory.
+         p
+            strong Do you understand the biology of the disorder?
+            br
+            | To design the best possible approach, you need to learn all you can about how the gene factors into the disorder. For example, which tissues the disorder affects, what role the protein encoded by the gene plays within the cells of that tissue, and exactly how mutations in the gene affect the protein&apos;s function.
+         p
+            | Will adding a normal copy of the gene fix the problem in the affected tissue? Or could getting rid of the defective gene fix it?
+            | Sometimes when a gene is defective, no functional protein is being made from it. In cases like these, adding a functional copy of the gene could correct the problem. But sometimes a defective gene codes for a protein that starts doing something it shouldn&apos;t or prevents another protein from doing its job. In order to correct the problem, you would need to get rid of the misbehaving protein.
+         p
+            +well
+               | To learn more about using gene therapy to tame misbehaving proteins, visit
+               a(href='../approaches/')  Approaches to Gene Therapy
+               | .
+         p
+            strong Can you deliver the gene to cells of the affected tissue?
+            br
+            | The answer will come from several pieces of information, including the tissue&apos;s accessibility and molecular signatures.
+
+      .uk-width-medium-5-10
+         #flashContent
+            object(classid='clsid:d27cdb6e-ae6d-11cf-96b8-444553540000', width='488', height='500', id='likely candidate 2', align='middle')
+               param(name='movie', value='likely candidate 2.swf')
+
+               param(name='quality', value='high')
+
+               param(name='bgcolor', value='#ffffff')
+
+               param(name='play', value='true')
+
+               param(name='loop', value='true')
+
+               param(name='wmode', value='window')
+
+               param(name='scale', value='showall')
+
+               param(name='menu', value='true')
+
+               param(name='devicefont', value='false')
+
+               param(name='salign', value='')
+
+               param(name='allowScriptAccess', value='sameDomain')
+               //if !IE
+
+               object(type='application/x-shockwave-flash', data='likely candidate 2.swf', width='488', height='500')
+                  param(name='movie', value='likely candidate 2.swf')
+
+                  param(name='quality', value='high')
+
+                  param(name='bgcolor', value='#ffffff')
+
+                  param(name='play', value='true')
+
+                  param(name='loop', value='true')
+
+                  param(name='wmode', value='window')
+
+                  param(name='scale', value='showall')
+
+                  param(name='menu', value='true')
+
+                  param(name='devicefont', value='false')
+
+                  param(name='salign', value='')
+
+                  param(name='allowScriptAccess', value='sameDomain')
+                  // <![endif]
+                  a(href='http://www.adobe.com/go/getflash')
+                     img(src='http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif', alt='Get Adobe Flash player')
+                  //if !IE
+               // <![endif]
+   script(src="/ruffle/ruffle.js")

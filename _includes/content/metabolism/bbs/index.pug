@@ -1,0 +1,116 @@
+extends /shared/layout
+
+block content
+   +pageTitle
+
+   +pod('')
+      .uk-width-1-1.lg-text-center
+         include bbs.pug
+         br
+         +well
+            b Related content
+            p
+               | No single cell type carries out all of the processes shown above. Rather, different cell type carry out different processes at different times.  To learn more, visit
+               a(href="../pathways/") Metabolic pathways
+            p
+               | Amino acids are used for building proteins through a process called translation.  For a refresher on how cells build proteins, visit
+               a(href="/content/basics/transcribe/") Transcribe and Translate a Gene
+               |.
+
+
+   +pod('The Fat Treadmill')
+      .uk-width-medium-6-10
+         p
+            | Most of the body&apos;s energy reservesabout 80-85% in a healthy adult are in stored fats.
+
+         p.
+            While it may seem like the fat that pads our bodies sits there, stubbornly refusing to budge, fat is a very active
+            tissue that is constantly turning over its inventory. After a meal, fat is put into storage. Between meals, stored
+            fat is slowly released, keeping our cells supplied with fuel. While the brain needs glucose, our liver, muscle, and
+            fat cells prefer to burn fat.
+
+         p
+            | When calorie consumption is in balance, we maintain a healthy supply of fat that&apos;s available when we need it. This extra energy reserve helps us survive longer periods of fasting&#151;like when food is scarce or when we don&apos;t have a chance to eat. Fat stores are especially important during illness: they nourish our cells and provide the immune system with energy to fight off infections when we&apos;re too sick to eat.
+
+         p
+            | However, when we routinely eat more calories than we need, our bodies get out of balance. Fat stores can build up, leading to obesity and related health problems.
+
+         +well
+            b Related content
+            p
+               | Fat tissue does more than just store energy. To learn about some of the more active roles of fat, visit
+               a(href='../fat/') The Friendly Side of Fat
+               |.
+
+      .uk-width-medium-4-10
+         figure
+            img(src='images/BBS01.jpg', alt='groceries stocked and picked')
+            p Like groceries on a shelf, fats are constantly moving in and out of storage.
+
+   +pod('Too Much Protein Can Make You Fat')
+      .uk-width-medium-6-10
+         p
+            | The protein in our food supplies amino acids that we need for replacing proteins lost in urine, in shed hair and skin, and through other means. Because we can&apos;t store protein for the long-term, we need to eat some every day especially the 9 &quot;indispensible&quot; (or essential) amino acids that our cells cannot make from other nutrients.
+         p
+            | The amount of protein we need to eat to replace what we lose is relatively modest. A generous estimate is 10% of our daily calories, which amounts to 56 grams per day for the average man and 46 grams for the average woman. Any protein we eat beyond what we need for rebuilding is burned for energy, converted to sugar, or most commonly converted to fat.
+
+         p
+            | While some of the protein from our food becomes protein in our bodies, eating a high-protein diet will not necessarily help the body build more muscle protein. Mostly it just builds fat.
+
+         p
+            | A number of diets recommend eating high amounts of protein, and some evidence suggests that for people trying to lose weight a high-protein diet reduces hunger and food cravings. According to the Institute of Medicine, we can get up to 35% of our calories from protein and suffer no ill health effects. But regardless of what we eat, weight loss will only occur when we burn more calories than we consume. When a high-protein diet contains more calories than we need, the excess still builds up as fat.
+
+         +well
+            b Related content
+            p
+               | Sugars consumed in excess are also readily converted to fat for storage. To learn more, visit
+               a(href='../sugar/') Spotlight on Sugar
+               | .
+            //p
+            //   | To learn more about essential amino acids and more, visit
+            //   a(href='../nutrients/') Essential Nutrients
+
+      .uk-width-medium-4-10
+         figure
+            img(src='images/steakdinner.jpg', alt='steak dinner')
+            p
+               | The protein from our food doesn&apos;t necessarily become protein in our bodies. Our cells can burn amino acids as fuel and convert them into sugar and fat.
+
+   +pod('Why Fat?')
+      .uk-width-medium-6-10
+         p
+            | Because food has not always been readily available, humans (and other animals) have evolved ways to store fuel reserves in their bodies. When food is plentiful, the body packs away extra calories in fat reserves. The stored fat fuels the body when food is scarce.
+
+         p
+            | But why does the body go through the trouble of converting amino acids and sugars to fat for storage? Wouldn&apos;t it make more sense to store more proteins and glycogen?
+
+         p
+            | It turns out that fat is a much more efficient way to store energy. Fat has about 9 calories per gram, and protein and carbohydrate have just 4. In living tissue, this difference is even greater. Fat stored in tissue contains very little water. In contrast, every gram of glycogen (the storage form for carbohydrate) holds 2 grams of water. Muscle (the closest thing we have to a storage form of protein) holds water too: 100 grams of 95% lean ground beef contains just 21 grams of protein.
+
+         p
+            | Stored in tissue, one pound (454 grams) of fat holds about 4,100 calories, which is about 2 days&apos; worth of energy. A pound of hydrated glycogen holds just 680 calories.
+
+      .uk-width-medium-4-10
+         figure
+            img(src='images/BBS03.jpg', alt='fat pack')
+            p
+               | A typical healthy man carries about 24 pounds (11 kg) of fat. Stored as glycogen, the same number of calories would weigh 144 pounds (66 kg)! Paradoxically, fat keeps us leaner.
+
+      +references
+         p.
+            Berg, J.M., Tymoczko, J.L., Stryer, L. (2002). Biochemistry, fifth edition. New York: W.H. Freeman. Accessed 4/9/2015 at <a href="http://www.ncbi.nlm.nih.gov/books/NBK22369/">http://www.ncbi.nlm.nih.gov/books/NBK22369/</a>.
+         p.
+            Food and Nutrition Board, Institute of Medicine, National Academies (year). Dietary Reference Intakes (DRIs): Estimated Average Requirements. Online. Accessed 4/9/2015 at <a href="http://iom.edu/Activities/Nutrition/SummaryDRIs/~/media/Files/Activity%20Files/Nutrition/DRIs/New%20Material/5DRI%20Values%20SummaryTables%2014.pdf%20(page%205)">iom.edu</a>
+         p.
+            Fulgoni III, V.L. (2008). Current protein intake in America: analysis of the National Health and Nutrition Examinatin Survey, 2003-2004. The American Journal of Clinical Nutrition, 87:5, 15545-15575.
+         p.
+            Marieb, E.N. &amp; Hoehn, K. (2009). Human Anatomy and Physiology, eighth edition. San Francisco: Benjamin Cummings.
+
+block append endscripts
+   script(src="/lib/slideshow.js")
+   script(src="/lib/slideshow-fx.js")
+   script(src="bbs.js")
+
+
+
+

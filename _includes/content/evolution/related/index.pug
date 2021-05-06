@@ -1,0 +1,119 @@
+extends /shared/layout
+block append head
+   script(src='/Scripts/swfobject_modified.js', type='text/javascript')
+block content
+   +pageTitle
+
+   //- Flash message
+   +pod('')
+      .uk-width-1-1
+         p.uk-text-center
+                  strong
+                     small
+                        | This page has content that requires the Flash Player plug-in. Unfortunately, we can't do anything on our end to improve your experience with Flash. If you are using an iOS device, please note that these devices do not support Flash. We are slowly working on replacing our popular Flash-based content and will update this content as it becomes available. If you would like to help us as we work on these updates, please consider donating 
+                        a(href="https://umarket.utah.edu/ugive/index.php?gift_id=2787&special=%20Learn.Genetics%20website%20MD11595-40165") here
+                        | .
+                        
+   +pod('')
+      +flash('ssLoader.swf?filename=AllLivingThings.swf', 884, 567, true)
+      br
+   +references
+      p
+         | Bejder, L., Hall, B.K. (2002). 
+         a(href='http://www3.interscience.wiley.com/journal/118932882/abstract')
+            | Limbs in whales and limblessness
+            | in other vertebrates: mechanisms of evolutionary developmental transformation and loss.
+         |  
+         em Evolution and Development, 4 (6)
+         | , 445-458 (subscription required).
+      p
+         | Carroll, S. (2006). 
+         em The making of the fittest: DNA and the ultimate forensic record of evolution
+         | . New York, NY: W.W. Norton &amp;
+         |          Company, Inc.
+
+      p
+         | Cohn, M.J., Tickle, C. (1999). 
+         a(href='http://www.nature.com/nature/journal/v399/n6735/full/399474a0.html')
+            | Developmental basis of limblessness
+            | and axial patterning in snakes
+         | . 
+         em Nature, 399
+         | , 474-479 (subscription required).
+
+      p
+         | Davis, M.C., Dahn, R.D., Shubin, N.H. (2007). 
+         a(href='http://www.nature.com/nature/journal/v447/n7143/full/nature05838.html')
+            | An autopodial-like
+            | pattern of Hox expression in the fins of a basal actinopterygian fish
+         | . 
+         em Nature, 447
+         | , 473-477 (subscription required).
+
+      p
+         | Koonin, E.V. (2003). Comparative genomics, minimal gene-sets and the last universal common ancestor. 
+         em Nature Reviews Microbiology, 1(2)
+         | ,
+         |          127-136.
+
+      p
+         | Li, W., Saunders, M.A. (2005). 
+         a(href='http://www.nature.com/nature/journal/v437/n7055/full/437050a.html') The chimpanzee and us
+         | . 
+         em
+            | Nature,
+            | 437
+         | , 50-51 (subscription required). doi:10.1038/437050a.
+
+      p
+         | Martin, T., Ruf I. (2009). 
+         a(href='http://www.sciencemag.org/cgi/content/full/326/5950/243') On the mammalian ear
+         | . 
+         em Science, 326
+         | , 243-244
+         |          (subscription required). doi:10.1126/science.1181131.
+
+      p
+         | Mayr, G., Pohl, B., Peters, S. (2005). 
+         a(href='http://www.sciencemag.org/cgi/content/full/310/5753/1483')
+            | A well-preserved Archaeopteryx specimen with
+            | theropod features
+         | . 
+         em Science, 310
+         | , 1483-1486 (subscription required). doi:10.1126/science.1120331.
+
+      p
+         | Pennisi, E. (2006). 
+         a(href='http://www.sciencemag.org/cgi/content/full/313/5795/1908') Mining the molecules that made our mind
+         | . 
+         em
+            | Science,
+            | 313
+         | , 1908-1911 (subscription required). doi:10.1126/science.313.5795.1908.
+
+      p
+         | Raff, R.A. (2007). 
+         a(href='http://www.nature.com/nrg/journal/v8/n12/abs/nrg2225.html') Written in stone: fossils, genes and evo-devo
+         | . 
+         em
+            | Nature
+            | Reviews Genetics, 8
+         | , 911-920 (subscription required).
+
+      p
+         | Shubin, N., Tabin, C., Carroll, S. (2009). 
+         a(href='http://www.nature.com/nature/journal/v457/n7231/full/nature07891.html')
+            | Deep homology and the
+            | origins of evolutionary novelty
+         | . 
+         em Nature, 457
+         | , 818-823. (subscription required) doi: 10.1038/nature07891.
+      p
+         | Stemple, D.L. (2005). 
+         a(href='http://dev.biologists.org/content/132/11/2503.long')
+            | Structure and function of the notochord: an essential organ for
+            | chordate development
+         | . 
+         em Development, 132(11)
+         | , 2503-2512.
+   +bottom-menu('','hhmi')

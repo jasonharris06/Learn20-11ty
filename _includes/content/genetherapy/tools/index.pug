@@ -1,0 +1,186 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   +pod('')
+      .uk-width-1-1
+         object(classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000', codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0', width='840', height='600')
+            param(name='movie', value='toolbox2.swf')
+            |
+            param(name='quality', value='high')
+            |
+            embed(src='toolbox2.swf', quality='high', pluginspage='http://www.macromedia.com/go/getflashplayer', type='application/x-shockwave-flash', width='840', height='600')
+   +pod('Gene Delivery')
+      .uk-width-medium-6-10
+         p
+            | Genes are made of DNA. Successful gene delivery requires an efficient way to get the DNA
+            | into cells and to make it work. Scientists refer to these DNA delivery &quot;vehicles&quot; as
+            strong vectors
+            | .
+         |
+         p
+            | There is no &quot;perfect vector&quot; that can treat every disorder. Like any type of medical treatment,
+            | a gene therapy vector must be customized to address the unique features of the disorder. Part
+            | of the challenge in gene therapy is choosing the most suitable vector for treating the disorder.
+         |
+         p To be successful, a vector must:
+         |
+         ul
+            li
+               | TARGET the right cells. If you want to deliver a gene into cells of the liver, it shouldn&apos;t wind up in the big toe.
+            |
+            li
+               | INTEGRATE the gene in the cells. You need to ensure that the gene integrates into, or becomes part of, the host cell&apos;s genetic material, or that the gene finds another way to survive in the nucleus without being trashed.
+            |
+            li
+               | ACTIVATE the gene. A gene must go to the cell&apos;s nucleus and be &quot;turned on,&quot; meaning that it is
+               a(href='/content/basics/transcribe/') transcribed and translated
+               |  to make the protein product it encodes. For gene delivery to be successful, the protein must function properly.
+            |
+            li
+               | AVOID harmful side effects. Any time you put an unfamiliar biological substance into the body, there is a risk that it will be toxic or that the body will mount an immune response against it.
+      |
+      .uk-width-medium-4-10
+         object(classid='clsid:d27cdb6e-ae6d-11cf-96b8-444553540000', width='352', height='365', id='choose vector 2', align='middle')
+            param(name='movie', value='choose vector 2.swf')
+            | &#x9;&#x9;&#x9;&#x9;
+            param(name='quality', value='high')
+            | &#x9;&#x9;&#x9;&#x9;
+            param(name='bgcolor', value='#ffffff')
+            | &#x9;&#x9;&#x9;&#x9;
+            param(name='play', value='true')
+            | &#x9;&#x9;&#x9;&#x9;
+            param(name='loop', value='true')
+            | &#x9;&#x9;&#x9;&#x9;
+            param(name='wmode', value='window')
+            | &#x9;&#x9;&#x9;&#x9;
+            param(name='scale', value='showall')
+            | &#x9;&#x9;&#x9;&#x9;
+            param(name='menu', value='true')
+            | &#x9;&#x9;&#x9;&#x9;
+            param(name='devicefont', value='false')
+            | &#x9;&#x9;&#x9;&#x9;
+            param(name='salign', value='')
+            | &#x9;&#x9;&#x9;&#x9;
+            param(name='allowScriptAccess', value='sameDomain')
+            //if !IE
+            | &#x9;&#x9;&#x9;&#x9;
+            object(type='application/x-shockwave-flash', data='choose vector 2.swf', width='352', height='365')
+               param(name='movie', value='choose vector 2.swf')
+               | &#x9;&#x9;&#x9;&#x9;&#x9;
+               param(name='quality', value='high')
+               | &#x9;&#x9;&#x9;&#x9;&#x9;
+               param(name='bgcolor', value='#ffffff')
+               | &#x9;&#x9;&#x9;&#x9;&#x9;
+               param(name='play', value='true')
+               | &#x9;&#x9;&#x9;&#x9;&#x9;
+               param(name='loop', value='true')
+               | &#x9;&#x9;&#x9;&#x9;&#x9;
+               param(name='wmode', value='window')
+               | &#x9;&#x9;&#x9;&#x9;&#x9;
+               param(name='scale', value='showall')
+               | &#x9;&#x9;&#x9;&#x9;&#x9;
+               param(name='menu', value='true')
+               | &#x9;&#x9;&#x9;&#x9;&#x9;
+               param(name='devicefont', value='false')
+               | &#x9;&#x9;&#x9;&#x9;&#x9;
+               param(name='salign', value='')
+               | &#x9;&#x9;&#x9;&#x9;&#x9;
+               param(name='allowScriptAccess', value='sameDomain')
+               // <![endif]
+               a(href='http://www.adobe.com/go/getflash')
+                  img(src='http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif', alt='Get Adobe Flash player')
+               //if !IE
+            // <![endif]
+   +pod('Viral Vectors')
+      |
+      .uk-width-medium-6-10
+         p
+            | Mother Nature is a brilliant scientist! Over the last three billion years or so, she&apos;s developed an incredibly efficient means of delivering foreign genes into cells: the virus.
+         p
+            | Usually when we think of viruses, we think of the ones that cause diseases like the common cold, the flu, and HIV/AIDS. But scientists have actually been able to use viruses to deliver DNA to cells for gene therapy. Why reinvent the wheel if there&apos;s a perfectly good one out there? If we can modify viruses to deliver genes without making people sick, we may have a good set of gene therapy tools.
+         p Advantages of viral vectors:
+         |
+         ul
+            li They&apos;re very good at targeting and entering cells.
+            |
+            li Some target specific types of cells.
+            |
+            li They can be modified so that they can&apos;t replicate and destroy cells.
+         p Drawbacks of viral vectors:
+         |
+         ul
+            li
+               | They can carry a limited amount of genetic material. Therefore, some genes may be too big to fit into some viruses.
+            |
+            li
+               | They can cause immune responses in patients, leading to two potential problems:
+               ul
+                  li Patients may get sick.
+                  |
+                  li
+                     | The immune system may block the virus from delivering the gene to the patient&apos;s cells, or it may kill the cells once the gene has been delivered.
+      |
+      .uk-width-medium-4-10
+         object(classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000', codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0', width='352', height='352')
+            param(name='movie', value='virus.swf')
+            |
+            param(name='quality', value='high')
+            |
+            embed(src='virus.swf', quality='high', pluginspage='http://www.macromedia.com/go/getflashplayer', type='application/x-shockwave-flash', width='352', height='352')
+   +pod('Non-Viral Vectors')
+      |
+      .uk-width-medium-6-10
+         p
+            | Viruses may effectively deliver genetic material into a patient&apos;s cells, but they have some limitations. Some of these limitations can be overcome by using non-viral vectors.
+         p
+            | One type of non-viral vector is a circular DNA molecule called a
+            strong plasmid
+            | . In nature, bacteria use plasmids to transfer share genes with one another. To make it easier for them to enter cells, gene-therapy plasmids are sometimes packaged inside of &quot;liposomes,&quot; small membrane-wrapped packets that deliver their contents by fusing with cell membranes. The disadvantage of plasmids and liposomes is that they are much less efficient than viruses at getting genes into cells. The advantages are that they can carry larger genes, and most don&apos;t trigger an immune response.
+         p
+            | Synthetic vectors called
+            strong virosomes
+            |  are essentially liposomes covered with viral surface proteins. They combine the carrying capacity and immune advantages of plasmids with the efficiency and specificity of viruses. The viral proteins interact with proteins on the target-cell surface, helping the virosome fuse with the cell membrane and dump its contents into the cell. Different types of viral proteins can target specific types of cells.
+      |
+      .uk-width-medium-4-10
+         figure
+            img(src='images/plasmid.jpg', alt='plasmid')
+            p Electron micrograph of a dna plasmid
+   +pod('In vivo vs. Ex vivo')
+
+      .uk-width-medium-6-10
+         p
+            | Genes can be delivered into a group of cells in a patient&apos;s body in two ways. The first, called
+            em in vivo
+            |  (in VEE-voh), is to inject the vector directly into the patient, aiming to target the affected cells.
+         |
+         p
+            | The second, called
+            em ex vivo
+            |  (ex VEE-voh), is to deliver the gene to cells that have been removed from the body and are growing in culture. After the gene is delivered, integration and activation are confirmed, and the cells are put back into the patient.
+         |
+         p
+            em Ex vivo
+            |  approaches are less likely to trigger an immune response, because no viruses are put into patients. They also allow researchers to make sure the cells are functioning properly before they&apos;re put in the patient. Several gene therapy successes use
+            em ex vivo
+            |  gene delivery as an alternative to bone marrow transplants.
+         |
+         p
+            | Bone marrow contains
+            a(href='/content/stemcells/') stem cells
+            |  that give rise to many types of blood cells. Bone marrow transplants are used to treat many genetic disorders, especially those that involve malfunctioning blood cells. Ideally, a &quot;matched&quot; donor, often a relative, donates bone marrow to the patient. The match decreases the chances that the patient&apos;s immune system will reject the donor cells. However, it&apos;s not always possible to find a match. In these cases, the patient&apos;s own bone marrow cells can be removed and the faulty gene corrected with gene therapy. The corrected cells can then be returned to the patient.
+         |
+         .callout
+            | Examples of genetic disorders that are sometimes treated with bone marrow transplants include
+            a(href='/content/disorders/singlegene/') ADA deficiency
+            | ,
+            a(href='/content/disorders/singlegene/') SCID
+            | , and
+            a(href='/content/disorders/singlegene/') Sickle Cell disease
+            | .
+      |
+      .uk-width-medium-4-10
+         figure
+            img.lg-no-shadow(src='images/petridish.jpg', alt='petri dish')
+
+   script(src="/ruffle/ruffle.js")

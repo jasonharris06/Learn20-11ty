@@ -1,0 +1,53 @@
+extends /shared/layout
+
+block content
+   +pageTitle()(teach="metabolism")
+   .lg-section
+      .uk-container.uk-container-center
+         .uk-grid
+            .uk-width-medium-5-10
+               h2  Digestion and Nutrition
+               p.lg-index-box-text   The digestive system processes our food, breaking larger molecules down into their basic building blocks. Useful pieces are extracted and delivered to the bloodstream, and unused portions are eliminated as waste.
+               .lg-index-items
+                  +index-item('Digestion', 'interactive explore', 'digestion', 'images/digestion.jpg')
+                     p Follow a meal from ingestion to absorbtion, focusing on what happens to the 4 major macromolecules.
+
+                  +index-item('Spotlight on sugar', 'learn more', 'sugar', 'images/sugar.jpg')
+                     p Learn about the sources of sugar in our diets, their chemical similarities and differences, and their effects on our cells and our bodies.
+
+               h2 Regulation
+               .lg-index-items
+                  +index-item('Feeding and Fasting', 'explore', 'regulation', 'images/feeding.jpg')
+                     p Hormones help us balance periodic food intake with varying energy needs. See how hormones regulate metabolic pathways during fasting, feeding, exercise, starvation, and more.
+                  +index-item('Diabetes', 'interactive explore', 'diabetes', 'images/InsideDiabetes.png')
+                     p Travel inside the body to see how regulation goes wrong in people with diabetes, and how various treatments work to correct the problem.
+
+
+               h2 Additional Information
+               .lg-index-items
+                  +index-item('Molecule Gallery', 'learn more', 'molecules', 'images/MoleculeGallery.png')
+                  +index-item('Glu-Ca-Gly-Co-Ly-Gen-Sis?<br>Keeping the Terminology Straight', 'learn more', 'gwords', 'images/Glu-Ca-Gly-Co-Ly-Gen-Sis.png')
+
+            .uk-width-medium-5-10
+               h2 Metabolism and Energy Storage
+               p.lg-index-box-text Once nutrients arrive in the blood stream, the body finds a way to use them. Molecules from our food can be burned for energy, stored for later, or used to build and maintain the body. These pages look at the chemistry of our food.
+               .lg-index-items
+                  +index-item('Building, burning, and storing: <br>How cells use food', 'explore', 'bbs', 'images/bbs.jpg')
+                     p The nutrients from our food can be turned into cellular structures, burned for energy, or stored away for later.
+
+                  +index-item('Carbon oxidation', 'explore', 'carbon', 'images/carb-ox.jpg')
+                     p A fire, a car engine, and a cell: Three ways to burn fuel, one chemical reaction.
+
+                  +index-item('Metabolic pathways', 'explore', 'pathways', 'images/pathways.jpg')
+                     p View metabolism by cell type, where you can compare the metabolic activities of muscle, fat, liver, and other cells. Or view by nutrient, where you can see how our cells process carbohydrates, fats, and proteins.
+
+                  +index-item('ATP', 'learn more', 'atp', 'images/atp.jpg')
+                     p Energy from our food is captured in a molecule called ATP. Come here to learn about this molecule and how it drives nearly all the body's processes.
+
+                  +index-item('The friendly side of fat', 'learn more', 'fat', 'images/friendlyfat.jpg')
+                     p More than just weighing us down, fat holds us together and keeps us running. And fat tissue supplies hormones and other signaling molecules that regulate many body systems.
+
+                  +index-item('Evolution and Obesity', 'learn more', 'obesity', 'images/evo-obese.jpg')
+                     p Why is it so easy to gain weight and so hard to lose it?  Look at nutrition and energy storage from an evolutionary perspective.
+      
+      +bottom-menu('credits','sepametabolism')

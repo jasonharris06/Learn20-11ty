@@ -1,0 +1,105 @@
+extends /shared/layout
+block append headscripts
+   //- meta(name="authoring-tool" content="Adobe_Animate_CC")
+
+block content
+   link(href='src/featherlight.min.css', type='text/css', rel='stylesheet')
+
+   +pageTitle
+   style.
+      .thumbnail-gallery{
+         width:200px;
+         height:auto;
+      }
+      
+      .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+      }
+
+      .switch input { 
+      opacity: 0;
+      width: 0;
+      height: 0;
+      }
+
+      .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+      }
+
+      .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+      }
+
+      input:checked + .slider {
+      background-color: #2196F3;
+      }
+
+      input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3;
+      }
+
+      input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+      }
+
+      /* Rounded sliders */
+      .slider.round {
+      border-radius: 34px;
+      }
+
+      .slider.round:before {
+      border-radius: 50%;
+      }
+   +pod('')
+      //- a(href='#', data-featherlight='#mylightbox')
+      //-    img(src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fnews.northwestern.edu%2Fassets%2FStories%2F2018%2F10%2Fcells640.jpg&f=1&nofb=1")
+      //- #mylightbox 
+      //-    img(src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FNPaEzY6gzp0%2Fmaxresdefault.jpg&f=1&nofb=1")
+      a(href='#', data-featherlight='<img class="initImg" style="display:none;" src="images/Diatom.jpg" /><img class="imgOver" src="images/Diatom-ov.jpg" /><label class="switch"><input onclick="toggle(this.id)" id="test" type="checkbox" checked><span class="slider round"></span></label>') 
+         img.thumbnail-gallery(src="images/Diatom.jpg")
+      a(href='#', data-featherlight='<img class="initImg" style="display:none;" src="images/Red Blood Cells.jpg" /><img class="imgOver" src="images/Red Blood Cells-ov.jpg" /><label class="switch"><input onclick="toggle(this.id)" id="test" type="checkbox" checked><span class="slider round"></span></label>') 
+         img.thumbnail-gallery(src="images/Red Blood Cells.jpg")
+      a(href='#', data-featherlight='<img class="initImg" style="display:none;" src="images/Cork Cells.jpg" /><img class="imgOver" src="images/Cork Cells-ov.jpg" /><label class="switch"><input onclick="toggle(this.id)" id="test" type="checkbox" checked><span class="slider round"></span></label>') 
+         img.thumbnail-gallery(src="images/Cork Cells.jpg")
+   //- +pod('Notes')
+   
+block append endscripts
+   //- script(src='//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js', type='text/javascript', charset='utf-8')
+   script(src='src/featherlight.min.js', type='text/javascript', charset='utf-8')
+
+   script.
+ 
+      function toggle(toggle_id) {
+         $('#'+toggle_id).on("change", function (e){ 
+               if(this.checked){
+                  $(".initImg").css("display", "none");
+                  $(".imgOver").css("display", "block");
+               }
+               else{
+               $(".initImg").css("display", "block");
+               $(".imgOver").css("display", "none");
+               }
+            });
+      }
+        index.pug

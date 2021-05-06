@@ -1,0 +1,118 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   //- Flash message
+   +pod('')
+      .uk-width-1-1
+         p.uk-text-center
+                  strong
+                     small
+                        | This page has content that requires the Flash Player plug-in. Unfortunately, we can't do anything on our end to improve your experience with Flash. If you are using an iOS device, please note that these devices do not support Flash. We are slowly working on replacing our popular Flash-based content and will update this content as it becomes available. If you would like to help us as we work on these updates, please consider donating 
+                        a(href="https://umarket.utah.edu/ugive/index.php?gift_id=2787&special=%20Learn.Genetics%20website%20MD11595-40165") here
+                        | .
+                        
+   script(src='/Scripts/AC_RunActiveContent.js', type='text/javascript')
+
+   +pod('Mouse Models For Addiction')
+
+      .uk-width-medium-6-10
+         p
+            | Decades ago, researchers first tested strains of laboratory rats and mice for specific addiction traits, such as high preference for certain drugs or alcohol. Since individuals within a single strain are virtually identical, they all have the same addiction profile. But researchers discovered that individuals from different strains had vastly different addiction profiles. This was one of the earliest clues that addiction has a genetic component.
+         p
+            | Researchers soon learned that, by selectively breeding rats or mice with certain addiction traits, they could generate lines of animals with very specific addiction profiles. They bred mice with differences in drug preference, sensitivity, tolerance, dependence, and withdrawal symptoms.
+         p
+            | Today, researchers are still studying some of these animal lines and strains. For example, Dr. Scott Rogers is studying different strains of mice (right) that vary in their addiction potential for alcohol. After identifying the genes correlated to this vulnerability in mice, researchers hope to identify homologous genes in humans that render a person more or less susceptible to alcohol addiction.
+            i  Photo of Dr. Rogers courtesy The Brain Institute at the University of Utah.    
+      .uk-width-medium-4-10
+         script(type='text/javascript').
+            AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','360','height','360','src','RogersMice_AS3','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','RogersMice_AS3' ); //end AC code
+         noscript
+            p Javascript is required to view this content.
+         |        
+         +well
+            p
+               | When humans have a gene in common with another organism, scientists call the counterpart gene a &ldquo;homologue&rdquo; or a &ldquo;homologous gene.&rdquo;
+   +pod('The Reward Pathway Is Fundamental')
+      |    
+      .uk-width-medium-6-10
+         p
+            | Food, nurturing, and social interaction are essential for the survival of not only humans, but also of animals. These needs shaped the first reward pathway in an ancestral animal that lived millions of years ago.
+         p
+            | Once it appeared, the genes that shape the reward pathway passed from generation to generation through a process called natural selection. Because the reward pathway increased animals&apos; chances of reproducing, it was &quot;selected&quot; for, meaning it was genetically transmitted from one generation to the next. Over time, the reward pathway remained a central part of the brain, even as the rest of the brain became more complex.
+         p
+            | Because animals and humans share the reward pathway&mdash;and most of the genes that govern it&mdash;animals are also susceptible to drug addiction. This similarity makes animals a convenient tool for researchers who study addiction.
+      |    
+      .uk-width-medium-4-10
+         figure
+            img.lg-no-shadow(src='tricolor-brain.jpg', alt='Tri-color Brain')   
+            p
+               | The structures near the base (blue) and center (pink) of the human brain are evolutionarily very old. We share many of these structures with fish, amphibians, birds, and reptiles.
+   +pod('Of Mice and Men: How Similar Are We?')
+      |    
+      .uk-width-medium-4-10
+         figure
+            img.lg-no-shadow(src='brains.jpg', alt='Brains')
+      |    
+      .uk-width-medium-6-10
+         p
+            | The limbic system in both rats and humans controls instincts, feeding, fighting, fleeing, and sexual behavior. But rodents and humans share more than just the reward pathway. In fact, the entire set-up of the brain is nearly identical. And both use the same neurotransmitters and receptors, the same proteins for synaptic vesicle release and recycling, and similar signaling mechanisms.
+         p
+            | These functions are controlled by genes, so it makes sense that humans and rodents are similar genetically. But if we share genes, then what makes humans and rodents so different? Many of the differences come from slight differences in genes&rsquo; DNA sequences. And some genes are active at different times or in different tissues throughout the development and life of the organism. Where and when a gene&apos;s protein product is made can sometimes produce in dramatic differences between organisms, contributing to their overall appearance and unique abilities.
+   +pod('Animal Models and Gene Discovery')
+      |    
+      .uk-width-medium-4-10
+         p
+            | Animals are particularly valuable research tools because they allow scientists to conduct experiments that they could never perform on humans. Many animals, especially mice, are greatly expanding our understanding of the complex disease of addiction.
+         p
+            | Even organisms that lack a complex brain, like the fruit fly and roundworm, share many of the pieces that make up the reward pathway. They have the same neurotransmitters, receptors, and signaling mechanisms as we do. So scientists commonly study a variety of animals to learn about different aspects of human biology, including the reward pathway and addiction.
+         p
+            | The genomes of many organisms used in research have been sequenced. So when researchers discover a gene in a model organism that plays a role in addiction, they can then identify the counterpart gene in humans by searching a DNA database for similar sequences. Once they identify the human gene, they can study it.
+         p
+            | To the right are several model organisms that have been used in addiction research.
+            i  (Image credits: Mouse - Jackson Laboratories; C. elegans - Dr. Erik Jorgensen.)
+      |    
+      .uk-width-medium-6-10
+         figure
+            img.lg-no-shadow(src='models.jpg', alt='Models')
+     
+            p.caption
+               strong Chimpanzee
+               | , 
+               em Pan troglodytes
+               |  - 20,000-25,000 genes (same as human) 
+               br
+               |         Just 50 human genes lack a known homologue in chimps. Of the protein-coding genes in the human and chimp genomes, one-third have identical sequences.
+            |         
+            p.caption
+               strong Mouse
+               | , 
+               em Mus musculus
+               |  - 20,000-25,000 genes (same as human)
+               br
+               |         The average mouse gene is about 85% similar to its human homologue.
+            |         
+            p.caption
+               strong Zebrafish
+               | , 
+               em Danio rerio
+               |  - 25,000 genes 
+               br
+               |         Scientists routinely transfer human genes into zebrafish and study their functions.
+            |         
+            p.caption
+               strong Fruitfly
+               | , 
+               em Drosophila Melanogaster
+               |  - 13,600 genes 
+               br
+               |         Approximately 60% of known human disease genes have a counterpart in the fruit fly.
+            |         
+            p.caption
+               strong Roundworm
+               | , 
+               em Caenorhabditis elegans
+               |  - 19,100 genes 
+               br
+               |         Earliest organism with a central nervous system. Shares about 21% of its genes with humans.
+   

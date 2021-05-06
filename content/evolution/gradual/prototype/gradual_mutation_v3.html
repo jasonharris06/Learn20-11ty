@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gradual Evolution Sim</title>
+	<script src="https://code.createjs.com/easeljs-0.8.1.min.js"></script>
+	<script src="genotypes.js"></script>
+	<script src="handy_functions.js"></script>
+	<script src="gradual_mutation_v3.js"></script>
+</head>
+<body onload="init();">
+	<div>
+		<canvas id="main" width="800" height="500" style="border:2px solid #000000;"></canvas>
+		<canvas id="genomeViewer1" width="300" height="500" style="border:2px solid #000000; display:none;"></canvas>
+		<canvas id="genomeViewer2" width="300" height="500" style="border:2px solid #000000; display:none;"></canvas>
+	</div>
+    <p></p>
+	<label>Simulation Speed:</label>
+	<select id="speed" onchange="changeSpeed();">
+		<option value="slow">Slow</option>
+		<option value="medium">Medium</option>
+		<option value="fast" selected="selected">Fast</option>
+	</select>
+	<p></p>
+	<label>Sunlight: </label>
+	<select id="sun" onchange="changeSun();">
+		<option value=1>Low</option>
+		<option value=2>Medium</option>
+		<option value=3>High</option>
+	</select>
+	<label>Nutrients: </label>
+	<select id="nutrients" onchange="changeNutrients();">
+		<option value=1>Low</option>
+		<option value=2>Medium</option>
+		<option value=3>High</option>
+	</select>
+	<label>Water: </label>
+	<select id="water" onchange="changeH2O();">
+		<option value=1>Low</option>
+		<option value=2>Medium</option>
+		<option value=3>High</option>
+	</select>
+
+	<p></p>
+    <button id="start" onclick="start();">Run</button>
+    <button id="pause" onclick="pause();">Pause</button>
+    <button id="reset" onclick="reset();">Reset</button>
+	<button id="randomize" onclick="randomize();">Randomize</button>
+    <p></p>
+	<p id="generations">Generations: 0</p>
+
+</body>
+</html>

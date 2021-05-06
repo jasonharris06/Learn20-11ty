@@ -1,0 +1,44 @@
+extends /shared/layout
+block content
+   +pageTitle()(teach="familyhistory")
+   .lg-section
+      .uk-container.uk-container-center
+         .uk-grid
+            .uk-width-medium-1-2
+               h2 Risk
+               .lg-index-items
+                  .lg-index-box-text
+                     p.
+                        If a certain disease runs in your family, you may be at risk. To be at risk for a disease means you have a 
+                        chance of getting it but you also maybe able to prevent it.
+                  +index-item('Genetic Risk','learn more','geneticrisk','images/geneticrisk.jpg')
+                     p Family history helps estimate your risk for developing a disease.
+                  +index-item('Environmental Risk','learn more','environment','images/environment.jpg')
+                     p How do your environment and lifestyle affect disease risk?
+                  +index-item('Nutrition & Physical Activity','learn more','nutrition','images/nutrition.jpg')
+                     p Maintaining a healthy body weight may protect you from getting certain diseases.
+                  +index-item('Cholesterol','learn more','cholesterol','images/cholesterol.jpg')
+                     p What are these molecules, and how do they affect health?
+
+            .uk-width-medium-1-2
+               h2 Common Risk-Associated Diseases
+               .lg-index-items
+                  .lg-index-box-text
+                     p.
+                        Most common diseases result from a combination of genetic and environmental factors. We inherit genetic factors
+                        that make us more or less susceptible to developing a particular disease. But our overall health is also a
+                        product of our environment.
+                     p.
+                        Learn more about these diseases, who is at risk, and how that risk can be reduced.
+                  +index-item('Heart Disease','learn more','heart','images/heart.jpg')
+                  +index-item('Asthma','learn more','asthma','images/asthma.jpg')
+                  +index-item('High Blood Pressure','learn more','bp','images/bp.jpg')
+                  +index-item('Diabetes','learn more','diabetes','images/diabetes.jpg')
+                  +index-item('Osteoporosis','learn more','osteoporosis','images/osteoporosis.jpg')
+                  +index-item('Cancer','learn more','cancer','images/cancer.jpg')
+
+
+            //+bottom-menu("",'udoh')
+   
+
+   

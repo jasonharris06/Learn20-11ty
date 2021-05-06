@@ -1,0 +1,149 @@
+extends /shared/layout
+block headscripts
+  style.
+    .progress {
+      width: 70%;
+      height: 20px;
+      position: absolute;
+      top: 50%;
+      left: 15%;
+      padding: 2px;
+      border: 1px solid #fff;
+    }
+    .full {
+      background: white;
+      height: 100%;
+    }
+    #playButton {
+      display: none;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      pointer-events: 'none';
+      transition: opacity 0.33s;
+    }
+block content
+  +pageTitle
+  +pod('')
+    .uk-width-1-1(style="position: relative;")
+      div(id="gameContainer" style="width: 100%; padding-top:56.25%")
+      img(src="images/title-card.jpg" id="playButton")
+
+  +pod('Types of Blood Cells')  
+    .uk-width-medium-6-10
+      p
+        | All of our blood cells are made inside of our bones. In our bone marrow is a single type 
+        | of stem cell that can give rise to all of the blood cell types. Each time one of these stem 
+        | cells divides, one cell remains a stem cell. The other matures and moves into the blood, 
+        | sometimes dividing multiple times along the way.
+      
+      p
+        | As a newly born blood cell matures, different sets of genes are turned on and off. Active 
+        | genes code for proteins that help the cell do its job. Each cell type has a different set 
+        | of active genes related to its unique function. For example, red blood cells fill themselves 
+        | with hemoglobin protein, which carries oxygen. B cells make antibody proteins that recognize 
+        | invaders like bacteria and viruses. Megakaryocytes, and the platelets that break off of them, 
+        | have proteins that help to form blood clots.
+
+      p
+        | Every day, our bone marrow makes many millions of new blood cells. This process is tightly 
+        | controlled to make sure that we always have the right number and proportion of blood cells.
+    
+      +well
+        p
+          | There are three main types of cells in the blood: red blood cells, white blood cells, and 
+          | platelets. White blood cells are further grouped into three categories: granulocytes (neutrophils, 
+          | eosinophils, and basophils), lymphocytes (B cells, T cells, and natural killer cells), and monocytes.
+
+    .uk-width-medium-4-10.uk-width-small-1-1
+      figure
+        img.lg-no-shadow(src='images/blood-cells.jpg' alt='types of blood cells')
+  
+    .uk-width-1-1
+      +bottom-menu("",'qmul')
+
+      +credits
+        p
+          | The Flow Cytometry Virtual Lab is the product of a collaboration between the GSLC and 
+          | Rosemary Clyne at Queen Mary University of London.
+          br   
+          br    
+            
+        h2 Contributors
+        p
+          img(style='position: relative' src="images/R. Clyne_QMUL_Portrait.jpg" height = '241px' width = '306px')
+          br
+          strong Rosemary Clyne, PhD
+          br
+          | Senior Lecturer in Biomedical Sciences and Academic Lead for International Student Experience
+          br
+          br
+          | Nanchang Joint Programme in Biomedical Sciences
+          br
+          | School of Biological and Chemical Sciences
+          br
+          | Queen Mary University of London
+          br
+          br
+
+        h2 Science Advisor
+        p
+          strong Rodney R. Miles, MD, PhD
+          br
+          | ARUP Laboratories
+          br
+          | Section Chief, Hematopathology
+          br
+          | Medical Director, Hematologic Flow Cytometry
+          br
+          | Medical Director, Immunohistochemistry Laboratory
+          br
+          | Medical Director, Histology Laboratory
+          br
+          | Associate Professor of Pathology, University of Utah School of Medicine
+          br
+          br
+
+        h2 GSLC Staff
+        p
+          | Pete Anderson 
+          br
+          | Kagan Breitenbach 
+          br
+          | Jonathan Conger
+          br
+          | Amy J. Hawkins
+          br
+          | Sheila Homburger
+          br
+          | Max Kelly 
+          br
+          | Kevin Pompei
+          br
+          | Louisa Stark, PhD
+          br
+          br
+
+        h2 Interns
+        p
+          | From the Masters of Entertainment Arts and Engineering program at the University of Utah:
+          br
+          | Dorian Rosen
+          br
+          | Sai Upadhyayula
+          br
+          br
+
+        h2 Voiceover
+        p
+          |Kendra Hoffman
+          br
+
+           
+      
+block append endscripts
+  script(src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js")
+  script(src="Build/UnityLoader.js")
+  script(src="fc.js")

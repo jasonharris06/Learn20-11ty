@@ -1,0 +1,119 @@
+extends /shared/layout
+
+block headscripts
+    link(href='https://fonts.googleapis.com/css?family=Kanit&subset=latin' rel='stylesheet' type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin' rel='stylesheet' type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Kanit:800&subset=latin' rel='stylesheet' type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Kanit:800italic&subset=latin' rel='stylesheet' type='text/css')
+
+block content
+    +pageTitle
+    article.lg-pod.lg-section
+        .uk-container.uk-container-center(style="padding:0 100px;")
+            div(style="padding-top:75%; position:relative; overflow:hidden;")
+                #controlledWidth.uk-width-1-1(style="position:absolute; top:0;")
+                    div(id="howpainworksfinaldec19_hype_container" style="margin:auto; position:relative; width:1000px; height:750px; overflow:hidden; transform-origin:top left;" hyp_dn="HowPainWorks")
+                        script(type="text/javascript" charset="utf-8" src="HowPainWorksFinalDec19.hyperesources/howpainworksfinaldec19_hype_generated_script.js?36369")
+
+    +pod('Types of Pain')
+        .uk-width-medium-4-10
+            p
+                | Pain falls mainly into three categories: acute, chronic, and emotional. Each type involves distinct mechanisms and features, though they also have some in common. These categories are useful because they help us understand and talk about our experiences. But remember, pain is complex, and you’ll find examples that fall between categories.
+            p
+                strong Acute pain
+                |  is sharp and sudden. It comes from a specific and immediate cause, and it is protective. We all experience acute pain. Bumps, cuts, surgery, broken bones, and childbirth are some common sources.
+            p
+                | The intensity of acute pain varies a lot, and so can the duration. It can pass in an instant or last up to a few months while an injury heals. But once the underlying cause is gone, acute pain goes away, and our lives return to normal.
+            p
+                strong Chronic pain
+                |  is a diffuse, aching sensation that lasts much longer than acute pain. In many cases, the cause is unknown. In others, it starts as acute pain, but then it doesn’t go away like it should. Instead, pain signals continue even after the damaged tissue heals.
+            p
+                | Chronic pain has no benefit. In fact, it usually has a negative impact on a person’s day-to-day life. Headaches (especially migraines), nerve pain, cancer pain, and fibromyalgia are some examples.
+            p
+                strong Emotional Pain
+                |  ranges from social discomfort and stress to grief, anxiety, and depression. We all experience some form of emotional pain at one time or another.
+                       
+
+        .uk-width-medium-6-10
+            figure
+                img(src='images/types-of-pain.jpg' alt='types of pain')
+                p
+                    | Acute pain (left) comes from an immediate cause, like a skinned knee. Chronic pain (upper right) affects and 25% of people, interfering with their daily life. Stress (lower right) is a common cause of emotional pain.
+            
+    +pod('Physical and Emotional Pain Have Some Mechanisms in Common')
+        .uk-width-medium-6-10
+            +vimeo('345268580')
+            figure
+                p Dr. Eric Garland describes the distinct and shared mechanisms of physical and emotional pain.
+
+        .uk-width-medium-4-10
+            p
+                | Emotional pain often accompanies physical pain, but it also happens on its own. And when it does, emotional pain activates the same areas of our brain as physical pain. In fact, some studies have shown that pain relievers like acetaminophen (Tylenol) help relive not only acute pain, but also emotional pain. So as far as our brains are concerned, our “hurt feelings” really do hurt.
+            +well
+                p
+                    | To learn more about the overlap of physical and emotional pain, explore the story of 
+                    a(href="https://www.bbc.com/news/av/uk-england-47739164/the-woman-who-feels-no-pain") The Woman Who Feels No Pain
+                    | , who also never experiences anxiety.
+
+    +pod("No Pain")
+        .uk-width-medium-5-10
+            p
+                | It’s extremely rare, but some people are born with a genetic disorder that prevents them from feeling pain. It happens because they have problems in their ascending pain pathway. Their pain-sensing neurons (nociceptors) can’t generate electrical signals.
+            p
+                | People with the condition are usually aware of it, but undetected injuries and health issues still build up. Unfortunately, they often don’t realize when they’re hurting themselves.
+            
+        .uk-width-medium-5-10
+            +well
+                h3 Related Links
+                p
+                    | Use the following links to learn more about the lives of people who can't feel pain.
+                p
+                    a(href="https://www.youtube.com/watch?v=bRaCFUtpxFU") The Little Girl Who Couldn't Feel Pain
+                    |  (video)
+                    br
+                    a(href="https://daily.jstor.org/people-who-cant-feel-pain/") People Who Can't Feel Pain
+                    |  (article)
+                    br
+                    a(href="https://www.nytimes.com/2012/11/18/magazine/ashlyn-blocker-feels-no-pain.html") The Hazards of Growing Up Painlessly
+                    |  (article)
+
+    +pod('Persistent Pain')            
+        .uk-width-medium-4-10
+            p
+                | Sometimes pain is persistent. It sticks around, even when the source is gone or an injury has long been healed. An extreme (but not rare) example is phantom limb pain felt by amputees. Clearly the pain pathways described above don’t completely explain what’s going on. Where is the signal coming from, with no nerve endings to send messages to the brain? It happens because when a pain message is triggered over and over by the same stimulus, it changes a person’s brain.
+            p 
+                | The phenomenon is called central sensitization. When the brain repeatedly receives the same message, it develops a “memory” of it. Eventually, the brain takes on a state where it can respond very rapidly and effectively. At this point, what’s actually going on in peripheral tissues is much less important. The brain (and often spinal cord) are compromised. Pain happens very easily. Even a gentle touch, like brushing of clothes against an area can be excruciating. The good news is your brain is very good at changing. In many cases, it can recover, though it does take time.
+
+        .uk-width-medium-6-10
+            +vimeo('345268679')
+            figure
+                p
+                    | Dr. Eric Garland talks about chronic pain. He explains how it changes the brain, then offers hope for managing it.
+    
+    +references
+        p
+            | Basbaum, A. I., Bautista, D. M., Scherrer, G., &amp; Julius, D. (2009). Cellular and molecular mechanisms of pain. Cell, 139(2), 267-284.
+        p
+            | Ossipov, M. H., Dussor, G. O., &amp; Porreca, F. (2010). Central modulation of pain. The Journal of Clinical Investigation, 120(11), 3779-3787.
+        p
+            | Steeds, C. E. (2016). The anatomy and physiology of pain. Surgery (Oxford), 34(2), 55-59.
+        p
+            | Yam, M., Loh, Y., Tan, C., Khadijah Adam, S., Abdul Manan, N., &amp; Basir, R. (2018). General Pathways of Pain Sensation and the Major Neurotransmitters Involved in Pain Regulation. International Journal of Molecular Sciences, 19(8), 2164.
+        p
+            | DeWall, C. N., MacDonald, G., Webster, G. D., Masten, C. L., Baumeister, R. F., Powell, C., &amp; Eisenberger, N. I. (2010). Acetaminophen reduces social pain: behavioral and neural evidence. Psychological Science, 21(7), 931-937.
+
+block append endscripts
+   script.
+      $(document).ready(function() {
+         var container = document.getElementById('controlledWidth');
+         var item = document.getElementById('howpainworksbuild_hype_container');
+
+         function updateItemWidth () {
+            var pad = parseInt(window.getComputedStyle(container).paddingLeft);
+            var newScale = (container.offsetWidth - pad) / 1000;
+            item.style.transform = "scale(" + newScale + "," + newScale + ")";
+         };
+
+         updateItemWidth();
+         window.addEventListener('resize', updateItemWidth);
+      });

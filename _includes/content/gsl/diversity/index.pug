@@ -1,0 +1,96 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-4-10
+         p
+            | Microbes account for most of the diversity of life on our planet. There are more kinds of microbes than plants, vertebrates, and insects combined. Microbes (also called microorganisms) have been around for billions of years. They have adapted to nearly every environment on earth and can eat just about anything, including metals, acids, petroleum, and natural gas&mdash;all of which are toxic to us.
+         | Microbiologists have only begun to isolate and study microbial life. They estimate that less than one percent of all microbial species have been identified. How many are there? Who are they? And what are they doing? Modern genetic tools are helping scientists answer some of these questions. Researchers believe the study of microbes will reveal novel biochemicals useful to humans as medicines, biofuels, and more.
+         
+         +well
+            | Visit 
+            a(href='/content/gsl/microbes/') Microbes at Work
+            |  to learn more about the diverse roles microbes play in the environment.
+      |    
+      .uk-width-medium-6-10
+         figure
+            img.lg-no-shadow(src='images/microbesinplaces.jpg')
+            p
+               | Microbes live everywhere&mdash;even in places we used to think were incompatible with life.
+   +pod('Traditional Techniques for Studying Microbes')
+      .uk-width-medium-6-10
+         figure
+            img.lg-no-shadow(src='images/culturingmicrobes.jpg')
+            p
+               | Traditional methods for studying microbes. (left) A variety of staining and microscopy techniques help reveal the physical characteristics of microbes; 
+               em CDC / Don Stalons
+               | .
+               br
+               |                 (middle) When grown on solid culture media, different types of microbes form colonies with different characteristics; 
+               em CDC / Larry Stauffer, Oregon State Public Health Laboratory
+               | .
+               br
+               | (right) Scientists grow a microbe in different types of culture media to learn about its nutritional needs; 
+               em CDC / Dr. Francis Forrester
+               | .  
+      .uk-width-medium-4-10
+         p
+            | Microbes were discovered in the mid 1600s just after the invention of the microscope. They were largely ignored until the late 1800s, when people began to realize that microbes cause diseases. Once they understood the significance of microbes, researchers began developing techniques for isolating and growing microbes in the laboratory. They used microscopy to study their physical forms (rod, sphere, helix), and culture techniques to categorize microbes based on the food they ate and the waste products they made.
+         p
+            | Microscopy and culture techniques have taught us a lot, and they&apos;re still used today. But they provide a limited view of the microbial world. Many microbes look similar under a microscope, and many will not grow outside of their natural environments. Thus early microbiologists were only able to study a small number of microbes&mdash;those that grew in the laboratory. It wasn&apos;t until DNA sequencing became available in the 1990s that these limitations were overcome.
+         p
+            | DNA sequencing technology has revolutionized how we study microbes. It can be performed on a single microbe taken directly from its natural habitat, so studies are no longer limited to the small fraction of microbes that will grow in the lab.
+   +pod('Ribosomal RNA Studies')
+      .uk-width-medium-4-10
+         p
+            | Today researchers study microbes by analyzing their DNA, most commonly the gene that codes for the small subunit of the ribosome (16S rRNA gene). The ribosome is an essential piece of the cell&apos;s protein-making machinery. All bacteria have the 16S rRNA gene, but the exact DNA sequence is unique to each species. So it is used as a sort of molecular fingerprint. When scientists isolate a microbe, they sequence its 16S rRNA gene and compare it to known sequences in a database. If they find a match, they can identify the species. If they do NOT find a match, they have discovered a new species.
+         p
+            | Ribosomal RNA studies have expanded our view of the microbial world and revealed evolutionary relationships between species. Closely related organisms have more similarities in their rRNA genes than distantly related organisms do. Genetic data has been used to construct family trees that show the evolutionary relationships among microbes, as well as other organisms. rRNA analysis also led to the discovery of a third domain of life, called archaea, which is now distinguished from bacteria and eukarya. Through rRNA analysis, we have learned that the number of microbial species on the planet is much larger than we once thought.
+      |    
+      .uk-width-medium-6-10
+         figure
+            img(src='images/genesequence.jpg')
+            p A researcher looks at DNA sequences from different microbes.
+   
+   +pod('The New Science of Metagenomics')  
+      .uk-width-medium-4-10
+         figure
+            img(src='images/watersample.jpg')
+            p
+               | Metagenomics is the study of microbes and their communities in the congtext of their natural habitat. All the genes in a microbial community are collectively referred to as a metagenome.
+
+      .uk-width-medium-6-10
+         p
+            | The latest DNA sequencing technology is taking genetic studies a step further. Researchers can now sequence a metagenome, or the complete genome of every microbe in an environmental sample. Amazingly, more than 10,000 microbial genomes can be sequenced in a single experiment! Researchers cannot tell which genes belong to which microbe. But by analyzing the genes collectively, they can learn what the microbes are doing.
+         p
+            | This method is significant because even though most microbes are single-celled organisms, they live and work in diverse communities. They depend on one another, and often cannot live on their own. For example, the breakdown products of one microbe may be food for another (this is probably why many microbes cannot be cultured). By sequencing all the genes in a microbial community&mdash;the metagenome&mdash;researchers can identify new species and study genes important for the community&apos;s survival.
+         p
+            | Already microbial communities are proving to be a reservoir of useful biochemicals. We hope to learn from these microbial chemists how to make new medicines; produce biofuels; and clean up polluted soil, air, and water.
+
+      +references
+         p
+            | Wooley, J.C., Godzik, A., Friedberg, I. (2010). A primer on metagenomics. Public Library of Science Computational Biology, 6(2), e1000667. Review.
+         p
+            | Preidis, G.A., Versalovic, J. (2009). Targeting the human microbiome with antibiotics, probiotics, and prebiotics: gastroenterology enters the metagenomics era. Gastroenterology, 136(6), 2015-2031. Review.
+         p
+            | Simon, C., Daniel, R. (2009). Achievements and new knowledge unraveled by metagenomic approaches. Applied Microbiology and Biotechnology, 85(2), 265-276. Review.
+         p
+            | Li, X., Guo, J., Dai, S., Ouyang, Y., Wu, H., Sun, W., Wang, G. (2009). Exploring and exploiting microbial diversity through metagenomics for natural product drug discovery. Current Topics in Medicinal Chemistry, 9(16), 1525-1535. Review.
+         p
+            | Woo, P.C., Lau, S.K., Teng, J.L., Tse, H., Yuen, K.Y. (2008). Then and now: use of 16S rDNA gene sequencing for bacterial identification and discovery of novel bacteria in clinical microbiology laboratories. Clinical Microbiology and Infection, 14(10), 908-934. Review.
+         p
+            | Focus on Metagenomics. (2005). 
+            a(href='http://www.nature.com/nrmicro/focus/metagenomics/index.html') Nature Reviews Microbiology
+            | .
+         p
+            | Clarridge, J.E. (2004). Impact of 16S rRNA gene sequence analysis for identification of bacteria on clinical microbiology and infectious diseases. Clinical Microbiology Reviews, 17(4), 840-862, table of contents. Review.
+         p
+            | Keller, M., Zengler, K. (2004). Tapping into microbial diversity. Nature Reviews Microbiology, 2(2), 141-150. Review.
+         p
+            | Handelsman, J. (2004). Metagenomics: application of genomics to uncultured microorganisms. Microbiology and Molecular Biology Reviews, 68(4), 669-685. Review.
+         p
+            | Drancourt, M., Bollet, C., Carlioz, A., Martelin, R., Gayral, J.P., Raoult, D. (2000). 16S ribosomal DNA sequence analysis of a large collection of environmental and clinical unidentifiable bacterial isolates. Journal of Clinical Microbiology, 38(10), 3623-3630.
+         p
+            | Woese, C. R., Kandler, O., Wheelis, M. L. (1990). Towards a natural system of organisms: proposal for the domains Archaea, Bacteria, and Eucarya. Proceedings of the National Academy of Sciences, USA, 87(12), 4576-4579.
+      
+   

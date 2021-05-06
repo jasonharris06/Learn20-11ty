@@ -1,0 +1,58 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-6-10
+         p
+            | Until fairly recently, cell differentiation was seen as final and irreversible. Once a cell became specialized,
+            | it was referred to as &quot;terminally differentiated.&quot; It was considered locked-in and unable to become any other
+            | cell type.
+         p
+            | However, in 2006, scientists reported that they had turned a differentiated cell back into a stem cell with the
+            | potential to become any type of cell in the body.
+         p
+            | The difference between a stem cell and a differentiated cell is reflected in the cells&apos; DNA. In a stem cell,
+            | the DNA is arranged loosely, with its genes ready to spring into action. As signals enter the cell and
+            | differentiation begins, genes that will not be needed are shut down, and genes that will be required for
+            | a specialized function remain open and active.
+         h3 iPS Cells
+
+         p
+            | Scientists noticed a small number of genes that were active only in stem cells and not in differentiated cells.
+            | Introducing just 4 of these genes back into differentiated cells made them behave like stem cells. The genes
+            | appear to be remodeling the cells&apos; DNA, unlocking the genes that were shut down during differentiation.
+         p
+            | The scientists named these cells &quot;induced pluripotent stem cells,&quot; or iPS cells. In 2012, they won the Nobel Prize
+            | in Physiology or Medicine for their work.
+         h3 STAP Cells
+
+         p
+            | In 2014, a group of scientists announced that they had turned differentiated cells back into stem cells simply
+            | by stressing them. This surprisingly simple process, they claimed, quickly and efficiently generates stem
+            | cells without using any kind of genetic manipulation.
+         p
+            | Unfortunately, the scientists&apos; claims about STAP cells didn&apos;t hold up under scrutiny, and they ended up retracting
+            | their articles. iPS cells and other types of stem cells, however, are real. And researchers are working hard
+            | to find even more ways to coax differentiated cells back into a stem-like state.
+         p
+            | Armed with the ability to reverse the differentiation process, scientists are exploring new ways to use stem cells
+            | in research and medicine.
+
+      .uk-width-medium-4-10
+         figure
+            img.lg-no-shadow(src='histone_wind.jpg', alt='histone model')
+            p
+               | In a stem cell, DNA (gold) is wrapped loosely around
+               | histone proteins (blue). In a differentiated cell, segments of DNA that are not required for the
+               | cell&apos;s specialized function are shut down and wrapped tightly around histone proteins.
+
+      +references
+            p
+               em Nature
+               |  editorial staff (2014). Two retractions highlight long-standing issues of trust and sloppiness that must be addressed.
+               em Nature
+               | , 511, 5-6. doi: 10.1038/511005b
+            p
+               | Takahashi, K. &amp; Yamanaka, S. (2006). Induction of pluripotent stem cells from mouse embryonic and adult fibroblast cultures by defined factors.
+               em Cell
+               | , 126(4), 663-676. doi: 10.1016/j.cell.2006.07.024

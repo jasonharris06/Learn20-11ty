@@ -1,0 +1,326 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   +pod('')
+      .uk-width-medium-4-10
+         p
+            | Precision medicine isn't a far-fledged, futuristic goal. In some cases, it is already happening. There are also many clinical trials going on to see if precision medicine options may be better than what is currently available. 
+            
+         p
+            | The examples below describe some approaches to precision medicine that are likely to be available to everyone in the coming years.
+            
+      .uk-width-medium-6-10
+         iframe.uk-responsive-width(src="https://player.vimeo.com/video/169129546" width="640" height="360", frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+ 
+   +pod('Finding the proper dose of the proper drug')
+      .uk-width-medium-6-10
+         p
+            | Doctors have known for as long as they&apos;ve been prescribing medicines that no drug affects every patient in the same way. Yet for decades, the standard way of figuring out which drug would work was trial and error.
+         p
+            | But the old ways are changing. The field of pharmacogenomics aims to understand how genetic variations influence individual responses to medications. Genetic tests for guiding treatment decisions are becoming increasingly available across diverse areas of medical care. These tests get more-effective drugs to patients earlier in their treatment and with fewer negative side effects, and some even reduce costs.
+         p
+            | The GeneSight test evaluates multiple genetic variations that influence how people respond to antidepressant and antipsychotic medications. In a 2015 study 
+            a(href='#1') [1]
+            |  of 13,000 behavioral-health patients, those who were tested received fewer drugs, and they saved an average of $1,036 in annual prescription costs compared to non-tested patients. The tested patients were also 17% more likely to keep taking their medications as prescribed.
+      .uk-width-medium-4-10
+         figure
+            img.lg-no-shadow(src='images/what-04.jpg', alt='Proper Dose of Drug')
+
+         +well
+            p
+               | To see another example of pharmacogenomics in action, visit 
+               a(href='/content/precision/example/') Your Doctor&apos;s New Genetic Tools
+               | .
+            p
+               | The Pharmacogenomics Knowledgebase curates the website 
+               a(href='https://www.pharmgkb.org') PharmGkb.org
+               | , a public resource for information about gene-drug interactions and dosage guidelines.
+               
+   +pod('Genomics and Cancer')
+      .uk-width-medium-6-10
+         p
+            | Cancer is the target of some of the most promising precision medicine approaches available today. Cancer usually comes about through the gradual accumulation of genetic changes (often called mutations) in genes that control cell growth. In this way, cancer is very much a disorder of the genome. Depending on where in the body the cancer arises and the types of genetic changes the cells accumulate, different types of cancer can have very different genetic profiles. These genetic profiles can be used in a number of ways to help doctors choose the best treatments for each individual patient.
+         p
+            | By comparing the DNA from a patient&apos;s tumor to that of their normal cells, researchers can learn how the cancer came about and where it may be vulnerable to treatment. By tracking the genetic profiles of their patients&apos; tumors, doctors can learn which treatments work best for which patients. Also highly relevant to cancer care is understanding how treatments affect the rest of the body. Precision medicine approaches consider proper medication doses to maximize efficacy and minimize side effects, interactions with other drugs patients may be taking, as well as factors from the environment, such as diet and exposure to toxins.
+         p
+            | Some precision medicine cancer treatments already in use target specific molecular markers that are found only on certain types of cancer 
+            a(href='#2') [2]
+            | . For example, colon cancers that have a normally functioning version of a surface protein called KRAS are likely to respond to certain anti-EGFR antibody therapies; those in which the protein is absent or non-functional are not 
+            a(href='#3') [3]
+            | . Two other targeted cancer treatments currently in use are Herceptin and Opdivo.
+         p
+            | Rather than targeting the cancer cells themselves, immunotherapy treatments target the patient&apos;s immune system, enhancing its cancer-fighting ability. Immunotherapy has been remarkably successful in some patients, in some cases eliminating all visible signs of metastatic cancer in a period of weeks. Science magazine named cancer immunotherapy the 2013 breakthrough of the year 
+            a(href='#4') [4]
+            | .
+            
+      .uk-width-medium-4-10
+         figure
+            img.lg-no-shadow(src='images/what-05.jpg', alt='Genomics and Cancer')
+            |         
+            .uk-text-small
+               | Targeted cancer drugs will bind to and kill cancer cells that have a specific surface marker (left) but not to cells that lack the surface marker (right). Because these drugs are concentrated near cancer cells, they produce fewer side effects than non-targeted drugs.
+               
+   +pod('Growing replacement tissue')
+      .uk-width-medium-6-10
+         p
+            | Basic research into stem cells has expanded the field of regenerative medicine well beyond tried and true bone marrow transplants. Today, a patient&apos;s own stem cells can be isolated, grown in culture, coaxed to differentiate into any one of a variety of cell types, and returned to the patient. By manipulating stem cells, doctors can help patients repair and re-grow tissue that the body cannot fix on its own.
+         p
+            | Regenerative medicine becomes even more powerful when it&apos;s combined with advances in material science, engineering, and 3d printing 
+            a(href='#5') [5]
+            | . Patients have already received replacement bladders 
+            a(href='#6') [6]
+            |  that have been grown on engineered scaffolds, and work toward tissue-engineered tracheas (wind pipes) 
+            a(href='#7') [7]
+            | , blood vessels 
+            a(href='#8') [8]
+            | , and bones 
+            a(href='#9') [9]
+            |  shows great promise. Researchers are also working on ways to grow more-complex tissues and organs 
+            a(href='#10') [10]
+            | , such as functional lung tissue 
+            a(href='#11') [11]
+            | , beating hearts 
+            a(href='#12') [12]
+            | , and livers 
+            a(href='#13') [13]
+            | .
+         p
+            | When a patient is treated with their own cells, there is no risk of rejection by the immune system, as with donor organs and tissues. And there&apos;s no waiting on a list until a matched donor can be found.
+            
+      .uk-width-medium-4-10
+         figure
+            img.lg-no-shadow(src='images/what-06.jpg', alt='Growing Replacement Tissue')
+            |         
+            .uk-text-small
+               | Some approaches to precision medicine involve taking stem cells from a patient, engineering
+               | tissue from those stem cells, and returning the tissue to the patient.
+    
+   +pod('Molecular profiling of microbes')
+      .uk-width-medium-6-10
+         p
+            | The same rapid DNA sequencing and analysis tools that researchers use to study the human genome are also being applied to the study of the microscopic life forms, or microbes, that colonize the human body. When a patient comes to the emergency room with a fever, doctors can use precision-medicine tools to rapidly identify a disease-causing bacterium, fungus, or virus, enabling them to begin administering life-saving medications within hours. Molecular tests can also identify microbial drug-resistance genes, steering doctors toward treatments that will be effective (reviewed in 
+            a(href='#14') [14]
+            | )
+         p
+            | Molecular tools help in the management of HIV infections by allowing doctors to identify the strain of the virus a patient is carrying and predict which drugs it may be resistant to. Modern approaches to tuberculosis treatment take into account not only the genes of the bacteria, but also variations in the patient&apos;s genes that may make them more likely to suffer side effects from certain drugs. In another example, studies on hospital-acquired infections have shown that precision-medicine tools save lives and stop the spread of infections, all at a reduced cost (reviewed in 
+            a(href='#15') [15]
+            | ).
+         p
+            | While some microbes can make us sick, the vast majority do not. In fact, researchers studying the microbial communities living on and within the human body have come to view them as an organ with unique functions essential to our well-being (e.g., 
+            a(href='#16') [16]
+            | ). DNA sequencing and analysis tools have helped researchers uncover some compelling associations between disturbances in our microbial communities and many complex diseases, including obesity 
+            a(href='#17') [17]
+            | , vascular disease 
+            a(href='#18') [18]
+            | , autism 
+            a(href='#19') [19]
+            | , and preterm birth 
+            a(href='#20') [20]
+            | . While this area of research is still largely in the discovery stages, it promises to yield new diagnostic tests, as well as individualized treatments involving the introduction of living organisms (probiotics) or substances that encourage the growth of beneficial microbes (prebiotics).
+            
+      .uk-width-medium-4-10
+         figure
+            img.lg-no-shadow(src="images/microbes.jpg", alt="Microbes")
+         +well
+            | Related content 
+            br               
+            a(href='/content/microbiome/') The Human Microbiome
+            br
+               
+   +pod('Personalized diets')
+      .uk-width-medium-6-10
+         p
+            | Just like individuals vary in their responses to medications, people also respond di&#x1E;fferently to the same foods. It
+            | turns out that a food&apos;s &quot;glycemic index&quot; does not always predict how that food will affect an individual&apos;s
+            | blood-sugar level. For some diabetic patients, rice may cause a dramatic rise on blood sugar levels; for others, it
+            | may be tomatoes.
+         p
+            | In a recent study 
+            a(href='#21') [21]
+            | , participants kept careful logs of their food intake and activity while an electronic device
+            | monitored their blood glucose levels. These data and other personal information were then fed into a computer
+            | algorithm that designed custom diets based on the participants&apos; predicted blood-sugar responses. Compared
+            | to diets designed by expert dieticians, the computer-generated personalized diets were just as eff&#x1E;ective at
+            | controlling blood sugar. And the customized diets included more of what the participants liked to eat, in some
+            | cases even including moderate amounts of chocolate and ice cream 
+            a(href='#22') [22]
+            | .
+         p
+            | The algorithm is still in the testing and improvement stages, and it won&apos;t be available for general use for some
+            | time. However, this approach to designing personalized diets shows promise for helping the millions of people
+            | who are living with type 2 diabetes or prediabetes.
+
+      .uk-width-medium-4-10
+         figure
+            img(src="images/personalized diets.jpg", alt="Personalized Diets")      
+            
+   +pod('')
+      h2
+         span References
+      |    
+      .uk-width-1-1    
+         p
+            a(name='1') [1]
+            |  Winner. J.G. et al. (2015). Combinatorial pharmacogenomic guidance for psychiatric medications reduces overall pharmacy costs in a 1 year prospective evaluation. 
+            em Current Medical Research and Opinion
+            | . Early online, 23 July 2015. 
+            a(href='https://eorder.sheridan.com/3_0/app/orders/5024/article.php') doi:10.1185/03007995.2015.1063483
+         |         
+         p
+            a(name='2') [2]
+            |  Kummar, S. et al. (2015). Application of molecular profiling in clinical trials for advanced metastatic cancers. 
+            em Journal of the National Cancer Institute, 107
+            | (4), djv003. 
+            a(href='http://jnci.oxfordjournals.org/content/107/4/djv003.long') doi: 10.1093/jnci/djv003
+         |         
+         p
+            a(name='3') [3]
+            |  Tan, C. &amp; Du, X. (2012) KRAS mutation testing in metastatic colorectal cancer. 
+            em World Journal of Gastroenterology 18
+            | (37), 5171-5180. 
+            a(href='http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3468848/') doi: 10.3748/wjg.v18.i37.5171
+         |         
+         p
+            a(name='4') [4]
+            |  Couzin-Frankel, J. (2013). Cancer immunotherapy. 
+            em Science 342
+            | (6165), 1432-1433. 
+            a(href='http://www.sciencemag.org/content/342/6165/1432.uk-width-1-1') doi: 10.1126/science.342.6165.1432
+         |         
+         p
+            a(name='5') [5]
+            |  Murphy, S.V. &amp; Atala, A. (2014). 3D bioprinting of tissues and organs. 
+            em Nature Biotechnology 32
+            | , 773-785. 
+            a(href='http://www.nature.com/nbt/journal/v32/n8/full/nbt.2958.html') doi: 10.1038/nbt.2958
+         |         
+         p
+            a(name='6') [6]
+            |  Orabi, H., Bouhout, S., Morissette, A., Rousseau, A., Chabaud, S. &amp; Bolduc, S. (2013). Tissue engineering of urinary bladder and urethra: advances from bench to patients. 
+            em The Scientific World Journal
+            | , 2013, Article ID 154564. 
+            a(href='http://www.hindawi.com/journals/tswj/2013/154564/') doi: 10.1155/2013/154564
+         |         
+         p
+            a(name='7') [7]
+            |  Dikina, A.D., Strobel, H.A., Lai, B.P., Rolle, M.W. &amp; Alsberg, E. (2015). Engineered cartilaginous tubes for tracheal tissue replacement via self-assembly and fusion of human mesenchymal stem cell constructs. 
+            em Biomaterials 52
+            | , 452-462. 
+            a(href='http://www.sciencedirect.com/science/article/pii/S0142961215000903') doi: 10.1016/j.biomaterials.2015.01.073
+         |         
+         p
+            a(name='8') [8]
+            |  Benrashid, E., McCoy, C.C., Youngwirth, L.M., Kim, J., Manson, R.J., Otto, J.C. &amp; Lawson, J.H. (2015). Tissue engineered vascular grafts: origins, development, and current strategies for clinical application. 
+            em Methods
+            | , early online version, 26 July 2015. 
+            a(href='http://www.sciencedirect.com/science/article/pii/S1046202315300335') doi: 10.1016/j.ymeth.2015.07.014
+         |         
+         p
+            a(name='9') [9]
+            |  Zigdon-Giladi, H., Rudich, U., Geller, G.M. &amp; Evron, A. (2015). Recent advances in bone regeneration using adult stem cells. 
+            em World Journal of Stem Cells, 7
+            | (3), 630-640. 
+            a(href='http://www.wjgnet.com/1948-0210/full/v7/i3/630.htm') doi: 10.4252/wjsc.v7.i3.630
+         |         
+         p
+            a(name='10') [10]
+            |  Marx, V. (2015). Tissue engineering: organs from the lab. 
+            em Nature 522
+            | , 373-377. 
+            a(href='http://www.nature.com/nature/journal/v522/n7556/full/522373a.html') doi: 10.1038/522373a
+         |         
+         p
+            a(name='11') [11]
+            |  Calle, E.A., Ghaedi, M., Sundaram, S., Sivarapatna, A., Tseng, MlK. &amp; Niklason, L.E. (2014). Strategies for whole lung tissue engineering. 
+            em IEEE Transactions on Biomedical Engineering 61
+            | (5), 1482-1496. 
+            a(href='http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4126648/') doi: 10.1109/TBME.2014.2314261
+         |         
+         p
+            a(name='12') [12]
+            |  Maher, B. (2013). Tissue engineering: how to build a heart. 
+            em Nature 499
+            | , 20-22. 
+            a(href='http://www.nature.com/news/tissue-engineering-how-to-build-a-heart-1.13327') doi: 10.1038/499020a
+         |         
+         p
+            a(name='13') [13]
+            |  Takabe, T. et al (2013). Vascularized and functional human liver from an iPSC-derived organ bud transplant. 
+            em Nature 499
+            | , 481-484. 
+            a(href='http://www.nature.com/nature/journal/v499/n7459/full/nature12271.html') doi: 10.1038/nature12271
+         |         
+         |         
+         p
+            a(name='14') [14]
+            |  Sibley, C.D., Peirano, G. &amp; Church, D.L. (2012). Molecular methods for pathogen and microbial community detection and characterization: Current and potential application in diagnostic microbiology. 
+            em Infection, Genetics and Evolution 12
+            | :3, 505-521. 
+            a(href='http://www.sciencedirect.com/science/article/pii/S1567134812000123') doi: 10.1016/j.meegid.2012.01.011
+         |         
+         p
+            a(name='15') [15]
+            |  Bissonnette, L. &amp; Bergeron, M.G. (2012). Infectious disease management through point-of-care personalized medicine molecular diagnostic technologies. 
+            em Journal of Personalized Medicine 2
+            | , 20, 50-70. 
+            a(href='http://www.mdpi.com/2075-4426/2/2/50') doi: 10.3390/jpm2020050
+         |         
+         |         
+         p
+            a(name='16') [16]
+            |  Eckburg, P.B., Bik, E.M., Bernstein, C.N., Purdom, E., Dethlefsen, L., Sargent, M. et al. (2005). Diversity of the human intestinal microbial flora. 
+            em Science, 308
+            | , 1635-1638. 
+            a(href='http://www.sciencemag.org/content/308/5728/1635.abstract') doi: 10.1126/science.1110591
+         |         
+         |         
+         p
+            a(name='17') [17]
+            |  Moran, C.P. &amp; Shanahan, F. (2014). Gut microbiota and obesity: role in aetiology and potential therapeutic target. 
+            em Best Practice &amp; Research Clinical Gastroenterology, 28
+            | , 585-597. 
+            a(href='http://www.sciencedirect.com/science/article/pii/S1521691814000833') doi: 10.1016/j.bpg.2014.07.005
+         |         
+         |         
+         p
+            a(name='18') [18]
+            |  Org, E., Mehrabian, M. &amp; Lusis, A.J. (2015). Unraveling the environmental and genetic interactions in atherosclerosis: Central role of the gut microbiota. 
+            em Atherosclerosis 241
+            | , 2, 387-399. 
+            a(href='http://www.sciencedirect.com/science/article/pii/S0021915015013490') doi: 10.1016/j.atherosclerosis.2015.05.035
+         |         
+         |         
+         p
+            a(name='19') [19]
+            |  Buie, T. (2015). Potential etiologic factors of microbiome disruption in autism. 
+            em Clinical Therapeutics 37
+            | , 5, 976-983. 
+            a(href='http://www.sciencedirect.com/science/article/pii/S0149291815002258') doi: 10.1016/j.clinthera.2015.04.001
+         |         
+         |         
+         p
+            a(name='20') [20]
+            |  Wassenaar, T.M. &amp; Panigrahi, P. (2014). Is a foetus developing in a sterile environment? 
+            em Letters in Applied Microbiology, 59
+            | , 572-579. 
+            a(href='http://onlinelibrary.wiley.com/doi/10.1111/lam.12334/full') doi: 10.1111/lam.12334
+         |         
+         p
+            a(name='21') [21]
+            |  Zeevi, D. et al (2015). Personalized nutrition by prediction of glycemic responses. 
+            em Cell, 163
+            | :5, 1079-1094. 
+            a(href='http://www.cell.com/abstract/S0092-8674(15)01481-6')
+               | doi:
+               | 10.1016/j.cell.2015.11.001
+         |         
+         |         
+         p
+            a(name='22') [22]
+            |  Yong, E. (Nov 19,2015). The algorighm that creates diets that work for you. 
+            em The Atlantic
+            | . Retrieved Nov 30,
+            | 2015, from 
+            a(href='http://www.theatlantic.com/science/archive/2015/11/algorithm-creates-diets-that-work-for-you/416583/')
+               | http://www.theatlantic.com/science/archive/2015/11/algorithm-creates-diets-that-work-for-you/416583/

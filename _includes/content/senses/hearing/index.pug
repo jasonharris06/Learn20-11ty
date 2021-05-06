@@ -1,0 +1,98 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('What is sound, and why can we hear it?')
+      .uk-width-medium-4-10
+         p.
+            Sound is a series of pressure waves. Sound waves are made by objects that are vibrating. The vibrating object pushes on the air around it. Those air molecules bump into more-distant air molecules, setting up a chain reaction that carries the wave outward in all directions.
+         p.
+            Our ears are filled with intricately moving parts that convert these mechanical waves into nerve signals that travel to the brain.
+      .uk-width-medium-6-10
+         figure
+            img(src="ripples.jpg", alt='ripples')
+            p Just like waves spreading out from a pebble dropped into a puddle, sound waves travel out from their source, growing smaller as they get farther away.
+   +pod('Three qualities of sound')
+      .uk-width-medium-6-10
+         p.
+            Sound has three main qualities that our ears and brains can discern: volume, pitch, and timbre (TAM-ber). Each of these properties comes from a different characteristic of a sound wave. Sound waves travel through the air at a constant speed—about 343 meters per second—but the waves can have different shapes. The shape has to do with the characteristics of the vibrating object that makes it.
+      .uk-width-medium-5-10
+         p
+            strong Volume
+            |  is how “loud” or “quiet” a sound is. Volume is the height, or amplitude, of the waves: taller waves are louder, and shorter waves are quieter. Volume is measured in units called decibels.
+      .uk-width-medium-5-10
+         figure
+            img(src="volume.jpg", alt='volume')
+            p Volume is the height, or amplitude, of the waves.
+      .uk-width-medium-5-10
+         p
+            strong Pitch
+            |  is how “high” or “low” a sound is. Pitch, or frequency, has to do with the distance between the waves (also called wavelength). Waves that are closer together have a "high" pitch, and waves that are farther apart have a "low" pitch. High-pitch sound waves are made when an object vibrates faster, or more frequently; low-pitch sound waves are made when an object vibrates more slowly, or less frequently. Pitch is measured in units called Hertz, which are the number of waves per second that pass a point. Though there's a lot of individual variation, humans can hear sounds that range from about 12 to 28,000 Hertz.
+      .uk-width-medium-5-10
+         figure
+            img(src="pitch.jpg", alt='pitch')
+            p Pitch, or frequency, has to do with the distance between waves.
+      .uk-width-medium-5-10
+         p
+            strong Timbre
+            |  is what we often perceive as the “texture” or “character” of a sound. It's how we can tell the difference between two musical instruments, say a violin and a piano, playing the exact same note at the exact same volume. Things like instruments and voices may have one dominant pitch or note, but they actually vibrate at multiple frequencies at the same time, producing layers of waves with more complex shapes. You can think of the overall shape as the timbre of a sound.
+      .uk-width-medium-5-10
+         figure
+            img(src="timbre.jpg", alt='timbre')
+            p Timbre is what we often perceive as the "texture" or "character" of a sound.
+   +pod('How the ear detects sounds')
+      .uk-width-medium-10-10
+         figure
+            img(src="earinfographic.jpg", alt='earinfographic')
+      .uk-width-medium-6-10
+         p.
+            Our ears convert vibrations in the air to waves in liquid, and then into nerve signals that travel to the brain. Many parts work together inside the ear to make this possible.
+         ol
+            li The outer ear funnels sound into the ear canal.
+            li Vibrations in the air push on the ear drum.
+            li Bones of the middle ear transmit vibrations from the ear drum to the fluid that fills the cochlea. The bones amplify the movement, which on its own would travel very inefficiently from air to liquid.
+            li Bones push in and out on the oval window of the cochlea, making waves in the fluid.
+            li The fluid fills a continuous tube that extends along the upper side of the cochlea (here shown uncoiled), around the end, and back along the underside. Waves in the fluid travel all the way around.
+            li Waves in the fluid cause the flexible layer in the middle, called the basillar membrane, to bend and wave.
+            li Hair cells are arranged all along the length of the basilar membrane like keys on a piano.
+            li Sounds of different pitches cause waves to form in different places, stimulating specific groups of hair cells.
+            li When they are stimulated, the hair cells signal to nerve cells that then carry the signal to the brain.
+            li The brain interprets the signals, allowing us to experience sound.
+   +pod('Hair cells: the cells of hearing')
+      .uk-width-medium-5-10
+         figure
+            img(src="haircells.jpg", alt='hair cells')
+            p
+               | Cross-section of the organ of Corti. When sound vibrations move the organ of Corti up and down, stereocilia on the top of the hair cells get pushed back and forth. When hair cells move up (lower left), the push toward the tallest stereocilia puts tension on the tip links, which opens ion gates and lets ions flow into the cells (lower right).
+      .uk-width-medium-5-10
+         p.
+            Hair cells are the sensory cells that allow us to hear. They are a type of mechanoreceptor (meh-KAN-oh-ree-sep-ter)—cells that sense movement.
+         p.
+            Hair cells get their name from a bundle of hair-like stereocilia (stehr-ee-oh-SIL-ee-yuh) that sticks up from the top of the cell. Tiny fibers called tip links connect the top of each "hair" to its neighbor. The tip links are connected to stretch-sensitive ion channels; you can think of the channels as tiny trap doors that when open let ions (charged molecules dissolved in the surrounding fluid) flow into the cell.
+         p.
+            As sound waves make the basilar membrane bend and wave, the stereocilia bundle gets pushed back and forth. This movement opens and closes the trap doors, causing the hair cells to release neurotransmitter (a signaling molecule) onto nearby nerve cells.
+   +pod('Hair cell damage causes deafness')
+      .uk-width-medium-4-10
+         p.
+            Very loud sounds cause waves in the inner ear that are so violent, they can damage hair cells' stereocilia. Severe damage will even kill hair cells.
+         p.
+            Once we lose a hair cell, it's gone forever; we can't grow them back. There are just a few hair cells at each position along the length of the cochlea. When these are damaged, we are no longer able to hear sound of a certain frequency or pitch.
+         p.
+            The hair cells that detect high-frequency sound are the must susceptible to damage. As we get older, it's normal to gradually lose hearing in the high range.
+      .uk-width-medium-6-10
+         figure
+            img(src="damaged.jpg", alt='damaged haircells')
+            p.
+               Looking down onto the top surface of guinea pig hair cells: undamaged (left), and damaged by noise trauma (right). On the damaged hair cells, many stereocilia are disrupted or missing. This type of damage leads to hearing loss, and it cannot be repaired. 
+            p.
+               Modified from Chen et al, © 2014, doi:
+               <a target="_blank" href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0100774">10.1371/journal.pone.0100774. </a>
+               p Used and open to distribution under the terms of the 
+               <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">Commons Attribution License. </a>
+               
+   +references
+      p
+         | Chen, L., Yu, N., Lu, Y., Wu, L., Chen, D., Guo, W., Zhao, L., Liu, M., Yahg, S., Sun, X. &amp; Zhai, S. (2014). Hydrogen-saturated saline protects intensive narrow band noise-induced hearing loss in guinea pigs through an antioxidant effect. PLOS One, 9, 6, e100774. doi: 10.1371/journal.pone.0100774
+      p
+         | Hackney, C.M. &amp; Furness, D.N. (2013). The composition and role of cross links in mechanoelectrical transduction in vertebrate sensory hair cells. Journal of Cell Science, 126, 1721-1731. doi: 10.1242/jcs.106120
+      p
+         | Kandel, ER, Schwartz, JH, Jessell, TM, Siegelbaum, SA &amp; Hudspeth, AJ. (2013). Principles of Neural Science, fifth edition. McGraw Hill Medical.

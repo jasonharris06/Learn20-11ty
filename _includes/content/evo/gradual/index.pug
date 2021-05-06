@@ -1,0 +1,17 @@
+extends /shared/layout
+
+block append headscripts
+
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-1-1
+         //- onload="this.style.height=this.contentDocument.body.scrollHeight + 'px';")  //  automatic iframe height for below. (not dynamic though)
+         iframe(src="./prototype/gradual_mutation_v3.html" height="680px" width="100%")
+   +pod('Mock-ups of Final Activity')
+      .uk-width-1-1
+         img(src="./GradualEvolution1.jpg" style="margin-bottom:15px;")
+         img(src="./GradualEvolution2.jpg")
+
+
+block append endscripts

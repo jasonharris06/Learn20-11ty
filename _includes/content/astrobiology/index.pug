@@ -1,0 +1,22 @@
+extends /shared/layout
+
+block content
+   +pageTitle()(teach="astrobiology")
+   .lg-section
+      .uk-container.uk-container-center
+         .uk-grid
+            .uk-width-medium-5-10
+               .lg-index-items
+                  +index-item('Life in Extreme Environments', 'interactive explore', 'environments', 'images/environments.jpg')
+                     p Earth has some pretty extreme environments, yet organisms have found a way to fill every niche. This finding has renewed our hope that life exists elsewhere in the universe.         
+                  +index-item('Conditions That Support Life', 'explore', 'conditions', 'images/conditions.jpg')
+                     p Just 3 basic ingredients make Earth a habitable planet: liquid, atoms, and energy. Looking for them elsewhere may help us find life on other planets and moons.    
+            .uk-width-medium-5-10
+               p
+                  | Are we alone in the universe? What can Earth&apos;s living creatures teach us about the
+                  | possibility of extraterrestrial life? What do living things need to survive? How did
+                  | life begin? Scientists called Astrobiologists look for answers.
+               figure
+                  img(alt='Mars', src='images/mars.jpg')          
+                  p
+                     | Photo from base of Mount Sharp, Mars. Taken by NASA&apos;s Curiosity rover.  Photo courtesy of NASA.

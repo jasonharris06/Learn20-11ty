@@ -1,0 +1,31 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   +pod('')
+      .uk-width-medium-1-2
+         p
+            | Living things use lots of different strategies for producing offspring, but most strategies 
+            | fall neatly into the categories of either sexual or asexual reproduction. 
+            strong Asexual reproduction
+            |          generates offspring that are genetically identical to a single parent. In 
+            strong sexual reproduction
+            | ,
+            |          two parents contribute genetic information to produce unique offspring.
+      |    
+      .uk-width-medium-1-2
+         p
+            | Sexual and asexual
+            | reproduction have advantages and disadvantages&mdash;which is why some organisms do both!
+         |          
+         p
+            strong Click or tap an organism below
+            | . After reading a description, you&apos;ll get to vote on whether you think the organism reproduces
+            |          sexually, asexually, or both. How well do you know your reproductive strategies?
+   +pod('')
+      .uk-width-1-1
+         iframe(src='Sexual%20vs%20Asexual.html', seamless='seamless', style='width: 900px; height: 600px; margin: 0 auto; border: none;')
+
+   +bottom-menu("",'hhmi')
+   
+   

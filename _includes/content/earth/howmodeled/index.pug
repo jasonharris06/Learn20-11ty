@@ -1,0 +1,204 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   link(rel='stylesheet', href='royalslider/royalslider.css')
+   |     
+   link(rel='stylesheet', href='royalslider/skins/default/rs-default.css')
+   |     
+   script(src='royalslider/jquery-1.8.3.min.js')
+   |     
+   script(src='royalslider/jquery.royalslider.min.js')
+   |  
+   |   
+   style.
+      .royalSlider {
+      width: 100%;
+      height: 600px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 13px; font-weight: 400; line-height: 1.5em;
+      }
+      .royalSlider,
+      .royalSlider .rsOverflow,
+      .royalSlider .rsSlide,
+      .royalSlider .rsVideoFrameHolder,
+      .royalSlider .rsThumbs {
+      background: #fff;
+      color: #000;
+      }
+      .royalSlider .rsTmb {
+      font-family: "Open Sans", sans-serif;
+      font-size: 12px; font-weight: 400; line-height: 1.2em;
+      }
+      .royalSlider .rsSlide,
+      .royalSlider .rsOverflow {
+      background: #fff;
+      }
+      .royalSlider h3 {
+      margin: 12px 0 8px 20px;
+      }
+      .royalSlider p {
+      margin: 0 20px 18px 20px;
+      }
+      .royalSlider img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      }
+
+   +pod('')
+      .uk-width-medium-4-10
+         p
+            | Water models are as varied as the professionals who use them. Different types of water models help people working across many disciplines, including research, resource management, agriculture, engineering, and ecology. But water models aren&apos;t just for professionals&mdash;they can help everyone better understand water issues, from regional to global scales.
+         p
+            | Water models are crucial for helping us understand and manage our water resources, particularly in arid regions like the western US.
+      |     
+      .uk-width-medium-6-10
+         .royalSlider.rsDefault
+            // Slide 1
+            div
+               img.rsImg(src='images/isabella_model.jpg', alt='Isabella Model', data-rsw='488', data-rsh='290')
+               |     
+               p
+                  | Engineers with the U.S. Army Corps of Engineers and the Utah State University&apos;s Water Research Laboratory observe water flows at the new scale model of the Isabella Dam Safety Modification Project. 
+                  br
+                  em Image: U.S. Army photo by John Prettyman/Released
+            // Slide 2
+            div
+               img.rsImg(src='images/runoff_testing.jpg', alt='Runoff Testing', data-rsw='488', data-rsh='290')
+               |     
+               p
+                  | A researcher at Grand Valley State University measures urban stormwater runoff. 
+                  br
+                  em Image: Robert B. Annis Water Resources Institute/GVSU
+            // Slide 3
+            div
+               img.rsImg(src='images/dam_erosion_study.jpg', alt='Dam Erosion Study', data-rsw='488', data-rsh='290')
+               |     
+               p
+                  | Engineers at Lawrence Livermore National Laboratory examine a simulation of erosion patterns that could lead to large-scale dam failure. 
+                  br
+                  em Image: Julie Russell/LLNL
+            // Slide 4
+            div
+               img.rsImg(src='images/flaming_gorge.jpg', alt='Flaming Gorge', data-rsw='488', data-rsh='290')
+               |     
+               p
+                  | C. Steven Hulet, manager of the Flaming Gorge Dam in Utah, uses system models to manage water.
+   +pod('Modeling Water&rsquo;s Form and Behavior')
+      |    
+      .uk-width-medium-4-10
+         p
+            | Water behaves differently from other liquids. It floats when it freezes. It boils at an unusually high temperature. As a solvent, it can carry nutrients in runoff, in groundwater, and inside organisms. Its adhesive, cohesive, and elastic properties allow it to form into droplets and make waves.
+         p
+            | In a word, water&apos;s unique chemical properties make it complex. That&rsquo;s why modeling is such an important tool for scientists and engineers who want to see how water behaves in different conditions.
+         p
+            | Water can be modeled using both numerical computer models and physical models. Physical models are run with real water, usually in a scaled structure. They are useful for modeling processes involving behaviors that we don&apos;t  understand well enough to model numerically&mdash;things like highly turbulent 3D flow patterns, debris behavior, wave action, and sediment transport. In these processes, physical models are often more accurate than computer models. However, physical models are expensive and time-consuming to develop. So they are used mainly to evaluate the safety and efficiency of large, expensive structures like dams and pipelines.
+         p
+            | Another way to study water&apos;s form and behavior is with numerical computer models. One example is groundwater modeling. Aquifers, because they are underground and often complex, are difficult to observe and measure. Modeling helps characterize aquifer shape, size, contaminant and nutrient composition, recharge rate, and groundwater flow patterns. Modeling these systems helps people make decisions about water use.
+            
+         +well
+            h3 The Largest Scale Model in America
+
+            p 
+            | Following the devastating Great Mississippi Flood of 1927, the US Army Corps of Engineers built an enormous physical model of the entire Mississippi river basin. This sprawling 200 acre model helped accurately predict the outcome of a 1952 flood in Iowa, preventing millions of dollars in potential damage. The site was abandoned in 1993, but work with physical models is still done in the area today. The hear and read more about this model’s incredible story, check out this 
+                
+            a(href='http://99percentinvisible.org/episode/americas-last-top-model/') podcast page.
+            
+            img(src='images/bottom_photo.png', alt='Scale Model')
+
+      |     
+      .uk-width-medium-6-10
+         figure
+            iframe(src='//player.vimeo.com/video/115536337?title=0&byline=0&portrait=0', width='488', height='275', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+            |         
+            |     
+            p Physical modeling: Take a tour of the Utah State University Hydraulics Modeling Lab with Dr. Steven Barfuss of the Utah Water Research Laboratory. To learn even more about the USU Hydraulics Modeling Lake Isabella Dam Project, 
+               a(href='https://www.youtube.com/watch?v=aDhd88lWtbc') check out this video.
+ 
+            img.lg-no-shadow(src='images/yucca_flat.jpg', alt='Yucca Flat')
+            p Numerical computer modeling: Model of Yucca Flat, Nevada region used to show groundwater flow and contaminant transport to better understand how historic underground nuclear testing affected the groundwater. 
+               br
+               em Image: U.S. Department of Energy
+   +pod('Water Simulation Models')
+      |    
+      .uk-width-medium-6-10
+         figure
+            img(src='images/wepp.jpg', alt='The Water Erosion Prediction Project')
+            |     
+            p The Water Erosion Prediction Project (WEPP) Model is an erosion simulation model that can be used for agriculture and other applications. Inputting data for climate, topography, soil, and irrigation, the simulation provides outputs like surface runoff, soil movement, sediment delivery, and crop growth. 
+               br
+               em Image: Dr. Dennis C. Flanagan - USDA-Agricultural Research Service, National Soil Erosion Research Laboratory
+
+      .uk-width-medium-4-10
+         p
+            | Simulation models show how a system changes over time. Simulations can be used to predict the behavior of many types of systems. For example, designers often use simulations when planning large construction projects&mdash;like water distribution networks or sewage collection systems&mdash;to identify problems early in the planning process.
+         |  
+         p
+            | Water simulation models are also used in agriculture. A model can include information about a piece of land, like groundwater salinity, aquifer recharge rate, and water table depth. Then using different water use scenarios, the model could simulate what would happen over a span of several years. Models like this can help farmers make the best use of their land, helping them make better decisions about things like crop rotation and sustainable water management.
+         p
+            | Similar simulations can help city planners make the best use of water in urban systems, for example by showing the best amount of irrigation for a city park. Just like with an agricultural simulation, this information can help improve water conservation and optimize sustainability.
+   +pod('Modeling Networks and Water Systems')
+      |    
+      .uk-width-medium-4-10
+         p
+            | The water systems of towns and cities are designed to bring water to everyone who needs it. Often, water comes into a system from more than one source, each of which must be monitored and managed. And the water in a system is used in many different ways. In such a complex system, models help managers balance supply and demand, ensuring that water is always available.
+         |        
+         +well
+            | Water system models for cities typically include:
+            ul
+               li A watershed basin
+               |                
+               li Natural water sources like rivers, lakes, and aquifers
+               |                
+               li Water purification facilities for drinking water
+               |                
+               li Local storage like water towers and cisterns
+               |                
+               li Pipes, aqueducts, and pumping systems
+               |                
+               li Sewers to dispose of wastewater
+               |                
+               li Sewage treatment facilities 
+               |                
+               li Drainage to handle stormwater runoff
+      |     
+      .uk-width-medium-6-10
+         figure
+            iframe(src='//player.vimeo.com/video/115615755?title=0&byline=0&portrait=0', width='488', height='275', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+
+            p Heather Patno, a hydraulic engineer with the Bureau of Reclamation, shows how the Bureau uses a massive system model of the Colorado River to manage operations.
+   +pod('Predictive Water Models')
+      |    
+      .uk-width-medium-6-10
+         figure
+            img(src='images/flood_damage.jpg', alt='Flood Damage') 
+            p Utah National Guard members work to repair a flood-damaged stretch of US Highway 36 in Colorado 
+               br
+               em Image Source:  Maj. D.J. Gibb, Utah Army National Guard
+
+      .uk-width-medium-4-10
+         p
+            | One of the most important uses of predictive water models is flood forecasting. Early-warning systems depend on models to make accurate predictions so that people in vulnerable areas can take action and protect themselves. Thanks to powerful modeling technology, today&rsquo;s flood forecasts are better than ever. By bringing together real-time monitoring, data sharing, weather forecasting, stream-flow modeling, and regional simulation models, scientists have been able to predict floods even days in advance.
+         |         
+         +well
+            | Most flood forecasting involves ensemble forecasting. To learn more about this modeling technique, visit 
+            a(href='../predictions/') What You Can Do With Models: Make Predictions
+            | .
+   
+   script.
+      jQuery(document).ready(function($) {
+      $(".royalSlider").royalSlider({
+      autoHeight: true,
+      arrowsNav: true,
+      fadeinLoadedSlide: true,
+      controlNavigationSpacing: 0,
+      imageScaleMode: 'none',
+      imageAlignCenter:false,
+      loop: true,
+      numImagesToPreload: 9,
+      keyboardNavEnabled: true,
+      usePreloader: false
+      });
+      });
+   

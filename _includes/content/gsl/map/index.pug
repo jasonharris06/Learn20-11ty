@@ -1,0 +1,28 @@
+extends /shared/layout
+block content
+  +pageTitle
+
+
+  style.
+    #map-canvas { height: 600px; width: 880px; margin: 0px; padding: 0px; border: 5px solid #CED7D9; }
+    .mapoverlay { position: absolute; top: 20px; left: 20px; z-index: 99;
+    height: 560px; width: 840px;  display: none; background-color: #fff;
+    border: 5px solid #707A82;  }
+    .overtop { width: 840px; height: 540px; }
+    .overtop .title { font-size: 30px; padding: 10px 0 10px 0;}
+    .overtop .image {height: 540px; width: 322px;  float: left;}
+    .overtop .image img { padding: 5px 20px 20px 5px; }
+    .overtop .data {overflow: scroll; height: 540px; }
+    .overtop .data .icons {height:  37px; padding: 5px 0 5px 0;}
+    .overtop .data .icons img {padding-right: 20px; float: left; height: 37px; width: 37px;}
+
+  script(src='https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false')
+
+  script(src='gslmap.js')
+
+  +pod('')
+    .uk-width-1-1.uk-text-center
+      #map-canvas
+      |      @RenderPage(&quot;gslpanels.cshtml&quot;)
+   
+   

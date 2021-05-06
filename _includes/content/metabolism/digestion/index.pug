@@ -1,0 +1,70 @@
+extends /shared/layout
+
+block append endscripts
+   script(src='https://code.createjs.com/easeljs-0.8.2.min.js')
+   script(src='https://code.createjs.com/tweenjs-0.6.2.min.js')  
+   script(src='https://code.createjs.com/movieclip-0.8.0.min.js')
+   script(src='https://code.createjs.com/preloadjs-0.6.2.min.js')
+   script(src='https://code.createjs.com/soundjs-0.6.2.min.js')
+   script(src='digestion.js')
+
+block content
+   +pageTitle
+  
+   +pod("")
+      .uk-width-1-1.uk-text-center
+         canvas#canvas.uk-responsive-width(width='920', height='650')
+         div(style='width: 60%; height: 4%; border: 1px solid #333; position: absolute; top:48.5%; left: 20%;')
+            #progressBar(style='width: 0%; height: 92%; background-color: #333; margin: 0.1%')
+  
+   +pod('')
+      .uk-width-medium-6-10
+         p.
+            Since nucleic acids make up just a small proportion of the nutrients in our food, we don't detail their breakdown or storage in <a href="../pathways/">Metabolic Pathways</a> or <a href="../bbs/">Building, Burning &amp; Storing</a>. But that's not to say they're unimportant. <a href="../atp/">ATP</a> is a nucleic acid, and it plays a role in just about every cellular process. Nucleic acids are also used for building DNA and RNA, as well as the carrier molecules NAD, FAD, and Coenzyme A.
+
+      .uk-width-medium-4-10
+         +well
+            h3 Related content
+            p   To see how nutrients from our food are further processed by our cells, visit <a href="../pathways/">Metabolic Pathways</a>.
+                  
+                  
+   +pod('Fats are transported in packages')   
+      include fats-packages.html 
+  
+   +pod('Taking up vitamins and minerals')
+      include vitamins.html
+  
+   +pod('Alcohol absorbtion and breakdown')
+      .uk-width-medium-6-10
+          p.
+              Ethanol from alcoholic beverages is absorbed directly through the lining of the digestive tract, mostly the stomach and small intestine. It is a small molecule, so it doesn’t need further breakdown before it can be absorbed. Ethanol mixes with water, and it travels readily through cell membranes. It diffuses easily in and out of capillaries and cells, from areas of higher concentration to areas of lower concentration.    
+          p.
+              Some ethanol leaves the body in the urine and through the skin, but most is broken down in the liver. Just like any other carbon-based fuel, ethanol is oxidized to form carbon dioxide and water, releasing energy in the process.
+  
+      .uk-width-medium-4-10
+          figure
+              img(src="images/ethanol.svg", alt="Ethanol")
+              p.uk-text-small Liver cells can burn ethanol for energy.
+              
+   +pod('Hydrolysis: the chemical reaction')
+      .uk-width-medium-6-10
+          p.
+              Most food is broken down through a chemical reaction called hydrolysis. In Greek, “hydro” means water, and “lysis” means releasing, hydrolysis means releasing with water.
+          p.
+              When two sugars are separated, or a chain of amino acids is taken apart, a molecule of water is added for each bond that is broken. Hydrolysis reactions are carried out by enzymes. Water wouldn’t react with these bonds on their own, but the enzymes make it more energetically                         favorable.
+          p.
+              The reverse of this reaction is called dehydration synthesis: water is taken away as two molecules are bound together.
+      
+      .uk-width-medium-4-10
+          figure
+              img(src="images/hydrolysis.svg", alt="hydrolysis")
+              
+      +references
+         p.      
+            Champe, P.C., Harvey, R.A. & Ferrier, D.R. (2009). Lippincotts Illustrated Reviews: Biochemistry, fourth edition. Baltimore, MD: Lippincott Williams & Wilkins.
+         p.
+            Marieb, E.N. & Hoehn, K. (2009). Human Anatomy and Physiology, eighth edition. San Francisco: Benjamin Cummings.
+         p.
+            Salway, J.G. (2004). Metabolism at a glance, third edition. Malden, MA: Blackwell Publishing Ltd.
+
+                    

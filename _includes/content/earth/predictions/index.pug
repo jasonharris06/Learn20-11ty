@@ -1,0 +1,121 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-4-10
+         p
+            | Predictive models forecast what will happen in the future. These models work because natural events often follow patterns.
+         p
+            | To calculate the probability of a future outcome, most predictive models factor in historical data along with what we know about rules and relationships among the variables involved.
+         p
+            | Because they deal with the future, which hasn&rsquo;t happened yet, all predictive models have a degree of uncertainty. So most predictive models include some way to communicate the nature of that uncertainty.
+         |        
+         .callout
+            | Sources of Uncertainty in Predictive Models
+            ul
+               li Human error in data collection
+               |                
+               li Accuracy of measuring equipment
+               |                
+               li Precision of data collection device
+               |                
+               li Historical conditions no longer apply
+               |                
+               li Random behavior of the system itself, no pattern
+               |                
+               li Important variables left out of the model
+               |                
+               li The predictive model itself influences the outcome
+      |     
+      .uk-width-medium-6-10
+         figure
+            img.lg-no-shadow(src='images/uncertainty.jpg', alt='Uncertainty in Prediction Models')   
+            p
+               | Representing uncertainty in prediction models: (A) The &ldquo;cone of uncertainty&rdquo; around the predicted track of a hurricane grows wider as we look further into the future. (B) A &ldquo;fan chart&rdquo; of economic inflation showing historical data (solid line) and predicted outcomes. Ranges of possible outcomes are shown as bands of color, with the darker colors representing more likely outcomes. (C) A spaghetti plot showing forecasts for atmospheric pressure. Each colored line represents a different forecast model prediction. The greater the distance between the lines, the greater the uncertainty. (D) The wider blue circle shows uncertainty about geographic location, which usually stems from limitations of the measuring device. As the device collects more location data, the circle may grow smaller.
+   +pod('Weather Forecasts: A Familiar Predictive Model')
+      |      
+      .uk-width-medium-6-10
+         figure
+            img(src='images/satellite.jpg', alt='NASA Satellite')     
+            p
+               | NASA launched the Global Precipitation Measurement (GPM) Core Observatory satellite in 2014 with the mission to map Earth&rsquo;s precipitation from space. Scientists combine data from weather satellites with data collected at ground level to make more accurate forecasts. 
+               em Image: NASA/Britt Griswold
+ 
+      .uk-width-medium-4-10
+         p
+            | When you check the weather forecast, you are relying on a predictive model&mdash;a model that has come a long way since the days when we relied on grandma&rsquo;s trick knee.
+         p
+            | Modern weather forecasting uses a staggering amount of technology. Weather stations and satellites work around the clock to collect climate data. Powerful supercomputers plug this data into mathematical equations that make up complex computer simulations.
+         p
+            | Because earth&rsquo;s atmosphere is chaotic and highly variable, supercomputers can&rsquo;t just run one simulation and call it a day. They have to run many, many thousands of simulations, plugging in different values within a range for things like temperature and air pressure.
+         p
+            | This method, called Monte Carlo Analysis, helps account for uncertainty. Thanks to robust computer modeling, the prediction accuracy of weather events, like the path a hurricane will take, has increased threefold since the 1980s.
+   +pod('The Wisdom of Crowds')
+      |      
+      .uk-width-medium-4-10
+         p
+            | Many modern prediction methods use ensemble forecasting, a type of Monte Carlo analysis that combines the results of multiple independent forecasts. These forecasts come from groups of scientists around the world who have all developed their own models, each using a slightly different approach to predict outcomes.
+         p
+            | By combining the collective opinions of a group of experts, we get a better forecast. This broader view helps account for variability, and it makes trends more visible. But in order for it to work, each individual must be independent, and the group must represent diverse perspectives and ideologies.
+         figure
+            img(src='images/nasa_forecast.jpg', alt='NASA Forecast')       
+            p
+               | NASA scientists using ensemble forecasting to predict the path and impact of severe solar storms, which can disrupt power grids on Earth, knock out satellites, and threaten the health and safety of astronauts. 
+               em Image: NASA/Chris Gunn 
+
+      .uk-width-medium-6-10
+         figure
+            img.lg-no-shadow(src='images/ensemble_example.jpg', alt='Ensemble Example')     
+            p
+               | This chart shows ensemble forecasting of global temperature based on a range of possible greenhouse gas concentrations. Each color represents forecasts from a different model. (RCP = Representative Concentration Pathways. These four greenhouse gas projections were adopted by the Intergovernmental Panel on Climate Change (IPCC) in 2014.) 
+               em Figure from: IPCC&rsquo;s report &ldquo;Climate Change 2013: The Physical Science Basis&rdquo;
+   +pod('Predictive Models and Risk')
+      |      
+      .uk-width-medium-4-10
+         p
+            | Because they lay out the possible consequences of the choices we make, models can inform decisions and policies.
+         p
+            | Risk is the chance you might lose something of value. Predictive models that forecast risk often go hand in hand with policy decisions.
+         |  
+         p
+            | Auto insurance companies use predictive models to decide how much to charge you for a policy. If the models predict you are high risk, you have to pay more.
+         p
+            | Health care systems use predictive models to forecast patient disease risk. By knowing ahead of time the likely populations that will be affected by particular diseases, they can better target interventions for those who need them most.
+      |     
+      .uk-width-medium-6-10
+         figure
+            img.lg-no-shadow(src='images/sea_rise.jpg', alt='Sea Rise')  
+            p
+               | Regions of Olympia and Seattle, WA most likely to be affected by rising sea levels by the end of the century, according to EPA predictive models. Based on modeling projections like these, many coastal cities have enacted regulatory policies that require developers to plan for a 3-to-4-meter rise in sea level. 
+               em Image: EPA
+   +pod('Some Events Are Fundamentally Unpredictable')
+      |      
+      .uk-width-medium-6-10
+         figure
+            img(src='images/japan_earthquake.jpg', alt='Japan Earthquake')   
+            p
+               | Due to its location in the Pacific Ring of Fire, Japan is exceptionally prone to earthquakes. Even though Japan is said to be the &ldquo;most prepared nation in the world&rdquo; when it comes to earthquakes, even they cannot predict an earthquake sooner than 80 seconds before it happens. That&rsquo;s how many seconds warning Tokyo residents had before the devastating 9.0 magnitude earthquake of 2011. The strongest ever to hit Japan, the quake was 10 times stronger than what was predicted for the region. 
+               em Image: Douglas Sprott
+ 
+      .uk-width-medium-4-10
+         p
+            | Over the past century, our ability to collect and store information has increased tremendously. So you might think today&apos;s predictive models owe their increased accuracy to our exponentially expanding databanks. After all, doesn&rsquo;t more data mean fewer assumptions? Well, not necessarily.
+         p
+            | In the 1970s, as computer technology started advancing rapidly, scientists began to apply computation tools to earthquake prediction. They optimistically thought they could develop an earthquake prediction system within just ten years.
+         p
+            | As time dragged on, systems came and went that didn&rsquo;t work, and efforts to develop early warning systems were largely abandoned. In the 90s, efforts shifted away from prediction and toward damage prevention. Despite all the promise data and technology offered, many scientists came to believe that earthquakes are just fundamentally unpredictable.
+   +references
+      p
+         | Qin, D., Plattner, G. K., Tignor, M., Allen, S. K., Boschung, J., Nauels, A., ... &amp; Midgley, P. M. (2014). Climate change 2013: The physical science basis. Fifth Assessment Report of the Intergovernmental Panel on Climate Change (IPCC). Cambridge, UK, and New York: Cambridge University Press.
+         a(href='http://www.climatechange2013.org') http://www.climatechange2013.org
+      p
+         | Global Ensemble Forecast System (GEFS). (n.d.). Retrieved February 6, 2015, from 
+         a(href='http://www.ncdc.noaa.gov/data-access/model-data/model-datasets/global-ensemble-forecast-system-gefs')
+            | http://www.ncdc.noaa.gov/data-access/model-data/model-datasets/global-ensemble-forecast-system-gefs
+      p
+         | Baez, J. C., &amp; Tweed, D. (2013). Monte Carlo Methods in Climate Science. Math Horizons, 21(2), 5-8.
+         a(href='http://www.maa.org/sites/default/files/pdf/horizons/baeztweed_nov13.pdf') http://www.maa.org/sites/default/files/pdf/horizons/baeztweed_nov13.pdf
+      p
+         | Silver, N. (2012). The signal and the noise: Why so many predictions fail--but some don&apos;t. New York: Penguin Press.
+   
+   

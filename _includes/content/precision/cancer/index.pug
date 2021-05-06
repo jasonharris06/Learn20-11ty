@@ -1,0 +1,116 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-6-10
+         figure
+            img(src="images/hci.jpg")
+      .uk-width-medium-4-10
+         p
+            | The Huntsman Cancer Institute (HCI) at the University of Utah was founded on the idea that cancer care should be centered around the patient. HCI puts this idea into practice not only in its approach to patient care, but also in its research.
+         +well
+            h3 Related links
+            a(href='http://healthcare.utah.edu/huntsmancancerinstitute/') Huntsman Cancer Institute (HCI)
+            br
+            a(href='http://healthcare.utah.edu/huntsmancancerinstitute/cancer-information/cancer-types-and-topics/precision-medicine.php') Precision Medicine at HCI
+            br
+            a(href='http://healthcare.utah.edu/huntsmancancerinstitute/patient-care/clinics-and-care-teams/high-risk-cancer-research-clinics-and-studies/genetic-counseling/') HCI genetic counseling services
+            br
+            a(href='http://healthcare.utah.edu/huntsmancancerinstitute/clinical-trials/') HCI clinical trials
+            br       
+            a(href='https://www.youtube.com/user/huntsmancancervideos/videos') HCI&apos;s You Tube channel
+            br
+      
+
+   +pod('Understanding cancer, one gene at a time')
+      .uk-width-medium-6-10
+         p Researchers at HCI have a history of working with families that have unusually high rates of cancer. Their efforts have uncovered the genetic basis of several rare forms of inherited cancer, including familial breast cancer, colon cancer, and melanoma. Through their participation in research, these families have helped doctors understand the inner workings of cancer. These discoveries, and others like them, have changed the way cancer is treated.
+         p For the affected families, understanding the genetic basis of their cancer has been life-changing. When someone knows that they carry a genetic variation that puts them at high risk for developing cancer, they can act preemptively. For example, someone at high risk for developing skin cancer can take extra measures to protect themselves from the sun. Someone at high risk for breast cancer may choose to have a prophylactic mastectomy. Many who are at high genetic risk for developing cancer can begin screening (mammograms or colonoscopies, for example) at a younger age. In many cases, screening can prevent cancer from ever developing. In others, screening detects cancer early, when treatment is much more likely to be successful.
+         p These families have also taught researchers a lot about how cancer works in general. Cancers that arise through spontaneous, rather than inherited, mutations often involve changes in the very same genes. For example, HCI researcher Dr. Joshua Schiffman studies families with Li-Fraumeni Syndrome. These families carry a rare inherited variation in the TP53 gene [1], which puts them at high risk for developing many types of cancer. The same gene is mutated in the majority of spontaneous, non-inherited cancers. In 2015, Dr. Schiffman's research group published a study [2] that looked at this very same gene in elephants. Elephants have 20 copies of the TP53 gene, while humans have one—and it's part of the reason why elephants rarely get cancer.
+         p Each genetic discovery about cancer, whether in people or in elephants, creates new opportunities for better diagnostics and better treatments for everyone. 
+      .uk-width-medium-4-10
+         figure
+            img(src="images/schiffman.jpg" alt="Dr. Joshua Schiffman")
+            p Dr. Joshua Schiffman studies the TP53 gene. People with a non-functional TP53 gene have a very high risk for getting cancer. Elephants, which have 20 copies of the gene, rarely get cancer.
+            +well
+               .uk-text-left
+                  h3 Related links
+                  a(href="http://www.nytimes.com/2015/10/13/science/why-elephants-get-less-cancer.html") Elephants: Large, long-lived, and less prone to cancer
+                  | <br>New York Times article
+   +pod('Molecular diagnostics leads to better outcomes')
+      .uk-width-medium-6-10
+         p
+            | As a cancer develops, it accumulates multiple genetic changes or &quot;mutations.&quot; Any two cancers, even those that look the same to the eye, are likely to have different mutation profiles. Because they differ genetically, any two cancers are also likely to respond differently to treatments.
+         p
+            | Doctors use molecular diagnostic tools to look at the mutation profile of a tumor, allowing them to make predictions about how the cancer may develop, and where it may be vulnerable to treatment. Molecular profiling can also predict how the patient will respond to a medication&mdash;whether a drug is likely to work with their body chemistry, or whether it may cause dangerous side effects.
+
+         p
+            | Molecular diagnostic tools help caregivers get effective, &quot;targeted&quot; treatments to patients as soon as possible, bypassing much of the trial-and-error that was so common in the past&mdash;all while minimizing harmful side effects, and in many cases saving costs.
+
+         p.
+            For some forms of cancer, molecular profiling is already the standard of care. In 2013, HCI started screening all of 
+            its cancer patients for genetic markers that indicate who is likely to benefit from available targeted therapies [3]. 
+            In recent years, the number of available tests and the speed with which they can be completed have been increasing steadly, 
+            and the costs of these tests have fallen dramatically.
+         +well
+            h3 Related content
+            a(href="../example/") Your doctor's new genetic tools
+            br
+            a(href="../diagnostics/") From Discovery to Diagnostics
+            br
+            a(href="http://www.aruplab.com/") ARUP Laboratories
+      .uk-width-medium-4-10
+      
+         iframe.uk-responsive-width(src='https://player.vimeo.com/video/167304547', width='640', height='360', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+         
+         figure
+            p 10,000 people will get pancreatic cancer this year, but each one will be different. One goal of precision medicine is to develop diagnostic tests that can lead to individually targeted treatments for each patient.
+         
+   +pod('Caring for the whole patient through genetic counseling')
+      .uk-width-medium-6-10
+         p.
+            Precision cancer care involves much more than being able to interpret a patient's test result. HCI also focuses on delivering information 
+            to patients in the best possible way so that they can make informed decisions about their own care. For certain cancer diagnoses (e.g. 
+            endometrial cancer, male breast cancer), patients should be tested to see if there is an underlying genetic cause. At HCI, these patients 
+            are typically referred to a genetic counselor. Working closely with patients and their doctors, genetic counselors explain genetic tests, 
+            deliver test results, and offer follow-up support.
+         p.
+            When genetic testing finds that a cancer is hereditary, the genetic counselor can talk with the patient about preventing other cancers they 
+            may be at risk for. They can also support patients in sharing information with relatives who may carry the same cancer-causing genetic 
+            variation. It can be particularly difficult for a patient dealing with their own diagnosis to also have to deliver serious news to family 
+            members, yet it is extremely important that those who may be at risk follow up with testing.
+
+      .uk-width-medium-4-10
+         figure 
+            iframe.uk-responsive-width(width='560', height='315', src='https://www.youtube.com/embed/mUDdvwhZlok?list=PLy3xKXZQCUn7DLFzhk8hY1wiC_twEFNNo', frameborder='0', allowfullscreen='')
+
+            p.
+               An inherited form of colon cancer is caused by an improperly functioning version of a gene called APC (adenomatous polyposis 
+               coli) [4]. The same gene was later found to be mutated in a large majority of sporadic colon cancers [5], as well as some 
+               breast, pancreatic, and lung cancers.
+   +pod('With more data, tests are more informative')
+      .uk-width-medium-6-10
+         p Possibly the most recognizable genetic test for cancer looks for variations in the BRCA1 and BRCA2 genes. Variations in these genes are passed through generations of families, and they can greatly increase a person's risk for breast, ovarian, and other types of cancer. Many of us have heard stories of friends or celebrities who "tested positive" for BRCA mutations, and we are familiar with the choices they faced about whether to have surgery to remove their breasts or ovaries.
+         p BRCA testing, however, is not a simple matter of being positive or negative. There are hundreds of known variations in the BRCA1 and BRCA2 genes. Some are cancer-causing, others are harmless, and some are so rare that little is known about their effect on cancer risk. Even among cancer-causing variations, all positive test results are not equal.  Some BRCA variations greatly increase cancer risk, and others increase it only slightly.
+         p Because BRCA1 and BRCA2 testing has been carried on out millions of people, a lot of data have been collected on the outcomes of individuals with specific variations. When someone is deciding about a medication or a major surgery, it is important for her to have as much information as possible about her specific genetic variation. And as more people are tested, the tests can make more-accurate predictions.
+      .uk-width-medium-4-10
+         figure
+            img(src="images/IMG_0585.jpg")
+         
+   +references
+         p
+            a(name='1') [1]
+            |  Groden, J., Thliveris, A., Samowitz, W., Carlson, M. et al (1991). Identification and characterization of the familial polyposis coli gene. Cell 66, 589-601. doi: 
+            a(href='http://www.sciencedirect.com/science/article/pii/0092867481900210') 10.1016/0092-8674(81)90021-0
+         |         
+         p
+            a(name='2') [2]
+            |  Lesko, A.C., Goss, K.H., Prospiro, J.R. (2014). Exploiting APC function as a novel cancer therapy. Current Drug Targets 15:1, 90-102.  
+            a(href='http://www.ingentaconnect.com/content/ben/cdt/2014/00000015/00000001/art00008?token=004d1a111fcbb2b6627e41225f4038592c494173762846704574576b3427656c3c6a333f2566a') [link]
+         |         
+         |         
+         p
+            a(name='3') [3]
+            |  Stewart, K. (Aug 4, 2013). Cancer care in Utah goes genetic. The Salt Lake Tribune. Accessed Dec 15, 2015, at 
+            a(href='http://archive.sltrib.com/story.php?ref=/sltrib/news/56415527-78/cancer-huntsman-patients-percent.html.csp.')
+               | http://archive.sltrib.com/story.php?ref=/sltrib/news/56415527-78/cancer-huntsman-patients-percent.html.csp.

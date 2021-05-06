@@ -1,0 +1,37 @@
+extends /shared/layout
+block content
+  +pageTitle
+  // Adobe Edge Runtime
+  script(type='text/javascript', charset='utf-8', src='rna-central-dogma_edgePreload.js')
+  style.
+    .edgeLoad-EDGE-202720348 { visibility:hidden; }
+  // Adobe Edge Runtime End
+
+  +pod('')
+    .uk-width-medium-5-10
+      p
+        | The central dogma of molecular biology explains that DNA codes for RNA, which codes for proteins. DNA is the molecule
+        | of heredity that passes from parents to offspring. It contains the instructions for building RNA and proteins, which
+        | make up the structure of the body and carry out most of its functions.
+
+    .uk-width-medium-5-10
+      p
+        | Inside the cells of all living things, tiny molecular machines are constantly reading the information in DNA and using
+        | it to build proteins. In exploring the activity below, you will learn about the three types of RNA are essential to this
+        | process: messenger RNA (mRNA), transfer RNA (tRNA), and ribosomal RNA (rRNA).
+
+  +pod('')
+    .uk-width-1-1.uk-text-center
+      #Stage.EDGE-202720348
+
+  +pod('Special Credit')
+    .uk-width-medium-6-10
+      p
+        |  Many of the illustrations on this page were inspired by the work of
+        a(href='http://mgl.scripps.edu/people/goodsell/')  David Goodsell
+        |  and the Protein Data Bank&apos;s
+        a(href='http://www.rcsb.org/pdb/motm.do')  Molecule of the Month
+        | .
+    .uk-width-medium-4-10
+
+  +bottom-menu("",'sepagosh')

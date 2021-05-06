@@ -1,0 +1,74 @@
+extends /shared/layout
+
+block append endscripts
+  script(src="/lib/accordion.js")
+block content
+  +pageTitle
+  +pod('')
+    .uk-width-medium-4-10
+      p
+      | A chromosomal rearrangement means that pieces of chromosomes are missing, duplicated (there are extra copies), or moved around.  
+      p
+      | The effects vary. They depend on which chromosome pieces are involved and how they are rearranged. Some have no effect, some are incompatible with life, and others are somewhere between.  
+    .uk-width-medium-6-10
+      figure
+        img(src='images/complete-set.jpg')
+        p A complete set of genetic information consists of 46 chromosomes. Each parent contributes 23 chromosomes.
+  +pod('How do people get chromosomal rearrangements?')
+    .uk-width-medium-4-10
+      p
+      | Most of the time, chromosomal rearrangements happen during egg and sperm formation. During the recombination step, pairs of chromosomes break and swap pieces. If the chromosomes line up unevenly or if the breaks are not repaired properly, pieces of chromosomes may be rearranged. The chromosomes are then distributed into egg or sperm cell. If the cell participates in fertilization, the embryo ends up with extra, missing, or rearranged chromosome pieces. As the embryo grows and the cells divide, the chromosome arrangement is copied into every cell in the baby's body.
+      p
+      | Sometimes, chromosome rearrangements happen soon after fertilization. The rearrangement is then copied to all or some of the baby's cells.
+
+    .uk-width-medium-6-10
+      include recombination.pug
+      figure
+        p This slideshow zooms in on one chromosome pair to show how recombination works. (All of this person’s chromosomes are shown in orange. The lighter orange chromosomes came from her mother; the darker ones came from her father.)
+      
+  +pod('How are chromosomal rearrangements diagnosed?')
+    .uk-width-medium-4-10
+      figure
+        img(src='images/baby.jpg')
+    .uk-width-medium-6-10
+      p
+      | Chromosomal rearrangements are diagnosed through genetic testing. Most tests use DNA from a blood sample or a cheek swab. 
+      p
+      | Some rearrangements happen more often than others, and some give rise to syndromes with signature characteristics. Based on a person's characteristics, a doctor may order a specific test on just one chromosome to a confirm a diagnosis. Other tests look more broadly at all of the chromosomes.
+      p
+      | Some rearrangements can be detected before birth, through prenatal genetic testing. These tests are done during pregnancy on a DNA sample from the developing baby. They measure the number and arrangement of all of the baby's chromosomes. 
+      
+  +pod('Balanced rearrangements')
+    .uk-container.uk-width-medium-6-10
+      +hype(600, 400, 'balanced.hyperesources/balanced_hype_generated_script.js', 'balanced_hype_container', 'controlledWidth')
+      +well
+        | Preimplantation genetic testing can help parents with a balanced translocation greatly increase their chances of having a healthy baby. To learn more, visit 
+        a(href='/content/disorders/whatpreimplantation') What is preimplantation genetic testing
+        | ?
+    .uk-width-medium-4-10
+      p
+        | Rearrangements fall broadly into two categories: balanced and unbalanced.
+      p
+        | A person with a balanced chromosomal rearrangement has a complete set of genetic information. However, some chromosome pieces have been moved around. 
+      p
+        | Most of the time, people who have a balanced chromosomal rearrangement are perfectly healthy. But some balanced rearrangements have an effect. For example, if a chromosome break falls in the middle of a gene, the function of that gene may be disrupted.
+      p
+        | Many people with balanced rearrangements are unaware of their condition until they try to have children. The biggest issue they face is that they are likely to pass an unbalanced rearrangement to their children. They may have trouble conceiving, they may have a child with a genetic disorder, or they may experience multiple pregnancy losses. The effects depend on the chromosome regions involved. Any of these situations would prompt genetic testing of the parents, which would reveal the translocation.
+      p
+        | Balanced rearrangements are fairly common, affecting about 1 in 1,000 people. They make up a large proportion of couples seeking fertility treatment.
+      
+  +pod('Unbalanced Rearrangements')
+    .uk-width-medium-4-10
+      p
+        | In an <b>unbalanced rearrangement</b>, pieces of chromosomes are either missing or duplicated. Missing information is called a deletion, and duplicated information is called an insertion. Some unbalanced rearrangements also involve translocation: where a piece of a chromosome is broken off and reattached to a different chromosome. 
+      p
+        | Most unbalanced rearrangements have an effect. But the effects vary greatly, depending on which genes are on the chromosome pieces that are missing or duplicated. 
+      p
+        | Unbalanced rearrangements are common in the children of parents who carry a balanced rearrangement. But they can also happen in the children of parents who are genetically normal. If a genetically normal couple has one child with a chromosomal rearrangement, they are unlikely to have a second child with the same condition.
+    .uk-container.uk-width-medium-6-10
+      +hype(600, 350, 'unbalanced.hyperesources/unbalanced_hype_generated_script.js', 'unbalanced_hype_container', 'controlledWidth2')
+
+block append endscripts
+  script(src="/lib/slideshow.js")
+  script(src="/lib/slideshow-fx.js")
+    

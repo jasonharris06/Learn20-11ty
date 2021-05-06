@@ -1,0 +1,186 @@
+extends /shared/layout
+block append headscripts
+   //- meta(name="authoring-tool" content="Adobe_Animate_CC")
+
+block content
+   link(href='src/featherlight.min.css', type='text/css', rel='stylesheet')
+
+   +pageTitle
+   style.
+      .gallery {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-around;
+         width: calc(100% - 40px);
+      }
+      .gallery > a {
+         margin: 10px 0;
+         flex: 0 1 200px;
+      }
+      .gallery div {
+         text-align: center
+      }
+      .thumbnail-gallery{
+         width:200px;
+         height:auto;
+      }
+
+      .initImg {
+         max-width:1000px;
+      }
+      .imgOver{
+         max-width: 1000px;
+      }
+      
+      .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+      }
+
+      .switch input { 
+      opacity: 0;
+      width: 0;
+      height: 0;
+      }
+
+      .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+      }
+
+      .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+      }
+
+      input:checked + .slider {
+      background-color: #2196F3;
+      }
+
+      input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3;
+      }
+
+      input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+      }
+
+      /* Rounded sliders */
+      .slider.round {
+      border-radius: 34px;
+      }
+
+      .slider.round:before {
+      border-radius: 50%;
+      }
+      .l-container {
+         display: flex !important;
+         align-items: center;
+         margin-top:10px;
+      }
+      .l-container > span {
+         margin-left: 10px;
+      }
+   +pod('')
+      .uk-width-medium-6-10
+         p The images in this gallery show real cells under the microscope. Do they look like cell diagrams you’ve seen? Probably not!
+         p Most cell diagrams, whether in your textbook or online, are generic. They highlight a set of overlapping features that all cells need to live. But every cell also has unique features to do a specialized job. The examples here explore structures you probably won’t find on most cell diagrams.
+         p <i>Hint: Turn the labels on and off to find the structures on the microscope view.</i>
+      
+      .uk-width-medium-4-10
+         figure
+            img.lg-no-shadow(src='images/Generic Cell Model Image.jpeg' alt='Generic Cell Model Image')
+            p Cell diagrams like this one highlight the parts most cells have in common. Souce: OpenStax via Wikimedia Commons, licensed under 
+               a(href='https://creativecommons.org/licenses/by/4.0/legalcode') CC-BY 4.0
+               | .
+
+      // a(href='#', data-featherlight='#mylightbox')
+      //    img(src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fnews.northwestern.edu%2Fassets%2FStories%2F2018%2F10%2Fcells640.jpg&f=1&nofb=1")
+      // #mylightbox 
+      //    img(src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FNPaEzY6gzp0%2Fmaxresdefault.jpg&f=1&nofb=1")
+      .gallery
+         a(href='#', data-featherlight='<img class="initImg" style="display:none;" src="images/Diatom.jpg" /><img class="imgOver" src="images/Diatom-ov.jpg" /><div class="l-container"><label class="switch"><input onclick="toggle(this.id)" id="test" type="checkbox" checked><span class="slider round"></span></label><span>Labels</span></div>') 
+            img.thumbnail-gallery(src="images/Diatom.jpg")
+            div Diatoms
+         a(href='#', data-featherlight='<img class="initImg" style="display:none;" src="images/Red Blood Cells.jpg" /><img class="imgOver" src="images/Red Blood Cells-ov.jpg" /><div class="l-container"><label class="switch"><input onclick="toggle(this.id)" id="test" type="checkbox" checked><span class="slider round"></span></label><span>Labels</span></div>') 
+            img.thumbnail-gallery(src="images/Red Blood Cells.jpg")
+            div Red Blood Cells
+         a(href='#', data-featherlight='<img class="initImg" style="display:none;" src="images/Cork Cells.jpg" /><img class="imgOver" src="images/Cork Cells-ov.jpg" /><div class="l-container"><label class="switch"><input onclick="toggle(this.id)" id="test" type="checkbox" checked><span class="slider round"></span></label><span>Labels</span></div>') 
+            img.thumbnail-gallery(src="images/Cork Cells.jpg")
+            div Cork Cells
+         a(href='#', data-featherlight='<img class="initImg" style="display:none;" src="images/Breast Cancer Cells.jpg" /><img class="imgOver" src="images/Breast Cancer Cells-ov.jpg" /><div class="l-container"><label class="switch"><input onclick="toggle(this.id)" id="test" type="checkbox" checked><span class="slider round"></span></label><span>Labels</span></div>') 
+            img.thumbnail-gallery(src="images/Breast Cancer Cells.jpg")
+            div Breast Cancer Cells
+         a(href='#', data-featherlight='<img class="initImg" style="display:none;" src="images/Haloquadratum walsbyi.jpg" /><img class="imgOver" src="images/Haloquadratum walsbyi-ov.jpg" /><div class="l-container"><label class="switch"><input onclick="toggle(this.id)" id="test" type="checkbox" checked><span class="slider round"></span></label><span>Labels</span></div>') 
+            img.thumbnail-gallery(src="images/Haloquadratum walsbyi.jpg")
+            div Haloquadratum Walsbyi
+         a(href='#', data-featherlight='<img class="initImg" style="display:none;" src="images/Influenza.jpg" /><img class="imgOver" src="images/Influenza-ov.jpg" /><div class="l-container"><label class="switch"><input onclick="toggle(this.id)" id="test" type="checkbox" checked><span class="slider round"></span></label><span>Labels</span></div>') 
+            img.thumbnail-gallery(src="images/Influenza.jpg")
+            div Influenza A
+         a(href='#', data-featherlight='<img class="initImg" style="display:none;" src="images/Mold hyphae Cell.jpg" /><img class="imgOver" src="images/Mold hyphae Cell-ov.jpg" /><div class="l-container"><label class="switch"><input onclick="toggle(this.id)" id="test" type="checkbox" checked><span class="slider round"></span></label><span>Labels</span></div>') 
+            img.thumbnail-gallery(src="images/Mold hyphae Cell.jpg")
+            div Mold Hyphae Cells
+         a(href='#', data-featherlight='<img class="initImg" style="display:none;" src="images/Muscle Fiber.jpg" /><img class="imgOver" src="images/Muscle Fiber-ov.jpg" /><div class="l-container"><label class="switch"><input onclick="toggle(this.id)" id="test" type="checkbox" checked><span class="slider round"></span></label><span>Labels</span></div>') 
+            img.thumbnail-gallery(src="images/Muscle Fiber.jpg")
+            div Heart Muscle Cells
+         a(href='#', data-featherlight='<img class="initImg" style="display:none;" src="images/Osteocyte.jpg" /><img class="imgOver" src="images/Osteocyte-ov.jpg" /><div class="l-container"><label class="switch"><input onclick="toggle(this.id)" id="test" type="checkbox" checked><span class="slider round"></span></label><span>Labels</span></div>') 
+            img.thumbnail-gallery(src="images/Osteocyte.jpg")
+            div Osteocyte
+         a(href='#', data-featherlight='<img class="initImg" style="display:none;" src="images/Paramecium caudatum.jpg" /><img class="imgOver" src="images/Paramecium caudatum-ov.jpg" /><div class="l-container"><label class="switch"><input onclick="toggle(this.id)" id="test" type="checkbox" checked><span class="slider round"></span></label><span>Labels</span></div>') 
+            img.thumbnail-gallery(src="images/Paramecium caudatum.jpg")
+            div Paramecium
+         a(href='#', data-featherlight='<img class="initImg" style="display:none;" src="images/Red Pepper Skin.jpg" /><img class="imgOver" src="images/Red Pepper Skin-ov.jpg" /><div class="l-container"><label class="switch"><input onclick="toggle(this.id)" id="test" type="checkbox" checked><span class="slider round"></span></label><span>Labels</span></div>') 
+            img.thumbnail-gallery(src="images/Red Pepper Skin.jpg")
+            div Orange Pepper Cells
+      //- +pod('Notes')
+
+      .uk-width-1-1
+         +imagecredits
+            p Breast Cancer Cells: National Cancer Institute
+            p Diatom: Robert Pickett
+            p Haloquadratum walsbyi: Mike Dyall-Smith
+            p Heart Muscle Cell: Jose Martin and Jose Enrique Muzquiz
+            p Influenza A: Frederick Murphy, CDC Public Health Image Library
+            p Mold hyphae: Y. Tambe; licensed under 
+               a(href='https://creativecommons.org/licenses/by-sa/3.0/legalcode') CC BY-SA 3.0
+               | . Cropped image and added labels.
+            p Osteocyte: Jose Luis Calvo
+
+
+
+block append endscripts
+   //- script(src='//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js', type='text/javascript', charset='utf-8')
+   script(src='src/featherlight.min.js', type='text/javascript', charset='utf-8')
+
+   script.
+ 
+      function toggle(toggle_id) {
+         $('#'+toggle_id).on("change", function (e){ 
+               if(this.checked){
+                  $(".initImg").css("display", "none");
+                  $(".imgOver").css("display", "block");
+               }
+               else{
+               $(".initImg").css("display", "block");
+               $(".imgOver").css("display", "none");
+               }
+            });
+      }

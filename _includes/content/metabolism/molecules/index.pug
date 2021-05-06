@@ -1,0 +1,145 @@
+extends /shared/layout
+
+block append headscripts
+   style.
+      .mol-fader{ -webkit-transition: opacity 0.8s;
+                   transition: opacity 0.8s; }
+      .mol-faded{
+         opacity:0;
+      }
+
+block content
+   +pageTitle
+   
+   +pod('')
+      .uk-width-1-1
+         p.
+            This page features all of the molecules from Metabolism: From Food to Fuel. You can use it like a key to see what's what. 
+            You'll also find information about why we chose to show some of the molecules the way we did and other interesting details.
+   +pod("Macromolecules")
+      .uk-width-medium-1-3
+         p.
+            Throughout the pages of Metabolism: From Food to Fuel, the three main macromolecules from food (and their breakdown 
+            products) are color-coded by type. Carbohydrates are red, proteins are green, and fats are yellow.
+      .uk-width-medium-2-3
+         figure
+            img(src="mol1.svg")
+      .uk-width-medium-1-3
+         p.
+            Depending on the context, the same molecule may be shown with more or less detail. For example, a glucose molecule 
+            can be shown in  high detail, with color-coded carbon, oxygen, and hydrogen atoms. Or it can be shown as a similar but 
+            less-detailed shape that only hints at the individual carbon atoms.
+      .uk-width-medium-2-3
+         figure
+            include mol2.svg
+      .uk-width-medium-1-3
+         p.
+            To make it easier to "follow the carbon" as nutrients are broken down, we sometimes show equivalent carbon atoms in 
+            different colors. For instance, carbon dioxide may be shown in red if it came from a sugar, in green if it came 
+            from an amino acid, or in yellow if it came from a fatty acid. But regardless of the color, carbon dioxide is always 
+            the same molecule. The color just makes it easier to see which type of molecule the carbon dioxide came from.
+      .uk-width-medium-2-3
+         figure
+            img(src="mol3.svg")
+   +pod("Hydrogen")
+      .uk-width-medium-1-4
+         p.
+            The major macromolecules and their breakdown products all contain hydrogen atoms (as shown above for glucose), but for 
+            the most part we don't show them. We leave them out for the sake of simplicity. While hydrogen is an important atom in 
+            metabolism, showing it can make processes harder to understand. We chose to focus on the molecules' carbon skeletons, 
+            making it easier to follow their path from food to carbon dioxide.
+      .uk-width-medium-3-4
+         figure
+            include mol4.svg
+      .uk-width-1-1
+         p.
+            However, we do show hydrogen atoms during some of the steps of breakdown for energy—in water and as protons and 
+            electrons (a hydrogen atom is a proton plus an electron). It's important to remember that these hydrogen atoms come 
+            from food macromolecules. As these carbon-based molecules are broken down, or oxidized, hydrogen atoms are stripped 
+            away, used to generate ATP, and ultimately transferred to water.
+   +pod("ATP and carrier molecules")
+      .uk-width-medium-1-4
+         p.
+            We most often show ATP and carrier molecules such as NAD, FAD, and Coenzyme A as simplified grey shapes. The 
+            simplified shapes allow us to highlight the roles of these molecules while deemphasizing their large size and high 
+            level of complexity. 
+         p.
+            Even though we don't often show their molecular details, ATP and carrier molecules are made of atoms—carbon, oxygen, 
+            hydrogen, nitrogen, phosphorus, and the occasional sulfur—just like the other molecules depicted in Food to Fuel. 
+            And their structures are quite interesting. ATP, for instance, is a nucleotide. NAD, FAD, and Coenzyme A are made 
+            up of some familiar molecules, including B vitamins,  nucleotides, and even an amino acid.
+      .uk-width-medium-3-4
+         figure
+            include mol5.svg
+            
+block append endscripts
+   script.
+      function mol1Toggle () {
+         if($("#simple").attr("class") == "mol-fader mol-faded") {
+            $("#complex").addClass("mol-faded");
+            $("#simple").removeClass("mol-faded");
+            
+            $("#GreyBox").addClass("mol-faded");
+            $("#Enzymes").removeClass("mol-faded");
+         }else{
+            $("#simple").addClass("mol-faded");
+            $("#complex").removeClass("mol-faded");
+            
+            $("#Enzymes").addClass("mol-faded");
+            $("#GreyBox").removeClass("mol-faded");
+         }
+      }
+      $("#complex").addClass("mol-faded");
+      setInterval(mol1Toggle, 3000);
+      
+      var mol4State = 0;
+      function mol4Progress () {
+         mol4State++;
+         switch (mol4State) {
+            case 1:
+               $("#FAD").attr("class", "mol-fader");
+               $("#NAD").attr("class", "mol-fader mol-faded");
+               $("#ATP").attr("class", "mol-fader mol-faded");
+               $("#Coenzyme").attr("class", "mol-fader mol-faded");
+               break;
+            case 2:
+               $("#FAD").attr("class", "mol-fader mol-faded");
+               $("#NAD").attr("class", "mol-fader");
+               $("#ATP").attr("class", "mol-fader mol-faded");
+               $("#Coenzyme").attr("class", "mol-fader mol-faded");
+               break;
+            case 3:
+               $("#FAD").attr("class", "mol-fader mol-faded");
+               $("#NAD").attr("class", "mol-fader mol-faded");
+               $("#ATP").attr("class", "mol-fader");
+               $("#Coenzyme").attr("class", "mol-fader mol-faded");
+               break;
+            case 4:
+               $("#FAD").attr("class", "mol-fader mol-faded");
+               $("#NAD").attr("class", "mol-fader mol-faded");
+               $("#ATP").attr("class", "mol-fader mol-faded");
+               $("#Coenzyme").attr("class", "mol-fader");
+               mol4State = 0;
+               break;
+            default:
+               console.log("unhandled state");
+         }
+      }
+      $("#FAD").attr("class", "mol-fader mol-faded");
+      $("#NAD").attr("class", "mol-fader mol-faded");
+      $("#ATP").attr("class", "mol-fader mol-faded");
+      $("#Coenzyme").attr("class", "mol-fader");
+      setTimeout(function(){ setInterval(mol4Progress, 3000); }, 1000);
+      
+      function mol5Toggle () {
+         if($("#Enzymes").attr("class") == "mol-fader mol-faded") {
+            $("#GreyBox").addClass("mol-faded");
+            $("#Enzymes").removeClass("mol-faded");
+         }else{
+            $("#Enzymes").addClass("mol-faded");
+            $("#GreyBox").removeClass("mol-faded");
+         }
+      }
+      $("#GreyBox").addClass("mol-faded");
+      setTimeout(function(){ setInterval(mol5Toggle, 3000); }, 2000);
+      

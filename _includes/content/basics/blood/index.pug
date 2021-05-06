@@ -1,0 +1,83 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-4-10
+         p
+            | Blood is a complex, living tissue that contains many cell types and proteins. A transporter, regulator,
+            | and defender, blood courses through the body carrying out many important functions.
+      |    
+      .uk-width-medium-6-10
+         figure
+            img(src='images/complexblood.png', alt='Blood is Complex')
+   +pod('Blood Types')
+      |    
+      .uk-width-medium-6-10
+         p
+            | Distinct molecules called agglutinogens (a type of antigen) are attached to the surface of red blood
+            | cells. There are two different types of agglutinogens, type &quot;A&quot; and type &quot;B&quot;. Each type has different
+            | properties. The ABO blood type classification system uses the presence or absence of these molecules to
+            | categorize blood into four types.
+         |       
+         p
+            | Another level of specificity is added to blood type by examining the presence or absence of the Rh protein.
+            | Each blood type is either positive &quot;+&quot; (has the Rh protein) or negative &quot;-&quot; (no Rh protein). For example, a
+            | person whose blood type is &quot;A positive&quot; (A +), has both type A and Rh proteins on the surface of their red blood
+            | cells.
+      |    
+      .uk-width-medium-4-10
+         figure
+            img(src='images/bloodsurface.png', alt='blood types')
+            p.uk-text-small
+               | Type A blood cells are covered with A agglutinogens, type B have B agglutinogens, type AB have both A and B, and type O blood have none.
+   +pod('Blood Type Is Determined Genetically')
+      |    
+      .uk-width-medium-6-10
+         p
+            | The A and B antigen molecules on the surface of red blood cells are made by two different enzymes. These two enzymes are encoded by different versions, or alleles, of the same gene.
+         |  
+         p
+            | The A allele codes for an enzyme that makes the A antigen, and the B allele codes for an enzyme that makes the B antigen. A third version of this gene, the O allele, codes for a protein that is not functional; it makes no surface molecules at all.
+         |  
+         p
+            | Everyone inherits two alleles of the gene, one from each parent. The combination of your two alleles determines your blood type.
+      |    
+      .uk-width-medium-4-10
+         figure
+            img(src='images/inherit.png', alt='inheritance table')
+            |        
+            p.uk-text-small
+               | The table on the left shows all of the possible combinations of blood type alleles. The blood type for each allele combination is shown on the right. For example, if you inherit a B allele from your father and an A allele from your mother, your blood type will be AB.
+   +pod('When Blood Types Mix')
+      |    
+      .uk-width-medium-6-10
+         figure
+            img(src='images/mix.png', alt='Mix Table')
+      |    
+      .uk-width-medium-4-10
+         p
+            | Blood plasma is packed with proteins called antibodies. The body produces a wide variety of antibodies
+            | that will recognize and attack foreign molecules that may enter from the outside world. A person&apos;s plasma
+            | does not contain any antibodies that will bind to molecules that are part of his or her own body.
+         |       
+         p
+            | When conducting a blood transfusion, it is important to carefully match the donor and recipient blood
+            | types. If the donor blood cells have surface molecules that are different from those of the recipient,
+            | antibodies in the recipient&apos;s blood recognize the donor blood as foreign. This triggers an immune
+            | response resulting in blood clotting. If the donor blood cells have surface molecules that are the
+            | same as those of the recipient, the recipient&apos;s body will not see them as foreign and will not mount
+            | an immune response.
+         |       
+         p
+            | There are two special blood types when it comes to blood transfusions. People with type O
+            | blood are universal donors because there are no molecules on the surface of the red blood cells
+            | that can trigger an immune response. People with type AB blood are universal recipients because
+            | they do not have any antibodies that will recognize type A or B surface molecules.
+         |       
+         p
+            | Note: Blood cells are covered with a variety of surface molecules. For simplicity,
+            | only type A and B surface molecules are shown here.
+
+   +bottom-menu("",'hhmi')
+   
+   

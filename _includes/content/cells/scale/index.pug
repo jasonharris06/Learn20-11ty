@@ -1,0 +1,147 @@
+extends /shared/layout
+block append headscripts
+   meta(name="authoring-tool" content="Adobe_Animate_CC")
+block content
+   +pageTitle
+   style.
+      #scale {
+         width: 100%;
+         box-sizing: border-box;
+      }
+      #interactive {
+         padding-top: 56.25%;
+         width: 100%;
+         position: relative;
+         box-sizing: border-box;
+      }
+      #animation_container {
+         background-color: white;
+         position: absolute;
+         top: 0px;
+         left: 0px;
+         width: 100%;
+         height: 100%;
+         box-sizing: border-box;
+      }
+      #measures {
+         width: 100%;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         font-size: 10px;
+         line-height: 16px;
+         box-sizing: border-box;
+      }
+      .measureSeg {
+         display: inline-flex;
+         justify-content: space-around;
+         flex-grow: 1;
+         margin-bottom: 10px;
+      }
+      .measure {
+         min-width: 50px;
+         margin: 0 5px;
+      }
+      .measure > div:first-child {
+         font-weight: 800;
+         font-size: 12px;
+      }
+      @media screen and (max-width: 750px) {
+         #measures {
+            font-size: 8px;
+            line-height: 14px;
+         }
+         .measure > div:first-child {
+            font-size: 10px;
+         }
+      }
+
+
+   +pod('')
+      #scale
+         #interactive
+            #animation_container
+               canvas#canvas(width="920" height="518" style="display: block; background-color:rgba(255, 255, 255, 1.00);")
+               #dom_overlay_container(style="pointer-events:none; overflow:hidden; position: absolute; left: 0px; top: 0px; display: block;")
+      #measures
+         .measureSeg(style='flex-basis: 57.14%')
+            .measure
+               div Meter
+               div 10<sup>0</sup> m
+               div 1 m
+            .measure
+               div Centimeter
+               div 10<sup>-2</sup> m
+               div 0.01 m
+               div 1/100 m
+               div hundreth of a meter
+            .measure
+               div Millimeter
+               div 10<sup>-3</sup> m
+               div 0.001 m
+               div 1/1,000 m
+               div thousandth of a meter
+            .measure
+               div Micrometer
+               div 10<sup>-6</sup> m
+               div 0.000001 m
+               div 1/1,000,000 m
+               div millionth of a meter
+         .measureSeg(style='flex-basis: 42.86%')
+            .measure
+               div Nanometer
+               div 10<sup>-9</sup> m
+               div 0.000000001 m
+               div 1/1,000,000,000 m
+               div billionth of a meter
+            .measure
+               div Angstrom
+               div 10<sup>-10</sup> m
+               div 0.0000000001 m
+               div 1/10,000,000,000 m
+               div ten billionth of a meter
+            .measure
+               div Picometer
+               div 10<sup>-12</sup> m
+               div 0.000000000001 m
+               div 1/1,000,000,000,000 m
+               div trillionth of a meter
+   +pod('Notes')
+      .uk-width-medium-5-10
+         h3 Some cells are visible to the unaided eye
+         p The smallest objects that the unaided human eye can see are about 0.1 mm long. That means that under the right conditions, you might be able to see an amoeba proteus, a human egg, and a paramecium without using magnification. A magnifying glass can help you to see them more clearly, but they will still look tiny.
+         p Smaller cells are easily visible under a light microscope. It&apos;s even possible to make out structures within the cell, such as the nucleus, mitochondria and chloroplasts. Light microscopes use a system of lenses to magnify an image. The power of a light microscope is limited by the wavelength of visible light, which is about 500 nm. The most powerful light microscopes can resolve bacteria but not viruses.
+         p To see anything smaller than 500 nm, you will need an electron microscope. Electron microscopes shoot a high-voltage beam of electrons onto or through an object, which deflects and absorbs some of the electrons. Resolution is still limited by the wavelength of the electron beam, but this wavelength is much smaller than that of visible light. The most powerful electron microscopes can resolve molecules and even individual atoms.
+
+         h3 Adenine
+         p.
+            The label on the nucleotide is not quite accurate. Adenine refers to a portion of the molecule, the
+            nitrogenous base. It would be more accurate to label the nucleotide deoxyadenosine monophosphate, as it
+            includes the sugar deoxyribose and a phosphate group in addition to the nitrogenous base. However, the more
+            familiar &quot;adenine&quot; label makes it easier for people to recognize it as one of the building blocks of DNA.
+
+      .uk-width-medium-5-10
+         h3 How can an X chromosome be nearly as big as the head of the sperm cell?
+         p.
+            No, this isn&apos;t a mistake. First, there&apos;s less DNA in a sperm cell than there is in a non-reproductive cell
+            such as a skin cell. Second, the DNA in a sperm cell is super-condensed and compacted into a highly dense form. Third, the head of a sperm cell is almost all nucleus. Most of the cytoplasm has been squeezed out in order to make the sperm an efficient torpedo-like swimming machine.
+         p The X chromosome is shown here in a condensed state, as it would appear in a cell that&apos;s going through mitosis. It has also been duplicated, so there are actually two identical copies stuck together at their middles. A human sperm cell contains just one copy each of 23 chromosomes.
+         p A chromosome is made up of genetic material (one long piece of DNA) wrapped around structural support proteins (histones). Histones organize the DNA and keep it from getting tangled, much like thread wrapped around a spool. But they also add a lot of bulk. In a sperm cell, a specialized set of tiny support proteins (protamines) pack the DNA down to about one-sixth the volume of a mitotic chromosome.
+
+         h3 Carbon
+         p The size of the carbon atom is based on its van der Waals radius.
+   div(style='clear:both')
+   +references
+      .togglediv
+         p Goodsell, David S. (1998). The Machinery of Life. New York: Springer-Verlag.
+         p
+            | Goodsell, David S (2002, February). Molecular Machinery: A Tour of the Protein Data Bank.
+            | Retrieved September 10, 2008, from
+            a(href='http://www.rcsb.org/pdb/static.do?p=general_information/news_publications/newsletters/2004q1/poster_available.html', target='_blank')  Protein Data Bank
+            | .
+         p Ward, W. S. and Coffey, D. S. (1991). DNA packaging and organization in mammalian spermatozoa: comparison with somatic cells. Biology of Reproduction 44, 569-574.
+
+block append endscripts
+   script(src="https://code.createjs.com/1.0.0/createjs.min.js")
+   script(src="Scale.js")
+   script(src="scaleInit.js")

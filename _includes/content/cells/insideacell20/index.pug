@@ -1,0 +1,130 @@
+extends /shared/layout
+
+block append headscripts
+  style.
+    #activity, #activity * {
+      box-sizing: border-box;
+    }
+    #activity {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 920px;
+      /* max-width: 955px; */
+      margin: 0 auto;
+      position: relative;
+    }
+    #bg {
+      background-color: #00473D;
+      padding-top: 52.87%;
+    }
+    #activity svg, #activity #bg {
+      width: 94%;
+      max-width: 920px;
+      position: absolute;
+      pointer-events: none;
+      /* z-index: 1; */
+    } 
+    #video-container {
+      width: 100%;
+      /* padding-top: 56.3%; */
+      padding-top: 62.5%;
+      position: relative;
+      pointer-events: none;
+    }
+    #video-player {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      pointer-events: auto;
+      border-radius: 20px;
+      overflow: hidden;
+      background-color: #000;
+    }
+    #video-player.hidden {
+      pointer-events: none;
+      display: none;
+    }
+    #video-player iframe {
+      width: 100%;
+      height: 100%;
+    }
+    #video-close {
+      top: 5px;
+      left: 5px;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 33px;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+      cursor: pointer;
+    }
+    .vid-button {
+      cursor: pointer;
+      pointer-events: all;
+    }
+    .vid-button .button-bg, .vid-button .button-label path {
+      transition: fill 0.3s;
+    }
+    .vid-button:hover .button-bg {
+      fill: white;
+    }
+    .vid-button:hover .button-label path {
+      fill: #007161;
+    }
+
+block content
+  +pageTitle
+  +pod('')
+    .uk-width-medium-7-10
+        p
+          | If you're looking for the old Flash-based version of Inside a Cell, it's still available  
+          a(href="../insideacell/") here
+          | .
+    #activity
+      #bg
+      include bacterial-cell.svg
+      include plant-cell.svg
+      include animal-cell.svg
+      include start-screen.svg
+      #video-container
+        #video-player
+          #video-close &times;
+        //- iframe#video-player.uk-responsive-width(src='https://player.vimeo.com/video/403319516', width='920', height='575', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+  +pod('What Does It Mean to Be Alive?')
+    .uk-width-medium-6-10
+      p You probably feel like you know a living thing when you see it. And for the most part, you’re right. But what does a thing have to do to be considered alive? Turns out, that’s a much harder question to answer. And it’s something scientists continue to debate.
+      p All living things on Earth are made of cells. Some living things are made of just one cell, and others are made of trillions. In fact, chemical, cell-based life is the only known life in the universe.
+      p But with only one example to look to, it’s challenging for scientists to agree on a checklist of items that define what it means to be alive. That’s because it’s not really possible to come up with a definition that will work for life forms we haven’t found yet. 
+
+    .uk-width-medium-4-10
+      figure
+        img.lg-no-shadow(src='images/diverse cells.png', alt='Diverse Cells')
+        p All living things on earth are made of cells. For life on earth, it’s safe to say anything that’s made of cells is (or was) alive, and vice versa.
+
+  +pod('Basic Life Functions')
+    .uk-width-medium-6-10
+      p Most definitions for life are based on things that all cells have in common. And these things are generally considered essential for life.
+      p One of the simplest is the PMC model, which describes 3 interconnected criteria:
+      ol
+        li <strong>Program</strong> &mdash; This includes a way to encode instructions for building the life form, a way to read those instructions, and a way to replicate them to make more living things (i.e., reproduction). In cells, the program is written in DNA.
+        li <strong>Metabolism</strong> &mdash; Mainly, this is a way to capture and use energy. It can also include using raw materials to build molecules that the life form needs.
+        li <strong>Container</strong> &mdash; This is a barrier that keeps the life form separate from its environment. Often the container selectively lets things in and out. In cells, the barrier is a cell membrane. All living cells have a membrane.
+      p Other definitions of life—and there are hundreds—include slightly different or additional criteria.
+
+    .uk-width-medium-4-10
+
+block append endscripts
+  script(src="https://player.vimeo.com/api/player.js")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js")
+  script(src="CustomEase.min.js")
+  script(src="CustomWiggle.min.js")
+  script(src="insideacell.js")

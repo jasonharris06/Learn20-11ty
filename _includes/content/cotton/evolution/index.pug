@@ -1,0 +1,104 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   +pod('Cotton was domesticated from wild ancestors')
+      .uk-width-medium-4-10
+         p
+            | Like all modern crops, the cotton plants that grow on farms today are descended from species that lived in the wild. And these species still live in the wild today. These wild cousins are not all that different from domesticated cotton. They grow in warm, dry places. And they make a big poufy seed pods, filled with seeds covered in long, silky fibers.
+         p
+            | Thousands of years ago, ancient people started using the fibers from these wild cotton plants. They spun them into ropes or yarn and wove them into fabric. Eventually, they began farming cotton. As early farmers did with many types of crops, they took advantage of natural variations. They noticed that some plants were more useful than others. Maybe their fibers were longer or stronger, which made a better yarn. Or maybe some made bigger seed pods with more fibers. The farmers knew that traits passed through seeds from parent to offspring. So they collected seeds from the best plants and used them for the next year's crop. Through selective breeding, they gradually developed a domesticated form that was even more useful.
+         
+      .uk-width-medium-6-10
+         figure
+            img(src="images/ancestors/wildvsdomestic.jpg", alt="wild vs domestic")
+            p Domesticated cotton has more plentiful and longer fibers that are more easily removed from the seed than wild varieties. (Shown are domesticated upland cotton, cult. AD1, and its closest wild relative. Images courtesy Jonathan Wendel, used with permission.)
+
+   +pod('Cotton was domesticated in four places')
+      .uk-width-medium-1-1
+         figure
+            img(src="images/ancestors/map.jpg", alt="map")
+
+      .uk-width-medium-6-10
+         p
+            | Genetic and archaeological evidence suggests that the 4 commercially grown species of cotton—and possibly a few others—were domesticated independently by at least 4 groups of people around the world (see map). People valued many of the same characteristics, so all domesticated cotton varieties look similar. But each group began with a different wild ancestor. That's why each type of domesticated cotton has some unique characteristics. For instance, Pima cotton has long, silky fibers. And upland cotton is known for its abundant yields.
+
+         +well
+            h3 Related content
+            a(href="/content/selection/artificial/")  Artificial vs. Natural Selection
+            br
+            a(href="/content/selection/corn/")  Evolution of corn
+
+   +pod('The mysterious genetics of cotton')
+      .uk-width-medium-4-10
+         p
+            | Domesticated cotton species and their wild cousins all belong to the genus 
+            em Gossypium
+            |. This genus has more than 50 diverse members, which live all around the world. They range from tree-sized plants in Mexico to small, shrubby plants with nearly bald seeds in Australia.
+         p
+            | Early on, plant biologists grouped plants into the 
+            em Gossypium
+            |  genus based on the traits that they had in common. They noted similarities in their leaves, branching pattern, flowers, and fruits. By the 1930s, DNA came into play. When geneticists started comparing 
+            em Gossypium
+            |  chromosomes under the microscope, they noticed something strange. Though the chromosomes were often vastly different in size between species, most had 13 pairs of chromosomes. But a handful of species in the Americas (including upland and Pima cotton) had 26 pairs. That's double what is typical of the genus.
+         p
+            | After further study, scientists learned that these species have two complete genomes. The genomes are very different in size, and they came from two distantly related parent species. One of the parent species lives in Africa, the other in the Americas. Researchers wanted to know—when and how did these two species, a vast ocean apart, get together?
+         p
+            +well
+               h3 Related content
+               a(href="/content/basics/oldtour/")  What Is a chromosome?
+               br
+               a(href="/content/basics/readchromosomes/")  How do Scientists Read Chromosomes?
+
+      .uk-width-medium-6-10
+         figure
+            img(src="images/mysterious/chromosomes.jpg", alt="chromosomes")
+            p Most Gossypium species have 13 pairs of chromosomes (26 in all). Upland and Pima cotton have 26 pairs of chromosomes (52 in all)—amounting to two complete genomes.
+
+   +pod('The natural history of cotton')
+      .uk-width-medium-6-10
+         p
+            | Using a combination of genetic, fossil, and archaeological evidence, along with some deductive reasoning, scientists pieced together the most likely evolutionary history of cotton.
+
+      .uk-width-medium-1-1
+         include history.pug
+
+   +pod('When A meets D: More is better')
+      .uk-width-medium-6-10
+         figure
+            img(src="images/ad/chromosomes2.jpg", alt="chromosomes")
+
+      .uk-width-medium-4-10
+         p
+            | The A and D genomes of the two parent plants were similar enough that they could join together. But they couldn't combine in the normal way, where one parent contributes one copy of each chromosome. The chromosomes were too different in size, and their genes were arranged in a different order. So a strange thing happened that plants sometimes do. The offspring ended up with all of the parents' chromosomes. It had two copies of the entire A genome, plus two copies of the entire D genome. Instead of having two copies of each gene (one from each parent), it had four (two from each parent). In other words, it was tetraploid.
+         p
+            | Importantly, the new AD offspring's traits were not a blend of its parents'. It was different from both parents, and better-suited to the hot, dry environment along the coast. Unlike either parent, it could grow in sand, and it could withstand salt spray and flooding. Its salt-resistant seeds floated easily. They took root on islands throughout the Caribbean, and even Hawaii and the Galapagos.
+         p
+            | DNA evidence suggests that the A and D genomes got together just one time. Then over 1–2 million years, it diversified into at least 6 species, each suited to a different habit. Two were later shaped into the most highly produced domesticated species—upland and Pima cotton. These species' unique genetic heritage has led to some of their best traits, most notably their abundant, high-quality fibers.
+
+         p
+            +well
+               h3 Related links
+               | To learn more about cotton and some of the research that is being done on it, visit the lab websites of
+               a(href="https://udall-lab.byu.edu" target="_blank")  Dr. Joshua Udall
+               |  and
+               a(href="http://www.eeob.iastate.edu/faculty/WendelJ/" target="_blank")  Dr. Jonathan Wendel
+               |.
+
+   +references
+      p
+         | Beasley, J. O. (1942). Meiotic chromosome behavior in species, species hybrids, haploids, and induced polyploids of Gossypium. Genetics, 27(1), 25-54.
+      p
+         | Flagel, L. E., Wendel, J. F. &amp; Udall, J. A. (2012). Duplicate gene evolution, homoeologous recombination, and transcriptome characterization in allopolyploid cotton. BMC Genomics, 13:302. doi: 10.1186/1471-2164-13-302
+      p
+         | National Cotton Council of America (n.d.). The World of Cotton. Retrieved December 7, 2016, from
+         a(href="http://www.cotton.org/econ/world/" target="_blank")  http://www.cotton.org/econ/world/
+      p
+         | National Cotton Council of America (2016). Production &amp; Acreage Information. Retrieved December 7, 2016, from
+         a(href="http://www.cotton.org/econ/cropinfo/production/index.cfm" target="_blank")  http://www.cotton.org/econ/cropinfo/production/index.cfm
+      p
+         | Wendel, J. F. &amp; Grover, C. E. (2015). Taxonomy and evolution of the cotton genus, Gossypium. In Fang, D. D. &amp; Percy, R. G. (Eds.) Cotton (pp. 25-44). Madison, WI: American Society of Agronomy, Crop Science Society of America, and Soil Science Society of America, Inc.
+
+block append endscripts
+   script(src="/lib/slideshow.js")
+   script(src="/lib/slideshow-fx.js")

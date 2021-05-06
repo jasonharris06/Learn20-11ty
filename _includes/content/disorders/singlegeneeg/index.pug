@@ -1,0 +1,72 @@
+extends /shared/layout
+block append endscripts
+   script(src="/lib/accordion.js")
+block content
+   +pageTitle
+   +pod('')
+   .lg-section
+      .uk-container.uk-container-center
+         .uk-grid
+            .uk-width-1-1
+               #ac.uk-accordion(data-uk-accordion="{showfirst: false}")
+                  h3.uk-accordion-title Adenosine deaminase (ADA) deficiency
+                  .uk-accordion-content
+                     include ./ada/index
+                  h3.uk-accordion-title Alpha-1 Antitrypsin Deficiency
+                  .uk-accordion-content
+                     include ./a1ad/index
+                  h3.uk-accordion-title Cystic Fibrosis (CF)
+                  .uk-accordion-content
+                     include ./cf/index
+                  h3.uk-accordion-title Galactosemia
+                  .uk-accordion-content
+                     include ./galactosemia/index
+                  h3.uk-accordion-title Huntington Disease (HD)
+                  .uk-accordion-content
+                     include ./hunt/index
+                  h3.uk-accordion-title Maple Syrup Urine Disease (MSUD)
+                  .uk-accordion-content
+                     include ./msud/index
+                  h3.uk-accordion-title Neurofibromatosis Type 1 (NF1)
+                  .uk-accordion-content
+                     include ./nf1/index
+                  h3.uk-accordion-title Pachyonychia Congenita
+                  .uk-accordion-content
+                     include ./pc/index
+                  h3.uk-accordion-title Phenylketonuria (PKU)
+                  .uk-accordion-content
+                     include ./pku/index
+                  h3.uk-accordion-title Severe Combined Immunodeficiency
+                  .uk-accordion-content
+                     include ./scid/index
+                  h3.uk-accordion-title Sickle Cell Disease
+                  .uk-accordion-content
+                     include ./sicklecell/index
+                  h3.uk-accordion-title Smith-Lemli-Opitz Syndrome (SLOS)
+                  .uk-accordion-content
+                     include ./slos/index
+                     
+   +bottom-menu("",'hhmi')
+   +references
+      p
+      strong Galactosemia
+      br
+      | Timson, D. J. (2016). The molecular basis of galactosemia—Past, present and future. Gene, 589(2), 133-141.
+      p
+      strong Huntington disease
+      br
+      | Warner IV, J. B., Ruff, K. M., Tan, P. S., Lemke, E. A., Pappu, R. V., &amp; Lashuel, H. A. (2017). Monomeric Huntingtin Exon 1 Has Similar Overall Structural Features for Wild-Type and Pathological Polyglutamine Lengths. Journal of the American Chemical Society, 139(41), 14456-14469.
+      p
+      strong MSUD
+      br
+      | Ævarsson, A., Chuang, J. L., Wynn, R. M., Turley, S., Chuang, D. T., &amp; Hol, W. G. (2000). Crystal structure of human branched-chain α-ketoacid dehydrogenase and the molecular basis of multienzyme complex deficiency in maple syrup urine disease. Structure, 8(3), 277-291.
+      p
+      strong NF1
+      br
+      | Welti, S., Kühn, S., D'angelo, I., Brügger, B., Kaufmann, D., &amp; Scheffzek, K. (2011). Structural and biochemical consequences of NF1 associated nontruncating mutations in the Sec14‐PH module of neurofibromin. Human mutation, 32(2), 191-197.
+      
+
+
+   block append endscripts
+   script(src="/lib/slideshow.js")
+   script(src="/lib/slideshow-fx.js")

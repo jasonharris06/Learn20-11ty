@@ -1,0 +1,138 @@
+extends /shared/layout
+block content
+   +pageTitle
+   | @section headearly{
+   base(href='/content/tools/')
+   | }
+   .even.left
+      .subsection
+         .indexboxtitlebox
+            p Genetic Methods
+         |       
+         .indexitems
+            | @* 
+            a.indexitem(href='genehunt/', style='background-image: url(images/genehunt.jpg);')
+               .indexlabel.labeliexplore interactive explore
+               |                 Gene Hunt
+               |                 
+               p
+                  | Search through patterns to figure out how to identify a gene.
+            |  *@
+            |          
+            a.indexitem(href='transgenic/', style='background-image: url(images/transgenic.jpg);')
+               .indexlabel.labelmore learn more
+               |             Transgenic Mice 
+               |             
+               p
+                  | Learn how &quot;Knockout&quot; gene-targeting technology has revolutionized biomedical research.
+            |         
+            |         
+            a.indexitem(href='expression/', style='background-image: url(images/expression.jpg);')
+               .indexlabel.labelmore learn more
+               |             Measuring Gene Expression
+               |             
+               p
+                  | Examine how differences in gene expression correlate with drug response or disease risk.
+      |    
+      .subsection
+         .indexboxtitlebox
+            p Mathematics
+         |       
+         .indexitems
+            a.indexitem(href='growth/', style='background-image: url(images/statistics.jpg);')
+               .indexlabel.labelexplore video
+               |                 Growth and Decay
+               |                 
+               p
+                  | Modeling with mathematics
+            |          
+            a.indexitem(href='chances/', style='background-image: url(images/statistics.jpg);')
+               .indexlabel.labelexplore video
+               |                 What are the Chances?
+               |                 
+               p
+                  | An introduction to probability
+            |   
+            |          
+            a.indexitem(href='numbers/', style='background-image: url(images/statistics.jpg);')
+               .indexlabel.labelexplore video
+               |                 The Power of Numbers
+               |                 
+               p
+                  | Statistics can give insight and understanding to scientific data.  But they can also mislead.
+   .even.right
+      .subsection
+         .indexboxtitlebox
+            p Virtual Labs
+         |       
+         .indexitems
+            a.indexitem(href='extraction/', style='background-image: url(images/dnaextraction.jpg)')
+               .indexlabel.labeliexplore interactive explore
+               |                 DNA Extraction
+               |                 
+               p
+                  | DNA is extracted from human cells for a variety of reasons.  Try this virtual
+                  | laboratory to extract DNA from human cells.
+            |          
+            a.indexitem(href='gel/', style='background-image: url(images/gel.jpg)')
+               .indexlabel.labeliexplore interactive explore
+               |                 Gel Electrophoresis
+               |                 
+               p
+                  | Sort and measure DNA strands by running your own gel electrophoresis experiment.
+            |          
+            a.indexitem(href='pcr/', style='background-image: url(images/pcr.jpg)')
+               .indexlabel.labeliexplore interactive explore
+               |                 PCR
+               |                 
+               p
+                  | PCR is a relatively simple and inexpensive tool that you can use to focus in on a segment of DNA and copy
+                  | it billions of times over. See how it works!
+            |          
+            a.indexitem(href='microarray/', style='background-image: url(images/microarray.jpg)')
+               .indexlabel.labeliexplore interactive explore
+               |                 DNA Microarray
+               |                 
+               p
+                  | Scientists are using DNA microarrays to investigate everything from cancer to pest control.  Use a DNA
+                  | microarray to investigate the differences between a healthy
+                  | cell and a cancer cell.
+      |  
+      |   @* 
+      .subsection
+         .indexboxtitlebox
+            p Genetics In Society
+         |       
+         .indexitems
+            a.indexitem(href='utah/', style='background-image: url(images/utah.jpg);')
+               .indexlabel.labelmore learn more
+               |              Genetics in Utah 
+               |              
+               p Learn about the impact the State of Utah has had on genetic research.
+            |   
+            |          
+            a.indexitem(href='forensics/', style='background-image: url(images/forensics.jpg);')
+               .indexlabel.labelmore learn more
+               |             Can DNA Demand a Verdict?
+               |             
+               p
+                  | Learn how &quot;Knockout&quot; gene-targeting technology has revolutionized biomedical research.
+            |          
+            a.indexitem(href='sars/', style='background-image: url(images/sars.jpg);')
+               .indexlabel.labelmore learn more
+               |             SARS: Discovering a new emerging virus
+               |             
+               p
+                  | Learn how genetic science was used to figure out the origins and mystery of a new virus.
+            |          
+            a.indexitem(href='conservation/', style='background-image: url(images/conservation.jpg);')
+               .indexlabel.labelmore learn more
+               |             Conservation Genetics
+               |             
+               p
+                  | Learn how &quot;Knockout&quot; gene-targeting technology has revolutionized biomedical research.
+      |    *@
+   |  
+   br(style='clear: both;')
+   p
+   

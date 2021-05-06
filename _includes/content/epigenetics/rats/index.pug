@@ -1,0 +1,134 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   //- Flash message
+   +pod('')
+      +oldFlash('Lick Your Rats','Spring 2021')                        
+   //- script(src='../../../../Scripts/AC_RunActiveContent.js', type='text/javascript')
+   //- script(src='../../../Scripts/swfobject_modified.js', type='text/javascript')
+
+   +pod('')
+      .uk-width-medium-6-10
+         p
+            | Some mother rats spend a lot of time licking, grooming, and nursing their pups. Others seem to ignore their pups. Highly nurtured rat pups tend to grow up to be calm adults, while rat pups who receive little nurturing tend to grow up to be anxious.
+         p
+            | It turns out that the difference between a calm and an anxious rat is not genetic, it's epigenetic. The nurturing behavior of a mother rat during the first week of life shapes her pups&apos; epigenomes. And the epigenetic pattern that mom establishes tends to stay put, even after the pups become adults.
+         br
+      .uk-width-medium-4-10
+        +vimeo('293444795')
+
+      //- .uk-width-1-1
+      //-    div(style='width: 750px;margin: auto;')
+      //-       object#FlashID(classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000', width='750', height='350')
+      //-          param(name='movie', value='RatsLoader.swf')
+      //-          |    &#x9;&#x9;
+      //-          param(name='quality', value='high')
+      //-          |    &#x9;&#x9;
+      //-          param(name='wmode', value='opaque')
+      //-          |    &#x9;&#x9;
+      //-          param(name='swfversion', value='6.0.65.0')
+      //-          // This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don't want users to see the prompt.
+      //-          param(name='expressinstall', value='../../../Scripts/expressInstall.swf')
+      //-          // Next object tag is for non-IE browsers. So hide it from IE using IECC.
+      //-          //if !IE
+      //-          |    &#x9;&#x9;
+      //-          object(type='application/x-shockwave-flash', data='RatsLoader.swf', width='750', height='350')
+      //-             // <![endif]
+      //-             param(name='quality', value='high')
+      //-             |    &#x9;&#x9;
+      //-             param(name='wmode', value='opaque')
+      //-             |    &#x9;&#x9;
+      //-             param(name='swfversion', value='6.0.65.0')
+      //-             |    &#x9;&#x9;
+      //-             param(name='expressinstall', value='../../../Scripts/expressInstall.swf')
+      //-             // The browser displays the following alternative content for users with Flash Player 6.0 and older.
+      //-             div
+      //-                h4 Content on this page requires a newer version of Adobe Flash Player.
+      //-                |    &#x9;&#x9;
+      //-                p
+      //-                   a(href='http://www.adobe.com/go/getflashplayer')
+      //-                      img(src='http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif', alt='Get Adobe Flash player', width='112', height='33')
+      //-             //if !IE
+      //-          // <![endif]
+
+   +pod('Anxious Behavior Can Be an Advantage')
+      .uk-width-medium-6-10
+         img(src='images/Enviro.jpg', width='450', height='251')
+
+      .uk-width-medium-4-10
+         p
+            | In our society, we think of anxious behavior as being a disadvantage. But that&apos;s because, for the most part, we live in a nutrient-rich, low-danger environment. In the rat equivalent to our world, the relaxed rat lives a comfortable life. It is  likely to reach a high social standing, and it doesn&apos;t have to worry about where its next meal is coming from. An anxious rat, on the other hand, doesn&apos;t do so well. It is more likely to have a low social standing and suffer from diabetes and heart disease.
+         p
+            | In another environment, however, the tables turn. The anxious, guarded behavior of the low-nurtured rat is an advantage in an environment where food is scarce and danger is high. The low nurtured rat is more likely to keep a low profile and respond quickly to stress. In the same environment, a relaxed rat might be a little too relaxed. It may be more likely to let down its guard and be eaten by a predator.
+
+   +pod('A Different Kind of Inheritance')
+      .uk-width-medium-4-10
+         p
+            | We&apos;re used to thinking of inheritance in terms of the letters of the DNA code that pass to us from our parents -- through eggs and sperm. But the rat-licking story tells us that there is another path to the offspring&apos;s DNA. Through her licking behavior, a mother rat can write information onto her pups&apos; DNA in a way that completely bypasses eggs and sperm. In a sense, her nurturing behavior tells her pups something about the world they will grow up in. Mom&apos;s behavior actually programs the pups&apos; DNA in a way that will make them more likely to succeed.
+         p
+            | The epigenetic code gives the genome a level of flexibility that extends beyond the relatively fixed DNA code. The epigenetic code allows certain types of information to be passed to offspring without having to go through the slow processes of random mutation and natural selection. At the same time, the epigenetic code is sensitive to changing environmental conditions such as availability of food or threat from predators.
+
+      .uk-width-medium-6-10
+         img(src='images/Pup.jpg', width='458', height='246')
+
+         p.uk-text-small
+            | High-nurturing mothers raise high-nurturing offspring, and low-nurturing mothers raise low-nurturing offspring. This may look like a genetic pattern, but it&apos;s not. Whether a pup grows up to be anxious or relaxed depends on the mother that raises it -  not the mother that gives birth to it.
+   +pod('Epigenetic Patterns Are Reversible')
+      .uk-width-medium-4-10
+         p
+            | Gene expression patterns that are set up early in life are not necessarily stuck that way forever. You can take a low-nurtured rat, inject its brain with a drug that removes methyl groups, and make it act just like a high-nurtured rat. The GR gene gets turned on, cells make more GR protein, and the rat takes on a more relaxed personality. It works in the other direction too. You can take a relaxed, high-nurtured rat, inject its brain with methionine (a source of methyl) and make it more anxious. Of course drugs affect many genes, so they&apos;re not an exact substitute for maternal care. But it turns out that you can also turn an anxious rat into a more relaxed rat by spicing up its living quarters. So take heart -- your epigenetic destiny is not written in permanent ink.
+
+      .uk-width-medium-6-10
+         img(src='images/inject.jpg', width='424', height='308')
+   +pod('Based on a True Story')
+      .uk-width-medium-6-10
+         figure
+            +vimeo('162881013', 500, 281)
+            //- <iframe src="https://player.vimeo.com/video/162881013" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            p.
+               <a href='http://www.medicine.mcgill.ca/pharma/mszyflab/'> Dr. Moshe Szyf </a>, Professor of Pharmacology and Therapeutics at McGill University, talks about high and low nurturing rats.
+
+      .uk-width-medium-4-10
+         p
+            | In a 2004 article, researchers at McGill University gave us some of the first clues about how social interactions help to shape the epigenome.
+         p
+            | The study showed that there are epigenetic differences between high- and low-nurtured rats.
+         p
+            | Most of the content on this page is based on the McGill study (see Weaver et al in the References section below).
+
+   +pod('The Glucocorticoid Receptor (GR) Helps Shut Down the Stress Response')
+      .uk-width-medium-4-10
+         p
+            | When we&apos;re confronted with danger, the body turns on stress circuitry in the brain. Stress circuitry activates the adrenaline-driven Fight or Flight response and causes the hormone cortisol to be released into the bloodstream. Cortisol is important for freeing stored energy, which helps with both fighting and fleeing. But too much cortisol can be a bad thing. High levels can lead to heart disease, depression, and increased susceptibility to infection.
+         p
+            | Cortisol also travels to an area of the brain called the hippocampus, where it binds to GRs.  When enough cortisol is bound, the hippocampus sends out signals that turn off the stress circuit, shutting down both the Fight or Flight response and cortisol production.
+         p
+            | Rats (and people) with higher levels of GR are better at detecting cortisol, and they recover from stress more quickly.
+         +well
+            h3 Learn more about the Fight or Flight response to stress:
+            a(href='/content/cells/fight_flight/') HOW CELLS COMMUNICATE DURING THE FIGHT OR FLIGHT RESPONSE
+            br
+            a(href='/content/cells/cellcom/') AN EXAMPLE OF CELL COMMUNICATION: THE FIGHT OR FLIGHT RESPONSE
+
+      .uk-width-medium-6-10
+         img(src='images/HPA.jpg', width='474', height='262')
+
+         p.uk-text-small
+            strong The Stress Circuit
+            |  -- also called the HPA Axis (for Hypothalamus-Pituitary-Adrenal).
+         p
+            | Stress signals travel from the hypothalamus to the pituitary gland and then to the adrenal glands. The adrenal glands release the hormone cortisol (and adrenaline, not shown).
+         p
+            | When cells in the hippocampus detect cortisol, which binds to the GR receptor, they send a signal to the hypothalamus that shuts down the stress circuit.
+
+      +references
+         p
+            | Weaver, I.C.G, Cervoni, N.,  Champagne, F.A., D&apos;Alessio, A.C., Sharma, S., Seckl, J.R., Dymov, S., Szyf, M., &amp; Meaney, M. (2004).
+            a(href='http://www.nature.com/neuro/journal/v7/n8/abs/nn1276.html') Epigenetic programming by maternal behavior
+            | . Nature Neuroscience, 7, 847-854 (subscription required).
+         p
+            | Jankard, R., &amp; Herman, J.P. (2008).
+            a(href=' http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2637449/?tool=pubmed')
+               | Limbic regulation of hypothalamo-pituitary-adrenocortical function during acute and chronic stress
+            | . Stress, Neurotransmitters, and Hormones: Annals of the New York Academy of Science, 1148, 64-73.

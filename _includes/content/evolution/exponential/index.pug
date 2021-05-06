@@ -1,0 +1,16 @@
+extends /shared/layout
+
+block append headscripts
+
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-1-1
+         //- onload="this.style.height=this.contentDocument.body.scrollHeight + 'px';")  //  automatic iframe height for below. (not dynamic though)
+         iframe(src="./prototype/exponential_surface_area.html" height="1030px" width="100%")
+   +pod('Mock-up of Final Activity')
+      .uk-width-1-1
+         img(src="./exponentialgrowthRough.jpg")
+
+
+block append endscripts

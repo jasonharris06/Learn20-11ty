@@ -1,0 +1,78 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-1-1
+         p
+            | The signaling molecule ACTH is released by the pituitary gland in the brain and released into the bloodstream. When it reaches
+            | the adrenal cortex, it stimulates the production of cortisol. This particular signaling cascade is a great example of the complex
+            | ways that organelles do important jobs that are not often explored when generally defining their function. In
+            a(href='../../cellcom/' target='_blank')  the movie
+            |  we see a simplified version of how it all works.
+            |   Below is a description, including some of the details we left out of the movie.
+         table
+            tr
+               td(style='width: 61%;')
+                  p
+                     | ACTH Docks on an MC2-R Receptor* on a cell in the cortex of the adrenal gland.
+                  p
+                     em
+                        | *NOTE: The MC2-R receptor system looks and works similarly to the beta-2 adrenergic receptor system, which initiates relaxation
+                        | of the bronchiole muscle cells (seen later in the movie) when epinephrine binds to it.
+               td(style='width: 39%;')
+                  img(src='images/acth_docks.jpg', alt='ACTH', width='368', height='308')
+            tr
+               td
+                  p
+                     | When it binds, ACTH stimulates the receptor to change shape. This conformational change causes the G protein complex to
+                     | become activated and uncoupled.
+               td
+                  img(src='images/g-protein_active.jpg', alt='G Protein', width='368', height='308')
+            tr
+               td
+                  p
+                     | When the G protein stimulates it, Adenylate cyclase converts ATP (the cell&apos;s energy molecule) into cAMP (a signaling molecule).
+               td
+                  img(src='images/cAMP_active.jpg', alt='cAMP', width='368', height='308')
+            tr
+               td
+                  p
+                     | cAMP activates Protein Kinase A. When cAMP binds to the regulatory subunits of Protein Kinase A (PKA), a conformational change occurs
+                     | that releases its catalytic subunits (only one is shown here for simplicity).
+               td
+                  img(src='images/PKA_active.jpg', alt='PKA Active', width='266', height='272')
+            tr
+               td
+                  p
+                     | The activated PKA subunit then travels to the mitochondrial membrane and switches on (phosphorylates) a protein called StAR
+                     | (steroidogenic acute regulatory protein) There are actually several interacting proteins that work together to perform this
+                     | specialized function in the adrenal cortex. Only one protein is shown here for simplicity. See
+                     a(href='http://www.jci.org/articles/view/16771/figure/2' target='_blank') &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;http://www.jci.org/articles/view/16771/figure/2
+                     |    for a diagram of the entire protein complex.
+               td
+                  img(src='images/PKA_toMito.jpg', alt='PKA to mitochondrian', width='368', height='308')
+            tr
+               td
+                  p
+                     | StAR is responsible for mediating the complicated task of importing cholesterol into the mitochondrion.
+               td
+                  img(src='images/mito_cholest.jpg', alt='cholesterol to mitochondrian', width='368', height='308')
+            tr
+               td
+                  p
+                     | Once inside, enzymes perform two chemical conversions, turning the cholesterol into 17-OH-pregnenolone.
+                  p
+                     | 17-OH-pregnenolone is then sent to the endoplasmic reticulum, where it is converted into 11-deoxycortisol.
+               td
+                  img(src='images/conv1.jpg', alt='conversions', width='368', height='308')
+            tr
+               td
+                  p
+                     | This compound is then sent back to the mitochondria where it is finally transformed into the final product, cortisol.
+               td
+                  img(src='images/conv2.jpg', alt='conversions', width='368', height='308')
+            tr
+               td
+                  p Cortisol freely crosses the membrane barrier and enters the bloodstream.
+               td
+                  img(src='images/conv3.jpg', alt='conversions', width='368', height='308')

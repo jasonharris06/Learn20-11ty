@@ -1,0 +1,29 @@
+extends /shared/layout
+block content
+   +pageTitle()(teach="genscience")
+   .lg-section
+      .uk-container.uk-container-center
+         .uk-grid
+            .uk-width-medium-1-2
+               h2 How Genetic Science Works
+               .lg-index-items
+                  +index-item('Transgenic Mice','learn more','transgenic','images/transgenic.jpg')
+                     p Learn how &quot;Knockout&quot; gene-targeting technology has revolutionized biomedical research.
+                  +index-item('Measuring Gene Expression','learn more','expression','images/expression.jpg')
+                     p Examine how differences in gene expression correlate with drug response or disease risk.
+                  +index-item('Genetics in Utah','learn more','utah','images/utah.jpg')
+                     p Learn about the impact the State of Utah has had on genetic research.
+            .uk-width-medium-1-2
+               h2 Genetics and Society
+               .lg-index-items
+                  +index-item('Genetically Modified Foods','explore','gmfoods','images/gmfoods.jpg')
+                     p See what makes a food &quot;genetically modified,&quot; and learn about its benefits and risks.
+                  +index-item('Pharming for Farmaceuticals','learn more','pharming','images/pharming.jpg')
+                     p Read about transgenic technology, and learn how it can be used to create animals that make drugs in their milk.
+                  +index-item('Can DNA Demand a Verdict?','learn more','forensics','images/forensics.jpg')
+                     p DNA profiling can help investigators solve crimes.
+                  +index-item('Using Genetic Tools to Fight Viral Outbreaks','learn more','viruses','images/viruses.jpg')
+                     p Genetic science can help scientists learn about and fight new viruses.
+                  +index-item('Conservation Genetics','learn more','conservation','images/conservation.jpg')
+                     p Scientists can use genetic information to help endangered species.
+   

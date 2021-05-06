@@ -1,0 +1,43 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   +pod('')
+      +oldFlash('Old Genes, New Tricks','the future')
+                        
+   +pod('')
+      .uk-width-medium-6-10
+         p
+            | For decades, scientists have understood that the process of evolution involves changes in protein-coding genes:
+            | mutations can change a gene&apos;s instructions, making it code for a protein with a slightly different function.
+         p
+            | The modification of gene switches provides another avenue for evolutionary change. Often just a few base pairs long,
+            | switches regulate the timing, location, and level of protein expressionwithout affecting the protein itself.
+            | Small changes to switches can produce dramatic outcomes.
+      .uk-width-medium-4-10
+         +miscon("The evolution of new physical structures requires new genes.","Evolution frequently reuses old genes in new ways.")
+      //- +flash('RegulatorySwitches.swf', 920, 585, true)
+   +references
+      .uk-width-1-1
+         a.togglelink References
+         .togglediv
+            p Doebley, J., Stec, A. &amp; Hubbard, L. (1997).
+               a(href='http://www.nature.com/nature/journal/v386/n6624/abs/386485a0.html') The evolution of apical dominance in maize.
+               em Nature, 386, 485-488 (subscription required).
+            p Gompel, N., Prud&apos;homme, B., Wittkopp, P. J., Kassner, V. A. &amp; Carroll, S. B. (2005).
+               a(href='http://www.nature.com/nature/journal/v433/n7025/full/nature03235.html')
+                  | Chance caught on the wing: cis-regulatory evolution and the origin of pigment patterns in Drosophila.
+               em Nature, 433, 481-487 (subscription required).
+            p Prud&apos;homme, B., Gompel, N., Rokas, A., Kassner, V. A., Williams, T. M., Yeh, S., True, J. R. &amp; Carroll, S. B. (2006).
+               a(href='http://www.nature.com/nature/journal/v440/n7087/abs/nature04597.html')
+                  | Repeated morphological evolution through cis-regulatory changes in a pleiotropic gene.
+               em Nature, 440, 1050-1053 (subscription required).
+            p Shapiro, M. D., Bell, M. A. &amp; Kingsley, D. M. (2006).
+               a(href='http://www.pnas.org/content/103/37/13753.uk-width-1-1') Parallel genetic origins of pelvic reduction in vertebrates.
+               em Proceedings of the National Academy of Sciences USA, 103
+               |  (37), 13753-13758 (subscription required).
+            p Lanctot, C., Moreau, A., Chamberland, M., Tremblay, M. L. &amp; Drouin, J. (1999).
+               a(href='http://dev.biologists.org/content/126/9/1805.long') Hindlimb patterning and mandible development require the Ptx1 gene.
+               em Development, 126, 1805-1810 (subscription required).
+   +bottom-menu("",'hhmi')
+   script(src="/ruffle/ruffle.js")

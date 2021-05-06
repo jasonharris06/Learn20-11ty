@@ -1,0 +1,331 @@
+extends /shared/layout
+
+block content
+    +pageTitle
+    +pod('What is Hemophilia?')
+        .uk-width-medium-4-10
+            p
+                | Hemophilia is a genetic disorder that affects blood clotting. The two most common forms are hemophilia A and hemophilia B. 
+                | Though the cause is different, the main effect is the same: people with hemophilia bleed for longer than normal.
+            p
+                | Untreated hemophilia is dangerous. It puts people at risk for spontaneous bleeding that is hard to stop. Bleeding may be 
+                | internal, for example in the spaces around joints. Repeated bleeding episodes in joints can cause permanent damage.
+            p
+                | There is no cure for hemophilia, but there are effective treatments. When hemophilia is detected early and treated properly, 
+                | the long-term health outcomes are usually very good. Because of this, babies born in families with a history of hemophilia 
+                | are usually given a genetic test. It is also possible to have hemophilia without a family history. Blood tests are used to 
+                | diagnose hemophilia in newborns and people who develop bleeding problems later in life.
+            +well
+                p
+                    | It is estimated that more than 400,000 people worldwide have hemophilia. It affects people from all ethnic backgrounds. 
+                    | Hemophilia A occurs in 1 in 5,000 male births, and is about four times more common than hemophilia B. Hemophilia very 
+                    | rarely affects females.
+
+        .uk-width-medium-6-10
+            iframe.uk-responsive-width(width="1920" height="1080" src="https://www.youtube.com/embed/3tbVne85vNE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                    
+    +pod('Affected Gene')
+        .uk-width-medium-6-10
+            img(src='images/hemophilia-gene.jpg' alt='hemophilia gene comparison')
+            figure
+                p
+                    | Factor VIII and factor IX proteins are just two of 13 coagulation factors in the blood that form a signaling chain. A cut 
+                    | or other injury starts the signal, and it ends with the formation of a solid blood clot, which seals off the injury and 
+                    | stops bleeding. If either factor VIII or factor IX are not working, blood cannot clot properly.
+
+        .uk-width-medium-4-10
+            p
+                | Hemophilia A and B are caused by changes in two different genes. For hemophilia A, the affected gene is F8. For hemophilia B it 
+                | is F9. Both genes are on the X chromosome. The F8 gene codes for a protein called coagulation factor VIII (eight). F9 codes for 
+                | the protein coagulation factor IX (nine).
+            p
+                | Factor VIII, factor IX, and other coagulation factor proteins circulate in the blood. After an injury, coagulation factors in the 
+                | area become active. Through a chain reaction, the factors work together to send a signal. In the final step, the signal brings 
+                | proteins and blood cells together to form a blood clot. The blood clot seals off the injury. Bleeding stops, and healing begins.
+            P
+                | Since the F8 and F9 genes are on the X chromosome, hemophilia is inherited differently in males and females (see Inheritance, below). 
+                | As long as a person has one working copy (allele) of the F8 and F9 genes, their blood usually clots normally.
+            p
+                | People with hemophilia have only non-working alleles of either the F8 or the F9 genes meaning they are missing either coagulation 
+                | factor VIII or IX protein. Some have less working protein than usual, and others have none at all. Either way, the coagulation 
+                | factor signal chain is cut off or weakened. A blood clot cannot form. Without a blood clot, the injury is not sealed off and the 
+                | person continues bleeding.
+            +well
+                p
+                    strong Rare Bleeding Disorders
+                    br
+                    | Bleeding disorders can also come from missing other coagulation factors, including I, II, V, VII, X, XI, XII, and XIII. These 
+                    | conditions are very rare, mainly because the genes that code for these proteins are on autosomes, not sex chromosomes. While it 
+                    | takes just one affected allele to cause hemophilia A or B (at least for males), it generally takes two to cause deficiencies 
+                    | in other coagulation factors. These disorders affect males and females equally. To learn more, visit the 
+                    a(href='https://www.hemophilia.org/Bleeding-Disorders/Types-of-Bleeding-Disorders/Other-Factor-Deficiencies') National Hemophilia Foundation
+    
+    +pod('Inheritance')
+        .uk-width-medium-6-10
+            p
+                | Because the F8 and F9 genes are on the X chromosome, they are inherited differently in males and females. X and Y are the sex 
+                | chromosomes, and they specify whether a person is male (usually XY) or female (XX). Boys inherit their single X 
+                | chromosome from their mothers. Girls inherit one X chromosome from each parent.
+            p
+                | From the perspective of having the genetic disorder, hemophilia follows an X-linked recessive inheritance pattern. Boys with 
+                | hemophilia inherit a single, non-working allele of either F8 or F9 from their mothers. For a girl to have hemophilia, it takes 
+                | two non-working alleles. She inherits one from her mother (who is usually a carrier). A girl's second non-working allele comes 
+                | from her father, who either has the condition, or has sperm that carry a new mutation.
+            p
+                | From the perspective of the protein, coagulation factor is made from each allele a person has. The protein circulates in blood. In 
+                | boys, blood contains protein made from their single allele of F8 or F9. In girls, two forms of protein circulate in the blood&mdash;
+                | one made from each allele.
+            +well
+                p
+                    strong The "Royal Disease"
+                    br
+                    | Hemophilia was once prevalent in European royal families. British Queen Victoria carried hemophilia B, which she passed on to 
+                    | several of her children. Since royalty often married royalty, the disorder was passed to the Spanish, Russian, and German 
+                    | royal families.
+
+        .uk-width-medium-4-10
+            img(src='images/hemophilia-inheritance.jpg' alt='hemophilia inheritance')
+            figure
+                p
+                    | Girls and boys inherit different numbers of X chromosomes. Girls get one X chromosome from each parent. Boys get their single X 
+                    | chromosome from their mother.
+    
+    +pod('Normal Protein Expression')
+        .uk-width-medium-6-10
+            img(src='images/hemophilia-expression.jpg' alt='hemophilia expression')
+            figure
+                p
+                    | Factor VIII and IX proteins are made mostly in the liver. They circulate in blood tissue in an active form until they are activated 
+                    | by an injury.
+
+        .uk-width-medium-4-10
+            p
+                | The F8 and F9 genes are activated primarily in liver cells. F8 is also switched on in cells of the spleen and lymph nodes.
+            p
+                | Liver cells make much of the body's factor VIII protein and nearly all its factor IX protein. But the proteins do not normally stay 
+                | in the liver. They are released into another tissue&mdash;the blood. Coagulation factors in the blood circulate through all the 
+                | body's tissues and organs. If an injury occures, coagulation factors are always nearby. They become active and help to trigger the 
+                | formation of a blood clot.
+    
+    +pod('Protein Function and Interactions')
+            .uk-width-medium-4-10
+                p
+                    | When a blood vessel is damaged, molecules spill into the bloodstream that are not normally there. This starts a very complex 
+                    | chain of events. First a few nearby platelets (a type of blood cell) are activated, and they stick to the injury. At the same 
+                    | time, the blood vessel damage triggers a chain reaction in the blood. Coagulation factor proteins sequentially activate one 
+                    | another (though not in numerical order).
+                p
+                    | The coagulation factor signal quickly leads to a blood clot. The signal triggers two processes. First, it activates a protein 
+                    | called fibrin. Many strands of fibrin come together into a meshwork at the site of the injury. Second, it activates more platelets. 
+                    | They get sticky and enter the fibrin meshwork, forming a plug-like blood clot.
+                p
+                    | Most coagulation factors, including factor IX protein, are enzymes. Enzymes make specific chemical changes to target molecules, 
+                    | which are often other proteins. Factor VIII protein is a partner to factor IX. It brings factor IX and its target protein together, 
+                    | so that factor IX can activate its target. The target is released, and it continues the chain. This interaction takes place near 
+                    | the injury, on the outside membrane of platelets. This close interaction is why missing either factor VIII or factor IX protein 
+                    | has the same effect.
+                p
+                    | Without factor VIII or IX, fibrin molecules are scarce and slow to form. Far fewer platelets become sticky, and without fibrin 
+                    | they do not stay in place very well. A person bleeds longer than usual, and bleeding can restart after stopping. Blood is lost 
+                    | or it pools in tissues and organs. Too much blood loss causes weakness and confusion. Excess blood in and around organs 
+                    | interferes with their normal function. Pooled blood is especially harmful around joints, where it can do permanent damage. An 
+                    | injured blood vessel needs to be sealed off to heal.
+
+            .uk-width-medium-6-10
+                img(src='images/hemophilia-protein.jpg' alt='hemophilia protein')
+                p
+                +well
+                    p
+                        | To learn more about the blood coagulation cascade&mdash;plus a good general description of the causes, diagnosis, and treatment 
+                        | of hemophilia&mdash;watch  
+                        a(href='https://www.youtube.com/watch?v=nkC1vZaUpxs ') this video
+                        |  from Osmosis.org
+
+    +pod('Symptoms and Features of Hemophilia')
+        .uk-width-medium-6-10
+            img(src='images/hemophilia-symptoms.jpg' alt='hemophilia symptoms')
+            figure
+                p
+                    | In people with poorly treated hemophilia, a bump or jolt can cause bleeding from blood vessels in the joints. Blood builds up inside 
+                    | the membrane that surrounds the joint, causing swelling and pain. Over time, repeated bleeding incidents can damage the joint.
+
+        .uk-width-medium-4-10
+            p
+                | The effects of hemophilia are different from person to person, both in severity and timing of symptoms. Often, symptoms first appear 
+                | around the time a child learns to walk, as they start to get more bumps and bruises. Effects can first appear later in life as well, 
+                | especially for mild forms.
+            p
+                | The main feature of hemphilia is abnormal bleeding. It can range from mild to severe. Much of the variability depends on the specific 
+                | gene variant(s) (allele(s)) a person has.
+            ul
+                li
+                    strong Mild:
+                    |  Affected people may bleed longer than normal after a serious injury or surgery. Some people with mild hemophilia never notice effects.
+                li
+                    strong Moderate:
+                    |  Affected people bleed longer than normal after a cut, accident, or surgery. They may occasionally bleed spontaneously, but usually 
+                    | there is a known cause.
+                li
+                    strong Severe:
+                    |  Affected people may have many large bruises or bleed excessively for no clear reason. They may also have frequent, hard-to-stop 
+                    | nosebleeds.
+            p
+                | Internal bleeding is a big concern for everyone with hemophilia, especially since it might not be noticed right away. In addition to 
+                | causing blood loss, internal bleeding affects muscles and joints. In the short-term, it causes swelling, stiffness, and pain. Over 
+                | time, it can damage tissue and lead to chronic joint disease with arthritis-like symptoms. If too much bleeding occurs in the brain, 
+                | it can cause seizures, paralysis, and even death.
+    
+    +pod('Alleles, Protein, and Variability')
+        .uk-width-medium-4-10
+            p
+                | Men with hemophilia have one non-working allele of either the F8 or F9 gene. Affected women usually have two non-working alleles of F8,
+                | or two non-working alleles of F9. It is rare, but carrier women who have one healthy allele and one non-working allele, can have mild 
+                | symptoms.
+            p
+                | There are many alleles of F8 and F9 that cause hemophilia. Each disorder-causing allele codes for a protein that works a little differently, 
+                | which is why the effects vary from person to person.
+            p
+                | Hemophilia is often diagnosed with a blood test that measures how well a person's factor VIII or IX proteins work. Blood is collected, and 
+                | clot formation is measured over time. The measure is called "clotting activity." Low clotting activity means a person's coagulation factor 
+                | proteins don't work well. They have severe hemophilia. The graph shows the clotting activity in blood from people with different types of 
+                | hemophilia: mild, moderate, and severe.
+            p
+                | Alleles that cause mild hemophilia usually code for a protein that has some activity. For example, some F8 alleles code for factor VIII 
+                | protein that still interacts with factor IX, but more weakly than usual. Some F9 alleles code for factor IX protein that can still activate 
+                | its target, it just works slowly.
+            p
+                | Other alleles cause severe hemophilia. They code for proteins with very little or no activity. For example, sometimes only a small piece of 
+                | the protein is made, or the protein does not make it into the blood.
+            p
+                | Depending on which allele a person has, they may respond more or less well to some treatments. For example, people with alleles that cause 
+                | severe hemophilia are more likely to have a dangerous immune response to injected protein therapies. Their immune system recognizes the healthy 
+                | injected protein as different from their own and attacks it. An immune response is more common in people missing factor VIII than in people 
+                | missing factor IX.
+           
+        .uk-width-medium-6-10
+            img(src='images/hemophilia-graph.jpg')
+            figure
+                p
+                    | A test can measure how well a person's coagulation factors work. Different alleles code for proteins that work more or less well, and thus 
+                    | have different clotting activities. Even people with the same allele often have different clotting activity, and an individual's 
+                    | clotting activity can change over time.            
+    
+    +pod('Other Factors')
+        .uk-width-medium-4-10
+            img(src='images/hemophilia-other.jpg' alt='hemophilia other')
+            figure
+                p
+                    | People with hemophilia tend to be healthier when they have quick access to good medical care.
+
+        .uk-width-medium-6-10
+            p
+                | Even when people have the same allele of F8 or F9, they do not always experience the same effects. Symptoms range from very mild to severe. They may 
+                | appear at any time from childhood through adulthood. Some people never have symptoms.
+            p
+                | Variation in genes other than F8 and F9 change the effects of hemophilia. For example, variations in genes influence blood vessel strength and 
+                | elasticity. Strong, stetchy blood vessels are less likely to spontaneously tear and cause internal bleeding. Variations in genes that influence 
+                | the number of platelets a person makes influence how well blood clots. Many gene variations influence the immune system. These variations affect 
+                | how well hemophilia treatments work. Hemophilia is often treated with injection of healthy coagulation factor protein. Natural variation in immune 
+                | system genes changes how well the body tolerates the injected protein.
+            p
+                | Environmental factors also account for differences between individuals. In some poeple, physical activity can help, since strong muscles and a healthy 
+                | weight protect joints. Living near or being able to travel to a treatment center that specializes in bleeding disorders can also make a difference. 
+                | It helps people start treatment early, stick to a schedule, and stay healthier.
+            +well
+                p
+                    | Some women show symptoms of hemophilia, even when they have just one affected allele. This can happen when they carry a severely affected allele, 
+                    | in which case they produce less clotting factor than usual. It can also be related to X inactivation. At a certain stage in a girl's embryonic 
+                    | development, one X chromosome is inactivated in each of her cells. If the X chromosome with the healthy allele is inactivated in most of her liver 
+                    | cells, she may not be able to make enough coagulation factor protein. In many carrier women, symptoms appear only under certain conditions, like 
+                    | after childbirth. Usually, their symptoms are mild. 
+    
+    +pod('Treating and Managing Hemophilia')
+        .uk-width-medium-6-10
+            p
+                | Hemophilia treatments have come a long way in terms of effectiveness and safety. The first treatment&mdash;direct blood trasfusion&mdash;was developed 
+                | around 1840. However, even as recently as the 1950s, many people with hemophilia died in childhood. In the 1970s, people learned to concentrate coagulation 
+                | factors from healthy blood donors. This treatment became safer when we learned to screen for and kill potential viruses (like HIV or hepatitis C) in donor 
+                | blood. Now coagulation factor proteins can be made without donor blood, making them even safer.
+            p
+                | Modern approaches to managing hemophilia are aimed at preventing bleeding before it starts. This reduces joint damage and other effects from bleeding. 
+                | Most approaches use a combination of medical and lifestyle behaviors. Today, many people with hemophilia lead long and healthy lives. For some, at-home 
+                | treatment is even an option.
+            p
+                | Medical Approaches
+                ul
+                    li
+                        | Regular injection of the missing coagulation factor proteins can prevent bleeding before it starts. This preventative treatment is called 
+                        | prophylaxis. In severe cases, it is done 2-3 times per week.
+                    li
+                        | Injection of coagulation factors can also treat bleeding when it happens.
+                    li
+                        | Treatment with hormones can stimulate the body to make more coagulation factors.
+                    li
+                        | Injected therapeutic antibodies can do the job of missing factor VIII, especially in those whoe immune systems attack the injected factor 
+                        | VIII protein.
+                    li
+                        | Medicated creams or sprays can be applied to a cut to promote blood clotting.
+                    li
+                        | Staying up to date on vaccinations like hepatitis A and B can help prevent blood-borne infections.
+                    li
+                        | Physical therapy can ease pain from joint damage.
+                    li
+                        | Carefully planned dental procedures and surgeries can help prevent or prepare for bleeding.
+                    li
+                        | Awareness of how other medications affect blood can be helpful, since many can thin blood or prevent clotting.
+                    li
+                        | Hemophilia is a potential target for 
+                        a(href='https://learn.genetics.utah.edu/content/genetherapy/') gene therapy
+                        | . There are a number of studies and clinical trials in progress.
+            p
+                | Lifestyle Behaviors
+                ul
+                    li
+                        | Physical activity can protect joints by strengthening muscles and maintaining weight.
+                    li
+                        | Low-impact activities like swimming or biking can ease stress on joints.
+                    li
+                        | Good dental hygiene can prevent procedures that may cause bleeding.
+                    li
+                        | Learning basic first aid, like elevating and applying pressure to wounds, can help stop bleeding.
+                    li
+                        | Educating friends, family, teachers, and coaches about hemophilia can help them know what to do in case of an accident.
+                    li
+                        | A medical alert bracelet can tell emergency response teams a coagulation factor injection may be needed.
+                    li
+                        | Discussions with a counselor can help patients (or parents) improve mental health, especially when it comes to balancing physical activity with staying safe.
+
+
+        .uk-width-medium-4-10
+            figure
+                img(src='images/hiker.jpg' alt='hiker receiving injection')
+                p
+                    | People with hemophilia can give themselves injections of coagulation factors&mdash;even when they travel to remote places.
+            
+            +well
+                h3 More Information
+                ul
+                    li
+                        a(href='https://www.hemophilia.org/') National Hemophilia Foundation
+                    li
+                        a(href='https://www.wfh.org/en/page.aspx?pid=492') World Federation of Hemophilia
+                    li
+                        a(href='https://hemaware.org/') HEMAWARE
+                    li
+                        a(href='https://www.hemophiliafed.org/news-stories/2015/08/living-with-hemophilia-a-young-adults-perspective/') This article
+                        |  from the Hemophilia Federation of America describes what it is like to live with hemophilia.
+
+
+    +references
+        p
+            | Fijnvandraat, K., Cnossen, M. H., Leebeek, F. W., &amp; Peters, M. (2012). Diagnosis and management of haemophilia. British Medical Journal, 344, e2707.
+        p
+            | Pan, J., Dinh, T. T., Rajaraman, A., Lee, M., Scholz, A., Czupalla, C. J., &amp; Jiang, H. (2016). Patterns of expression of factor VIII and von Willebrand factor by endothelial cell subsets in vivo. Blood, 128, 104-109.
+        p
+            | Peyvandi, F., Garagiola, I., &amp; Young, G. (2016). The past and future of haemophilia: diagnosis, treatments, and its complications. The Lancet 388, 187-197.
+        p
+            | Rallapalli, P. M., Kemball‐Cook, G., Tuddenham, E. G., Gomez, K., &amp; Perkins, S. J. (2013). An interactive mutation database for human coagulation factor IX provides novel insights into the phenotypes and genetics of hemophilia B. Journal of Thrombosis and Haemostasis, 11(7), 1329-1340.
+        p
+            | Rallapalli, P. M., Kemball-Cook, G., Tuddenham, E. G., Gomez, K., &amp; Perkins, S. J. (2013). Factor IX mutation database.
+        p
+            | Rallapalli, P., Kemball-Cook, G., Tuddenham, E., Gomez, K., &amp; Perkins, S. (2016). Factor VIII variant database.

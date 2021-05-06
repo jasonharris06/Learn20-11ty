@@ -1,0 +1,26 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   +pod('')
+      .uk-width-small-1-4
+         ul.uk-tab.uk-tab-left(data-uk-tab, data-uk-switcher="{connect:'#dna', animation: 'slide-right'}")
+            li <a href="">1 – Dr. Vivian Lee</a>
+            li <a href="">2 - Senator Orrin Hatch</a>
+            li <a href="">3 – Dr. Lynn Jorde</a>
+            li <a href="">4 – Emily Scalley</a>
+            li <a href="">5 – Dr. Dean Li</a>
+            li <a href="">6 – Dr. Catherine Ball</a>
+            li <a href="">7 – Dr. Martin Reese</a>
+            li <a href="">8 – Dr. Will Dere</a>
+
+      .uk-width-small-3-4.uk-text-center
+         ul#dna.uk-switcher
+            li: iframe.lg-responsive(src='//player.vimeo.com/video/168852844', width='640', height='480', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+            li: iframe.lg-responsive(src='//player.vimeo.com/video/168852677', width='640', height='480', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+            li: iframe.lg-responsive(src='//player.vimeo.com/video/168852846', width='640', height='480', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+            li: iframe.lg-responsive(src='//player.vimeo.com/video/168852675', width='640', height='480', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+            li: iframe.lg-responsive(src='//player.vimeo.com/video/168852676', width='640', height='480', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+            li: iframe.lg-responsive(src='//player.vimeo.com/video/168852845', width='640', height='480', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+            li: iframe.lg-responsive(src='//player.vimeo.com/video/168852672', width='640', height='480', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+            li: iframe.lg-responsive(src='//player.vimeo.com/video/168852673', width='640', height='480', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)

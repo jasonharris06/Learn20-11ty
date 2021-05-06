@@ -1,0 +1,229 @@
+extends /shared/layout
+block content
+    +pageTitle
+    +pod('What is Cystic Fibrosis?')
+        .uk-width-medium-4-10
+            p
+                | Cystic fibrosis (CF) is a genetic disorder that alters salt and water balance in the body. It affects multiple organs, 
+                | especially the lungs and digestive system.
+            p
+                | More than 10 million people in the US carry a cystic fibrosis-causing gene variation, but most do not know it. Early 
+                | diagnosis leads to better outcomes, so cystic fibrosis is tested for in most newborn genetic screening panels. Starting 
+                | treatment right away can prevent lung damage and improve nutrition, leading to a much longer and healthier life.
+            +well
+                p
+                    | People of many ethnic backgrounds have cystic fibrosis, though it is most common in people of European ancestry. In 
+                    | the United States, about 2,500 babies are born with cystic fibrosis each year, and 1 in 28 people are carriers.
+        .uk-width-medium-6-10
+            +vimeo('193244159')
+
+    +pod('Affected Gene')
+        .uk-width-medium-6-10
+            img(src="images/cf-gene.jpg")
+            figure
+                p
+                    | CFTR protein helps to maintain a healthy mucus layer along the insides of certain organs. Without functioning CFTR 
+                    | protein, the mucus becomes thick and sticky.
+
+        .uk-width-medium-4-10
+            p
+                | The affected gene in cystic fibrosis is CFTR (cystic fibrosis transmembrane conductance regulator) on chromosome 7. The gene 
+                | codes for the CFTR protein. People with cystic fibrosis have two non-working copies (alleles) of the gene, and so they make 
+                | little or no CFTR protein.
+            p
+                | The job of the CFTR protein is to help maintain a healthy balance of salt and water. It does this by moving chloride ions 
+                | (from sodium chloride, or salt) out of cells. This process is key for maintaining a healthy layer of mucus inside the lungs,
+                | digestive tract, and other organs.
+            p
+                | People with cystic fibrosis inherit two non-working copies (alleles) of the CFTR gene: one from each parent. Without CFTR
+                |  protein, cells are not able to balance salt and water properly. The normally thin fluids that line certain organs become 
+                | thick and sticky, leading to the effects of cystic fibrosis.
+    
+    +pod('Inheritance')
+        .uk-width-medium-4-10
+            p
+                | From the perspective of having the genetic disorder, cystic fibrosis follows an autosomal recessive inheritance pattern. It 
+                | takes two non-working alleles to cause the disorder.
+            p
+                | From the perspective of the CFTR protein that is made, a person's two CFTR alleles are co-dominant. Protein is made from both.
+        
+        .uk-width-medium-6-10
+            img(src="images/autosomal-inheritance.jpg")
+    
+    +pod('Normal Protein Expression')
+        .uk-width-medium-4-10
+            p
+                | The CFTR gene is switched off in most cell types. It is on at high levels in cells that line the lungs and digestive organs, 
+                | especially the gallbladder, pancreas, and intestines. The CFTR gene is on at lower levels in cells that line certain reproductive 
+                | organs in both men and women, and in sweat glands in the skin.
+            p
+                | The cells that make CFTR protein form a barrier between the body and the spaces inside of it. In the lungs, that space holds air; 
+                | in the pancreas and gallbladder, it holds digestive juices; in the small intestine, it holds food that is being digested.
+            p
+                | CFTR protein sits in the plasma membrane of the cells that make it, making a connection between the inside of the cells and the 
+                | outside space.
+
+        .uk-width-medium-6-10
+            img(src='images/CF-protein.jpg')
+
+    +pod('Protein Function')
+        .uk-width-medium-6-10
+            img(src='images/CF-function.jpg')
+
+        .uk-width-medium-4-10
+            p
+                | Healthy CFTR protein moves chloride ions between the inside of a cell and the space that surrounds it. Its job is to keep salt and 
+                | water in balance. This balance is key to maintaining a healthy layer of mucus between the body and the outside world.
+            P
+                | In the lungs, the mucus traps debris&mdash;things like dust, bacteria, and viruses. Cilia wave back and forth to carry this debris 
+                | back out of the body. In the pancreas and gallbladder, the right balance of salt and water helps to keep digestive juices flowing. 
+                | CFTR protein also maintains water and salt balances in the intestines and liver. In sweat glands, it helps re-absorb salt from sweat.
+            p
+                | When CFTR protein is not working, salt and water get out of balance. The mucus layer in the lungs is thick and sticky. Chloride is not 
+                | re-absorbed from sweat, making it extra salty. Mucus can clog the pancreas, making digestive juices too thick to flow. Thickened fluids 
+                | similarly affect other organs, keeping them from working properly. All of these effects lead to the symptoms and features of cystic fibrosis.
+
+    +pod('Symptoms and Features of Cystic Fibrosis')
+        .uk-width-medium-6-10
+            p
+                | The effects of cystic fibrosis can be very different from person to person. They fall on a spectrum from mild to severe, and they may 
+                | involve one or more organ systems.
+            p
+                | Babies born with cystic fibrosis are often small. Most have thick mucus in their lungs, which causes coughing and wheezing from an early 
+                | age. Because the mucus traps bacteria, people with cystic fibrosis tend to get one lung infection after another. These can lead to pneumonia 
+                | or bronchitis. Before treatments were available, these infections were often deadly.
+            p
+                | In the digestive system, thickened mucus can prevent the absorption of nutrients from food. Without treatment, this can cause low weight, 
+                | slow growth, and greasy stools.
+            p
+                | Problems with salt regulation in sweat can lead to dehydration and salt imbalances. Extra-salty skin is a defining characteristic of cystic 
+                | fibrosis. In fact, a sweat test&mdash;which measures chloride levels on the skin&mdash;is the most common way that cystic fibrosis is 
+                | diagnosed.
+            +well
+                p
+                    | Most men with cystic fibrosis have low fertility. Additionally, there are alleles of the CFTR gene that affect male fertility but do 
+                    | not cause cystic fibrosis.
+
+        .uk-width-medium-4-10
+            figure
+                img(src='images/iStock_000005526471_Full.jpg' alt='person coughing')
+                p
+                    | People with cystic fibrosis are vulnerable to respiratory infections.
+
+    +pod('Alleles, Protein, and Variability')
+        .uk-width-medium-6-10
+            img(src='images/all alleles.jpg')
+            figure
+                p
+                    | A sweat test measures the amount of chloride on a person's skin. Alleles are often grouped into categories based on how well the proteins 
+                    | they code for work; each category includes multiple alleles. CFTR proteins that can move some chloride tend to lead to milder symptoms of 
+                    | cystic fibrosis. Those that cannot move chloride at all usually cause more severe symptoms.
+        
+        .uk-width-medium-4-10
+            p
+                | People with cystic fibrosis have two non-working CFTR alleles. They may have two copies of the same allele, or two different alleles. There 
+                | are many CFTR alleles that can cause cystic fibrosis, and each on codes for a protein that works a little differently. These differences in 
+                | protein function are part of why the effects of cystic fibrosis vary.
+            p
+                | Some CFTR alleles produce no CFTR protein at all. Some code for CFTR protein that never makes it to the cell membrane, so it cannot do its 
+                | job. Other alleles code for CFTR proteins that make it to the cell membrane, but they do not work very well.
+            p
+                | The amount of CFTR protein a person makes, and how well that protein can move chloride, affects a person's symptoms. People who cannot move 
+                | chloride at all tend to be sicker, while people who can move some chloride tend to have fewer symptoms. Those who have just one healthy CFTR 
+                | allele have near-normal levels of CFTR protein function, and no symptoms of cystic fibrosis.
+            p
+                | The graph shows the amount of chloride on the skin of people with different CFTR allele combinations. This test can estimate how well a person's 
+                | CFTR proteins are working. Yet it does not always predict how severe their symptoms will be. The protein may work better or worse in other tissues. 
+                | Other factors come into play as well (see below).
+            +well
+                p
+                    | About 70% of peple with cystic fibrosis have a CFTR allele known as F508del. This allele codes for a protein that never makes it to the 
+                    | cell's plasma membrane. It cannot do its job at all.
+    
+    +pod('Other Factors')
+        .uk-width-medium-6-10
+            p
+                | Between every two people with cystic fibrosis, there are differences in the details. Even when they have the same CFTR alleles. Often symptoms 
+                | appear before a baby is one year old, but not always. People vary in which organs are affected, and in severity of symptoms. Symptoms change 
+                | over time&mdash;most often getting worse with age. However, this can happen at different rates.
+            p
+                | Some of these differences are due to variations in other genes. For example, there are other genes that affect how the lungs or the pancreas 
+                | work. Many genes influence how well the immune system responds to infection. Still other genes are needed to repair damaged tissue. Variations 
+                | in these genes may make cystic fibrosis better or worse.
+            p
+                | Environmental factors can also cause differences in symptoms. Air pollution and cigarette smoke can make lung symptoms worse. Good nutrition 
+                | and access to healthcare can help people stay healthier.
+
+        .uk-width-medium-4-10
+            figure
+                img(src='images/air-pollution.jpg' alt='photo')
+                p
+                    | Air pollution can irritate the lungs, making symptoms of cystic fibrosis worse.
+    
+    +pod('Treating and Managing Cystic Fibrosis')
+        .uk-width-6-10
+            p
+                | To manage their health, people with cystic fibrosis use a combination of lifestyle behaviors and medical approaches. Most of these approaches 
+                | are targeted at preventing lung damage and improving nutrition. And it's the newer medical treatments that are making the biggest difference. 
+                | Though treatment routines can take hours each day, they are helping people with cystic fibrosis live longer and healthier lives. Fifty years 
+                | ago, babies in the US diagnosed with cystic fibrosis rarely survived to adulthood. Today, individuals can expect to live into their late 40s 
+                | and beyond.
+            p
+                | Cystic fibrosis is a potential target for 
+                a(href='https://learn.genetics.utah.edu/content/genetherapy/') gene therapy
+                | , in which a modified virus delivers a working copy of the CFTR gene into the patient's cells. Cystic fibrosis is also a candidate for 
+                a(href='https://www.nhlbi.nih.gov/news/2018/gene-editing-cystic-fibrosis-qa-peter-glazer-phd-md') gene editing
+                | , where the disease-causing change in the CFTR gene is corrected.
+            p
+                | Lifestyle Behaviors:
+                ul
+                    li Engaging in physical activities keeps lungs healthy.
+                    li Eating a nutritious diet with plenty of calories helps with growth and maintaining weight.
+                    li Limiting tobacco smoke and air pollution improves lung health.
+                    li Avoiding mold and mildew prevents fungal lung infections.
+                    li Hand-washing helps prevent contagious infections.
+                    li Limiting alcohol lessens effects in the liver.
+                    li Getting plenty of rest helps the body fight infections.
+            p
+                | Medical Approaches:
+                ul
+                    li Chest therapy uses a vibrating vest or repeated clapping on the back to free up mucus in the lungs.
+                    li Inhaled antibiotics kill bacteria that cause lung infections.
+                    li Bronchodilators (also used to treat asthma) keep airways open.
+                    li Inhaling DNase, an enzyme, helps to thin sticky mucus.
+                    li Vaccination can prevent some lung infections.
+                    li Supplemental oxygen can compensate for decreased lung function.
+                    li Lung transplants can replace badly damaged lungs.
+                    li Pancreatic enzyme replacement therapy can help digest food and improve nutrition.
+                    li Thereatyping (matching medications with specific CFTR alleles) can treat the underlying cause of disease in some people. For example, 
+                        | the drug Ivacaftor interacts directly with one version of non-working CFTR protein, altering it so that it can transport chloride. 
+                        | This method of therapy is expanding.
+            
+        .uk-width-4-10
+            figure
+                img(src='images/nebulizer.jpg' alt='child/teen using therapy vest and nebulizer')
+                p
+                    | A child with cystic fibrosis uses a nebulizer to deliver medication to her lungs.
+            +well
+                h3 More Information:
+                ul
+                    li
+                        a(href='https://www.cff.org/') Cystic Fibrosis Foundation
+                    li
+                        a(href='https://healthcare.utah.edu/pulmonaryservices/services/cysticfibrosis/') Unversity of Utah Health Sciences Center
+                    li
+                        a(href='http://www.yourlunghealth.org/lung_disease/cystic_fibrosis/index.cfm') Your Lung Health                     
+        
+    +references
+        p
+            | Brennan, M. L., &amp; Schrijver, I. (2016). Cystic fibrosis: a review of associated phenotypes, use of molecular diagnostic approaches, genetic characteristics, progress, and dilemmas. The Journal of Molecular Diagnostics, 18(1), 3-14.
+        p
+            | Derichs, N. (2013). Targeting a genetic defect: cystic fibrosis transmembrane conductance regulator modulators in cystic fibrosis. European Respiratory Review, 22(127), 58-65.
+        p
+            | Lazarin, G. A., Haque, I. S., Nazareth, S., Iori, K., Patterson, A. S., Jacobson, J. L., ... &amp; Srinivasan, B. S. (2013). An empirical estimate of carrier frequencies for 400+ causal Mendelian variants: results from an ethnically diverse clinical sample of 23,453 individuals. Genetics in Medicine, 15(3), 178.
+        p
+            | Marson, F. A. (2018). Disease-modifying genetic factors in cystic fibrosis. Current opinion in pulmonary medicine, 24(3), 296-308.
+        p
+            | Travaglini, K. J., &amp; Krasnow, M. A. (2018). Profile of an unknown airway cell.
+        p
+            | Welsh, M. J., &amp; Smith, A. E. (1993). Molecular mechanisms of CFTR chloride channel dysfunction in cystic fibrosis. Cell, 73(7), 1251-1254.

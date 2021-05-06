@@ -1,0 +1,30 @@
+extends /shared/layout
+block content
+   +pageTitle
+                        
+   +pod('')
+      .uk-width-1-1.uk-text-center
+         +ruffle(891,704,'./mouseparty.swf','ruffle-container','891px')
+         br
+         p
+            b
+               | Like Mouse Party? Try 
+               a(href='../methmouse/') Meth Mouse
+               | .
+         p
+            | Note:
+            br
+            br
+            | The simplified mechanisms of drug action presented here are just a small part of the story. When drugs enter 
+            | the body they elicit very complex effects in many different regions of the brain. Often they interact with many 
+            | different types of neurotransmitters and may bind with a variety of receptor types in a variety of different locations. 
+            | For example, THC in marijuana can bind with cannabinoid receptors located on the presynaptic and/or postsynaptic cell in a synapse. 
+            br
+            br
+            | Where applicable, this presentation primarily depicts how drugs interact with dopamine neurotransmitters because this website
+            | focuses on the brain&apos;s reward pathway. Mouse Party is designed to provide a small glimpse into the chemical interactions at the
+            | synaptic level that cause the drug user to feel &apos;high&apos;.
+
+   script(src="/ruffle/ruffle.js")
+         
+   

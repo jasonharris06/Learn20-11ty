@@ -1,0 +1,9 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   +pod('')
+      .uk-width-1-1
+         iframe(src='variation.html', seamless='seamless', style='width: 900px; height: 600px; margin: 0 auto; border: none;')
+      .uk-width-medium-6-10
+         +bottom-menu("",'hhmi')

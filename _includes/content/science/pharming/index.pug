@@ -1,0 +1,157 @@
+extends /shared/layout
+block content
+   +pageTitle
+                        
+   script(src='/Scripts/AC_RunActiveContent.js', type='text/javascript')
+
+   +pod('')
+      .uk-width-medium-6-10
+         p
+            | Pharming: it&apos;s not just another misspelled word! The term &quot;pharming&quot; comes from a
+            | combination of the words &quot;farming&quot; and &quot;pharmaceuticals.&quot; It&apos;s a melding of the most
+            | basic methods of agriculture with the most advanced biotechnology.
+
+         p
+            | Gene pharming is a technology that scientists use to alter an animal&apos;s own DNA, or to
+            | splice in new DNA, called a transgene, from another species. In pharming, these
+            | genetically modified (transgenic) animals are used mostly to make human proteins that
+            | have medicinal value. The protein encoded by the transgene is secreted into the animal&apos;s
+            | milk, eggs, or blood, and then collected and purified. Livestock such as cattle, sheep,
+            | goats, chickens, rabbits, and pigs have already been modified in this way to produce
+            | several useful proteins and drugs.
+
+      .uk-width-medium-4-10
+         +well
+            p
+               | Find out how to
+               a(href='../transgenic/')  make a transgenic mouse
+               | .
+   +pod("How do you change an animal's DNA?")
+      .uk-width-medium-6-10
+         p
+            | Producing a whole transgenic animal with the same new piece of DNA incorporated into every single
+            | cell may seem like a difficult feat. In reality, it is quite simple, because every animal begins as
+            | one cell that divides over and over again to form the entire organism. To ensure that every
+            | cell in an animal contains the same new piece of DNA, all a scientist needs to do is add the DNA to
+            | a single cell (such as a fertilized egg) before it starts dividing. This can be done by microinjecting
+            | the cell with a very fine needle. (View the animation to see how this is done.)
+         p
+            | The injected embryos are allowed to develop for a short time and then tested to see which ones have the transgene. The ones that
+            | do are put in a surrogate mother&apos;s uterus to develop. A successful transgenic animal will produce the
+            | desired protein without damaging its own health and pass this ability on to its offspring. Additional
+            | animals can be produced either through conventional breeding or by
+            a(href='/content/cloning/')  cloning
+            | .
+
+      .uk-width-medium-4-10
+         div
+            script(type='text/javascript').
+               AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','352',
+               'height','440','src','transgenic','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','transgenic' ); //end AC code
+            noscript
+               p Javascript is required to view this content.
+   +pod('What types of products are made using transgenic technology?')
+      .uk-width-medium-6-10
+         p
+            | The first successful products of genetic engineering were protein drugs like insulin, which
+            | is used to treat diabetes, and growth hormone. These proteins are made in large quantities by
+            | genetically engineered bacteria or yeast which are grown in large &quot;bioreactors.&quot; Some drugs are also made in
+            | transgenic plants, such as tobacco.
+
+         p
+            | Some human proteins that are used as drugs require biological modifications that only the
+            | cells of mammals, such as cows, goats, and sheep, can provide. For these drugs, production in
+            | transgenic animals is a good option. Using farm animals for drug production has many advantages
+            | because they are reproducible, have flexible production, and are easily maintained. They also
+            | have a great delivery method: just milk them.
+
+         h3 Just milk them?
+
+         p
+            | Sure. It&apos;s just about the best way to recover large quantities of a protein encoded by a
+            | transgene. More importantly, since the mammary gland and milk are not part of the main life
+            | support systems, there is little risk of harm to the animal that&apos;s making the
+            | transgenic protein.
+
+         p
+            | The challenge is to get the new transgene expressed only in the milk. To do this, scientists
+            | join the gene for the protein drug with a DNA switch, called a promoter, which is only turned on in
+            | the mammary gland. So the transgene, while present in every cell of the animal, is only active
+            | where the milk is made. Some examples of drugs currently being tested are antithrombin III
+            | and tissue plasminogen activator to treat blood clots, erythropoietin for anemia, blood clotting
+            | factors VIII and IX for hemophilia, and alpha-1-antitrypsin for emphysema and cystic fibrosis.
+
+         h3 Spiderman II: Spidergoat?
+
+         p
+            | It sounds like a sequel to &quot;Spiderman: The Movie&quot;&mdash;Spidergoat! OK, maybe not, but it is a very
+            | interesting application of transgenics. The dragline form of spider silk is regarded as the strongest
+            | material known; it&apos;s 5 times stronger than steel and twice as strong as Kevlar. People have actually
+            | tried starting &quot;spider farms&quot; to harvest silk, but the spiders are too aggressive and territorial
+            | to live close together. They also like to eat each other.
+
+         p
+            | Though the genes for dragline silk were isolated several years ago, attempts to produce it in
+            | bacterial and mammalian cell culture have failed. When the genes were put into a goat and expressed
+            | in the mammary glands, however, the animal produced silk proteins in its milk that could be spun into
+            | a fine thread with all the properties of spider-made silk. This material can be used to make lighter, stronger
+            | bulletproof vests, thinner thread for surgery, and stitches or indestructible clothes.
+
+      .uk-width-medium-4-10
+         figure
+            img(src='images/milking.jpg', height='365', width='352', alt='milking machinery')
+            p
+   +pod("What's all the phuss?")
+      .uk-width-medium-6-10
+         p
+            | Like other forms of animal research, pharming has the potential to cause suffering and harm to the
+            | animals involved. Because of the somewhat random nature of gene insertion of microinjected DNA, genes
+            | are not always expressed in the appropriate tissues or at appropriate levels. It is possible that a
+            | transgene would be activated in places other than the mammary gland, and the resulting protein may be
+            | toxic to the animal.
+         | &#x9;&#x9;
+         p
+            | In addition, there is a chance that the transgene DNA, when microinjected into the fertilized egg,
+            | may insert itself into the genome in a way that disrupts the animal&apos;s normal gene function. If this
+            | happens, it can lead to birth defects, poor brain development, cancer, arthritis, diabetes, or other
+            | health problems.
+
+         p
+            | To try to avoid these random effects, scientists are using viruses to target where in the genome the genes are
+            | inserted. A type of virus called a &quot;retrovirus&quot; inserts its genetic material into the cell&apos;s genome
+            | in a predictable manner, targeting specific sequences that typically don&apos;t interrupt the normal
+            | functions of a cell.
+         | &#x9;&#x9;
+         p
+            | The retrovirus approach leads to fewer problems with development, but it has raised concerns about
+            | the possibility of new viruses being created and spread when the transgene&apos;s viral components combine
+            | with naturally occurring viruses that may be present in an organism. An alternative to retroviruses
+            | is to develop more powerful screening methods to tell if the transgene is functioning properly in the
+            | embryo before it is implanted in the uterus.
+         | &#x9;&#x9;
+         p
+            | Another concern is the number of failed attempts to get an acceptable transgenic animal. Typically,
+            | only 1% of injected eggs will result in a live birth containing the transgene, and not all of those
+            | animals will express the transgene in an acceptable manner. For many, the high cost, in both animal
+            | lives and money, of making a transgenic animal is not worth the possible benefits. However, others
+            | feel that the cost is justified by the human lives that could be saved by the drugs produced.
+         | &#x9;&#x9;
+         p
+            | Some of the proteins currently being pharmed can be collected from donated human blood. However,
+            | the need is far greater than the supply, and there is also the possibility of unwanted contamination
+            | in any human blood-derived products. Each case needs to be weighed separately to compare the benefits
+            | and risks. For example, in the Spidergoat case, the spider silk would replace many common petroleum-based
+            | products that require toxic chemicals to produce.
+
+      .uk-width-medium-4-10
+         div
+            script(type='text/javascript').
+               AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0',
+               'width','352','height','282','src','virus','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','virus' ); //end AC code
+            noscript
+               p Javascript is required to view this content.
+      .clear
+      .uk-width-medium-6-10
+         +bottom-menu("",'erdc')
+      
+      script(src="/ruffle/ruffle.js")

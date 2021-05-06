@@ -1,0 +1,133 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-1-1
+         p 
+            a(href="#experts" data-uk-modal) Learn more about the experts
+            |  in the videos on this page.
+            //- Pop-up for experts information
+            #experts.uk-modal
+               .uk-modal-dialog
+                  a.uk-modal-close.uk-close
+                  h2 Experts
+                  p
+
+                  img(src='garland.png' alt='garland' width='50%')
+                  p
+                     strong Eric Garland, PhD, LCSW
+                     br
+                     i Associate Dean for Research, College of Social Work
+                     br
+                     i Distinguished Endowed Chair and Professor of Social Work
+                     br
+                     i Director, Center on Mindfulness and Integrative Health Intervention Development
+                     br
+                     i University of Utah
+                  p Dr. Garland’s work focuses on developing novel therapies to address treatment for addiction, stress, chronic pain, and other conditions.
+                  p
+
+                  img(src='gordon.png' alt='gordon' width='50%')
+                  p
+                     strong Adam Gordon, MD, MPH
+                     br
+                     i Professor of Medicine and Psychiatry, University of Utah School of Medicine
+                     br
+                     i Chief of Addiction Medicine, Salt Lake City VA Healthcare System
+                     br
+                     i Director, PARCKA (Program for Addiction Research, Clinical Care, Knowledge, and Advocacy)
+                  p Dr. Gordon is a physician and researcher with over 20 years of experience helping patients access high-quality care for their addictive disorders. 
+                  p
+
+                  img(src='hanson.png' alt='hanson' width='50%')
+                  p
+                     strong Glen Hanson, DDS, PhD
+                     br
+                     i Professor of Pharmacology
+                     br
+                     i Vice Dean, School of Dentistry
+                     br
+                     i University of Utah
+                  p Dr. Hanson is an expert on how drugs affect areas of the brain involved in addiction, goal seeking, and compulsive behavior. From 2001 to 2003 he served as interim director of the National Institute of Drug Abuse.
+
+   +pod('Recovery is Possible')
+      .uk-width-medium-4-10
+         p
+            | In the past, society viewed drug addiction as a moral flaw. Popular "treatments" involved imprisonment, sentencing to asylums, and church-guided prayer. Not surprisingly, these methods did not work.
+         p
+            | Today we understand that substance use disorder is a brain disease, and it needs to be treated as a medical condition. Modern treatments are based on scientific research. Treatment is tailored to the individual and typically involves a combination of drug and behavioral therapy. These methods are effective: about 90% of those who enter evidence-based treatment get better. 
+      .uk-width-medium-6-10
+         //- Video 1: People do recover
+         +vimeo(345268755)  
+         figure
+            p Dr. Adam Gordon describes how effective treatments for substance use disorder can change people’s lives.
+   
+
+   +pod('Detoxification Does Not Have to Be Painful')
+  
+      .uk-width-medium-6-10
+         //- Video 2: Using Medication to wean off drugs; dependence vs. addiction
+         +vimeo(345268777)
+         figure
+            p First, Dr. Glen Hanson explains the benefits of using methadone to treat heroin addiction. Then, Dr. Adam Gordon talks about how people can be dependent on a drug without having substance use disorder. Yet, to stop using the drug, people with dependence also go through the potentially painful process of withdrawal.
+
+      .uk-width-medium-4-10
+         p
+            | With some drugs, suddenly stopping use can cause painful withdrawal symptoms. In the past, suffering through withdrawal was considered a necessary part of rehabilitation. It was the punishment for having the moral flaw of addiction.
+         p
+            | Today we know better. While stopping use of the drug is a necessary step in recovery, patients should not have to suffer. In fact, allowing painful withdrawal gets in the way of recovery. Patients know that going back to the drug will instantly make their symptoms go away.
+         p
+            | To prevent withdrawal symptoms, patients can take medication that has a similar effect to the drug, then gradually decrease the dose over time. Examples of this type of treatment include methadone for opioid treatment, nicotine replacement therapies (patch, gum) and bupropion for nicotine treatment, and benzodiazepine and anti-seizure drugs for barbiturate treatment. These medications stabilize the brain, allowing the patient to focus on other aspects of recovery.
+
+   +pod('Treatment is Available Outside of Treatment Centers')
+      .uk-width-medium-4-10
+         p
+            | Dr. Adam Gordon at the University of Utah trains medical providers in best practices for treating opioid use disorder. Many patients prefer to receive treatment at their regular doctor’s office. They may already have a trusting relationship with their doctor, or they may want to avoid the stigma associated with treatment centers. 
+         p
+            | Regardless of where you receive treatment, your privacy will be protected. Dr. Gordon encourages anyone who thinks they may have substance abuse disorder to talk to their doctor.
+
+      .uk-width-medium-6-10
+         +vimeo(345268702)
+      //- Video 3: Many primary care doctors treat addiction, and patient privacy is protected
+               
+
+   +pod('The Controversy of Maintenance and Medication')
+      .uk-width-medium-6-10
+         +vimeo(345268720)
+      //- Video 4: Medication helps people recover from substance use disorder
+     
+
+      .uk-width-medium-4-10
+         p
+            | Some people believe that using medication to treat drug addiction does not lead to recovery because it’s just replacing one drug with another. But this is not the case.
+         p
+            | Medications for treating substance use disorder are controversial because they are drugs that often have potent, intoxicating effects. And because patients often require continuous treatment, sometimes over many years.
+         p
+            | Yet these medications stop cravings and allow the patient to begin functioning normally again. They prevent relapse and buy crucial time for cognitive and behavioral therapies to begin working.
+         p
+            | Maintenance and medication also protect the patient from the dangers that often come with illegal drugs. They don’t have to risk arrest, physical harm, exposure to diseases, or the shame that comes with buying drugs illegally. When you don’t have these problems to worry about, you can focus on other aspects of recovery.
+
+   +pod('Behavioral Therapy Can Improve Recovery Outcomes')
+      .uk-width-medium-4-10
+         p
+            | Some people can recover from substance abuse disorder just using medication. But often times successful treatment includes counseling, support groups, and other forms of therapy. Patients may need help learning new ways of thinking and behaving. Many patients also must find new ways to address the problems that led them to abuse substances in the first place—issues like trauma, chronic pain, or mental illness.
+         p
+            | Cognitive and behavior therapy can include such things as learning to:
+         ul
+            li Talk openly about personal experiences
+            li Manage problems without turning to drugs
+            li Identify and correct problem behavior
+            li Identify and correct harmful patterns of thinking
+            li Recognize drug cravings
+            li Identify and manage high-risk situations
+            li Establish motivation to change
+            li Improve personal relationships
+            li Develop refusal skills
+            li Manage time more efficiently
+
+      //- Video 5: Mindfulness
+      .uk-width-medium-6-10
+      
+         +vimeo(345268728)         
+         figure
+            p Dr. Eric Garland has developed a therapy called MORE (mindfulness oriented recovery enhancement). This approach shows promise for helping patients with chronic pain and opioid misuse, among other conditions. 

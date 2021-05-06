@@ -1,0 +1,9 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')  
+      +vimeo('265422833')
+
+   block append endscripts
+      script(src="/lib/slideshow.js")
+      script(src="/lib/slideshow-fx.js")

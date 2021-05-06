@@ -1,0 +1,32 @@
+extends /shared/layout
+block breadcrumb
+  .lg-section
+    .uk-container.uk-container-center
+      ul.uk-breadcrumb.lg-breadcrumb
+        li 
+          a(href='/') Home
+        li
+          span.uk-active #{page.title}
+block content
+  +pod(error.message + '<br>' + error.status)
+    .uk-width-1-1
+      p.uk-animation-shake.
+        The page you are trying to reach could not be found.
+      p.uk-animation-shake.
+        Check the URL and make sure it is correct.
+      p.uk-animation-shake Or go to our 
+        a(href="/") home page 
+        | and navigate to where you want to go.
+      p.
+        Some popular choices are:
+      ul
+        li
+          a(href="/content/basics/") Basic Genetics
+        li
+          a(href="/content/cells/insideacell/") Inside a Cell
+        li
+          a(href="/content/cells/scale/") Cell Size and Scale
+        li
+          a(href="/content/addiction/mouse/") Mouse Party
+        li
+          a(href="/content/pigeons/pigeonetics/") Pigeonetics

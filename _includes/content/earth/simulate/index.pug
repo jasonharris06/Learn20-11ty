@@ -1,0 +1,180 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   link(rel='stylesheet', href='royalslider/royalslider.css')
+   |     
+   link(rel='stylesheet', href='royalslider/skins/default/rs-default.css')
+   |     
+   script(src='royalslider/jquery-1.8.3.min.js')
+   |     
+   script(src='royalslider/jquery.royalslider.min.js')
+   |  
+
+   style.
+      .royalSlider {
+      width: 100%;
+      height: 600px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 13px; font-weight: 400; line-height: 1.5em;
+      }
+      .royalSlider,
+      .royalSlider .rsOverflow,
+      .royalSlider .rsSlide,
+      .royalSlider .rsVideoFrameHolder,
+      .royalSlider .rsThumbs {
+      background: #fff;
+      color: #000;
+      }
+      .royalSlider .rsTmb {
+      font-family: "Open Sans", sans-serif;
+      font-size: 12px; font-weight: 400; line-height: 1.2em;
+      }
+      .royalSlider .rsSlide,
+      .royalSlider .rsOverflow {
+      background: #fff;
+      }
+      .royalSlider h3 {
+      margin: 12px 0 8px 20px;
+      }
+      .royalSlider p {
+      margin: 0 20px 18px 20px;
+      }
+      .royalSlider img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      }
+
+   +pod('')
+      .uk-width-medium-4-10
+         p
+            | If you want to see how a model&rsquo;s behavior changes over time, you can run a simulation. Simulations can be done using models in real life, but often computers are used to run simulations in the virtual world.
+         |        
+         p
+            | Computer simulations can be very simple, running on a single computer in a matter of seconds. Or they can be very complex, requiring a room full of networked computers working over several days.
+      |     
+      .uk-width-medium-6-10
+         figure
+            img(src='images/crash-pong.jpg', alt='Crash Test Dummy / Pong')      
+            p
+               | (left) The tennis simulator Pong was developed in 1972. (right) Crash tests are an example of real-life simulation models.
+   +pod('Powerful Computers Can Run Complex Simulations')
+      |     
+      .uk-width-medium-6-10
+         figure
+            img.lg-no-shadow(src='images/blue_horizon.jpg', alt='Blue Horizon')
+      |     
+      .uk-width-medium-4-10
+         p
+            | This image shows the visible matter inside a cube representing 248 million light-years. This was the world&apos;s most complex scientific simulation of the evolution of the universe ever performed. Michael Norman, a cosmologist from the University of California, San Diego, ran the simulation for more than 130 hours on 512 processors of the Blue Horizon supercomputer.
+         |             
+         p
+            | This simulation required tracking more than a billion particles and performing calculations in more than a billion cells for more than 3 billion years of simulated time.
+         |             
+         p.uk-text-small Image Credit: Michael Norman, Pascal Paschos, UCSD; Robert Harkness, SDSC
+   +pod('Computer Simulations Record Change Over Time')
+      |     
+      .uk-width-medium-4-10
+         p
+            | Like individual pages in a flip book, computer simulations preserve snapshots of calculations over time. Each snapshot shows the output of a calculation using a slightly different input value. By putting the snapshots together, the simulation presents an animated view of change over time.
+      |     
+      .uk-width-medium-6-10
+         figure
+            img.lg-no-shadow(src='images/flipbook.jpg', alt='Flipbook', width='488', height='314')
+   +pod('Mathematical Models: the Backbone of Simulations')
+      |     
+      .uk-width-medium-6-10
+         p
+            | Mathematical models provide the equations and rules that define a process. Because mathematical models use numerical inputs and outputs, they allow you to see very specifically how a system evolves over time.
+         p
+            | When you gather the numerical values as the simulation progresses, you are left with a comprehensive set of data showing values at every step of the process.
+      |     
+      .uk-width-medium-4-10
+         .royalSlider.rsDefault
+            // Slide 1
+            div
+               img.rsImg(src='images/sim_gallery_intro.jpg', alt='Sim Gallery', data-rsw='352', data-rsh='292')
+               |     
+               p
+            // Slide 2
+            div
+               img.rsImg(src='images/early_earth.png', data-rsvideo='https://vimeo.com/113958896')
+               |     
+               p
+                  | Astrophysicists have created simulations of Earth&rsquo;s first 500 years of existence. 
+                  br
+                  |         Video credit: Simone Marchi
+            // Slide 3
+            div
+               img.rsImg(src='images/water_simulation.jpg', alt='Water Simulation')
+               |     
+               p
+                  | Water resource managers use simulations to analyze how changes in water use impact supply. 
+                  br
+                  |             Image credit: GoldSim
+            // Slide 4
+            div
+               img.rsImg(src='images/avalanche.png', data-rsvideo='https://vimeo.com/113960195')
+               |     
+               p
+                  | Geographers have used computer simulations to characterize the motion of an avalanche as it flows down a mountain. 
+                  br
+                  | Video credit: WSL Institute for Snow and Avalanche Research SLF
+            // Slide 5
+            div
+               img.rsImg(src='images/factory.png', data-rsvideo='https://vimeo.com/113969333')
+               |     
+               p
+                  | In factories, computer simulations can help optimize processes used to manufacture products.  
+                  br
+                  | Image credit: Siemens PLM, DELMIA, S-Pridis, ICAM Technologies
+            // Slide 6
+            div
+               img.rsImg(src='images/finance_simulation.jpg', alt='Finanace Simulation', data-rsw='352', data-rsh='292')
+               |     
+               p
+                  | Financial analysts use computer simulations to see how changes in the global economy could impact financial assets. 
+                  br
+                  |          Image credit: Goddard Consulting
+            // Slide 7
+            div
+               img.rsImg(src='images/climate.png', data-rsvideo='https://vimeo.com/113970058')
+               |     
+               p
+                  | Climate scientists simulate Earth&rsquo;s atmosphere to study how global fossil fuel emissions influence air temperature over time.&ZeroWidthSpace; 
+                  br
+                  | Image credit: Met Office Hadley Centre
+            // Slide 8
+            div
+               img.rsImg(src='images/epidemic.png', data-rsvideo='https://vimeo.com/113964003')
+               |     
+               p
+                  | When threat of a disease epidemic arises, health researchers use computer simulations to track the disease and predict how it might spread. 
+                  br
+                  |          Video credit: http://www.gleamviz.org/simulator/
+            // Slide 9
+            div
+               img.rsImg(src='images/traffic.png', data-rsvideo='https://vimeo.com/113974040')
+               |     
+               p
+                  | Engineers create computer simulations to test traffic flow on proposed roads. 
+                  br
+                  |          Image credit: The Traffic Group, Inc., Braidwood Associates, SimWalk, City of Salem
+   
+   script.
+      jQuery(document).ready(function($) {
+      $(".royalSlider").royalSlider({
+      autoHeight: true,
+      arrowsNav: true,
+      fadeinLoadedSlide: true,
+      controlNavigationSpacing: 0,
+      imageScaleMode: 'none',
+      imageAlignCenter:false,
+      loop: true,
+      numImagesToPreload: 9,
+      keyboardNavEnabled: true,
+      usePreloader: false
+      });
+      });
+   

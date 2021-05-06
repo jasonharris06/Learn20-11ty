@@ -1,0 +1,207 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   //- Flash message
+   +pod('')
+      .uk-width-1-1
+         p.uk-text-center
+                  strong
+                     small
+                        | This page has content that requires the Flash Player plug-in. Unfortunately, we can't do anything on our end to improve your experience with Flash. If you are using an iOS device, please note that these devices do not support Flash. We are slowly working on replacing our popular Flash-based content and will update this content as it becomes available. If you would like to help us as we work on these updates, please consider donating 
+                        a(href="https://umarket.utah.edu/ugive/index.php?gift_id=2787&special=%20Learn.Genetics%20website%20MD11595-40165") here
+                        | .
+                        
+   +pod('')
+      .uk-width-1-1
+         p
+            | In
+            a(href='../pi/') Pedigree Investigator
+            | , you can follow a family with nicotine addiction and identify a gene that may increase their susceptibility. Below, you can learn more about the candidate gene approach used in that activity.
+         |
+         p
+            | Searching among all of our 21,000 or so genes for a few that are involved in a complex disease can
+            | be quite costly and time consuming. That is why researchers often use what they and others know about
+            | a disease to narrow their focus down to a smaller number of &quot;candidate genes.&quot;
+      |
+      .uk-width-medium-4-10
+         p
+   +pod('Where Do We Begin?')
+      |
+      .uk-width-medium-4-10
+         object#WhatWeKnow(classid='clsid:d27cdb6e-ae6d-11cf-96b8-444553540000', width='375', height='200', align='middle')
+            param(name='movie', value='WhatWeKnow.swf')
+            | 
+            param(name='quality', value='high')
+            | 
+            param(name='bgcolor', value='#ffffff')
+            | 
+            param(name='play', value='true')
+            | 
+            param(name='loop', value='true')
+            | 
+            param(name='wmode', value='window')
+            | 
+            param(name='scale', value='showall')
+            | 
+            param(name='menu', value='true')
+            | 
+            param(name='devicefont', value='false')
+            | 
+            param(name='salign', value='')
+            | 
+            param(name='allowScriptAccess', value='sameDomain')
+            //if !IE
+            | 
+            object(type='application/x-shockwave-flash', data='WhatWeKnow.swf', width='375', height='200')
+               param(name='movie', value='WhatWeKnow.swf')
+               | 
+               param(name='quality', value='high')
+               | 
+               param(name='bgcolor', value='#ffffff')
+               | 
+               param(name='play', value='true')
+               | 
+               param(name='loop', value='true')
+               | 
+               param(name='wmode', value='window')
+               | 
+               param(name='scale', value='showall')
+               | 
+               param(name='menu', value='true')
+               | 
+               param(name='devicefont', value='false')
+               | 
+               param(name='salign', value='')
+               | 
+               param(name='allowScriptAccess', value='sameDomain')
+               // <![endif]
+               a(href='http://www.adobe.com/go/getflash')
+                  img(src='http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif', alt='Get Adobe Flash player')
+               //if !IE
+            // <![endif]
+      |
+      .uk-width-medium-5-10(style='margin-left: 30px;')
+         p
+            | A smart way to start narrowing down the number of candidate genes is by looking at what we already know.
+            | As part of the scientific process, researchers routinely publish their discoveries in journals.
+            | Other researchers read the journal articles and then build on these past discoveries.
+   +pod('Putting Our Heads Together')
+      |
+      .uk-width-medium-6-10
+         p
+            | Researchers often work together, or collaborate, to tackle a problem from several angles at once.
+            | This allows researchers to pool their areas of expertise to everyone&apos;s benefit.
+         |
+         p
+            | In order to determine whether a gene is associated with nicotine addiction, a protein biochemist
+            | might need to collaborate with both a clinician and a DNA analyst.
+         |
+         p
+            strong Protein biochemist
+            |  - Studies protein structure and function, and how proteins interact with one another.
+            |     Provides a basic understanding of the problem.
+         |         
+         p
+            strong Clinician
+            |  - Treats patients for nicotine addiction. Provides access to patients and collects DNA
+            | samples from nicotine addicts and their family members.
+         |         
+         p
+            strong DNA Analyst
+            |  - Can rapidly analyze the DNA sequence from hundreds of blood samples. Analyzes and compares
+            | the DNA sequences of nicotine addicts and non-addicts.
+      |     
+      .uk-width-medium-4-10
+         figure
+            img.lg-no-shadow(src='images/scientists.jpg', width='352', height='450', alt='scientists')
+            p Photos courtesy Centers for Disease Control.
+   +pod('How Genes Affect Behavior')
+      |
+      .uk-width-medium-4-10(style='margin-left: 0px;')
+         object#Behavior(classid='clsid:d27cdb6e-ae6d-11cf-96b8-444553540000', width='375', height='170', align='middle')
+            param(name='movie', value='Behavior.swf')
+            | 
+            param(name='quality', value='high')
+            | 
+            param(name='bgcolor', value='#ffffff')
+            | 
+            param(name='play', value='true')
+            | 
+            param(name='loop', value='true')
+            | 
+            param(name='wmode', value='window')
+            | 
+            param(name='scale', value='showall')
+            | 
+            param(name='menu', value='true')
+            | 
+            param(name='devicefont', value='false')
+            | 
+            param(name='salign', value='')
+            | 
+            param(name='allowScriptAccess', value='sameDomain')
+            //if !IE
+            | 
+            object(type='application/x-shockwave-flash', data='Behavior.swf', width='375', height='170')
+               param(name='movie', value='Behavior.swf')
+               | 
+               param(name='quality', value='high')
+               | 
+               param(name='bgcolor', value='#ffffff')
+               | 
+               param(name='play', value='true')
+               | 
+               param(name='loop', value='true')
+               | 
+               param(name='wmode', value='window')
+               | 
+               param(name='scale', value='showall')
+               | 
+               param(name='menu', value='true')
+               | 
+               param(name='devicefont', value='false')
+               | 
+               param(name='salign', value='')
+               | 
+               param(name='allowScriptAccess', value='sameDomain')
+               // <![endif]
+               a(href='http://www.adobe.com/go/getflash')
+                  img(src='http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif', alt='Get Adobe Flash player')
+               //if !IE
+            // <![endif]
+      |
+      .uk-width-medium-5-10(style='margin-left: 40px;')
+         p
+            | How can a difference in someone&apos;s gene sequence cause a behavioral change, like being more
+            | susceptible to nicotine addiction?
+   +pod('Why isn&apos;t it 100%?')
+      |
+      .uk-width-medium-6-10
+         p
+            | After collecting DNA from several people with nicotine addiction and ADHD, you analyze their
+            | CHRNA4 gene sequences to determine which alleles they carry.
+         p
+            | Upon comparing addicts with ADHD to non-addicts and addicts without ADHD, you determine that allele 2
+            | seems to be significantly more common in addicts with ADHD.
+         p
+            | However, not everyone who has allele 2 is addicted, and not everyone who is addicted has allele 2. Clearly,
+            | there is more to this story than this one gene. Such is the nature of complex diseases. Nicotine addiction
+            | and ADHD are complex diseases affected by many genes and environmental factors.
+      |
+      .uk-width-medium-4-10(style='margin-top: 20px;')
+         figure
+            img.lg-no-shadow(src='images/table.jpg', alt='table')
+   +pod('Future Directions')
+      |
+      .uk-width-medium-6-10
+         p
+            | CHRNA4 is just one gene that may play a role in addiction. The next step is to identify other
+            | addiction genes and determine how they work together to produce this complex disease.
+         |     
+         p
+            | Understanding these genes&apos; roles and how they interact can help lead to more effective treatments
+            | for nicotine addiction.
+      |
+      .uk-width-medium-4-10
+         p

@@ -1,0 +1,38 @@
+extends /shared/layout
+
+block content
+  +pageTitle
+  .lg-section
+    .uk-container.uk-container-center
+      .uk-grid
+        .uk-width-medium-5-10
+          h2 THE WORLD OF FLOWERS
+          .lg-index-items
+            +index-item('An Introduction to Flowers', 'video', 'intro', 'images/intro.jpg')
+              p 90 percent of all plants are flowering plants. This video discusses their evolution and diversity. 
+            +index-item('Why Flowering Plants Need Pollinators', 'learn more', 'pollinators', 'images/pollinators.jpg')
+              p Flower anatomy, the benefit of cross pollination and why flowering plants are so diverse.
+            +index-item('Flower Traits Slideshow', 'explore', 'flowertraits', 'images/flowertraits.jpg')
+              p Examples of how some flower traits favor certain types of pollinators. 
+            +index-item('Match Flower and Pollinator', 'explore', 'matchflowerpollinator', 'images/match.jpg')
+              p Matching game that covers how some flower traits favor certain types of pollinators. 
+            +index-item('Why Flowering Plants are So Diverse', 'learn more', 'diversity', 'images/diversity.jpg')
+              p How the flower and pollinator relationships explored above have led to reproduction isolation. 
+        .uk-width-medium-5-10
+          h2 FLOWER SCIENCE
+          .lg-index-items
+            +index-item('The Chemistry of Flower Color', 'learn more', 'chemistry', 'images/chemistry.jpg')
+              p Flowers come in a dazzling rainbow of colors. Learn the chemistry behind this phenomenon.
+            +index-item('The Genetics of Flower Color', 'learn more', 'genetics', 'images/genetics.jpg')
+              p How flower color is controlled through gene expression and regulation.
+            +index-item('Monkeyflower Mixer', 'explore', 'mixer', 'images/dial.jpg')
+              p Try your hand at using genetics to control flower color.
+            +index-item('Algorithms of Beauty: The Mathematical Genetics of Flower Pattern', 'learn more', 'algorithms', 'images/algorithms.jpg')
+              p How plant patterns are derived from mathematical equations.
+            +index-item('Biofortification', 'learn more', 'biofortification', 'images/biofortification.jpg')
+              p Scientists can manipulate carotenoids in crop plants which could have societal benefits.
+            +index-item('Wet Lab: Separate Carotinoids and Anthrocyanin from Flowers', 'pdf', 'Separate_Pigments_Lab.pdf', 'images/lab.jpg')
+              p A simple paper chromatography lab.
+
+        .uk-width-medium-5-10
+          +bottom-menu('https://learn.genetics.utah.edu/content/flowers/credits/','nsf-flowers')

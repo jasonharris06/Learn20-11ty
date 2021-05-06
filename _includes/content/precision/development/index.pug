@@ -1,0 +1,28 @@
+extends /shared/layout
+block content
+   +pageTitle
+   | @section headlate{
+   script(src='/Scripts/AC_RunActiveContent.js', type='text/javascript')
+   | }
+   +pod('')
+      .uk-width-medium-6-10
+         p
+            | Today&apos;s drug discovery process is time consuming and tremendously expensive. It can take up to 20 years and cost
+            | millions of dollars to bring a single drug candidate to market.
+            | Pharmacogenetic approaches might make this process more efficient by enabling researchers to:
+         ul
+            li Identify genes involved in disease
+            |  
+            li
+               | Understand how genes and the proteins they produce are affected by various drug candidates
+            li Effectively choose target populations to be used in clinical trials 
+      |    
+      .uk-width-medium-4-10
+         img(src='images/drug_conveyor.gif', alt='Prescription drugs on a conveyor belt', width='112', height='122')
+   |    
+   |   
+   div(style='width:891px; margin-left:auto; margin-right: auto; padding-bottom: 30px;')
+      script(type='text/javascript').
+         AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','891','height','297','src','DrugDevelopment','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','DrugDevelopment' ); //end AC code
+      noscript JavaScript is required to view this content.
+   

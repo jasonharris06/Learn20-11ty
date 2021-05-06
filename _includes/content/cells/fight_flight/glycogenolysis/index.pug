@@ -1,0 +1,61 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-1-1
+         p
+            | During the fight-or-flight response the body needs to get energy to the muscles in the form of sugar molecules. One of the methods
+            | used to do that is called glycogenolysis. During this process, glucose subunits are removed from long branching glycogen molecules.
+            | In the movie, we show this occurring in liver cells, but it can also occur in the muscle cells themselves.
+         table
+            tr
+               td
+                  p
+                     | Epinephrine binds to an Alpha-1 Adrenergic Receptor* on liver cell initiating glycogenolysis.
+                  p
+                     em
+                        | *NOTE: The Alpha-1 adrenergic receptor also causes contraction of the arrector pili muscles raising hairs on the skin&apos;s surface
+                        | (seen later in the movie) when epinephrine binds to it
+                     | .
+               td
+                  img(src='images/epi_dock.jpg', alt='Epinephrine', width='368', height='308')
+            tr
+               td
+                  p
+                     | When it binds, epinephrine stimulates the receptor to change shape. This conformational change causes the
+                     | G protein complex to become activated and uncoupled.
+               td
+                  img(src='images/g-prot2.jpg', alt='G Protein', width='368', height='308')
+            tr
+               td
+                  p
+                     | IP3 binds to receptors on the surface of the endoplasmic reticulum (ER). The ER is stimulated to release calcium ions.
+               td
+                  img(src='images/IP3_forms.jpg', alt='IP3', width='368', height='308')
+            tr
+               td
+                  p
+                     | When activated by the G protein, Phospholipase-C begins adding water molecules (called hydrolyis) onto PIP2 embedded in the cell
+                     | membrane (not shown) forming the IP3 signaling molecule.
+                  p
+                     | Interestingly, PIP2 is a phospholipid and is present in the cell&apos;s lipid bilayer. Cell membranes contain a variety of different classes
+                     | of lipids and phospholipids. Often, they are used for other cellular functions besides just acting to form a barrier.
+               td
+            tr
+               td
+                  p
+                     | The calcium ions interact with phosphorylase kinase which is decorated with glycogen phosphorylase
+                     | When the calcium activates the phosphorylase kinase (
+                     em via calmodulim subunits, not shown
+                     | ).
+               td
+                  img(src='images/ca_to_PK.jpg', alt='calcium to pk', width='368', height='308')
+            tr
+               td
+                  p
+                     | Individual glucose subunits are broken off of a glycogen molecule by activated glycogen phosphorylase. The glucose is passively transported
+                     | (
+                     em GLUT2 transporter not shown
+                     | ) across the membrane and into the bloodstream.
+               td
+                  img(src='images/glcogen.jpg', alt='Glycogen', width='368', height='308')

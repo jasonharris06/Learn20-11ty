@@ -1,0 +1,179 @@
+extends /shared/layout
+block content
+   +pageTitle
+   
+   script(src='/Scripts/AC_RunActiveContent.js', type='text/javascript')
+
+   +pod('The Mystery of Kuru')
+      .uk-width-medium-6-10
+         p
+            | In the 1950s, a district medical officer working in the highlands of New Guinea
+            | observed a fatal disease among the people of the Fore (FOR-ay) tribe. The Fore
+            | people called this sickness kuru, which means &quot;trembling in fear.&quot; After intially
+            | becoming unable to walk, victims of kuru lost the ability to swallow or chew.
+            | Drastic weight loss would inevitably lead to death. Today we know that kuru is
+            | one of several diseases in humans and animals caused by prion (PREE-on) proteins.
+
+      .uk-width-medium-4-10.uk-text-center
+         figure
+            img.lg-no-shadow(src='images/new-guinea-map.jpg', alt='New Guinea')
+
+      .uk-width-1-1
+         +toggle ('More about Kuru...')
+            include kuru
+
+
+   +pod("What's a Prion")
+      .uk-width-1-1.uk-text-center
+         script(type='text/javascript').
+            AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','825','height','315','src','prions_slideshow','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','prions_slideshow' ); //end AC code
+         noscript
+            p Javascript is required to view this content.
+
+   +pod('The History of Prions')
+      .uk-width-1-1
+         table(style='width: 620px; margin: auto;')
+            tr
+               td(style='width:  140px;') 1730s
+               td(style='width:  340px;')
+                  | Earliest written record of Scrapie in English sheep; already prevalent in central Europe.
+               td(style='width:  140px;')
+                  img(src='images/sheep.gif', width='125', height='86', alt='1730s, Scrapie first appears in sheep')
+            tr
+               td 1950s
+               td High levels of kuru appear among the Fore people of New Guinea.
+               td
+            tr
+               td 1960s
+               td
+                  | Scientists experimentally transmit Kuru and CJD to chimpanzees,
+                  | demonstrating the transmissible nature of these diseases.
+               td
+                  img(src='images/chimp.gif', width='56', height='97', alt="1960s, They're contagious")
+            tr
+               td 1980s
+               td
+                  | 60 people die from CJD after being infected by contaminated surgical instruments.
+                  | 85 people die after receiving prion-infected growth hormone injections.
+               td
+                  img(src='images/scalpel.gif', width='147', height='91', alt='1980s, Medical disaster')
+            tr
+               td 1982
+               td
+                  | Dr. Stanley Prusiner coins the term &quot;prion&quot; (PROteinaceous INfectious particle).
+                  | Highly purified PrP-res is shown to be infectious. He goes on to win the Nobel Prize in Medicine in 1997.
+               td
+                  img(src='images/prusiner_lab.gif', width='108', height='100', alt="1982, It's in the protein!")
+            tr
+               td 1985
+               td
+                  | Scientists identify the PrP gene and discover that uninfected people produce a normal form of the PrP protein.
+               td
+                  img(src='images/chromosomes.gif', width='150', height='62', alt="1985, It's in our genes!")
+            tr
+               td 1986
+               td
+                  | By the year 2000, nearly 180,000 cattle will become infected. To stop the spread, thousands of cattle are killed.
+               td
+                  img(src='images/cow.gif', width='93', height='87', alt='1986, Outbreak! Mad cow disease')
+            tr
+               td 1996
+               td
+                  | A new variant of CJD is linked to exposure to BSE from British beef. By April 2005, 155 U.K. residents are dead.
+                  | Because of the long incubation period, cases of CJD due to this incident will likely surface well into the future.
+                  | The  mad cow story isn&apos;t over yet.
+               td
+                  img(src='images/burger.jpg', alt='1996, Mad cow beef proves fatal to people')
+   +pod('A Survey of Spongiform Diseases')
+      .uk-width-medium-5-10
+         figure
+            img.lg-no-shadow(src='images/brain.jpg', alt='Cross section of the brain')
+            p
+               | Diseases caused by prions are known as spongiform diseases, because the brain
+               | tissue in infected individuals is filled with holes, giving it a sponge-like
+               | appearance. Although prions are found throughout the brain, the symptoms of
+               | spongiform diseases vary according to the regions they are most concentrated
+               | in. There are currently no effective treatments for spongiform diseases and
+               | all are fatal.
+      .uk-width-medium-5-10
+         p
+            strong Classic CJD or Creutzfeldt-Jakob disease (human)
+         ul
+            li The most prevalent of the spongiform diseases
+            li Occurs spontaneously in 1 out of a million people
+            li 10% of cases are inherited mutations in the PRPN gene
+            li Usually strikes people age 50 to 75
+            li Symptoms: dementia, muscle twitching, vision problems
+         p
+            strong Fatal Familial Insomnia (human)
+         ul
+            li All cases are inherited mutations in the PrP gene
+            li Usually strikes people age 36 to 61
+            li Disruption of sleep/wake cycle leads to coma, then death
+         p
+            strong Scrapie (goats, sheep)
+         ul
+            li Occurs as infection in genetically susceptible sheep
+            li There is no evidence of spread to humans
+         p
+            strong BSE or Bovine Spongiform Encephalopathy (cattle)
+         ul
+            li
+               | Also known as &quot;Mad Cow Disease&quot; because infected animals act strangely and can be aggressive
+            li Spread rapidly through Britain by rendering
+         p
+            strong Chronic Wasting Disease (deer, elk)
+         ul
+            li Infectious disease in wild deer and elk primarily in the western United States
+            li Drooling, difficulty swallowing, weight loss
+         p
+            strong Kuru (human)
+         ul
+            li Struck members of the Fore tribe in the 1950s and 1960s
+            li
+               | Muscle weakness, loss of coordination, tremors, inappropriate episodes of laughter or crying
+            li Transmitted by ritual cannibalism as part of funeral ceremonies
+   +pod('The Controversy Behind Prions')
+      .uk-width-medium-6-10
+         p
+            | The idea that a protein alone could transmit disease has been around since the 1960s.
+            | New evidence has been stacking up to support this idea ever since.
+         p
+            | Ever since Stanley Prusiner coined the term prion in 1982 and showed that purified prions can transmit spongiform disease,
+            | skeptics have been trying to prove him wrong. The idea that a protein can reproduce itself without going through
+            | a nucleic acid intermediate goes against everything we know about transmissible diseases. Even the simplest
+            | viruses contain genetic material, DNA or RNA, that codes for proteins necessary for function and transmission.
+            | Because prions appear to be infectious proteins that can self-replicate, the central dogma of molecular biology,
+            | (DNA to RNA to protein) seems not to apply here. So maybe these scientists are right to be skeptical.
+            | Below are some of the reservations skeptics have about the protein-only hypothesis.
+         h3 The strain phenomenon
+         p
+            | Scrapie and other spongiform diseases come in distinct strains that differ in their incubation period,
+            | symptoms, and effects on different brain regions. Skeptics argue that these differences are due to mutations
+            | in nucleic acid and is evidence that prions do indeed have genetic material.
+         h3 Information from other amyloid diseases
+         p
+            | Alzheimer&apos;s disease, Parkinson&apos;s disease and Huntington&apos;s disease are also characterized by the
+            | formation of misfolded protein into amyloid fibers, resulting in neurodegeneration. But these diseases
+            | are not infectious, leading to the argument that misfolded protein alone is not enough to transmit disease.
+         h3 Answering the skeptics
+         p
+            | The ultimate test of the protein-only hypothesis would be to produce PrP-res in a test tube,
+            | inject it into a normal healthy brain, and show that spongiform disease results. In April 2005,
+            | scientists at the University of Texas performed this experiment successfully showing that PrP-res
+            | is indeed infectious. Questions still remain about what exactly triggers the folding of PrP-sen into PrP-res.
+      .uk-width-medium-4-10
+         figure
+            img(src='images/oldmen.jpg', alt='men argument')
+   +pod("You Can't Kill What Isn't Alive")
+      .uk-width-medium-6-10
+         p
+            | Prions cannot be destroyed by boiling, alcohol, acid, standard autoclaving methods, or radiation.
+            | In fact, infected brains that have been sitting in formaldehyde for decades can still transmit spongiform disease.
+            | Cooking your burger &apos;til it&apos;s well done won&apos;t destroy the prions!
+      .uk-width-medium-4-10.uk-text-center
+         figure
+            img.lg-no-shadow(src='images/brainBoiling.jpg', alt='Prions cannot be destroyed by boiling')
+
+      +bottom-menu("",'sepagsep')
+      script(src="/ruffle/ruffle.js")

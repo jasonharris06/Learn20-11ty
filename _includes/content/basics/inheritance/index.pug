@@ -1,0 +1,76 @@
+extends /shared/layout
+block content
+   +pageTitle   
+
+   +pod("")
+      .uk-width-1-1.uk-text-center
+         iframe.uk-responsive-width(src='https://player.vimeo.com/video/167950459', width='920', height='520', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+         a.uk-button.uk-button-success(href="../mutation/", data-uk-button)
+            | Next Stop: What is Mutation?
+   +pod("Sources of variation")
+      .uk-width-medium-1-2
+         p.
+            Genetic variation is important because when conditions change (food becomes scarce, environment changes), some 
+            individuals in a population will be more likely to have variations that will allow them to survive. Those who 
+            reproduce pass their genes to the next generation. Variation helps species survive, and it's the reason species 
+            change over time.
+         p.
+            In asexual reproduction, variation comes mainly from mutation. Mutation is a natural process that introduces 
+            permanent changes in a DNA sequence. However, microbes also acquire genetic variation through transformation, 
+            transduction, and conjugation (gene transfer). These mechanisms often come into play when conditions are harsh.
+         p.
+            In sexual reproduction, variation comes from both mutation and recombination. Mutation creates the different 
+            versions (or alleles) of the same gene. Parental alleles are then shuffled—or recombined—during meiosis. Because 
+            of recombination, sexual reproduction produces more variation than asexual does.
+      .uk-width-medium-1-2
+         figure
+            a(href="../reproduction/")
+               img.lg-no-shadow(src="images/svsa.jpg")
+            p.
+               Living things have many ways of reproducing, each with its own advantages &amp; disadvantages. 
+               See <a href="../reproduction/">Sexual vs. Asexual Reproduction</a>
+
+   +pod("Patterns of inheritance")
+      .uk-width-medium-1-2
+         p.
+            Most commonly, traits are influenced by multiple genes and the environment. So for most traits, patterns of 
+            inheritance are complex and unpredictable. For instance, when a sexually reproducing organism inherits a defective 
+            or "broken" allele that codes for a non-functional protein, the second copy can often make up for the loss. This 
+            type of interplay between alleles, especially when traits are influenced by multiple genes, makes predicting 
+            inheritance difficult, if not impossible.
+         p.
+            A small number of traits are influenced primarily by a single gene. Traits influenced mainly by one gene usually 
+            have predictable patterns of inheritance. However, most of the time even supposed "single-gene" traits are 
+            influenced by multiple genes, as in the case of eye color. And often times, a single gene can influence multiple 
+            traits. For example, some genes involved in eye color also influence hair and skin color.
+      .uk-width-medium-1-2
+         figure
+            p.
+               Why do so many textbooks pretend that eyes come in just two colors, brown and blue? Eye color is influenced by two 
+               major genes and several minor genes. Variations in these genes determine whether your eyes are brown, blue, green, 
+               gold, hazel, greyish-blue, brown with green flecks, blue with a gold ring...you get the idea. 
+         +well
+            p.
+               In rare cases, changes in DNA sequences can cause disease. The pattern of disease inheritance can be predictable or 
+               unpredictable, depending on whether the disease is influenced mainly by one gene or by several genes. 
+               See <a href="/content/disorders/">Genetic Disorders</a>
+   +pod("Sex chromosomes")
+      .uk-width-medium-1-2
+         p.
+            It's not quite accurate to say that everyone inherits two copies of every gene. In most mammals, the X and Y sex 
+            chromosomes determine whether an individual is male or female. Females have two X chromosomes, and therefore two 
+            copies of every gene. Males, however, have one X and one Y chromosome. For genes that appear only on the X chromosome 
+            or only on the Y (some do appear on both), males inherit just one copy. 
+         p.
+            Other living things have sex chromosomes too. Birds and reptiles have Z and W sex chromosomes. Unlike with X and Y, 
+            males have two Z chromosomes, and females have one Z and one W. Some insects and a few mammals have only an X 
+            chromosome. Females have two copies and males have one. However, sex is not always determined by chromosomes. With 
+            alligators, crocodiles, and most turtles, it's egg incubation temperature. And some fish can change gender in 
+            response to cues from the environment. Sex determination happens in many different ways.
+      .uk-width-medium-1-2
+         figure
+            p.
+               Traits that involve genes on the sex chromosomes have different inheritance patterns than non-sex-linked traits. 
+               Color-blindness and Duchenne muscular dystrophy, for example, are linked to genes on the X chromosome. Both of 
+               these disorders are more common in males because they have just one X chromosome. They have no second allele to 
+               mask the effects of a defective gene.

@@ -1,0 +1,37 @@
+extends /shared/layout
+block content
+   +pageTitle
+   | @section headearly{
+   base(href='/content/pigeons/teacher/')
+   | }
+   +pod('')
+      h2
+         span Pigeonetics Guide
+      |     
+      .uk-width-medium-5-10
+         p
+            | This guide will help teachers lead their students through Pigeonetics. This game, with 26 pigeon-breeding puzzles of increasing complexity, helps students learn about mechanisms of inheritance, and it brings together often disconnected concepts from Mendelian inheritance and molecular genetics.
+         p The guide includes
+         |         
+         ul
+            li Explanations of game features
+            |             
+            li Key information needed to solve each puzzle
+            |             
+            li A List of concepts and inheritance patterns introduced in each puzzle
+            |             
+            li
+               | Locations for additional information about inheritance patterns and other concepts featured in the puzzles
+         p
+            a(href='Pigeonetics Game Teacher Guide.pdf') Pigeonetics Game Teacher Guide
+   +pod('Pigeon Genetics Worksheet')
+      |     
+      .uk-width-medium-5-10
+         p
+            | Students can use this worksheet to record information they can find in the Pigeon Breeding: Genetics at Work module. The worksheet includes puzzles and questions related to 7 different pigeon characteristics and how they are inherited.
+         p
+            a(href='Pigeon Genetics Worksheet.pdf') Pigeon Genetics Worksheet
+         p
+            a(href='Pigeon Genetics Worksheet (Answer).pdf') Pigeon Genetics Worksheet (Answer Key)
+   
+   

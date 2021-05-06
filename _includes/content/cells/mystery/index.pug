@@ -1,0 +1,52 @@
+extends /shared/layout
+block append headscripts
+   //- meta(name="authoring-tool" content="Adobe_Animate_CC")
+
+block content
+   link(href='src/featherlight.min.css', type='text/css', rel='stylesheet')
+
+   +pageTitle
+   style.
+      .gallery {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-around;
+      }
+      .gallery > a {
+         margin: 10px 0;
+         flex: 0 1 120px;
+         border: 1px solid #fff;
+         border-radius: 2px;
+         transition: border 0.3s, transform 0.3s;
+      }
+      .gallery > a:hover {
+        border: 1px solid #b2b2b2;
+        transform: scale(1.04);
+      }
+      .thumbnail-gallery{
+         width:120px;
+         height:auto;
+         border-radius: 2px;
+      }
+      .mystery-full {
+        max-width: 1200px;
+      }
+   +pod('')
+      .uk-width-medium-1-1
+         p <strong>Click or tap for full-size image</strong>
+         .gallery
+            a(href='#', data-featherlight='<img class="mystery-full" src="images/A-full.jpg" />') 
+               img.thumbnail-gallery(src="images/ModelA.jpg")
+            a(href='#', data-featherlight='<img class="mystery-full" src="images/B-full.jpg" />') 
+               img.thumbnail-gallery(src="images/ModelB.jpg")
+            a(href='#', data-featherlight='<img class="mystery-full" src="images/C-full.jpg" />') 
+               img.thumbnail-gallery(src="images/ModelC.jpg")
+            a(href='#', data-featherlight='<img class="mystery-full" src="images/D-full.jpg" />') 
+               img.thumbnail-gallery(src="images/ModelD.jpg")
+            a(href='#', data-featherlight='<img class="mystery-full" src="images/E-full.jpg" />') 
+               img.thumbnail-gallery(src="images/ModelE.jpg")
+
+
+
+block append endscripts
+   script(src='src/featherlight.min.js', type='text/javascript', charset='utf-8')

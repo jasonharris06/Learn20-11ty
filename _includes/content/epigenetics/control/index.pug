@@ -1,0 +1,152 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   //- Flash message
+   +pod('')
+      +oldFlash('Gene Control','Spring 2021')
+                       
+   //- script(src='/Scripts/swfobject_modified.js', type='text/javascript')
+   //- script(src='/Scripts/AC_RunActiveContent.js', type='text/javascript')
+
+   +pod('')
+      .uk-width-1-1
+         p
+            | Signals from the outside world can work through the epigenome to change a cell&apos;s gene expression.
+         |         
+         p
+            | In the activity below, you act as the signal. As you turn the control knob, epigenetic tags come and go to change the shape of the gene.
+         |         
+         p
+            | Notice what happens to the mRNA and protein levels when you manipulate the epigenetic tags on the gene. Gene, mRNA, and protein production are linked. They change together.
+      |    
+      .uk-width-medium-4-10
+         |   
+         //- div
+         //-    object#FlashID(classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000', width='920', height='518')
+         //-       param(name='movie', value='Volume Control.swf')
+         //-       |   
+         //-       param(name='quality', value='high')
+         //-       |   
+         //-       param(name='wmode', value='opaque')
+         //-       |   
+         //-       param(name='swfversion', value='9.0.45.0')
+         //-       // This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don't want users to see the prompt.
+         //-       param(name='expressinstall', value='/Scripts/expressInstall.swf')
+         //-       // Next object tag is for non-IE browsers. So hide it from IE using IECC.
+         //-       //if !IE
+         //-       |   
+         //-       object(type='application/x-shockwave-flash', data='Volume Control.swf', width='920', height='518')
+         //-          // <![endif]
+         //-          param(name='quality', value='high')
+         //-          |     
+         //-          param(name='wmode', value='opaque')
+         //-          |     
+         //-          param(name='swfversion', value='9.0.45.0')
+         //-          |     
+         //-          param(name='expressinstall', value='/Scripts/expressInstall.swf')
+         //-          // The browser displays the following alternative content for users with Flash Player 6.0 and older.
+         //-          div
+         //-             h4 Content on this page requires a newer version of Adobe Flash Player.
+         //-             |       
+         //-             p
+         //-                a(href='http://www.adobe.com/go/getflashplayer')
+         //-                   img(src='http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif', alt='Get Adobe Flash player', width='112', height='33')
+         //-          //if !IE
+         //-       // <![endif]
+         p
+            | For more information about transcription, translation, and the molecules of inheritance, visit 
+            a(href='/content/basics') Basic Genetics.
+            | .
+   +pod('Could You Really Do This?')
+      |    
+      .uk-width-medium-6-10
+         p
+            | Yes! Researchers at McGill University engineered a type of cell much like this one, where GFP level provided a readout of gene activity.
+         p
+            | Researchers placed the GFP gene into cells growing in culture dishes. Then they added different compounds to the cells. They compared the amount of GFP that the cells produced before and after they added the compounds to see whether they made the gene more or less active.
+         p
+            | A compound called AdoMet, a source of methyl tags, decreased GFP output. Valproic acid, an anti-epilepsy drug and mood stabilizer, increased GFP output. The researchers analyzed the GFP genes from these cells and confirmed that the compounds changed the number of methyl tags attached to the DNA.
+         p
+            | Cells like this, along with other biological tools, help researchers understand how signals from the environment shape the epigenome.
+      |    
+      .uk-width-medium-4-10
+         img(src='images/Dropper.jpg', alt='Dropper', width='371', height='322')
+         |     
+         |         
+         p.uk-text-small In these cells, GFP production is a readout of gene activity.
+   +pod('Gene Control and Cancer')
+      |    
+      .uk-width-medium-4-10
+         p
+            | Cancer develops when a cell becomes abnormal and begins to grow out of control. Cancer can begin when mutation changes a cell&apos;s DNA sequence. But cancer cells also have abnormal epigenomes. In many cancers, some genes are turned up and some are turned down -- often in the very same cells.
+         p
+            | Cancer is just one of a growing number of diseases that are being linked to abnormalities in the epigenome.
+         img(src='images/Cancer.jpg', width='360', height='382')
+         |     
+         p
+            | Out of control growth leads to cancer by both turning off genes coding for proteins that slow cell growth, and turning on genes coding for proteins that speed up cell growth.
+      |    
+      .uk-width-medium-6-10
+         img(src='images/Loose.jpg', width='462', height='123')
+         |    
+         div
+            p
+               | Cancer cells have a lower level of methylation (more active DNA) than healthy cells. Too little methylation causes:
+            |  
+            ul
+               li Activation of genes that promote cell growth. 
+               br
+               |     
+               li
+                  | Chromosome instability: highly active DNA is more likely to be duplicated, deleted, and moved to other locations.
+               br
+               |     
+               li
+                  | Loss of imprinting (see 
+                  a(href='/content/epigenetics/imprinting/') Genomic Imprinting
+                  |  for a description).
+         |  
+         |  
+         img(src='images/Tight.jpg', width='462', height='163')
+         |    
+         p
+            | Cancer cells can also have genes that have more methyl (are less active) than normal. The types of genes that are turned down in cancer cells:
+         |     
+         |      
+         ul
+            li Keep cell growth in check
+            br
+            |         
+            li Repair damaged DNA
+            br
+            |         
+            li Initiate programmed cell death
+         p
+            | Researchers are exploring drug therapies that can change the epigenetic profiles of cancer cells. One challenge with epigenetic therapies is figuring out how to target drugs to the right genes in the right tissues.
+            
+      +references
+         p
+            | For more information about the role of genes in cancer, visit the 
+            a(href='http://www.cancer.org/docroot/ETO/content/ETO_1_4x_oncogenes_and_tumor_suppressor_genes.asp ') American Cancer Society page on Oncogenes and Tumor Suppressor Genes
+            | .
+         |             
+         p
+            | For a more in-depth description of the role of epigenetics in cancer, see
+            br
+            |             Esteller, M. (2008). 
+            a(href='http://content.nejm.org/cgi/content/full/358/11/1148 ') Epigenetics in Cancer
+            | . New England Journal of Medicine, 358(11): 1148-1159 (subscription required)
+         |             
+         p
+            | Research articles describing experiments with GFP reporter cells:
+            br
+            |             Detich, N. et al. (2003). 
+            a(href='http://www.jbc.org/cgi/content/full/278/23/20812 ') The Methyl Donor S-Adenosylmethionine Inhibits Active Demethylation of DNA
+            | . Journal of Biological Chemistry, 278(23): 20812-20820.
+         |             
+         p
+            | Detich, N. et al. (2003). 
+            a(href='http://www.jbc.org/cgi/content/full/278/30/27586 ') Valproate Induces Replication-independent Active DNA Demethylation
+            | . Journal of Biological Chemistry, 278(30): 27586-27592.
+   

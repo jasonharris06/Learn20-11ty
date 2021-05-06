@@ -1,0 +1,48 @@
+extends /shared/layout
+block append head
+   style.
+      .flexHeader {
+         display: flex;
+         width: 100%;
+         justify-content: space-between;
+         align-items: flex-end;
+      }
+      .slideContainer {
+         max-width: 550px;
+         margin: auto;
+      }
+      .appstore {
+         width: 120px;
+      }
+      @media screen and (min-width: 800px) {
+         .appstore {
+           width: 160px;
+         }
+      }
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-4-10
+         a(href='https://itunes.apple.com/us/app/balance-neuroscience/id1208552765' style="margin-right: 25px;")
+            img.appstore(src="../images/App_Store.svg")
+         p
+            | Download Balance, then spin, shake, and watch. This app responds to your movements in real time, showing how the inner ear senses rotation, gravity, and acceleration.
+      .uk-width-medium-6-10
+         h3 App Screenshots
+         .slideContainer
+            include balanceshots.pug
+
+   +references
+      p
+         | Lysakowski, A. (2014). Chapter 130: Anatomy of the Vestibular System. Cummings Otolaryngology, 6th Edition. Flint, PW, Haughey ,BH, Lund, VJ, Niparko, JK, Richardson, MA, Robbins, KT &amp; Thomas, JR, Eds. Elsevier Saunders. Accessed 16 March, 2017, from 
+         a(href="http://clinicalgate.com/anatomy-of-the-vestibular-system/") http://clinicalgate.com/anatomy-of-the-vestibular-system/
+      p
+         | Obrist, D (2011). Fluid Mechanics of the Inner Ear. Accessed 16 March, 2017, from
+         a(href="http://e-collection.library.ethz.ch/eserv/eth:5720/eth-5720-01.pdf") http://e-collection.library.ethz.ch/eserv/eth:5720/eth-5720-01.pdf
+      p
+         | Zenner, H-P &amp; Gummer, AW (1996). Chapter 34: The Vestibular System. Comprehensive Human Physiology: From Cellular Mechanisms to Integration, Vol. 1. Greger, R &amp; Windhorst, U, Eds. Springer: Berlin Heidelberg.
+
+
+   block append endscripts
+      script(src="/lib/slideshow.js")
+      script(src="/lib/slideshow-fx.js")

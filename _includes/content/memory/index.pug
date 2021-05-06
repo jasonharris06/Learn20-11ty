@@ -1,0 +1,30 @@
+extends /shared/layout
+
+block content
+   +pageTitle()(teach="memory")
+   .lg-section
+      .uk-container.uk-container-center
+         .uk-grid
+            .uk-width-medium-5-10
+               h2  Memory
+               .lg-index-items
+                  +index-item('Types of Memory', 'interactive explore', 'types', 'images/types.jpg')
+                     p Learn about short-term, long-term, and other types of memory.         
+                  +index-item('The Seven Sins of Memory', 'video', '7sins', 'images/7sins.jpg')
+                     p See memory's imperfections come to life in the characters of a murder-mystery story 
+                  +index-item('Memory Demos', 'learn more', 'demos', 'images/demos.jpg')
+                     p Experience change blindness, try a Stroop test, and watch a demonstration of Inattentional Blindness.   
+            .uk-width-medium-5-10
+               h2 Attention and Distraction
+               .lg-index-items
+                  +index-item('Attention', 'learn more', 'attention', 'images/attention.jpg')
+                     p Attention is a limited resource. When we try to do too much at once, we stop doing anything well.  
+                  +index-item('Distractown', 'interactive explore', 'distraction', 'images/distraction.jpg')
+                     p Put your multitasking skills to the test.  
+                  +index-item('The Benefits of Nature and Mystery', 'video', 'nature', 'images/nature.jpg')
+                     p Learn how unplugging from technology and exploring nature can benefit the brain.  
+
+         .lg-bottom-menu
+            ul.uk-subnav.uk-subnav-line
+               li 
+                  +bottom-menu("credits",'sepaiob')

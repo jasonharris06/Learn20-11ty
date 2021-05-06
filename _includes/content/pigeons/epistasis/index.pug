@@ -1,0 +1,151 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-5-10
+         p
+            | &ldquo;Spread is epistatic to color.&rdquo; What does that mean, exactly? At the most basic level, it means that when a bird has the 
+            a(href='../spread/') spread
+            |  phenotype, it has no visible 
+            a(href='../pattern/') pattern
+            | . Spread hides pattern. One level deeper, it means that even though a spread bird still has two copies (or alleles) of the 
+            em pattern
+            |  gene, it has no pattern phenotype.
+         p
+            | The term epistasis describes a certain relationship between genes, where an allele of one gene (e.g., &lsquo;spread&rsquo;) hides or masks the visible output, or phenotype, of another gene (e.g., 
+            em pattern
+            | ). Epistasis is entirely different from dominant and recessive, which are terms that apply to different alleles of the same gene (e.g., &lsquo;bar&rsquo; is dominant to &lsquo;barless&rsquo; and recessive to &lsquo;check&rsquo;).
+      |     
+      .uk-width-medium-5-10
+         img(src='images/epistasis.jpg', alt='Epistasis', width='488', height='301')
+   +pod('An Analogy for Genes Working Together')
+      |     
+      .uk-width-medium-5-10
+         img(src='images/epistasis-1.jpg', alt='Genes Working Together', width='488', height='583')
+         |         
+         .uk-text-small
+            | Like workers in an assembly line, proteins work together to carry out processes.
+      |     
+      .uk-width-medium-5-10
+         p
+            | Epistasis involves not genes so much as the proteins they code for. (So do dominant and recessive, for that matter.) Genes with epistatic relationships tend to code for proteins that work together in the same processes. An analogy might be easier to understand.
+         p
+            | Let&rsquo;s say workers A, B, and C carry out the steps for painting a design on a poster. Like genes, 
+            em a
+            | , 
+            em b
+            | , and 
+            em c
+            |  are the instructions.
+         p
+            | Worker A puts paint into the tray; 
+            em a
+            |  tells it how. 
+            br
+            |     Worker B adds dye to the paint; 
+            em b
+            |  tells it what color. 
+            br
+            |     Worker C paints a design on the poster; 
+            em c
+            |  tells it what design.
+         p
+            | If we put ourselves in a position like that of researchers trying to learn about a genetic pathway, the instructions and the workers would be invisible. The only part of the process that we would get to see is the output: the poster, which is like the &ldquo;phenotype.&rdquo;
+         p
+            | Now imagine how different versions of the instructions would change the output. For example, b could say to add red dye. From looking at the output, we can tell that the instructions for B have changed. &ldquo;Add blue&rdquo; and &ldquo;add red&rdquo; are like different alleles of b. And if a version of c said to draw a square, we could start to figure out that color and shape are controlled by different instructions.
+         p
+            | This is 
+            em not
+            |  epistasis (we&rsquo;ll get to that soon). It&rsquo;s genes working together to control an output.
+   +pod('Adding Epistasis')
+      |     
+      .uk-width-medium-5-10
+         img(src='images/epistasis-2.jpg', alt='Genes Working Together', width='488', height='270')
+         |         
+         .uk-text-small
+            | This version of 
+            em a
+            |  is epistatic to 
+            em b
+            |  and 
+            em c
+            | : it hides their output.
+         |         
+         img(src='images/epistasis-3.jpg', alt='Genes Working Together', width='488', height='296')
+         |         
+         .uk-text-small
+            | This version of 
+            em c
+            |  is epistatic to 
+            em a
+            |  and 
+            em b
+            | : it hides their output.
+      |     
+      .uk-width-medium-5-10
+         p
+            | Epistasis typically applies to a certain allele, or version, of a gene. Epistasis depends on how the protein that the allele codes for actually functions. In our analogy, epistasis depends on what the workers do in our process.
+         p
+            | Now we&rsquo;ll add epistasis to our example. Let&rsquo;s say a version (or allele) of 
+            em a 
+            | is broken so that it contains no instructions. Worker A wouldn&rsquo;t be able to put paint into the tray, and we would end up with a blank poster&mdash;even though workers B and C are still doing their jobs.
+         p
+            | This broken version of 
+            em a
+            |  is epistatic to 
+            em b
+            |  and 
+            em c
+            | : the final product (a blank poster) shows no evidence of what B and C have been told to do. We can&rsquo;t tell if B&rsquo;s instructions said to add red or blue, or if C&rsquo;s said to draw a circle or a square.
+         p
+            | The important aspect of epistasis is that it doesn&rsquo;t just influence the phenotype, it 
+            em hides
+            |  the output of another gene or genes.
+         p
+            | Now let&rsquo;s imagine that 
+            em a 
+            |  is working, but 
+            em c
+            |  is broken. This version, or &ldquo;allele,&rdquo; of 
+            em c
+            |  is epistatic to 
+            em a
+            |  and 
+            em b
+            | : the output shows no evidence of what A and B are doing. Even though the output is again a blank poster, the cause is different than when 
+            em a 
+            |  was broken.
+         p
+            | Because of its role in the process, no allele of 
+            em b 
+            |  can be epistatic to 
+            em a 
+            |  or 
+            em c
+            |  . Changing the color of the dye, or even adding no dye at all, cannot hide what workers A and C are doing.
+   +pod('Epistasis in Pigeon Feather Color')
+      |     
+      .uk-width-medium-5-10
+         p
+            | Like in the analogy above, proteins often work together like workers in an assembly line to carry out the processes that make our bodies function. The instructions for building proteins are found in genes. Differences in genes, which pass from parent to child, lead to differences in proteins. Different proteins make our cells and bodies function differently. It&rsquo;s the foundation of individual variation.
+         p
+            | Looking at epistatic relationships offers clues that help us understand how genes and proteins function. Feather color in pigeons is a great example. Making and distributing feather pigments is a complex, multi-step process involving many proteins. Variations in these proteins generate a lot of diverse feather colors and patterns. 
+            a(href='../pigeonetics/') Pigeonetics
+            |  touches on a few of these variations (including pattern, spread, color, recessive red, and dilute), but there are many more.
+         p
+            | White feather color, for example, tends to be epistatic to other colors. White feathers have no pigments, and like in our analogy above, they can come about in many different ways. In other words, white has multiple genetic causes.
+         p
+            | White feather color can come about by &ldquo;breaking&rdquo; any one of a number of genes that control pigment production or distribution. If melanocytes are missing a protein they need to migrate to the skin or mature, feathers will be white. Another way to make white is to disrupt a protein that carries out an early step in the melanin assembly line.
+         |         
+         +well
+            | The 
+            a(href='../recessivered/') recessive red
+            |  page describes the molecular interactions of some of the proteins involved in making melanin pigments.
+      |     
+      .uk-width-medium-5-10
+         img(src='images/epistasis-4.jpg', alt='Feather Color', width='452', height='417')
+         |         
+         .uk-text-small
+            | This chart shows just some of the components involved in making melanin pigments in pigeon feathers. Variations in the proteins that carry out any of these steps can influence feather color.
+   
+   

@@ -1,0 +1,67 @@
+extends /shared/layout
+block content
+   +pageTitle()(teach="cells")
+   .lg-section
+      .uk-container.uk-container-center
+         .uk-grid
+            .uk-width-medium-5-10
+               //- h2  Cells are Complex and Dynamic
+               h2 Cells in Context
+
+               .lg-index-items
+                  .lg-index-box-text
+                     //- p The cell's interior is structured in a way that streamlines cell function.
+                     p In multicellular organisms, cells work together in teams. Multiple cell types, each specialized for a certain function, team up to form tissues. And multiple tissue types are organized into organs.
+                  +index-item('Is It Alive?', 'explore','alive','images/alive.jpg')
+                     p This virtual card sort has some tricky examples. Do you know which ones are alive and which are not?
+                  +index-item('Inside A Cell', 'interactive explore', 'insideacell20', 'images/insideacell.jpg')
+                     p See the parts of a cell in action.
+                  +index-item('Mystery Cell Model', '', 'mystery', 'images/mystery.jpg')
+                     p 
+                  +index-item('Cell Size and Scale','interactive explore','scale','images/scale.jpg')
+                     p How big are cells compared with other objects, molecules, and atoms?
+                  +index-item('Real Cell Gallery', 'explore', 'gallery', 'images/gallery.jpg')
+                     p Cells do endless jobs, often using structures your textbook never dreamed of.
+                  +index-item('Virtual Microscope', 'interactive explore', 'microscope', 'images/microscope.jpg')
+                     p Learn how cells work together in tissues, organs, and organ systems. Then see how pathogens disrupt their functions!
+
+               h2 Cells in Perspective
+               .lg-index-items
+                  .lg-index-box-text
+                     p
+                        | In 1665, Robert Hooke coined the term cell to describe the structures
+                        | he could see in cork with some of the first microscopes. Since then, technology has given us an
+                        | increasingly complex view of the basic unit of life.
+                  +index-item('DIRECTING TRAFFIC: HOW VESICLES TRANSPORT CARGO', 'learn more', 'vesicles', 'images/vesicles.jpg')
+                     p Small compartments called vesicles carry materials throughout the cell.
+                  +index-item('MEMBRANES ORGANIZE CELLULAR COMPLEXITY', 'learn more', 'membranes', 'images/membranes.jpg')
+                     p Membranes are critical for organized and efficient cell function.
+                  +index-item('The Evolution of the Cell','learn more','organelles','images/organelles.jpg')
+                     p The endosymbiotic theory explains how relatives of ancient bacteria ended up in modern-day cells.
+                  +index-item('3... 2... 1... ACTION!','video','videos','images/videos.jpg')
+                     p Explore links to videos and images starring real cells.
+            .uk-width-medium-5-10
+               h2 Cells Communicate
+               .lg-index-items
+                  .lg-index-box-text
+                     p
+                        | Cells communicate through signals, aided by pathways made mostly of proteins.
+                        | A cell&apos;s response depends on the signal itself, as well as the cell type.
+                  +index-item('The Fight or Flight Response','video','cellcom','images/cellcom.jpg')
+                     p When the brain detects danger or a threat, cell signaling machinery springs into action, producing a variety of responses throughout the body.
+                  +index-item('How Cells Communicate During Fight or Flight','learn more','fight_flight','images/fight_flight.jpg')
+                     p Take an in-depth look at one axis of cell communication during the fight or flight response.
+                  +index-item('Dropping Signals','interactive explore','signals','images/signals.jpg')
+                     p Cell signals travel through the body, coming in contact with many cell types.  The response depends on the type of cell the signal reaches.
+                  +index-item('When Cell Communication Goes Wrong','learn more','badcom','images/badcom.jpg')
+                     p Cell communication can be disrupted in a number of ways, sometimes resulting in disease.
+                  +index-item('The Inside Story of Cell Communication','learn more','insidestory','images/insidestory.jpg')
+                     p See how signals travel into and through cells.
+
+         .lg-bottom-menu
+            ul.uk-subnav.uk-subnav-line
+
+               li
+                  a(href="credits") Credits
+
+      +bottom-menu("",'sepagosh')

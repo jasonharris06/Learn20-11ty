@@ -1,0 +1,152 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-6-10
+         p
+            | Every organism has a unique body pattern. Although specialized body structures, such as arms and legs, may be similar in makeup (both are made of muscle and bone), their shapes and details are different. While an embryo grows, arms and legs develop differently due to the actions of homeotic genes, which specify how structures develop in different segments of the body.
+   +pod('How did scientists discover genes that determine body pattern?')
+      .uk-width-medium-4-10
+         p
+            | Scientists discovered homeotic genes by studying strange transformations in fruit flies, including flies that had feet in place of mouth parts, extra pairs of wings, or two pairs of balance organs (called halteres) instead of wings. Some even had legs growing out of their heads in place of antennae!
+         p
+            | Scientists called these modifications &quot;homeotic transformations,&quot; because one body part seemed to have been replaced by another. Researchers, including a group headed by Ed Lewis at Caltech, discovered that many of these transformations were caused by defects in single genes, which they termed homeotic, or Hox, genes.
+         p
+            | This work demonstrated that antennal cells carry all of the information necessary to become leg cells. This is a general principle: every cell in an organism carries, within its DNA, all of the information necessary to build the entire organism.
+      .uk-width-medium-6-10
+         figure
+            img.lg-no-shadow(src='images/hox-mutants.jpg', alt='Hox Mutants')
+            p
+               | Top: (Left) Normal fruitfly; (Right) Fruitfly with mutation in antennapedia gene
+               | Bottom: (Left) Normal fruitfly; (Right) Fruitfly with a homeotic mutation that gives it two thoraxes.
+               | Bottom images courtesy of the Archives, California Institute of Technology.
+   +pod('Shared characteristics')
+      |    
+      |    
+      .uk-width-medium-4-10
+         figure
+            img.lg-no-shadow(src='images/fly-embryo-adult.jpg', alt='Fly Embryo Adult')
+            |          
+            p
+               | Genes in different organisms that share similar sequence and function are called homologous genes.
+      |     
+      .uk-width-medium-6-10
+         p
+            | Fruit flies begin life as worm-like creatures made up of repeating units, or segments. Early in development, Hox genes are switched on in different segments. Patterns of Hox gene activity give each segment an identity, telling it where it is in the body and what structures it should grow. For instance, genes that are active in the head direct the growth of mouth parts and antennae, while genes that are active in the thorax direct the growth of legs and wings.
+         p
+            | Changes to Hox gene expression change a segment&rsquo;s identity. For example the first segment of the thorax normally grows legs, the second grows legs and wings, and the third grows legs and halteres. When the Hox gene activity in the third segment is made the same as that in the second, both segments grow legs and wings (see photos above).
+         p
+            | While studying the DNA sequences of homeotic genes in fruit flies, researchers found that they all shared a similar stretch of about 180 bases; they named this stretch the homeobox. The homeobox is just a portion of each gene. If the words below were homeotic genes, the capital letters would represent the homeobox:
+            | togeTHEr - THEoretical - gaTHEring - boTHEr
+         p
+            | Researchers used DNA-sequence similarity to find genes with homeoboxes in other species, including other insects, worms, and even mammals. Together, these genes make up the Hox gene family (Hox is short for homeobox).
+         p
+            | Interestingly, Hox genes are arranged in clusters. Typically, their order on the chromosome is the same as the order in which they appear along the body. In other words, the genes on the left control patterning in the head, and the genes on the right control patterning in the tail.
+   +pod('Genes hold clues about evolutionary relationships')
+      |    
+      .uk-width-medium-4-10
+         p
+            | Nearly every animal that&apos;s been tested has homeobox sequences in its DNA, suggesting that Hox genes arose very early in the animal family tree. Genetic sequences maintained over evolutionary time are thought to be especially important to the basic development of even distantly related organisms. The presence of homeotic gene sequences in animals as different as jellyfish, insects, and mammals suggests that these genes have a crucial function in many, and perhaps all, animals.
+         p
+            | Scientists have studied the genes&apos; DNA sequences, functions, and organization to learn about evolutionary relationships. Hox genes have revelaed many clues about the evolution of the animal family tree.
+         p
+            | The similarities among Hox genes, especially in the shared homeobox sequence, suggest that they all arose from a single ancestral gene that was duplicated multiple times. After each duplication event, the genes gradually changed, taking on slightly different jobs. This process is known to evolutionary biologists as &quot;duplication and divergence.&quot;
+         p
+            | The first duplications happened a very long time ago. An animal that lived about a billion years ago, the ancestor to all animals, had at least 4 Hox genes. By 600 million years ago, in the ancestor to all modern animals that have bilateral symmetry, the number grew to at least 7. We know this because animals descended from this ancestor have homologues of these genes.
+         p
+            | Additional duplication events happened in some branches of the animal family tree. In insects, for example, a gene near the right end of the cluster was duplicated. In vertebrates, the entire Hox cluster was duplicated&mdash;three times in mammals and up to 8 times in some types of fish. The duplicate genes were then free to take on new functions, often leading to more-complex body structures.
+         |        
+         .callout
+            | Hox genes share not only DNA sequence, they even share functions. Mouse Hox genes can substitute for their homologues in flies. And when they&rsquo;re activated in other segments, the mouse genes can cause homeotic transformations in flies.
+      |    
+      .uk-width-medium-6-10
+         figure
+            img.lg-no-shadow(src='images/hox-evolution.jpg', alt='Hox Evolution')
+            |          
+            p
+               | Like other genes, Hox genes are more similar in closely related species and less similar in more distantly related species. By comparing sequence similarity, scientists can determine when in evolutionary history certain duplication events happened, and where some Hox genes were lost along the way (additional gains and losses have happened within individual species in each group).
+            p
+               | Illustraiton based on information from Pascual-Anaya et al (2005), Carroll et al (2005), and Garcia-Fernandez (2013).
+   +pod('Hox proteins regulate other genes')
+      |    
+      .uk-width-medium-6-10
+         figure
+            img.lg-no-shadow(src='images/hox-regulation.jpg', alt='Hox Regulation')
+            |          
+            p
+      |     
+      .uk-width-medium-4-10
+         p
+            | Hox genes code for proteins that attach to molecular switches on DNA, turning other genes on and off. The DNA-binding piece of a Hox protein is called the homeodomain, and it&apos;s encoded by the homeobox. The homeodomains in different Hox proteins are similar but not identical&mdash;they bind to different DNA sequences. So different Hox proteins regulate different sets of genes, and combinations of Hox proteins working together to regulate still other sets of genes.
+         p
+            | As regulators of other genes, Hox proteins are very powerful. A single Hox protein can regulate the activity of many genes. And sets of genes work together to carry out &quot;programs&quot; during embryonic development&mdash;programs for building a leg or an antenna, for example&mdash;much like computer programs carry out specific tasks.
+   +pod('Homeotic genes and evolutionary change')
+      .uk-width-medium-4-10
+         p
+            | A large amount of animal diversity is built on two simple ideas: bodies made up of repeating units (or segments), and genetic programs for building structures.
+         p
+            | Just within arthropods (shown on the right), variations on this theme have given rise to an enormous diversity of body types. And in fact, in many cases, domains of Hox gene activity parallel the different types of structures that grow out of the animals&rsquo; body segments.
+         p
+            | The bands of color highlight body segments that have similar identities; you can think of each color as running a different genetic program: a &ldquo;leg&rdquo; program or an &ldquo;antenna&rdquo; program, for example. Once a program exists for building a structure, it can be reused elsewhere simply by shifting Hox gene expression. It&rsquo;s easy to see how adding some segments and running the &ldquo;leg&rdquo; program in them can build an organism with a few more sets of legs.
+         p
+            | And the genetic programs themselves can be modified (through changes in the &ldquo;leg&rdquo; or &ldquo;antenna&rdquo; genes) to build structures that are a little different. For instance, the &ldquo;wing&rdquo; program didn&rsquo;t come about from scratch&mdash;it&rsquo;s simply a modified &ldquo;leg&rdquo; program.
+         p
+            | A genetic change that leads to a change in body shape might allow an organism to capture food more effectively or avoid predators, giving it a reproductive advantage. Its genes may be preferentially passed along to the next generation, thus influencing the course of evolution.
+      .uk-width-medium-6-10
+         figure
+            img.lg-no-shadow(src='images/arthropods.jpg', alt='Arthropods')
+   +pod('Vertebrate Hox genes')
+      .uk-width-medium-4-10
+         figure
+            img.lg-no-shadow(src='images/vertebrate-hox.jpg',alt='Vertabrate Hox')
+      .uk-width-medium-6-10
+         p
+            | In vertebrates (animals that have backbones), the entire Hox cluster has been duplicated multiple times. Mice and other mammals have four Hox clusters. All four are similar, but each is different. Similar genes in different clusters are called paralogs.
+         |  
+         p
+            | Most paralogs have partially overlapping functions, so figuring out how Hox genes function in vertebrates a challenge: the effects of changing a single gene are often hidden by functioning genes in the same paralogous group. But changing the function of multiple genes in the group can have dramatic effects.
+         |  
+         p
+            | The photos on the left, provided by Mario Capecchi&apos;s research group at the University of Utah, show mouse forelegs. Inactivating one paralog or the other has subtle effects (middle two images). But inactivating both makes a dramatically different limb (right). This experiment and others have shown that Hox genes in mice work much the same way as they do in fruit flies.
+   +pod('Hox genes direct the identity of vertebrae')
+      |    
+      .uk-width-medium-4-10
+         p
+            | While mice and other vertebrates are not as obviously segmented as arthropods, certain regions of their bodies actually are. Vertebrae, with all their associated muscles and bones, grow from repeating units in the embryo called somites. Hox genes (often in combination) help define somite identity, directing them to develop differently depending on where they are in the body.
+         p
+            | Just like Hox genes in arthropods direct segments to grow legs, wings, or antennae, Hox genes in vertebrates direct segments to grow ribs (or not) or bones that fuse together to form a sacrum.
+         p
+            | Experments in mice show how Hox genes affect vertebra identity. In mouse embryos, the Hox10 genes turn the &ldquo;rib&rdquo; program off. The genes are normally active in the lower back, where the vertebrae don&rsquo;t grow ribs, and inactive in the mid-back, where the vertebrae do grow ribs. When the Hox10 paralogs are experimentally inactivated, the vertebrae of the lower back to grow ribs. Something similar may have happened in nature. In snakes, Hox10 genes have lost their rib-blocking ability, which may be why they grow ribs from head to tail.
+         p
+            | Hox genes play many more roles in vertebrate development. They help specify the difference between an arm and a leg, as well as a pinky and a thumb. In the nervous system, their expression in segmented embryonic structures called rhombomeres directs the development of different brain regions.
+         p
+            | Hox genes are a fascinating example of how a single gene that did something well was copied and re-purposed through evolution to do even more.
+      |    
+      .uk-width-medium-6-10
+         figure
+            img.lg-no-shadow(src='images/mouse-somites-vertebrae.jpg', alt='Mouse Somites Vertebrae')      
+            p
+               | (Left) Mouse embryo showing somites; (Right) Adult mouse vertebral column. Colors show vertebrae with different identities. Regions of Hox gene activity are shown with brackets on the embryo. Based on images in Wellik (2007).
+   +references
+      p
+         | Carroll, S.B., Grenier, J.K. &amp; Weatherbee, S.D. (2004). From DNA to diversity: molecular genetics and the evolution of animal design (2nd ed.).  Malden, MA ; Wiley-Blackwell.
+      p
+         | Davis, A.P., Witte, D.P., Hsieh-Li, H.M., Potter, S.S. &amp; Capecchi, M.R. (1995). Absence of radius and olna in mice lacking hoxa-11 and hoxd-11. Nature, 375, 791-795. doi:101038/375791a0
+      p
+         | Garcia-Fernandez, J. (2013). The genesis and evolution of homeobox clusters. Nature Reviews Genetics 6, 881-891. doi:10.1038/nrgl723
+      p
+         | Heffer, A. &amp; Pick, L. (2013). Conservation and variation in Hox genes: how insect models pioneered the evo-devo field. Annual Reviews in Entomology, 58, 161-179. doi:10.1146/annurev-ento-120811-153601
+      p
+         | Lews, E.B. (1978). A gene complex controlling segmentation in Drosophila. Nature 276, 565-570.
+      p
+         | Mallo, M., Wellik, D.M. &amp; Deschamps, J. (2010). Hox genes and regional patterning of the vertebrate body plan. Developmental Biology, 344, 7-15. doi:10.1016/j.ydbio.2010.04.024
+      p
+         | Pascual-Anaya, J., D&apos;Aniello, S., Kuratani, S. &amp; Garcia-Fernandez, J. (2013). Evolution of Hox gene clusters in deuterostomes. BMC Developmental Biology, 13(26). doi:10.1186/1471-213X-13-26
+      p
+         | Pearson, J.C., Lemons, D. &amp; McGinnis, W. (2005). Modulating Hox gene functions during animal body patterning. Nature Reviews Genetics, 6, 893-903. doi:10.1038/nrgl726
+      p
+         | Wellik, D.M. (2007). Hox patterning of the vertebrate axial skeleton. Developmental Dynamics, 236, 2454-2463. doi:10.1002/dvdy.21286
+
+   +bottom-menu("",'burton')
+   
+   

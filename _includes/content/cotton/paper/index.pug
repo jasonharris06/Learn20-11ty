@@ -1,0 +1,22 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-4-10
+         +well
+            a(href='paper.pdf') View a printable PDF
+            |  of this activity
+
+   +pod('Abstract')
+      .uk-width-medium-6-10
+         p
+            | Students align different lengths of paper “DNA” based on the distance between “markers” to generate a DNA consensus sequence. This kinesthetic activity can be used as a classroom demonstration, solved in small groups of students, or done in- dividually. The activity helps students conceptualize how different lengths of tagged DNA can be used to gener- ate a physical map of a genome.
+
+      .uk-width-medium-4-10
+         figure
+            img(src="paper.jpg", alt="paper activity")
+
+   +pod('Learning Objectives')
+      .uk-width-medium-6
+         p
+            | Overlapping sequences or features on short segments of DNA can be used to assemble much longer contiguous DNA sequences, or “contigs.”

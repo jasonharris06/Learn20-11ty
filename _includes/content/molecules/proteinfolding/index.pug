@@ -1,0 +1,116 @@
+extends /shared/layout
+block content
+   +pageTitle
+   link(href='/css/archive.css', rel='stylesheet', type='text/css')
+   script(src='../../Scripts/AC_RunActiveContent.js', type='text/javascript')
+   div(style='margin:0 auto; width: 780px;')
+      img(src='images/proteinintro.gif', alt='Protein Introduction', width='550', height='119', border='0')
+      table
+         tr
+            td.stdcol(valign='top')
+               p
+                  | Once the DNA sequence of a new gene is known, how do scientists figure
+                  | out the function of its protein product?
+               | &#x9;
+               | &#x9;
+               a(href="javascript: openpopup('ugcode.cfm',500,400);")
+                  img(src='images/UGCicon.gif', alt='Universal Genetic Code', style='float:right; padding: 15px;')
+               | &#x9;
+               p
+                  | One of the first things a scientist would do is use the Universal Genetic Code
+                  | to predict the amino acids encoded by the gene. Unfortunately, this only gives
+                  | a list of the protein&apos;s sequence. Proteins actually don&apos;t remain in the nice long,
+                  | straight lines they&apos;re coded in: they fold, and this folding is the key to their unique functions.
+               |  
+               | &#x9;
+               p
+                  | Proteins fold into a variety of 3-dimensional shapes. Experiments to unfold and
+                  | refold proteins have shown that the amino acid sequence itself contains all the
+                  | instructions needed for proper folding. Scientists have searched for rules governing
+                  | folding but have found no reliable way to predict a 3-dimensional structure from a simple sequence.
+               | &#x9;
+               p
+                  | Knowing a protein&apos;s sequence does help, however. Having determined the sequence, the
+                  | next thing a scientist would do is compare the DNA sequence of the newly discovered gene with those
+                  | of all previously discovered genes. Perhaps the sequence of the new gene will be similar
+                  | to another whose function is already known. Scientists have already determined the functions
+                  | of many proteins using a variety of methods.
+               |  
+               | &#x9;
+               | &#x9;
+               p For example, they can determine:
+               | &#x9;
+               ul
+                  li How big a protein is
+                  | &#x9;
+                  li Where it&apos;s located in an organism or even inside a cell
+                  | &#x9;
+                  li Whether it interacts with DNA, RNA, nucleotides, membranes, or other proteins
+                  | &#x9;
+                  li Whether it&apos;s changed by the cell after being made
+                  | &#x9;
+                  li
+                     | Whether it can change other proteins by modifying them or breaking them into pieces
+               | &#x9;
+               p
+                  | All of this information tells a scientist something about the possible functions of a
+                  | protein. With this knowledge, the scientist can formulate testable hypotheses about the protein&apos;s role.
+               | &#x9;
+               p
+                  | If you can relate the sequence of a new protein to that of one that has already been
+                  | characterized using tests like these, you have a jump on figuring out what the new protein
+                  | might be doing in the cell. What sorts of similarities might a scientist find between a
+                  | newly discovered gene and one we know more about?
+               | &#x9;
+               | &#x9;
+               ul
+                  li Genes may share high sequence similarity across their entire length.
+                  | &#x9;
+                  li
+                     | Genes may show sequence similarity that is limited to a certain region. For example,
+                     | the protein encoded by the gene may share a well-characterized DNA-binding domain with
+                     | other proteins, while other parts of the protein are different.
+                  | &#x9;
+                  li
+                     | Genes may share similar motifs. Motifs are common amino acid sequences whose folded structure
+                     | is known; zinc fingers and leucine zippers are good examples. Sequences residing between motifs
+                     | can differ greatly from protein to protein, and the folded structure of these areas may be
+                     | unknown, but the known motifs will usually fold into similar shapes.
+               | &#x9;
+               | &#x9;
+               img(src='images/lz-zf.gif', alt='', width='500', height='318')
+               | &#x9;
+               p
+                  | If the new gene shares no similarities with any other known gene, the scientist will term
+                  | it &quot;unique.&quot; Without any clues to go on, it is more difficult to propose and test hypotheses
+                  | about the gene&apos;s function, but previous research findings can be useful.
+               |  
+               | &#x9;
+               p
+                  | Background information about a wide variety of known proteins helps speed the study of new ones.
+                  | In the same way, basic research -- meaning research for the purpose of discovering any and all
+                  | information, not necessarily immediately useful information -- is crucial to the progress of all science.
+               p.attrib(style='width:500px;')
+                  | Funding provided by a Howard Hughes Medical Institute Precollege Science Education Initiative for Biomedical Research
+                  | Institutions Award (Grants 51000125, 51000176)
+            | &#x9;
+            td.sidecol(valign='top')
+               .shadow
+                  h5 Find out more about proteins
+                  |  
+                  | &#x9;&#x9;&#x9;
+                  p
+                     | take the...
+                  | &#x9;&#x9;&#x9;
+                  p
+                     a(href='/content/begin/tour/') Tour of the Basics
+               | &#x9;&#x9;
+               | &#x9;&#x9;
+               br
+               |         
+               |         
+               script(type='text/javascript').
+                  AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','180','height','270','src','foldprotein','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','foldprotein' ); //end AC code
+               noscript
+                  p Javascript is required to view this content.
+   

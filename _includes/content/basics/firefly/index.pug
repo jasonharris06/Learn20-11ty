@@ -1,0 +1,44 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+
+   +pod("")
+      .uk-width-1-1.uk-text-center
+         p If you're looking for the old Flash piece,
+            a(href="./flash")  you can find it here.
+         iframe.uk-responsive-width(src='https://player.vimeo.com/video/175382763', width='920', height='520', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+   +pod('Why do fireflies glow?')
+      .uk-width-medium-6-10
+         p
+            | One reason that fireflies glow is to attract a
+            | mate. Males and females of the same species will flash
+            | signals back and forth as a way of communicating. Each
+            | firefly species has its own particular pattern. For example,
+            | the fireflies of one species will fly around in the night sky
+            | and dive steeply just as the flash begins and turn upward to make a
+            | distinctive J-shaped pattern of light.
+            | Female fireflies hang out on a tree branch or in the
+            | grass while the males fly around showing off their best
+            | flashes. When a female recognizes the flash from a male of
+            | the same species, she will answer with her best flash.
+         p
+            | Another reason that fireflies glow is to avoid
+            | predators. Fireflies are filled with a nasty-tasting
+            | chemical called lucibufagens, and after a predator gets a mouthful, it
+            | quickly learns to associate the firefly&apos;s glow with this bad
+            | taste! So not only does the flashing help attract a mate, 
+            | it also warns predators to stay away.
+         p
+            | One species of firefly that can&apos;t make its own lucibufagens acquires it by eating others that can. To lure victims, these fireflies mimic the flashing pattern of another species. When the unsuspecting male approaches to find a mate, he instead becomes a tasty treat to the tricky firefly.
+      .uk-width-medium-4-10
+         figure
+            img(src='images/lfff.jpg')
+
+   +references
+      p.
+         Goodsell, D. (2006). Luciferase. RCSB PDB Molecule of the Month. doi:10.2210/rcsb_pdb/mom_2006_6. Accessed 30 August, 2016, at http://pdb101.rcsb.org/motm/78
+      p.
+         Goodsell, D.S. (2009). The Machinery of Life (2nd ed.). New York, NY: Springer Science+Business Media.
+
+   +bottom-menu("",'hhmi')

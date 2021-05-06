@@ -1,0 +1,196 @@
+extends /shared/layout
+
+block append head
+  style.
+    .mgq {
+      padding: 10px 15px;
+      color: #333;
+      font-size: 16px;
+      /*background-color: #84bbc7;*/
+      background-color: #76a7b3;
+      margin-top: -2px;
+      margin-bottom: 2px;
+      font-family: 'Museo Slab';
+      font-weight: 300;
+      letter-spacing: 0.01em;
+      color: white;
+      text-shadow: rgba(0, 0, 0, 0.7) 0px 0.5px 5px;
+    }
+    .gq {
+      padding: 10px 15px;
+      color: #4e4e4e;
+      font-size: 0.9em;
+      background-color: #c9e1e6;
+      background-color: #e9e9e6;
+      /*margin-bottom: 2px;*/
+      font-style: italic;
+      font-weight: 600;
+    }
+    .gqBody {
+      font-weight: 400;
+      font-style: normal;
+    }
+    .gq > span {
+      white-space: nowrap;
+    }
+    .gray-badge {
+      background-color: gray;
+    }
+
+block content
+   +pageTitle(teach="evolution")
+   .lg-section
+      .uk-container.uk-container-center
+        .uk-grid
+          .uk-width-medium-5-10
+            h2(id="sharedbio") Shared Biochemistry
+            .mgq What shapes the characteristics of all living things?
+            .lg-index-items
+              .gq Introduction
+              +index-item('Same gene, different organism', 'video', 'samegene', 'images/samegene.jpg')
+                p Learn about two bioengineering examples: fish that make a glowing jellyfish protein, and yeast that make spider silk.
+              .gq
+                | Why can living things decode the information in each 
+                span other's genes?<br>
+                .gqBody.
+                  To answer this question, we need to dive into the basics. What are genes, anyway? And how do living things read 
+                  the information in genes to build proteins?
+              +index-item('What are Proteins?', 'video', 'proteins', 'images/proteins.jpg')
+                p Learn about proteins, the molecules living things are made of.
+              +index-item('Types of Proteins', 'interactive explore', 'proteintypes', 'images/proteintypes.jpg')
+                p Explore the types of proteins and learn about their varied functions.
+              +index-item('What are DNA and genes?', 'video', 'dna', 'images/dna.jpg')
+                p Get to know the molecule that holds the instructions for building every living thing.
+              +index-item('Build a DNA molecule', 'interactive explore', 'builddna', 'images/builddna.jpg')
+                p Find out how the DNA code letters A, C, G, and T make a DNA molecule by building one yourself.
+              +index-item('How a firefly&#39;s tail makes light', 'video', 'firefly', 'images/firefly.jpg')
+                p Walk through protein synthesis with this animated example.
+              +index-item('Transcribe and Translate a Gene', 'interactive explore', 'txtl', 'images/txtl.jpg')
+                p See how cells "read" the information in a DNA sequence to build a protein—in a bit more detail.
+              +index-item('Paper Transcription and Translation', 'pdf', 'files/tx-tl_student_instructions.pdf', 'images/paper_txtl.jpg')(target="_blank")
+              .gq
+                | If organisms build proteins the same way, do they build the 
+                span same proteins?
+              +index-item('Shared Functions, Shared Genes', 'video', 'sharedfunctions', 'images/sharedfunctions.jpg')
+                p Take a closer look at the unity of life: the basic functions required for life, and the genes and proteins that underlie them.
+              .gq How does science defeat bias?<br>
+                .gqBody Science isn't a collection of facts. It's a process that people use to learn about the world.
+              +index-item('The Trouble With Cognitive Bias', 'video', 'bias', 'images/bias.jpg')
+                p Our brains are very clever, but they also use some shortcuts that lead to wrong assumptions. Learn how science helps to defeat these natural, inborn biases.
+
+            h2(id="selection") Natural Selection
+            .mgq How do species change over time?
+            .lg-index-items
+              .gq
+                | Can traits of populations change 
+                span over time?
+              +index-item('Rock Pocket Mice', 'video', 'pocketmice', 'images/pocketmice.jpg')
+                p Meet the rock pocket mouse: a little rodent that gets a lot of attention.
+              +index-item('Reproductive Advantage Simulation', 'interactive explore', 'advantage', 'images/advantage.jpg')
+                p Whether a trait is an advantage or not depends on context.
+              .gq What is natural selection?
+                .gqBody Not all change over time is the result of natural selection.  
+              +index-item('Recipe for Natural Selection', 'video', 'criteria', 'images/recipe.jpg')
+                p Learn about the three things that make natural selection happen: variability, heritability, and reproductive advantage.
+              .gq
+                | Is natural selection changing the traits in a population of fish 
+                span in Loberg Lake?
+              +index-item('Meet the Threespine Stickleback', 'video', 'meet', 'images/meetstickleback.jpg')
+                p Learn about this little fish, and why a particular population in an Alaskan lake drew researchers' interest.
+              //- +index-item('Loberg Lake Stickleback data collection', 'interactive explore', 'stickleback', 'images/stickleback.jpg')
+              //-   p Travel to a virtual lake, collect some fish, and find out if the population's traits are changing over time.
+              +index-item('Adaptation', 'video', 'adaptation', 'images/adaptation.jpg')
+                p The consequence of mutation, allele shuffling, and natural selection acting over time is that populations tend to be well-adapted to their environments.
+
+            h2(id="common") Common Ancestry
+            .mgq What is the evidence that living species evolved from common ancestral species?
+            .lg-index-items
+              .gq Introduction
+              +index-item('Tree Diagrams', 'video', 'diagrams', 'images/cladograms.jpg')(target="_blank")
+                p This video introduces tree diagrams - models that organize hypotheses about common ancestry.
+              .gq
+                | How do scientists use multiple lines of evidence to learn about 
+                span common ancestry?<br>
+                .gqBody Scientists use four interrelated lines of evidence to make hypotheses about evolutionary relationships: anatomy, fossils, embryos, and DNA.
+              +index-item('Fish or Mammals?', 'pdf', 'files/cetaceans_case-study.pdf', 'images/cetaceans.jpg')(target="_blank")
+              +index-item('Evidence for Common Ancestry', 'interactive explore', 'evidence', 'images/evidence.jpg')
+                p See a quick overview of some of the evidence that scientists have used to understand evolutionary relationships across the tree of life.
+              .gq
+                | Why does DNA evidence agree with the other lines of evidence for 
+                span common ancestry?
+              +index-item('Common Ancestry: It&#39;s in our DNA', 'explore', 'common', 'images/common.jpg')
+                p Find out what DNA has to do with anatomy, embryological development, and fossils.
+              +index-item('Phylogenetic Tree', 'interactive explore', 'tree', 'images/tree.jpg')
+                p How many genes do chickens and moss have in common? It may be more than you think. 
+
+          .uk-width-medium-5-10
+            h2(id="heredity") Heredity
+            .mgq How do the differences arise in DNA that lead to differences in characteristics of organisms?
+            .lg-index-items
+              .gq Introduction
+              +index-item('Canine Similarities and Differences', 'explore', 'canine', 'images/canine.jpg')
+                p Take a moment to think about the characteristics of species, breeds, and individual dogs.
+              .gq How do variations in DNA arise?
+                .gqBody Learn about mutation, and how these changes in DNA influence an individual's inherited characteristics.
+              +index-item('What is Mutation?', 'video', 'mutation', 'images/mutation.jpg')
+                p Take a look at how variation occurs.
+              +index-item('Mutate a DNA Sequence', 'pdf', 'files/mutation-instructions.pdf', 'images/paper_mutate.jpg')(target="_blank")
+              +index-item('HLA-B Protein', 'pdf', 'files/Human_HLA-B.pdf', 'images/hlab.jpg')(target="_blank")
+              +index-item('The Outcome of Mutation', 'interactive explore', 'outcomes', 'images/outcomes.jpg')
+                p Small changes to DNA can lead to big variations in traits.
+              +index-item('How Often Do Mutations Happen?', 'video', 'frequency', 'images/frequency.jpg')
+                p Follow the math in this real-life example to see why, given enough time, even very specific DNA changes are highly likely.
+              .gq
+                | How does sexual reproduction contribute to variation in 
+                span a population?
+              +index-item('What is Inheritance?', 'video', 'inheritance', 'images/inheritance.jpg')
+                p Learn how traits pass from parents to offspring.
+              +index-item('Allele Shuffling', 'video', 'allele', 'images/shuffling.jpg')
+                p See how variations in genes, called alleles, are shuffled with each generation to make new gene combinations.
+              +index-item('Build-A-Bird', 'pdf', 'files/build-a-bird.pdf', 'images/buildbird.jpg')(target="_blank")
+              .gq What are the benefits of genetic variation?
+              +index-item('Genetic Variation', 'video', 'variation', 'images/variation.jpg')
+                p Even in species that look alike to us, individuals have variations in their DNA. Learn why this is important.
+
+            h2(id="speciation") Speciation
+            .mgq How does natural selection lead to the formation of new species?
+            .lg-index-items
+              .gq What makes a species?
+              +index-item('What Is a Species?', 'video', 'species', 'images/species.jpg')
+                p This video explains why 'species' is such a tricky concept to define.
+              +index-item('Reproductive Barriers', 'explore', 'barriers', 'images/barriers.jpg')
+                p As this collection of real-life examples demonstrates, not all barriers are physical. 
+              .gq
+                | Are flies from apple and hawthorn fruits becoming two 
+                span different species?
+              +index-item('Hawthorns to Apples', 'video', 'hawthorn', 'images/hawthorn.jpg')
+                p Get familiar with a real-life example that offers a rare opportunity to observe speciation in real time.
+              +index-item('Bears, Species & DNA', 'interactive explore', 'bears', 'images/BearsSpeciesDNA.png')
+                p Learn what DNA evidence can tell us about the evolutionary history of species.
+              .gq
+                | What happens when the same processes act over longer 
+                span time scales?
+                .gqBody.
+                  You've seen how mutation, allele shuffling, and natural selection can change populations over decades or 
+                  centuries. But what happens after a few billion years?
+              +index-item('Unity and Diversity of Life', 'video', 'unity', 'images/unity.jpg')
+                p The underlying pattern of evolution is that ancestral species diversify, giving rise to new lineages.
+
+            h2(id="related resources") Related Resources
+            .lg-index-items
+              +index-item('Things You May Not Know About Evolution', 'video', 'misconceptions', 'images/ThingsYouMayNotKnowAboutEvolution.png')
+                p See many common misconceptions about evolution, explained.
+              +index-item('Geologic Time', 'explore', 'geologic', 'images/GeologicTime.png')
+                p Scroll through the span of geologic time from the Earth's origin to the present day.
+              +index-item('All Living Things Are Related', 'explore', 'related', 'images/AllLivingThingsAreRelated.png')
+                p Fossils, embryos, and DNA teach us about the unity of life.
+              +index-item('Tracking Traits Through Time', 'interactive explore', 'tracking', 'images/TrackingTraitsThroughTime.png')
+                p See when and where new characteristics evolved in the animal family tree.
+              +index-item('Artificial Vs. Natural Selection', 'explore', 'artificialnatural', 'images/ArtificialVsNaturalSelection.png')
+                p Humans have been selecting for desirable traits in organisms throughout history.
+              +index-item('Evolution of Corn', 'explore', 'corn', 'images/EvolutionOfCorn.png')
+                p Small changes in genes of a wild grass have yielded one of today's most vital crops.
+      
+      +bottom-menu('https://learn.genetics.utah.edu/content/evolution/credits/', 'nsf-evolution')
+        .lg-bottom-menu
+          ul.uk-subnav.uk-subnav-line

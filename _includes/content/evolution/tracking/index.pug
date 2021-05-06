@@ -1,0 +1,88 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   //- Flash message
+   +pod('')
+      .uk-width-1-1
+         p.uk-text-center
+                  strong
+                     small
+                        | This page has content that requires the Flash Player plug-in. Unfortunately, we can't do anything on our end to improve your experience with Flash. If you are using an iOS device, please note that these devices do not support Flash. We are slowly working on replacing our popular Flash-based content and will update this content as it becomes available. If you would like to help us as we work on these updates, please consider donating 
+                        a(href="https://umarket.utah.edu/ugive/index.php?gift_id=2787&special=%20Learn.Genetics%20website%20MD11595-40165") here
+                        | .
+                        
+   +pod('')
+      .uk-width-medium-6-10
+         p
+            strong Exploring the animal family tree
+            |  -- All animals alive on earth today are descended from a tiny, soft-bodied
+            |          creature that lived in the sea over 600 million years ago. The descendants of this first animal have diversified and multiplied
+            |          over millions of generations into a countless variety of species.
+         |       
+         p
+            | This simplified animal family tree (below) includes many of the more-recognizable animal groups
+            | (phyla), and it highlights several important events in animal evolution. The branch points represent single
+            | ancestral species that gave rise to multiple groups of descendants. The descendants share certain characteristics
+            | that were present in their common ancestor. Ancient traits that evolved near the base of the tree are shared by more
+            | animal phyla than are the traits that evolved closer to the tips of the branches.
+         |       
+         p
+            | Keep in mind that evolution is neither linear nor progressive. Look for traits that were lost in some groups, and traits
+            | that evolved more than once. Also note that even after hundreds of millions of years of evolution, many animals are still
+            | soft and squishy and live in the ocean.
+      |    
+      .uk-width-medium-4-10
+         +miscon("Evolution always moves from simple to complex.","Evolution often favors the loss of complexity.")
+
+   +pod('')
+      +flash('TrackingTraits.swf', 920, 600, true)
+      div(style='float:right; margin-right:30px;')
+         | See where the Cambrian and Pre-cambrian periods fall in the scale of 
+         a(href='../../selection/time/', style='letter-spacing:0px;') Geologic Time
+         | .
+   +pod('Tree of Life')
+      |    
+      .uk-width-medium-6-10
+         img(src='images/TreeOfLife.jpg')
+      |    
+      .uk-width-medium-4-10
+         p
+            | The organisms that fill our visual worldplants, animals and an occasional mushroomaccount for less than 10 percent of the living species on this
+            | planet. Two of the three domains of life, the bacteria and the archaea, are made up entirely of (usually) microscopic, single-celled creatures. Even the third
+            | domain of life, the eukaryotes, which includes humans, plants, fungi and protists, consists mostly of microscopic creatures.
+   +pod('Most Living Things are Microscopic')
+      |    
+      .uk-width-medium-6-10
+         p
+            | We often think of microbes as inferior relics left over from a primitive world. But in truth, microbial life is going strong, and it&apos;s still evolving. Of
+            | all of the species identified so far, over 90% are microbial, accounting for more than half of the total mass of living things on Earth. Microbes decompose
+            | waste and carry out biochemical reactions that are essential to life as we know it. In fact, the microbes that live inside and on our bodies outnumber our
+            | own cells by about 10 to 1, and they carry out many functions that are essential for our survival.
+         |       
+         p
+            | While microbes may appear simple on the surface, they contain a vast and diverse collection of genes. Together, microbes account for the majority of the
+            | genetic diversity on the planet. Even within our own bodies, there are about 100 times more unique genes in our resident microbes than in our own cells.
+      |    
+      .uk-width-medium-4-10
+         +miscon("More complex organisms like humans are more &quot;evolved&quot; than simple organisms like bacteria.","<p>The family trees of all living things can be traced back to a single common ancestor; therefore, all of life has been evolving for the same amount of time.</p><p>The term &quot;more evolved&quot; doesn&apos;t really mean anything. More specific language is better: an organism can be &quot;more complex,&quot; or it may have &quot;undergone more change over time,&quot; or maybe it is &quot;better suited to its environment.&quot;</p>")
+         
+
+   +references
+      p
+         | Barton, N. H., Briggs, D. E. G., Eisen, J. A., Goldstein, D. B., &amp; Patel, N. H. (2007). 
+         em Evolution.
+         |  Cold Spring Harbor Laboratory Press: Cold Spring Harbor, New York.
+      |         
+      p
+         | Cracraft, J. &amp; Donoghue, M. J. (Eds.) (2004). 
+         em Assembling the Tree of Life.
+         |  Oxford University Press: USA.
+      |         
+      p
+         | Hsiao, W. W. L., &amp; Fraser-Liggett, C. M. (2009). 
+         a(href='http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6T64-4VT1G0W-2&_user=418636&_rdoc=1&_fmt=&_orig=search&_sort=d&_docanchor=&view=c&_acct=C000019853&_version=1&_urlVersion=0&_userid=418636&md5=63a94dd9a41d3dc615f074f861299b3c')
+            | Human Microbiome Project
+         | --paving the way to a better understanding of ourselves and our microbes. Drug Discovery Today, 14, 331-333 (subscription required).
+
+   

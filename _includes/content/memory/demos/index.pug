@@ -1,0 +1,79 @@
+extends /shared/layout
+
+block content
+   +pageTitle   
+
+   +pod("Change blindness")
+      .uk-width-medium-1-2
+         p.
+            Change blindness is a great way to demonstrate sensory memory. Sensory memory is very short-lived—less than a 
+            second for images—and most of the information it takes in doesn't enter our conscious awareness.
+         p.
+            When we see two slightly different images, one right after the other, it is very easy to pick out the difference. But 
+            adding a 0.6-second flash in between makes the task much harder. That quick flash is long enough for most of the 
+            information in our visual sensory memory to fade. It's only when we intentionally focus our attention on specific 
+            visual elements that we can see the change.
+         +well
+            h3 Related content
+            p To learn more about sensory memory, working memory, and more, visit <a href="../types/">Types of Memory</a>.
+
+      .uk-width-medium-1-2
+         figure
+            img#cb.lg-no-shadow(src="../types/images/cb.gif")
+            p
+               a.uk-button(data-uk-toggle="{target: '#cb'}") Switch on/off
+         
+   +pod("Stroop test")
+      .uk-width-medium-1-2
+         p.
+            The Stroop test is a measure of selective attention, which uses working memory. The test uses a list of names of 
+            colors, like the image shown here. But instead of reading the words, the person being tested must say the color of 
+            the letters. When the colors and words are conflicting, the brain needs to work hard to filter out the competing 
+            signals. The resulting delay is called the Stroop Effect.
+      .uk-width-medium-1-2
+         figure
+            img(src="images/strooptest.jpg")
+         
+         +well
+            p.
+               Download the pdf file for colored word lists and instructions to guide you through 
+               a <a href="files/Stroop-Test.pdf">hands-on Stroop test</a> demo.
+
+   +pod("Inattentional blindness")
+      .uk-width-medium-1-2
+         p.
+            Attention is an important feature of working memory that helps to bring information into our conscious awareness. 
+            Attentional control helps us filter out distractions—like when we focus on reading a book in a crowded, noisy room.
+         p.
+            The flip side of attentional control is that when we are focused on a task, we may not notice important signals 
+            outside of that task. If we are focused on reading, for example, we may not notice an important announcement even 
+            though our ears are hearing it.
+         p.
+            Inattentional blindness is the failure to notice something, even when it's directly in our line of sight. 
+            Inattentional blindness can happen when we are highly focused on a task. In a famous experiment, when test subjects 
+            were chasing a runner through a college campus, more than one-third did not see a staged fight that they ran past.
+         p.
+            Inattentional blindness is a fact of life. We like to think that we are aware of our surroundings, but we actually 
+            notice very little. There is simply too much information for the brain to process. 
+
+      .uk-width-medium-1-2
+         figure
+            iframe.uk-responsive-width(width='560', height='315', src='https://www.youtube.com/embed/GZGY0wPAnus', frameborder='0', allowfullscreen='')
+            p.
+               Magicians and pickpockets are experts at manipulating our attention and taking advantage of inattentional blindness. 
+         +well
+            h3 Related links
+            p.
+               How many changes can you spot in <a href="https://www.youtube.com/watch?v=ubNF9QNEQLA">this "Whodunnit" video</a>? 
+            p.
+               <a href="http://www.theinvisiblegorilla.com/gorilla_experiment.html">Count how many times</a> the players in white shirts pass the ball
+            p.
+               <a href="http://www.theinvisiblegorilla.com/videos.html">More videos</a> from this project 
+   
+   +references
+      p.
+         Chabris, C.F., Weinberger, A., Fontain, M. & Simons, D.J. (2011). You do  not talk abut Fight Club if you do  not notice 
+         Fight Club: inattentional blindness for a simulated real-world assault. i-Perception, 2, 150-153. doi: 10.1068/i0436
+      p.
+         Stroop, J.R. (1935). Studies of interference in serial verbal reactions. Journal of Experimental Psychology, 18, 643-662.
+         (<a href="http://psych.hanover.edu/classes/Cognition/papers/stroop%201933.pdf">PDF</a>)

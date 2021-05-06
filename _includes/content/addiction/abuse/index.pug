@@ -1,0 +1,49 @@
+---json
+{
+  "page":{
+    "module": {
+       "title": "Addiction: Genetics and the Brain", "url": "/content/addiction"}
+    },
+    "title": "The Science of Addiction: Genetics and the Brain",
+    "type": "indexPage",
+    "createDate": "2018-08-07"
+  }
+}
+---
+extends /shared/layout
+block content
+   +pageTitle
+                        
+   +pod('')
+      .uk-width-medium-2-10
+         ul.uk-tab.uk-tab-right(data-uk-switcher="{connect:'#videos', animation: 'slide-right'}")
+            li <a href="">Alcohol</a>
+            li <a href="">Cocaine</a>
+            li <a href="">Opioids</a>
+            li <a href="">Inhalents</a>
+            li <a href="">Marijuana</a>
+            li <a href="">MDMA</a>
+            li <a href="">Methamphetamine</a>
+            li <a href="">Nicotine</a>
+            li <a href="">Psychedelics</a>
+            li <a href="">GHB &amp; Rohypnol</a>
+            li <a href="">Dissociative Drug</a>
+      .uk-width-medium-8-10
+         ul#videos.uk-switcher
+            li: iframe.lg-responsive(src='https://player.vimeo.com/video/371982861', width='932', height='495', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+            li: iframe.lg-responsive(src='https://player.vimeo.com/video/371983096', width='932', height='495', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+            li: iframe.lg-responsive(src='https://player.vimeo.com/video/371983349', width='932', height='495', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+            li: iframe.lg-responsive(src='https://player.vimeo.com/video/371983434', width='932', height='495', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+            li: iframe.lg-responsive(src='https://player.vimeo.com/video/371983549', width='932', height='495', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+            li: iframe.lg-responsive(src='https://player.vimeo.com/video/371983726', width='932', height='495', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+            li: iframe.lg-responsive(src='https://player.vimeo.com/video/371983784', width='932', height='495', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+            li: iframe.lg-responsive(src='https://player.vimeo.com/video/371983809', width='932', height='495', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+            li: iframe.lg-responsive(src='https://player.vimeo.com/video/371983829', width='932', height='495', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+            li: iframe.lg-responsive(src='https://player.vimeo.com/video/371983862', width='932', height='495', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+            li: iframe.lg-responsive(src='https://player.vimeo.com/video/371983893', width='932', height='495', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+
+//- block append endscripts
+//-    script.
+//-       $('.uk-tab').on("click", function(e) {
+//-          $('#nonfetal iframe').attr("src", $('#videos').attr("src"));
+//-       });

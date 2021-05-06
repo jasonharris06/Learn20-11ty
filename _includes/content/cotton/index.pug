@@ -1,0 +1,36 @@
+extends /shared/layout
+block content
+   +pageTitle
+   .lg-section
+      .uk-container.uk-container-center
+         .uk-grid
+            .uk-width-medium-5-10
+               h2 A WORLD OF COTTON
+               p.lg-index-box-text This natural plant fiber is a globally important crop with many uses. But cotton growers are continually dealing with environmental challenges like drought and pests. Explore the content below to learn more about cotton, its wild ancestors, and some of the approaches scientists are using to study and improve cotton plants.
+               .lg-index-items
+                  +index-item('What is Cotton', 'learn more', 'what', 'index/what.jpg')
+                     p We've all seen the "100% cotton" label on our clothes. But what is cotton, and where does it come from?
+                  +index-item('Uses & Types of Cotton', 'learn more', 'uses', 'index/uses.jpg')
+                     p Learn all about cotton and its many uses.
+                  +index-item('The Evolution of Cotton', 'learn more', 'evolution', 'index/evolution.jpg')
+                     p The traits of modern cotton have been shaped by both natural and artificial selection.
+                  +index-item('Why Study Cotton Genes?', 'learn more', 'genes', 'index/genes.jpg')
+                     p When scientists understand which genes influence which traits, they have the potential to make cotton plants with better characteristics.
+
+            .uk-width-medium-5-10
+               h2 MAPPING THE COTTON GENOME
+               p.lg-index-box-text Genome mapping is a useful step in the process of understand how variations in genes influence traits. Learn the basic approach researchers use for genome mapping, then use one of our models to try it yourself.
+               .lg-index-items
+                  +index-item('Crop Improvement Methods', 'learn more', 'crop', 'index/crop.jpg')
+                     p Compare and contrast the traditional and modern methods for making better crop plants.
+                  +index-item('Genome Mapping', 'learn more', 'genome', 'index/genome.jpg')
+                     p Learn the basics about genome assembly: why genomes are first cut apart, and how they're put back together.
+                  //+index-item('Interactive Contig Building', 'interactive explore', 'building', 'index/placeholder2.jpg')
+                     p Coming Soon! 
+                  +index-item('Connect-a-contig: Rope version', 'pdf', 'pdf/connect-a-contig_rope.pdf', 'index/rope.jpg')
+                     p Build a hands-on rope model and use it to assemble your own contig.
+                  +index-item('Connect-a-contig: Paper version', 'pdf', 'pdf/connect-a-contig_paper.pdf', 'index/paper.png')
+                     p This hands-on contig building activity uses paper cut-outs. Use it as a follow-up or alternative to the rope model.
+
+            .uk-width-medium-5-10
+                  +bottom-menu("credits",'nsf-cotton')

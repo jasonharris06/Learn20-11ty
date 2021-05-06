@@ -1,0 +1,127 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   script(src='/Scripts/AC_RunActiveContent.js', type='text/javascript')
+
+   +pod('')
+      .uk-width-medium-6-10
+         p
+            | Like words in a sentence, the DNA sequence of a gene determines
+            | the amino acid sequence for the protein it encodes. In the protein-coding region of a gene, the DNA sequence is interpreted in
+            | groups of three nucleotide bases, called codons. Each codon specifies a single amino acid
+            | in a protein.
+         p
+            | Learn about the other parts of a gene in
+            a(href='../geneanatomy/') &nbsp;Anatomy of a Gene.
+      .uk-width-medium-4-10
+         figure
+            img.lg-no-shadow(src='images/dnatoprotein.jpg', height='325', width='352', alt='DNA to protein')
+
+   +pod('DNA as a sentence')
+      .uk-width-medium-6-10
+         p
+            | We can think about the protein-coding sequence of a gene as a sentence made up entirely of 3-letter
+            | words. In the sequence, each 3-letter word is a codon, specifying a single amino acid
+            | in a protein. Have a look at this sentence:
+         p Thesunwashotbuttheoldmandidnotgethishat.
+         p
+            | If you were to split this sentence into individual 3-letter words, you would probably read it like this:
+         p The sun was hot but the old man did not get his hat.
+         p
+            | This sentence represents a gene. Each letter corresponds to a nucleotide base, and
+            | each word represents a codon. What if you shifted the &quot;reading frame?&quot;
+            | You would end up with:
+         p T hes unw ash otb utt heo ldm and idn otg eth ish at.
+         p Or Th esu nwa sho tbu tth eol dma ndi dno tge thi sha t.
+         p
+            | As you can see, only one of these reading frames translates into an understandable
+            | sentence. In the same way, only one reading frame within a gene codes for
+            | the correct protein.
+      .uk-width-medium-4-10
+         figure
+            img(src='images/dnapaper.jpg', alt='DNA sequence')
+            p
+   +pod('Mutating a DNA sentence')
+      .uk-width-medium-6-10
+         p Take this DNA sequence:
+         p GCATGCTGCGAAACTTTGGCTGA
+         p You can separate the sequence into 3-letter codons, in 3 different ways:
+         ol
+            li GCA TGC TGC GAA ACT TTG GCT GA
+            li G CAT GCT GCG AAA CTT TGG CTG A
+            li GC ATG CTG CGA AAC TTT GGC TGA
+         p How can you tell which reading frames is the correct one?
+         p
+            | All protein-coding regions begin with the sequence &quot;ATG,&quot; which encodes the amino acid
+            | methionine (Met). Therefore, the correct reading frame will contain the codon &quot;ATG.&quot;
+         p
+            | You can predict the amino acid sequence of the protein by using the Universal
+            | Genetic Code.
+         p
+            a(href='#startcodon', data-uk-modal) Why isn&apos;t the start codon in DNA complementary to AUG?
+      .uk-width-medium-4-10
+         figure
+            img(src='images/sequencing-1.jpg', alt='DNA sequencing machine')
+            p.uk-text-small A DNA sequence is read by a sequencing machine.
+            p.uk-text-small Image courtesy CDC/James Gathany
+   +pod('The Universal Genetic Code')
+      .uk-width-medium-6-10
+         p
+            | The Universal Genetic Code is the instruction manual that all cells use to read the DNA
+            | sequence of a gene and build a corresponding protein. Proteins are made of amino acids
+            | that are strung together in a chain. Each 3-letter DNA sequence, or codon, encodes
+            | a specific amino acid.
+         p The code has several key features:
+         ul
+            li All protein-coding regions begin with the &quot;start&quot; codon, ATG.
+            li There are three &quot;stop&quot; codons that mark the end of the protein-coding region.
+            li Multiple codons can code for the same amino acid.
+         p
+            | Note: Protein-building machinery does not read DNA directly.  Instead, it reads an intermediate molecule, called messenger RNA, that is copied fron DNA.  Learn more about this process in
+            a(href='../transcribe/') Transcribe and Translate a Gene.
+      .uk-width-medium-4-10
+         figure
+            a(href="", data-uk-modal="{target:'#lut'}")
+               img.lg-no-shadow(src='images/LUT.jpg', alt='Universal Genetic Code')
+            p.uk-text-small
+               | This graphic is based on the codon look-up table in Miller and Levine&apos;s Biology textbook. For more information, see 
+               a(href='http://www.millerandlevine.com/circular.html', target='_blank') their description
+               | .  Click image for full-size table and instructions.
+   +pod('Mutation')
+      .uk-width-medium-6-10
+         p
+         p
+            | Mutation is a process that makes a permanent change in a DNA sequence. Changing a gene&apos;s
+            | DNA sequence can change the amino acid sequence of the protein it codes for.
+         p
+         h3 Point Mutations
+         p
+            | Point mutations are single base changes in a gene&apos;s DNA sequence. They can be
+            | further categorized:
+         ul
+            li Missense mutations cause a single amino acid change within the protein.
+            li
+               | Nonsense mutations create a premature &quot;stop&quot; codon, causing the protein to be shortened.
+            li Silent mutations do not cause amino acid changes.
+         h3 Insertion and Deletion Mutations
+         p
+            | Insertion mutations and deletion mutations add or remove one or more DNA bases. Insertions and deletions (unless they happen
+            | in multiples of 3) can shift the reading frame of a gene, changing the grouping of bases into codons.  Also called frameshift mutations,
+            | these changes can greatly affect a protein&apos;s amino acid sequence.
+      .uk-width-medium-4-10
+         figure
+            img.lg-no-shadow(src='images/mutations-1.jpg', alt='Mutations')
+            p
+
+   +bottom-menu("",'hhmi')
+
+   #lut.uk-modal
+      .uk-modal-dialog
+         a.uk-modal-close.uk-close
+         include lut
+
+   #startcodon.uk-modal
+      .uk-modal-dialog
+         a.uk-modal-close.uk-close
+         include startcodon

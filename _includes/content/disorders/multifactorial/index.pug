@@ -1,0 +1,25 @@
+extends /shared/layout
+block append endscripts
+   script(src="/lib/accordion.js")
+block content
+   +pageTitle
+   .lg-section
+      .uk-container.uk-container-center
+         .uk-grid
+            .uk-width-1-1
+               p These disorders involve variations in multiple genes, often coupled with environmental causes.
+               #ac.uk-accordion(data-uk-accordion="{showfirst: false}")
+                  h3.uk-accordion-title Alzheimers Disease
+                  .uk-accordion-content
+                     include ./alzheimers/index
+                  h3.uk-accordion-title Breast Ovarian Cancer
+                  .uk-accordion-content
+                     include ./brca/index
+                  h3.uk-accordion-title Colon Cancer
+                  .uk-accordion-content
+                     include ./colon/index
+                  h3.uk-accordion-title Hypothyroidism
+                  .uk-accordion-content
+                     include ./hypothyroidism/index
+
+      +bottom-menu("",'hhmi')

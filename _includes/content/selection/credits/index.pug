@@ -1,0 +1,216 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-1-2
+         #movie
+            object#FLVPlayer(classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000', width='540', height='304')
+               param(name='movie', value='FLVPlayer_Progressive.swf')
+               param(name='quality', value='high')
+               param(name='wmode', value='opaque')
+               param(name='scale', value='noscale')
+               param(name='salign', value='lt')
+               param(name='FlashVars', value='&MM_ComponentVersion=1&skinName=Clear_Skin_3&streamName=hhmi2009&autoPlay=false&autoRewind=false')
+               param(name='swfversion', value='8,0,0,0')
+               // This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don't want users to see the prompt.
+               param(name='expressinstall', value='Scripts/expressInstall.swf')
+               // Next object tag is for non-IE browsers. So hide it from IE using IECC.
+               //if !IE
+               object(type='application/x-shockwave-flash', data='FLVPlayer_Progressive.swf', width='540', height='304')
+                  // <![endif]
+                  param(name='quality', value='high')
+                  param(name='wmode', value='opaque')
+                  param(name='scale', value='noscale')
+                  param(name='salign', value='lt')
+                  param(name='FlashVars', value='&MM_ComponentVersion=1&skinName=Clear_Skin_3&streamName=hhmi2009&autoPlay=false&autoRewind=false')
+                  param(name='swfversion', value='8,0,0,0')
+                  param(name='expressinstall', value='Scripts/expressInstall.swf')
+                  // The browser displays the following alternative content for users with Flash Player 6.0 and older.
+                  div
+                     h4 Content on this page requires a newer version of Adobe Flash Player.
+                     p
+                        a(href='http://www.adobe.com/go/getflashplayer')
+                           img(src='http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif', alt='Get Adobe Flash player')
+                  //if !IE
+               // <![endif]
+
+            p
+               | Variation, Selection and Time is the product of a collaboration between the Genetic Science Learning Center, the Howard Hughes
+               | Medical Institute, 12 outstanding K-12 teachers who participated in the 2007 and 2008 HHMI Genetics
+               | For Your Life program, and 13 master teachers who were invited to participate in the 2009 HHMI
+               | Master Teacher Summer Institute.
+
+
+      .uk-width-medium-1-2
+         p
+            em 2009 HHMI Master Teacher Summer Institute Participants
+         table
+            tr
+               td(style='width:170px;') Sherry Annee
+               td(style='width:171px;') Indianapolis, IN
+            tr
+               td Christine Celestino
+               td Salt Lake City, UT
+            tr
+               td Eric Cullander
+               td Creswell, OR
+            tr
+               td Barbara Egan
+               td Kettering, OH
+            tr
+               td Chris Horras
+               td Boise, ID
+            tr
+               td Chris Kuka
+               td Bend, OR
+            tr
+               td Mary Lindow
+               td Battle Creek, MI
+            tr
+               td Suzie Piper
+               td Poulsbo, WA
+            tr
+               td Keri Shingleton
+               td Tulsa, OK
+            tr
+               td Haylee Ferguson Stewart
+               td American Fork, UT
+            tr
+               td Kristi Sutton
+               td Bellevue , WA
+            tr
+               td Philip Vinogradov
+               td Willow Grove, PA
+            tr
+               td Michael West
+               td East St. Paul, MB
+
+
+      +pod('')
+         .uk-width-medium-1-2
+
+            p
+               em Howard Hughes Medical Institute staff participants
+            p
+               | Satoshi Amagi
+               br
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Jennifer Bricken
+               br
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Dennis Liu
+               br
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Blake Porch
+               br
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Chris Vargas
+            | &#x9;&#x9;&#x9;&#x9;&#x9;
+            p(style='width:341px;')
+               em Genetic Science Learning Center staff
+            | &#x9;&#x9;&#x9;&#x9;&#x9;
+            p(style=' width:341px;')
+               | Heather Aiono
+               br
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Pete Anderson
+               br
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Sheila Avery
+               br
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Dina Drits
+               br
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Nicole Ledford
+               br
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Molly Malone
+               br
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;April Mitchell
+               br
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Brendan Nicholson
+               br
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Kevin Pompei
+               br
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Louisa Stark
+               br
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Harmony Starr
+               br
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Mathew Weaver
+               br
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Polina Vyazovkina
+               br
+
+            p(style='width:341px;')
+               em Narrator
+
+            p(style='width:341px;')
+               | Cameron Thomas
+               br
+
+            +funding('hhmi')
+
+         .uk-width-medium-1-2
+            p
+               em 2007 and 2008 HHMI Genetics For Your Life participants
+            table
+               tr
+                  td(style='width:170px;') Britnie Anderson
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  td(style='width:171px;') Salt Lake City, UT
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+               tr
+                  td Andrea Brown-Payne
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  td McMinnville, OR
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+               tr
+                  td Donna Capasso
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  td Brigham City, UT
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+               tr
+                  td Diane Cavaness
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  td Brookings, OR
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+               tr
+                  td Erica Culbreath
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  td Washington, DC
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+               tr
+                  td Linda Duellman
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  td Columbus, OH
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+               tr
+                  td John Elyard
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  td Trout Lake, WA
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+               tr
+                  td Jana Fowers
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  td Layton, UT
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+               tr
+                  td Cindy Gay
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  td Steamboat Springs, CO
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+               tr
+                  td Andrea Harris
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  td Harrisville, UT
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+               tr
+                  td Mickey Santerre
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  td Miami, FL
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+               tr
+                  td Barbara Shannon
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  td Pasadena, CA
+
+            p
+               em Special Acknowledgments
+            p
+               | Sean B. Carroll, PhD,
+               br
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Vice President for Science Education, Howard Hughes Medical Institute
+               br
+               | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;and an HHMI Investigator and Professor of Molecular Biology and Genetics, Univ of WI-Madison

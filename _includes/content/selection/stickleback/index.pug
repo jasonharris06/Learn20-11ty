@@ -1,0 +1,150 @@
+extends /shared/layout
+block content
+   +pageTitle
+   script(src='/Scripts/swfobject_modified.js', type='text/javascript')
+
+   +pod('')
+      .uk-width-medium-5-10
+         p
+            | Three-spine sticklebacks are small fish that live in oceans, streams, and lakes across the northern hemisphere. Sticklebacks that
+            | live in freshwater lakes often look quite different from their ocean-dwelling cousins. One difference is the amount of protective
+            | armor that covers their bodies: while oceanic sticklebacks have about 30 armor plates extending from head to tail, most freshwater
+            | sticklebacks have just a handful of plates that sit closer to the front of the body.
+      .uk-width-medium-5-10
+         figure
+            img.lg-no-shadow(src='stainedstickleback.png', style='margin-bottom:0px;')
+            p
+               | A fully armored stickleback from the ocean near Loberg Lake (top), and a low-armored 
+               | stickleback taken from Loberg Lake in 1994 (bottom). The fish have been stained with a dye called Alizarin Red S, which stains bones, in order to 
+               | highlight their differences. 
+               em
+                  | Photos courtesy Michael A. Bell, Professor of Ecology and Evolution, Stony Brook University.
+   +pod('')
+      .uk-width-1-1.uk-text-center
+         object#FlashID(classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000', width='750', height='560')
+            param(name='movie', value='Sticklebacks.swf')
+            | &#x9;&#x9;  
+            param(name='quality', value='high')
+            | &#x9;&#x9;  
+            param(name='wmode', value='opaque')
+            | &#x9;&#x9;  
+            param(name='swfversion', value='6.0.65.0')
+            // This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don't want users to see the prompt.
+            param(name='expressinstall', value='../../../Scripts/expressInstall.swf')
+            // Next object tag is for non-IE browsers. So hide it from IE using IECC.
+            //if !IE
+            | &#x9;&#x9;  
+            object(type='application/x-shockwave-flash', data='Sticklebacks.swf', width='750', height='560')
+               // <![endif]
+               param(name='quality', value='high')
+               | &#x9;&#x9;&#x9;
+               param(name='wmode', value='opaque')
+               | &#x9;&#x9;&#x9;
+               param(name='swfversion', value='6.0.65.0')
+               | &#x9;&#x9;&#x9;
+               param(name='expressinstall', value='../../../Scripts/expressInstall.swf')
+               // The browser displays the following alternative content for users with Flash Player 6.0 and older.
+               div
+                  h4 Content on this page requires a newer version of Adobe Flash Player.
+                  | &#x9;&#x9;&#x9;  
+                  p
+                     a(href='http://www.adobe.com/go/getflashplayer')
+                        img(src='http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif', alt='Get Adobe Flash player', width='112', height='33')
+               //if !IE
+            // <![endif]
+      .uk-width-1-1.uk-text-center
+         figure
+            p
+               | Disclaimer: This animation shows a highly simplified view of actual events that occurred at Loberg Lake. Michael Bell and members of his 
+               | laboratory at Stony Brook University have tracked and documented these events in much more detail. You can learn more by visiting 
+               | the 
+               a(href='http://life.bio.sunysb.edu/ee/belllab/loberg.html', target='_blank') Bell Lab website
+               |  or by reading the publications listed in the References section
+               |          at the bottom of the page.
+   +pod('Less Armor is an Advantage in Freshwater Environments')
+      |    
+      .uk-width-medium-6-10
+         p
+            | Low-armored forms of sticklebacks evolve in freshwater environments again and again. Given how quickly these shifts occur, the freshwater environment is most likely selecting for low-armored gene variants that are already present at a low frequency in ocean populations. When a group of fish moves from the ocean to fresh water, the low-armored variants survive and reproduce at a higher rate than the fully armored individuals. Here&apos;s why:
+         ul
+            li Predation by saltwater fish favors more armor.         
+            li Predation by insect larvae that live in fresh water favors faster-moving fish with less armor.          
+            li Low-armor forms grow faster, making them (1) too big for predators, (2) reach sexual maturity more quickly, and (3) able to store more energy reserves, which increases their chance of overwinter survival.
+
+      .uk-width-medium-4-10
+         figure
+            img(src='stickPred.jpg', alt='ocean vs freshwater predators')
+
+   +pod('Studying Sticklebacks to Understand Evolution')
+      .uk-width-medium-4-10
+         +miscon("Evolution may have happened in the past, but it&apos;s no longer happening today.","Scientists observe evolution in progress today.")
+      .uk-width-medium-6-10
+         p
+            | Sticklebacks inhabit hundreds if not thousands of lakes and streams throughout the northern hemisphere. In addition to changes in body armor, these
+            | isolated stickleback populations have evolved a variety of changes that set them apart from their ocean-dwelling ancestors. In order to figure out
+            | what genes are driving these differences, researchers crossbreed marine and freshwater sticklebacks. By studying the resulting hybrid offspring,
+            | geneticists can see what specific changes to which genes are causing the differences. In sticklebacks, as in other organisms, small changes to
+            | single genes can have major effects.
+         p
+            | The Ectodysplasin gene appears to be responsible for changes in body armor in many freshwater stickleback populations. Recessive low-armored
+            | gene variations are found in about 1% of marine sticklebacks. Evidence suggests that it is this variant that is repeatedly being selected for
+            | in freshwater environments.
+   +references
+      p
+         | Barrett, M. A., Rogers, S. M. &amp; Schluter, D (2008). 
+         a(href='http://www.sciencemag.org/cgi/content/full/322/5899/255')
+            | Natural
+            | selection on a major armor gene in threespine stickleback
+         | . 
+         em Science, 322
+         | , 255-257 (subscription required).
+      |             
+      p
+         | Bell, M. A. (n.d.). 
+         a(href='http://life.bio.sunysb.edu/ee/belllab/loberg.html')
+            | Contemporary evolution of threespine stickleback
+            | in Loberg Lake, Alaska
+         | . Retrieved February 17, 2010 from the Bell Lab website.
+      |  
+      |             
+      |             
+      p
+         | Bell, M. A., Aguirre W. E. &amp; Buck, N. J. (2004). 
+         a(href='http://www3.interscience.wiley.com/cgi-bin/fulltext/118752137/PDFSTART?CRETRY=1&SRETRY=0')
+            | Twelve
+            | years of contemporary armor evolution in a threespine stickleback population.
+         |  
+         em Evolution 58
+         | (4), 814-824 (subscription required).
+      |             
+      p
+         | Colosimo, P. F., Hosemann, K. E., Balabhadra, G. V. Jr., Dickson, M., Grimwood, J., Schmutz, J., Myers, R. M., Schluter, D., &amp; Kingsley, 
+         | D. M. (2005). 
+         a(href='http://www.sciencemag.org/cgi/content/abstract/307/5717/1928')
+            | Widespread parallel evolution in sticklebacks by repeated
+            | fixation of ectodysplasin alleles
+         | . 
+         em Science 307
+         | , 1928-1933 (subscription required).
+      |             
+      p
+         | Cresko, W.A. (2008). 
+         a(href='http://www.sciencemag.org/cgi/content/full/322/5899/204') Armor Development and Fitness
+         | . 
+         em Science, 322
+         | , 204-206.
+      |             
+      |             
+      p
+         | Cresko, W. A., Amores, A., Wilson, C., Murphy, J., Currey M., Phillips P., Bell, M. A., Kimmel, C. B. &amp; Postlethwait, J. H. (2004).
+         a(href='http://www.pnas.org/content/101/16/6050.uk-width-1-1')
+            | Parallel genetic basis for repeated evolution of armor loss in Alaskan threespine stickleback
+            | populations
+         | . 
+         em Proceedings of the National Academy of Science USA, 101
+         | (16), 6050-6055 (subscription required).
+   script(type='text/javascript').
+      <!--
+      swfobject.registerObject("FlashID");
+      //-->
+   

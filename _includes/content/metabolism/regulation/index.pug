@@ -1,0 +1,14 @@
+extends /shared/layout
+
+block append headscripts
+   link(rel="stylesheet" href="regulation.css" type="text/css")
+
+block content
+   +pageTitle
+   include regulation.html
+
+block append endscripts
+   script(type="text/javascript" src="/lib/knockout.js")
+   script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js")
+   script(type="text/javascript" src="DrawSVGPlugin.min.js")
+   script(type="text/javascript" src="regulation.js")

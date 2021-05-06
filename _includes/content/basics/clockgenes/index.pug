@@ -1,0 +1,290 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   script(src='/Scripts/AC_RunActiveContent.js', type='text/javascript')
+
+   +pod('')
+      .uk-width-medium-6-10
+         p
+            | Take the red-eye from California to New York, and you&apos;ll experience firsthand the effects of your body&apos;s internal
+            | clock. If you feel drowsy or &quot;jet lagged&quot; after the flight, it&apos;s because there&apos;s been a disruption to your natural
+            | circadian rhythms. Your internal clock is saying it&apos;s 3 am, but outside, it&apos;s time for breakfast.
+         |       
+         p
+            | Living organisms evolved an internal biological clock, called the circadian rhythm, to help their bodies adapt to the
+            | daily cycle of day and night (light and dark) as the Earth rotates every 24 hours. The term &quot;circadian&quot; comes from the
+            | Latin words for about (circa) a day (diem).
+         |       
+         p
+            | Circadian rhythms are controlled by &quot;clock genes&quot; that code for clock proteins. The levels
+            | of these proteins rise and fall in rhythmic patterns. These oscillating biochemical signals control various functions,
+            | including when we sleep and rest, and when we are awake and active. Circadian rhythms also control body temperature,
+            | heart activity, hormone secretion, blood pressure, oxygen consumption, metabolism, and many other functions.
+         |       
+         p
+            | Daily cycles also regulate the levels of substances in our blood, including red blood cells, blood sugar, gases,
+            | and ions such as potassium and sodium. Our internal clocks may even influence our mood, particularly in the form
+            | of wintertime depression known as seasonal affective disorder (SAD).
+         |       
+         p
+            | A biological clock has three parts: a way to receive light, temperature, or other input from the environment; the protein and chemicals that make up the clock itself; and components that help the clock control the activity of other genes.
+         |       
+         p
+            | In the last few decades, scientists have discovered the genes that control internal clocks: period 
+            em (per)
+            | , 
+            |          clock 
+            em (clk)
+            | , cycle 
+            em (cyc)
+            | , timeless 
+            em (tim)
+            | , frequency 
+            em (frq)
+            | , doubletime 
+            em (dbt)
+            |  and others. Clock genes have been found in organisms ranging from people to mice, fish, fruit flies, plants, molds, and even single-celled cyanobacteria.
+      |    
+      .uk-width-medium-4-10
+         figure
+            img(src='images/body_functions.png', alt='Circadian Rhythms')
+   +pod("Where is the body's master clock?")
+      |    
+      .uk-width-medium-6-10
+         p
+            | The master circadian clock that regulates 24-hour cycles throughout our bodies is found in a region called the
+            | suprachiasmatic nuclei (SCN) in the hypothalamus of the brain. The SCN is made up of two tiny clusters of several
+            | thousand nerve cells that &quot;tell time&quot; based on external cues, such as light and darkness. The SCN regulates sleep,
+            | metabolism, and hormone production.
+         |       
+         p
+            | How important is the SCN? When a rat&apos;s SCN is removed, its daily cycle of activity and sleep is disrupted. The SCN
+            | still produces rhythmic chemical signals, even outside of an animal&apos;s brain.
+         |       
+         p
+            | The SCN is believed to synchronize &quot;local&quot; clocks that sit in organs and tissues throughout the body, either through hormones
+            | or changes in body temperature. Local gene-operated clocks independent of the brain&apos;s master pacemaker have been found in
+            | the liver, lung, testis, connective tissue, and muscle.
+         |       
+         p
+            | One example of a local clock comes from fruit flies. Cells in their antennae display a circadian rhythm
+            | independent of the brain&apos;s master clock. The antennae oscillations correlate with sense of smell, which is more
+            | sensitive at night than during the day.
+      |    
+      .uk-width-medium-4-10
+         figure
+            img(src='images/hypothalamus_sm.jpg', alt='SCN')
+            |       
+            p
+               | The Suprachiasmatic nuclei (SCN) region is located in the hypothalamus of the brain.  The SCN sends signals
+               | throughout the body in response to dark and light.
+   +pod('How many hours are in a biological clock?')
+      |    
+      .uk-width-medium-6-10
+         p
+            | The human circadian rhythm is not exactly 24 hours  it&apos;s actually 10 to 20 minutes longer. Other species have
+            | circadian rhythms ranging from 22 to 28 hours. Biological clocks keep working even when
+            | organisms are removed from natural light. Without daylight, the biological clock will continue running
+            | on its own natural cycle. But as soon as morning light hits the eyes, the clock will reset to match the earth&apos;s
+            | 24-hour day.
+         |       
+         p
+            | Why aren&apos;t organisms&apos; internal clocks exactly 24 hours long? A computer simulation suggests competition for
+            | food and other resources is most intense among species with 24-hour cycles. If you eat at the same time as everyone
+            | else, you&apos;re less likely to get your share. Our slightly out-of-sync internal clock may have evolved to help us
+            | survive the competition.
+         |       
+         p
+            | Biological clocks also play a role in longer cycles such as hibernation, migrations, and even annual changes
+            | in coat and color. When the animal brain records longer days in the spring and shorter days in
+            | the fall, it triggers hormone secretion that influences these events.
+      |    
+      .uk-width-medium-4-10
+         figure
+            img.lg-no-shadow(src='images/hamsters.jpg', alt='hamsters')
+            |          
+            p
+               | The circadian clock in the hamster brain signals a change in coat color according to season by releasing the hormone melatonin.
+   +pod('How do clock genes work?')
+      |    
+      .uk-width-medium-6-10
+         p
+            | Clock genes are sets of instructions that code for clock proteins. The genes and proteins interact with each other to 
+            | produce daily fluctuations in protein levels. The central player is the 
+            em per
+            |  gene, which codes for
+            |            PER protein. PER levels are highest during early evening and lowest early in the day.
+         |       
+         p
+            | In fruit flies, the 
+            em clk
+            |  and 
+            em cyc
+            |  gene products work together to activate the 
+            em per
+            |  and 
+            em tim
+            |  genes 
+            |          so they produce proteins. Those proteins, PER and TIM, then combine and slowly accumulate in the cell nucleus, where 
+            |          they slow down the 
+            em clk
+            |  and 
+            em cyc
+            |  genes, which in turn deactivates 
+            em per
+            |  and 
+            em tim
+            |  and stops 
+            |          further production of the PER and TIM proteins. As PER and TIM diminish, 
+            em clk
+            |  and 
+            em cyc
+            |  kick into action
+            |          again, starting a new daily cycle.
+         |       
+         p
+            | The cycle is a bit more complicated in mammals, in which 
+            em clk
+            |  works with a gene named 
+            em Bmal1
+            |  instead of 
+            |          with 
+            em cyc
+            | . Also, mammals have three versions of the 
+            em Per
+            |  gene.
+         |       
+         p
+            | Other clock genes also play a role. In the fruit fly, the 
+            em dbt
+            |  gene codes for a protein that helps break down 
+            |          the PER protein to keep it at just the right levels for the particular time of day. A gene named 
+            em pdf
+            | , for
+            |          pigment-dispersing protein, codes for a protein that appears to tell the rest of the fly&apos;s body what time it is according
+            |          to the master clock in its brain.
+      |    
+      .uk-width-medium-4-10
+         script(type='text/javascript').
+            AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','345','height','429','src','fly','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','fly' ); //end AC code
+         noscript
+            p Javascript is required to view this content.
+   +pod('How do clock genes influence sleep?')
+      |    
+      .uk-width-medium-6-10
+         p
+            | In 2001, scientists at the University of Utah discovered the first human clock gene. They found it while studying a
+            | rare inherited disorder that makes people fall asleep early and wake spontaneously hours before dawn. Clock genes
+            | normally keep us awake during the day and asleep at night. But this clock gene is altered in a way that disrupts the normal sleep cycle.
+         |       
+         p
+            | This inherited sleep pattern, known as &quot;familial advanced sleep phase syndrome&quot; (FASPS), has been linked to a variation in the 
+            em hPer2
+            |  gene. People with FASPs are &quot;morning larks&quot; who usually get sleepy by 7 pm and wake up around 2 am. Another sleep condition,  called &quot;delayed sleep-phase syndrome,&quot; has the opposite effect, turning people who have it into extreme night owls. They 
+            |          fall asleep very late and have trouble waking up in the morning. Delayed sleep-phase syndrome has been linked to a variation in the 
+            em hPer3
+            |  gene.
+         |       
+         p
+            | Any student who has studied during an &quot;all-nighter&quot; knows the circadian clock isn&apos;t the only sleep influencer. Our need for sleep
+            | also plays a role. When rats are awake and vigilant, their brain&apos;s master clock is more active. When rats are deprived of sleep,
+            | their master-clock doesn&apos;t respond normally.
+         |       
+         p
+            | Sunlight resets the internal biological clock every day, keeping it synchronized with a 24-hour day. If you lived in an
+            | underground bunker under constant artificial light, you would continue to follow an approximately 24-hour sleep-wake
+            | pattern, but because it is not exactly 24 hours long, your cycle would slowly get out of phase with actual daytime and nighttime.
+         |       
+         p
+            | Air travel to a distant time zone can also disrupt normal cycles. The resulting jet lag is both a disconnect between local
+            | time and your body&apos;s time, and a disconnect between your brain&apos;s master clock and local clocks in tissues throughout your
+            | body. Once you arrive at your destination, the change in daylight hours will &quot;entrain&quot; or reset your internal clock, but
+            | it will take a few days to get rid of the jet lag.
+      |    
+      .uk-width-medium-4-10
+         figure
+            img(src='images/clock.jpg', alt='Alarm Clock')
+   +pod('What are the health implications of clock genes?')
+      |    
+      .uk-width-medium-6-10
+         p
+            | Understanding exactly how clock genes work may help scientists develop new medicines that adjust or reset the human
+            | biological clock to treat the ill effects of jet lag, night shift work, or wintertime depression. Clock genes may
+            | also offer clues to sleep disorders such as narcolepsy, which makes people feel sleepy during the day.
+         |       
+         p
+            | Our internal clock controls hormone levels, which can affect the way our bodies respond to certain medications.
+            | Better knowledge of circadian rhythms may improve the effectiveness of medications by revealing the best times to take them.
+         |       
+         p
+            | Light is used to treat people with seasonal affective disorder, the form of depression that surfaces during the shorter
+            | days of winter. Some research indicates light therapy is more effective if it is synchronized with a patient&apos;s internal
+            | clock, which is why some patients are treated with exposure to bright light early in the morning. Bright light also has
+            | been used to help people adjust to jet lag and to changes in work shifts.
+         |       
+         p
+            | Clock genes may some day help scientists treat cancer. At least eight clock genes are known to coordinate normal 
+            | functions such as cell proliferation (which is uncontrolled in cancer) and cell suicide (which fails to occur in 
+            | tumor cells). One study found that without the 
+            em mPer2
+            |  gene, mouse cells with damaged DNA become cancerous instead of
+            |          committing cell suicide. If clock genes actually play a role in cancer, they could be a target for new drugs that
+            |           might disrupt the &quot;clock&quot; to halt the cancer.
+         |       
+         p
+            | Aging may disrupt the synchronization of local clocks throughout the body and their synchronization with the brain&apos;s
+            | master timekeeper. One study found that electrical activity in the internal clocks of aging rats was not as regular
+            | as in younger rats, so the aging rats did what elderly people often do: they napped during the day.
+      |    
+      .uk-width-medium-4-10
+         figure
+            img(src='images/catlight.jpg', alt='light therapy')
+   +pod('How does light reset the biological clock?')
+      |    
+      .uk-width-medium-6-10
+         p
+            | Only in recent years have scientists begun to understand how the daily cycle of day and night is transmitted from the eye to the master clock in the brain.
+         |       
+         p
+            | Rods and cones in the retina of the eye detect light to form visual images. For many years, scientists believed
+            | our circadian clock was reset with the help of rhodopsin, a light-detecting protein in the rods and cones. But
+            | researchers recently found evidence for a separate light-detection system in the eye. They believe it gauges
+            | overall brightness to help reset our internal clock.
+         |       
+         p
+            | This newly discovered system may explain why some blind people and mice lacking rods and cones can still reset their
+            | internal clocks and regulate their biological rhythms. A protein named melanopsin  which is sensitive to blue light
+            |  is critical for the brightness-detection system. Scientists believe that a small fraction of the eye&apos;s light-sensitive
+            | &quot;retinal ganglion cells&quot; contain melanopsin and carry signals to the brain&apos;s master clock.
+      |    
+      .uk-width-medium-4-10
+         figure
+            img.lg-no-shadow(src='images/rodsandcones.png', alt='light reflecting in eye')
+   +pod('What about clock genes in plants?')
+      |    
+      .uk-width-medium-6-10
+         p
+            | Plants use their circadian clocks to detect the length of days. When their clocks sense shorter fall days, they signal the plant to produce
+            | seeds and drop their leaves. When the clocks sense longer days in the spring, the plants grow flowers or fruit. Biological clocks also
+            | help plants prepare for sunrise by raising their leaves and getting ready to perform photosynthesis to convert sunlight into
+            | food. And internal clocks play a role in the opening and closing of leaf pores and the nighttime folding of leaves to prevent
+            | water loss.
+         |       
+         p
+            | Some researchers have found evidence that plants can have two internal clocks: one sensitive to light and the other sensitive
+            | to temperature. Genes have been identified that code for proteins that detect sunlight, send day-length information to
+            | the plant&apos;s internal clock, and delay flowering until days grow long enough.
+         |       
+         p
+            | By learning to manipulate the genetic clock in plants, scientists may be able to make crops more productive, more
+            | resistant to stressful conditions, and better able to grow in a wider range of environments.
+      |    
+      .uk-width-medium-4-10
+         figure
+            img(src='images/lightplants.jpg', alt='light and plants', height='235', width='352')
+
+   +bottom-menu("",'sepagsep')
+   script(src="/ruffle/ruffle.js")
+   
+   

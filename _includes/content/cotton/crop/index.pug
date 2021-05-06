@@ -1,0 +1,95 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-6-10
+         figure
+            img(src='images/improvement.jpg' alt='farmer carrying large basket full of vegtables')
+            p Virtually every plant that is grown for food, fiber, or other purposes has been improved through selective breeding.
+         +well
+            | To learn more about "genetic bottlenecks," important crop traits, and the role of genes in all of that, visit 
+            a(href='/content/cotton/genes') Why Study Cotton Genes
+            | . (The scenario for other crop plants is very similar to that of cotton.) 
+      .uk-width-medium-4-10
+         p
+            | To domesticate crops, farmers saved the seeds from their best plants to use the following season. This process of "selective breeding" made crops that were bigger, more productive, tastier, or prettier than their wild ancestors. But because only the individuals with the most useful traits were used to produce the next generation, it also reduced the crops' genetic diversity. As crops were improved and customized to grow in different locations, gene variations that might help them resist a new challenge—say a new disease or pest, drought, or a different habitat—were often lost. 
+         p
+            | The good news is that helpful genetic variations may still be available in the crop plants' wild cousins, or in less-improved or heirloom varieties. These relatives can be a reservoir of genetic diversity—plant breeders just need to figure out how to get the right genes into the crop plant. Read on to learn how this is done using "traditional" breeding methods and with newer methods that use genomic tools: marker-assisted breeding, transgenic technology, and gene editing.  
+
+   +pod('Traditional breeding')
+      .uk-width-medium-1-1
+         figure
+            a(href='images/traditional.jpg' data-uk-lightbox)
+               img(src='images/traditional.jpg', alt='info graphic showing the breeding of a blight resistant potatoe')
+            p Traditional breeding dates back thousands of years, to the earliest days of agriculture—and it's still used today.
+      .uk-width-medium-6-10
+         p
+            | The advantage of traditional breeding is that you don't need to know which gene variations influence which traits. The disadvantages are that it can take a lot of time (often many years) and effort, and it may not produce the desired result.
+         p
+            | The general approach of traditional breeding is to combine certain traits from two parents into one offspring. For example, you might cross a domesticated plant with a wild relative that is resistant to a certain disease. Some of the offspring may be disease resistant, but they will also lack many of the useful traits of the domesticated parent. Getting the traits back requires "back-crossing," or breeding the offspring with the domesticated plant, for many generations. It may take additional generations to make sure the resulting plants "breed true"—that is, they consistently make offspring like themselves.
+         p
+            | Some traits are tricky to manipulate by traditional breeding. For example, drought resistance is influenced by variations in multiple genes, each of which may have a very small effect. Making a plant drought resistant requires generating offspring with certain gene combinations that may form only rarely.
+
+   +pod('Marker-assisted breeding')
+      .uk-width-medium-1-1
+         figure
+            a(href='images/marker.jpg' data-uk-lightbox)
+               img(src='images/marker.jpg' alt='info graphic showing the breeding of more nutritious wheat')
+            p Marker-assisted breeding is much more efficient than traditional breeding, because only the plants that carry the desired alleles are grown and evaluated. Marker-assisted breeding can be used on multiple alleles at once—allowing for efficient selection of gene combinations that may happen only rarely.
+
+      .uk-width-medium-6-10
+         p
+            | If you know which gene(s) underlie the trait you want to introduce into your crop, you can use marker-assisted breeding (also called molecular breeding). This method is much faster than traditional breeding, and it can be used for traits like drought tolerance that involve variations in multiple genes. However, it can still take years.
+         p
+            | Marker-assisted breeding looks a lot like traditional breeding, but instead of looking at the offspring's "phenotype"—like disease resistance or drought tolerance—you look for short segments of DNA (or "markers") in or near the gene(s) that you want your new crop to have. You don't even need to wait for the plants to grow up. Offspring can be analyzed when they are just tiny seedlings using PCR or another molecular technique. Any seedlings that don't have the desired marker(s) can be eliminated.
+         p
+            | There are still limitations to marker-assisted breeding. It's not very practical in plants like trees that take a long time to mature and produce seeds. And it still requires that the parent plants can interbreed naturally.
+
+   +pod('Transgenic technology')
+      .uk-width-medium-1-1
+         figure
+            a(href='images/transgenic.jpg' data-uk-lightbox)
+               img(src='images/transgenic.jpg', alt='info graphic showing trasgenic technology')
+      
+      .uk-width-medium-6-10
+         p
+            | Transgenic technology is much more precise than either traditional or marker-assisted breeding. It can be used to insert just the gene that you're interested in while leaving all of the rest of the plant's genes intact. However, it does require a thorough up-front understanding of the gene that is being transferred, as well as testing of the product to ensure that it is functioning as intended. 
+         p
+            | Since you're replacing just one gene, you don't have to "back-cross" to get rid of any extra, undesired genes. And with no breeding required, this method works on plants like trees, which have very long reproductive cycles, as well as between species that cannot interbreed naturally—even organisms other than plants. 
+         p
+            | Transgenic technology is faster than other methods, which is helpful for staying ahead of pests. Many types of organisms that harm plants—from mites to mold to viruses—can evolve to overcome plants' defenses in just a few generations.  
+         p
+            +well
+               h3 Related content
+               | To learn about one way to detect a specific segment of DNA, visit our
+               a(href="/content/labs/pcr/")  PCR Virtual Lab.
+               br
+               | To learn more about transgenic technology, visit
+               a(href="/content/science/gmfoods/")  Genetically Modified Foods.
+               
+   +pod('Gene Editing')
+      .uk-width-medium-1-1
+         figure
+            a(href='images/editing.jpg' data-uk-lightbox)
+               img(src='images/editing.jpg', alt='info graphic showing gene editing')
+            p Gene editing has been achieved through multiple techniques: CRISPR/Cas9, TALEN, and ZFN. It is relatively new on the scene, and it is expected to become more widely used over time.
+      .uk-width-medium-6-10
+         p
+            | Just like it sounds, genome editing is a technique for rewriting individual letters of an organism's DNA code. It is the most precise of all the crop improvement methods. Moreover, after a plant's sequence is rewritten, it is indistinguishable from a plant that has been modified through traditional breeding—because the technique leaves behind no foreign DNA. And it's fast. With multiple rounds of editing and crossing, it is possible to create a plant with several modified genes within just a few generations.
+         p
+            | As with transgenic technology, genome editing requires precise knowledge of how the gene works, and the resulting plant must be tested to make sure it is functioning as intended. 
+         p
+            | Genome editing can be used to make lots of different types of changes. For example, it can be used to edit genes that were unintentionally mutated during crop domestication, returning them to a more functional state. It can also be used to increase or decrease the amount of protein being made from a gene, as well as change a gene's protein-coding sequence. 
+
+   +references
+      p
+         | Dempewolf, H., Baute, G., Anderson, J., Kilian, B., Smith, C. &amp; Guarino, L. (2017). Past and future use of wild relatives in crop breeding. Crop Science, 57, 1-13. doi: 10.2135/cropsci2016.10.0885 
+      p
+         | Nowicki, M. &amp; Foolad, M.R. (2012). Potato and tomato late blight caused by Phytophthora infestans: an overview of pathology and resistance breeding. Plant Disease 96, 1, 4-17. doi: 10.1094/PDIS-05-11-0458
+      p
+         | Vishwakarma, M.K., Mishra, V.K., Gupta, P.K., Yadav, P.S., Kumar, H. &amp; Joshi, A. (2014). Current Plant Biology 1, 60-67. doi: 10.1016/j.cpb.2014.09.003
+      p
+         | Zhang, H., Shen, G., Kuppu, S., Gaxiola, R. &amp; Peyton, Pl (2011). Creating drought- and salt-tolerant cotton by overexpressing a vacuolar pyrophosphatase gene. Plant Signaling &amp; Behavior 6, 6, 861-863. doi: 10.4161/psb.6.6.15223
+
+   block append endscripts         
+      script(src="/lib/lightbox.js")

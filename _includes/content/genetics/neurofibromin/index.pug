@@ -1,0 +1,12 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   +pod('')
+      .uk-width-1-1.uk-text-center
+         +ruffle(936,695,'./neurofibromin.swf','ruffle-container','936px')
+         p Remember, this is just one example. If you look at even a few of the proteins that make a person, you’d see a huge variety of forms. And for good reason. Proteins work together in many ways, ranging from simple to complex. After all, it takes a lot of jobs to build and maintain your body!
+
+   +bottom-menu("",'nf')
+   script(src="/ruffle/ruffle.js")
+   

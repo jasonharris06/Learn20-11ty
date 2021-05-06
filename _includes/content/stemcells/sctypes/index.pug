@@ -1,0 +1,47 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   //- Flash message
+   +pod('')
+      +oldFlash('Go, Go, Stem Cells','the future')
+
+   //- +pod('')
+   //-    .uk-width-medium-1-1.uk-text-center
+   //-       object#FlashID(classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000', width='900', height='640', title='Go Go Stem Cells')
+   //-          param(name='movie', value='GoGoPreloader.swf')
+   //-          | &#x9;&#x9;
+   //-          param(name='quality', value='high')
+   //-          | &#x9;&#x9;
+   //-          param(name='wmode', value='opaque')
+   //-          | &#x9;&#x9;
+   //-          param(name='swfversion', value='6.0.65.0')
+   //-          // This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt.
+   //-          param(name='expressinstall', value='../../../../Scripts/expressInstall.swf')
+   //-          // Next object tag is for non-IE browsers. So hide it from IE using IECC.
+   //-          //if !IE
+   //-          | &#x9;&#x9;
+   //-          object(type='application/x-shockwave-flash', data='GoGoPreloader.swf', width='900', height='640')
+   //-             // <![endif]
+   //-             param(name='quality', value='high')
+   //-             | &#x9;&#x9;&#x9;
+   //-             param(name='wmode', value='opaque')
+   //-             | &#x9;&#x9;&#x9;
+   //-             param(name='swfversion', value='6.0.65.0')
+   //-             | &#x9;&#x9;&#x9;
+   //-             param(name='expressinstall', value='../../../../Scripts/expressInstall.swf')
+   //-             // The browser displays the following alternative content for users with Flash Player 6.0 and older.
+   //-             div
+   //-                h4 Content on this page requires a newer version of Adobe Flash Player.
+   //-                | &#x9;&#x9;&#x9;&#x9;
+   //-                p
+   //-                   a(href='http://www.adobe.com/go/getflashplayer')
+   //-                      img(src='http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif', alt='Get Adobe Flash player', width='112', height='33')
+   //-             //if !IE
+   //-          // <![endif]
+
+   //-       script(type='text/javascript').
+   //-          <!--
+   //-          swfobject.registerObject("FlashID");
+   //-          swfobject.registerObject("FlashID");
+   //-          //-->

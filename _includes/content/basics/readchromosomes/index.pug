@@ -1,0 +1,62 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-5-10
+         p
+            | To &quot;read&quot; a set of chromosomes, scientists use three key features to identify their similarities and differences:  
+         ol
+            li
+               strong Size.
+               |  This is the easiest way to tell chromosomes apart.
+            li
+               strong Banding pattern.
+               |  The size and location of Giemsa bands make each chromosome unique.  
+            li
+               strong Centromere position.
+               |  Centromeres appear as a constriction. They have a
+               |             role in the separation of chromosomes into daughter cells during cell division (mitosis and meiosis).
+         p
+            | Using these key features, scientists can identify all 46 chromosomes  one set of 23 from each parent
+      .uk-width-medium-5-10
+         figure
+            img(src='images/matching.png', alt='chromosomes')
+   +pod('What are centromeres for?')
+      |    
+      .uk-width-medium-4-10
+         p
+            | Centromeres are required for chromosome separation during cell division. The centromeres
+            | are attachement points for microtubules, which are protein fibers that pull duplicate chromosomes              toward opposite ends of the cell before it divides. This separation ensures
+            | that each daughter cell will have a full set of chromosomes.
+
+         p Each chromosome has only one centromere.
+      |    
+      .uk-width-medium-6-10
+         figure
+            img.lg-no-shadow(src='images/microtubules-1.gif', alt='Microtubules')    
+            p
+               | During cell division, microtubules attach to centromeres and pull the chromosomes to opposite ends of the cell.
+   +pod('Centromere Positions')
+      .uk-width-medium-4-10
+         p
+            | The position of the centromere relative to the ends
+            | helps scientists tell chromosomes apart. Centromere position can be described
+            | three ways: metacentric, submetacentric or acrocentric.
+         p
+            | In 
+            strong metacentric
+            |  (met-uh-CEN-trick) chromosomes, the centromere lies near the center of the chromosome.
+         p
+            strong Submetacentric
+            |  (SUB-met-uh-CEN-trick) chromosomes have a centromere that is off-center, so that one chromosome arm is longer than the other. The short arm is designated &quot;p&quot; (for               petite), and the long arm is designated &quot;q&quot; (because it follows the letter &quot;p&quot;).
+         p
+            | In 
+            strong acrocentric
+            |   (ACK-ro-CEN-trick) chromosomes, the centromere is very near one end.
+      .uk-width-medium-6-10
+         figure
+            img.lg-no-shadow(src='images/metacentric.png', alt='centromere positions')
+
+   +bottom-menu('','hhmi')
+   
+   

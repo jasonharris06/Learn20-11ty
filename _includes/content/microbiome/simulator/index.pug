@@ -1,0 +1,107 @@
+extends /shared/layout
+
+block content
+   +pageTitle
+
+   +pod('')
+      .uk-width-medium-1-1.uk-text-center
+         p
+            i
+               strong This content is unavailable for now. But we're working on a new version, so check back soon! 
+         style(type='text/css').
+            p.header {
+            font-size: small;
+            }
+            p.header span {
+            font-weight: bold;
+            }
+            p.footer {
+            font-size: x-small;
+            }
+            div.broken,
+            div.missing {
+            margin: auto;
+            position: relative;
+            top: 50%;
+            width: 193px;
+            }
+            div.broken a,
+            div.missing a {
+            height: 63px;
+            position: relative;
+            top: -31px;
+            }
+            div.broken img,
+            div.missing img {
+            border-width: 0px;
+            }
+            div.broken {
+            display: none;
+            }
+            div#unityPlayer {
+            cursor: default;
+            margin: 20px 0 20px 0;
+            }
+            #unityPlayer embed {
+               margin: auto;
+            }
+         #unityPlayer
+            .missing
+               a(href='http://unity3d.com/webplayer/', title='Unity Web Player. Install now!')
+                  img(alt='Unity Web Player. Install now!', src='http://webplayer.unity3d.com/installation/getunity.png', width='193', height='63')
+
+
+   +pod('What am I looking at?')
+      .uk-width-medium-6-10
+         p.
+            The bright shapes are virtual microbes—mostly bacteria, maybe a few archaea. Some of them swim around, and others stay clumped together as they grow and divide. This population isn't meant to represent any specific population of microbes; rather, it shows generally how a typical microbial community might behave.
+         p.
+            Just like their living counterparts, these virtual microbes have different shapes, sizes, and behaviors—and they respond differently to changes to their environment, mostly by either reproducing or dying. For the microbes that call our bodies home, we are their environment.
+         p.
+            If you pay close attention, you'll see that each of the events listed on the tabs affects the microbial community differently. Some of the changes are temporary, and after a time, the microbial population tends to return to a "baseline" state. But other changes are long lasting. See if you can tell the difference.
+
+block append endscripts
+   script(type='text/javascript' src='http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js')
+
+   script(type='text/javascript').
+      var config = {
+         width: 920,
+         height: 690,
+         params: { enableDebugging:"0" }
+      };
+      // config.params["disableContextMenu"] = true;
+      var u = new UnityObject2(config);
+      jQuery(function() {
+         var $missingScreen = jQuery("#unityPlayer").find(".missing");
+         var $brokenScreen = jQuery("#unityPlayer").find(".broken");
+         $missingScreen.hide();
+         $brokenScreen.hide();
+         u.observeProgress(function (progress) {
+            switch(progress.pluginStatus) {
+               case "broken":
+                  $brokenScreen.find("a").click(function (e) {
+                     e.stopPropagation();
+                     e.preventDefault();
+                     u.installPlugin();
+                     return false;
+                  });
+                  $brokenScreen.show();
+                  break;
+               case "missing":
+                  $missingScreen.find("a").click(function (e) {
+                     e.stopPropagation();
+                     e.preventDefault();
+                     u.installPlugin();
+                     return false;
+                  });
+                  $missingScreen.show();
+                  break;
+               case "installed":
+                  $missingScreen.remove();
+                  break;
+               case "first":
+                  break;
+            }
+         });
+         u.initPlugin(jQuery("#unityPlayer")[0], "MicrobiomeSimulator.unity3d");
+      });

@@ -1,0 +1,108 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   script(src='/Scripts/AC_RunActiveContent.js', type='text/javascript')
+
+   +pod('Vesicles Carry Cargo')
+ 
+      .uk-width-medium-4-10
+         p
+            | Most molecules, including proteins, are too large to pass directly through membranes. Instead,
+            | large molecules are loaded into small membrane-wrapped containers called vesicles. Vesicles are
+            | constantly forming - especially at the plasma membrane, the ER, and the Golgi. Once formed,
+            | vesicles deliver their contents to destinations within or outside of the cell.        
+         p
+            | A vesicle forms when the membrane bulges out and pinches off. It travels to its destination then
+            | merges with another membrane to release its cargo. In this way proteins and other large
+            | molecules are transported without ever having to cross a membrane.
+            
+      .uk-width-medium-6-10
+         img(src='images/vesicle1.jpg', alt='Vesicle')
+          
+      .uk-width-1-1
+         img(src='images/clathrin.jpg', alt='Budding Vesicles Wear Coats')
+         |         
+         p.uk-text-small
+            | Some vesicles form with the help of coat proteins. Geometrically arranged coat proteins on the surface of the membrane help the vesicle to bud off.
+   +pod('Exploding Transport Containers')
+      |     
+      .uk-width-medium-6-10
+         p
+            | Fluorescent dots (transport containers) explode in a burst of light as they fuse with the plasma
+            | membrane and expel their contents out of the cell.
+         |         
+         p.uk-text-small
+            | Video courtesy Kai Simons, Professor and Executive Director, Max-Planck
+            | Institute for Molecular Cell Biology and Genetics, Dresden, Germany. Reproduced from the Journal of Cell
+            | Biology (2000), 149: 33-40.  &copy;2000 The Rockefeller University Press.
+      |     
+      .uk-width-medium-4-10
+         div
+            iframe.uk-responsive-width(src="//player.vimeo.com/video/151062823", width="500", height="333", frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+
+   +pod('Vesicles Travel Cellular Highways')
+      |     
+      .uk-width-1-1
+         div
+            iframe.uk-responsive-width(src="//player.vimeo.com/video/151063230", width="920", height="518", frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+
+      |     
+      .uk-width-medium-6-10
+         p
+            | Busy cells are often filled with thousands of traveling vesicles. To help
+            | organize these vesicles and get them pointed in the right direction, the cell uses
+            | the rigid filaments and tubes of the cytoskeleton. Special motor proteins attach
+            | to cargo-filled vesicles and carry them along the cytoskeleton like trucks on a highway.
+         p
+            | Different motor proteins are specialized for carrying certain types of cargo and for traveling
+            | along the cytoskeleton in one direction or the other. Careful matching of motors with their
+            | cargo helps vesicles reach their targets.
+         |         
+         p
+            | Motor proteins attach to vesicles and walk along a microtubule of the cytoskeleton. Dyneins
+            | walk toward the microtubule organizing center (MTOC, or centrosome) and kinesins walk away from the MTOC.
+         |         
+         p
+            | Real-time video of vesicles traveling along neurons inside a living fruitfly embryo. The three
+            | columns of moving vesicles show the locations of three different nerves. Each nerve is a bundle
+            | of axons from many neurons (a specialized cell type of the nervous system).  The vesicles are
+            | visible because they contain Green Fluorescent Protein.
+      |     
+      .uk-width-medium-4-10
+         p.uk-text-small
+            | Video courtesy Bill Saxton, Ph.D., Professor of Molecular Cell &amp; Developmental Biology, University of California Santa Cruz.
+   +pod('A Different Kind of Motor')
+      |     
+      .uk-width-medium-6-10
+         p
+            | Some vesicles have unusual ways of getting around the cell. The ones shown here can be
+            | seen rocketing through the cytoplasm. To do this they build up actin proteins (in red)
+            | at their rear. The polymerization of actin into short filaments acts as a molecular jet pack.
+         |         
+         p.caption
+            | Video courtesy Jack Taunton, Ph.D., Associate Professor, Cellular and Molecular Pharmacology, University of California San Francisco.Reproduced from the Journal of Cell Biology (2000), 149: 519-530.
+            | 2000 The Rockefeller University Press.
+      |     
+      .uk-width-medium-4-10
+         div
+            iframe.uk-responsive-width(src="//player.vimeo.com/video/151062005", width="500", height="333", frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+
+   //
+      <div style="position:relative; height:520px;">
+      <img src="images/Fusion.jpg" alt="Viruses Hijack Fusion Machinery" width="320"
+      height="32" style="position:absolute; top:8px; left:324px; z-index:7;" />
+      <p style="position:absolute; top:48px; left:328px; width:360px; z-index:10;">
+      SNARE proteins help vesicles recognize and fuse to their targets. There are many different types of SNARE proteins, with each one acting as a flag to mark vesicle contents and destinations. Certain combinations of SNAREs recognize each other. When they are near enough, they zip together, forcing the vesicle and target membranes to fuse. <br />
+      <br />
+      Some disease-causing viruses use SNARE proteins to enter and infect their hosts. Scientists studying vesicle fusion are shedding light on how the HIV virus enters a cell to cause AIDS. </p>
+      <img src="images/HIV2.jpg" alt="HIV Virus" width="278"
+      height="215" style="position:absolute; top:41px; left:38px; z-index:7;" />
+      <p class="caption" style="position:absolute; top:264px; left:43px; width:189px; z-index:10;">
+      An HIV virus enters a human cell using membrane fusion proteins called SNAREs.</p>
+      <img src="images/HIV1.jpg" alt="HIV Virus" width="278"
+      height="215" style="position:absolute; top:263px; left:233px; z-index:7;" />
+      <p class="caption" style="position:absolute; top:416px; left:516px; width:225px; z-index:10;">
+      The HIV virus uses the cell's own protein machinery to fuse with the plasma membrane and incorporate its DNA into the host's genome.</p>
+      </div>
+   

@@ -1,0 +1,135 @@
+extends /shared/layout
+
+block append head
+  style.
+    .mgq {
+      padding: 10px 15px;
+      color: #333;
+      font-size: 16px;
+      /*background-color: #84bbc7;*/
+      background-color: #76a7b3;
+      margin-top: -2px;
+      margin-bottom: 2px;
+      font-family: 'Museo Slab';
+      font-weight: 300;
+      letter-spacing: 0.01em;
+      color: white;
+      text-shadow: rgba(0, 0, 0, 0.7) 0px 0.5px 5px;
+    }
+    .gq {
+      padding: 10px 15px;
+      color: #4e4e4e;
+      font-size: 0.9em;
+      background-color: #c9e1e6;
+      background-color: #e9e9e6;
+      /*margin-bottom: 2px;*/
+      font-style: italic;
+      font-weight: 600;
+    }
+    .greypod {
+      padding: 10px 15px;
+      color: #4e4e4e;
+      font-size: 0.9em;
+      background-color: #c9e1e6;
+      background-color: #e9e9e6;
+      margin-bottom: 20px;
+    }
+    .gqBody {
+      font-weight: 400;
+      font-style: normal;
+    }
+    .gq > span {
+      white-space: nowrap;
+    }
+    .gray-badge {
+      background-color: gray;
+    }
+
+block content
+  +pageTitle(teach='genetics')
+  .lg-section
+    .uk-container.uk-container-center
+      .uk-grid
+        .uk-width-medium-5-10
+          h2(id="Traits") Traits
+          .mgq What shapes the characteristics of living things?
+          .lg-index-items
+            +index-item('What are Traits?', 'video', 'traits', 'images/traits.jpg')
+              p Explore traits, the characteristics that make us unique.
+            +index-item('What are DNA and genes?', 'video', 'dna', 'images/dna.jpg')
+              p Get to know the molecule that holds the instructions for building every living thing.
+            +index-item('Build a DNA molecule', 'interactive explore', 'builddna', 'images/builddna.jpg')
+              p Find out how the DNA code letters A, C, G, and T make a DNA molecule by building one yourself.
+            +index-item('Transcribe and Translate a Gene', 'interactive explore', 'txtl', 'images/txtl.jpg')
+              p See how cells "read" the information in a DNA sequence to build a protein, then build one yourself!
+            +index-item('Paper Transcription and Translation', 'pdf', 'files/tx-tl_student_instructions.pdf', 'images/paper_txtl.jpg')
+            +index-item('What is an environmental factor?', 'interactive explore', 'environmental', 'images/environmental.png')
+              p Learn about environmental factors, and how they work together with genes to shape our traits.
+            +index-item('What causes a trait?', 'interactive explore', 'traitcauses', 'images/trait.jpg')
+              p See how scientist follow a series of clues to figure out how genes and the environment influence our traits.
+              
+          .greypod 
+            h3 Genetic Disorders
+            p Visit the following pages to learn about inherited conditions that are caused mainly by variations in single genes:
+            ul
+              li 
+                a(href='alpha1') Alpha-1 Antitrypsin Deficiency 
+              li
+                a(href='cysticfibrosis') Cystic Fibrosis
+              li
+                a(href='hemoglobin') Hemoglobin Disorders              
+              li
+                a(href='hemophilia') Hemophilia
+              li
+                a(href='marfan') Marfan Syndrome
+
+              
+          h2(id="Mutation & Allele") Mutations &amp; Alleles
+          .mgq Where do new versions of genes come from?
+          .lg-index-items
+            +index-item('What is Mutation?', 'video', 'mutation', 'images/mutation.jpg')
+              p Take a look at how variation occurs.
+            +index-item('Mutate a Gene', 'interactive explore', 'mutate', 'images/mutate.jpg')
+              p Make a mutation in a gene, then watch how it changes the protein it codes for.
+            +index-item('Mutate a DNA Sequence - Paper Version', 'pdf', 'files/mutation-instructions.pdf', 'images/paper_mutate.jpg')
+            +index-item('HLA-B Protein', 'pdf', 'files/Human_HLA-B.pdf', 'images/hlab.jpg')
+            +index-item('What is an Allele?', 'interactive explore', 'whatallele', 'images/allele.jpg')
+              p Follow the effects of a gene variation from DNA to trait.
+        
+        .uk-width-medium-5-10
+          h2(id='Inheritance') Inheritance
+          .mgq How are genes inherited?
+          .lg-index-items
+            +index-item('What is Inheritance?', 'video', 'inheritance', 'images/inheritance.jpg')
+              p Learn how traits pass from parents to offspring.
+            +index-item('What are Chromosomes?', 'video', 'chromosomes', 'images/chromosomes.jpg')
+              p Learn about the relationships among chromosomes, genes, and DNA molecules.
+            +index-item('Build a Chromosome - Instructions', 'pdf', 'files/BuildaChrom_StudentInstructions.pdf', 'images/buildchromosome.jpg')
+            +index-item('Allele Shuffling', 'video', 'allele', 'images/shuffling.jpg')
+              p See how variations in genes, called alleles, are shuffled with each generation to make new gene combinations.
+            +index-item('Build a Bird', 'pdf', 'files/build-a-bird.pdf', 'images/buildbird.jpg')
+            
+          .greypod
+            p The terms dominant and recessive can make inheritance seem confusing. For a new perspective on these terms, visit: 
+              a(href='dominant-recessive') The Dominant/Recessive Problem.
+
+          h2(id='Proteins') Protein Function
+          .mgq How do gene products influence traits?
+          .lg-index-items
+            +index-item('What Are Proteins?', 'video', 'proteins', 'images/proteins.jpg')
+              p Learn about proteins, the molecules we're made of.
+            +index-item('How a firefly&#39;s tail makes light', 'video', 'firefly', 'images/firefly.jpg')
+              p Walk through protein synthesis with this animated example.
+            +index-item('Types of Proteins', 'interactive explore', 'proteintypes', 'images/proteintypes.jpg')
+              p Explore the types of proteins and learn about their varied functions.
+            +index-item("Test a Protein's Activity", 'interactive explore', 'neurofibromin', 'images/neurofibromin.jpg')
+              p Different versions of a gene (alleles) can code for proteins that work a little differently. See how this plays out inside a cell!
+            +index-item('Classical vs Molecular Genetics', 'explore', 'classical-molecular', 'images/classical.jpg')
+              p Molecular genetics and classical (or Mendelian) genetics are just two different views of the same processes.
+            +index-item('The Dominant/Recessive Problem', 'video', 'dominant-recessive', 'images/dom.jpg')
+              p Thinking in terms of protein function can demystify these confusing terms.
+            +index-item('Outcomes of Mutation', 'interactive explore', 'outcomes', 'images/outcomes.jpg')
+              p Explore these examples to see how small changes to DNA can lead to big variations in traits.
+        +bottom-menu('/content/genetics/credits', 'sepanigms')
+        .lg-bottom-menu
+          ul.uk-subnav.uk-subnav-line

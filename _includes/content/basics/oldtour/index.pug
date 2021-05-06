@@ -1,0 +1,26 @@
+extends /shared/layout
+block content
+  +pageTitle
+  +pod('')
+    .uk-width-1-1
+      p Thanks for visiting the Tour of the Basics.
+      p For the most up-to-date version of this content, visit our <a href="/content/basics/">Basic Genetics</a> videos.
+      p We will keep the old version here for as long as web browsers continue to support it. However, we won’t be updating it.
+  +pod('')
+    .uk-width-1-4
+      ul.uk-tab.uk-tab-left(data-uk-tab, data-uk-switcher="{connect:'#tours'}")
+        li <a href="">What is Heredity?</a>
+        li <a href="">What is a Trait?</a>
+        li <a href="">What is DNA?</a>
+        li <a href="">What is a Gene?</a>
+        li <a href="">What is a Protein?</a>
+        li <a href="">What is a Chromosome?</a>
+    .uk-width-3-4
+      ul#tours.uk-switcher
+        li: include heredity
+        li: include trait
+        li: include dna
+        li: include gene
+        li: include protein
+        li: include chromosome
+  +bottom-menu("",'burton')

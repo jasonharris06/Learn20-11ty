@@ -1,0 +1,83 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   script(src='https://code.createjs.com/easeljs-0.7.0.min.js')
+   script(src='https://code.createjs.com/tweenjs-0.5.0.min.js')
+   script(src='https://code.createjs.com/movieclip-0.7.0.min.js')
+   script(src='https://code.createjs.com/preloadjs-0.4.0.min.js')
+   script(src='https://code.createjs.com/soundjs-0.5.2.min.js')
+   script(src='Watershed.js')
+   script.
+      var canvas, stage, exportRoot, progressBar;
+      window.onload = function () {
+      canvas = document.getElementById("canvas");
+      images = images || {};
+      progressBar = document.getElementById("progressBar");
+      var loader = new createjs.LoadQueue(false);
+      loader.installPlugin(createjs.Sound);
+      loader.addEventListener("fileload", handleFileLoad);
+      loader.addEventListener("complete", handleComplete);
+      loader.loadManifest(lib.properties.manifest);
+      loader.addEventListener("progress", handleProgress);
+      }
+      function handleProgress(event) {
+      progressBar.style.width = (498 * (event.loaded / event.total)).toString() + "px";
+      }
+      function handleFileLoad(evt) {
+      if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+      }
+      function handleComplete() {
+      progressBar.parentNode.style.display = "none";
+      exportRoot = new lib.Watershed();
+      stage = new createjs.Stage(canvas);
+      stage.addChild(exportRoot);
+      stage.update();
+      stage.enableMouseOver();
+      createjs.Ticker.setFPS(lib.properties.fps);
+      createjs.Ticker.addEventListener("tick", stage);
+      }
+      function playSound(id, loop) {
+      createjs.Sound.play(id, createjs.Sound.INTERRUPT_EARLY, 0, 0, loop);
+      }
+
+   +pod('')
+      .uk-width-1-1.uk-text-center
+         div(style='width: 500px; height: 20px; border: 1px solid #333; position: absolute; top:377px; left: 230px;')
+            #progressBar(style='width: 0px; height: 18px; background-color: #333; margin: 1px 0 0 1px;')
+         canvas#canvas(width='965', height='600', style='background-color:#FFFFFF; width: 920px; height: 572px; ')
+   
+   +references
+      p
+         | Maupin, M.A., Kenny, J.F., Hutson, S.S., Lovelace, J.K., Barber, N.L., and Linsey, K.S.,( 2014). Estimated use of water in the United States in 2010: U.S. Geological Survey Circular 1405, 56 p., 
+         a(href='http://dx.doi.org/10.3133/cir1405') http://dx.doi.org/10.3133/cir1405
+      p
+         | United States Environmental Protection Agency.  (2001). Managing Storm Water Runoff to Prevent Contamination of Drinking Water. Source Water Protection Practices Bulletin.
+         a(href='http://water.epa.gov/infrastructure/drinkingwater/sourcewater/protection/upload/stormwater.pdf')
+            | http://water.epa.gov/infrastructure/drinkingwater/sourcewater/protection/upload/stormwater.pdf
+      p
+         | United States Environmental Protection Agency.  (2006). Wetlands: Protecting Life and Property from Flooding.
+         a(href='http://water.epa.gov/type/wetlands/outreach/upload/Flooding.pdf') http://water.epa.gov/type/wetlands/outreach/upload/Flooding.pdf
+      p
+         | Utah Climate Center. (2009). Scientists find patterns in Utah&apos;s wet-dry cycles: Re-examining Drought in Utah. Utah State University. 
+         a(href='http://climate.usurf.usu.edu/news/120909UCC Drought.pdf') http://climate.usurf.usu.edu/news/120909UCC Drought.pdf
+      p
+         | Heat Island Impacts | Heat Island Effect | U.S. EPA. (2013, January 1). Retrieved February 6, 2015, from 
+         a(href='http://www.epa.gov/heatisland/impacts/index.htm') http://www.epa.gov/heatisland/impacts/index.htm
+      p
+         | Ice, G. G., Neary, D. G., &amp; Adams, P. W. (2004). Effects of wildfire on soils and watershed processes. Journal of Forestry, 102(6), 16-20.
+      p
+         | Miley, K. (2011, March). Management of Debris, Waste, and Operational Issues at a Multi-Jurisdictional Inland Oil Spill: A Coffeyville, Kansas, Refinery Oil Spill Case Study. In International Oil Spill Conference Proceedings (IOSC) (Vol. 2011, No. 1, p. abs35). American Petroleum Institute.
+      p Farmer, A. (1997). Managing environmental pollution. London: Routledge.
+      p
+         | United States Environmental Protection Agency.  (2013). Impacts of Climate Change on the Occurrence of Harmful Algal Blooms.
+      p
+         | Cooley, H., Fulton, J., Gleick, P. H., Ross, N., &amp; Luu, P. (2011). Water for energy: Future water needs for electricity in the intermountain West. Pacific Institute, Oakland.
+      p
+         | Utah Division of Water Resources. (2012). The Water &ndash; Energy Nexus In Utah: Meeting the Water and Energy Challenge.
+      p
+         | Sinisi, L. (2011). Guidance on water supply and sanitation in extreme weather events. R. Aertgeerts (Ed.). World Health Organization.
+      p
+         | Purcell, M. (2010). Green River Basin Water Plan: Technical Memoranda. Basin Water Use Profile &ndash; Industrial. Wyoming Water Development Office. 
+         a(href='http://waterplan.state.wy.us/plan/green/techmemos/induse.html') http://waterplan.state.wy.us/plan/green/techmemos/induse.html
+   

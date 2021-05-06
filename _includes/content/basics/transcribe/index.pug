@@ -1,0 +1,39 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   script(src='/Scripts/AC_RunActiveContent.js', type='text/javascript')
+
+   +pod('')
+      .uk-width-1-1.uk-text-center
+         p 
+            strong This is an old, Flash-based activity that will not be updated or maintained. Please visit the all-new 
+               a(href="https://learn.genetics.utah.edu/content/basics/txtl/") Transcribe and Translate a Gene
+
+      .uk-width-1-1.uk-text-center
+         script(type='text/javascript').
+            AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','910','height','604','src','TranscribeTranslate','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','TranscribeTranslate' ); //end AC code
+         noscript
+            p Javascript is required to view this content.
+   +pod('Transcription and Translation')
+      |    
+      .uk-width-medium-4-10
+         p
+            | The  DNA that makes up the human genome can be subdivided
+            | into information bytes called genes. Each gene encodes a unique protein that performs a specialized function in
+            | the cell. The human genome contains about 21,000 genes.
+         p
+            | Cells use the two-step process of transcription
+            | and translation to read each gene
+            | and produce the string of amino acids that makes
+            | up a protein. The basic rules for translating a gene into a protein are laid out in the Universal Genetic Code.
+         p
+            | For an overview of transcription and translation, look over the diagram on the right. Then try it out yourself in the activity above!
+      |    
+      .uk-width-medium-6-10
+         figure
+            img.lg-no-shadow(src='images/TandT.png', alt='Transcription and translation')
+
+      +bottom-menu("",'hhmi')
+   
+   

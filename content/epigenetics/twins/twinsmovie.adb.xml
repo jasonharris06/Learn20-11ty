@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+ <tt xml:lang="en" xmlns="http://www.w3.org/2006/04/ttaf1"  xmlns:tts="http://www.w3.org/2006/04/ttaf1#styling">
+  <head>
+   
+  </head>
+  <body>
+   <div xml:lang="en" style="1">
+    <p begin="00:00:02.30" dur="00:00:06.64">Identical twins are genetic carbon copies.</p>
+    <p begin="00:00:08.95" dur="00:00:04.96">The DNA sequences of their genes are exactly the same.</p>
+    <p begin="00:00:13.91" dur="00:00:04.34">Yet physically, identical twins become increasingly different</p>
+    <p begin="00:00:18.25" dur="00:00:01.73">over time. Why is this so?</p>
+    <p begin="00:00:24.98" dur="00:00:05.87">Genes provide the instructions for the development and maintenance of the body.</p>
+    <p begin="00:00:30.85" dur="00:00:09.43">Yet a second set of instructions, know as the epigenome, interacts with DNA to activate</p>
+    <p begin="00:00:40.28" dur="00:00:03.87">or suppress the expression of particular genes.</p>
+    <p begin="00:00:44.15" dur="00:00:14.82">Certain chemicals, known as epigenetic tags, turn genes &quot;off&quot; or &quot;on&quot;</p>
+    <p begin="00:00:58.97" dur="00:00:03.28">without changing the underlying genetic code.</p>
+    <p begin="00:01:02.25" dur="00:00:07.58">During fertilization, one set of chromosomes from dad, And one set of chromosomes</p>
+    <p begin="00:01:09.83" dur="00:00:11.63">from mom are combined to form an embryo.</p>
+    <p begin="00:01:21.46" dur="00:00:03.43">Epigenetic tags are erased from mom</p>
+    <p begin="00:01:24.89" dur="00:00:05.55">and dad&apos;s chromosomes during the first days after fertilization.</p>
+    <p begin="00:01:30.44" dur="00:00:03.35">However on some genes, the tags remain.</p>
+    <p begin="00:01:33.79" dur="00:00:04.32">These are known as imprinted genes.</p>
+    <p begin="00:01:38.11" dur="00:00:04.82">Identical twins result when a single embryo splits in two.</p>
+    <p begin="00:01:42.93" dur="00:00:11.19">Each embryo has the same genome, and the same epigenome.</p>
+    <p begin="00:01:54.13" dur="00:00:11.59">As the embryos develop, cells differentiate into distinct types such as bone, muscle and skin.</p>
+    <p begin="00:02:05.72" dur="00:00:07.31">As each type specializes, epigenetic tags activate and silence specific genes,</p>
+    <p begin="00:02:13.03" dur="00:00:04.31">leading the cells to specialize further.</p>
+    <p begin="00:02:17.34" dur="00:00:06.47">Each cell type gradually takes on a unique epigenetic profile.</p>
+    <p begin="00:02:23.83" dur="00:00:06.78">Because the twins share the same environment, their epigenomes are very similar at birth</p>
+    <p begin="00:02:30.61" dur="00:00:03.25">and through the early years of life.</p>
+    <p begin="00:02:33.86" dur="00:00:10.01">As the twins age, their environments begin to differ.</p>
+    <p begin="00:02:43.87" dur="00:00:01.84">Their genomes remain the same.</p>
+    <p begin="00:02:45.71" dur="00:00:05.25">But signals from the environment act on the twins&apos; epigenomes</p>
+    <p begin="00:02:50.96" dur="00:00:03.14">to activate and silence different genes.</p>
+    <p begin="00:03:00.00" dur="00:00:14.99">Diet, for example, is an environmental factor that can have an effect on the epigenome.</p>
+    <p begin="00:03:20.00" dur="00:00:20.74">Differences in physical activity can also cause epigenetic differences between the twins.</p>
+    <p begin="00:03:47.10" dur="00:00:06.99">Exposure to toxins can influence the epigenome.</p>
+    <p begin="00:04:02.10" dur="00:00:06.36">Stress also plays a role in shaping the epigenome.</p>
+    <p begin="00:04:19.46" dur="00:00:08.05">By the time the twins are well into adulthood their epigenomes, thus gene expression patterns,</p>
+    <p begin="00:04:27.52" dur="00:00:04.00">are very different, making each twin unique.</p>
+   </div>
+  </body>
+</tt>

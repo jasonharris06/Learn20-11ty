@@ -1,0 +1,69 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-1-1
+         p.
+            Touch provides a simplified view of sensory endings in the skin. Real skin has a lot more&mdash;including endings that detect burning pain, freezing pain, itch, different types of stretch and touch, and the movement of hairs. In response to stimuli, the endings send signals to the brain, and the brain pulls together information from multiple signals to help us understand what&apos;s happening on the skin.
+         p.
+            Importantly, it&apos;s not that the endings read the stimuli differently. Rather each ending responds only to certain types of stimuli.
+   +pod('A more detailed view')
+      .uk-width-1-1
+         p.
+            Skin is loaded with sensory endings. Each sensory ending has physical properties that allow it to detect specific signals. Some have receptors embedded in their membranes that change shape in response to a temperature change or a chemical. Other endings are embedded within structures that transmit or amplify movement such as pressure or vibration.
+         p.
+            Ultimately, any type of sensory signal&mdash;whether it&apos;s temperature, movement, or a chemical&mdash;needs to be converted to an electrical impulse that can travel along neurons to the brain. To transmit a nerve impulse, little doors (called channels) on the sensory cells open and close, letting ions pass in and out. To get the impulse started, sensory cells need a way to connect the signals to the doors.
+         p.
+            Explore the illustration below to learn more about the structures found on or around sensory endings and how they work:
+
+      #edgeContainer.uk-width-1-1(style="overflow:hidden")
+         iframe#edgeFrame(src='PageIllustrationFinal2.html', seamless='seamless', style='width: 880px; height: 853px; margin: 20px auto 20px auto; border: none; transform-origin: top left;')
+   +pod('Different skin, different arrangements')
+      .uk-width-medium-6-10
+         p.
+            Different types of skin have different types and arrangements of sensory endings. As shown above, the skin on the back of the hand, with its embedded hairs, has a different arrangement of sensory endings than the skin on the palm. The hairs, in a way, are part of the sensory system: When a light breeze blows across the skin, the hairs wave, transmitting the air movement to sensory endings in the skin.
+         p.
+            The density of sensory endings varies too. Sensory endings are crowded much more closely on the fingertips than on the skin between the shoulder blades. This difference makes sense when you consider how much we use our fingertips to explore the world, and how little we learn through the skin our backs. Not surprisingly, these differences are reflected in our brains: the fingertips and mouth have more dedicated brain space than most of the rest of our bodies.
+      .uk-width-medium-4-10
+         figure
+            img(src='images/touchPage1.jpg', width='352', height='241', alt='Sensory Endings')
+   +pod('Skin is a mosaic')
+      .uk-width-medium-6-10
+         p.
+            Different points on the skin are sensitive to different types of stimuli. You can test this by touching your skin with a fine, blunt probe. The probe will feel different depending on where you place it. And in many places, you&apos;ll feel nothing at all.
+      .uk-width-medium-4-10
+
+   +pod('The brain pulls it all together')
+
+      .uk-width-medium-6-10
+         p.
+            Ultimately, it&apos;s the brain that gives us a sense of what we&apos;re touching. The brain collects sensory information from all over the body, filters out the unimportant bits, and processes the rest to understand what&apos;s happening around us.
+         p.
+            One of the most important jobs of the brain is to interpret combinations of signals. For example, the brain interprets signals from multiple mechanical and temperature sensors to tell us we&apos;re holding an ice cube. It pulls in information from our other sensory organs too, including our eyes and ears.
+         p.
+            The brain is constantly responding to our external environment, and much of this work falls outside of our conscious awareness and outside of our control. We break out in a sweat or goose bumps whether we want to or not. And even when we think we&apos;re sitting still, we constantly fidget, shifting our weight around to avoid compressing tissue to the point of damage.
+      .uk-width-medium-4-10
+         figure
+            img(src='images/touchPage2.jpg', width='352', height='278', alt='Brain interprets signals')
+block append endscripts
+   script.
+      $(document).ready(function() {
+         var container = document.getElementById('edgeContainer');
+         var item = document.getElementById('edgeFrame');
+
+         function updateItemWidth () {
+            var offset = container.offsetWidth;
+            if(offset < 880) {
+               var pad = parseInt(window.getComputedStyle(container).paddingLeft);
+               var newScale = (offset - pad) / 880;
+               item.style.transform = "scale(" + newScale + "," + newScale + ")";
+               container.style.height = (item.getBoundingClientRect().height + 20)+"px";
+            }else{
+               item.style.transform = "scale(1,1)";
+               container.style.height = "auto";
+            }
+         };
+
+         updateItemWidth();
+         window.addEventListener('resize', updateItemWidth);
+      });

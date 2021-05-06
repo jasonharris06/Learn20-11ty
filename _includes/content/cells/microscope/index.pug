@@ -1,0 +1,200 @@
+extends /shared/layout
+block headscripts
+  link(rel="stylesheet" href="microscope.css")
+  //- script(src='https://unpkg.com/panzoom@8.7.3/dist/panzoom.min.js')
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.0/gsap.min.js")
+  //- script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js")
+  
+
+block content
+  +pageTitle
+  +pod('')
+    .uk-width-medium-7-10
+      p This new interactive is still in progress. Updates will be coming later this summer!
+    .uk-width-1-1
+      #container
+        include vm-ui.svg
+        #contents
+          #label-container
+            #label-toggle
+              div Labels
+              label#labels-switch.switch
+                input(type="checkbox")
+                span.slider.round
+            #labels.hidden
+              #res-system-labels.current
+                .vm-label.sharp-bottom-left(style="top:150px; left:370px;")
+                  p <strong>Trachea</strong>
+                  p (TRAY-kee-uh) Tube where air travels to get to the lungs
+                .vm-label.sharp-top-right(style="top:153px; left:66px;")
+                  p <strong>Nose</strong>
+                  p Takes in air, warms it, and traps some dust
+                .vm-label.sharp-bottom-right(style="top:260px; left:6px; max-width:254px;")
+                  p <strong>Lungs</strong>
+                  p Lots of surface area for gas exchange (taking up oxygen and getting rid of carbon dioxide)
+                .vm-label.sharp-top-right(style="top:517px; left:6px; max-width:260px;")
+                  p <strong>Diaphragm</strong>
+                  p (DIE-uh-fram) Contracts and relaxes to help move air in &amp; out of the lungs
+                .vm-label.sharp-bottom-left(style="top:302px; left:427px;")
+                  p <strong>Bronchi</strong>
+                  p (BRAHNG-kai) Tubes where air travels inside the lungs
+              #res-organ-labels
+                .vm-label.sharp-bottom-left(style="top:339px; left:400px; max-width:328px;")
+                  p <strong>Airway epithelium</strong>
+                  p Protects other tissues from things in the air, like bacteria and viruses Clears away dust &amp; other junk
+                .vm-label.sharp-bottom-right(style="top:436px; left:46px; max-width:230px;")
+                  p <strong>Blood vessels</strong>
+                  p Tubes for blood, which carries nutrients, gases (oxygen, carbon dioxide), and immune cells
+                .vm-label.sharp-bottom-right(style="top:108px; left:6px; max-width:260px;")
+                  p <strong>Gland tissue</strong>
+                  p Makes liquid and mucus. Mucus forms a protective layer; liquid keeps things moving.
+                .vm-label.sharp-bottom-left(style="top:470px; left:433px; max-width:292px;")
+                  p <strong>Smooth muscle</strong>
+                  p Expands and contracts to make the bronchus get wider or narrower
+                .vm-label.sharp-bottom-right(style="top:260px; left:18px; max-width:172px;")
+                  p <strong>Cartilage</strong>
+                  p Tough tissue that holds the bronchus open
+              #res-tissue-labels
+                .vm-label.sharp-bottom-left(style="top:165px; left:400px;")
+                  p <strong>Ciliated epithelial cells</strong>
+                  p Waving cilia push mucus up &amp; out
+                .vm-label.sharp-top-right(style="top:317px; left:31px; max-width:254px;")
+                  p <strong>Goblet cells</strong>
+                  p Makes lots of mucus. Mucus forms a protective layer across the whole epithelium.
+                .vm-label.sharp-top-left(style="top:364px; left:530px; max-width: 250px;")
+                  p <strong>Basal cells</strong>
+                  p Ciliated and goblet cells don’t live very long. This cell type divides to make more of them.
+              #res-cell-labels
+                .vm-label.sharp-bottom-left(style="top:21px; left:404px;")
+                  p <strong>Cilia</strong>
+                  p Wave back and forth to push away mucus &amp; trapped debris
+                .vm-label.sharp-top-right(style="top:390px; left:76px; max-width:220px;")
+                  p <strong>Cell Junctions</strong>
+                  p Connect neighboring cells together, forming a strong barrier
+              #dig-system-labels
+                .vm-label.sharp-top-right(style="top:77px; left:74px; max-width:212px;")
+                  p <strong>Mouth</strong>
+                  p Takes in food and chews it into smaller pieces
+                .vm-label.sharp-bottom-left(style="top:115px; left:386px;")
+                  p <strong>Esophagus</strong>
+                  p (eh-SOFF-uh-gus) Tube where food travels to get to the stomach
+                .vm-label.sharp-bottom-right(style="top:295px; left:111px; max-width:254px;")
+                  p <strong>Stomach</strong>
+                  p Mixes food with digestive juices and breaks it down into smaller pieces
+                .vm-label.sharp-top-right(style="top:517px; left:29px; max-width:306px;")
+                  p <strong>Small intestine</strong>
+                  p Adds more digestive enzymes to food
+                  p Absorbs nutrients and liquid from food and moves them to the blood
+                .vm-label.sharp-bottom-left(style="top:355px; left:427px; max-width:300px;")
+                  p <strong>Large intestine</strong>
+                  p Filled with bacteria that break down food and make micro-nutrients
+                  p Absorbs liquid &amp; micro-nutrients
+              #dig-organ-labels
+                .vm-label.sharp-bottom-left(style="top:292px; left:400px; max-width:328px;")
+                  p <strong>Intestinal epithelium</strong>
+                  p Protects other tissues from food, bacteria, and other things in the digestive tract
+                  p Absorbs nutrients from food and transfers them to blood
+                .vm-label.sharp-bottom-right(style="top:58px; left:30px; max-width:230px;")
+                  p <strong>Blood vessels</strong>
+                  p Tubes for blood, which carries nutrients, gases (oxygen, carbon dioxide), and immune cells
+                .vm-label.sharp-top-left(style="top:164px; left:500px; max-width:260px;")
+                  p <strong>Gland tissue</strong>
+                  p Makes digestive enzymes
+                .vm-label.sharp-bottom-left(style="top:500px; left:433px; max-width:292px;")
+                  p <strong>Smooth muscle</strong>
+                  p Pushes food through the digestive tract
+                .vm-label.sharp-top-right(style="top:450px; left:53px; max-width:172px;")
+                  p <strong>Connective tissue</strong>
+                  p Holds layers of tissue together and keeps them flexible
+              #dig-tissue-labels
+                .vm-label.sharp-bottom-left(style="top:92px; left:423px; max-width:250px;")
+                  p <strong>Absorptive cells</strong>
+                  p Take up nutrients from food
+                  p Connect together tightly to keep bad things out of the tissues underneath
+                .vm-label.sharp-top-right(style="top:336px; left:56px; max-width:254px;")
+                  p <strong>Goblet cells</strong>
+                  p Make mucus, which keeps food moving
+                .vm-label.sharp-top-right(style="top:518px; left:210px; max-width: 315px;")
+                  p <strong>Stem cells</strong>
+                  p Cells in the intestinal epithelium don’t live very long. This cell type divides to make more of them.
+                  p New cells migrate from the bottoms of crypts to the tips of the villi.
+              #dig-cell-labels
+                .vm-label.sharp-top-left(style="top:110px; left:400px; max-width: 300px;")
+                  p <strong>Microvilli</strong> on these cells make the intestine 600 times more absorbent than it would be without them.
+                  p They’re covered with proteins that bring nutrients into the cell
+                .vm-label.sharp-top-right(style="top:465px; left:130px; max-width:220px;")
+                  p <strong>Cell Junctions</strong>
+                  p Connect neighboring cells together, forming a strong barrier
+              #pl-system-labels
+                .vm-label.sharp-bottom-right(style="top:220px; left:70px;")
+                  p <strong>Leaves</strong>
+                  p Using photosynthesis, they make sugar for the plant
+                .vm-label.sharp-bottom-left(style="top:115px; left:401px; max-width:220px;")
+                  p <strong>Buds</strong>
+                  p Areas of active growth
+                .vm-label.sharp-bottom-left(style="top:471px; left:438px; max-width:185px;")
+                  p <strong>Nodes</strong>
+                  p Branch points where leaves &amp; stems meet
+                .vm-label.sharp-top-right(style="top:546px; left:150px; max-width:260px;")
+                  p <strong>Stems</strong>
+                  p Support the leaves
+                  p Have tubes inside that carry water &amp; nutrients
+              #pl-organ-labels
+                .vm-label.sharp-bottom-right(style="top:154px; left:4px; max-width:280px;")
+                  p <strong>Mesophyll tissue</strong>
+                  p Makes lots of glucose (a type of sugar). The plant uses glucose for food and turns it into other molecules it needs.
+                  p Provides shape and structure for the leaves
+                .vm-label.sharp-bottom-left(style="top:142px; left:496px; max-width:230px;")
+                  p <strong>Epidermal tissue</strong>
+                  p The “skin” of the leaf
+                .vm-label.sharp-top-right(style="top:353px; left:95px; max-width:260px;")
+                  p <strong>Vascular tissue</strong>
+                  p Tubes that carry water &amp; nutrients
+              #pl-tissue-labels
+                .vm-label.sharp-bottom-left(style="top:30px; left:403px;")
+                  p <strong>Epidermal cells</strong>
+                  p Make wax to keep the leaf from drying out
+                .vm-label.sharp-top-left(style="top:206px; left:460px; max-width:254px;")
+                  p <strong>Pallisade cells</strong>
+                  p Using energy from the sun, they make sugar from carbon dioxide
+                .vm-label.sharp-top-right(style="top:528px; left:9px; max-width: 202px;")
+                  p <strong>Guard cells</strong>
+                  p Expand and contract to open and close pores that let air in.
+                .vm-label.sharp-bottom-right(style="top:308px; left:6px; max-width:304px;")
+                  p <strong>Spongy Parenchyma cells</strong>
+                  p Take in carbon dioxide from the air
+                  p Loosely packed for efficient gas exchange
+                  p Using energy from the sun, they make sugar from carbon dioxide
+              #pl-cell-labels
+                .vm-label.sharp-top-left(style="top:107px; left:394px; max-width:250px;")
+                  p <strong>Cell wall</strong>
+                  p Strong fibers support the shape of the cell and protect it from things in the environment like pests, pathogens, and weather.
+                .vm-label.sharp-top-right(style="top:211px; left:70px; max-width:203px;")
+                  p <strong>Chloroplasts</strong>
+                  p This is where photosynthesis takes place: using the sun’s energy to make sugar
+                .vm-label.sharp-top-right(style="top:408px; left:30px; max-width:260px;")
+                  p <strong>Vacuole</strong>
+                  p Stores water &amp; nutrients, provides pressure, and breaks down waste.
+          #right-panel
+            button#drop-button Respiratory System
+            #drop-menu
+              div(style="height: 18px")
+              .drop-menu-item(data-selection="res") Respiratory System
+              .drop-menu-item(data-selection="dig") Digestive System
+              .drop-menu-item(data-selection="pl") Plant Shoot System
+            #panel-bottom
+              #text-area
+                #text-title Organs of the Respiratory System
+                #text-body The respiratory system brings air in and out of the body, delivering oxygen and taking away carbon dioxide.
+              //- #infected-toggle
+              //-   .infected-label(style="text-align:right") Healthy
+              //-   label#infected-switch.switch
+              //-     input(type="checkbox")
+              //-     span.slider.round
+              //-   .infected-label(style="width:150px") Infected with Influenza virus
+
+
+        
+block append endscripts
+  script(src="CustomEase.min.js")
+  script(src="virtual-microscope.js")

@@ -1,0 +1,77 @@
+extends /shared/layout
+
+block content
+   +pageTitle
+   +pod("")
+      .uk-width-1-1
+         .uk-text-center
+            p.
+               Different cell types can process different types of fuel.<br>
+               To see which metabolic processes each type of cell can carry out, select <strong>Cell Type</strong>.<br>
+               To see more details about how a particular nutrient is processed, select <strong>Burning</strong> or <strong>Storing</strong>.<br>
+         iframe.uk-responsive-width(src="pathways.html", width="1180", height="1080", scrolling="no")
+   +pod("Don't Forget to Breathe")
+      .uk-width-medium-6-10
+         p.
+            The breakdown of food molecules for energy is called &ldquo;cellular respiration.&rdquo; This type of respiration,
+            which is carried out by cells, is different from the type carried out by our &ldquo;respiratory system,&rdquo; which
+            enables us to breathe.
+         p.
+            Yet breathing and cellular respiration are connected. When we breathe, our lungs bring in air. Oxygen from the air enters
+            the bloodstream, and it travels to our cells where it is used in cellular respiration. Cellular respiration produces
+            carbon dioxide, which enters the bloodstream and exits through the lungs.
+         p.
+            If we stop breathing, our cells don&rsquo;t get oxygen. Without oxygen, our cells can no longer harvest energy, and they
+            begin to die.
+         p.
+            Breathing rate increases during excercise because muscle cells need more oxygen.
+      .uk-width-medium-4-10
+         figure
+            img(src='images/Breathing.svg', alt='Respiration')
+            p The respiratory system and cellular respiration are connected.  Oxygen comes in and carbon dioxide goes out.
+
+   +pod('Where do metabolic reactions happen?')
+      .uk-width-medium-6-10
+         figure
+            img.lg-no-shadow(src='images/Where.svg', alt='Where metabolism happens')
+
+      .uk-width-medium-4-10
+         p
+            | Metabolic reactions happen in specific locations in the cell. Glycolysis, fatty acid synthesis, and glycogen synthesis happen in the cytoplasm, along with some steps of amino acid breakdown.
+         |          &#x9;&#x9;
+         p
+            | Several metabolic pathways are in specific locations inside of mitochondria. Mitochondria are organelles surrounded by two layers of membrane. The matrix, which is inside of both membranes, is home to beta oxidation, the citric acid cycle, and some steps of amino acid breakdown.
+         |          &#x9;&#x9;
+         p
+            | The components of oxidative phosphorylation&mdash;the electron transport chain and ATP synthase&mdash;are embedded within the inner mitochondrial membrane. Protons (+) are pumped from the matrix into the fluid-filled space between the two membranes, also called the &ldquo;intermembrane space.&rdquo;
+         |          &#x9;&#x9;
+         p
+            | Oxygen, carbon dioxide, and other small molecules freely diffuse in and out of mitochondria. But larger molecules, such as the 3-carbon pyruvate, can pass through only if they are carried by transport proteins.
+   +pod('The Amazing Liver')
+      .uk-width-medium-6-10
+         p The liver is a metabolic powerhouse. It can carry out thousands of different chemical reactions, and it has about 500 metabolic functions. It can burn just about anything for fuel. It churns out glucose, ensuring that our hungry brain cells are fed. It can build the 11 non-essential fatty acids, and it makes most of the body&apos;s cholesterol. It breaks down alcohol and burns it for fuel. It turns the amine groups from amino acids into urea, which is excreted in the urine. And it&apos;s a major detoxification center, disassembling drugs and toxins so they can be removed from the body.
+         p
+            | It is a manufacturing, storage, and shipping center too. It makes bile, which helps us digest fats. It stores several months&apos; worth of iron and vitamins A and D. It not only builds but also packages fats, cholesterol, and other lipids for shipment around the body (described on the
+            a(href='../digestion/') Digestion
+            |  page).
+      .uk-width-medium-4-10
+         figure
+            img(src='images/liver.svg', alt='complicated liver')
+            p The liver is the most metabolically complex organ in the body.
+
+   +pod('Types of Muscle Cells')
+      .uk-width-medium-6-10
+         p In the interactive shown at the top of the page, muscle cells are treated as a single cell type. But we actually have several types of muscle. All muscles are similar in that they contract and they can carry out most of the same metabolic reactions. Yet each type is different.
+         p The heart is made of cardiac muscle cells. These cells burn very little glucose. They use mainly fatty acids for fuel, and they don&apos;t store glycogen.
+         p Sheets of smooth muscle cells wrap around blood vessels, the digestive tract, and many of our organs. They work outside of our control and awareness, for example pushing food along as it is digested and regulating blood pressure. Smooth muscle cells can store glycogen and burn both glucose and fatty acids, as described above.
+
+         p Skeletal muscle is the most common type. These muscles attach to our bones and coordinate all of our voluntary movements. They store most of the body&apos;s glycogen, and they can burn both glucose and fatty acids. A working muscle cell can go through ATP about 100 times faster than a muscle at rest. As their work load increases, skeletal muscles start burning more glucose.
+
+         p Skeletal muscle is further divided into fast-twitch and slow-twitch cells. We all have both types, but individuals have them in different proportions. Slow-twitch cells are more plentiful in marathon runners, and they steadily burn through fuel over extended periods of time. These cells are filled with mitochondria, and during exercise they tend to break down sugar completely into carbon dioxide and water.
+
+         p Fast-twitch cells are more plentiful in sprinters. These cells have fewer mitochondria, but they contract more powerfully than slow-twitch cells. Fast-twitch cells work in short bursts, and they generate most of their ATP through glycolysis. Instead of oxidizing glucose completely, they break it down to 3-carbon pyruvate, then to lactate (also called lactic acid). Lactate can be taken up and burned by cardiac muscle and slow-twitch muscle cells, or it can be taken up by the liver and put back together to make glucose.
+
+      .uk-width-medium-4-10
+         figure
+            img(src='images/Muscles.svg', alt='Muscle cells')
+            p Types of muscle cells

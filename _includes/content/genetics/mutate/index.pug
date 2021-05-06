@@ -1,0 +1,122 @@
+extends /shared/layout
+block headscripts
+  style.
+    .progress {
+      width: 70%;
+      height: 20px;
+      position: absolute;
+      top: 50%;
+      left: 15%;
+      padding: 2px;
+      border: 1px solid #fff;
+    }
+    .full {
+      background: white;
+      height: 100%;
+    }
+
+block content
+  +pageTitle
+  +pod('')
+    .uk-width-1-1
+      p This new interactive is still in progress. Updates will be coming soon!
+      div(id="gameContainer" style="width: 100%; padding-top:46.875%")
+  +pod('Codons and Reading Frame')
+    .uk-width-medium-6-10
+      p
+        | Cells read a gene’s DNA code as a series of three-letter “words” called 
+        strong codons
+        | . Each codon codes for a specific amino acid. Genes also have a 
+        strong reading frame
+        | . Take this DNA sequence as an example:
+      .indented 
+        | GCATGCTGCGAAACTTTGGCTGA
+      p
+        | You could divide it into codons in 3 ways, each with a different reading frame:
+      ol
+        li GCA TGC TGC GAA ACT TTG GCT GA
+        li G CAT GCT GCG AAA CTT TGG CTG A
+        li GC ATG CTG CGA AAC TTT GGC TGA
+      p
+        | Only one of these reading frames will code for a working protein. How can you tell which is the right one? It’s a little like finding the right spacing for the letters in a sentence. For example:
+      .indented
+        | thesunwashotbuttheoldmandidnotgethishat
+      p
+        | Only one reading frame makes a sentence that follows the rules of the English language: The sun was hot but the old man did not get his hat.
+      p
+        | There are rules for reading genes too. For example, all protein-coding sequences begin with the codon “ATG” (AUG in mRNA). The correct reading frame will contain this codon.
+      p
+            a(href='#startcodon', data-uk-modal) Why isn&apos;t the start codon in DNA complementary to AUG?
+
+    .uk-width-medium-4-10
+      figure
+        img(src='images/dnapaper.jpg' alt='DNA sequence')
+        p 
+          | The order of DNA letters in a gene specifies the order of amino acids in the protein it codes for.
+  
+  +pod('Types of Mutations')
+    .uk-width-medium-4-10.align-middle
+      img(src='images/mutations-sm.jpg', alt='DNA mutations')
+
+    .uk-width-medium-6-10
+      p
+        | Mutation is a process that causes a permanent change in a DNA sequence. Changes to a gene’s DNA sequence, called mutations, can change the amino acid sequence of the protein it codes for—but they don’t always.
+      p
+        i Point Mutations
+        br
+        | A point mutation is a change to single DNA letter. They fall into three categories:
+      ul
+        li
+          strong Missense
+          |  mutations cause a single amino acid change in the protein.
+        li
+          strong Nonsense
+          |  mutations make a premature "stop" codon. Any codons after that are not translated, and the resulting protein is missing amino acids.
+        li
+          strong Silent
+          |  mutations code for the same amino acid as before.
+      p
+        i Insertion and Deletion Mutations
+        br
+        strong Insertion
+        |  mutations add one or more DNA bases. 
+        strong Deletion 
+        | mutations remove one or more DNA bases. Unless they happen in multiples of 3 bases, insertions and deletions shift the reading frame—which is why they’re also called 
+        strong frameshift
+        |  mutations. A frameshift changes the grouping of bases into codons, affecting all the amino acids downstream of the mutation. The cell will keep reading until it reaches a stop codon, which may happen earlier or later than in the original sequence.
+
+  +pod('The Universal Genetic Code')
+    .uk-width-medium-6-10
+      p
+        | All living things read genes the same way. They read codons to build proteins according to a Universal Genetic Code. Each 3-letter codon codes for a specific amino acid (or, in three cases, a “stop” codon).
+      p
+        | When mutation changes a gene’s DNA sequence, you can use a codon look-up table to predict changes to the protein it codes for. Some codon changes are more impactful than others. For example, since multiple codons code for the same amino acid, some mutations will not change the protein. And when the protein does change, there is a greater impact when the substituted amino acid has a different size and chemical properties (e.g., Glu to Gly) than when it is similar to the original (e.g., Glu to Asp).
+      +well
+        h3 Related Content
+        p
+          | To see how a protein’s amino acid sequence affects its function, visit the interactive 
+          a(href="https://learn.genetics.utah.edu/content/genetics/proteinfunctions/") Form is Function: Why a Protein's Shape Matters
+          | .
+        p
+          | Because all living things read genes the same way, they can also read each other’s genes! To learn more, watch the video 
+          a(href="https://learn.genetics.utah.edu/content/evolution/samegene") Same Gene, Different Organism
+          | .
+
+    .uk-width-medium-4-10
+      figure
+          a(href="", data-uk-modal="{target:'#lut'}")
+              img.lg-no-shadow(src='images/LUT.jpg', alt='Universal Genetic Code')
+          p.uk-text-small
+              | This graphic is based on the codon look-up table in Miller and Levine&apos;s Biology textbook. For more information, see 
+              a(href='http://www.millerandlevine.com/circular.html', target='_blank') their description
+              | .  Click image for full-size table and instructions.
+
+    #startcodon.uk-modal
+      .uk-modal-dialog
+         a.uk-modal-close.uk-close
+         include startcodon
+
+block append endscripts
+  script(src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js")
+  script(src="Build/UnityLoader.js")
+  script(src="mds.js")

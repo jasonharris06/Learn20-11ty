@@ -1,0 +1,63 @@
+extends /shared/layout
+
+block content
+    +pageTitle
+    article.lg-pod.lg-section
+        .uk-container.uk-container-center(style="padding:0 150px;")
+            div(style="padding-top:70.79%; position:relative; overflow:hidden;")
+                #controlledWidth.uk-width-1-1(style="position:absolute; top:0;")
+                    div(id="whatcausesatrait_hype_container" style="margin:auto; position:relative; width:1130px; height:800px; overflow:hidden; transform-origin:top left;" aria-live="polite")
+                        script(type="text/javascript" charset="utf-8" src="WhatCausesaTrait.hyperesources/whatcausesatrait_hype_generated_script.js?34123")
+
+    +pod('Solving the Pellagra Mystery')
+        .uk-width-medium-4-10
+            p
+                | Finding the cause of a trait can be tricky. In the early 1900s, a disease called pellagra (pell-AG-ruh) became common in the southern United States. Pellagra causes severe skin rashes, stomach problems, severe depression, and dementia.
+            p
+                | The disease was common in families, so some doctors thought it was genetic. Others thought it was due to a viral or bacterial infection. After many failed attempts to find the cause, they finally found patterns that revealed pellagra is a vitamin deficiency. People were eating large amounts of corn processed in a way that made niacin (vitamin B3) unavailable for them to absorb. Adding niacin to patients' diets cured the disease, and changing the way corn was processed prevented further spread.
+
+        .uk-width-medium-6-10
+            
+            img(src="images/vitamin-capsule.jpg" alt="vitamin capsule")
+    
+    +pod('Improving Gene Hunting Technology')
+        .uk-width-medium-4-10
+            img(src="images/fruitflies.jpg" alt="fruit flies")
+
+        .uk-width-medium-6-10
+            p
+                | Over 100 years ago, a graduate student named Alfred Sturtevant put together the first gene map—a diagram of the X chromosome in fruit flies. Today's researchers have sophisticated tools that make mapping genes much faster. Yet they still draw on some of the same principles that Sturtevant used all those years ago.
+            p
+                | At the time, Sturtevant was a graduate student working with Thomas Hunt Morgan, a well-known fruit fly geneticist. He analyzed tens of thousands of flies, tracking the inheritance patterns of traits like eye color and body color. He paid special attention to which traits were usually inherited together, and how often this pattern differed for an individual trait. He realized that the closer genes were to one another on a chromosome, the more likely they were to be inherited together. From this, he worked out which genes were on the X chromosome, and he mapped them out along its length.
+            p
+                | Many years later, in 1983, researchers mapped a human single-gene disorder for the first time. Combining Sturtevant’s strategy with new molecular techniques, they found a region of a chromosome linked to Huntington disease. Though it was a breakthrough, the researchers still didn't know which of several genes in the general area caused the disease. It took ten more years and a team of 58 to find the specific gene—now named huntingtin.
+            p
+                | Using today's super speedy DNA sequencing and analysis tools, it’s possible to find the gene that causes a single-gene disorder in a matter of days. Researchers have also been able to find many genes that influence complex diseases like diabetes, cancer, and heart diseases.
+
+    +references
+        p
+            | Lin, B. D., Mbarek, H., Willemsen, G., Dolan, C. V., Fedko, I. O., Abdellaoui, A., ... &amp; Hottenga, J. J. (2015). Heritability and genome-wide association studies for hair color in a Dutch twin family based sample. Genes, 6(3), 559-576.
+        p
+            | Reedy, J., Szczes, T., &amp; Downs, T. (1971). Tongue rolling among twins. Journal of Heredity, 62(2), 125-127.
+        p
+            | Silventoinen, K., Sammalisto, S., Perola, M., Boomsma, D. I., Cornes, B. K., Davis, C., ... &amp; Luciano, M. (2003). Heritability of adult body height: a comparative study of twin cohorts in eight countries. Twin Research and Human Genetics, 6(5), 399-408.
+        p
+            | Sturm, R. A., Duffy, D. L., Zhao, Z. Z., Leite, F. P., Stark, M. S., Hayward, N. K., ... &amp; Montgomery, G. W. (2008). A single SNP in an evolutionary conserved region within intron 86 of the HERC2 gene determines human blue-brown eye color. The American Journal of Human Genetics, 82(2), 424-431.
+        p
+            | Wong, A. H., Gottesman, I. I., &amp; Petronis, A. (2005). Phenotypic differences in genetically identical organisms: the epigenetic perspective. Human Molecular Genetics, 14: Review Issue 1, R11-R18.
+
+block append endscripts
+   script.
+      $(document).ready(function() {
+         var container = document.getElementById('controlledWidth');
+         var item = document.getElementById('whatcausesatrait_hype_container');
+
+         function updateItemWidth () {
+            var pad = parseInt(window.getComputedStyle(container).paddingLeft);
+            var newScale = (container.offsetWidth - pad) / 1130;
+            item.style.transform = "scale(" + newScale + "," + newScale + ")";
+         };
+
+         updateItemWidth();
+         window.addEventListener('resize', updateItemWidth);
+      });

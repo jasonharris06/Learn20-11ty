@@ -1,0 +1,31 @@
+extends /shared/layout
+block append endscripts
+   script(src="/lib/accordion.js")
+block content
+   +pageTitle
+   .lg-section
+      .uk-container.uk-container-center
+         .uk-grid
+            .uk-width-1-1
+               p In these disorders, entire chromosomes, or large segments of them, are missing, duplicated, or otherwise altered.
+               #ac.uk-accordion(data-uk-accordion="{showfirst: false}")
+                  h3.uk-accordion-title Cri-du-Chat Syndrome
+                  .uk-accordion-content
+                     include ./cdc/index
+                  h3.uk-accordion-title Down Syndrome
+                  .uk-accordion-content
+                     include ./down/index
+                  h3.uk-accordion-title 47, XXY (Klinefelter syndrome)
+                  .uk-accordion-content
+                     include ./klinefelter/index
+                  h3.uk-accordion-title Turner Syndrome
+                  .uk-accordion-content
+                     include ./turner/index
+                  h3.uk-accordion-title Williams Syndrome
+                  .uk-accordion-content
+                     include ./williams/index
+
+
+   +bottom-menu("",'hhmi')
+
+

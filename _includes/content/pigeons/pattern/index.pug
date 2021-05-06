@@ -1,0 +1,69 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-5-10
+         p Pigeons can have 4 different wing patterns: bar, barless, check, or t-check. 
+         p
+            | Bar is considered &quot;wild type,&quot; because it was the pattern in the wild ancestor to domestic pigeons. The other patterns are due to natural genetic variations, which were selected and propagated by breeders. Barless is the rarest wing pattern, available in just a small number of breeds.
+         p
+            | The birds pictured on the right are all colored blue, but each has a different wing pattern.
+      |     
+      .uk-width-medium-5-10
+         img(src='images/pattern.jpg', alt='Wing Pattern', width='488', height='442')
+   +pod('Alleles and Inheritance')
+      |     
+      .uk-width-medium-5-10
+         img(src='images/pattern-alleles.jpg', alt='Pattern Alleles', width='399', height='642')
+      |     
+      .uk-width-medium-5-10
+         p
+            | Wing pattern is controlled by a single gene, which comes in 4 different versions, or alleles.
+         p
+            | Pigeons inherit two copies of the 
+            em pattern
+            |  gene, one from each parent. The two alleles together make up a bird&apos;s &quot;genotype.&quot; What we see, also called the &quot;phenotype,&quot; reflects the dominant-most allele in the genotype. &apos;T-check&apos; is the most-dominant, followed by &apos;check&apos;, &apos;bar&apos;, and finally &apos;barless&apos;, which is recessive to all the others.
+         p
+            | While this dominance pattern generally holds up, sometimes the less-dominant allele does have a small effect on the phenotype. For instance, a bird with one t-check allele and one bar allele may have flecks of lighter feathers rather than a solid black wing.
+         p
+            | Pattern is a great example that shows the relative aspect of dominance and recessiveness. An allele is never simply &ldquo;dominant&rdquo; or &ldquo;recessive.&rdquo; It is always dominant 
+            em to
+            |  or recessive 
+            em to
+            |  another.
+         |         
+         +well
+            | The term wild-type implies nothing about an allele&apos;s dominance. It simply refers to the allele that was most commonly found in the wild ancestor. Depending on the gene, the wild-type allele can be dominant or recessive to other alleles. In fact, &apos;bar&apos;, the wild-type allele for wing pattern, is dominant to &apos;barless&apos; and recessive to &apos;t-check&apos; and &apos;check&apos;.
+   +pod('Genetic Linkage to Spread')
+      |     
+      .uk-width-medium-5-10
+         p
+            | The gene for 
+            em pattern
+            |  is on the same chromosome as the gene for 
+            a(href='../spread/')
+               em spread
+            | . The two genes are close enough together to be 
+            a(href='../geneticlinkage/') genetically linked
+            | : they are separated by a recombination event less than 50% of the time (unlinked genes are inherited separately exactly 50% of the time).
+         p
+            | In 
+            a(href='../pigeonetics/') Pigeonetics
+            | , we ignore this detail and treat the 
+            em spread
+            |  and 
+            em pattern
+            |  genes as though they were unlinked.
+         |         
+         p
+            a(href='../references/') References
+      |     
+      .uk-width-medium-5-10
+         img(src='images/pattern-linkage.jpg', alt='Pattern Linkage', width='156', height='119')
+         |  
+         br
+         |         
+         .uk-text-small
+            | Linked genes are close to one another on the same chromosome. They are inherited together more than 50% of the time.
+   
+   

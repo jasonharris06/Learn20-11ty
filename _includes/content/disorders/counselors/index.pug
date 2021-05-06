@@ -1,0 +1,301 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   +pod('')
+      .uk-width-medium-5-10
+         p
+            | Genetic counselors are health professionals who are trained to
+            | help families understand genetic disorders and to provide
+            | information and support to those families. They may also serve as
+            | patient advocates by referring individuals or families to local
+            | services that can be of assistance.
+
+         p
+            | Genetic research is a powerful tool for treating medical
+            | conditions, but it is still a new tool. Many people whose families
+            | are affected by genetic disorders don&apos;t understand how it will
+            | affect their lives. Even genetic researchers and doctors don&apos;t
+            | fully understand how genes cause all genetic disorders. Genetic
+            | counselors work with doctors and families to help families get the
+            | information they need to understand the disorder.
+      |    
+      .uk-width-medium-5-10
+         figure
+            img(src='images/couselor02.jpg', alt='Counselor')
+   +pod('Questions about genetic disorders')
+      |    
+      .uk-width-medium-6-10
+         p
+            | &quot;My doctor told me that I will have
+            | a blood test in my second trimester of pregnancy that can detect if
+            | my baby has problems. This test is called maternal serum
+            | alpha-fetoprotein screening. What is maternal serum
+            | alpha-fetoprotein screening? What can it tell me?&quot;
+         |       
+         p
+         
+         a(href="#more", data-uk-modal) More
+               
+         .uk-modal(id='more')
+            .uk-modal-dialog
+               a.uk-modal-close.uk-close
+               br
+               .uk-panel.uk-panel-box
+                  .lg-page-more
+                  h3 MSAFP screening
+                  p.
+                  img(src='images/prenatal.jpg', alt='Ultrasound Image')
+                  p
+                     u M
+                     | aternal 
+                     u s
+                     | erum
+                     u a
+                     | lpha-
+                     u f
+                     | eto
+                     u p
+                     | rotein
+                     | &#x9;&#x9;&#x9;(MSAFP) screening is a blood test that looks at certain
+                     | &#x9;&#x9;&#x9;proteins to screen for
+                     | &#x9;&#x9;&#x9;certain types of birth defects like neural tube defects (such as
+                     | &#x9;&#x9;&#x9;spina bifida) and Down syndrome in pregnancy. This test is
+                     | &#x9;&#x9;&#x9;routinely offered to all pregnant women.
+                  | &#x9;&#x9;&#x9;
+                  | &#x9;&#x9;&#x9;
+                  | &#x9;&#x9;&#x9;
+                  p
+                     | A genetic counselor plays an important role in helping expectant
+                     | mothers and their families understand the difference between a
+                     | screening and a diagnostic test. MSAFP is a screening test, so
+                     | further testing may be needed to confirm a
+                     | diagnosis. If the results from the
+                     | MSAFP screening are not within the normal range, the genetic
+                     | counselor can explain what
+                     | additional testing/procedures (including ultrasound and
+                     | amniocentesis) may be performed to diagnose the problem and
+                     | provide support for the parents. Genetic counselors can help
+                     | families understand the role that MSAFP screening plays in detecting
+                     | possible birth defects, as well as the risks,
+                     | benefits, and limitations of the additional testing.
+                  
+         p
+            | &quot;My son has a rare genetic disorder. Do you know any other
+            | patients with this disorder that I could talk to?&quot;
+
+         p
+         a(href="#more1", data-uk-modal) More
+               
+         .uk-modal(id='more1')
+            .uk-modal-dialog
+               a.uk-modal-close.uk-close
+               br
+               .uk-panel.uk-panel-box
+                  .lg-page-more
+                  h3 Support
+                  img(src='images/pediatric.jpg', alt='Genetic Screening', style='padding: 1em 0 0 1em;')
+                  | &#x9;&#x9;&#x9;
+                  p
+                     | Genetic counselors are often part of a clinical team that can
+                     | help families answer this question. The first step in answering
+                     | this question is to clearly define what the rare genetic disorder
+                     | is. Genetic counselors will often collect information about the
+                     | relationship and health of other family members (called a
+                     | family history) as well as information about the
+                     | pregnancy, birth process, and early childhood development of a child
+                     | who is being evaluated. Sometimes genetic counselors will help
+                     | research the physical findings or learn which laboratories are best
+                     | able to help make a diagnosis for a family. However, occasionally even
+                     | with best efforts, it is difficult to clearly define the genetic
+                     | disorder that a child has.
+                  | &#x9;&#x9;&#x9;
+                  | &#x9;&#x9;&#x9;
+                  p
+                     | Regardless of whether a disorder is clearly defined or not,
+                     | genetic counselors can often help families obtain support.
+                     | Sometimes, it is a matter of identifying local families who have
+                     | similar problems with parts of the disorder (such as a hearing or
+                     | learning problem). Other times, genetic counselors can help find
+                     | families in other parts of a state or even the country, especially
+                     | if the condition is rare. Often, genetic counselors will contact
+                     | their colleagues or tap into the 
+                     a(href='http://www.geneticalliance.org')
+                        | Alliance of Genetic Support
+                        | Groups
+                     |  to help families with questions find each
+                     | &#x9;&#x9;&#x9;other.
+   
+         p
+            | &quot;My father died last spring from
+            | Huntington&apos;s disease. My father&apos;s sister and mother also had
+            | this disease, and my doctor told me that there is a gene test available that
+            | can tell me whether or not I will develop Huntington&apos;s disease. The
+            | thing is, I dont know if I want to know and I&apos;m worried
+            | about what my insurance company will do if they learn that I do
+            | carry the gene.&quot;
+
+         p
+         a(href="#more2", data-uk-modal) More
+               
+         .uk-modal(id='more2')
+            .uk-modal-dialog
+               a.uk-modal-close.uk-close
+               br
+               .uk-panel.uk-panel-box
+                  .lg-page-more
+                  h3 Genetic Tests
+                  img(src='images/adult.jpg', alt='Genetic Test', style='padding: 1em 0 0 1em;')
+                  | &#x9;&#x9;&#x9;
+                  p
+                     | Genetic tests can determine how
+                     | likely someone is to develop certain diseases (such as someone with
+                     | a family history of breast cancer), or even whether or not they
+                     | will develop it (such as Huntington&apos;s disease). Huntington&apos;s disease is
+                     | a genetic disease that is caused by inheriting a change (mutation) in a certain
+                     | gene that causes anyone
+                     | who inherits this mutation to develop the condition. People in
+                     | families with a history of Huntington&apos;s disease now have the option
+                     | of learning whether or not they have inherited this gene
+                     | mutation.
+                  | &#x9;&#x9;&#x9;
+                  | &#x9;&#x9;&#x9;
+                  p
+                     | Because these tests are often performed on people who do not
+                     | have the disease themselves, there are a number of issues that are important to
+                     | discuss before testing is performed. A
+                     | genetic counselor is specifically trained to review the pros and
+                     | cons of the testing (such as the impact it may have
+                     | on a persons health insurance) and help each person come to a
+                     | decision that is best for him or her. This often means asking
+                     | questions such as whether or not the individual wants to know, what he or she might
+                     | do with the information, and how he or she might react to
+                     | either result.
+         |       
+         p
+            | &quot;Many of my family members have had cancer and I am worried
+            | about getting cancer myself. Is the cancer in my family inherited?
+            | What are my chances of getting cancer and what types of screening
+            | should I do?&quot;
+
+         p
+         a(href="#more3", data-uk-modal) More
+               
+         .uk-modal(id='more3')
+            .uk-modal-dialog
+               a.uk-modal-close.uk-close
+               br
+               .uk-panel.uk-panel-box
+                  .lg-page-more
+                  h3 Cancer Screening
+                  p
+                     | It can be valuable to look at one&apos;s family history
+                     | to determine whether the cancer in the family may have an
+                     | inherited component. Genetic counselors often work in clinics with
+                     | doctors (usually geneticists, oncologists, or gastroenterologists)
+                     | and focus on cancer risk. Having a family member with cancer does
+                     | not always mean that a person&apos;s cancer risk is high.
+                     | Collecting information about which family members had cancer, the type of cancer,
+                     | and the age of diagnosis helps genetic counselors assess the chances that the
+                     | cancer is inherited.
+                  | &#x9;&#x9;&#x9;
+                  | &#x9;&#x9;&#x9;
+                  p
+                     | Genetic counselors also estimate the lifetime likelihood that an
+                     | individual will develop cancer based on the individual&apos;s
+                     | health and family history. The physician and genetic counselor provide
+                     | recommendations for screening; including the type of screening test
+                     | and the age at which an individual should be tested. For
+                     | some families, genetic testing may be available. Genetic testing,
+                     | usually performed with a blood sample, may provide
+                     | information about who in the family is at an increased risk for cancer
+                     | and who is at the average general population risk for developing
+                     | cancer.
+      |    
+      .uk-width-medium-4-10
+         figure
+            img(src='images/counselor01.jpg', width='238', height='168', alt='Counselor', style='padding: 5px 0px 0px 0px;')
+            |          
+            p
+   +pod('Locating a Genetic Counselor')
+      |    
+      .uk-width-medium-6-10
+         p
+            strong United States
+            | :
+
+         ul
+            li
+               a(href='http://www.nsgc.org/') The National Society of Genetic Counselors
+
+            li
+               | March of Dimes 
+               a(href='http://www.marchofdimes.com/pnhec/4439_1120.asp')
+                  | &quot;genetic resource
+                  | directory&quot;
+               |  can help locate individuals and programs that can
+               | &#x9;&#x9;act as resources and regional sites for genetic evaluation,
+               | &#x9;&#x9;screening, diagnosis, treatment, management, and/or counseling.
+
+            li
+               a(href='http://www.cancer.gov/search/genetics_services/')
+                  | The
+                  | National Cancer Institute
+               |  provides a search by last name,
+               | location, and cancer/genetic disorder.
+
+         p
+            | In the 
+            strong
+               | United States, Canada, Australia, Puerto Rico, Denmark,
+               | Brazil, Israel, England, Singapore
+            | : 
+            a(href='http://www.nsgc.org/')
+               | The National Society of
+               | Genetic Counselors
+
+         p
+            strong United Kingdom
+            | :
+         | &#x9;&#x9;
+         p
+            a(href='http://www.gla.ac.uk/Acad/MedGenetics/UKgeneticscentres.htm')
+               | Listing of genetics clinics
+         | &#x9;&#x9;
+         p
+            strong Other locations
+            | :
+         | &#x9;&#x9;
+         | &#x9;&#x9;
+         p
+            | Please contact the genetic society for your
+            | area and ask for their assistance in locating a genetic counselor
+            | or medical geneticist. Some international genetic societies have
+            | websites listed on this page: 
+            a(href='http://www.il-st-acad-sci.org/health/genesocs.html')
+               | Genetics Societies &amp; Associations
+            | .  Or try using this list: 
+            a(href='http://www.faseb.org/genetics/') http://www.faseb.org/genetics/
+         | &#x9;&#x9;
+         | &#x9;&#x9;
+         p
+            strong Careers in Genetic Counseling
+            | :
+         | &#x9;&#x9;
+         p
+            a(href='http://www.nsgc.org/')
+               | The National
+               | Society of Genetic Counselors
+            |  has information on training
+            | &#x9;&#x9;programs, certification, demographics, career opportunities, and
+            | &#x9;&#x9;populations served.
+      |    
+      .uk-width-medium-4-10
+         figure
+            img(src='', height='', width='', alt='')
+            |          
+            p
+
+   +bottom-menu("",'hhmi')
+   
+   

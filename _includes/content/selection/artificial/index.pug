@@ -1,0 +1,240 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-1-1
+         object#FlashID(classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000', width='800px', height="440px")
+            param(name='movie', value='artificialselection.swf')
+            param(name='quality', value='high')
+            param(name='wmode', value='opaque')
+            param(name='swfversion', value='6.0.65.0')
+            // This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don't want users to see the prompt.
+            param(name='expressinstall', value='../../../Scripts/expressInstall.swf')
+            // Next object tag is for non-IE browsers. So hide it from IE using IECC.
+            //if !IE
+            object(type='application/x-shockwave-flash', data='artificialselection.swf', width='800px', height="440px")
+               // <![endif]
+               param(name='quality', value='high')
+               param(name='wmode', value='opaque')
+               param(name='swfversion', value='6.0.65.0')
+               param(name='expressinstall', value='../../../Scripts/expressInstall.swf')
+               // The browser displays the following alternative content for users with Flash Player 6.0 and older.
+               div
+                  h4 Content on this page requires a newer version of Adobe Flash Player.
+                  p
+                     a(href='http://www.adobe.com/go/getflashplayer')
+                        img(src='http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif', alt='Get Adobe Flash player', width='112', height='33')
+               //if !IE
+            // <![endif]
+         br
+         +photocredits
+            h3 Title Slide
+            | &#x9;&#x9;
+            div Menke, D. (2003). Cassin&apos;s Finch. US Fish and Wildlife Service.
+            | &#x9;
+            h3 Slide 04
+            | &#x9;&#x9;
+            div Kramer, G. (2008). Gray Wolf. US Fish and Wildlife Service.
+            | &#x9;&#x9;
+            div 1. Nunziata, C. (2009). Yellow Labrador.
+            | &#x9;&#x9;
+            div 2. Gunnandreassen (2007). Flat Coated Retriever.
+            | &#x9;&#x9;
+            div 5. Korbel, M. (2007). Nova Scotia Duck Tolling Retriever.
+            | &#x9;&#x9;
+            div 7. Belinda (2005). Silver Miniature Poodle.
+            | &#x9;&#x9;
+            div 8. Morgan, D. (2006). Newfoundland Dog.
+            | &#x9;
+            h3 Slide 05
+            | &#x9;&#x9;
+            div Michael Slonecker
+            | &#x9;
+            h3 Slide 06
+            | &#x9;&#x9;
+            div Waugsberg (2007). Queen bee.
+            | &#x9;&#x9;
+            div Eitan (1976)
+            | &#x9;
+            h3 Slide 07
+            | &#x9;&#x9;
+            div 1. Nebelsiek, K. (2007). Vosgienne Cow.
+            | &#x9;&#x9;
+            div 4. Schipul, E. (2008). Texas Longhorn Cow.
+            | &#x9;&#x9;
+            div 5. Dilo ,V. (2008). Highland Cow.
+            | &#x9;&#x9;
+            div 6. Bugallo Sanchez, L.M. (2008). Galician Blond.
+            | &#x9;&#x9;
+            div 7. Keith Weller
+            | &#x9;&#x9;
+            div Regis Lefebure, USDA
+            | &#x9;&#x9;
+            div Michael Thompson
+            | &#x9;
+            h3 Slide 08
+            | &#x9;&#x9;
+            div Kaushai, A. (2008). Mustard Plant.
+            | &#x9;&#x9;
+            div 1. Medrano, D. (2007). Cabbage.
+            | &#x9;&#x9;
+            div 2. Owen-Wahi, R. (2008). Broccoli.
+            | &#x9;&#x9;
+            div 3. Zenze, R. (2005). Mustard.
+            | &#x9;&#x9;
+            div 5. TheBittenWord.com
+            | &#x9;&#x9;
+            div 6. Rasbak. (2005). Kale.
+            | &#x9;&#x9;
+            div 7. Hunt, Eric. Brussel Sprouts.
+            | &#x9;&#x9;
+            div 8. http://commons.wikimedia.org/wiki/File:Tigobrasiko.jpg
+            | &#x9;&#x9;
+            div 9. http://commons.wikimedia.org/wiki/File:Brassica_oleracea_02.JPG
+            | &#x9;
+            h3 Slide 09
+            | &#x9;&#x9;
+            div Berghaeuser, S. (2007).
+            | &#x9;&#x9;
+            div Thetford, L. Teosinte.
+            | &#x9;
+            h3 Slide 10
+            | &#x9;&#x9;
+            div Kaiser, N. (2006). Rock Pigeon.
+            | &#x9;&#x9;
+            div 2. Gifford, J. (2008). Zitterhall.
+            | &#x9;&#x9;
+            div 3. Manning, G. (2008). King Pigeons.
+            | &#x9;&#x9;
+            div 4. Gifford, J. (2008). Fantail Pigeon.
+            | &#x9;&#x9;
+            div 5. Gifford, J. (2008). English Carrier.
+            | &#x9;&#x9;
+            div 6. Gifford, J. (2008). African Owl Pigeon.
+            | &#x9;&#x9;
+            div 7. Gifford, J. (2008). Parlour Tumbler.
+            | &#x9;&#x9;
+            div 8. Manning, G. (2008). American Giant Runt.
+            | &#x9;&#x9;
+            div 9. Manning, G. (2007). Serbian Highflier Hen.
+            | &#x9;&#x9;
+            div 10. Gifford, J. (2007). Pigmy Pouter Pigeon.
+            | &#x9;&#x9;
+            div 11. Gifford, J. (2008). Frillback Pigeon.
+            | &#x9;&#x9;
+            div 12. Gifford, J. (2007). Old Dutch Capuchine.
+            | &#x9;
+            h3 Slide 11
+            | &#x9;&#x9;
+            div Gross L (2006)
+      .uk-width-medium-1-2
+         +well
+            |To learn more about corn domestication, visit 
+            a(href='../corn/', style='letter-spacing:0px;') The evolution of corn
+            |.
+      .uk-width-medium-1-2
+         +miscon("Genetically modified food is a recent phenomenon.","Farmers have been manipulating heritable traitswhich are encoded by genesfor millennia.")
+   
+   +references
+      p
+         | Driscoll, C.A., Macdonald, D.W., O&apos;Brien, S.J. (2009). 
+         a(href='http://www.pnas.org/content/106/suppl.1/9971.long') From wild animals to domestic pets, an evolutionary view of domestication
+         | . 
+         em
+            | Proceedings of the National Academy of Science of the United States of America, 16
+         | , 9971-9978. doi: 10.1073/pnas.0901586106.
+      |  
+      | &#x9;&#x9;
+      p
+         | Andersson, L. (2001). 
+         a(href='http://www.nature.com/nrg/journal/v2/n2/abs/nrg0201_130a.html') Genetic dissection of phenotypic diversity in farm animals
+         | . 
+         em Nature Reviews Genetics, 2
+         | , 130-138 (subscription required). doi:10.1038/35052563.
+      |  
+      | &#x9;&#x9;
+      | &#x9;&#x9;
+      p
+         | Pang, J-F., Kluetsch, C., Zou, X-J., Zhang, A-B., Luo, L-Y., Angleby, H., Ardalan, A., Ekstr&ouml;m, C., Sk&ouml;llermo, A., Lundeberg, J., Matsumura, S., Leitner, T., Zhang, Y-P., Savolainen, P. (2009). 
+         a(href='http://mbe.oxfordjournals.org/cgi/content/full/26/12/2849')
+            | mtDNA data indicate a single origin for dogs south of Yangtze River, less than 16,300 years ago, from numerous wolves
+         | . 
+         em Molecular Biology and Evolution, 26(12)
+         | , 2849-2864. doi: 10.1093/molbev/msp195.
+      | &#x9;&#x9;
+      | &#x9;&#x9;
+      p
+         | Savolainen, P., Zhang, Y-P., Luo, J., Lundeberg, J., Leitner, T. (2002). 
+         a(href='http://www.sciencemag.org/cgi/content/full/298/5598/1610') Genetic evidence for an East Asian origin of dogs
+         | . 
+         em Science, 298
+         | , 1610-1613 (registration required).
+      | &#x9;&#x9;
+      | &#x9;&#x9;
+      p
+         | Shearin, A.L., Ostrander, E.A. (2010). 
+         a(href='http://www.plosbiology.org/article/info%3Adoi%2F10.1371%2Fjournal.pbio.1000310') Canine morphology: hunting for genes and tracking mutations
+         | . 
+         em Public Library of Science Biology 8(3)
+         | , e1000310. doi:10.1371/journal.pbio.1000310.
+      | &#x9;&#x9;
+      | &#x9;&#x9;
+      p
+         | Akey, J.M., Ruhe, A.L., Akey, D.T., Wong, A.K., Connelly, C.F., Madeoy, J., Nicholas, T.J., Neff, M.W. (2010). 
+         a(href='http://www.pnas.org/lookup/pmid?view=long&pmid=20080661') Tracking footprints of artificial selection in the dog genome
+         | . 
+         em
+            | Proceedings of the National Academy of Science of the United States of America, 107
+         | , 1160-1165.
+      | &#x9;&#x9;
+      | &#x9;&#x9;
+      p
+         | Vil&grave;a, C., Leonard, J.A., G&ouml;therstr&ouml;m, A., Marklund, S., Sandberg, K., Lid&eacute;n, K., Wayne, R.K., Ellegren, H. (2001). 
+         a(href='http://www.sciencemag.org/cgi/content/full/291/5503/474') Widespread origins of domestic horse lineages
+         | . 
+         em Science, 291
+         | , 474-477 (registration required).
+      | &#x9;&#x9;
+      | &#x9;&#x9;
+      p
+         | Gu, J., Orr, N., Park, S.D., Katz, L.M., Sulimova, G., et al. (2009). 
+         a(href='http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0005767') A genome scan for positive selection in thoroughbred horses
+         | .
+         em  Public Library of Science Biology ONE, 4(6)
+         | , e5767. doi:10.1371/journal.pone.0005767.
+      | &#x9;&#x9;
+      | &#x9;&#x9;
+      p
+         | Page, R.E. Jr., Scheiner, R., Erber, J., Amdam, G.V. (2006). 
+         a(href='http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2606150/?tool=pubmed')
+            | The development and evolution of division of labor and foraging specialization in a social insect (Apis mellifera L.)
+         | . 
+         em Current Topics in Developmental Biology, 74
+         | , 253-86.
+      | &#x9;&#x9;
+      | &#x9;&#x9;
+      p
+         | Doebley, J. (2004). 
+         a(href='http://arjournals.annualreviews.org/doi/full/10.1146/annurev.genet.38.072902.092425') The genetics of maize evolution
+         | . 
+         em Annual Review of Genetics, 38
+         | , 37-59 (subscription required).
+      | &#x9;&#x9;
+      | &#x9;&#x9;
+      p
+         | Bartels, T. (2003).
+         a(href='http://www3.interscience.wiley.com/journal/104556303/abstract')
+            | Variations in the morphology, distribution, and arrangement of feathers in domesticated birds
+         | . 
+         em
+            | Journal of Experimental Zoology Part B: Molecular and Developmental Evolution, 298(1)
+         | , 91-108 (subscription required).
+      | &#x9;&#x9;
+      | &#x9;&#x9;
+      p
+         | Abzhanov, A., Kuo, W.P., Hartmann, C., Grant, B.R., Grant, P.R., Tabin, C.J. (2006). 
+         a(href='http://www.nature.com/nature/journal/v442/n7102/full/nature04843.html')
+            | The calmodulin pathway and evolution of elongated beak morphology in Darwin&apos;s finches
+         | . 
+         em Nature, 442(7102)
+         | , 563-567 (subscription required). doi:10.1038/nature04843.

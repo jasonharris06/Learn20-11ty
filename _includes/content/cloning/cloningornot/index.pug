@@ -1,0 +1,27 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   script(src='/Scripts/AC_RunActiveContent.js', type='text/javascript')
+
+   +pod('')
+      .uk-width-medium-6-10
+         p
+            | In
+            a(href='../whatiscloning/')  What is Cloning?
+            |  and
+            a(href='../clickandclone/')  Click and Clone
+            | ,
+            | &#x9;    you can explore different approaches researchers use to clone mammals. Although cloning is one type of technology used in reproduction, not all             reproductive technologies involve cloning. In the game below, you can decide for yourself whether the scenario described involves cloning.
+
+      .uk-width-medium-4-10
+         +well
+            h3 Cloning Hint
+            p Clones are organisms that are exact genetic copies.
+   +pod('')
+      .uk-width-medium-1-1
+         script(type='text/javascript').
+            AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','780','height','640','src','Cloning_or_Not','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','Cloning_or_Not' ); //end AC code
+         noscript
+            p Javascript is required to view this content.
+   script(src="/ruffle/ruffle.js")

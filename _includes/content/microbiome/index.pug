@@ -1,0 +1,61 @@
+extends /shared/layout
+
+block content
+   +pageTitle()(teach="microbiome")
+   .lg-section
+      .uk-container.uk-container-center
+         .uk-grid
+            .uk-width-medium-5-10
+               h2  Definitions
+               .lg-index-items
+                  +index-item('What are Microbes?', 'learn more', 'intro', 'images/intro.jpg')
+                     p Get familiar with some very small life forms.
+                  br
+                  .lg-index-box-text
+                     dl
+                        dt Microbiota
+                        dd A collection or community of microbes.
+
+                  .lg-index-box-text
+                     dl
+                        dt Microbiome
+                        dd Some use “microbiome” to mean all the microbes in a community. We and others use it to mean the full collection of genes of all the microbes in a community. The human microbiome (all of our microbes’ genes) can be considered a counterpart to the human genome (all of our genes). The genes in our microbiome outnumber the genes in our genome by about 100 to 1.
+
+               h2 Meet the Microbiome
+               .lg-index-items
+                  +index-item('The Human Ecosystem','explore','ecosystem','images/ecosystem.jpg')
+                     p We aren’t just single individuals walking the planet: we’re walking ecosystems. And like our planet, the human body has many different environments, each with a unique set of biotic and abiotic factors.
+                  +index-item('Your Microbial Friends','explore','friends','images/friends.jpg')
+                     p A few microbes cause disease, but most do not. In fact, many are essential for good health.
+                  +index-item('How We Study the Microbiome','learn more','study','images/study.jpg')
+                     p DNA-sequencing tools help us see the microbiome more clearly than we could before, giving us new respect for all it does for us.
+                  +index-item('Examples of Symbiosis','explore','symbiosis','images/symbiosis.jpg')
+                     p Plants and animals have microbiomes too! Explore these examples to learn about the role of microbes in several of Earth’s ecosystems.
+
+               h2 Listen
+               .lg-index-items
+                  +index-item('The Human Microbiome EP','album','music','images/ep.jpg')
+                     p Download the music from this site.
+
+
+            .uk-width-medium-5-10
+               h2 Micro-Interactions
+               p.lg-index-box-text  Microbes interact in communities, and they respond to their surroundings. Just like organisms in Earth’s ecosystems, our microbial populations shift when their environment changes.
+               .lg-index-items
+                  +index-item('Your Changing Microbiome', 'learn more', 'changing', 'images/changing.jpg')
+                     p We acquire our microbiomes from the environment at birth. As we grow up, our microbial profiles change along with us.
+                  +index-item('Microbiome Simulator', 'interactive explore', 'simulator', 'images/simulator.jpg')
+                     p Our genome is fixed for life, but our microbiome changes over time. Learn how our experiences influence the microbiome.
+                  +index-item('The Microbiome and Disease', 'learn more', 'disease', 'images/disease.jpg')
+                     p Disrupting our microbial ecosystems can cause disease, and some diseases disrupt our microbial ecosystems. Manipulating these interactions may help doctors understand and manage diseases.
+
+               h2 Antibiotics
+               p.lg-index-box-text Humans have spent the last 80 years trying to clean “germs” from our bodies and our homes. Antibiotics have saved countless lives—but with unintended consequences to our microbiomes that we are only beginning to understand.
+               .lg-index-items
+                  +index-item('What is an antibiotic?','learn more','antibiotics','images/antibiotics.jpg')
+                     p Discover how different types of antibiotics fight infection and how they influence your resident microbes.
+                  +index-item('Agent Antibiotic','interactive explore','agentantibiotic','images/agentantibiotic.jpg')
+                     p In this game, your mission is to destroy an infectious colony of bacteria. But watch out—the bacteria have a trick up their sleeves.
+                  +index-item('Antibiotic Resistance','learn more','resistance','images/resistance.jpg')
+                     p Bacteria can become resistant to antibiotics, making infections harder to cure. Learn more about antibiotic resistance and its medical challenges.
+      +bottom-menu('credits','niaidmicrobiome')

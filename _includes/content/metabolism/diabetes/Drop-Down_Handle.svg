@@ -1,0 +1,38 @@
+<svg id="Drop-Down_Handle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1225 63.82">
+  <defs>
+    <style>
+
+      .handle-viewBox {
+        display:none;
+        pointer-events:none;
+      }
+
+      .handle-frame {
+        fill: #2d2d2d;
+        opacity: 0.5;
+        cursor:pointer;
+      }
+
+      .handle-arrow {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 8.67px;
+        pointer-events:none;
+      }
+
+      #DownArrow {
+         visibility: hidden;
+         pointer-events:none;
+      }
+    </style>
+  </defs>
+  <title>Drop-Down_Handle</title>
+  <rect id="Handle_viewBox" data-name="Handle_viewBox" class="handle-viewBox" width="1225" height="10"/>
+  <g id="Frame">
+    <rect id="Box" data-name="Box" class="handle-frame" x="20px" y="10px" width="96.45" height="53.82"/>
+    <polyline id="Arrow" data-name="Arrow" class="handle-arrow" points="95.2 45.19 68.36 28.63 41.25 45.19"/>
+    <polyline id="DownArrow" data-name="DownArrow" class="handle-arrow" points="95.2 28.63 68.36 45.19 41.25 28.63"/>
+  </g>
+</svg>

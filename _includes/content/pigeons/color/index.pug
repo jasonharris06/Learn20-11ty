@@ -1,0 +1,117 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-5-10
+         p
+            | The major color locus (a locus is a specific area on a chromosome) controls whether birds are blue, brown, or ash-red. Blue is considered &quot;wild type&quot;,  because it was the color of the domestic pigeon&rsquo;s wild ancestor.
+         p
+         | The differences between blue, brown, and ash-red color are most visible in the wing pattern. In the photos on the right, all three birds have the bar pattern, but the colors of the bars are noticeably different. Notice that ash-red birds do not have dark bars on their tails.
+         p
+      |     
+      .uk-width-medium-5-10
+         img(src='images/color.jpg', alt='Color', width='488', height='154')
+   +pod('Major Color Is Sex-Linked')
+      |     
+      .uk-width-medium-5-10
+         img(src='images/major-color-1.jpg', alt='Major Color Gene', width='285', height='184')
+      |     
+      .uk-width-medium-5-10
+         p
+            | The major color locus is a single gene, which we&rsquo;ll call the 
+            em color
+            |  gene. It is located on the Z chromosome, which is one of the two sex chromosomes in birds. The other sex chromosome, called W, does not have a copy of the 
+            em color
+            |  gene. Sex chromosomes specify whether a bird is male or female.
+         p
+            | Female pigeons have one Z chromosome and one W chromosome, so they have just one copy of the 
+            em color
+            |  gene. Male pigeons have two Z chromosomes, so they have two copies.
+         p
+            | Because it&rsquo;s on a sex chromosome, we say the 
+            em color
+            |  gene is 
+            a(href='../sexlinkage/') sex-linked
+            | . Sex-linked genes follow different patterns of inheritance in males and females.
+   +pod('Alleles and Inheritance')
+      |     
+      .uk-width-medium-5-10
+         p
+            | The 
+            em color
+            |  gene comes in 3 different versions, or alleles: &apos;blue&apos;, &apos;brown&apos;, and &apos;ash-red&apos;.
+         p
+            | Males have two 
+            em color
+            |  alleles. Their feather color is specified by the more-dominant of the two alleles: &apos;ash-red&apos; is dominant to &apos;blue&apos;, which is dominant to &apos;brown&apos;.
+         p
+            | Females have just one 
+            em color
+            |  allele. Whatever allele that copy is specifies their feather color. (Note that a small, dark circle symbolizes the lack of an allele.)
+         p
+            | Males inherit a 
+            em color
+            |  allele from each parent, and they pass one allele or the other to their sons and daughters alike.
+         p
+            | Females always inherit their 
+            em color
+            |  allele from their fathers, and they always pass it down to their sons. The W chromosome, which has no allele for 
+            em color
+            | , always passes from mother to daughter.
+         p
+            | For more about sex-linked inheritance, visit 
+            a(href='../sexlinkage/') sex-linkage
+            | .
+         |         
+         p
+            em
+               | Note: Several genes contribute to feather color in pigeons. The gene discussed here (which we call simply
+            | color
+            em ) is usually called &ldquo;major color&rdquo; to help distinguish it from the others.
+      |     
+      .uk-width-medium-5-10
+         img(src='images/major-color-2.jpg', alt='Alleles and Inheritance', width='447', height='586')
+   +pod('Color Comes from Melanins')
+      |     
+      .uk-width-medium-5-10
+         img(src='images/major-color-3.jpg', alt='Color Comes from Melanins', width='351', height='299')
+      |     
+      .uk-width-medium-5-10
+         p
+            | Feathers get their colors from pigment molecules called melanins. Melanins are made up of subunits, like building blocks, made from the amino acid tyrosine. Several proteins work together like an assembly line to build the subunits, and then put them together to make large pigment molecules.
+         p
+            | Different types of subunits give each type of melanin its color&mdash;black, brown, or red. Most birds make all three types; it&rsquo;s the proportion that gives them their color. Blue pigeons make mostly black melanin, brown pigeons make mostly brown, and ash-red make mostly red.
+         p
+            | In 2014, researchers at the University of Utah, led by professor Mike Shapiro, determined that the major color locus is a gene called 
+            em Tyrp1
+            | . This gene is the set of DNA instructions for building one of the proteins in the melanin assembly line, TYRP1 (short for tyrosinase-related protein 1).
+   +pod('From Gene to Protein: How Color Works')
+      |     
+      .uk-width-medium-5-10
+         p
+            | The different versions, or alleles, of the 
+            em Tyrp1
+            |  gene have slightly different DNA sequences. Since DNA codes for protein, the different alleles lead to differences in TYRP1 protein. Because TYRP1 is part of the melanin assembly line, changes to this protein affect the proportions of melanins that are made.
+         p
+            | The &apos;blue&apos; allele codes for a TYRP1 protein that functions normally. Birds with this allele make mostly black melanin, but they also make some brown and red. As shown in the diagram above, all of the assembly line pieces are present and working.
+         p
+            | The &apos;brown&apos; allele is &quot;broken&quot;&mdash;no protein can be made from it. A bird with two &apos;brown&apos; alleles makes no TYRP1, so there&apos;s a piece missing from the black-melanin assembly line. It cannot make black melanin. Instead, the raw materials are used mainly for making brown melanin, though these birds also make some red melanin.
+         p
+            | If a bird has one &apos;brown&apos; allele and one &apos;blue&apos; allele, they have a blue phenotype. That&rsquo;s because there&rsquo;s enough normal TYRP1 being made from the &apos;blue&apos; allele for the birds to be able to make black melanin.
+         p
+            | The &apos;ash-red&apos; allele codes for a version of TYRP1 that is not properly processed&mdash;it has an extra little piece attached to it, and it appears to get stuck before it can reach it&apos;s proper place in the cell&rsquo;s melanosome, the place where melanins are made.
+         p
+            | If it were simply a matter of melanosomes lacking TYRP1, we would expect &apos;ash-red&apos; to behave just like the &apos;brown&apos; allele&mdash;but it doesn&rsquo;t. Because the &apos;ash-red&apos; allele is dominant, scientists think the sticky TYRP1 protein must be preventing other brown/black assembly-line proteins from reaching the proper place&mdash;including the normal TYRP1 protein that&rsquo;s made in birds that carry one &apos;ash-red&apos; and one &apos;blue&apos; allele (this effect is called &ldquo;dominant negative&rdquo;). Whatever the mechanism, the protein made from even a single &apos;ash-red&apos; allele shuts down brown and black melanin production.
+         |         
+         +well
+            | In other animals, melanins also color hair, fur, skin, scales, and more. Variations in the 
+            em Tyrp1
+            |  gene affect fur and feather colors in dogs, cats, cattle, sheep, and quail.
+         |         
+         p
+            a(href='../references/') References
+      |     
+      .uk-width-medium-5-10
+         img(src='images/major-color-4.jpg', alt='From Gene to Protein', width='351', height='565')
+   
+   

@@ -1,0 +1,20 @@
+extends /shared/layout
+block content
+  +pageTitle
+  .lg-section
+    .uk-container.uk-container-center
+      .uk-grid
+        .uk-width-medium-5-10
+          h2 Intro to Neuroscience
+          .lg-index-items
+            +index-item('Neurons Transmit Messages in the Brain', 'learn more', 'neurons', 'images/neurons.jpg')
+              p Neurons are cells that pass chemical and electrical signals along brain pathways.
+            +index-item('Make a Mad, Mad, Mad Neuron', 'interactive explore', 'madneuron', 'images/madneuron.jpg')
+              p Build your own neuron with Dr. Dendristein!
+            +index-item('Crossing the Divide','interactive explore','crossingdivide','images/crossingdivide.jpg')
+              p See how neurons talk to each other in this animated tutorial.
+            +index-item('The Other Brain Cells','learn more','braincells','images/braincells.jpg')
+              p Glia and other supporting cells are important for proper brain function.
+            +index-item('Brain Imaging Technologies','learn more','brainimaging','images/brainimaging.jpg')
+              p Using PET and MRI scans, researchers can look into the brain and measure its activity.
+      +bottom-menu('','sedapa')

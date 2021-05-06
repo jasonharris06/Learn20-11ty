@@ -1,0 +1,68 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   +pod('')
+      +oldFlash('PCR Virtual Lab','Spring 2021')
+
+   //- script(src='/Scripts/AC_RunActiveContent.js', type='text/javascript')
+
+   +pod('')
+      .uk-width-medium-1-2
+         p
+            | PCR (short for Polymerase Chain Reaction) is a relatively simple and inexpensive tool that you can use
+            | to focus in on a segment of DNA and copy it billions of times over. PCR is used every day to diagnose
+            | diseases, identify bacteria and viruses, match criminals to crime scenes, and in many other ways. Step
+            | up to the virtual lab bench and see how it works!
+      .uk-width-1-1.uk-text-center
+         //- script(type='text/javascript').
+         //-    AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','920','height','553','src','PCR Biotechnique','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','PCR Biotechnique' ); //end AC code
+         //- noscript
+         //-    object(classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000', codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0', width='750', height='450')
+         //-       param(name='movie', value='PCR Biotechnique.swf')
+         //-       param(name='quality', value='high')
+         //-       embed(src='PCR Biotechnique.swf', quality='high', pluginspage='http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash', type='application/x-shockwave-flash', width='750', height='450')
+   +pod('What are these things doing in my PCR reaction?')
+
+      .uk-width-medium-7-10
+         p
+            strong(style='font-size:14px; color:#66ABCC;') Primers
+            |  are short pieces of
+            |          DNA that are made in a laboratory. Since they&apos;re custom built, primers can have any
+            |          sequence of nucleotides you&apos;d like.
+
+         p
+            | In a PCR experiment, two primers are designed to match to the segment of DNA you want
+            | to copy. Through complementary base pairing, one primer attaches to the top strand at
+            | one end of your segment of interest, and the other primer attaches to the bottom strand
+            | at the other end. In most cases, 2 primers that are 20 or so nucleotides long will target
+            | just one place in the entire genome.
+
+         p
+            | Primers are also necessary because DNA polymerase can&apos;t attach at just any old place
+            | and start copying away. It can only add onto an existing piece of DNA.
+         p
+            strong(style='font-size:14px; color:#66ABCC;') DNA Polymerase
+            |  is a naturally occurring
+            |          complex of proteins whose function is to copy a cell&apos;s DNA before it divides in two. When a
+            |          DNA polymerase molecule bumps into a primer that&apos;s base-paired with a longer piece of DNA,
+            |          it attaches itself near the end of the primer and starts adding nucleotides. (In nature,
+            |          these primers are made by an enzyme called primase).
+
+         p
+            | The DNA polymerase in our bodies breaks down at temperatures well below 95 &deg;C (203 &deg;F), the
+            | temperature necessary to separate two complementary strands of DNA in a test tube.
+            | The DNA polymerase that&apos;s most often used in PCR comes from a strain of bacteria called
+            em Thermus aquaticus
+            |  that live in the hot springs of Yellowstone National Park. It can survive
+            |          near boiling temperatures and works quite well at 72 &deg;C (162 &deg;F).
+
+         p
+            strong(style='font-size:14px;  color:#66ABCC;') Nucleotides
+            |  are the building blocks
+            |          that DNA molecules are made of. You add a mixture of four types of nucleotides to your PCR
+            |          reactionA&apos;s, C&apos;s, G&apos;s and T&apos;s. DNA polymerase grabs nucleotides that are floating in the
+            |          liquid around it and attaches them to the end of a primer.
+
+      .uk-width-medium-3-10
+         img(src='PodGraphics.jpg', width='247', height='604', alt='PCR')

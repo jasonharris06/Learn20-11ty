@@ -1,0 +1,125 @@
+extends /shared/layout
+
+block append head
+   link(rel='stylesheet', href='inheritance.css')
+
+block content
+   +pageTitle
+
+   +pod('')
+      .uk-width-medium-4-10
+         p
+            | We used to think that a new embryo&apos;s epigenome was completely erased and rebuilt from scratch. But this isn&apos;t completely true. Some epigenetic tags remain in place as genetic information passes from generation to generation, a process called epigenetic inheritance.
+         p
+            | Epigenetic inheritance is an unconventional finding. It goes against the idea that inheritance happens only through the DNA code that passes from parent to offspring. It means that a parent&apos;s experiences, in the form of epigenetic tags, can be passed down to future generations.
+         p
+            | As unconventional as it may be, there is little doubt that epigenetic inheritance is real. In fact, it explains some strange patterns of inheritance geneticists have been puzzling over for decades.
+
+      .uk-width-medium-6-10
+         img(src='images/BabyAnimals.jpg', alt='Baby Animals', width='500', height='234')
+   +pod('Overcoming the Reprogramming Barrier')
+
+      .uk-width-medium-6-10
+         p
+            | Most complex organisms develop from specialized reproductive cells (eggs and sperm in animals). Two reproductive cells meet, then they grow and divide to form every type of cell in the adult organism. In order for this process to occur, the epigenome must be erased through a process called &quot;reprogramming.&quot;
+         p
+            | Reprogramming is important because eggs and sperm develop from specialized cells with stable gene expression profiles. In other words, their genetic information is marked with epigenetic tags. Before the new organism can grow into a healthy embryo, the epigenetic tags must be erased.
+         p
+            | At certain times during development (the timing varies among species), specialized cellular machinery scours the genome and erases its epigenetic tags in order to return the cells to  a genetic &quot;blank slate.&quot; Yet, for a small minority of genes, epigenetic tags make it through this process and pass unchanged from parent to offspring.
+
+         img(src='images/Reprogramming.jpg', alt='Baby Animals', width='560', height='264')
+
+         p.uk-text-small
+            | Reprogramming resets the epigenome of the early embryo so that it can form every type of cell in the body. In order to pass to the next generation, epigenetic tags must avoid being erased during reprogramming.
+         +well
+            p
+               | In mammals, about 1% of genes escape epigenetic reprogramming through a process called Imprinting.
+      .uk-width-medium-4-10
+         +well
+            h3 Bypassing Reproductive Cells
+
+            p
+               | Epigenetic marks can pass from parent to offspring in a way that completely bypasses egg or sperm, thus avoiding the epigenetic purging that happens during early development.
+            p
+               | Most of us were taught that our traits are hard-coded in the DNA that passes from parent to offspring. Emerging information about epigenetics may lead us to a new understanding of just what inheritance is.
+            br
+            p
+               strong Nurturing behavior in rats
+
+               br
+               | Rat pups who receive high or low nurturing from their mothers develop epigenetic differences that affect their response to stress later in life. When the female pups become mothers themselves, the ones that received high quality care become high nurturing mothers. And the ones that received low quality care become low nurturing mothers. The nurturing behavior itself transmits epigenetic information onto the pups&apos; DNA, without passing through egg or sperm.
+            br
+            a(href='../rats/') TRY YOUR HAND AT BEING A RAT MOTHER: LICK YOUR RATS!
+            br
+            br
+            p
+               strong Gestational diabetes
+
+               br
+               | Mammals can experience a hormone-triggered type of diabetes during pregnancy, known as gestational diabetes. When the mother has gestational diabetes, the developing fetus is exposed to high levels of the sugar glucose. High glucose levels trigger epigenetic changes in the daughter&apos;s DNA, increasing the likelihood that she will develop gestational diabetes herself.
+
+               br
+               br
+               a(href='../imprinting/') LEARN MORE: IMPRINTING
+         br
+   +pod('')
+      include slideshow.pug
+
+   +pod('The Challenges of Proving Epigenetic Inheritance')
+
+      .uk-width-medium-6-10
+         p
+            | Proving epigenetic inheritance is not always straightforward. To provide a watertight case for epigenetic inheritance, researchers must:
+
+         ul
+            li
+               strong Rule out the possibility of genetic changes
+               br
+               | In organisms with larger genomes, a single mutation can hide like a needle in a haystack.
+               br
+               br
+
+            li
+               strong
+                  | Show that the epigenetic effect can pass through enough generations to rule out the possibility of direct exposure
+
+               br
+               | In a pregnant mother, three generations are directly exposed to the same environmental conditions at the same time. An epigenetic effect that continues into the 4th generation could be inherited and not due to direct exposure.
+         p
+            | Researchers face the added challenge that epigenetic changes are transient by nature. That is, the epigenome changes more rapidly than the relatively fixed DNA code. An epigenetic change that was triggered by environmental conditions may be reversed when environmental conditions change again.
+
+      .uk-width-medium-4-10
+         img(src='images/DirectExposure.jpg', width='424', height='315')
+
+         p.uk-text-small
+            | Three generations at once are exposed to the same environmental conditions (diet, toxins, hormones, etc.). In order to provide a convincing case for epigenetic inheritance, an epigenetic change must be observed in the 4th generation.
+   +pod('Implications for Evolution')
+
+      .uk-width-medium-6-10
+         p
+            | Epigenetic inheritance adds another dimension to the modern picture of evolution. The genome changes slowly, through the processes of random mutation and natural selection. It takes many generations for a genetic trait to become common in a population. The epigenome, on the other hand, can change rapidly in response to signals from the environment. And epigenetic changes can happen in many individuals at once. Through epigenetic inheritance, some of the experiences of the parents may pass to future generations. At the same time, the epigenome remains flexible as environmental conditions continue to change. Epigenetic inheritance may allow an organism to continually adjust its gene expression to fit its environment - without changing its DNA code.
+      .uk-width-medium-4-10
+
+      +references
+         p
+            | Fish, E.W., Shahrokh, D., Bagot, R., Caldji, C., Bredy, T., Szyf, M., and Meaney, M.J. (2004).
+            a(href=' http://www3.interscience.wiley.com/journal/118766608/abstract') Epigenetic programming of stress responses through variations in maternal care.
+            |  Annals of the New York Academy of Science 1036: 167-180 (subscription required).
+
+         p
+            | Youngson, N.A. and Whitelaw, E. (2008).
+            a(href='http://arjournals.annualreviews.org/doi/abs/10.1146/annurev.genom.9.081307.164445') Transgenerational epigenetic effects.
+            |  Annual Reviews in Genomics and Human Genetics 9: 233-57 (subscription required).
+
+         p
+            | Kaati, G., Bygren, L.O., Pembrey, M., and Sjostrom, J. (2007).
+            a(href=' http://www.nature.com/ejhg/journal/v15/n7/abs/5201832a.html') Transgenerational response to nutrition, early life circumstances and longevity.
+            |  European Journal of Human Genetics 15: 784-790.
+
+         p
+            | Chong, S., and Whitelaw, E. (2004).
+            a(href='http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6VS0-4DFX40N-1&_user=418636&_rdoc=1&_fmt=&_orig=search&_sort=d&_docanchor=&view=c&_acct=C000019853&_version=1&_urlVersion=0&_userid=418636&md5=a416ea945be6fd6e67e5e0bb0a991200 ') Epigenetic germline inheritance.
+            |  Current Opinion in Genetics &amp; Development. 14: 692-696 (subscription required).
+block append endscripts
+   script(src="/lib/slideshow.js")
+   script(src="/lib/slideshow-fx.js")

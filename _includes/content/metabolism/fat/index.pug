@@ -1,0 +1,109 @@
+extends /shared/layout
+
+block content
+   +pageTitle
+   
+   +pod('Fat! Who Needs It?')
+      .uk-width-medium-6-10
+         p.
+            Well...actually, we all do. Without fats and related molecules (known collectively as lipids) your body would quite literally fall apart, because there would be no cell membranes to hold it together. Not only do lipids form membranes, they are the basis of many chemical messengers and a major component of nerve cells, forming nearly 60 percent of the human brain.
+         p.
+            Cholesterol is a lipid with a bad reputation for its role in cardiovascular disease, but it is one of the key components of cell membranes and the precursor for testosterone, estrogen, and other essential hormones.
+         p.
+            Fat in food also helps us absorb certain micronutrients, including vitamins A, D, K, and E. These vitamins can dissolve in fat but not in water, and we need a few grams of fat with each meal to absorb them effectively.
+         p.
+            What about that extra fat that rounds out our bodies? While obesity isn't healthy, we need some fat tissue. Without it, the balance of hormones and other signaling molecules can be disrupted. There are rare genetic conditions that prevent some people from storing fat, and patients with these conditions often have insulin resistance and other metabolic problems similar to those seen in obesity. Extra fat is even more important for women, because their reproductive health depends on it.
+
+         +well 
+            div.
+               While the body can make some fats, others are essential nutrients—we can't make them, so we have to get them from our food.
+              
+      .uk-width-medium-4-10
+         figure
+            img(src="images/lipids.svg" alt="Lipids")
+            p.uk-text-small Lipids, including phospholipids and cholesterol, are essential components of our cell membranes. They also serve as raw materials for building certain vitamins and signaling molecules.
+            
+   +pod("Chemical Signaling: Fat in the Driver's Seat")
+      .uk-width-medium-6-10
+         p.
+            Researchers used to think that fat tissue was inert, serving only to store energy. More-recent research has shown that fat plays an active role in regulating many body systems, including the immune system, the cardiovascular system, and the reproductive system.
+         p.
+            Fat tissue produces more than 50 different kinds of signaling molecules that act on many types of cells through the body. The specific chemical signals fat tissue produces depends on both the amount of fat someone has and where that fat is located.
+         p.
+            In healthy-weight people, fat tissue usually produces signaling molecules in the right proportions. However, having too much or too little fat can disrupt the balance. For instance, inflammation is part of the normal immune response, and fat tissue produces some molecules that increase inflammation and others that suppress it. In obese people, fat tissue makes more pro-inflammatory chemicals, which can raise inflammation to dangerous levels.
+         p.
+            Fat also helps make steroid hormones, including the sex hormones estrogen and testosterone. Steroid hormones all share a similar structure, and they are produced from scratch in the ovaries, testes, and adrenal gland. Fat tissue can modify these steroid hormones, converting one type into another. Using other hormones as a starting point, fat produces nearly all of the estrogens in older women and up to half of the testosterone in reproductive-aged women.
+      
+      .uk-width-medium-4-10
+         figure
+            img(src="images/ChemSignal_Fat.svg" alt="Chemical Signaling")
+            p.uk-text-small Fat varies in the types of signaling molecules it produces and in the effects those molecules have on surrounding tissues.
+            
+   +pod('Leptin')
+      .uk-width-medium-6-10
+         p.
+            One of fat's most famous products is leptin, a signaling protein that suppresses appetite, increases energy use, and encourages the body to burn fat.
+         p.
+            In lean people, fat tissue makes low levels of leptin, prompting them to eat and gain weight. As fat tissue grows, it makes more leptin, suppressing hunger and halting weight gain. Leptin levels also go up when people are well-fed, and they drop during fasting or dieting. In this way, leptin encourages the body to maintain a stable weight.
+         p.
+            When leptin was first discovered in the 1990s, researchers hoped it could be used to treat obesity. Unfortunately, most obese people already produce large amounts of leptin, and their bodies have lost the ability to respond to it—so adding more leptin generally doesn't help. Leptin treatments only work in patients who have rare genetic conditions that keep them from producing leptin naturally.
+            
+      .uk-width-medium-4-10
+         figure
+            img(src="images/obobMouse.jpg" alt="Mouse")
+            p.uk-text-small Mice that cannot make leptin (called ob/ob mice) are always hungry. They overeat, become extremely obese, and develop type 2 diabetes.
+            
+   +pod('Brown Fat Is Hot')
+      .uk-width-medium-6-10
+         p.
+            Most of our fat tissue is "white fat." It carries out the signaling functions described above, and it stores most of the body's fat molecules. But we also have a small amount of "brown fat" tissue, which is much more metabolically active.
+         p.
+            The main function of brown fat is to burn fuel (fat or glucose molecules) to keep the body warm. Infants, rodents, and animals that hybernate, like bears, have large amounts of brown fat tissue. It wasn't until recently that it was also discovered in adult humans.
+         p.
+            The darker color of brown fat comes from mitochondria, which are present in much higher numbers than in white fat. The mitochondria in brown fat are special. They contain a protein that mitochondria in other cell types lack: uncoupling protein 1, or UCP1. This protein disrupts, or "uncouples," oxidative phosphorylation by moving protons back across the mitochondrial membrane so that they cannot be used for making ATP. Instead, the energy is channeled into heat production.
+         p.
+            Brown fat has been receiving a lot of attention lately for its ability to quickly burn through calories and improve insulin sensitivity. Researchers are looking for ways to make white fat tissue more brown, or even beige, as a way to control diabetes and help people lose weight.
+         +well
+            h3 Related content
+            p.
+               To see about how fat and sugar metabolism is used to generate ATP, visit <a href="http://learn.genetics.utah.edu/content/metabolism/pathways/">Metabolic Pathways</a>.
+      .uk-width-medium-4-10
+         figure
+            img(src="images/brownfat.svg", alt="Brown fat") 
+            p.uk-text-small In most cell types, ATP synthase (left) uses the energy from proton transport to generate ATP. In brown fat, UCP1 (right) uses the energy from proton transport to produce heat.
+            
+      +references
+         p.
+            Bohler, Jr., H., Mokshagundam, S. & Winters, S.J. 2010. Adipose Tissue and Reproduction in Women. Fertility and Sterility, 94(3), 795-825. doi: 10.1016/j.fertnstert.2009.03.079
+         p.
+            Borel, P. (2003). Factors affecting intestinal absorption of highly lipophilic food microconstituents (fat-soluble vitamins, carotenoids and phytosterols). Clinical Chemistry and Laboratory Medicine, 41(8), 979-994. doi: 10.1515/CCLM.2003.151
+         p.
+            Dempersmier, J., Sambeat, A., Gulyaeva, O., Paul, S.M., Hudak, C.S.S., Raposo, H.F., Kwan, H-Y., Kang, C., Wong, R.H.F. & Sul, H.S. (2015). Cold-inducible Zfp516 activates UCP1 transcription to promote browning of white fat and development of brown fat. Molecular Cell, 57(2), 235-246. doi: 10.1016/j.molcel.2014.12.005
+         p.
+            Fedorenko, A., Lishko, P.V. & Kirichok, Y. (2012). Mechanism of fatty-acid-dependent UCP1 uncoupling in brown fat mitochondria. Cell, 151(2), 400-413. doi: 10.1016/j.cell.2012.09.010
+         p.
+            Ferris, W.F. & Crowther, N.J. (2011). Once fat was fat and that was that: our changing perspectives on adipose tissue. Cardiovascular Journal of Africa, 22(3), 147-154. doi: CFJ-21.066
+         p.
+            Finn, S.C. (1999). Fat: can't live with it, can't live without it, part II. Journal of Womens Health, 8(1), 33-38.
+         p.
+            Kershaw, E. & Flier, J. (2004). Adipose tissue as an endocrine organ. Journal of Clinical Endocrinology & Metabolism, 89(6), 2548-2556. doi: 10.1210/jc.2004-0395
+         p.
+            Lago, F., Gómez, R., Gómez-Reino, J.J., Dieguez, C. & Gualillo, O. (2009). Adipokines as novel modulators of lipid metabolism. Trends in Biochemical Sciences, 34(10), 500-510. doi:10.1016/j.tibs.2009.06.008
+         p.
+            Meseguer, A., Puche, C. & Cabero, A. (2002). Sex steroid biosynthesis in white adipose tissue. Hormone and Metabolic Research, 34(11-12), 731-736. doi: 10.1055/s-2002-38249
+         p.
+            Miller, W. L. (1988). Molecular biology of steroid hormone synthesis. Endocrine Reviews, 9(3), 295-318. doi: 10.1210/edrv-9-3-295
+         p.
+            Roodenburg A.J.C., Leenen, R., van het Hof, K.H., Weststrate, J.A. & Tijburg, L.B. (2000). Amount of fat in the diet affects bioavailability of lutein esters but not of alpha-carotene, beta-carotene, and vitamin E in humans. The American Journal of Clinical Nutrition, 71(5), 1187-1193. 
+         p.
+            Uauy, R., Mena, P. & Rojas, C. (2000). Essential fatty acids in early life: structural and functional role. Proceedings of The Nutrition Society, 59(1), 3-15. doi: 10.1017/S0029665100000021
+         p.
+            van het Hof K.H., West, C.E., Weststrate, J.A., & Hautvast, J.G. (2000). Dietary factors that affect the bioavailability of carotenoids. Journal of Nutrition, 130(3), 503-506. 
+         p.
+            van Meer G., Voelker, D.R., & Feigenson, G.W. (2008). Membrane lipids: where they are and how they behave. Nature Reviews Molecular Cell Biology, 9(2), 112-124. doi:10.1038/nrm2330
+         p.
+            Vatier, C., Bidault, G., Briand, N., Guénantin, A.C., Teyssières, L., Lascols, O., Capeau, J. & Vigouroux, C. (2013). What the genetics of lipodystrophy can teach us about insulin resistance and diabetes. Current Diabetes Reports, 13(6), 757-767. doi: 10.1007/s11892-013-0431-7
+         p.
+            Lassek, W.D. & Gaulin, S.J.C. (2006). Changes in body fat distribution in relation to parity in American women: A covert form of maternal depletion. American Journal of Physical Anthropology, 131(2), 295–302. doi: 10.1002/ajpa.20394
+         p.
+            Wozniak, S.E., Gee, L.L., Wachtel, M.S. & Frezza, E.E. (2009). Adipose tissue: the new endocrine organ? A review article. Digestive Diseases and Sciences, 54(9), 1847-1856. doi: 10.1007/s10620-008-0585-3

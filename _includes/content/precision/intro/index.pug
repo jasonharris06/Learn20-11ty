@@ -1,0 +1,126 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   +pod('')
+      .uk-width-medium-6-10
+         p
+            | Right now, most medical treatments are designed for the average patient. Precision medicine, on the other hand, matches each patient with the treatment that will work best for them. Also called personalized medicine or individualized medicine, precision medicine takes individual variation into account: variation in our genes, environment, lifestyle, and even in the microscopic organisms that are living inside of us.   
+      .uk-width-medium-4-10
+         +well
+            | Need a refresher on DNA, genes, proteins, and heredity? Visit the 
+            a(href='/content/basics/') Tour of Basic Genetics
+      .uk-width-medium-3-10
+         ul.uk-tab.uk-tab-right(data-uk-switcher="{connect:'#dna', animation: 'slide-right'}")
+            li <a href="">What is Precision Medicine?</a>
+            li <a href="">The Genomics Revolution</a>
+            li <a href="">How is Precision Medicine Affecting Patients Today?</a>
+            li <a href="">Beyond the Genome</a>
+      .uk-width-medium-6-10
+         ul#dna.uk-switcher
+            li: iframe.lg-responsive(src='//player.vimeo.com/video/167502441', width='600', height='337', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+            li: iframe.lg-responsive(src='//player.vimeo.com/video/167502443', width='600', height='337', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+            li: iframe.lg-responsive(src='//player.vimeo.com/video/167504509', width='600', height='337', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+            li: iframe.lg-responsive(src='//player.vimeo.com/video/167504508', width='600', height='337', frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen) 
+
+      
+      //- .uk-width-medium-1-1   
+      //-    iframe.uk-responsive-width(src="//player.vimeo.com/hubnut/album/4011752?color=44bbff&amp;background=000000&amp;slideshow=1&amp;video_title=1&amp;video_byline=0" width="900" height="505" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen)
+                  
+
+   +pod('Genes + environment = health status')
+      .uk-width-medium-6-10
+         p
+            | At the center of precision medicine are efforts to understand how variations in our genes influence our health. Just like genetic variations contribute to physical characteristics like height and hair color, they also influence our likelihood of getting certain diseases. Some genetic variations protect us from disease, and some make us more susceptible.
+         p
+            | Genetic variations also influence how we respond to medications and other interventions. For instance, it is crucial to know a person&apos;s 
+            a(href='http://learn.genetics.utah.edu/content/inheritance/blood/') blood type
+            |  before giving them a transfusion. And understanding individual variations in the enzymes that process drugs can help a doctor prescribe the right dose of the right medication.
+         p
+            | But as anyone who knows identical twins can tell you, we are more than a collection of genes. Factors from the environment&mdash;including our physical surroundings, our diet, and our lifestyle&mdash;also influence our health. For example, even if someone inherits genetic variations that make them susceptible to skin cancer, they can decrease their chances of getting cancer by protecting themselves from the sun. Precision medicine involves understanding how factors from the environment interact with genetic variations to influence health. When combined with information about a person&apos;s environment, genetic information becomes even more powerful.
+
+      .uk-width-medium-4-10
+         figure
+            img.lg-no-shadow(src='images/what_01.jpg', alt='Diseases')
+            .uk-text-small
+               | In rare cases, diseases come from variations in single genes that have predictable patterns of inheritance (left). But more often, gene variations have a more subtle effect on disease risk (middle). Common diseases like heart disease, diabetes, and cancer involve variations in multiple genes and interactions with the environment (right).
+   +pod('Medicine in the genomic age')
+ 
+      .uk-width-medium-6-10
+         p
+            | There has been a lot of buzz lately about the plummeting cost and skyrocketing speed of DNA sequencing. In 2001, a human genome cost about $100 million 
+            a(href='#1') [1]
+            |  to sequence. 2014 began with an announcement of a new machine that could sequence 16 human genomes in 3 days at a cost of about $1,000 per genome 
+            a(href='#2') [2]
+            |  . What this means for patients is that whole-genome sequencing is now as affordable as many routine medical tests, and it&apos;s becoming increasingly available. For no more than the cost of an MRI scan, patients will be able to obtain their entire genomic sequence, a resource that will continue to inform medical decisions for them over the course of their lifetime.
+
+         p
+            | Sequencing even one human genome generates a lot of information&mdash;about 200 gigabytes 
+            a(href='#3') [3]
+            |  of raw data-and it takes some serious computational power to chug through it. With a deluge of new sequence data hitting the networks each day, efforts have turned to developing tools and systems for storing, sharing, and analyzing this data on a large scale. With these tools, researchers can analyze genomic information from large numbers of people-some with disease and others without. It may seem counterintuitive, but the more genomic information your doctors understand about everybody else, the better equipped they are to offer individualized care to you.
+
+      .uk-width-medium-4-10
+         figure
+            img.lg-no-shadow(src='images/what-02.jpg', alt='Unique Differences')
+            |          
+            .uk-text-small
+               | Each person&apos;s genome contains about 6 billion letters of DNA code. Contained within that code are the instructions for building all of the proteins that make their cells, tissues, and organs function. Some serious health conditions are linked to a single letter of code. Others are linked to combinations of more-subtle variations spread throughout the genome.
+   +pod('Beyond the genome')
+      .uk-width-medium-6-10
+         p
+            | Understanding how genetic variations contribute to health is just one aspect of precision medicine. While the genome is set for life, the expression of our genes fluctuates over time and in response to the environment. Additional approaches to precision medicine involve measuring levels of proteins, RNAs, or metabolic products. Along with genomics, proteomics, epigenomics, and metabolomics can help inform medical choices for individual patients.
+
+         p
+            | The field also incorporates what we are learning about the microbes that live in and on our bodies and how they can be manipulated to influence health and disease. It combines the latest in stem cell science with 3d printing technology to build replacement skin, blood vessels, and bones. It includes techniques for engineering a patient&apos;s own immune cells to attack cancer and other diseases, and computer algorithms for building customized diets for diabetic patients.
+
+         p
+            | Beyond treating disease, precision medicine includes approaches to diagnostics, prevention, and screening:
+
+         ul.lg-list
+            li Methods for identifying those who are at risk before disease strikes; 
+            li Analytical tools for predicting which prevention strategies will work best for which patients;
+            li Screening methods that can identify early signs of disease before symptoms emerge;
+            li Diagnostic methods for identifying subtypes of disease that may look the same on the surface but respond very differently to treatment;
+            li Tests that can identify disease carrier status for prospective parents; 
+            li Devices for managing diseases and for tracking and guiding recovery
+         
+      |    
+      .uk-width-medium-4-10
+         figure
+            img.lg-no-shadow(src='images/what-03.jpg', alt='Beyond The Genome')
+            .uk-text-small
+               | Precision medicine combines the best of basic research and modern technology, leveraging recent gains not only in DNA sequencing and analysis, but also in the areas of genetic technology, protein biochemistry, cancer research, personal electronic devices, search engine software, computer chip manufacturing, and much more.
+         br
+         +well
+            h3 Related content              
+            a(href='/content/epigenetics/') Epigenetics
+            br
+            a(href='/content/stemcells/') Stem Cells
+   
+            
+   +pod('')
+      h2
+         span References
+      |    
+      .uk-width-1-1
+         p
+            a(name='1') [1]
+            |  Hayden, E.C. (2014). Is the $1,000 genome for real? 
+            em Nature News &amp; Comment
+            | , 15 January 2014. 
+            a(href='http://www.nature.com/news/is-the-1-000-genome-for-real-1.14530') doi:10.1038/nature.2014.14530
+         |         
+         p
+            a(name='2') [2]
+            |  Wetterstrand, K.A. (June 15, 2015). 
+            em DNA Sequencing Costs: Data from the NHGRI Genome Sequencing Program (GSP)
+            | . Retrieved 18 August, 2015, from 
+            a(href='http://www.genome.gov/sequencingcosts') www.genome.gov/sequencingcosts.
+         |         
+         p
+            a(name='3') [3]
+            |  Robison, R.M. (Jan 6, 2014). 
+            em How big is the human genome? In megabytes, not base pairs
+            | . Retrieved 18 August, 2015, from 
+            a(href='https://medium.com/precision-medicine/how-big-is-the-human-genome-e90caa3409b0') https://medium.com/precision-medicine/how-big-is-the-human-genome-e90caa3409b0
+         

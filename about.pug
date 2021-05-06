@@ -1,0 +1,21 @@
+extends /shared/layout
+
+block breadcrumb
+   .lg-section
+      .uk-container.uk-container-center
+         ul.uk-breadcrumb.lg-breadcrumb
+            li
+               a(href='/') Home
+            li
+               span.uk-active #{page.title}
+block content
+   +pageTitle
+
+   +pod('')
+      .uk-width-medium-1-2
+         p.
+            The GSLC...
+         p.
+            And...
+
+      .uk-width-medium-1-2

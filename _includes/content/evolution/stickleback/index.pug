@@ -1,0 +1,35 @@
+extends /shared/layout
+
+block append headscripts
+  style.
+    embed {
+      border: 1px solid #b2b2b2;
+    }
+  
+  script.
+    if (window.history && history.pushState) {
+      addEventListener('load', function() {
+          history.pushState(null, null, null); // creates new history entry with same URL
+          addEventListener('popstate', function() {
+              var stayOnPage = confirm("Are you sure? Leaving will end your session. Select Cancel to stay.");
+              if (stayOnPage) {
+                  history.back() 
+              } else {
+                  history.pushState(null, null, null);
+              }
+          });    
+      });
+    }
+
+block content
+  +pageTitle
+  +pod('')
+    .uk-width-1-1
+      script(src='/Scripts/AC_RunActiveContent.js', type='text/javascript')
+
+      +pod('')
+        .uk-width-1-1.uk-text-center
+          script(type='text/javascript').
+            AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','920','height','600','src','stickleback','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','stickleback' ); //end AC code
+          noscript
+            p Javascript is required to view this content.

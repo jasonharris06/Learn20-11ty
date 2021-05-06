@@ -1,0 +1,193 @@
+extends /shared/layout
+block content
+   +pageTitle
+                        
+   script(src='/Scripts/AC_RunActiveContent.js', type='text/javascript')
+
+   +pod('')
+      .uk-width-medium-6-10
+         p
+            | Since the turn of the millennium, new strains of deadly viruses have emerged and quickly spread around the world. We saw an outbreak of SARS coronavirus in 2003, and a much larger H1N1 &quot;swine flu&quot; pandemic in 2009.
+         p
+            | Other viruses seem poised and ready to spread. Ebola Hemorrhagic Fever has sprung up in several towns in West Africa. MERS coronavirus has been found in people and camels in the Middle East. During the last decade, H5N1 &quot;bird flu&quot; has been killing massive numbers of wild and domestic birds each year, and in some cases it has been able to spread from birds to people.
+         p
+            | Our changing habits seem to be helping viruses spread more quickly than they did just a few decades ago. We routinely travel by plane around the world. Someone may be exposed to a virus one day and then bring it back to their own city the next. Cities are growing bigger and denser, and we&apos;re gathering in large crowds at sport and other events.
+         p
+            | Fortunately, today scientists can use genetic tools, such as DNA sequencing, to learn about new strains of viruses. These tools are helping researchers identify the cause of an infection, piece together a story about where new viruses come from, diagnose new cases, and develop preventive vaccines.
+
+      .uk-width-medium-4-10
+   +pod('Virus Basics ')
+      .uk-width-medium-4-10
+         p
+            | Viruses are chunks of genetic information&mdash;either DNA or RNA&mdash;wrapped in proteins and sometimes covered with a membrane. Unlike bacteria, viruses cannot make more of themselves: to reproduce, they rely on the cells they infect.
+         p
+            | Viruses have proteins on their surfaces that act like keys. The proteins attach to receptors on a cell, providing a way for the virus to get in. Once inside, viruses hijack the cell&apos;s internal machinery to reproduce. When released from the cell, the new viruses attack other cells and continue the infection.
+
+      .uk-width-medium-6-10
+         figure
+            img.lg-no-shadow(src='images/virusstructure.jpg', alt='Virus structure')
+            p
+   +pod('Viruses mutate rapidly')
+      .uk-width-medium-4-10
+         p
+            | Each time a virus&apos;s genetic material is copied, there is potential for mutation. These &quot;typos&quot; in the copying process introduce variations in viral genes that may affect the virus&apos;s characteristics. Variations may enable a virus to enter a cell that it couldn&apos;t before; make a virus more disruptive, which is why some strains of viruses are deadlier than others; or help it evade the host&apos;s immune system.
+         p
+            | Once a cell is infected, it makes many, many copies of the virus. With so much copying going on, mutations happen frequently, quickly generating a lot of genetic variation.
+         p
+            | It&apos;s because of mutation that new influenza vaccines are recommended each year. Each flu season, mutation generates a slightly different assortment of viruses than we saw the year before.
+
+      .uk-width-medium-6-10
+         figure
+            img(src='images/virus_replication1.jpg', alt='Virus replication')
+            p
+   +pod('Viruses share genes')
+      .uk-width-medium-6-10
+         p
+            | If a cell is infected by two different viruses at the same time, the viruses may exchange genetic information. This process can generate new and potentially very dangerous viruses, including ones that can jump from one species to another.
+         p
+            | Let&apos;s say a pig is infected by two viruses: one can infect only pigs, and the other can infect both pigs and people. If the pig-only virus picks up the gene that codes for the cell-surface protein &quot;key&quot; from the other virus, it could gain the ability to infect human cells. This situation is dangerous because the human immune system may have never encountered anything like the pig virus before, and it may be poorly equipped to attack it.
+         p
+            | Similar processes can recombine genes from bird and human viruses, as well as generate new strains that may be more deadly or spread more efficiently.
+
+      .uk-width-medium-4-10
+   +pod('Tracking the spread of disease')
+      .uk-width-medium-6-10
+         p
+            | DNA sequencing technology can help scientists track the path of an infection. Viruses mutate quickly. So if two people carry viruses with the exact same genetic sequence, they probably picked it up from the same place. By going back to the source, scientists can learn who else may have been exposed, and health care workers can be on the alert for new cases.
+         p
+            | DNA sequencing is also used to track down sources of food contamination. For instance, in 2013, DNA sequencing was used to diagnose several cases of a rare viral hepititis A. People with the infection were questioned to see what they had in common, and the virus was traced back to a specific product. Officials notified the producers, had it pulled from shelves, and stopped its import. Rapid detective work like this can prevent many people from getting sick.
+
+      .uk-width-medium-4-10
+   +pod('Diagnosis')
+      .uk-width-medium-6-10
+         p
+            | When a patient is infected with a particularly dangerous virus, they must be isolated, and everyone they have come in contact with must be monitored for symptoms. But based on symptoms alone, it can be difficult to tell the difference between the dangerous virus and a less-dangerous one. All patients showing symptoms would need to be isolated and treated accordingly, putting a burden on patients and their families, and quickly overwhelming hospitals. But with a genetic test, doctors can quickly make a proper diagnosis.
+
+      .uk-width-medium-4-10
+   +pod('Treatment and prevention')
+     
+      .uk-width-medium-1-1
+         script(type='text/javascript').
+            AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','976','height','618','src',
+            'types','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','types' ); //end AC code
+         noscript
+            p Javascript is required to view this content.
+      .uk-width-medium-5-10
+         p
+            | Knowing the genetic sequence of a virus can help in disease prevention, allowing for more rapid vaccine development. A vaccine typically contains either a milder version of the virus or individual viral proteins that are made in a lab. When the vaccine is injected into a patient, the immune system reacts by creating antibodies, which protect a person from future infection.
+      .uk-width-medium-5-10  
+         p
+            | Knowing a virus&apos;s genetic makeup can also help researchers find ways to treat infection. Sequence information helps scientists predict the structures of key proteins involved in a virus&apos;s infectivity and reproduction. This information can help those working to develop antiviral drugs that can be used to treat patients.
+
+   +pod('Case study: 2003 SARS outbreak')
+      .uk-width-medium-4-10
+         figure
+            img(src='images/mask2.jpg', height='236', width='352', alt='woman with mask')
+            p
+
+      .uk-width-medium-6-10
+         p
+            | In March 2003, a Chinese-American businessman died in Vietnam from a severe flu-like
+            | illness. Soon after, reports of a new disease, then termed &quot;atypical pneumonia,&quot; made
+            | headlines around the world. Panic spread among the international community: nobody knew
+            | where this disease came from or what caused it. The disease was spreading rapidly, and
+            | it was deadly.
+         | &#x9;&#x9;
+         p
+            | As the number of reported cases increased, the World Health Organization (WHO) issued
+            | a global warning regarding the disease, now called Severe Acute Respiratory Syndrome
+            | (SARS). Shortly thereafter, more information about the disease&apos;s origins and the reasons
+            | for its worldwide spread emerged.
+   +pod('How SARS began')
+      .uk-width-medium-6-10
+         p
+            | The first cases of SARS probably arose in November 2002 in Foshan City, located in
+            | the Guangdong Province of China. The Chinese government did not publicize the outbreak
+            | right away, however. In February 2003, the Chinese Ministry of Health reported 305 cases,
+            | with five fatalities, of a disease that quickly deteriorated the patient&apos;s health and
+            | evolved to respiratory failure. About one-third of those affected were health care providers.
+         | &#x9;&#x9;
+         p
+            | SARS first gained attention outside of China in March 2003, when Dr. Carlo Urbani, a
+            | WHO official based in Vietnam, reported several cases of &quot;atypical pneumonia&quot; at the hospital
+            | where he worked. The first of these cases was the Chinese-American businessman. Following
+            | these reports, the WHO was finally able to trace the disease and account for its spread
+            | across so many countries.  On March 29, Dr. Urbani himself died of SARS.
+
+      .uk-width-medium-4-10
+         figure
+            img.lg-no-shadow(src='images/spread.jpg', height='208', width='352', alt='crowd spread')
+            p
+   +pod('Following the SARS trail')
+      .uk-width-medium-5-10
+         figure(style='margin-top: 20px;')
+            img(src='images/world_spread.png', alt='Worldwide spread of SARS', width='488', height='284')
+
+         p.uk-text-small
+            | 1. Doctor who treated SARS patients in Guangdong province, China, travels to Hong Kong and stays on 9th floor of hotel.
+            br
+            |     2. SARS passed to Hong Kong resident who visited 9th floor of hotel.
+            br
+            |     3. SARS passed to flight attendant guest on 9th floor, who then flies to Singapore.
+            br
+            |     4. SARS passed to businessman guest on 9th floor, who then travels to Vietnam.
+            br
+            |     5. SARS passed to tourist guest on 9th floor, who returns home to Toronto, Canada.
+
+      .uk-width-medium-5-10
+         p
+            | Before going to Vietnam, the businessman had stayed in Hong Kong, on the ninth floor
+            | of the Metropole Hotel. At the same time, a doctor from Guangdong Province had been a
+            | guest on the same floor. The doctor had treated SARS patients in Guangdong prior to his
+            | visit to Hong Kong, thus carrying the disease out of Guangdong.
+         | &#x9;&#x9;
+         p
+            | Shortly after the doctor&apos;s visit to Hong Kong, other people connected with the ninth
+            | floor of the hotel fell ill. It soon became clear that the Guangdong doctor had infected
+            | 12 other guests and visitors. Among them were a tourist from Toronto, a flight attendant
+            | from Singapore, the businessman who subsequently traveled to Vietnam, and a local Hong
+            | Kong resident, who was visiting an acquaintance at the hotel.
+         | &#x9;&#x9;
+         p
+            | It can take up to 10 days for a person who is infected with SARS to actually get sick.
+            | Because of this long incubation period, guests of the hotel unwittingly carried the
+            | disease out of Hong Kong via air travel into Canada, Vietnam and Singapore. When these
+            | patients did get sick, their symptoms were so flu-like that they were not diagnosed
+            | right away. Patients&apos; families and health care providers were exposed and became infected
+            | with the disease. Following the deaths of some patients, authorities in Canada and
+            | Singapore reported these cases to the WHO, which immediately issued the global alert.
+   +pod('Science uncovers the culprit')
+      .uk-width-medium-7-10
+         p
+            | When it became clear that a new disease had surfaced, steps were taken to contain
+            | the illness and find possible causes.
+            | Since the infectious agent was unknown and
+            | existing treatments seemed to fail, hospitals resorted to old methods such as quarantine
+            | and isolating patients to prevent further spread.
+         | &#x9;&#x9;
+         | &#x9;&#x9;
+         p
+            | Because the disease was new, scientific research was needed to develop diagnostic
+            | tools and treatments. The WHO launched a coordinated effort to identify the origin and
+            | cause of SARS, uniting eleven laboratories from around the world to work toward this goal.
+         | &#x9;&#x9;
+         p
+            | On April 16, 2003, the laboratory network announced that it had found the cause of SARS: a
+            | virus.
+
+      .uk-width-medium-3-10
+         figure
+            img.lg-no-shadow(src='images/CDC_workers.jpg', alt='CDC workers', style='float: left; padding: 15px 20px 50px 0px;')
+            p
+   +pod('SARS and genetics: the sequence is key')
+      .uk-width-medium-7-10
+         p
+            | Modern genetics and biotechnology enabled the working group to quickly pinpoint the cause of SARS. After determining the exact sequence of the virus&apos;s genome, which consists of a 29,727-base-long strand of RNA, scientists were able to classify it as a coronavirus, a family of viruses that also includes influenza.
+         p
+            | SARS was classified as a coronavirus because it shares the same basic set of genes with other members of this family. Scientists found enough differences between SARS and other family members, though, to conclude that SARS represents a new group. This means that SARS probably did not evolve from a previously known virus. Based on genetic sequence similarities, scientists think SARS jumped to humans from another host, most likely a cat-like animal called a civet.
+
+      .uk-width-medium-3-10
+         figure
+            img.lg-no-shadow(src='images/coronavirus.jpg', alt='Coronavirus', style='float: left; padding: 3px 10px 10px 0px;')
+            p
+   script(src="/ruffle/ruffle.js")

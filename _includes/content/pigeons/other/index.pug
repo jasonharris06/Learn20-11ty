@@ -1,0 +1,191 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-5-10
+         img(src='pageimages/rockdove.jpg', alt='wild rock dove', width='352', height='235')
+         br
+         br
+      .uk-width-medium-5-10
+         p
+            | Like dogs, pigeons belong to hundreds of different breeds. While there can be variation within a breed, especially in feather color and wing pattern, each breed is
+            | defined by specific characteristics. Pigeon breeds can be as different from each other as German shepherds are from miniature poodles. Yet all of these breeds are descended
+            | from one ancestral species: the wild rock dove.
+         p
+            | The examples below describe some of the inherited characteristics that vary in pigeons.
+
+      .uk-width-1-1.uk-slidenav-position(data-uk-slideshow="{animation:'scroll'}")
+         div.uk-text-center
+            ul.uk-tab(data-uk-tab)
+               li(data-uk-slideshow-item='0')
+                  a(href='') White
+               li(data-uk-slideshow-item='1')
+                  a(href='') Other colors and patterns
+               li(data-uk-slideshow-item='2')
+                  a(href='') Body size
+               li(data-uk-slideshow-item='3')
+                  a(href='') Body proportions
+               li(data-uk-slideshow-item='4')
+                  a(href='') NeckFrill
+               li(data-uk-slideshow-item='5')
+                  a(href='') Fantail
+               li(data-uk-slideshow-item='6')
+                  a(href='') Feather texture
+               li(data-uk-slideshow-item='7')
+                  a(href='') Unusual vocalizations
+               li(data-uk-slideshow-item='8')
+                  a(href='') Crop inflation
+               li(data-uk-slideshow-item='9')
+                  a(href='') Tumbling
+               li(data-uk-slideshow-item='10')
+                  a(href='') Rolling
+               li(data-uk-slideshow-item='11')
+                  a(href='') Shaking
+               li(data-uk-slideshow-item='12')
+                  a(href='') Beaks
+               li(data-uk-slideshow-item='13')
+                  a(href='') Eyes
+
+         ul.uk-slideshow
+            li
+               div
+                  img(src='images/White.jpg', alt='White')
+                  h3 White
+                  p
+                     | White feather color comes not from white pigments, but from the absence of colored pigments. Genetically, there
+                     | are multiple ways to make a white bird; however, most involve breaking something. White coloring can come
+                     | from &quot;broken&quot; alleles of genes that code for proteins that help make melanin pigments. It can also come
+                     | from alleles that prevent pigment-making cells from forming or migrating to the skin. Not surprisingly, white alleles
+                     | tend to be epistatic to all other color genes.
+            li
+               div
+                  img(src='images/Pattern.jpg', alt='Other colors and patterns')
+                  h3 Other colors and patterns
+                  p
+                     | Other colors and patterns Pigeonetics describes just a handful of the genes that influence feather colors and
+                     | patterns. Several other genes&mdash;including milky, almond, opal, dirty, indigo, grizzle, and various &quot;stencil&quot; and &quot;bronzing&quot;
+                     | factors&mdash;affect the base and pattern colors, or the way pigments are distributed along individual feathers and across the
+                     | body. Some alleles can strip the color away from certain body regions, leaving the head, tail, wings, or middle white.
+                     | All of these genes work in combination to make nearly endless color and pattern variations.
+            li
+               div
+                  img(src='images/Size.jpg', alt='Body size')
+                  h3 Body size
+                  p
+                     | No, these aren&apos;t parent and child&mdash;they&apos;re both adults. But like the Chihuahua and the Great Dane, they
+                     | belong to breeds characterized by vastly different body sizes. The Runt is the largest pigeon breed, with
+                     | males weighing in at 3 pounds (1.4 kg). At an average of 6 ounces (170 g), the Valencian Figurita is one of
+                     | the smallest. Other breeds come in every size in between. Body size is a &quot;continuous&quot; trait: it&apos;s
+                     | controlled by the combined action of several genes.
+            li
+               div
+                  img(src='images/Proportion.jpg', alt='Body proportions')
+                  h3 Body proportions
+                  p
+                     | Pigeon breeds vary not only in size, but also their proportions. The Pouter (right) stands tall on
+                     | extra-long legs. The Old Dutch Capuchin (left) has an elongated neck, accentuating its dramatic crest.
+                     | Other breeds have distinctly shaped skulls, longer or shorter wings and tails, and countless other distinct
+                     | proportions. The genetics of body proportion has not been studied closely, but like size, each aspect probably
+                     | involves multiple genes.
+            li
+               div
+                  img(src='images/NeckFrill.jpg', alt='NeckFrill')
+                  h3 NeckFrill
+                  p
+                     | If you played Pigeonetics, you saw pigeons with crests on their heads and feathers on their feet. Pigeons can have other ornaments too.
+                     | These birds have &quot;neck frills&quot; on the front of the neck. Neck frills vary from subtle to dramatic, just like crests do. While
+                     | neck frills are inherited, they seem to be the product of at least two genes.
+            li
+               div
+                  img(src='images/Fantail.jpg', alt='Fantail')
+                  h3 Fantail
+                  p
+                     | The fantail has another type of ornament: extra tail feathers that spread out like a turkey tail. Fantail breeds tend to have
+                     | up-turned tails, and some breeders have selected for puffed-out chests for added drama. Fantails can have as many as 40 tail
+                     | feathers, while a typical breed has just 12. Evidence from genetic crosses suggests that a small number of genes control the
+                     | size, number, and texture of the tail feathers.
+            li
+               div
+                  img(src='images/Frillback.jpg', alt='Feather texture')
+                  h3 Feather texture
+                  p
+                     | The frillback breed has curly feathers, especially on the back and wings. Some evidence suggests that variations in two
+                     | genes work together to make their feathers curly. In people and dogs, wavy and curly hair come from variations in genes
+                     | that code for structural proteins called keratins; we don&apos;t know if this is also the case in pigeons.
+            li
+               div
+                  iframe.uk-responsive-width(src="//player.vimeo.com/video/112403302", width="920", height="600", frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+                  h3 Unusual vocalizations
+                  p
+                     | Trumpeter pigeons have been bred for their special song. Interestingly, their song is not learned&mdash;it&apos;s an inherited
+                     | characteristic controlled by genes (though we do not know which genes). Several sub-types of Trumpeters have been
+                     | bred for additional characteristics. These English Trumpeters have muffs on the feet, a crest around the back of
+                     | the head, and a tuft on the forehead.
+            li
+               div
+                  img.rsImg(src='images/CropInflated.jpg', alt='Crop inflation')
+                  h3 Crop inflation
+                  p
+                     | Most breeds of Pouter pigeons are tall, with especially long legs. But their most unusual, and defining, characteristic
+                     | is their tendency to swallow air and inflate their extra-large crop (food-storage pouch) like a balloon. Crop inflation
+                     | is in some ways more of a behavior than a physical characteristic&mdash;but of course behaviors are rooted brain chemistry and
+                     | physiology. Crop inflation is highly heritable, suggesting a strong genetic component. It appears to be controlled mainly
+                     | by a partial-dominant allele of a single gene; however, male birds are more likely than females to show the behavior.
+            li
+               div
+                  iframe.uk-responsive-width(src="//player.vimeo.com/video/112401283", width="920", height="600", frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+                  h3 Tumbling
+                  p
+                     | Tumbler pigeons are good flyers, but they have the habit of doing an occasional back flip in mid-flight. Pigeon fanciers
+                     | say that their birds seem to enjoy these acrobatics. Interestingly, tumbling seems to be rooted not in the shape of the
+                     | wings or tail, but in brain chemistry. And it&apos;s highly heritable: one allele of a single gene is enough to cause a pigeon
+                     | to tumble. When pigeons are given a type of antidepressant called SSRIs (selective serotonin reuptake inhibitors), they
+                     | stop tumbling. These drugs work by increasing levels of serotonin, a natural signaling molecule, in the brain. In people,
+                     | serotonin is active in brain areas that control mood. In pigeons, apparently, too little serotonin makes it hard to fly straight.
+            li
+               div
+                  iframe.uk-responsive-width(src="//player.vimeo.com/video/112401837", width="920", height="600", frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+                  h3 Rolling
+                  p
+                     | The same tumbling allele, in combination with certain alleles of other genes, can cause an even more extreme behavior
+                     | called &quot;rolling.&quot; Some rollers can fly, but they somersault continually. Parlor Rollers can&apos;t fly at all&mdash;they just roll
+                     | head over heels along the ground.
+            li
+               div
+                  iframe.uk-responsive-width(src="//player.vimeo.com/video/112410406", width="920", height="600", frameborder="0", webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+                  h3 Shaking
+                  p
+                     | The Stargard Shaker pigeon has a long, curving neck. Instead of bobbing its head like most pigeons, it continually wiggles
+                     | the middle of its neck back and forth. A few other breeds have the same behavior, in combination with other defining
+                     | characteristics. The behavior is highly heritable, and it may be controlled primarily by a single partially dominant allele.
+            li
+               div
+                  img(src='images/Beak.jpg', alt='Beak characteristics')
+                  h3 Beak characteristics
+                  p
+                     | Pigeon breeds have dramatic differences in the overall size and shape of the beak. Owl breeds have the teeniest hint of a
+                     | beak, while the Scandaroon has an enormous, curving beak. Other beaks are short and thick or long and pointy. The &quot;wild type&quot;
+                     | beak is somewhere in between all of these. Beaks also vary in their color (from colorless to black), as well as in the size,
+                     | texture, and color of the wattle, the fleshy bit that sits at the top.
+            li
+               div
+                  img(src='images/EyeColor.jpg', alt='Eye characteristics')
+                  h3 Eye characteristics
+                  p
+                     | Pigeon eyes come in many colors, often with rings of different shades. Like feather color, eye color is the product of
+                     | several genes working together. &quot;Wild type&quot; eye color comes from orange pigment, which looks darker orange
+                     | or red where it&apos;s covered in layers of fine blood vessels. &quot;Pearl&quot; irises are filled with shiny, white pigment.
+                     | Orange and pearl color come from two alleles of the same gene: orange is dominant to pearl. White-feathered birds often
+                     | have solid black &quot;bull&quot; eyes or pink &quot;albino&quot; eyes. Bull eyes have completely transparent irises;
+                     | their color comes from dark pigment inside the back of the eye. Albino birds make no pigment at all; their light pink eye
+                     | color comes from fine blood vessels. Albino is epistatic to bull, which is epistatic to pearl and orange. We know little
+                     | about the genetic basis of the less common eye colors, including brown, green, blue, and lilac. The flesh around the eye,
+                     | called the cere, can also vary&mdash;in size, shape, color, and texture.
+         a.uk-slidenav.uk-slidenav-previous(href='', data-uk-slideshow-item='previous')
+         a.uk-slidenav.uk-slidenav-next(href='', data-uk-slideshow-item='next')
+      p
+         a(href='../references/') References
+
+block append endscripts
+   script(src="/lib/slideshow.js")
+   script(src="/lib/slideshow-fx.js")

@@ -1,0 +1,77 @@
+extends /shared/layout
+
+block append head
+
+block content
+    +pageTitle
+    +pod('')
+        .uk-width-medium-5-10
+            p 
+                | When someone takes a drug for the first time, they experience its full effect. But if they keep taking it, their body adjusts. It takes more of the drug to produce the same effect.
+            p 
+                | This is known as tolerance. With opioids, tolerance can build after just two to three doses.
+
+        .uk-width-medium-5-10
+            p 
+                | Tolerance happens through changes at the cellular level. It’s the result of the brain restoring balance after it’s repeatedly overstimulated by a drug. As balance is restored, neurons, synapses, and entire brain regions start to work differently. The brain sets a new normal that includes effects of the drug.
+
+    article.lg-pod.lg-section
+        .uk-container.uk-container-center
+            div(style="padding-top:70.79%; position:relative; overflow:hidden;")
+                #controlledWidth.uk-width-1-1(style="position:absolute; top:0;")
+                    div(id="opioidhypever3_hype_container" style="margin:auto;position:relative;width:1130px;height:800px;overflow:hidden;transform-origin: top left;")
+                        script(type="text/javascript" charset="utf-8" src="OpioidHypeVer3.1.hyperesources/opioidhypever3_hype_generated_script.js?92890")
+
+    +pod('Prescription and Illegal Opioids Work the Same Way')
+        .uk-width-medium-4-10
+            p
+                | All opioid drugs bind the same receptors. That’s because all opioids, no matter the source, share a chemical structure. Each opioid molecule has a piece that’s perfectly shaped to fit with an opioid receptor in your body, a lot like a key in a lock. This is true whether it’s a drug like morphine or heroin extracted from opium poppy plants, or one made in a lab like oxycodone or fentanyl.
+            p
+                | When drugs act on the same receptors, they trigger similar effects in your body. That’s why misuse of any opioid can increase a person’s risk for substance use disorder or overdose. If it’s used improperly, a drug prescribed to treat pain can be just as dangerous as one bought illegally.
+
+        .uk-width-medium-6-10
+            +vimeo('345268673')
+            figure
+                p Dr. Eric Garland and Dr. Glen Hanson discuss the dangers of prescription opioids.
+
+    +pod('Opioids Can Be Used Safely')
+        .uk-width-medium-4-10
+            p
+                | Humans began using opioids from the poppy plant thousands of years ago. They knew, as we still do today, that opioids are effective at treating pain. But there’s still the dilemma that the drugs have a high potential for misuse and addiction.
+            p
+                | Dr. Adam Gordon from the University of Utah reminds us that in some situations, opioids are a good tool for treating pain. He clarifies that it’s when people start to misuse the drugs that problems occur. Misuse includes taking the drug in ways your doctor did not advise, especially in very high or frequent doses. It also includes taking medication given to you by a friend or family member—even if it’s for real pain.
+
+        .uk-width-medium-6-10
+            +vimeo('345268646')
+            figure
+                p Dr. Adam Gordon describes when prescription opioids can be an appropriate pain management tool.
+    
+    +references
+        p
+            | Allouche, S., Noble, F., &amp; Marie, N. (2014). Opioid receptor desensitization: mechanisms and its link to tolerance. Frontiers in Pharmacology, 5, 280.
+        p
+            | Cahill, C. M., Walwyn, W., Taylor, A. M., Pradhan, A. A., &amp; Evans, C. J. (2016). Allostatic mechanisms of opioid tolerance beyond desensitization and downregulation. Trends in Pharmacological Sciences, 37(11), 963-976.
+        p
+            | Christie, M. J. (2008). Cellular neuroadaptations to chronic opioids: tolerance, withdrawal and addiction. British Journal of Pharmacology, 154(2), 384-396.
+        p
+            | Hayhurst, C. J., &amp; Durieux, M. E. (2016). Differential Opioid Tolerance and Opioid-induced Hyperalgesia: A Clinical Reality. Anesthesiology, 124(2), 483-488.
+        p
+            | Virk, M. S., &amp; Williams, J. T. (2008). Agonist-specific regulation of mu-opioid receptor desensitization and recovery from desensitization. Molecular Pharmacology, 73(4), 1301-1308.
+        p
+            | Williams, J. T., Ingram, S. L., Henderson, G., Chavkin, C., von Zastrow, M., Schulz, S., ... &amp; Christie, M. J. (2013). Regulation of µ-opioid receptors: desensitization, phosphorylation, internalization, and tolerance. Pharmacological Reviews, 65(1), 223-254.
+        
+block append endscripts
+   script.
+      $(document).ready(function() {
+         var container = document.getElementById('controlledWidth');
+         var item = document.getElementById('opioidhypever3_hype_container');
+
+         function updateItemWidth () {
+            var pad = parseInt(window.getComputedStyle(container).paddingLeft);
+            var newScale = (container.offsetWidth - pad) / 1130;
+            item.style.transform = "scale(" + newScale + "," + newScale + ")";
+         };
+
+         updateItemWidth();
+         window.addEventListener('resize', updateItemWidth);
+      });

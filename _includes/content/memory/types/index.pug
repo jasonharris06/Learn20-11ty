@@ -1,0 +1,129 @@
+extends /shared/layout
+
+block append head
+   style.
+      .inners li {
+         margin-top: 1em;
+      }
+
+block content
+   +pageTitle
+   +pod("")
+      .uk-width-medium-1-2
+         include diagram.svg
+      .uk-width-medium-1-2
+         ul.lg-list-no-image(data-uk-switcher="{connect:'memory', active: 0}")
+            li
+            li
+            li
+            li
+            li
+            li
+            li
+            li
+         ul#memory.uk-switcher
+            li: include intro.pug
+            li: include sensory.pug
+            li: include shortterm.pug
+            li: include working.pug
+            li: include longterm.pug
+            li: include episodic.pug
+            li: include semantic.pug
+            li: include procedural.pug
+      .uk-width-medium-1-1.uk-text-small
+         h3 Disclaimer
+         p.
+            The simplified model presented here is just one of many ways to categorize types of memory. There are other models
+            too, and some of them use slightly different definitions for some of the terms used here.
+         p.
+            This model highlights just a few of the key brain regions involved in different memory functions. Since no part of
+            the brain exists in isolation, most types of memory include more areas than the ones listed here. The big idea to
+            take away is that different areas of the brain have different functions.
+         p.
+            If you wish to delve more deeply into the types of memory or the brain anatomy involved, we encourage you to
+            explore the references linked at the bottom of the page.
+   +pod("What is learning?")
+      .uk-width-medium-5-10
+         p.
+            When we learn, our brain takes in information about the world that causes us to change our behavior in some way.
+         p.
+            For example, a young baby doesn't understand that fire can hurt them. But thanks to learning, if they touch a candle
+            flame even one time, they will probably not do it again. The information that feeds into the brain—candle, flame,
+            hot, pain—is physically recorded in the connections between cells. And those connections influence our future behavior—don't
+            touch!
+      .uk-width-medium-5-10
+         figure
+            img(src="images/candle.jpg")
+            p.
+               As the brain takes in any information and stores it, there are physical changes to the connections between brain
+               cells. And those connections influence our behavior.
+   +pod("Neurons that fire together wire together")
+      .uk-width-medium-5-10
+         p.
+            The brain is an enormous interconnected network of specialized cells called neurons and supporting cells called glia.
+            To transmit information in the brain, neurons pass signals to one another. This passing of signals can cause physical
+            changes to the connections between cells.
+         p.
+            When we learn a skill (like riding a bike) or new information (like multiplication tables), we are building brain
+            connections. The more we use those brain connections, the stronger they get. It's the reason "practice makes perfect."
+         p.
+            In the activity above, you can read about how injuries to certain brain areas cause certain memory functions to stop
+            working. But just as important are the connections between them. If two brain areas can no longer communicate, then
+            learning and memory can break down.
+      .uk-width-medium-5-10
+         figure
+            img(src="images/trails.jpg")
+            img(src="images/neurons.jpg")
+            p Like trails through the wilderness, brain connections get stronger the more they're used
+   +pod("Memory in 4 steps")
+      .uk-width-medium-5-10
+         p.
+            Learning is a process that relies on long-term memory systems in the brain. People who study learning typically divide it into 4 steps: attention, storage, consolidation, and retrieval. These steps dovetail with the Types of Memory described above, and they provide a slightly different framework for thinking about what happens when one or more of these steps go wrong.
+         p.
+            <strong>Attention</strong> — Our sensory systems are constantly bombarded with information, yet most of it fades before we are even
+            aware of it. Attention is like a filter that lets important information into the brain while keeping the irrelevant
+            information out. Without attention, we would remember very little.
+         p.
+            <strong>Encoding</strong> — As sensory information comes in, the brain processes it. Strings of sounds become words, flashes of light and
+            color become images. The brain begins connecting this new information with what it already knows about the world. Some
+            information that is encoded will fade, and some will stick around.
+
+      .uk-width-medium-5-10
+         p.
+            <strong>Storage</strong> — Long-term storage of information requires new brain connections. The brain has its own way of rehearsing
+            experiences (there's evidence that this is what dreaming is all about), which helps strengthen brain connections. But
+            we can also consciously repeat information or skills to help the brain form strong memories.
+         p.
+            <strong>Retrieval</strong> — Retrieval is the process of accessing stored memories. We use it when we recall a fact or reimagine an
+            experience. But we also use it when we take in new information. It's part of what helps us connect new information
+            to old.
+         +well
+            p.
+               Even when memory systems function normally, memory is imperfect. To learn more about the fallibility of memory,
+               visit <a href="../7sins/">The Seven Sins of Memory</a>.
+               
+   +references
+     p Aben, B., Stapert, S. &amp; Blokland, A. (2012). About the distinction between working memory and short-term memory. Frontiers in Psychology, 3, Article 301. doi: 10.3389/fpsyg.2012.00301
+
+     p Budson, A.E. (2009). Understanding memory dysfunction. The Neurologist, 15(2) 71-79.
+
+     p Gazzaniga, M.S. (ed.) (2009). The Cognitive Neurosciences. Cambridge, MA and London, England: A Bradford Book / MIT Press. Accessed Jan 14, 2016, from https://www.hse.ru/data/2011/06/28/1216307711/Gazzaniga.%20The%20Cognitive%20Neurosciences.pdf
+
+     p Hart, J. &amp; Kraut, J.A. (eds.) (2007). Neural Basis of Semantic Memory. Cambridge University Press.
+
+     p Kandel, E.R., Schwartz, J.H., Jessell, T.M., Siegelbaum, S.A., Hudspeth, A.J. (2013). Principles of Neural Science, Fifth Edition. McGraw-Hill.
+
+     p Kean, S. (2015). The tale of the dueling neurosurgeons. New York, NY: Back Bay Books / Little, Brown and Company.
+
+     p Storrs, C. (14 October, 2009). Sight unseen: people blinded by brain damage can respond to emotive expressions. Scientific American. Accessed Jan 7, 2016, from http://www.scientificamerican.com/article/emotional-contagion-blindsight-mimcry-imitation-visual-cortex/
+
+     p Zola-Morgan, S., Squire, L.R. &amp; Amaral, D.G. (1986). Human amnesia and the medial temporal region: enduring memory impairment following a bilateral lesion limited to field CA1 of the hippocampus. The Journal of Neuroscience, 6(10), 2950-2967.
+     
+block append endscripts
+   script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js")
+   script(src="scripts/diagram.js")
+   script.
+      function memswitch(item) {
+         UIkit.switcher(UIkit.$('#memory')).show(item)
+      }
+      UIkit.switcher(UIkit.$('#memory')).show(0)

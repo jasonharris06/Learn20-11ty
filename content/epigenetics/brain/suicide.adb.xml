@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+ <tt xml:lang="en" xmlns="http://www.w3.org/2006/04/ttaf1"  xmlns:tts="http://www.w3.org/2006/04/ttaf1#styling">
+  <head>
+   <styling>
+    <style id="1" tts:textAlign="center" tts:color="#555555" tts:backgroundColor="#DDDDDD" tts:fontSize="16" tts:fontFamily="Verdana" tts:wrapOption="wrap"/>
+   </styling>
+  </head>
+  <body>
+   <div xml:lang="en" style="1">
+    <p begin="00:00:04.35" dur="00:00:06.18">So we looked at very interesting cohorts<br/>of Quebecois who committed suicide,</p>
+    <p begin="00:00:10.53" dur="00:00:09.59">and had childhood abuse in 100<br/>percent of the cases, and control Quebecois</p>
+    <p begin="00:00:20.12" dur="00:00:03.23">who died from other reasons,<br/>mostly car accidents</p>
+    <p begin="00:00:23.35" dur="00:00:03.63">that did not have any report of childhood abuse.</p>
+    <p begin="00:00:26.98" dur="00:00:05.59">And we first looked at a group<br/>of genes called ribosomal RNA.</p>
+    <p begin="00:00:32.57" dur="00:00:07.40">These genes encode ribosomal RNA,<br/>which is essentially the basic scaffold</p>
+    <p begin="00:00:39.97" dur="00:00:02.94">over which proteins are translated.</p>
+    <p begin="00:00:42.91" dur="00:00:06.63">So the amounts of protein we synthesize in<br/>a cell is determined by the scaffolding.</p>
+    <p begin="00:00:49.54" dur="00:00:06.13">And the amount scaffolding is determined by<br/>the number of genes of RNA that we express.</p>
+    <p begin="00:00:55.67" dur="00:00:03.61">So we have 400 copies, and<br/>especially a cell makes a decision,</p>
+    <p begin="00:00:59.28" dur="00:00:06.86">how many of these 400 copies I use and<br/>how many as -- I keep as frozen assets.</p>
+    <p begin="00:01:06.14" dur="00:00:03.96">And we know that differences<br/>in protein synthesis are noted</p>
+    <p begin="00:01:10.10" dur="00:00:03.78">in depressed patients and<br/>also in Alzheimer disease.</p>
+    <p begin="00:01:13.88" dur="00:00:05.77">And we knew because of a different project<br/>in my lab, by the cancer people in my lab,</p>
+    <p begin="00:01:19.65" dur="00:00:02.94">that it&apos;s regulated by methylation.</p>
+    <p begin="00:01:22.59" dur="00:00:05.49">So we mapped ribosomal RNA in the<br/>brains, in the hippocampus of people</p>
+    <p begin="00:01:28.08" dur="00:00:02.51">who committed suicide versus controls.</p>
+    <p begin="00:01:30.59" dur="00:00:02.26">And this is the same assay I<br/>told you -- bisulfite mapping.</p>
+    <p begin="00:01:32.85" dur="00:00:05.27">So you see, first of all, the stochastic nature<br/>of methylation that reflects this cartoon</p>
+    <p begin="00:01:38.12" dur="00:00:03.89">that I showed you, methyl groups going up<br/>and down, and you get a certain balance.</p>
+    <p begin="00:01:42.01" dur="00:00:04.55">But what was noted, it was a very -- there<br/>was a highly increased level of methylation</p>
+    <p begin="00:01:46.56" dur="00:00:05.65">in the suicide versus the control, which<br/>was statistically very significant.</p>
+    <p begin="00:01:52.21" dur="00:00:04.44">And almost in every position on this<br/>gene, the promoter of this gene,</p>
+    <p begin="00:01:56.65" dur="00:00:04.69">we had statistically significant higher<br/>methylation in the suicide versus control,</p>
+    <p begin="00:02:01.34" dur="00:00:05.84">which translated into differences<br/>in expression of ribosomal RNA.</p>
+    <p begin="00:02:07.18" dur="00:00:06.55">So yes, there are differences in methylation<br/>between individuals, and we could associate them</p>
+    <p begin="00:02:13.73" dur="00:00:05.86">with the health -- a mental health phenotype,<br/>which was in this case, committing suicide.</p>
+    <p begin="00:02:19.59" dur="00:00:07.42">We don&apos;t know whether these differences in<br/>protein synthesis just define that moment</p>
+    <p begin="00:02:27.01" dur="00:00:04.45">when the person took the<br/>decision to take his life.</p>
+    <p begin="00:02:31.46" dur="00:00:03.00">Perhaps if he could synthesis<br/>proteins faster, you know,</p>
+    <p begin="00:02:34.46" dur="00:00:03.49">he would have come up with a different decision or not.</p>
+    <p begin="00:02:37.95" dur="00:00:04.54">But what we know is that there are<br/>differences in methylation between individuals.</p>
+    <p begin="00:02:42.49" dur="00:00:02.56">And we can associate them.</p>
+    <p begin="00:02:46.55" dur="00:00:04.91">So when we sent this paper for publication, you<br/>know, the geneticist say it must be genetic.</p>
+    <p begin="00:02:51.46" dur="00:00:02.05">There must differences in the sequence.</p>
+    <p begin="00:02:53.51" dur="00:00:01.13">So we sequence this guy.</p>
+    <p begin="00:02:54.64" dur="00:00:03.53">We didn&apos;t find one single<br/>difference in the sequence.</p>
+    <p begin="00:02:58.17" dur="00:00:03.88">So all these individuals have identical<br/>sequence, which did not surprise us.</p>
+    <p begin="00:03:02.05" dur="00:00:03.33">They are all French Quebecois of<br/>a very limited founder&apos;s stock,</p>
+    <p begin="00:03:05.38" dur="00:00:01.90">so they&apos;re genetically quite clean.</p>
+    <p begin="00:03:07.28" dur="00:00:05.04">And here you have an example, people<br/>with the same genetic sequence,</p>
+    <p begin="00:03:12.32" dur="00:00:04.22">but a completely different epigenetic sequence.</p>
+    <p begin="00:03:17.69" dur="00:00:04.22">We also showed -- and that&apos;s<br/>another property of epigenetics --</p>
+    <p begin="00:03:21.91" dur="00:00:03.04">that it&apos;s region and locus specific.</p>
+    <p begin="00:03:24.95" dur="00:00:04.94">So in the hippocampus, you&apos;ll see this<br/>difference in methylation between the suicide</p>
+    <p begin="00:03:29.89" dur="00:00:04.21">and the control, but you don&apos;t see it<br/>in the cerebellum, another brain region.</p>
+    <p begin="00:03:34.10" dur="00:00:02.29">And that&apos;s what&apos;s unique about epigenetics.</p>
+    <p begin="00:03:36.39" dur="00:00:02.52">It&apos;s not inherited, so therefore<br/>it&apos;s not in the germline.</p>
+    <p begin="00:03:38.91" dur="00:00:02.23">If it was germline, it was everywhere.</p>
+    <p begin="00:03:41.14" dur="00:00:03.91">But it happens in specific tissues<br/>in response to specific signals.</p>
+    <p begin="00:03:45.05" dur="00:00:03.04">So if the hippocampus got that<br/>signal, the hippocampus will do it,</p>
+    <p begin="00:03:48.09" dur="00:00:02.48">but the cerebellum will not do it.</p>
+    <p begin="00:03:50.57" dur="00:00:04.76">And it is also gene-specific because<br/>signals go to specific genes.</p>
+    <p begin="00:03:55.33" dur="00:00:02.14">And if you measure the total<br/>level of methylation --</p>
+    <p begin="00:03:57.47" dur="00:00:01.53">this is a nearest neighbor analysis --</p>
+    <p begin="00:03:59.00" dur="00:00:03.55">you see there&apos;s no difference<br/>between suicide and control.</p>
+    <p begin="00:04:02.55" dur="00:00:03.10">So we have a gene and brain<br/>region specific difference.</p>
+    <p begin="00:04:05.65" dur="00:00:01.45">And that&apos;s what epigenetics is.</p>
+    <p begin="00:04:07.10" dur="00:00:04.14">That&apos;s why it&apos;s so hard to map the<br/>epigenome because you really have to map it</p>
+    <p begin="00:04:11.24" dur="00:00:03.27">in every neuron at one specific point in time.</p>
+    <p begin="00:04:14.51" dur="00:00:06.75">But we had a problem with this study because<br/>we compared people who committed suicide</p>
+    <p begin="00:04:21.26" dur="00:00:03.39">and were abused with people who did<br/>not commit suicide and were not abused.</p>
+    <p begin="00:04:24.65" dur="00:00:03.38">What about people who committed<br/>suicide and were not abused?</p>
+    <p begin="00:04:28.03" dur="00:00:04.36">So we found them, although there<br/>were -- most of our cases were abuse,</p>
+    <p begin="00:04:32.39" dur="00:00:02.87">but we found some that were not abuse.</p>
+    <p begin="00:04:35.26" dur="00:00:03.19">And we compared them.</p>
+    <p begin="00:04:38.45" dur="00:00:02.41">And now we went to look at the GR.</p>
+    <p begin="00:04:40.86" dur="00:00:04.39">It&apos;s exactly the same promoter that<br/>we found difference in methylation</p>
+    <p begin="00:04:45.25" dur="00:00:05.17">in the rat in response to maternal care.</p>
+    <p begin="00:04:50.42" dur="00:00:04.27">So does child abuse leave an imprint<br/>on the GR promoter in the hippocampus,</p>
+    <p begin="00:04:54.69" dur="00:00:07.07">irrespective of the fact that they<br/>eventually committed suicide or not?</p>
+    <p begin="00:05:01.76" dur="00:00:02.35">So this is the human promoter that we looked at.</p>
+    <p begin="00:05:04.11" dur="00:00:01.56">This is the sequence.</p>
+    <p begin="00:05:05.67" dur="00:00:03.65">And this is the result of the mapping.</p>
+    <p begin="00:05:09.32" dur="00:00:11.28">So all these sites here show methylation<br/>that is specific to child abuse.</p>
+    <p begin="00:05:20.60" dur="00:00:05.29">So we can look at this person, who<br/>was 50-years old, and look at the GR,</p>
+    <p begin="00:05:25.89" dur="00:00:02.80">and those who were abused<br/>have those methylation here.</p>
+    <p begin="00:05:28.69" dur="00:00:03.88">And those who were not abused don&apos;t, even<br/>though both committed suicide eventually.</p>
+    <p begin="00:05:32.57" dur="00:00:05.20">So there are many avenues leading<br/>to suicide, not just child abuse,</p>
+    <p begin="00:05:37.77" dur="00:00:02.29">although child abuse is quite common.</p>
+    <p begin="00:05:40.06" dur="00:00:02.42">But you can see the imprint.</p>
+    <p begin="00:05:42.48" dur="00:00:07.67">And interestingly, it&apos;s the same sequence that<br/>we saw in the rat responsive to maternal care.</p>
+    <p begin="00:05:50.15" dur="00:00:05.57">So if you compare the overall methylation, you<br/>see no statistical difference between suicide</p>
+    <p begin="00:05:55.72" dur="00:00:04.25">and control, and a high effect of abuse.</p>
+    <p begin="00:05:59.97" dur="00:00:02.21">And if you look at the expression,<br/>you see the opposite;</p>
+    <p begin="00:06:02.18" dur="00:00:04.61">the abused have less GR than<br/>those who are not abused.</p>
+    <p begin="00:06:06.79" dur="00:00:02.83">So this is a new approach that we took.</p>
+    <p begin="00:06:09.62" dur="00:00:04.47">This is using the new technologies,<br/>which is whole genome technologies.</p>
+    <p begin="00:06:14.09" dur="00:00:04.37">So essentially, what we can do now, we can use<br/>an antibody to methylated cytosine</p>
+    <p begin="00:06:18.46" dur="00:00:07.57">and essentially pull down all the DNA that is<br/>methylated and hybridize it against arrays</p>
+    <p begin="00:06:26.03" dur="00:00:04.55">that covered whatever we want, the<br/>entire genome, parts of the genome,</p>
+    <p begin="00:06:30.58" dur="00:00:04.18">every sequence in the genome,<br/>representative sequences of the genome.</p>
+    <p begin="00:06:34.76" dur="00:00:04.75">And measuring how much methylated the<br/>DNA we pulled at each of these sites,</p>
+    <p begin="00:06:39.51" dur="00:00:04.70">and now we can compare people who committed<br/>suicide to people who didn&apos;t in other groups</p>
+    <p begin="00:06:44.21" dur="00:00:03.42">and map their methylation at the genomic level.</p>
+    <p begin="00:06:47.63" dur="00:00:03.67">Here we took an entire chromosome,<br/>chromosome 11,</p>
+    <p begin="00:06:51.30" dur="00:00:04.00">and where the GR promoter is,<br/>and we mapped their methylation.</p>
+    <p begin="00:06:55.30" dur="00:00:02.23">And what you see here is the<br/>differential methylation.</p>
+    <p begin="00:06:57.53" dur="00:00:04.95">So the bioinformatition essentially<br/>took the entire population and looked for areas</p>
+    <p begin="00:07:02.48" dur="00:00:04.62">with highly statistically significant differences<br/>in methylation between the group</p>
+    <p begin="00:07:07.10" dur="00:00:02.26">that committed suicide and<br/>the group that didn&apos;t.</p>
+    <p begin="00:07:09.36" dur="00:00:04.62">And you see this peak here of<br/>differential methylation, which maps exactly</p>
+    <p begin="00:07:13.98" dur="00:00:04.56">to the promoter of the glucocorticoid receptor.</p>
+    <p begin="00:07:18.54" dur="00:00:04.47">It&apos;s another level of proof that indeed<br/>something very important is happening</p>
+    <p begin="00:07:23.01" dur="00:00:01.18">in the glucocorticoid receptor,</p>
+    <p begin="00:07:24.19" dur="00:00:03.72">which is probably associated<br/>with early childhood and events.</p>
+   </div>
+  </body>
+</tt>

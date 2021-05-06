@@ -1,0 +1,55 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   //- Flash message
+   +pod('')
+      +oldFlash('Water In, Water Out','Summer 2021')
+                        
+   +pod('')
+      .uk-width-1-1.uk-text-center
+         //- object#FlashID(classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000', width='880', height='580')
+         //-    param(name='movie', value='lakelevels.swf')
+         //-    |     
+         //-    param(name='quality', value='high')
+         //-    |     
+         //-    param(name='wmode', value='opaque')
+         //-    |     
+         //-    param(name='swfversion', value='15.0.0.0')
+         //-    // This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt.
+         //-    param(name='expressinstall', value='../../../Scripts/expressInstall.swf')
+         //-    // Next object tag is for non-IE browsers. So hide it from IE using IECC.
+         //-    //if !IE
+         //-    |     
+         //-    object(type='application/x-shockwave-flash', data='lakelevels.swf', width='880', height='580')
+         //-       // <![endif]
+         //-       param(name='quality', value='high')
+         //-       |       
+         //-       param(name='wmode', value='opaque')
+         //-       |       
+         //-       param(name='swfversion', value='15.0.0.0')
+         //-       |       
+         //-       param(name='expressinstall', value='../../../Scripts/expressInstall.swf')
+         //-       // The browser displays the following alternative content for users with Flash Player 6.0 and older.
+         //-       div
+         //-          h4 Content on this page requires a newer version of Adobe Flash Player.
+         //-          |         
+         //-          p
+         //-             a(href='http://www.adobe.com/go/getflashplayer')
+         //-                img(src='http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif', alt='Get Adobe Flash player', width='112', height='33')
+         //-       //if !IE
+         //-    // <![endif]
+         figure          
+            p
+               | Slide the controls to see how the balance between water coming in and water going out influences a lake&apos;s elevation and its salinity.  Think about how changes in the water&apos;s salinity might influence the creatures that live there.
+         
+   +pod('Water In')
+      .uk-width-medium-6-10
+         p
+            | Like the lake above, water flowing into Great Salt Lake comes from two main sources: precipitation and inflow from rivers. River water carries small amounts of dissolved minerals, which have become concentrated over thousands of years, making the lake salty and mineral-rich.
+   +pod('Water Out')
+      .uk-width-medium-6-10
+         p
+            | Because this lake, like Great Salt Lake, sits at the bottom of a closed basin, no rivers flow out of it. The only way water can leave is through evaporation. When water evaporates, everything dissolved in it stays behind-including salt, minerals, and pollutants.
+   
+   script(src="/ruffle/ruffle.js")

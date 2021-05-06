@@ -1,0 +1,194 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   script(src='/Scripts/swfobject_modified.js', type='text/javascript')
+
+   +pod('')
+      .uk-width-medium-6-10
+         p
+            | The overwhelming majority of life on our planet depends on the sun for energy. Because life is so tightly linked to the sun, it is
+            | no surprise that many organisms (excluding those that live in total darkness) have evolved the ability to detect and respond to
+            | light. Plants turn their leaves toward the sun. Single-celled algae, protists, and other microbes swim toward or away from light.
+            | But it is the animals, with our image-forming eyes, that have taken light detection to the next level.
+
+         p
+            | 96% of animal species have eyes. The first animal eyes did little but detect light&mdash;they helped to establish day/night
+            | cycles and coordinate behavior&mdash;but more-complex eyes soon evolved. A predator who can see its prey from a distance, or a
+            | prey animal that can see the shadow of a predator approaching, has a clear survival advantage over those who can&apos;t. Even a
+            | slight improvement in image quality provides a significant survival advantage, allowing for the step-by-step evolution of
+            | increasingly complex eyes.
+      |    
+      .uk-width-medium-4-10
+         img(src='coralspawn.jpg', height='290', width='350', style='margin-bottom:0px;', alt='starfish on coral')
+
+         p.uk-text-small
+            | By synchronizing their reproductive cycles with the sun and the moon, some species of coral manage to spawn 
+            | during a single hour of the year.  Light detection may have first evolved to set up rhythms and routines for feeding, 
+            | movement, and reproduction. 
+            em (Photo: Emma Hickerson, NOAA)
+   +pod('')(style='padding:  40px 0px 40px 0px;')
+      object#FlashID(classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000', width='751', height='482', style='margin-left:85px;')
+         param(name='movie', value='ssLoader.swf?filename=eyeevolution.swf')
+         | &#x9;&#x9;&#x9;
+         param(name='quality', value='high')
+         | &#x9;&#x9;&#x9;
+         param(name='wmode', value='opaque')
+         | &#x9;&#x9;&#x9;
+         param(name='swfversion', value='6.0.65.0')
+         // This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don't want users to see the prompt.
+         param(name='expressinstall', value='/Scripts/expressInstall.swf')
+         // Next object tag is for non-IE browsers. So hide it from IE using IECC.
+         //if !IE
+         | &#x9;&#x9;&#x9;
+         object(type='application/x-shockwave-flash', data='ssLoader.swf?filename=eyeevolution.swf', width='751', height='482')
+            // <![endif]
+            param(name='quality', value='high')
+            | &#x9;&#x9;&#x9;&#x9;
+            param(name='wmode', value='opaque')
+            | &#x9;&#x9;&#x9;&#x9;
+            param(name='swfversion', value='6.0.65.0')
+            | &#x9;&#x9;&#x9;&#x9;
+            param(name='expressinstall', value='/Scripts/expressInstall.swf')
+            // The browser displays the following alternative content for users with Flash Player 6.0 and older.
+            div
+               h4 Content on this page requires a newer version of Adobe Flash Player.
+               | &#x9;&#x9;&#x9;&#x9;&#x9;
+               p
+                  a(href='http://www.adobe.com/go/getflashplayer')
+                     img(src='http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif', alt='Get Adobe Flash player', width='112', height='33')
+            //if !IE
+         // <![endif]
+      .uk-width-medium-3-4.uk-container-center
+         +toggle('Photo Credits')
+            ol
+               li Antonio Guill&eacute;n
+               li Ashe-Villain
+               li David Muller
+               li Steve Jurvetson
+               li Hans Hillewaert
+               li Michael Steirwald
+               li Kevin Collins
+               li Rob Knell
+               li Kevin Collins
+               li Colin Purrington
+               li Tamara Frank
+               li TwelveX
+               li g-na
+               li LotusMonger, Mark Fickett
+               li Kevin Collins
+               li Doug Anderson, Roy Caldwell
+   +pod('Light Detection, Pigment, and Movement Make an Eye')
+      |    
+      .uk-width-medium-4-10
+         p
+            | At its simplest, the eye incorporates three functions:
+         ol(style='width:320px;')
+            li Light detection
+            | &#x9;&#x9;&#x9;&#x9;
+            li
+               | Shading, in the form of dark pigment, for sensing the direction light is coming from
+            | &#x9;&#x9;&#x9;&#x9;
+            li Connection to motor structures, for movement in response to light
+         | &#x9;&#x9;&#x9;In some organisms, all three of these functions are carried out by just one cell&mdash;the single-celled euglena is one example. It has a light-sensitive spot, pigment granules for shading, and motor cilia. This structure, however, isn&apos;t considered a true eye. 
+         br
+         | &#x9;&#x9;&#x9;
+         br
+         | &#x9;&#x9;&#x9;The most-basic structure that is widely accepted as an eye has just two cells: a photoreceptor that detects light, and a pigment cell that provides shading. The photoreceptor connects to ciliated cells, which engage to move the animal in response to light. The marine ragworm embryo (right) has a two-celled eye.
+         | &#x9;&#x9;&#x9;
+         p
+      |    
+      .uk-width-medium-6-10
+         img(src='two-celled-eye.jpg', height='332', width='489', alt='Two celled eye')
+
+   +pod('The Evolution of Image-forming Eyes')
+
+      .uk-width-medium-4-10
+         p
+            | An eye with more photoreceptors has more power: it can detect variations in light intensity across its surface. A
+            | cup-shaped eye can better sense both the direction light is coming from and the movement of nearby objects. These
+            | improvements require only minor changes to the basic eye.
+         | &#x9;&#x9;
+         p
+            | As animals evolved more-complex bodies and behaviors, the eye too became more complex. Eyes evolved connections to
+            | muscle cells rather than cells that moved by waving cilia. Neurons evolved that could process signals and coordinate
+            | behavior.
+         | &#x9;&#x9;
+         p
+            | Later improvements included structures for better optics, such as lenses or mirrors that gather and focus light onto
+            | photoreceptors. Some eyes became spherical and evolved pupils that opened and closed to let in just the right amount
+            | of light for forming clear images. Muscles evolved to fine-tune focusing and to point the eye in different directions.
+            | Photoreceptors increased in number, providing more-detailed images (like adding pixels to a photograph).
+      |    
+      .uk-width-medium-6-10
+         img(src='complexEyes.jpg', alt='complex eyes', height='333', width='490')
+
+   +pod('Stepping Up to a Complex Eye')
+
+      .uk-width-medium-4-10
+         +well
+            img(src='diverseEyes.jpg', height='106', width='320', alt='diverse eyes', style='margin-bottom:20px;')
+
+            p
+               | On the inside, diverse eyes use some of the very same components&mdash;a basic molecular &quot;toolkit&quot; for building an eye. However,
+               | some structures that look alike, for example vertebrate and squid lenses, have different evolutionary origins.
+
+            p
+               | Learn more about the 
+               a(href='http://learn.genetics.utah.edu/content/selection/toolkit/') molecular "toolkit" for building an eye
+               | , and the genetic origin of eyes.
+      |    
+      .uk-width-medium-6-10
+         p
+            | Eyes most likely evolved from simple to complex through a gradual series of tiny steps. Piecing together the sequence of eye evolution is
+            | challenging, and we don&apos;t know the sequence of steps that led to every modern eye. But we do know that modern animal eyes come in many
+            | varieties, spanning a continuum from the simplest to the most complex. This demonstrates that all types of eyes are useful, and that eyes
+            | of intermediate complexity could also have formed as steps in the evolution of complex eyes.
+         |       
+         p
+            | Researchers at Lund University wanted to find out how long it might take for a complex eye to evolve. Starting with a flat, light-sensitive
+            | patch, they gradually made over 1,800 tiny improvements&mdash;forming a cup, constricting the opening, adding a lens&mdash;until they had
+            | a complex, image-forming eye. It is important to note that every tiny change these researchers made measurably improved image quality.
+            | The researchers concluded that these steps could have taken place in about 360,000 generations, or just a few hundred thousand years. 550
+            | million years have passed since the formation of the oldest fossil eyes, enough time for complex eyes to have evolved more than 1,500 times.
+         | &#x9;&#x9;&#x9;&#x9;
+         +well
+            | To learn more, view the short video about 
+            a(href='https://www.youtube.com/watch?v=duBW9QabXfw') how the eye could have evolved 
+            | through a series of tiny steps.
+ 
+   +references
+      p
+         | Arendt, D., Hausen, H., Purschke, G. (2009). The &apos;division of labour&apos; model of eye evolution. 
+         a(href='http://rstb.royalsocietypublishing.org/content/364/1531/2809.long')
+            | Philosophical
+            | Transactions of the Royal Society of London, Biological Sciences, 364(1531), 2809-2817. doi:10.1098/rstb.2009.0104
+      p
+         | Lamb, T. D., Collin, S. P., Pugh, Jr., E. N. (2007). Evolution of the vertebrate eye: opsins, photoreceptors, retina and eye 
+         | cup. 
+         a(href='http://www.nature.com/nrn/journal/v8/n12/abs/nrn2283.html') Nature Reviews Neuroscience, 9(12), 960-976
+         |                (subscription required). doi:10.1038/nrn2283
+      p
+         | Nilsson, D.-E. (2009). The evolution of eyes and visually guided behaviour. 
+         a(href='http://rstb.royalsocietypublishing.org/content/364/1531/2833.long')
+            | Philosophical
+            | Transactions of the Royal Society of London, Biological Sciences, 364(1531), 2833-2847. doi:10.1098/rstb.2009.0083
+      p
+         | Nilsson, D.-E. &amp; Pelger, S. (1994). A pessimistic estimate of the time required for an eye to evolve. Proceedings of the Royal
+         | Society of London: Biological sciences, 256, 53-58 (subscription required).
+      p
+         | Shubin, N., Tabin, C., &amp; Carroll, S. (2009). 
+         a(href='http://www.nature.com/nature/journal/v457/n7231/full/nature07891.html')
+            | Deep homology
+            | and the origins of evolutionary novelty. Nature, 457, 818-823
+         |  (subscription required). doi:10.1038/nature07891
+      p
+         | Vopalensky, P. &amp; Kozmik, Z. (2009). Eye evolution: common use and independent recruitment of genetic components. 
+         a(href='http://rstb.royalsocietypublishing.org/content/364/1531/2819.long')
+            | Philosophical
+            | Transactions of the Royal Society of London, Biological Sciences, 364(1531), 2819-2832. doi:10.1098/rstb.2009.0079
+   script(type='text/javascript').
+      <!--
+      swfobject.registerObject("FlashID");
+      //-->
+   

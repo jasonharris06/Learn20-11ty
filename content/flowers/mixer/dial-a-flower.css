@@ -1,0 +1,365 @@
+#daf-outer-container {
+  max-width: 865px;
+  padding-top: 88%;
+  position:relative;
+  overflow:hidden;
+  margin: auto;
+}
+#daf-container * {
+  box-sizing: border-box;
+}
+#daf-container {
+  position:absolute;
+  top:0;
+}
+#daf-content {
+  position: relative;
+  background-color: #f2e8cf;
+  display: flex;
+  flex-direction: column;
+  top: 0px;
+  left: 0px;
+  width: 865px;
+  height: 761px;
+  padding: 10px;
+  transform-origin: top left;
+}
+#row-1 {
+  height: 410px;
+  padding: 0 0 4px;
+}
+#row-2 {
+  flex-grow: 1;
+  align-items: flex-end;
+}
+#row-3 {
+  flex-grow: 1;
+  align-items: flex-end;
+  position: relative;
+}
+#pick-container {
+  width: 21%;
+  display: flex;
+  flex-direction: column;
+}
+#target-container {
+  width: 35%;
+  padding: 0 12px;
+  flex-grow: 1;
+  transition: opacity 0.3s;
+}
+#user-container {
+  width: 35%;
+  padding: 0 12px;
+  flex-grow: 1;
+  transition: opacity 0.3s;
+}
+
+#petal-genes {
+  background-image: url(Genes_bg.png);
+  background-size: cover;
+}
+#petal-proteins {
+  background: radial-gradient(ellipse at center, #dddddd 0%,#bfbfbf 100%);
+  background-size: cover;
+}
+#guide-genes {
+  background-image: url(Genes_bg.png);
+  background-size: cover;
+}
+#guide-proteins {
+  background: radial-gradient(ellipse at center, #dddddd 0%,#bfbfbf 100%);
+  background-size: cover;
+}
+#genes-label {
+  position: absolute;
+  top: 7px;
+  left: 68px;
+  font-size: 18px;
+}
+#proteins-label {
+  position: absolute;
+  top: 7px;
+  left: 259px;
+  font-size: 18px;
+}
+.antho-gene {
+  position: absolute;
+  top: 1px;
+  left: 13px;
+  width: 138px;
+  height: 119px;
+  background-image: url(Antho_Genes.png);
+  background-size: cover;
+  opacity: 0;
+}
+.caro-gene {
+  position: absolute;
+  top: 9px;
+  left: 14px;
+  width: 153px;
+  height: 87px;
+  background-image: url(Caro_Genes.png);
+  background-size: cover;
+  opacity: 0;
+}
+.slider-section {
+  height: 100%;
+  flex-grow: 1;
+  padding: 0 8px 3px 18px;
+}
+.slider-title {
+  height: 53px;
+  font-size: 25px;
+  padding: 20px 0 0 0;
+}
+.slider-box {
+  background-color: #e6d4ab;
+  height: 112px;
+  border: 3px solid #d9c491;
+  border-radius: 6px;
+}
+.slider-container {
+  height: 42px;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 18px;
+}
+
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 230px;
+  height: 6px;
+  background: #d9c491;
+  outline: none;
+  border: 2px solid #968763;
+  border-radius: 4px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 26px;
+  border: 2px solid #615740;
+  border-radius: 10px;
+  background: #b9b9b9;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 10px;
+  height: 26px;
+  border: 2px solid #615740;
+  border-radius: 10px;
+  background: #b9b9b9;
+  cursor: pointer;
+}
+
+
+.slider-container label {
+  font-size: 21px;
+  padding: 0 0 0 20px;
+}
+.low-high {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 300;
+  padding: 0 160px 0 10px;
+}
+
+.daf-row {
+  display: flex;
+  transition: opacity 0.3s;
+}
+.daf-h1 {
+  text-align: center;
+  padding: 20px 0 30px;
+  font-size: 30px;
+  font-weight: 700;
+  color: rgba(0,0,0,0.65);
+}
+.daf-h2 {
+  text-align: center;
+  padding: 14px 0 24px;
+  font-size: 22px;
+  font-weight: 700;
+  color: rgba(0,0,0,0.65);
+}
+.daf-button-container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 15px 0 20px;
+}
+.daf-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  background-color: #e6d5ac;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.daf-button > img {
+  height: 139px;
+  filter: brightness(1.1);
+  transition: transform 0.2s;
+}
+.daf-button:hover > img {
+  transform: scale(1.1);
+}
+.daf-button:first-child {
+  margin: 0 0 18px;
+}
+.daf-button-label {
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  color: rgba(0,0,0,0.65);
+}
+.daf-flower {
+  width: 310px;
+  height: 310px;
+  background-color: #fff;
+  border: 3px solid #e6d5ac;
+  border-radius: 7px;
+  position: relative;
+}
+.flower-container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+.lewisii {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  height: 274px;
+  width: 274px;
+  background-size: contain;
+  background-image: url(Lewisii.png);
+  background-blend-mode: overlay;
+  background-image: url(Lewisii.png);
+  -webkit-mask-image: url(Lewisii.png);
+  mask-image: url(Lewisii.png);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+.lewisii-guides {
+  position: absolute;
+  top: 147px;
+  left: 127px;
+  height: 93px;
+  width: 47px;
+  background-blend-mode: overlay;
+  background-size: contain;
+  background-image: url(Lewisii_Guides.png);
+  -webkit-mask-image: url(Lewisii_Guides.png);
+  mask-image: url(Lewisii_Guides.png);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+.cardinalis {
+  position: absolute;
+  top: 0px;
+  left: 50px;
+  height: 304px;
+  width: 203px;
+  background-size: contain;
+  background-image: url(Cardinalis.png);
+  background-blend-mode: overlay;
+  background-image: url(Cardinalis.png);
+  -webkit-mask-image: url(Cardinalis.png);
+  mask-image: url(Cardinalis.png);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+.cardinalis-guides {
+  position: absolute;
+  top: 104px;
+  left: 130px;
+  height: 114px;
+  width: 44px;
+  background-blend-mode: overlay;
+  background-size: contain;
+  background-image: url(Cardinalis_Guides.png);
+  -webkit-mask-image: url(Cardinalis_Guides.png);
+  mask-image: url(Cardinalis_Guides.png);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+.output-pane {
+  width: 174px;
+  height: 130px;
+  border: 3px solid rgba(0,0,0,0.65);
+  border-radius: 6px;
+  margin: 0 11px;
+  position: relative;
+}
+.protein {
+  position: absolute;
+  width: 18px;
+  height: 25px;
+  background-blend-mode: overlay;
+  background-size: contain;
+  background-image: url(Protein.png);
+  -webkit-mask-image: url(Protein.png);
+  mask-image: url(Protein.png);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.protein.antho {
+  background-color: rgb(236, 15, 103);
+}
+.protein.caro {
+  background-color: rgb(229, 108, 10);
+}
+.protein.visible {
+  opacity: 1;
+}
+
+.faded {
+  opacity: 0.3;
+}
+.pulsate {
+	-webkit-animation: pulsate 1.5s ease-in-out infinite both;
+	        animation: pulsate 1.5s ease-in-out infinite both;
+}
+
+@-webkit-keyframes pulsate {
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  85% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes pulsate {
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  85% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}

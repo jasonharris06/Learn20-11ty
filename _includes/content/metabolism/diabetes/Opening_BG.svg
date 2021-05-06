@@ -1,0 +1,21 @@
+<svg id="Gradient_BG" data-name="Gradient BG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1220 687">
+  <defs>
+    <style>
+      .gradient {
+        fill: url(#radial-gradient);
+        pointer-events:none;
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="610" cy="346.57" r="496.09" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#38b5dd"/>
+      <stop offset="0.15" stop-color="#36b0d8"/>
+      <stop offset="0.34" stop-color="#2fa1c9"/>
+      <stop offset="0.54" stop-color="#2488b0"/>
+      <stop offset="0.76" stop-color="#15668d"/>
+      <stop offset="0.98" stop-color="#023a60"/>
+      <stop id="baseColor" offset="1" stop-color="#00365c"/>
+    </radialGradient>
+  </defs>
+  <title>Opening_BG</title>
+  <rect id="Gradient_BG-2" data-name="Gradient BG" class="gradient" width="1220" height="687"/>
+</svg>

@@ -1,0 +1,15 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   +pod('')
+      .uk-width-medium-1-1
+
+         script(src='/Scripts/AC_RunActiveContent.js', type='text/javascript')
+
+         div(style='margin:0 auto; width: 900px;')
+            script(type='text/javascript').
+               AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','900','height','600','src','DroppingSignals','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','DroppingSignals' ); //end AC code
+            noscript
+               p Javascript is required to view this content.
+   script(src="/ruffle/ruffle.js")

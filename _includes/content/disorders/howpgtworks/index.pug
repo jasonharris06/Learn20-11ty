@@ -1,0 +1,95 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('What kinds of conditions can be tested for?')
+      .uk-width-medium-7-10
+         p
+            | When testing is done on an adult or a child, or even a developing baby, a large number of cells can be taken and tested. But preimplantation genetic testing is done on just one or a few cells. It needs to be much more sensitive, so it looks different from other types of genetic tests.
+      .uk-width-medium-5-10
+         p
+            | Preimplantation genetic testing can identify conditions where the genetic cause is well understood:
+         ul
+            li Aneuploidy: Whole chromosomes are either missing or duplicated. 
+            li Chromosome rearrangements: Pieces of chromosomes are missing, duplicated, or rearranged. 
+            li Single-gene disorders*: A disease is caused by known variations (mutations) in a single gene. 
+         p
+            | Preimplantation genetic testing CANNOT detect the following types of disorders:
+         ul
+            li Suspected single-gene disorders: A disorder is probably caused by a variation in a single gene, but the exact gene or change is unknown.
+            li Inherited disorders involving more than one gene.
+            li Disorders that are caused by a combination of genes and the environment.
+      .uk-width-medium-5-10
+         figure
+            img(src='images/chromosomes.jpg', alt='chromosomes')
+         +well
+            h3 Related Content
+            a(href='/content/disorders/extraormissing') Extra or Missing chromosomes
+            br
+            a(href='/content/disorders/rearrangements') Chromosomal rearrangements
+            br
+            a(href='/content/disorders/singlegene') Single-gene disorders
+      .uk-width-medium-6-10
+         i
+            | *In some cases, it may not be possible to use preimplantation genetic testing to detect a genetic disorder even when the cause is known.
+   +pod('Screening vs. Diagnosis')
+      .uk-width-medium-5-10
+         figure
+            img(src='images/PGS-vs-PGD.jpg')
+      .uk-width-medium-5-10
+         p
+            | Preimplantation genetic testing uses one of two approaches: Preimplantation genetic screening (PGS) or Preimplantation genetic diagnosis (PGD). The type of testing that will work best depends on what type of genetic disorder a couple is at risk of passing to their children. A genetic counselor who specializes in genetic disorders can recommend the best approach for a particular couple.
+         p
+            | PGS can detect large-scale, chromosome-level conditions that are not present in the parents but may be present in the embryos. It detects the presence, absence, and copy number for large genetic regions that can include many genes. The same test can be used on embryos from any parent. Very often, PGS is performed on embryos from couples who are using IVF for fertility reasons.
+         p
+            | PGD can detect specific, smaller-scale genetic variations that are present in one or both parents and could be passed to embryos. Most often, PGD is used if one or both parents know that they are carriers of a single-gene disorder or a balanced chromosomal rearrangement. Each test needs to be custom made specifically for the couple. It looks for the specific problem areas in the parents' chromosomes, and detects whether they are present or absent in each embryo. Usually, couples who choose PGD could conceive naturally, but are using IVF specifically so that their embryos can be tested. Because of the time and cost of setting up a custom test, PGD is more expensive than PGS.
+            
+   +pod('How PGS Works')
+      .uk-width-medium-7-10
+         p
+            | Preimplantation Genetic Screening (PGS) can detect the presence and copy number of every chromosome: numbers 1-22 plus X and Y. It works by detecting short stretches of DNA along the length of every chromosome. A typical screening test uses thousands of these DNA markers.
+         p
+            | The DNA sequences that are used for screening are like molecular bar codes. They are chosen to be both specific and conserved. Specific means that each sequence is present in just one location on one chromosome. Conserved means that the sequences tend to be the same for everyone. Because the sequences are conserved, the same test can be used for any couple.
+         p
+            | Screening can be done using various technologies, but they all rely on complementary base pairing. The short DNA sequences, or probes, find the chromosomal sequences that match, and they bind to them.
+         p
+            | PGS is not good at detecting balanced chromosomal translocations—a condition where pieces of two chromosomes swap places. This is because all of the chromosomes are still present in the correct number, and the test does not detect the arrangement of the chromosomes. However, PGS is able to detect other types of rearrangements, including unbalanced translocations, deletions, and insertions.
+      .uk-width-medium-3-10
+         +well
+            h3 Related content
+            p Technologies that are used for preimplantation genetic screening include DNA microarrays, next-generation DNA sequencing, and real-time PCR. Visit the 
+               a(href='/content/labs') Virtual Labs 
+               | page to learn more about how some of these technologies work.
+
+      .uk-width-medium-1-1
+         include outcome.pug
+         figure
+            p An example chromosomal arrangement is shown on the left (simplified to show just 4 of 22 autosome pairs). The corresponding test result is shown in the chart on the right.
+               
+   +pod('How PGD Works')
+      .uk-width-medium-6-10
+         p(style='text-decoration:underline') PGD for a single-gene disorder
+         p
+            | Preimplantation genetic diagnosis is designed to look for very small-scale genetic problems. Even if the disorder is caused by a change (mutation) in just a single letter of DNA code, PGD can be used to detect it. The biggest requirement is that the specific underlying genetic cause of the disease in the couple who wants the testing has been pinpointed.
+         p
+            | Unlike with PGS, PGD uses a test that is specific to each couple. It is based on their unique genetic information. Since every test is custom designed, it is possible to test even for genetic disorders that are extraordinarily rare. 
+         p
+            | PGD can also be used to test embryos from a parent that has a balanced chromosomal rearrangement. These parents have a high risk of passing an unbalanced rearrangement to their children. Like testing for a single-gene disorder, this test relies on markers that are unique to each of the parent’s chromosomes.
+         p
+            | It is possible to also do PGS at the same time as PGD. This is done to make sure that embryos that are unaffected also have a complete set of chromosomes. Some labs add PGS with every PGD. Some add it only if there are other factors (e.g., maternal age) that increase the risk of chromosomal disorders.
+      .uk-width-1-1
+         include how.pug
+         figure
+            p The slideshow describes what PGD might look like for a couple who is at risk of passing an autosomal recessive genetic disorder to their children.
+         
+   +references
+      p IVF clinic / testing lab: rgipgd.com
+
+      p Fertility clinic with PGS details: https://www.advancedfertility.com/pgs-ivf-genetic-testing.htm
+
+      p PGD using qPCR on trophectoderm cells — http://www.sciencedirect.com/science/article/pii/S0015028215020105
+
+      p PGS using NGS — https://academic.oup.com/humrep/article/29/12/2802/630523
+   
+block append endscripts
+   script(src="/lib/slideshow.js")
+   script(src="/lib/slideshow-fx.js")

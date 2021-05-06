@@ -1,0 +1,155 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel="apple-touch-icon-precomposed" sizes="57x57" href="/images/global/apple-touch-icon-57x57.png")
+    link(rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/global/apple-touch-icon-114x114.png")
+    link(rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/global/apple-touch-icon-72x72.png")
+    link(rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/global/apple-touch-icon-144x144.png")
+    link(rel="apple-touch-icon-precomposed" sizes="60x60" href="/images/global/apple-touch-icon-60x60.png")
+    link(rel="apple-touch-icon-precomposed" sizes="120x120" href="/images/global/apple-touch-icon-120x120.png")
+    link(rel="apple-touch-icon-precomposed" sizes="76x76" href="/images/global/apple-touch-icon-76x76.png")
+    link(rel="apple-touch-icon-precomposed" sizes="152x152" href="/images/global/apple-touch-icon-152x152.png")
+    link(rel="icon" type="image/png" href="/images/global/favicon-196x196.png" sizes="196x196")
+    link(rel="icon" type="image/png" href="/images/global/favicon-96x96.png" sizes="96x96")
+    link(rel="icon" type="image/png" href="/images/global/favicon-32x32.png" sizes="32x32")
+    link(rel="icon" type="image/png" href="/images/global/favicon-16x16.png" sizes="16x16")
+    link(rel="icon" type="image/png" href="/images/global/favicon-128.png" sizes="128x128")
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:600,400,300', rel='stylesheet', type='text/css')
+    block head
+      script(async defer data-domain='learn.genetics.utah.edu' src='https://stats.gslc.utah.edu/js/index.js')
+      script(async, src="https://www.googletagmanager.com/gtag/js?id=UA-126620-3")
+      script(async, src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js")
+
+      script.
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)};
+        gtag('js', new Date());
+        gtag('config', 'UA-126620-3');
+        var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101184575);
+      script(async, src="//static.getclicky.com/js")
+      title #{page.title}
+
+      if page.base
+        base(href=page.base)
+
+      link(rel='stylesheet', href='/lib/lg.css')
+      block headscripts
+  if page.type
+    body(class=page.type)
+      include ./page-items
+      nav.uk-navbar.lg-header(data-uk-sticky)
+        .uk-container.uk-container-center
+          include LG_Logo.svg
+          a.lg-donate(href="https://umarket.utah.edu/ugive/index.php?gift_id=2787&special=%20Learn.Genetics%20website%20MD11595-40165")
+            div Donate
+            script(type='text/javascript').
+              (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+              (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+              e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+              })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+              _st('install','9o2w5BWLcXLJo5xDkCS4','2.0.0');
+          a.lg-donate.search-bar
+            input#header-search-input.st-default-search-input(type='text')
+
+
+
+      block breadcrumb
+        .lg-section
+          .uk-container.uk-container-center
+            ul.uk-breadcrumb.lg-breadcrumb
+              li
+                a(href='/') Home
+                if ((page.type == 'indexPage') && (!page.submodule))
+                  li
+                    span.uk-active #{page.module.title}
+                else if (( page.type == 'podPage') && (!page.submodule))
+                  li
+                    a(href=`${page.module.url}`) #{page.module.title}
+                  li
+                    span.uk-active #{page.title}
+                else if ((page.type == 'indexPage') && (page.submodule))
+                  li
+                    a(href=`${page.module.url}`) #{page.module.title}
+                  li
+                    span.uk-active #{page.submodule.title}
+                else if (( page.type == 'podPage') && (page.submodule))
+                  li
+                    a(href=`${page.module.url}`) #{page.module.title}
+                  li
+                    a(href=`${page.submodule.url}`) #{page.submodule.title}
+                  li
+                    span.uk-active #{page.title}
+
+      block content
+        p If you see this text then you need to add content.
+      footer.lg-footer.uk-text-small
+        .uk-container.uk-container-center
+          div(style="padding:5px 0")
+            a(href="https://teach.genetics.utah.edu") Visit Teach.Genetics
+          div(style="padding:5px 0")
+            a(href="#email" data-uk-modal) Sign up for our email announcements
+            #email.uk-modal
+              .uk-modal-dialog
+                a.uk-modal-close.uk-close
+                iframe(width='540', height='425', src='https://my.sendinblue.com/users/subscribe/js_id/1zb36/id/3', frameborder='0', scrolling='auto', allowfullscreen='', style='display: block;margin-left: auto;margin-right: auto; max-width:100%;')
+          div(style="padding:5px 0")
+            a(href="#cite", data-uk-modal) Cite this page
+            a(href="https://www.utah.edu/disclaimer/") Disclaimer
+            a(href="/policies/permission/") Permissions Policy
+            a(href="/policies/privacy/") Privacy Policy
+          div(style="padding:0 0 10px")
+            span Copyright &copy;
+            a.uk-link-muted(href="https://www.utah.edu") University of Utah
+            a.uk-link-muted(href="https://www.gslc.utah.edu") GSLC
+      
+     
+      
+      .uk-modal(id='cite')
+        -function momentJS(createDate){
+          -console.log("I ran")
+          -console.log( moment(createDate)) 
+          -return moment(createDate)
+        -}
+        .uk-modal-dialog
+          a.uk-modal-close.uk-close
+          br
+          .uk-panel.uk-panel-box
+            .lg-bold APA format:
+            br
+            .lg-page-cite
+              |Genetic Science Learning Center. (#{momentJS(page.createDate)}) #{page.title}.
+              |Retrieved #{page.today}, from https://learn.genetics.utah.edu#{page.url}
+          br
+          .uk-panel.uk-panel-box
+            .lg-bold CSE format:
+            br
+            .lg-page-cite
+              //- |#{page.title} [Internet]. Salt Lake City (UT): Genetic Science Learning Center; #{page.createDate.format("YYYY")}
+              //- |[cited #{page.today.format("YYYY MMM D")}] Available from https://learn.genetics.utah.edu#{page.url}
+          br
+          .uk-panel.uk-panel-box
+            .lg-bold Chicago format:
+            br
+            .lg-page-cite
+              |Genetic Science Learning Center. &quot;#{page.title}.&quot; Learn.Genetics.
+              //- |#{page.createDate.format("MMMM D, YYYY")}. Accessed #{page.today.format("MMMM D, YYYY")}. https://learn.genetics.utah.edu#{page.url}.
+          br
+
+      block endscripts
+        script(src='/lib/jquery.min.js')
+        script(src='/lib/uikit.min.js')
+        script.
+          window.doorbellOptions = {
+            id: '10421',
+            appKey: 'gssiEUZATASjDHjfz5WEzudhHpGWGZfB2cBZ8t8Jz3wKCiDPer4veYRq0y73bMTh',
+            tags: "Positive/Compliment Feedback,Video Issue,Interactive Issue,Content Feedback, Content Questions,Server/Connection Issue,Website suggestions,UX issue,irrelevant"
+          };
+          (function(w, d, t) {
+              var hasLoaded = false;
+              function l() { if (hasLoaded) { return; } hasLoaded = true; window.doorbellOptions.windowLoaded = true; var g = d.createElement(t);g.id = 'doorbellScript';g.type = 'text/javascript';g.async = true;g.src = 'https://embed.doorbell.io/button/'+window.doorbellOptions['id']+'?t='+(new Date().getTime());(d.getElementsByTagName('head')[0]||d.getElementsByTagName('body')[0]).appendChild(g); }
+              if (w.attachEvent) { w.attachEvent('onload', l); } else if (w.addEventListener) { w.addEventListener('load', l, false); } else { l(); }
+              if (d.readyState == 'complete') { l(); }
+          }(window, document, 'script'));

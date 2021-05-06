@@ -1,0 +1,145 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+
+
+   script(src='/Scripts/AC_RunActiveContent.js', type='text/javascript')
+
+   +pod('')
+      .uk-width-medium-5-10
+         p
+            | Clones are organisms that are exact genetic copies. Every single bit of their DNA is identical.
+         |
+         |
+         p
+            | Clones can happen naturally&mdash;identical twins are just one of many examples. Or they can be made in the lab. Below, find out how natural identical twins are similar to and different from clones made through modern cloning technologies.
+      |
+      .uk-width-medium-5-10
+         figure
+            img(src='images/twingirls.jpg', alt='Twin girls')
+   +pod('How Is Cloning Done?')
+      |
+      .uk-width-medium-6-10
+         p
+            | Many people first heard of cloning when Dolly the Sheep showed up on the scene in 1997. Artificial cloning technologies have been around for much longer than Dolly, though.
+         |
+         |
+         p
+            | There are two ways to make an exact genetic copy of an organism in a lab: artificial embryo twinning and somatic cell nuclear transfer.
+         |
+         h3 1. Artificial Embryo Twinning
+
+         p
+            | Artificial embryo twinning is a relatively low-tech way to make clones. As the name suggests, this technique mimics the natural process that creates identical twins.
+         |
+         |
+         p
+            | In nature, twins form very early in development when the embryo splits in two. Twinning happens in the first days after egg and sperm join, while the embryo is made of just a small number of unspecialized cells. Each half of the embryo continues dividing on its own, ultimately developing into separate, complete individuals. Since they developed from the same fertilized egg, the resulting individuals are genetically identical.
+         |
+         |
+         p
+            | Artificial embryo twinning uses the same approach, but it is carried out in a Petri dish instead of inside the mother. A very early embryo is separated into individual cells, which are allowed to divide and develop for a short time in the Petri dish. The embryos are then placed into a surrogate mother, where they finish developing. Again, since all the embryos came from the same fertilized egg, they are genetically identical.
+         |
+         h3 2. Somatic Cell Nuclear Transfer
+
+         p
+            | Somatic cell nuclear transfer (SCNT), also called nuclear transfer, uses a different approach than artificial embryo twinning, but it produces the same result: an exact genetic copy, or clone, of an individual. This was the method used to create Dolly the Sheep.
+
+         p What does SCNT mean? Let&apos;s take it apart:
+         |
+         |
+         p
+            strong Somatic cell:
+            |  A somatic cell is any cell in the body other than sperm and egg, the two types of reproductive cells. Reproductive cells are also called germ cells. In mammals, every somatic cell has two complete sets of chromosomes, whereas the germ cells have only one complete set.
+         |
+         |
+         p
+            strong Nuclear:
+            |  The nucleus is a compartment that holds the cell&apos;s DNA. The DNA is divided into packages called chromosomes, and it contains all the information needed to form an organism. It&apos;s small differences in our DNA that make each of us unique.
+
+         p
+            strong Transfer:
+            |  Moving an object from one place to another. To make Dolly, researchers isolated a
+            strong somatic cell
+            |  from an adult female sheep. Next they removed the nucleus and all of its DNA from an egg cell. Then they
+            strong transferred
+            |  the
+            strong nucleus
+            |  from the somatic cell to the egg cell. After a couple of chemical tweaks, the egg cell, with its new nucleus, was behaving just like a freshly fertilized egg. It developed into an embryo, which was implanted into a surrogate mother and carried to term. (The transfer step is most often done using an electrical current to fuse the membranes of the egg and the somatic cell.)
+
+         p
+            | The lamb, Dolly, was an exact genetic replica of the adult female sheep that donated the somatic cell. She was the first-ever mammal to be cloned from an adult somatic cell.
+      |
+      .uk-width-medium-4-10
+         figure
+            canvas#canvas.uk-responsive-width(width="500px", height="600px",style='background-color:#FFFFFF;')
+         figure
+            p Watch these videos of enucleation and nuclear transfer.
+            video.uk-responsive-width(controls)
+               source(src='videos/enucleation.mp4')
+               source(src='videos/enucleation.ogv')
+            video.uk-responsive-width(controls)
+               source(src='videos/transfer.mp4')
+               source(src='videos/transfer.ogv')
+   +pod('How does SCNT differ from the natural way of making an embryo?')
+      |
+      .uk-width-medium-6-10
+         p
+            | Natural fertilization, where egg and sperm join, and SCNT both make the same thing: a dividing ball of cells, called an embryo. So what exactly is the difference between the two?
+         |
+         |
+         |
+         p
+            | An embryo&apos;s cells all have two complete sets of chromosomes. The difference between fertilization and SCNT lies in where those two sets come from.
+         |
+         |
+         |
+         p
+            | In fertilization, the sperm and egg have one set of chromosomes each. When the sperm and egg join, they grow into an embryo with two sets&mdash;one from the father&apos;s sperm and one from the mother&apos;s egg.
+         |
+         |
+         |
+         p
+            | In SCNT, the egg cell&apos;s single set of chromosomes is removed. It is replaced by the nucleus from a somatic cell, which already contains two complete sets of chromosomes. So, in the resulting embryo, both sets of chromosomes come from the somatic cell.
+      |
+      .uk-width-medium-4-10
+         script(type='text/javascript').
+            AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0','width','350','height','420','src','scnt','quality','high','pluginspage','http://www.macromedia.com/go/getflashplayer','movie','scnt' ); //end AC code
+         noscript
+            p Javascript is required to view this content.
+   +pod('Is cloning an organism the same as cloning a gene?')
+      |
+      .uk-width-medium-6-10
+         p
+            | You may have heard about researchers cloning, or identifying, genes that are responsible for various medical conditions or traits. What&apos;s the difference?
+         |
+         |
+         p
+            | When scientists clone an organism, they are making an exact genetic copy of the whole organism, as described above.
+         |
+         |
+         p
+            | When scientists clone a gene, they isolate and make exact copies of just one of an organism&apos;s genes. Cloning a gene usually involves copying the DNA sequence of that gene into a smaller, more easily manipulated piece of DNA, such as a plasmid. This process makes it easier to study the function of the individual gene in the laboratory.
+      |
+      .uk-width-medium-4-10
+         figure
+            img.lg-no-shadow(src='images/cloningagene.png', height='340', width='352', alt='cloning a gene')
+            |
+
+block endscripts
+   script(src="/ruffle/ruffle.js")
+   script(src='http://code.createjs.com/easeljs-0.7.0.min.js')
+   script(src='http://code.createjs.com/tweenjs-0.5.0.min.js')
+   script(src='http://code.createjs.com/movieclip-0.7.0.min.js')
+   script(src='twinning.js')
+   script.
+      var canvas, stage, exportRoot;
+      canvas = document.getElementById("canvas");
+      exportRoot = new lib.twinninghtml();
+      stage = new createjs.Stage(canvas);
+      stage.addChild(exportRoot);
+      stage.update();
+      stage.enableMouseOver();
+      createjs.Ticker.setFPS(lib.properties.fps);
+      createjs.Ticker.addEventListener("tick", stage);

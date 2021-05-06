@@ -1,0 +1,53 @@
+extends /shared/layout
+block content
+   +pageTitle
+   .lg-section
+      .uk-container.uk-container-center
+         .uk-grid
+            .uk-width-medium-1-2
+               h2 DNA and Genes
+               p.lg-index-box-text DNA is made of four simple building blocks, yet it contains all of the information necessary to build an organism.
+               .lg-index-items
+                  +index-item('What is DNA?','tour','dna','images/dna.jpg')
+                     p Get to know DNA, the molecule that holds the universal code of life.
+                  +index-item('Build a DNA Molecule','interactive explore','builddna','images/builddna.jpg')
+                     p Find out how the DNA code letters A, C, G, and T make a DNA molecule by building one yourself.
+                  +index-item('What is a gene?','tour','gene','images/gene.jpg')
+                     p Take a look at genes, the instructions for building a body.
+                  +index-item('Anatomy of a Gene','explore','geneanatomy','images/geneanatomy.jpg')
+                     p Introns, exons, and regulatory sequences: Examine the parts of a gene from &quot;start&quot; to &quot;stop.&quot;
+                  +index-item('Things You May Not KNow About DNA','explore','dnathings','images/dnathings.jpg')
+                     p Put an end to these common misconceptions about DNA and Heredity.
+                  p.lg-index-box-text DNA Day is April 25th.  Check out the <a href='http://www.genome.gov/10506367'>NHGRI DNA Day </a> website.
+                     
+               h2 RNA
+               .lg-index-items
+                  +index-item('RNA: The Versatile Molecule','explore','rnamolecule','images/rnamolecule.jpg')
+                     p RNA&apos;s chemical structure gives it the flexibility to take on a variety of shapes and functions.
+                  +index-item('RNA&apos;s Role In The Central Dogma','interactive explore','centraldogma','images/centraldogma.jpg')
+                     p Learn the essential roles of the three most plentiful types of RNA messenger, transfer, and ribosomal in the processes of transcription and translation.
+                  +index-item('Beyond the Central Dogma','learn more','beyond','images/beyond.jpg')
+                     p Learn about some of the less-known roles of RNA.
+                        
+            .uk-width-medium-1-2
+               h2 The Central Dogma
+               p.lg-index-box-text The central dogma of molecular biology explains that DNA codes for RNA, which codes for proteins. DNA is the molecule of heredity that passes from parents to offspring. It contains the instructions for building proteins, which make up the structure of the body and carry out most of its functions.
+               .lg-index-items
+                  +index-item('Transcribe and Translate a Gene','interactive explore','transcribe','images/transcribe.jpg')
+                     p See how cells &quot;read&quot; the information in a DNA sequence to build a protein, then build one yourself!
+                  +index-item('What makes a firefly glow?','explore','firefly','images/firefly.jpg')
+                     p Walk through protein synthesis with this animated example.
+                  +index-item('How do Cells Read Genes?','learn more','dnacodes','images/dnacodes.jpg')
+                     p See how cells interpret DNA sentences.
+                  
+               h2 Proteins
+               .lg-index-items      
+                  +index-item('What is a Protein?','tour','proteins','images/proteins.jpg')
+                     p Learn how proteins form the foundation for all living things.   
+                  +index-item('Types of Proteins','interactive explore','proteintypes','images/proteintypes.jpg')
+                     p Explore the types of proteins and learn about their varied functions. 
+                  +index-item('Prions','learn more','prions','images/prions.jpg')
+                     p Mad Cow and Creutzfeldt-Jakob are examples of prion diseases. What makes them unusual, and why are they controversial? 
+               
+
+         

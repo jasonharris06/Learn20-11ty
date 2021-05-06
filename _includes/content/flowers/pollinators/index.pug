@@ -1,0 +1,141 @@
+extends /shared/layout
+block headscripts
+  link(href="https://fonts.googleapis.com/css?family=Open+Sans:400i" rel="stylesheet")
+  link(rel="stylesheet" href="flower-anatomy.css")
+  style.
+    .life-cycle-padding {
+      padding: 0 25px;
+    }
+    @media (min-width: 768px) {
+      .life-cycle-padding {
+        padding: 0 150px;
+      }
+    }
+block content
+  +pageTitle
+  +pod('')
+    .uk-width-medium-5-10
+      p
+        | Picture your favorite flower. Is it bright and showy, or more subtle and delicate? While flowers are often pleasant to see and smell, they also have a very important job to do. Flowers are how many plants reproduce.
+      p
+        | Any plant that makes flowers is called an angiosperm. This is an incredibly diverse group! From tiny aquatic plants like duckweed, to garden flowers, fruit trees, and crop plants like cotton and corn, angiosperms are the most common class of plants on earth.
+
+    .uk-width-medium-5-10
+      figure
+        img(src="./images/field.jpg")
+        p Angiosperms are plants that use flowers to reproduce.
+      
+  +pod('Flower Anatomy')
+    .uk-width-medium-5-10
+      #flowerContainer
+        #toggleButton
+        img(id="l13" class="layer" src="./images/FlowerAnatomy13.png")
+        img(id="l12" class="layer" src="./images/FlowerAnatomy12.png")
+        img(id="l11" class="layer" src="./images/FlowerAnatomy11.png")
+        img(id="l10" class="layer" src="./images/FlowerAnatomy10.png")
+        img(id="l9" class="layer" src="./images/FlowerAnatomy9.png")
+        img(id="l8" class="layer" src="./images/FlowerAnatomy8.png")
+        img(id="l7" class="layer" src="./images/FlowerAnatomy7.png")
+        img(id="l6" class="layer" src="./images/FlowerAnatomy6.png")
+        img(id="l5" class="layer" src="./images/FlowerAnatomy5.png")
+        img(id="l4" class="layer" src="./images/FlowerAnatomy4.png")
+        img(id="l3" class="layer" src="./images/FlowerAnatomy3.png")
+        img(id="l2" class="layer" src="./images/FlowerAnatomy2.png")
+        img(id="l1" class="layer" src="./images/FlowerAnatomy1.png")
+        <svg id="labels" viewBox="0 0 1907 1650" xml:space="preserve">
+          <text transform="matrix(1 0 0 1 227.5137 1424.6367)">Sepal</text>
+          <text transform="matrix(1 0 0 1 614.9305 1538.6367)">Pistil</text>
+          <text transform="matrix(1 0 0 1 979.5137 1628.6367)">Stamen</text>
+          <text transform="matrix(1 0 0 1 1495.9742 1538.6367)">Petal</text>
+          <line class="dashedLine" x1="715.4" y1="1449" x2="715.4" y2="1036.8"/>
+          <polyline class="dashedLine" points="944.1,1026.8 1137,1135.1 1137,1543 "/>
+          <path class="solidLine" d="M754.5,1059.3c16.4,9,43.6,4.9,81.6-12.2l38.7-17.4c30.8-13.8,51.2-16.8,61.3-9.1c1.4-12.9,17.3-26.2,47.6-39.8 l38.8-17.4c36.8-16.5,57.5-34.1,62.1-52.8"/>
+          <line class="dashedLine" x1="331" y1="1342" x2="331" y2="1123"/>
+          <line class="dashedLine" x1="1604.2" y1="1449" x2="1604.2" y2="1281"/>
+          <path class="solidLine" d="M498.6,1069.2c20.6,14.4,53.1,12,97.6-7.3l45.3-19.6c36-15.6,60.5-17.4,73.4-5.4c0.6-17.8,18.6-34.4,54.1-49.8 l45.5-19.7c43-18.6,66.6-40.7,70.6-66.2"/>
+        </svg>
+      figure(style="margin-top:0")
+        p(style="padding: 10%")
+          | In this monkeyflower, the pistil and stamens are positioned inside the petals to ensure a bee will rub against them when it searches for food. Other flowers have the same parts, but can look very different. 
+          | It’s all about having the best chance to reproduce.
+    .uk-width-medium-5-10
+      p
+        | Flowers are very important for angiosperms. They produce the seeds that grow into new plants. Each part of a flower has a special job to help achieve this goal.	
+      p
+        | There are four main parts to a flower: the sepals, petals, pistil, and stamen.
+      h3 Protect
+      p(style="margin-top: -10px;")
+        | The sepals protect the other flower parts. Often, they look like tough green leaves, but they can be other colors. Before a flower blooms, the sepals surround the bud. After it blooms, they are underneath the petals.
+      h3 Attract
+      p(style="margin-top: -10px;")
+        | The petals of a flower give it its unique shape, color, and smell. It’s their job to attract pollinators, like insects and hummingbirds, to the flower.
+      h3 Reproduce
+      p(style="margin-top: -10px;")
+        | Inside the sepals and petals are the reproductive parts of the flower, the stamen and pistil. 
+        br
+        br
+      p
+        | The stamen is the male part of the flower. It has two parts. At the top of the stamen is the anther, where pollen grains are made. Pollen contains the male reproductive cells. The stalk that supports the anther is the filament.
+      p
+        | The pistil is the female part of the flower. At its base is the ovary, which contains the female reproductive cells. At the top of the pistil is the stigma – a sticky area that catches pollen grains. Between the ovary and stigma is the style.
+      p
+        | A single flower can have both male and female parts, or it may have only male or only female parts.
+
+  article.lg-pod.lg-section
+    .lg-section.lg-pod-title
+      .uk-container.uk-container-center
+        h2 Life Cycle of a Flowering Plant
+    .uk-container.uk-container-center.life-cycle-padding
+      div(style="padding-top:97.86%; position:relative; overflow:hidden;")
+        #controlledWidth.uk-width-1-1(style="position:absolute; top:0;")
+          div(id="lifecycleofafloweringplant_hype_container" style="margin:auto; position:relative; width:1400px; height:1370px; overflow:hidden; transform-origin:top left;" aria-live="polite")
+            script(type="text/javascript" charset="utf-8" src="LifeCycleofaFloweringPlant.hyperesources/lifecycleofafloweringplant_hype_generated_script.js?49834")
+        
+  +pod('Pollinators Help Increase Diversity')
+    .uk-width-medium-5-10
+      figure
+        img.lg-no-shadow(src='images/HibiscusPollination.jpg' alt='Hibiscus Pollination')
+        p Hibiscus flowers can be either self-pollinated or cross-pollinated.
+      
+      +well
+        h3 Related Content
+        p
+          | To learn more about how flower and pollinator relationships increase biodiversity, visit 
+          a(href="https://learn.genetics.utah.edu/content/flowers/diversity/") Why Flowering Plants are So Diverse
+          | .
+
+    .uk-width-medium-5-10
+      p
+        | Pollination is a very important part of the angiosperm life cycle. It can happen two different ways.
+      p
+        | Self-pollination is when pollen moves from one flower to another on the same plant, or even from an anther to a stigma on the same flower. Self-pollination has the advantage of occurring easily – plants need little or no outside help to move the pollen. But, any new plants produced are genetically identical to the parent plant. If something bad happens, like a drought, the identical plants have a reduced chance for survival.
+      p
+        | Cross-pollination occurs when pollen, and thus genetic information, is transferred from one plant to another. It relies heavily on outside help from pollinators. Birds, bees, and butterflies are some of the best-known pollinators, but they’re not the only ones. Ants, beetles, moths, bats, and even non-living factors like water and wind can also do the job.
+      p
+        | Relying on outside help is in some ways more risky compared to the sure thing of self-pollination. But, it’s estimated pollinators assist about 80 percent of flowering plants with reproduction. Sometimes, plants even block fertilization from their own pollen, and flowers often have special traits to attract specific pollinators.
+      p
+        | What makes cross-pollination so important? It allows two parent plants to combine their genetic information. Their offspring may inherit desirable traits from both parents, or have fewer undesirable ones. If the offspring are hardier, or at least different from their parents, the chance of some plants in the group surviving an event like a drought and continuing to reproduce increases.
+      p
+        | The relationship of angiosperms and pollinators is unique in the plant world, and it’s helped them become very successful. The genetic diversity supported by cross-pollination is why flowering plants live in almost all the Earth’s habitats, from deserts like Death Valley to ponds and oceans, and many places in between. 
+
+block append endscripts
+  script.
+    $(document).ready(function() {
+      $('#toggleButton').click(function() {
+        $('#flowerContainer').toggleClass('expanded');
+      });
+      
+      // ----- hype piece ----- //
+      
+      var container = document.getElementById('controlledWidth');
+      var item = document.getElementById('lifecycleofafloweringplant_hype_container');
+
+      function updateItemWidth () {
+         var pad = parseInt(window.getComputedStyle(container).paddingLeft);
+         var newScale = (container.offsetWidth - pad) / 1400;
+         item.style.transform = "scale(" + newScale + "," + newScale + ")";
+      };
+
+      updateItemWidth();
+      window.addEventListener('resize', updateItemWidth);
+    });

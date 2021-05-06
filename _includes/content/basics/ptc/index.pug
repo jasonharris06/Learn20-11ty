@@ -1,0 +1,146 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-6-10
+         p
+            | In 1931, a chemist named Arthur Fox was pouring some powdered PTC into a bottle. When some of the powder accidentally blew into the air,
+            | a colleague standing nearby complained that the dust tasted bitter. Fox tasted nothing at all. Curious how they could be tasting the chemical
+            | differently, they tasted it again. The results were the same. Fox had his friends and family try the chemical then describe how it tasted.
+            | Some people tasted nothing. Some found it intensely bitter, and still others thought it tasted only slightly bitter.
+         br   
+         figure
+            img(src='images/bitterfood.jpg', alt='Bitter food, coffee and dark chocolate')
+            p Dark chocolate and coffee are common bitter tasting foods.
+      .uk-width-medium-4-10
+         figure
+            img(src='images/ptc.JPG', alt='PTC Paper')
+            p PTC paper is used to test whether a person is a "taster", "non-taster", or somewhere in between.
+            p The ratio of tasters to non-tasters varies between populations, but every group has some tasters and some non-tasters.  On average, 75% of people can taste PTC, while 25% cannot.
+            
+   +pod('The PTC Gene')
+      |    
+      .uk-width-medium-5-10
+         figure
+            img.lg-no-shadow(src='images/taste.png', alt='how taste works')
+      |    
+      .uk-width-medium-5-10
+         p
+            | Soon after its discovery, geneticists determined that there is an inherited component that influences how we
+            | taste PTC. Today we know that the ability to taste PTC (or not) is conveyed by a single gene that codes for
+            | a taste receptor on the tongue. The PTC gene, TAS2R38, was discovered in 2003.
+         |       
+         p
+            | There are two common forms (or alleles) of the PTC gene, and at least five rare forms. One of the common forms
+            | is a tasting allele, and the other is a non-tasting allele. Each allele codes for a bitter taste receptor protein
+            | with a slightly different shape. The shape of the receptor protein determines how strongly it can bind to PTC.
+            | Since all people have two copies of every gene, combinations of the bitter taste gene variants determine whether
+            | someone finds PTC intensely bitter, somewhat bitter, or without taste at all.
+         |  
+         p
+   +pod('Natural Selection At Work')
+      |    
+      .uk-width-medium-5-10
+         figure.uk-text-center
+            img.lg-no-shadow(src='images/deer.jpg', alt='deer')   
+            p Plants are much more likely than animals to contain toxins. Because avoiding bitter plants would severely limit their food sources, strict herbivores have fewer bitter taste genes than omnivores or carnivores. Instead, animals that graze on plants have a high tolerance to toxins. Grazers have large livers that are able to break down toxic compounds
+              
+         figure.uk-text-center
+            img.lg-no-shadow(src='images/ptc-structure.svg', alt='PTC Structure')      
+            p PTC stands for phenylthiocarbamide. Also known as phenylthiourea, the chemical structure of PTC resembles toxic alkaloids found in some poisonous plants.
+      |    
+      .uk-width-medium-5-10
+         p
+            | Although PTC is not found in nature, the ability to taste it correlates strongly with the ability to taste other
+            | bitter substances that do occur naturally, many of which are toxins.
+         |       
+         p
+            | Plants produce a variety of toxic compounds in order to protect themselves from being eaten. The ability to
+            | discern bitter tastes evolved as a mechanism to prevent early humans from eating poisonous plants. Humans have
+            | about 30 genes that code for bitter taste receptors. Each receptor can interact with several compounds, allowing
+            | people to taste a wide variety of bitter substances.
+         |  
+         |       
+         .clear
+         |       
+         .mediaSunk
+            p.caption Dr. Steve Wooding talks about the evolutionary importance of bitter taste.
+            |          
+            audio(controls='controls')
+               source(src='AudioClips/evolution.mp3')
+   +pod('To Taste Or Not To Taste')
+      |    
+      .uk-width-medium-5-10
+         p
+            | If the ability to taste bitter compounds conveys a selective advantage, then shouldn&apos;t non-tasters have died off long ago?
+            | Why do so many people still carry the non-tasting PTC variant? Some scientists believe that non-tasters of PTC can taste
+            | another bitter compound. This scenario would give the greatest selective advantage to heterozygotes, or people who carry
+            | one tasting allele and one non-tasting allele.
+      .uk-width-medium-5-10
+         figure.uk-text-center
+            img.lg-no-shadow(src='images/Pedigree.jpg', alt='pedigree')
+            p
+               | The ability to taste PTC shows a dominant pattern of inheritance.
+               | A single copy of a tasting allele (T) conveys the ability to taste PTC. Non-tasters have two copies of a non-tasting allele (t).
+   +pod('Not So Simple After All')
+      |       
+      .uk-width-medium-4-10
+         figure.uk-text-center
+            img.lg-no-shadow(src='images/chimp.jpg', alt='chimp')
+            p Curiously, there are also tasting and non-tasting chimpanzees. Unlike non-tasting humans, chimps that cannot taste PTC appear to lack functional PTC receptors.
+
+      .uk-width-medium-6-10
+         p
+            | PTC sensitivity is often used as an example of a simple Mendelian trait with dominant inheritance. However, tasters vary
+            | greatly in their sensitivity to PTC. And while the PTC gene has about 85% of the total influence over whether someone is a
+            | taster or a non-taster, there are many other things that affect PTC tasting ability. Having a dry mouth may make it more
+            | difficult to taste PTC. What you ate or drank before sampling PTC paper may also affect your tasting ability. And an
+            | individual&apos;s sensitivity may change over time. Some people may find that they can taste PTC on some days, but not on others.
+       
+         .mediaSunk
+            p.caption Dr. Steve Wooding talks about PTC testing in chimpanzees.
+            |          
+            audio(controls='controls')
+               source(src='AudioClips/chimps.mp3')
+      .uk-width-medium-1-2
+         figure.uk-text-center
+            img.lg-no-shadow(src='images/toxicPlant1.jpg', alt='castor tree')
+            p.
+               The biological warfare agent ricin comes from the bean of the Castor tree. A scant handful of castor beans 
+               contains enough ricin to deliver a toxic dose.
+      .uk-width-medium-1-2
+         figure.uk-text-center
+            img.lg-no-shadow(src='images/toxicPlant2.jpg', alt='belladonna')
+            p.
+               The toxic alkaloid atropine comes from the highly poisonous Deadly nightshade. The common name belladonna 
+               (Italian for &quot;beautiful lady&quot;) came about during the Renaissance. Women placed atropine-containing drops 
+               in their eyes to dilate their pupils, giving them a dreamy look that was believed to be attractive. Tragically, 
+               many of these women later became blind.
+   +pod('Potential Health Applications')
+      |    
+      .uk-width-medium-5-10
+         figure.uk-text-center
+            img.lg-no-shadow(src='images/health.jpg', height='201', width='368', alt='tobacco and broccoli')  
+            p PTC tasters may be more sensitive than non-tasters to compounds in tobacco and vegetables in the cabbage family.
+      .uk-width-medium-5-10
+         p
+            | Studies indicate that individuals with the &quot;strong tasters&quot; PTC gene variant were less likely to be smokers. This may
+            | indicate that people who find PTC bitter are more likely than non-tasters to find the taste of cigarettes bitter and
+            | may be less likely to smoke.
+         p
+            | Other studies suggest that there may be correlations between the ability to taste PTC and preferences for certain types
+            | of foods. This may be why some of us think that broccoli is just too bitter to eat.
+   +references
+            p
+               | Merritt, R., Bierwort, L., Slatko, B., Weiner, M., Weiner, E., Ingram, J. and Sciarra, K. (2008). 
+               a(href='http://www.nabt.org/sites/S1/File/pdf/070-05-0023.pdf ') Tasting Phenylthiocarbamide (PTC): A New Lab With an Old Flavor.
+               |  Am. Biol. Teacher online 70:4.
+            p
+               | Wooding, S. (2006). 
+               a(href='http://www.genetics.org/cgi/content/full/172/4/2015 ') Phenylthiocarbamide: A 75-Year Adventure in Genetics and Natural Selection.
+               |  Genetics 172 (4): 2015-2023.
+               
+
+   +bottom-menu("",'hhmi')
+   
+   

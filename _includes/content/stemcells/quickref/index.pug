@@ -1,0 +1,64 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-1-1
+         p Are you confused about all the different types of stem cells? Read on to learn where different types of stem cells come from, what their potential is for use in therapy, and why some types of stem cells are shrouded in controversy.
+         p Researchers are working on new ways to use stem cells to cure diseases and heal injuries.
+            a(href='/content/stemcells/scfuture/')  Learn more about unlocking stem cell potential.
+   +pod('Somatic Stem Cells')
+      .uk-width-medium-6-10
+         figure
+            img.lg-no-shadow(src='somaticstemcells.jpg', alt='Somatic Stem Cells')
+      .uk-width-medium-4-10
+         p Somatic stem cells (also called adult stem cells) exist naturally in the body. They are important for growth, healing, and replacing cells that are lost through daily wear and tear.
+         h3 Potential as therapy
+         p Stem cells from the blood and bone marrow are routinely used as a treatment for blood-related diseases. However, under natural circumstances somatic stem cells can become only a subset of related cell types. Bone marrow stem cells, for example,  differentiate primarily into blood cells. This partial differentiation can be an advantage when you want to produce blood cells; but it is a disadvantage if you&apos;re interested in producing an unrelated cell type.
+         h3 Special considerations
+         p Most types of somatic stem cells are present in low abundance and are difficult to isolate and grow in culture. Isolation of some types could cause considerable tissue or organ damage, as in the heart or brain. Somatic stem cells can be transplanted from donor to patient, but without drugs that suppress the immune system, a patient&apos;s  immune system will recognize transplanted cells as foreign and attack them.
+         h3 Ethical considerations
+         p Therapy involving somatic stem cells is not controversial; however, it is subject to the same ethical considerations that apply to all medical procedures.
+   +pod('Embryonic Stem Cells')
+      .uk-width-medium-4-10
+         p Embryonic stem (ES) cells are formed as a normal part of embryonic development. They can be isolated from an early embryo and grown in a dish.
+         h3 Potential as therapy
+         p ES cells have the potential to become any type of cell in the body, making them a promising source of cells for treating many diseases.
+         h3 Special considerations
+         p Without drugs that suppress the immune system, a patient&apos;s  immune system will recognize transplanted cells as foreign and attack them.
+         h3 Ethical considerations
+         p When scientists isolate human embryonic stem (hES) cells in the lab, they destroy an embryo. The ethical and legal implications of this have made some reluctant to support research involving hES cells. In recent years, some researchers have focused their efforts on creating stem cells that don&apos;t require the destruction of embryos.
+         p Learn more about the controversy behind embryonic stem cells and why new stem-cell technologies may bring it to an end.
+            a(href='../scissues/')  The Stem Cell Debate: Is It Over?
+
+      .uk-width-medium-6-10
+         figure
+            img.lg-no-shadow(src='es-cells.jpg', alt='Creating ES Cells')
+   +pod('Induced Pluripotent Stem Cells')
+      .uk-width-medium-4-10
+         p Induced pluripotent stem (iPS) cells are created artificially in the lab by &quot;reprogramming&quot; a patient&apos;s own cells. iPS cells can be made from readily available cells including fat, skin, and fibroblasts (cells that produce connective tissue).
+         h3 Potential as therapy
+         p Mouse iPS cells can become any cell in the body (or even a whole mouse). Although more analysis is needed, the same appears to be true for human iPS cells, making them a promising source of cells for treating many diseases. Importantly, since iPS cells can be made from a patient&apos;s own cells, there is no danger that their immune system will reject them.
+         h3 Special considerations
+         p iPS cells are much less expensive to create than ES cells generated through therapeutic cloning (another type of patient-specific stem cell; see below). However, because the &quot;reprogramming&quot; process introduces genetic modifications, the safety of using iPS cells in patients is uncertain.
+         h3 Ethical considerations
+         p Therapy involving iPS cells is subject to the same ethical considerations that apply to all medical procedures.
+      .uk-width-medium-6-10
+         figure
+            img.lg-no-shadow(src='ips-cells.jpg', alt='iPS cells')
+   +pod('Therapeutic Cloning')
+
+      .uk-width-medium-6-10
+         figure
+            img.lg-no-shadow(src='therapeutic-cloning.jpg', alt='Embryonic Stem Cell Extraction')
+      .uk-width-medium-4-10
+         p Therapeutic cloning is a method for creating patient-specific embryonic stem (ES) cells.
+         h3 Potential as therapy
+         p Therapeutic cloning can, in theory, generate ES cells with the potential to become any type of cell in the body. In addition, since these cells are made from a patient&apos;s own DNA, there is no danger of rejection by the immune system.
+         h3 Special considerations
+         p In 2013, for the first time, a group of researchers used therapeutic cloning to make ES cells. The donor nucleus came from a child with a rare genetic disorder. However, the cloning process remains time consuming, inefficient, and expensive.
+         h3 Ethical considerations
+         p Therapeutic cloning brings up considerable ethical considerations. It involves creating a clone of a human being and destroying the cloned embryo, and it requires a human egg donor.
+
+         +well
+            | Learn more about somatic cell nuclear transfer:
+            a(href='/content/cloning/clickandclone/')  Click and Clone

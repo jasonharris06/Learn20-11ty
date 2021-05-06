@@ -1,0 +1,44 @@
+extends /shared/layout
+
+block breadcrumb
+   .lg-section
+      .uk-container.uk-container-center
+         ul.uk-breadcrumb.lg-breadcrumb
+            li 
+               a(href='/') Home
+            li
+               span.uk-active #{page.title}
+block content
+   +pageTitle
+   
+   +pod('')
+      .uk-width-medium-1-2
+         p.
+            This site and all of its material, illustrations, and intellectual content is the property of and owned by the 
+            Genetic Science Learning Center at the University of Utah or its licensors and is protected by copyright, 
+            trademark and other laws of the United States and other countries. The Genetic Science Learning Center grants 
+            you a revocable license to download and print hard copy versions of the material contained on the site for your 
+            personal use, provided you do not modify or delete any copyright or other notice that appears on the material 
+            you download or print. This use does not allow publishing the material for the use of others, except as 
+            described below. Except as outlined below, no other use of any of the contents of the site is licensed, 
+            and you agree that you will not make any other use of the material on the site, including but not limited to the 
+            modification, copying, distribution, transmission, performance, broadcast, publication, licensing, transfer or 
+            sale of, or the creation of derivative works from, any of the contents of the site, without permission.
+         p.
+            You are welcome to make standard http links to our site. However, you cannot use inline links to any of the content 
+            of our website, nor may you incorporate into another website or other product or service any intellectual property of 
+            the Genetic Science Learning Center or any of its licensors.
+         p.
+            Educational use of this information for classroom-use purposes is permitted for individual teachers and educators, or 
+            students provided that no fee is charged and credit is attributed to:
+         .uk-text-small Genetic Science Learning Center, University of Utah, http://learn.genetics.utah.edu.
+         p No specific request for permission is needed for this purpose.
+      .uk-width-medium-1-2
+         p.
+            Requests for permission to reproduce or distribute materials found on our website should be sent to:
+         p.uk-text-bold.uk-text-small
+            |GENETIC SCIENCE LEARNING CENTER <br>
+            |PERMISSIONS REQUEST  <br>
+            |515 E 100 S, SUITE 550 <br>
+            |SALT LAKE CITY, UT, 84102-2078 <br>
+         p It may take as long as 4 to 6 weeks for a response.

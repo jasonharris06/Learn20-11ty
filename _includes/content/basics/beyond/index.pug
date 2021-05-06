@@ -1,0 +1,145 @@
+extends /shared/layout
+block content
+  +pageTitle
+  +pod('')
+    .uk-width-medium-6-10
+      p
+        | The central dogma of molecular biology explains that DNA codes for RNA, which codes for proteins. In
+        a(href='../centraldogma/')
+          | The Central
+          | Dogma
+        | , you can learn about the important roles of messenger RNA, transfer RNA and ribosomal RNA in the protein-building process. But RNA
+        |          does more than just build proteins. RNA has many jobs in the cell, including jobs that have been traditionally associated with DNA and
+        |          proteins. Read on to learn about how RNA can carry hereditary information, act as enzymes, and fine-tune protein production. And learn how
+        |          advances in RNA technology are helping investigators study genes, as well as diagnose and treat diseases.
+    .uk-width-medium-4-10
+      figure
+        img.lg-no-shadow(src='images/tmr_rna.jpg', alt='rna types')
+  +pod('RNA Can Carry Genetic Information')
+    .uk-width-medium-6-10
+      figure
+        img.lg-no-shadow(src='images/hiv.jpg', alt='HIV')
+        p HIV, the virus that causes AIDS, carries its genetic information in the form of RNA.
+    .uk-width-medium-4-10
+      p
+        | Most organisms use DNA to store genetic information. The DNA passes from parents to offspring over generations. But some
+        | viruses, including HIV, the virus that causes AIDS, use RNA to carry genetic information. RNA viruses are known as retroviruses.
+      p
+        | RNA has a structure similar to DNA&apos;s; in both molecules, the sequence of bases can code for proteins. RNA was likely the molecule of
+        | heredity in some of the earliest life forms.
+  +pod('RNA Can Build and Break Molecules')
+    .uk-width-medium-6-10
+      p
+        | Enzymes are catalysts: they build and break down molecules at a rate quick enough to sustain life. Scientists used to think that all
+        | enzymes in the cell were proteins. Then it was discovered that some RNA molecules can be enzymes too. So-called ribozymes are rare,
+        | but they play key roles in the cell. In the ribosome, RNA joins amino acids together, allowing cells to build proteins. Some mRNA
+        | molecules contain self-splicing introns, which can break and rejoin the mRNA strand. And a ribozyme in the RNAse P complex activates
+        | tRNA molecules by clipping off their ends.
+
+      p
+        | Ribozymes provide further evidence that RNA may have been the first molecule of life. In a primitive life form, RNA may have both
+        | catalyzed chemical reactions and stored genetic information, functions that were later taken over by DNA and proteins.
+    .uk-width-medium-4-10
+      figure
+        img.lg-no-shadow(src='images/rnasep_web.jpg', alt='RNAse P')
+        p When tRNA is first made, it has a long &quot;tail.&quot; RNAse P is a specialized RNA molecule that wraps around the top of the tRNA molecule and clips off the tail.
+  +pod('RNA Can Silence Genes')
+    .uk-width-medium-4-10
+      p
+        | Some RNA molecules can silence specific genes, turning off the production of proteins
+        | that are not needed at a certain place or time. This job is especially important during
+        | development, when cells begin to differentiate into specific types, such as muscle, skin,
+        | and liver. Each cell type needs only a fraction of its total genes to be active in order to do its job.
+      p
+        | Gene-silencing RNA molecules recognize specific genetic sequences through complementary
+        | base-pairing. These RNA molecules can shut down portions of the genome, turning off protein
+        | production. RNA does this by recruiting proteins to modify histones (or the epigenome).
+        | Modified histones wrap DNA tightly, making it inaccessible to transcription machinery.
+    .uk-width-medium-6-10
+      p.uk-text-small
+        strong RNA interference
+        | . Scientists can use the cell&apos;s gene-silencing machinery to study genes. First, they build a small
+        |          RNA molecule with a nucleotide sequence that matches a specific gene. When the RNA is injected into an embryo, it finds the gene and
+        |          turns it off permanently so that no protein is made from it. By looking at what happens as the organism develops without the gene,
+        |          scientists learn something about the gene&apos;s natural function.
+      img(src='images/rnai.jpg', alt='RNAi')
+      p.uk-text-small
+        | RNA interference is a natural process that cells evolved to destroy RNA-based viruses. Cellular machinery
+        | identifies and cuts double-stranded RNA molecules (1). Then it uses the fragments to find longer complementary RNA strands (3), which it then destroys.
+  +pod('RNA Protects the Genome')
+    .uk-width-medium-6-10
+      p
+        | Some RNAs silence harmful DNA sequences that sit in our genomes as relics of our evolutionary past.
+        | Transposons (&quot;jumping genes&quot;) and the genes of infecting viruses made their way into our ancestors&apos; DNA,
+        | and they continue to be passed from parent to offspring. RNAs inactivate viral genes and transposons,
+        | keeping them from harming us.
+    .uk-width-medium-4-10
+      p
+  +pod('RNA Can Fine-Tune Protein Production')
+    .uk-width-medium-6-10
+      p
+        | A variety of RNA molecules help the cell to fine-tune when, where, and how much of a particular mRNA molecule,
+        | and by extension a particular protein, is made. Regulatory RNAs can act on just about every step of the protein-production
+        | process. Some RNAs (called riboregulators) bind DNA switches to turn genes on and off. Others interact directly with mRNA
+        | molecules to alter splicing, protect mRNA from harm, or cut it to pieces.
+    .uk-width-medium-4-10
+      p
+  +pod('RNA Responds to the Environment')
+    .uk-width-medium-4-10
+      figure
+        img.lg-no-shadow(src='images/riboswitch_web.jpg', alt='riboswitch')
+        p
+          | This mRNA molecule has a riboswitch. When a small molecule binds, the riboswitch folds in a way that
+          | hides the start codon, and no protein is made. When the small molecule is released, the riboswitch changes shape. The
+          | start codon becomes accessible, and protein is made.
+    .uk-width-medium-6-10
+      p
+        | Riboswitches help some cells respond to an external signal, usually a small molecule. Riboswitches are found on large
+        | mRNA molecules, and they fold into intricate shapes. When the small molecule&mdash;such as a metal ion, amino acid, or nucleic
+        | acid&mdash;binds to the riboswitch, it causes the shape of the RNA to change. The shape change affects whether or not the mRNA
+        | is translated into protein.
+      p
+        | In bacteria, riboswitches regulate mRNAs that code for proteins involved in metabolic pathways. The small molecule that
+        | triggers the riboswitch is typically part of the same pathway. So the riboswitch provides feedback to the pathway.
+  +pod('RNA Therapies and Diagnostics')
+    .uk-width-medium-4-10
+      figure
+        img.lg-no-shadow(src='images/syringe.jpg', alt='syringe')
+    .uk-width-medium-6-10
+      p
+        | Scientists are building RNA molecules and using them as tools to diagnose and even treat diseases, including cancer,
+        | diabetes, arthritis, heart disease, brain diseases, and viral infections.
+      p
+        | Scientists can easily design RNA molecules that will attach to a specific nucleotide sequence in a gene or mRNA molecule.
+        | These RNA molecules could someday be used to inactivate a broken disease gene. As a diagnostic tool, RNA molecules can be
+        | designed to identify certain substances in the blood that are only present with a certain disease.
+      p
+        | Misbehaving RNA molecules can also cause diseases, such as Alzheimer&apos;s and other neurodegenerative diseases. The more
+        | we learn about RNA&apos;s role in these diseases, the more prepared we will be to treat them.
+
+
+  +references
+    p
+      | Kawaji, H. and Hayashizaki, Y. (2008). Exploration of small RNAs.
+      em PLoS Genetics
+      | , 4:1, e22.
+
+    p
+      | Wittmann, J. and Jack, H-M (2010). New surprises from the deep&mdash;the family of small regulatory RNAs increases.
+      em The Scientific World Journal
+      | , 10, 1239-1243.
+
+    p
+      | Breaker, R.R. (2008). Complex riboswitches.
+      em Science
+      |  28: 319 p. 1795-1797.
+
+    p
+      | Wapinsky, O. &amp; Chang, H.Y. (2011). Long noncoding RNAs and human disease.
+      em Trends in Cell Biology
+      | , 21(6): 354-361. <a href="http://www.sciencedirect.com/science/article/pii/S0962892411000614">http://www.sciencedirect.com/science/article/pii/S0962892411000614</a>
+
+
+    +bottom-menu("",'sepagosh')
+
+

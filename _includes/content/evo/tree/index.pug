@@ -1,0 +1,68 @@
+extends /shared/layout
+
+block append headscripts
+   link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css')
+   style.
+      /*#vennArea path { stroke: #fff; stroke-width: 7; fill: transparent; mix-blend-mode: multiply; }*/
+      [data-org-type="undefined"] > path { fill: transparent; pointer-events: none; }
+      [data-org-type="archaea"] > path { fill: #DA9BC5; }
+      [data-org-type="plant"] > path { fill: #46B766; }
+      [data-org-type="animal"] > path { fill: #F496AA; }
+      [data-org-type="protist"] > path { fill: #F2DD49; }
+      [data-org-type="bacterium"] > path { fill: #43C5EB; }
+      [data-org-type="fungus"] > path { fill: #F9AE41; }
+
+      [data-org-type="archaea_archaea"] > path { fill: #B251D6; }
+      [data-org-type="archaea_plant"] > path { fill: #117C4B; }
+      [data-org-type="archaea_animal"] > path { fill: #E04FA5; }
+      [data-org-type="archaea_protist"] > path { fill: #D37800; }
+      [data-org-type="archaea_bacterium"] > path { fill: #009DDB; }
+      [data-org-type="archaea_fungus"] > path { fill: #D37800; }
+
+      [data-org-type="plant_plant"] > path { fill: #3C7C35; }
+      [data-org-type="plant_archaea"] > path { fill: #117C4B; }
+      [data-org-type="plant_animal"] > path { fill: #3C7C35; }
+      [data-org-type="plant_protist"] > path { fill: #3F9623; }
+      [data-org-type="plant_bacterium"] > path { fill: #117C4B; }
+      [data-org-type="plant_fungus"] > path { fill: #3F9623; }
+
+      [data-org-type="animal_animal"] > path { fill: #ED1D54; }
+      [data-org-type="animal_archaea"] > path { fill: #E04FA5; }
+      [data-org-type="animal_plant"] > path { fill: #3C7C35; }
+      [data-org-type="animal_protist"] > path { fill: #EF7625; }
+      [data-org-type="animal_bacterium"] > path { fill: #B251D6; }
+      [data-org-type="animal_fungus"] > path { fill: #EA4E00; }
+
+      [data-org-type="protist_protist"] > path { fill: #E8BD0A; }
+      [data-org-type="protist_archaea"] > path { fill: #D37800; }
+      [data-org-type="protist_plant"] > path { fill: #3F9623; }
+      [data-org-type="protist_animal"] > path { fill: #EF7625; }
+      [data-org-type="protist_bacterium"] > path { fill: #0D991D; }
+      [data-org-type="protist_fungus"] > path { fill: #EF7625; }
+
+      [data-org-type="bacterium_bacterium"] > path { fill: #009DDB; }
+      [data-org-type="bacterium_archaea"] > path { fill: #009DDB; }
+      [data-org-type="bacterium_plant"] > path { fill: #117C4B; }
+      [data-org-type="bacterium_animal"] > path { fill: #B251D6; }
+      [data-org-type="bacterium_protist"] > path { fill: #0D991D; }
+      [data-org-type="bacterium_fungus"] > path { fill: #0D991D; }
+
+      [data-org-type="fungus_fungus"] > path { fill: #EF7625; }
+      [data-org-type="fungus_archaea"] > path { fill: #D37800; }
+      [data-org-type="fungus_plant"] > path { fill: #3F9623; }
+      [data-org-type="fungus_animal"] > path { fill: #EA4E00; }
+      [data-org-type="fungus_protist"] > path { fill: #EF7625; }
+      [data-org-type="fungus_bacterium"] > path { fill: #0D991D; }
+
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-1-1
+         include phylogenetic_tree.svg
+
+block append endscripts
+   script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js")
+   script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js")
+   script(type="text/javascript" src="venn.js")
+   script(type="text/javascript" src="tree.js")
+   script(type="text/javascript" src="comparison_data.js")

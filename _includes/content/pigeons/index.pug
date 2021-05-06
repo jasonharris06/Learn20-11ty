@@ -1,0 +1,71 @@
+extends /shared/layout
+block content
+   +pageTitle()(teach="pigeons")
+   .lg-section
+      .uk-container.uk-container-center
+         .uk-grid
+            .uk-width-1-1
+               blockquote
+                  | &quot;Great as are the differences between the breeds of the pigeon, I am fully convinced that the common opinion of naturalists is correct, namely, that all are descended from the rock-pigeon (
+                  em Columba livia
+                  | ).&quot; 
+                  br
+                  div(style='text-align: right;')
+                     | Excerpt from Charles Darwin, 
+                     em On the Origin of Species
+                     |  (1859)
+                  br
+            .uk-width-medium-1-2
+               h2 How Inheritance Works
+               .lg-index-items
+                  +index-item('Pigeonetics','interactive explore','pigeonetics','images/pigeonetics.jpg')
+                     p This game will put your pigeon-breeding skills to the test.
+                  +index-item('Independent Assortment & Probability','learn more','probability','images/probability.jpg')
+                     p Go beyond the Punnett square, and look at Mendel&apos;s Laws of Inheritance from a mathematical perspective.
+                  +index-item('Epistasis','learn more','epistasis','images/epistasis.jpg')
+                     p Some genes mask the effects of others. This page uses an easy-to-understand analogy to explain how.
+                  +index-item('Genetic Linkage','learn more','geneticlinkage','images/geneticlinkage.jpg')
+                     p Genes located near one another on the same chromosome are often inherited together.
+                  +index-item('Sex Linkage','learn more','sexlinkage','images/sexlinkage.jpg')
+                     p For genes on sex chromosomes, inheritance works differently in males and females.
+               h2 Listen
+               .lg-index-items
+                  +index-item('The Music of Pigeonetics','album','music','images/music.jpg')
+                     p Download the music from this site.
+               +well
+                  .uk-text-small
+                     p To make it clear what we&apos;re talking about, we&apos;ve used the following naming conventions:
+                     ul
+                        li Physical characteristics, or phenotypes, are in plain text: crest         
+                        li Gene names are in italics: 
+                           em crest, EphB2
+                        li Allele names are in single quotes: &apos;crest,&apos; &apos;no crest&apos;
+                        li Protein names are in all caps: EPHB2
+               
+            .uk-width-medium-1-2
+               h2 Inherited Characteristics in Pigeons
+               .lg-index-items
+                  +index-item('Why Study Pigeons?','learn more','whypigeons','images/whypigeons.jpg')
+                     p See why pigeons are an ideal animal for studying genetics.
+                  +index-item('Crest','learn more','crest','images/crest.jpg')
+                     p A single gene controls whether pigeons have a crown of feathers around their heads.
+                  +index-item('Foot Feathering','learn more','footfeathering','images/footfeathering.jpg')
+                     p Slipper, Grouse, and Muff describe different types of feathering on the legs and feet.
+                  +index-item('Wing Pattern','learn more','pattern','images/pattern.jpg')
+                     p Pigeons can have 4 different wing patterns: barless, bar, check, and t-check.
+                  +index-item('Major Color Locus','learn more','color','images/color.jpg')
+                     p Three alleles of this sex-linked gene control whether feathers are blue, brown, or ash-red.
+                  +index-item('Spread','learn more','spread','images/spread.jpg')
+                     p The spread allele causes color to be evenly distributed across the body.
+                  +index-item('Recessive Red','learn more','recessivered','images/recessivered.jpg')
+                     p Pigeons with two copies of this allele are colored a uniform shade of red.
+                  +index-item('Dilute','learn more','dilute','images/dilute.jpg')
+                     p This gene affects the intensity of all the feather colors and wing patterns.
+                  +index-item('Inherited Characteristics Gallery','learn more','other','images/other.jpg')
+                     p Learn why these diverse birds inspired Charles Darwin and how they&apos;re still informing evolutionary biologists today.
+               
+                  |         
+            +bottom-menu("credits", 'pigeonshapiro')
+
+
+         

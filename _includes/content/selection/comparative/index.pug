@@ -1,0 +1,108 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   script(src='/Scripts/swfobject_modified.js', type='text/javascript')
+
+   +pod('')
+      .uk-width-medium-6-10
+         p
+            | Rock pocket mice live in the deserts of the American southwest. Ancestral pocket mice had light-colored coats that
+            | blended in with the region&apos;s rocks and sandy soil, keeping the mice hidden from their owl predators. Starting about
+            | 1.7 million years ago, a series of volcanic eruptions spewed out wide trails of black lava that wove right through the
+            | middle of pocket-mouse territory.
+
+         p
+            | Today there are two forms of pocket mice: light-colored mice that live on sandy soil, and dark-colored mice that live on black lava
+            | rock. The dark mice came about through the process of evolution. Naturally occurring mutations to coat-color genes
+            | produced mice with dark fur. On black rocks, dark mice had an advantage over light mice: they were better-hidden from
+            | predators. They survived and reproduced, passing their dark-fur genes to their offspring, which still survive today.
+
+         p
+            | Once a favorable variation occurs, it can quickly become the major form in a population. Each year, mice produce
+            | more offspring than will reach adulthood. Thanks to natural selection, the offspring with favorable characteristics
+            | are more likely to survive and reproduce.
+      |    
+      .uk-width-medium-4-10
+         +miscon("Recessive alleles are weak and they will eventually disappear.","Natural selection maintains favorable alleles regardless of whether they are dominant or recessive. Even when they convey no selective advantage or disadvantage, recessive alleles are maintained in a population.")
+         
+      .uk-width-1-1.uk-text-center
+         object#FlashID(classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000', width='875', height='550')
+            param(name='movie', value='Pocket Mice.swf')
+            | &#x9;&#x9;
+            param(name='quality', value='high')
+            | &#x9;&#x9;
+            param(name='wmode', value='opaque')
+            | &#x9;&#x9;
+            param(name='swfversion', value='6.0.65.0')
+            // This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt.
+            param(name='expressinstall', value='../../../Scripts/expressInstall.swf')
+            // Next object tag is for non-IE browsers. So hide it from IE using IECC.
+            //if !IE
+            | &#x9;&#x9;
+            object(type='application/x-shockwave-flash', data='Pocket Mice.swf', width='875', height='550')
+               // <![endif]
+               param(name='quality', value='high')
+               | &#x9;&#x9;&#x9;
+               param(name='wmode', value='opaque')
+               | &#x9;&#x9;&#x9;
+               param(name='swfversion', value='6.0.65.0')
+               | &#x9;&#x9;&#x9;
+               param(name='expressinstall', value='../../../Scripts/expressInstall.swf')
+               // The browser displays the following alternative content for users with Flash Player 6.0 and older.
+               div
+                  h4 Content on this page requires a newer version of Adobe Flash Player.
+                  | &#x9;&#x9;&#x9;&#x9;
+                  p
+                     a(href='http://www.adobe.com/go/getflashplayer')
+                        img(src='http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif', alt='Get Adobe Flash player', width='112', height='33')
+               //if !IE
+            // <![endif]
+
+   +pod('About the Animation')
+
+      .uk-width-medium-6-10
+         p
+            | In this animation, the coat color that matches the background has just a 10% advantage over its counterpart. In
+            | other words, on a dark background there are 110 surviving dark offspring for every 100 surviving light offspring. A
+            | variation with a mere 10% advantage can grow from a tiny minority to 95% of the population in just a few-hundred years.
+            | Researchers estimate that dark mice on a dark background actually have greater than a 10% advantage. On a mixed
+            | landscape, our animation assumes that neither coat color conveys an advantage. *
+         | &#x9;&#x9;&#x9;
+         p
+            | In our animation, the mouse population always contains both coat-color variations, even if one variation is present at
+            | a very low frequency. So how do these variations come about in the first place, and what are the odds of a favorable mutation occurring?
+         | &#x9;&#x9;&#x9;
+         |          
+         div(style='height: 20px;')
+         |          
+         img(src='cats.jpg', alt='large cats', height='300', width='488')
+      |    
+      .uk-width-medium-4-10
+         figure
+            img.lg-no-shadow(src='mouse-math.png', alt='mouse mutation rates')
+       
+            p
+               | Variations in a gene called MC1R are responsible for producing dark fur in rock pocket mice. Just one copy of the dark
+               | MC1R-gene variant is enough to produce dark fur, while two copies of the light variation produce light fur. Interestingly,
+               | the MC1R gene is the basis of color variations in several other species, including bears, cats, and snow geese.
+            
+   +references
+      p
+         | Carroll, S. B. (2006). The Making of the Fittest: DNA and the Ultimate Forensic Record of Evolution. W. W. Norton &amp; Company, Inc.
+      |         
+      p
+         | Barton, N. H., Briggs, D. E. G., Eisen, J. A., Goldstein, D. B., &amp; Patel, N. H. (2007). Evolution. Cold Spring Harbor Laboratory Press: Cold
+         | Spring Harbor, New York.
+      |         
+      |         
+      p
+         | Carroll, S. (2005). Lecture 1 -- Endless Forms Most Beautiful [Video file]. Evolution: Constant Change and Common Threads. Howard Hughes Medical 
+         | Institute 
+         a(href='http://www.hhmi.org/biointeractive/variation/lectures.html') Holiday Lecture series on Science
+         | .
+   script(type='text/javascript').
+      <!--
+      swfobject.registerObject("FlashID");
+      //-->
+   

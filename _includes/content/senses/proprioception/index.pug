@@ -1,0 +1,52 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('What is proprioception?')
+      .uk-width-medium-6-10
+         figure
+            a(href='proprioception.png' data-uk-lightbox)
+               img(src='proprioception.png', alt='infographic showing different parts of the body involved in proprioception')
+      .uk-width-medium-4-10
+         p.
+            The balance organs in the inner ear are part of a larger sensory system that helps us know where all of the parts of the body are relative to each other, and the orientation of the body relative to gravity. This sense is called proprioception.
+         p.
+            Our proprioception system also takes in information from our eyes, and from receptors in our skin, muscles, and joints that sense stretch, pressure, and movement. The brain processes all of these sensory inputs, giving us a "mind's eye" view of how all of our body parts are positioned and moving through three-dimensional space.
+         +well
+            |  Learn more about some of the sensory components that contribute to proprioception:
+            <br>
+            a(href='/content/senses/touch/') Touch Additional Information
+            <br>
+            a(href='/content/senses/balanceapp/') Balance App
+
+   +pod('Signals in, and signals out')
+      .uk-width-medium-4-10
+         p.
+            Not only does the brain take in information from our sensory systems to understand our environment and our orientation within it, it also sends instructions back out to our muscles.
+         p.
+            To keep our vision clear when the body is moving, the brain uses information from the balance organs to control the muscles around the eyes. This process, known as the vestibulo-ocular reflex, moves the eyes to compensate for the movement of the body or the head. For example, if you rotate your head to the left as you read this, your eyes will automatically track to the right.
+         p.
+            The brain also uses information from the proprioception system to keeps us upright and balanced in dynamic situations. Signals from the brain to the larger muscles of our legs and trunk keep us steady when we're standing on a moving bus or a rocking boat. The brain orchestrates tiny muscle micro-adjustments that keep us moving smoothly when we're walking or running over uneven ground. And it also directs quick balance checks that keep us from falling over when we're pushed or when someone bumps into us.
+         p.
+            Two areas near the base of the brain—the cerebellum and the brainstem—are heavily involved in coordinating proprioception inputs and outputs. Most of the time, we respond without having to think about it, and we are often unaware of these ongoing adjustments.
+      .uk-width-medium-6-10
+         figure
+            img(src="signals.jpg", alt=activities)
+            p Some activities put the proprioception system to the test. Doing them well requires fast and precise coordination between sensory inputs and muscle outputs.
+
+   +pod('Dizziness and motion sickness')
+      .uk-width-medium-6-10
+         p.
+            You've probably spun around until you feel like the ground is moving under your feet. Maybe riding in a boat or a car, or even playing a video game, makes you feel like you're going to lose your lunch. In all of these cases, you can thank your proprioception system for the experience.
+         p.
+            Dizziness is a result of the vestibulo-ocular reflex gone wrong. Normally, inputs from our balance organs direct compensating movements of our eye muscles. Spinning causes the fluid in our balance organs to slosh and swirl, and the sensory cells inside keep signaling even after we stop. Our eyes track back and forth (this is called nystagmus), and for a little while, we can't tell which way is up.
+         p.
+            Motion sickness comes from a mismatch between signals from the balance organs and the eyes. For example, when you read a book in a moving car, signals from your eyes give your brain the impression that you're sitting still, while signals from your inner ear tell your brain that you're moving. For some reason, this sensory disagreement triggers nausea and vomiting—one of life's great cruelties.
+         p.
+            Dizziness, motion sickness, and unsteadiness can also be symptoms of a balance disorder. Since proprioception involves multiple components working together, a breakdown in any number of areas can cause a problem with balance. These include structures of the inner ear, sensory cells in the inner ear, connections to the brain, processing in the brain, outputs from the brain, signal transmission to the muscles, and more.
+      .uk-width-medium-4-10
+         figure
+            img(src="dizzy.jpg", alt=dizzy)
+            p Dancers and figure skaters can train themselves to keep from becoming disoriented when they spin. This involves long-term changes (learning) in the cerebellum.
+            
+   block append endscripts         
+      script(src="/lib/lightbox.js")

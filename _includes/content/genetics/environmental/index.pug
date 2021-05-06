@@ -1,0 +1,80 @@
+extends /shared/layout
+
+block append head
+  style.
+      .lg-hype { padding: 0 0; }
+      @media (min-width: 768px) {
+          .lg-hype { padding: 0 100px; }
+      }
+      @media (min-width: 1220px) {
+          .lg-hype { padding: 0 200px; }
+      }
+
+block content
+    +pageTitle
+    +pod('')
+        .uk-width-1-1
+            p
+                | Your genes hold the basic instructions for your body to grow and function, but they are far from the only thing controlling your traits. Most traits are shaped both by a person’s genes and by environmental factors. Environmental factors include everything outside of DNA that affects your traits. They are very broad and can influence you in many ways, either alone or in combination with genes. This activity explores just a handful of the nearly limitless environmental factors that contribute to each person’s unique blend of traits, health, and identity.
+            p
+                | Select a trait to view the relevant environmental factors. Choose one to learn more.
+    article.lg-pod.lg-section
+        .uk-container.uk-container-center
+            .lg-hype
+                +hype(1680, 1680, 'EnvironmentFactorsFinal.hyperesources/environmentfactorsfinal_hype_generated_script.js?93951', 'environmentfactorsfinal_hype_container')
+    
+    +pod('Environmental Factors Interact with Genes')
+        .uk-width-medium-4-10
+            p
+                | As if the 3 billion bases that make up the human genome weren’t complex enough, environmental factors are practically limitless! This means there are endless combinations of genes and environmental factors contributing to each person’s unique blend of traits, health, and identity.
+            p
+                | Environmental factors often influence traits independently of genes. But not always. Sometimes the environment changes a gene—either its DNA sequence or its activity level. Either of these effects can change the proteins that are made from a gene, which in turn affects traits.
+            p
+                | Some harmful environmental factors can change a gene's nucleotide sequence. For example, UV radiation can break DNA strands. Certain chemicals, like those in plastic or cigarette smoke, change the chemical behavior of DNA bases, which can cause one DNA base to substitute for another. And when a virus infects a cell, it copies its own genetic material right into the host's, sometimes right in the middle of a gene. If a cell accumulates too many of these changes, it can develop into cancer.
+            p
+                | Environmental factors can also change the epigenome—the chemical tags attached to DNA. These tags cause certain genes to become more or less activate, fine-tuning the amount of protein that's made from them. Diet, toxins, stress, and even physical activity all change the epigenome. These types of changes help the body adjust to what's going on in and around it.
+            +well
+                h3 Related Content
+                p
+                    a(href="https://learn.genetics.utah.edu/content/evolution/mutation/") What is Mutation?
+                    br
+                    a(href="https://learn.genetics.utah.edu/content/epigenetics/") Epigenetics
+
+        .uk-width-medium-6-10
+            figure
+                img(src='images/environment-changes.jpg' alt='sunburn/exercise')
+                p 
+                 | UV radiation (left) can make permanent changes to a gene's DNA sequence. Exercise (right) activates genes that promote muscle growth.
+
+    +pod('Environmental Factors Influence One Another')
+        .uk-width-medium-4-10
+            figure
+                img(src="images/new-york.jpg" alt="new york traffic jam")
+                p
+                    | Walking as a mode of transportation can counteract some of the stressful factors of a city environment.
+
+        .uk-width-medium-6-10
+            p
+                | Environmental factors come together in many different combinations, and they often influence one another.
+            p
+                | Imagine a person with a high-pressure job. They may have high levels of stress hormones and little time to eat healthy meals. Together, these factors together can their risk for complex disease. But, maybe that same person has a strong community to help them cope with stress, and they live in a city where they do a lot of walking. These environmental factors could counteract some of the negative ones.
+            p
+                | This is just one of many examples. The interactions between environmental factors can be quite complex.
+    
+    +pod('You Can Control Your Environment... in Some Ways')
+        .uk-width-medium-4-10
+            p
+                | We can control some environmental factors—like diet, sun exposure, and exercise—through our behaviors. But as with our genes, there are plenty of environmental factors that we can’t change.
+            p
+                | The place where we live brings many environmental factors along with it. The type of climate a place has, and whether it’s rural, urban, or something in between influence our traits. Factors like allergens, air quality, and water quality have powerful influences. Where a person lives also influences their access to food, recreational resources, transportation, social support, work and school environments, and medical care.
+            p
+                | Sometimes even a temporary environmental factor can have a long-lasting effect on traits. Early social experiences shape our personalities. Brief exposure to a toxins or disease can have life-long effects. Being temporarily diagnosed with high blood pressure could lead to behavior changes. Even environmental factors from before birth can change traits in the long-term. For example, nutritional deficiencies or cigarette smoking during pregnancy can lead to a child with cleft palate.
+            p
+                | In the end, it’s a mix of things we can and can’t control that determines our traits. As one example, we can’t control the risk for heart disease that comes from genes, nor environmental factors like age and gender. But these factors don’t determine our destiny. Our behaviors play a large part as well: the foods we eat, physical activities we pursue, and decisions about smoking all shape our risk of getting sick.
+
+        .uk-width-medium-6-10
+            figure
+                img(src="images/sugar-cane.jpg" alt="sugar cane field")
+                p
+                    | Many environmental factors are different between rural and urban settings.
+            

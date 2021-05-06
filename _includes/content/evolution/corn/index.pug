@@ -1,0 +1,171 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   //- Flash message
+   +pod('')
+      .uk-width-1-1
+         p.uk-text-center
+                  strong
+                     small
+                        | This page has content that requires the Flash Player plug-in. Unfortunately, we can't do anything on our end to improve your experience with Flash. If you are using an iOS device, please note that these devices do not support Flash. We are slowly working on replacing our popular Flash-based content and will update this content as it becomes available. If you would like to help us as we work on these updates, please consider donating 
+                        a(href="https://umarket.utah.edu/ugive/index.php?gift_id=2787&special=%20Learn.Genetics%20website%20MD11595-40165") here
+                        | .
+                        
+   +pod('')
+      .uk-width-medium-6-10
+         p.
+            The history of modern-day maize begins at the dawn of human agriculture, about 10,000 years ago. Ancient 
+            farmers in what is now Mexico took the first steps in domesticating maize when they simply chose which kernels (seeds) to plant. These 
+            farmers noticed that not all plants were the same. Some plants may have grown larger than others, or maybe some kernels tasted better 
+            or were easier to grind. The farmers saved kernels from plants with desirable characteristics and planted them for the next season&apos;s 
+            harvest. This process is known as selective breeding or artificial selection. Maize cobs became larger over time, with more rows of 
+            kernels, eventually taking on the form of modern maize. 
+         p.
+            The identity of maize&apos;s wild ancestor remained a mystery for many decades. While other grains such as wheat and rice have obvious 
+            wild relatives, there is no wild plant that looks like maize, with soft, starchy kernels arranged along a cob. The abrupt appearance 
+            of maize in the archaeological record baffled scientists. Evolution was generally thought to occur gradually through minor changes. 
+            Why did maize appear so suddenly? 
+         p
+            a(href='../artificial/') See more examples of artificial selection
+         +miscon("Evolution is always slow and gradual.","Minor changes to influential genes can produce rapid evolutionary changes.")
+         div(style='float:right; margin-bottom:20px;')
+      .uk-width-medium-4-10
+         figure
+            img.lg-no-shadow(src='images/CornProgression.jpg', alt='Corn Progression', width='352', height='309')
+            p
+               | Maize cobs uncovered by archaeologists show the evolution of modern maize over  thousands of 
+               | years of selective breeding. Even the oldest archaeological samples bear an unmistakable resemblance to modern maize. 
+               | Photo &copy;  Robert S. Peabody Museum of Archaeology, Phillips Academy, Andover, Massachusetts. All Rights Reserved.
+   +pod('Through Genetic Archaeology We See That Teosinte and Maize are Alike')
+      |    
+      .uk-width-medium-6-10
+         +flash('TeosinteMaizeComparison.swf', 508, 315, true)
+      |    
+      .uk-width-medium-4-10
+         p
+            | Through the study of genetics, we know today that corn&apos;s wild ancestor is a grass called teosinte. Teosinte doesn&apos;t look much like maize, especially when you compare its kernals to those of corn. But at the DNA level, the two are surprisingly alike. They have the same number of chromosomes and a remarkably similar arrangement of genes. In fact, teosinte can cross-breed with modern maize varieties to form maize-teosinte hybrids that can go on to reproduce naturally. 
+         p
+            | Scientists study teosinte-maize hybrids and their offspring through the process of genetic archaeology. This process helps geneticists understand what is happening at the DNA level to make teosinte and maize so different. By combining clues from genetics and the archaeological record, scientists have pieced together much of the story of maize evolution.
+
+         
+   +pod('The Difference Between Teosinte and Maize is About 5 Genes')
+      |    
+      .uk-width-medium-5-10
+         p
+            | One of the first scientists to fully appreciate the close relationship between teosinte and maize was George 
+            | Beadle. In the 1930s, Beadle studied teosinte-maize hybrids and showed that their chromosomes are highly compatible. 
+            | Later, he produced large numbers of teosinte-corn hybrids and observed the characteristics of their offspring. By 
+            | applying basic laws of genetic inheritance, Beadle calculated that only about 5 genes were responsible for the 
+            | most-notable differences between teosinte and a primitive strain of maize.
+         p
+            | Using more-modern techniques, another group of scientists analyzed the DNA from teosinte-maize offspring. They
+            | too noticed that about 5 regions of the genome (which could be single genes or groups of genes) seemed to be
+            | controlling the most-significant differences between teosinte and maize.
+         p
+            | In recent years, geneticists have used advanced molecular-biology tools to pinpoint the roles of some of the
+            | genes with large effects, as well as many other regions across the genome that have had subtle effects on maize
+            | domestication.
+      |    
+      .uk-width-medium-5-10
+         figure
+            img.lg-no-shadow(src='images/MaizeTeosinteCross.jpg', alt='Maize Teosinte Cross', width='508', height='469')
+   
+   +pod('Changes to Single Genes Can Have Dramatic Effects')
+      |    
+      .uk-width-medium-6-10
+         +flash('MajorGenes.swf', 500, 315, true)
+      |    
+      .uk-width-medium-4-10
+         p
+            | The earliest events in maize domestication likely involved small changes to single genes with dramatic effects. We know the events were early because there is little variation in these genes between maize varieties, suggesting that modern varieties are descended from a single ancestor. That the small changes had dramatic effects also explains the sudden appearance of maize in the archaeological record. These examples show us that evolution doesn&apos;t always involve gradual change over time.
+         
+   +pod('Small Changes Add Up Over Time')
+      |    
+      .uk-width-medium-6-10
+         p
+            | Later changes in the evolution of modern maize involved many genes (perhaps thousands) with small effects. These minor changes include the following:
+         ul
+            li Types and amounts of starch production
+            li Ability to grow in different climates and types of soil
+            li Length and number of kernel rows
+            li Kernel size, shape, and color
+            li Resistance to pests
+         p
+            | These examples fit with the traditional view of evolution as gradual change over time. Local groups of farmers
+            | selected for characteristics that they preferred, and that worked best in their particular environment. Over thousands of
+            | years, selective breeding generated the broad diversity of corn varieties that are still grown around the world today.
+      |    
+      .uk-width-medium-4-10
+         figure
+            img.lg-no-shadow(src='images/CornVarieties.jpg', alt='Corn Varieties', width='360', height='231')
+            p
+               | More maize is harvested each year than any other grain. The thousands of maize varieties grown around the world provide food for people and livestock.
+      +references
+         p
+            | Beadle, G. W. (1980). The ancestry of corn. 
+            em Scientific American, 242
+            |  (1), 112-119.
+         |             
+         |             
+         p
+            | Doebley, J. Stec, A., Wendel, J., &amp; Edwards, M. (1990). 
+            a(href='http://www.ncbi.nlm.nih.gov/pmc/articles/PMC55279/?tool=pubmed', style='letter-spacing:0px;')
+               | Genetic
+               | and morphological analysis of a maize-teosinte F2 population: Implications for the origin of maize.
+            |  
+            em
+               | Proceedings of the National Academy of Sciences,
+               | 87
+            | , 9888-9892.
+         |             
+         p
+            | Doebley, J. &amp; Stec, A. (1993). 
+            a(href='http://www.genetics.org/cgi/reprint/134/2/559', style='letter-spacing:0px;')
+               | Inheritance
+               | of the morphological differences between maize and teosinte: comparison of results for two F2 populations.
+            |  
+            em
+               | Genetics,
+               | 134
+            | , 559-570.
+         |             
+         p
+            | Doebley, J., Stec, A. &amp; Hubbard, L (1997). 
+            a(href='http://www.nature.com/doifinder/10.1038/386485a0', style='letter-spacing:0px;')
+               | The evolution
+               | of apical dominance in maize.
+            |  
+            em Nature, 386
+            | , 485-488. (subscription required)
+         |             
+         p
+            | Kane, N. &amp; Rieseberg, L. (2005). Maize genetics: the treasure of the Sierra Madre. 
+            em Current Biology, 15
+            |  (4), R137-R139.
+         |             
+         p
+            | Wang, H., Nussbaum-Wagler, T., Li, B., Zhao, Q., Vigourous, Y., Faller, M., Bomblies-Yant, K., Lukens, L. &amp; Doebley, J. 
+            | (2005). 
+            a(href='http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1464477/?tool=pubmed', style='letter-spacing:0px;')
+               | The origin of the naked
+               | grains of maize.
+            |  
+            em Nature, 436
+            | , 714-719.
+         |             
+         p
+            | Illustrations on this page were based on photographs by Hugh Iltis and John Doebley, available from 
+            | the 
+            a(href='http://teosinte.wisc.edu/images.html') Doebley lab website
+            | .
+         |             
+         p
+            | The archaeological progression of maize photo (Fig. 122 in MacNeish, Richard S. Prehistory of the Tehaucan Valley, V.1 - evolutionary sequence from circa
+            | 5000 BC to circa AD 1500) is re-published here by permission of the Robert S. Peabody Museum of Archaeology.
+   script(type='text/javascript').
+      <!--
+      swfobject.registerObject("FlashID");
+      swfobject.registerObject("FlashID2");
+      //-->
+   

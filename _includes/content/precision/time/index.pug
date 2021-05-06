@@ -1,0 +1,288 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   +pod('')
+      .uk-width-medium-6-10
+         p
+            | Doctors have long observed that their patients vary. They vary in their symptoms, their side effects from medications, and their responses to treatments. In the past, healthcare providers had little insight into what caused these differences, and little ability to predict how each patient would respond. Guidelines for treatment and medication were based on what worked for the average person.
+         |       
+         p
+            | Precision medicine, on the other hand, guides healthcare decisions based on differences that make each person unique. In recent years, advances in multiple areas of research and technology have made it possible for doctors to identify these differences and learn how they impact health and medical treatment. With these advances, precision medicine is reaching a tipping point: some precision medicine approaches are faster and more affordable than conventional approaches, a trend that is predicted to continue.
+      |    
+      .uk-width-medium-4-10
+         figure
+            img(src='images/right-time-1.jpg', alt='Why the Time is Right')
+   | &#x9;&#x9;
+   | &#x9;&#x9;
+   +pod('DNA sequencing technology')
+      .uk-width-medium-6-10
+         p
+            | Modern DNA sequencing tools have made sequencing a genome much faster and less costly than it was even a few years ago. The rate of progress in this field is unparalleled. As an example, let&apos;s compare it to transportation technology. In 1522, it took Magellan&apos;s expedition about 3 years to sail around the globe. 490 years later, a plane traveled around the globe in a record-setting 41 hours 
+            a(href='#1') [1]
+            | , an impressive 640-fold improvement in speed. Meanwhile, the speed of whole-genome sequencing has increased more than 4,000-fold in just 13 years, a rate that has outpaced even computer chip technology 
+            a(href='#2') [2]
+            | .
+         |         
+         p
+            | Just as striking is the plummeting cost of DNA sequencing. The first human genome cost nearly $3 billion; the next few were many million apiece [2]. By 2014, the price had dropped to nearly $1,000 
+            a(href='#3') [3]
+            | -about the same as an MRI scan and other routine medical tests. Prices will likely continue to drop.
+         |         
+         |         
+         p
+            | The increasing speed and falling cost of DNA sequencing mean that each year, researchers are sequencing increasing numbers of genomes. The first human genome, completed in 2001, was a 10-year undertaking. By the end of 2014, the number of sequenced human genomes had grown to an estimated 228,000 
+            a(href='#4') [4]
+            | . For the first time, sample collection with proper informed consent is emerging as a bottleneck in genome research 
+            a(href='#5') [3, 5]
+            | -something that was unimaginable just a few years ago.
+
+      .uk-width-medium-4-10
+         figure
+            img(src='images/right-time-2.jpg', alt='Decrease in Sequencing Cost')
+            |          
+            .uk-text-small
+               | As DNA sequencing costs have plummeted, the number of sequenced genomes has increased dramatically. Cost data is from NHGRI Genome Sequencing Program 
+               a(href='#2') [2]
+               | . Information about genome sequences published prior to 2011 is from 
+               a(href='#14') [14]
+               
+   +pod('How can sequencing data help patients?')
+      .uk-width-medium-4-10              
+         p
+            | Using rapid, inexpensive DNA sequencing, scientists are finally gaining a solid understanding of human genetic variation and how some of those variations impact health. By looking at genomic information from large numbers of people, researchers can start to pick out which genetic variations make one person&apos;s diabetes or heart disease different from another person&apos;s. With this information, doctors will be better able to make more precise diagnoses and offer more targeted treatments.
+    
+         p
+            | With advances in sequencing speed, doctors can make diagnoses faster than ever. In fact, while they are not yet widely available, tools have been developed that can sequence a genome and diagnose a genetic disorder in a day [6]. When an critically ill infant with an unknown, actionable genetic disorder shows up in the emergency room, rapid diagnosis can be the difference between life and death. Similarly, rapid analysis of tumor cells allows doctors to make treatment decisions for advanced cancer patients in time to make a difference.
+            
+      .uk-width-medium-6-10
+         iframe.uk-responsive-width(src="https://player.vimeo.com/video/169129527" width="640" height="360", frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+         figure
+            p Recent innovations in bioinformatics and computer science are making it possible to efficiently store and quickly analyze the huge amounts of data generated by genomic sequencing.
+   +pod('Computer processing and networks')
+
+      .uk-width-medium-6-10
+         p
+            | Improvements in DNA sequencing technology have come alongside innovations in computers, data storage systems, and the global networks that connect computers together. The same networks and tools that connect you to Google and Wikipedia&mdash;and have generally changed the way we communicate with one another&mdash;have also had big impacts on genomics and medicine.
+         |        
+         p
+            | Medical records are moving online, making it easier than ever to store, organize, and analyze health data. And using tools like the Utah Population Database, researchers can now comb through cross-referenced genetic and health information.
+         |         
+         |         
+         p
+            | Publically funded repositories such as GenBank store massive amounts of genomic information that is accessible to anyone. And scientists are adding to this collection at an unprecedented rate. For example, a single sequencing machine working for one year can read the complete genomes of 20,000 people 
+            a(href='#7') [7]
+            | . Modern computer networks are instrumental in helping scientists and medical professionals around the world share and make sense of this information.
+         |         
+         |         
+         h3 How does this help patients?
+         |         
+         |         
+         p
+            | As researchers learn more about the normal functions of genes, they gain insight into what to do when genes function abnormally. Through connected networks, a discovery that&apos;s made in one location can help another patient on the other side of the globe.
+      |    
+      .uk-width-medium-4-10
+         +well
+            | Related Links 
+            br
+            |          
+            a(href='http://www.genomemedicine.com/content/7/1/100') Utah Population Database
+            br
+            |           
+            a(href='http://www.ncbi.nlm.nih.gov/genbank/') GenBank
+         |         
+         figure
+            img(src='images/servers.jpg', alt='Data Centers')
+            |           
+            .uk-text-small
+               | Data centers, accessible from around the world, can store massive amounts of genomic and medical information.
+   +pod('DNA analysis software') 
+      .uk-width-medium-6-10
+         p
+            | Just like online search engines can sort through unimaginable amounts of data, returning meaningful results in mere seconds, tools for DNA analysis can churn through massive quantities of sequence data faster and more effectively than ever before. Computational analyses that a decade ago took months to complete can now be done in a matter of hours 
+            a(href='#9') [9]
+            | .
+         |         
+         p
+            | Though computers and networks have gotten faster, the improvements in DNA analysis software go beyond pure speed, extending to the algorithms that are used to compress and search through data and statistical analysis tools that can highlight meaningful information. As more sequence data is added to our collective knowledge base, researchers gain a better understanding of how information is encoded in DNA. They can then use this information to hone their software tools, making them more precise and better at identifying relationships.
+         |         
+         |         
+         h3 How does this help patients?
+         |         
+         |         
+         p
+            | Analysis tools are becoming much better at solving &quot;needle in a haystack&quot; problems&mdash;or in the case of finding the meaningful DNA variation in a sea of DNA variations, a needle in a stack of needles. Many exceptionally rare diseases are caused by genetic variations in single genes. Sometimes variations, known as de novo mutations, are present in a patient but not in their parents. New software tools, along with newly affordable DNA sequencing technology, are making it practical to pinpoint these mutations 
+            a(href='#10') [10]
+            | . Understanding the genetic basis of these disorders leads to insights into treatments.
+         |         
+         |         
+         p
+            | Software tools are also getting better at sorting out the basis of &quot;complex&quot; diseases, such as diabetes and cancer, that are influenced by multiple genetic variations and interactions with the environment. Understanding the effects of multiple genetic variations, each of which may have a subtle effect across a population, typically requires genomic data from very large numbers of people, some who have the disease and some who do not 
+            a(href='#11') [e.g., 11]
+            | . Some research groups are also including non-genomic factors, which can be gleaned from electronic medical records, in their analyses to identify disease sub-types and potentially to tailor treatment strategies
+            a(href='#12') [e.g., 12]
+            | .
+         |         
+         |         
+         p
+            | Interestingly, as researchers learn more, so-called complex diseases are beginning to look more like rare diseases. For instance, through molecular diagnostics it is already possible to differentiate among multiple subtypes of breast cancer, and more-recent research suggests that there may be further diversity within these groups 
+            a(href='#13') [13]
+            | . Through diagnosing subtypes of common diseases and predicting patients&apos; responses to medications based on other molecular markers, doctors are becoming better-equipped to tailor treatments to the patient&mdash;like they do with rare diseases.
+         |         
+         |         
+         p
+            | Each genetic discovery, whether the cause of a rare disease or a minor contributor to a common disease, has the potential to lead to new treatments and diagnostics. Researchers around the world are continually adding to our global knowledge base, making it faster and easier to identify the same conditions in other patients.
+      |    
+      .uk-width-medium-4-10
+         .uk-text-small
+            figure
+               img(src='images/right-time-3.jpg', alt='Supercomputers')
+               |           
+               p.uk-text-small
+                  | The growing power of computers to make rapid calculations is speeding up the rate of genome analysis and genetic discovery. According to one analysis 
+                  a(href='#8') [8]
+                  | , an Apple iPhone 6 or a Sony Playstation 2 can complete about as many computations per second as the TMC CM-2 supercomputer of the late 1980s (left), and considerably more than all of the computers that ran the 1969 Apollo mission combined (right). 
+                  br
+                  |   Photo credits: (left) Connection Machine CM-2 and DataVault mass storage device, © Thinking Machines Corporation 1987. Photo: Steve Grohe (courtesy 
+                  a(href="http://www.tamikothiel.com/cm/index.html") Tamiko Thiel
+                  | ). (right) NASA.
+            |         
+            +well
+               p
+                  | Researchers are learning more about the genetic basis of health all the time. 
+                  | On the 10-year anniversary of the completion of the Human Genome project, the National Human Genome Research Institute (NHGRI) published this 
+                  a(href='http://www.genome.gov/27553526') list of the decade&apos;s &quot;quantitative advances,&quot;
+                  |  including numbers of genes associated with diseases.
+               |           
+               |           
+               p
+                  | The NHGRI also helps to maintain the 
+                  a(href='https://www.ebi.ac.uk/gwas/home') GWAS Catalog
+                  | , a database of locations in the human genome that have been associated with human diseases or traits.
+   +pod('Cost savings')
+      .uk-width-medium-6-10
+         p
+            | Not only can precision medicine approaches get effective treatments to patients faster, in some cases they do so at a lower cost than traditional one-size-fits-most approaches.
+         |         
+         p
+            | DNA sequencing and other molecular techniques have been available for decades, but until recently their high cost and labor-intensity have made them impractical and much more costly than the &quot;standard&quot; medical approach. However, costs have come down considerably in recent years, bringing us to a tipping point where the standard trial-and-error approach is potentially more expensive than individualized, precision approaches. With more time, and as tools continue to improve, the cost benefit will likely continue to increase.
+         |         
+         |         
+         p
+            | As precision medicine gains wider acceptance, we will start to see a shift in how medicine is practiced. Precision approaches often require a bigger investment in diagnostics, but these more accurate diagnostics will save treatment-related expenses in the long run. And of course the biggest benefit to patients is that they will be spared some of the side effects and time wasted on ineffective treatments.
+      |    
+      .uk-width-medium-4-10
+         figure
+            img(src='images/piggy_bank.jpg', alt='Piggy Bank')
+   +pod('References')
+      .uk-width-1-1
+         p
+            a(name='1') [1]
+            |  Quick, D. (October 23, 2015). World&apos;s fastest certified civilian jet sets new around-the-world speed record. 
+            em Gizmag
+            | . Retrieved November 2, 2015, from 
+            a(href='http://www.gizmag.com/gulfstream-g650-around-the-world-record/29506/') http://www.gizmag.com/gulfstream-g650-around-the-world-record/29506/.
+         |         
+         p
+            a(name='2') [2]
+            |  National Human Genome Research Institute (updated October 2, 2015). 
+            em DNA sequencing costs: data from the NHGRI Genome Sequencing Program (GSP)
+            | . Retrieved November 2, 2015, from 
+            a(href='http://www.genome.gov/sequencingcosts/') http://www.genome.gov/sequencingcosts/.
+         |         
+         |         
+         p
+            a(name='3') [3]
+            |  McPherson, J.D. (2014). A defining decade in DNA sequencing. 
+            em Nature Methods 11
+            | , 1003-1005. 
+            a(href='http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3106.html') doi: 10.1038/nmeth.3106
+         |         
+         |         
+         p
+            a(name='4') [4]
+            |  Regalado, A. (September 24, 2014). EmTech: Illumina says 228,000 human genomes will be sequenced this year. 
+            em MIT Technology Review
+            | . Retrieved November 2, 2015, from 
+            a(href='http://www.technologyreview.com/news/531091/emtech-illumina-says-228000-human-genomes-will-be-sequenced-this-year/')
+               | http://www.technologyreview.com/news/531091/emtech-illumina-says-228000-human-genomes-will-be-sequenced-this-year/.
+         |         
+         |         
+         p
+            a(name='5') [5]
+            |  Kobold, D. (July 10, 2014). New challenges of next-gen sequencing. 
+            em Mass Genomics: Medical genomics in the post-genome era
+            | . Retrieved November 2, 2015, from 
+            a(href='http://massgenomics.org/2014/07/new-ngs-challenges.html') http://massgenomics.org/2014/07/new-ngs-challenges.html.
+         |         
+         |         
+         p
+            a(name='6') [6]
+            |  Miller, N.A. et al (2015). A 26-hour system of highly sensitive whole genome sequencing for emergency management of genetic diseases. 
+            em Genome Medicine, 7
+            | , 100. 
+            a(href='http://www.genomemedicine.com/content/7/1/100') doi: 10.1186/s13073-015-0221-8
+         |         
+         |         
+         p
+            a(name='7') [7]
+            |  Vance, A. (January 14, 2014). Illumina&apos;s DNA supercomputer ushers in the $1,000 human genome. 
+            em Bloomberg Business
+            | . Retrieved November 2, 2015, from 
+            a(href='http://www.bloomberg.com/bw/articles/2014-01-14/illuminas-dna-supercomputer-ushers-in-the-1-000-human-genome')
+               | http://www.bloomberg.com/bw/articles/2014-01-14/illuminas-dna-supercomputer-ushers-in-the-1-000-human-genome.
+         |         
+         |         
+         p
+            a(name='8') [8]
+            |  Experts Exchange. 
+            em Processing Power Compared
+            | . Retrieved November 2, 2015 from 
+            a(href='http://pages.experts-exchange.com/processing-power-compared/') http://pages.experts-exchange.com/processing-power-compared/.
+         |         
+         |         
+         p
+            a(name='9') [9]
+            |  Kelly, B.J. et al (2015). Churchill: an ultra-fast, deterministic, highly scalable and balanced parallelization strategy for the discovery of human genetic variation in clinical and population-scale genomics. 
+            em Genome Biology, 16
+            | , 6. 
+            a(href='http://www.genomebiology.com/2015/16/1/6') doi: 10.1186/s13059-014-0577-x
+         |         
+         |         
+         p
+            a(name='10') [10]
+            |  Marx, V. (2014). When disease strikes from nowhere. 
+            em Nature, 513
+            | , 445-448. 
+            a(href='http://www.nature.com/nature/journal/v513/n7518/full/513445a.html') doi: 10.1038/513445a
+         |         
+         |         
+         p
+            a(name='11') [11]
+            |  Surakka, I. et al (2015). The impact of low-frequency and rare variants on lipid levels. 
+            em Nature Genetics, 47
+            | , 589-597. 
+            a(href='http://www.nature.com/ng/journal/v47/n6/full/ng.3300.html') doi: 10.1038/ng.3300
+         |         
+         |         
+         p
+            a(name='12') [12]
+            |  Li, L. et al (2015). Identification of type 2 diabetes subgroups through topological analysis of patient similarity. 
+            em Science Translational Medicine, 7
+            | :311, 311ra174. 
+            a(href='http://stm.sciencemag.org/content/7/311/311ra174.uk-width-1-1') doi: 10.1126/scitranslmed.aaa9364
+         |         
+         |         
+         p
+            a(name='13') [13]
+            |  Curtis, C. (2015). Genomic profiling of breast cancers. 
+            em Current Opinion in Obstetrics and Gynecology, 27
+            | (1), 34-39. doi: 10.1097/GCO.0000000000000145
+         |         
+         |         
+         p
+            a(name='14') [14]
+            |  Nature editorial staff (2010). Human genome at ten: The sequence explosion. 
+            em Nature, 464
+            | , 670-671. 
+            a(href='http://www.nature.com/news/2010/100331/full/464670a.html') doi:10.1038/464670a

@@ -1,0 +1,73 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-6-10
+         p
+            | Gene therapy is not a new field; it has been evolving for decades. Despite the best efforts of researchers around the world, however, gene therapy has seen only limited success. Why?
+         p
+            | Gene therapy poses one of the greatest technical challenges in modern medicine. It is very hard to introduce new genes into cells of the body and keep them working. And there are financial concerns: Can a company profit from developing a gene therapy to treat a rare disorder? If not, who will develop and pay for these life-saving treatments?
+         p Let&apos;s look at some of the main challenges in gene therapy.
+      |    
+      .uk-width-medium-4-10
+   +pod('Gene delivery and activation')
+      |    
+      .uk-width-medium-6-10
+         p
+            | For some disorders, gene therapy will work only if we can deliver a normal gene to a large number of cells&mdash;say several million&mdash;in a tissue. And they have to the correct cells, in the correct tissue. Once the gene reaches its destination, it must be activated, or turned on, to make the protein it encodes. And once it&apos;s turned on, it must remain on; cells have a habit of shutting down genes that are too active or exhibiting other unusual behaviors.
+         p
+            | Introducing changes into the wrong cells
+            | Targeting a gene to the correct cells is crucial to the success of any gene therapy treatment. Just as important, though, is making sure that the gene is not incorporated into the wrong cells. Delivering a gene to the wrong tissue would be inefficient, and it could cause health problems for the patient.
+         p
+            | For example, improper targeting could incorporate the therapeutic gene into a patient&apos;s germline, or reproductive cells, which ultimately produce sperm and eggs. Should this happen, the patient would pass the introduced gene to his or her children. The consequences would vary, depending on the gene.
+      |    
+      .uk-width-medium-4-10
+   +pod('Immune response')
+      |    
+      .uk-width-medium-6-10
+         p
+            | Our immune systems are very good at fighting off intruders such as bacteria and viruses. Gene-delivery vectors must be able to avoid the body&apos;s natural surveillance system. An unwelcome immune response could cause serious illness or even death.
+         p
+            | The story of Jesse Gelsinger illustrates this challenge. Gelsinger, who had a rare liver disorder, participated in a 1999 gene therapy trial. He died of complications from an inflammatory response shortly after receiving a dose of experimental adenovirus vector. His death halted all gene therapy trials in the United States for a time, sparking a much-needed discussion on how best to regulate experimental trials and report health problems in volunteer patients.
+         p
+            | One way researchers avoid triggering an immune response is by delivering viruses to cells outside of the patient&apos;s body. Another is to give patients drugs to temporarily suppress the immune system during treatment. Researchers use the lowest dose of virus that is effective, and whenever possible, they use vectors that are less likely to trigger an immune response.
+      |    
+      .uk-width-medium-4-10
+         figure
+            img(src='images/jesse.jpg', alt='Jesse Gelsinger')
+            |          
+            p
+   +pod('Disrupting important genes in target cells')
+      |    
+      .uk-width-medium-6-10
+         p
+            | A good gene therapy is one that will last. Ideally, an introduced gene will continue working for the rest of the patient&apos;s life. For this to happen, the introduced gene must become a permanent part of the target cell&apos;s genome, usually by integrating, or &quot;stitching&quot; itself, into the cell&apos;s own DNA. But what happens if the gene stitches itself into an inappropriate location, disrupting another gene?
+         p
+            | This happened in two gene therapy trials aimed at treating children with X-linked Severe Combined Immune Deficiency (SCID). People with this disorder have virtually no immune protection against bacteria and viruses. To escape infections and illness, they must live in a completely germ-free environment.
+         p
+            | Between 1999 and 2006, researchers tested a gene therapy treatment that would restore the function of a crucial gene, gamma c, in cells of the immune system. The treatment appeared very successful, restoring immune function to most of the children who received it.
+         p
+            | But later, 5 of the children developed leukemia, a blood cancer. Researchers found that the newly transferred gamma c gene had stitched itself into a gene that normally helps regulate the rate at which cells divide. As a result, the cells began to divide out of control, causing leukemia. Doctors treated 4 of the patients successfully with chemotherapy, but the fifth died.
+         p
+            | This unfortunate incident raised important safety concerns, and researchers have since developed safer ways to introduce genes. Some newer vectors have features that target DNA integration to specific &quot;safe&quot; places in the genome where it won&apos;t cause problems. And genes introduced to cells outside of the patient can be tested to see where they integrated, before they are returned to the patient.
+      |    
+      .uk-width-medium-4-10
+         figure
+            img.lg-no-shadow(src='images/bubble-boy.jpg', alt='Bubble Boy')
+
+         figure
+            img.lg-no-shadow(src='images/SCID_success.jpg', alt='SCID')
+   +pod('Commercial viability')
+      .uk-width-medium-6-10
+         p
+            | Many genetic disorders that can potentially be treated with gene therapy are extremely rare, some affecting just one person out of a million. Gene therapy could be life-saving for these patients, but the high cost of developing a treatment makes it an unappealing prospect for pharmaceutical companies.
+         p
+            | Developing a new therapy&mdash;including taking it through the clinical trials necessary for government approval&mdash; is very expensive. With a limited number of patients to recover those expenses from, developers may never earn money from treating such rare genetic disorders. And some patients may never be able to afford them.
+         p
+            | Some diseases that can be treated with gene therapy, such as cancer, are much more common. However, many promising gene therapy approaches are individualized to each patient. For example, a patient&apos;s own cells may be taken out, modified with a therapeutic gene, and returned to the patient. This individualized approach may prove to be very effective, but it&apos;s also costly. It comes at a much higher price than drugs that can be manufactured in bulk, which can quickly recover the cost of their development.
+         p
+            | If drug companies find a gene therapy treatment too unprofitable, who will develop it? Is it right to make expensive therapies available only to the wealthy? How can we bring gene therapy to everyone who needs it?
+      |    
+      .uk-width-medium-4-10
+   
+   

@@ -1,0 +1,88 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-5-10
+         p
+            | Linked genes sit close together on a chromosome, making them likely to be inherited together (left).
+         p Genes on separate chromosomes are never linked (center).
+         p
+            | But not all genes on a chromosome are linked. Genes that are farther away from each other are more likely to be separated during a process called homologous recombination (right).
+      |     
+      .uk-width-medium-5-10
+         img(src='images/linkage-1.jpg', alt='Genetic Linkage', width='487', height='169')
+         |         
+         +well
+            | Genetic linkage is different from sex linkage. 
+            a(href='../sexlinkage/') Learn about sex linkage.
+   +pod('Homologous Chromosomes')
+      |     
+      .uk-width-medium-5-10
+         img(src='images/linkage-2.jpg', alt='Homologous Chromosomes', width='457', height='384')
+      |     
+      .uk-width-medium-5-10
+         p
+            | A chromosome is a single piece of DNA. Genes are segments of DNA arranged along a chromosome. A single chromosome can have hundreds or even thousands of genes.
+         p
+            | Most sexually reproducing organisms, like people and pigeons, have two copies of each chromosome, called homologous chromosomes. Humans have 23 chromosome pairs, or 46 chromosomes in all.
+         p
+            | Homologous chromosomes have the same genes arranged in the same order, but they have slightly different DNA sequences. Different versions of the same gene are called alleles (uh-LEELZ); homologous chromosomes often contain different alleles.
+         p
+            | Alleles are important because they account for the differences in inherited characteristics from one individual to another. For example, different alleles of the same genes can make our eyes blue, green, or brown.
+   +pod('Homologous Recombination')
+      |     
+      .uk-width-medium-5-10
+         p
+            | During the formation of gametes (eggs and sperm in people and pigeons), chromosomes go through a process called homologous recombination.
+         p
+            | First, the cell makes an identical copy of each chromosome. Identical copies are called sister chromatids, and they remain attached to one another for now.
+         p
+            | Next, all four copies&mdash;two identical copies of two homologous chromosome&mdash;line up next to one another, and they swap large sections of DNA. The DNA strands actually break and rejoin. After recombination, the chromosomes still have the same genes arranged in the same order, but the alleles have been rearranged.
+         p
+            | Finally, the chromosomes are divvied up so that each gamete gets just one copy of each chromosome. While each gamete ends up with one copy of every gene, they have different combinations of alleles for those genes.
+         p
+            | Recombination increases genetic diversity. The location of the chromosome break points is random (or nearly so), and each gamete receives a random copy of each recombined chromosome. All of this jumbling and mixing allows for a nearly infinite number of allele combinations.
+      |     
+      .uk-width-medium-5-10
+         img(src='images/linkage-3.jpg', alt='Homologous Recombination', width='487', height='426')
+         |  
+         br
+         |         
+         .uk-text-small
+            | Recombination rearranges chromosomes, generating new allele combinations. While just one homologous chromosome pair is shown above, the same process happens for all of them.
+   +pod('Genetic Linkage')
+      |     
+      .uk-width-medium-5-10
+         img(src='images/linkage-4.jpg', alt='Genetic Linkage', width='488', height='658')
+      |     
+      .uk-width-medium-5-10
+         p To see how linkage works, let&apos;s look at some specific genes. 
+         p
+            | Two of the genes (1 and 2) are relatively far apart (top illustration). Each gene comes in two different versions, or alleles: A and B.
+         p
+            | Since Gene 1 and Gene 2 are far apart, it is likely that a recombination event will happen between them. When this happens, the gametes end up with new allele combinations that were not present in the parent. That is, 1-B with 2-A, and 1-A with 2-B.
+         p
+            | Gene 3 and Gene 4 (middle illustration) also come in two alleles each (A and B). But because these genes sit much closer together, it is less likely that a recombination event will happen between them. (Remember, the location of chromosome break points during recombination is random). Most of the time, 3-A and 4-A will stay together, and 3-B and 4-B will stay together. Genes 3 and 4 are linked.
+         |          
+         p
+            | Genes on separate chromosomes, such as Gene 5 and Gene 6, are never linked (bottom illustration). Each gamete gets a single copy, determined at random, of each chromosome. Because there is nothing holding them together, the alleles can pass to gametes in any combination.
+   +pod('Genetic Mapping Using Linkage')
+      |     
+      .uk-width-medium-5-10
+         p
+            | Researchers can use linkage to find the location of a gene on a chromosome. By looking at how often different genes are inherited together, researchers can create maps of the relative distances between them.
+         p
+            | Since each gamete gets one of two possible versions of a chromosome, by random chance, two unlinked genes will be inherited together 50% of the time. Unlinked genes may be on different chromosomes, or  so far apart on the same chromosome that they are often separated by recombination.
+         p
+            | If two genes are inherited together more than 50% of the time, this is evidence that they are linked on the same chromosome. The closer together the genes are, the more frequently they will be inherited together.
+         p
+            | When scientists discover a new mutation, looking for linkage to other genes can determine the location of the mutation on a chromosome and help identify the mutated gene.
+      |     
+      .uk-width-medium-5-10
+         img(src='images/linkage-5.jpg', alt='Genetic Mapping', width='244', height='234')
+         br
+         |         
+         .uk-text-small
+            | Gene 3 is more closely linked to Gene 2 than to Gene 4. Gene 1 and Gene 3 are not linked, but by chance they will still be inherited together 50% of the time, the same as if they were on separate chromosomes.
+   
+   

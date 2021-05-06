@@ -1,0 +1,216 @@
+extends /shared/layout
+block append head
+   style.
+      .timeBox {
+        background-image: url(grid.png);
+        width: 880px;
+        position: relative;
+      }
+      .timeBox > .card {
+        display: inline-block;
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 10px;
+        margin: 10px;
+        width: 350px;
+        background-color: #fff;
+        box-shadow: 0 0 7px #000;
+        border-radius: 2px;
+        padding: 10px 15px 10px 40px;
+      }
+      .timeBox .topShadow {
+         position: absolute;
+         width: 100%;
+         height: 20px;
+         background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
+      }
+      .timeBox .header {
+        color: #424242;
+        font-family: "Museo Slab";
+        font-style: italic;
+        font-size: 32px;
+        font-weight: 300;
+        line-height: normal;
+        text-transform: uppercase;
+        /* padding: 0 10px 0 35px; */
+      }
+      .timeBox ul {
+        font-size: 12px;
+        margin: 10px 0 0 0;
+        padding: 0 0 0 16px;
+      }
+      .timeBox hr {
+        margin: 10px 0 0 -30px;
+        border-color: #bdbdbd;
+      }
+      #HEBlock {
+         width: 52px;
+         height: 29px;
+         background-color: #000;
+         opacity: 0.5;
+         position: absolute;
+         right: 0px;
+         bottom: 0px;
+      }
+      #CivBlock {
+         width: 10px;
+         height: 10px;
+         background-color: #000;
+         opacity: 0.75;
+         position: absolute;
+         right: 0px;
+         bottom: 0px;
+      }
+      .line {
+         width: 1px;
+         top: 29px;
+         background-color: #000;
+         position: absolute;
+      }
+      .label {
+         position: absolute;
+         font-size: 12px;
+      }
+      #HELine {
+         right: 52px;
+         height: 20px;
+      }
+      #CivLine {
+         right: 10px;
+         height: 45px;
+      }
+      #PresentLine {
+         right: 0px;
+         height: 70px;
+      }
+      #HELabel {
+         top: 46px;
+         right: 23px;
+      }
+      #CivLabel {
+         top: 71px;
+         right: 4px;
+      }
+      #PresentLabel {
+         top: 95px;
+         right: -7px;
+      }
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-3-4.uk-container-center
+         p.
+            Scroll through the page below to get an idea of the immensity of geologic time. 
+   .lg-section
+      .uk-container.uk-container-center
+         .timeBox(style='background-color:#fff; background-image:url(legend.gif); width:281px; height:71px; margin-bottom:20px;')
+         .timeBox(style='background-color:#DF6079; height:45455px;')
+            .card
+               .header Precambrian
+               hr
+               ul
+                  li First rocks
+                  li Oldest fossils of bacteria
+                  li Oldest fossils of eukaryotic cells
+                  li Algae and soft-bodied bilateral animals form
+         .timeBox(style='background-color:#809F73; height:610px;')
+            .topShadow
+            .card
+               .header Cambrian
+               hr
+               ul
+                  li Animals diversify; some develop shells, external skeletons or notochords
+         .timeBox(style='background-color:#009980; height:507px;')
+            .topShadow
+            .card
+               .header Ordovician
+               hr
+               ul
+                  li Algae multiply
+                  li First fish
+                  li Plants and arthropods colonize land
+         .timeBox(style='background-color:#AFD5C0; height:307px;')
+            .topShadow
+            .card
+               .header Silurian
+               hr
+               ul
+                  li Vascular plants form and diversify
+         .timeBox(style='background-color:#BF925A; height:645px;')
+            .topShadow
+            .card
+               .header Devonian
+               hr
+               ul
+                  li Diversification of bony fishes
+                  li First amphibians and insects
+         .timeBox(style='background-color:#69A3A3; height:684px;')
+            .topShadow
+            .card
+               .header Carboniferous
+               hr
+               ul
+                  li Forests of giant seed ferns cover the Earth
+                  li Reptiles form; amphibians are widespread
+         .timeBox(style='background-color:#D36247; height:545px;')
+            .topShadow
+            .card
+               .header Permian
+               hr
+               ul
+                  li Reptiles spread
+                  li Origin of most present-day orders of insects
+                  li Mammal-like reptiles form
+         .timeBox(style='background-color:#804E8D; height:584px;')
+            .topShadow
+            .card
+               .header Triassic
+               hr
+               ul
+                  li Cone-bearing plants form
+                  li Dinosaurs spread
+         .timeBox(style='background-color:#81C4DD; height:615px;')
+            .topShadow
+            .card
+               .header Jurassic
+               hr
+               ul
+                  li Dinosaurs and gymnosperm plants continue to diversify and spread
+                  li First birds and mammals form
+         .timeBox(style='background-color:#74AB64; height:915px;')
+            .topShadow
+            .card
+               .header Cretaceous
+               hr
+               ul
+                  li Origin and spread of flowering plants and hardwood trees
+                  li Dinosaurs become extinct
+         .timeBox(style='background-color:#EBA270; height:483px;')
+            .topShadow
+            .card
+               .header Paleogene
+               hr
+               ul
+                  li First primates
+                  li Whales and dolphins return to the sea
+                  li Earliest apes
+         .timeBox(style='background-color:#F7C53E; height:232px;')
+            .topShadow
+            .card
+               .header Neogene
+               hr
+               ul
+                  li Common ancestor to both apes and humans
+                  li Oldest fossils of hominids; walked fully upright
+         .timeBox(style='background-color:#FDF49F; height:29px; margin-bottom: 100px;')
+            .topShadow
+            .card(style="margin-top: 34px;")
+               .header Quaternary
+            #HEBlock
+            #CivBlock
+            #HELine.line
+            #CivLine.line
+            #PresentLine.line
+            #HELabel.label Homo erectus appears
+            #CivLabel.label First civilization arises
+            #PresentLabel.label Present day

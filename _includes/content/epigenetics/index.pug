@@ -1,0 +1,46 @@
+extends /shared/layout
+block content
+   +pageTitle()(teach="epigenetics")
+   .lg-section
+      .uk-container.uk-container-center
+         .uk-grid
+            .uk-width-medium-1-2
+               h2 What is Epigenetics?
+               .lg-index-items
+                  .lg-index-box-text
+                     p.
+                        As an organism grows and develops, carefully orchestrated chemical reactions activate and deactivate parts of 
+                        the genome at strategic times and in specific locations. Epigenetics is the study of these chemical reactions 
+                        and the factors that influence them.
+                  +index-item('The Epigenome at a Glance','video','intro','images/intro.jpg')
+                     p Meet the epigenome and learn how it influences DNA.
+                  +index-item('Gene Control','interactive explore','control','images/control.jpg')
+                     p Change the level of gene expression in a cell with the turn of a dial!
+                  +index-item('The Epigenome Learns From Its Experiences','learn more','memory','images/memory.jpg')
+                     p Epigenetic tags record the gene-regulating signals the cell receives.
+                  +index-item('Epigenetics & Inheritance','learn more','inheritance','images/inheritance.jpg')
+                     p Parents have a role in shaping the epigenomes of their offspring.
+                  +index-item('Genomic Imprinting','learn more','imprinting','images/imprinting.jpg')
+                     p Certain genes are silenced during egg and sperm formation.
+                     
+            .uk-width-medium-1-2
+               h2 Epigenetics &amp; the Environment
+               .lg-index-items
+                  .lg-index-box-text
+                     p.
+                        The epigenome dynamically responds to the environment. Stress, diet, behavior, toxins, and other factors 
+                        regulate gene expression.
+                  +index-item('Insights From Identical Twins','explore','twins','images/twins.jpg')
+                     p Why do identical twins become more different as they age? See how the environment affects the epigenome in a pair of twins over time.
+                  +index-item('Lick Your Rats','interactive explore','rats','images/rats.jpg')
+                     p What kind of mother are you? Care for a rat pup and shape its epigenome.
+                  +index-item('Nutrition & The Epigenome','learn more','nutrition','images/nutrition.jpg')
+                     p What you eat can change your gene expression.
+                  +index-item('Epigenetics & The Human Brain','video','brain','images/brain.jpg')
+                     p Epigenetic mechanisms play an important role both in normal brain function and in mental illness.
+            
+            +bottom-menu("",'sepagosh')
+            .uk-width-1-1
+               a(href='https://learn.genetics.utah.edu/content/epigenetics/credits/') Credits
+         
+   

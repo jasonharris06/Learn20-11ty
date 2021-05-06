@@ -1,0 +1,36 @@
+extends /shared/layout
+block content
+  +pageTitle
+  .lg-section
+    .uk-container.uk-container-center
+      .uk-grid
+        .uk-width-medium-5-10
+          h2 Insect Herbivores Vs. Plants
+          .lg-index-items
+            +index-item('Insect Herbivores & Why They Matter', 'video', 'whytheymatter', 'index/dock_beetle.jpg')
+              p Take a deeper look at the connection between herbivorous insects and the plants they eat. 
+            +index-item('Agriculturally Important Insect Herbivores', 'explore', 'gallery', 'index/spider_mite.jpg')
+              p Explore a gallery of insect herbivores that are agricultural pests.
+            +index-item('Combatting Herbivores In Agriculture', 'learn more', 'combatting', 'index/crop.jpg')
+              p Farmers have developed many methods and tools to keep insect herbivores from eating their crops. 
+            +index-item('How Herbivores Overcome Toxins', 'learn more', 'toxins', 'index/hornworm.jpg')
+              p Many insect herbivores have evolved ways to survive the assault of toxins in plants and synthetic pesticides.
+
+
+        .uk-width-medium-5-10
+          h2 Plants Vs. Insect Herbivores
+          .lg-index-items
+            +index-item('Plant Defenses', 'learn more', 'defenses', 'index/thorns.jpg')
+              p Even though they can't move, plants use many physical and chemical defenses to protect themselves from being eaten by herbivores.
+            +index-item('How Plants Make, Store and Use Toxins', 'learn more', 'planttoxins', 'index/rapeseed.jpg')
+              p Learn how plants produce, store, and use the toxic molecules and proteins that ward off insects and other herbivores.
+            +index-item('Spider Mite Research in the Clark Lab', 'video', 'clark', 'index/clark.jpg')
+              p Plant agriculture is vital for human welfare. The Clark lab is studying how genetic variation can help crop plants like corn fight off spider mites.
+                    //-     +index-item('Research Case Study: Mites Vs Maize', 'video', 'combatting', '/images/placeholder6.jpg')
+                    //-       p Use B73 and B96 maize lines to show how and why B96 is far more resistant to the two-spotted spider mite.
+                    //-     +index-item('Creating More Resistant Crops', 'learn more', '/content/cotton/crop/', '/images/placeholder1.jpg')
+                    //-       p Compare and contrast the traditional and modern methods for making better crop plants. Links to “Crop Improvement Methods” page in Cotton.
+
+      .uk-width-medium-5-10
+        //- !!!!!!!!    TODO:  ADD FUNDING FOR MITES    !!!!!!!! -//
+        +bottom-menu("credits",'nsf-mites')

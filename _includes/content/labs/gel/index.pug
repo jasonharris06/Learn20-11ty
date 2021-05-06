@@ -1,0 +1,35 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+
+   script(src='/Scripts/AC_RunActiveContent.js', type='text/javascript')
+
+   +pod('')
+      .uk-width-medium-1-2
+         p
+            | Have you ever wondered how scientists work with tiny molecules that they can&apos;t see? Here&apos;s
+            | your chance to try it yourself! Sort and measure DNA strands by running your own gel electrophoresis
+            | experiment.
+         br
+      .uk-width-1-1.uk-text-center
+         script(type='text/javascript').
+            AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','921','height','551','src','gel_electrophoresis','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','gel_electrophoresis' ); //end AC code
+         noscript
+            p Javascript is required to view this content.
+         br
+         br
+      .uk-width-medium-1-2
+         +well
+            p See how gel electrophoresis is used in forensics
+            p
+               a(href='/content/science/forensics/') Can DNA Demand a Verdict?
+      .uk-width-medium-1-2
+         +well
+            p Try it Yourself
+            a(href='build_gel_box.pdf') How to Build an Electrophoresis Chamber (PDF)
+            br
+            a(href='electrophoresis/') Colorful Electrophoresis
+
+      +bottom-menu("",'hhmi')
+      script(src="/ruffle/ruffle.js")

@@ -1,0 +1,198 @@
+extends /shared/layout
+block content
+   +pageTitle
+   | @section headlate{
+   style(type='text/css').
+      .psm {
+      margin: 0;
+      padding: 0;
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      font-size: 10px;
+      line-height : 12px;
+      }
+   | }
+   +pod('')
+      .uk-width-medium-6-10
+         p(style='padding-right:10px;')
+            | Mario R. Capecchi, Ph.D., of the University of Utah,
+            | won the 2007 Nobel Prize in Physiology or Medicine. Capecchi shared the prize with Oliver
+            | Smithies of University of North Carolina, Chapel Hill, and Sir Martin Evans of Cardiff University in the UK.
+         |          
+         p
+            | The prize recognized Capecchi&apos;s pioneering work on &quot;knockout mouse&quot; technology, a gene-targeting technique that has revolutionized genetic and biomedical research,
+            | allowing scientists to create animal models for hundreds of human diseases.
+      |    
+      .uk-width-medium-4-10
+         img(src='images/header_title.jpg', width='280', alt='Capecchi\'s Transgenic Technology "Knocks Out" the Nobel Prize;', height='143')
+         | &#x9;&#x9;&#x9;
+         p
+            a(href='http://healthcare.utah.edu/capecchi/') Watch a video
+            |  of The University of Utah Nobel Press Conference.
+   +pod('What&apos;s The Motivation?')
+      |    
+      .uk-width-medium-4-10
+         img(src='images/mario_03_03_03_03.jpg', alt='Mario Capecchi Portrait', width='363', height='404')
+         |        
+         p.caption
+            | As a child, Capecchi wandered homeless in Italy. As a researcher, his first attempts at gene targeting were deemed not ready for funding 
+            | by the National Institutes of Health.  Capecchi is an individual whose personal life proves that while some events are not probable, 
+            | anything is possible. 
+            a(href='capecchi/') Read Mario&apos;s story
+            | .
+      |    
+      .uk-width-medium-6-10
+         p
+            | During the 1980s, Capecchi devised a way to change or remove any single gene in the mouse genome, creating strains of mice
+            | that pass the altered gene from parent to offspring. In the years since, these &quot;transgenic&quot; and &quot;knockout&quot; mice have become
+            | commonplace in the laboratory.
+         |          
+         p
+            | Capecchi&apos;s pioneering work in gene targeting has taught us much about how the body builds&mdash;and rebuilds&mdash;itself. He has given
+            | scientists worldwide the tools to make important discoveries about human diseases, from cancer to obesity.
+         |          
+         p
+            | And he has raised a key question for the future of human medicine: if we can replace a perfectly good gene with a mutated one,
+            | can we also go the other way, replacing problem genes with those that work?
+         | &#x9;&#x9;&#x9;
+         .subSectionCallout
+            img(src='images/quote.jpg', alt='"I headed south,sometimes living in the streets, sometimes joining gangs of other homeless children, sometimes living in orphanages and most of the time hungry." -Mario Capecchi', width='329', height='158')
+   +pod('Mario&apos;s Lab at Work')
+      |    
+      .uk-width-medium-6-10
+         p
+            | What makes an arm an arm? Capecchi&apos;s research team is working on answering that question using gene targeting. They have 
+            | systematically &quot;knocked out&quot; a set of genes in mice, called homeotic genes, which govern body patterning during development. 
+            | For example, one of the lab&apos;s most recent genetic discoveries may explain 
+            a(href='http://unews.utah.edu/p/?r=031306-28') why we lack spare ribs
+            | . Find out more about how 
+            | homeotic genes work in 
+            a(href='/content/variation/hoxgenes/') Genes Determine Body Patterns
+            | .
+      |    
+      .uk-width-medium-4-10
+         img(src='images/mouse_jar.jpg', alt='Mouse Jar', width='206', height='219')
+   +pod('How to Build a &quot;Knockout&quot; Mouse')
+      |    
+      .uk-width-1-1.clear
+         p
+            | YOUR GOAL: You are studying how a particular gene, named OhNo, might play a role in panic attacks. You want to study mice that are missing this
+            | gene. To &quot;knockout&quot; the OhNo gene, you will replace it with a mutated copy that doesn&apos;t work.
+         |  
+         |       
+         p Here&apos;s how:
+      |    
+      hr
+      |    
+      .uk-width-medium-4-10
+         p 1. Isolate Stem Cells
+         |  
+         |         
+         p
+            | Isolate embryonic stem cells that originated from male brown mice with a normal OhNo gene (blue).
+      |    
+      .uk-width-medium-6-10
+         img(src='images/step1.jpg', width='488', height='165', alt='Step 1')
+      |    
+      hr
+      |    
+      .uk-width-medium-4-10
+         p 2. Add Inactive Gene With Marker
+         |        
+         |        
+         p
+            | To these cells, add a copy containing a mutated, inactive OhNo gene (red), and a drug resistance marker gene (pink).
+      |    
+      .uk-width-medium-6-10
+         img(src='images/step2.jpg', width='488', height='130', alt='Step 2')
+      |    
+      hr
+      |    
+      .uk-width-medium-4-10
+         p 3. Similar Genes Naturally Swap
+         |        
+         |        
+         p
+            | By mechanisms that are not completely understood yet, similar genes will swap places. The
+            | OhNo gene plus drug resistance marker gene is incorporated into the genome, and the normal version
+            | is kicked out. This process is called homologous recombination.
+      |    
+      .uk-width-medium-6-10
+         img(src='images/step3.jpg', width='488', height='148', alt='Step 3')
+      |    
+      hr
+      |    
+      .uk-width-medium-4-10
+         p 4. Add Drug
+         |        
+         |        
+         p
+            | Cells that haven&apos;t incorporated the inactive OhNo gene don&apos;t have the drug resistance marker gene (pink).
+         |       
+         p
+            | Adding the drug kills cells without the marker, leaving you with only cells that have an inactive version of the OhNo gene.
+      |    
+      .uk-width-medium-6-10
+         img(src='images/step4.jpg', width='488', height='172', alt='Step 4')
+      |    
+      hr
+      |    
+      .uk-width-medium-4-10
+         p 5. Grow Chimeric Mice 
+         |        
+         |        
+         p
+            | By transplanting stem cells that carry the inactive ohNo gene into a white mouse embyro, you&apos;ll create what is called a chimera.
+            | Chimeras have patches of cells throughout their bodies that grew from white mouse cells and patches that grew from brown stem cells.
+            | Some of the cells that have the inactive OhNo gene may develop into reproductive cells.
+         |       
+         p
+            | Chimeras are easy to identify because they have both brown and white patches of fur.
+      |    
+      .uk-width-medium-6-10
+         img(src='images/step5.jpg', width='488', height='170', alt='Step 5')
+      |    
+      hr
+      |    
+      .uk-width-medium-4-10
+         p 6. Mate Male Chimera 
+         |        
+         |        
+         p
+            | If a male chimera has some reproductive cells (sperm) that originated from the brown stem cells, he will produce
+            | some brown offspring when mated with a white female.
+      |    
+      .uk-width-medium-6-10
+         img(src='images/step6.jpg', width='488', height='150', alt='Step 6')
+      |    
+      hr
+      |    
+      .uk-width-medium-4-10
+         p 7. Test and Breed Brown Offspring
+         p
+            | Half of the brown offspring will have a copy of the inactive OhNo gene in all of their cells&mdash;including
+            | their reproductive cells. These mice have one normal copy of the OhNo gene from their mother (not shown) and one inactive
+            | copy from their father. So half of their reproductive cells will contain a normal copy, and half will contain an inactive copy.
+         |       
+         p
+            | These mice can be identified by performing DNA sequencing in their OhNo genes and then bred with each other.
+      |    
+      .uk-width-medium-6-10
+         img(src='images/step7.jpg', width='488', height='226', alt='Step 7')
+      |    
+      hr
+      |    
+      .uk-width-medium-4-10
+         p 8. You&apos;ve Made a Knockout Mouse
+         |        
+         |        
+         p
+            | One fourth of your resulting offsping will have two copies of the &quot;knocked-out&quot; or inactive OhNo gene. You can now
+            | study these mice to determine how lacking the OhNo gene may affect panic attacks.
+      |    
+      .uk-width-medium-6-10
+         img(src='images/step8.jpg', width='488', height='145', alt='Step 8')
+   .clear
+   .uk-width-medium-6-10
+      +bottom-menu("",'sepagosh')
+   
+   

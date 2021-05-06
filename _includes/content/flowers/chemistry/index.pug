@@ -1,0 +1,213 @@
+extends /shared/layout
+  
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-5-10
+         p
+            | This marigold flower is orange. What does it mean to be the color orange? When light energy interacts with the molecules in both the flower and our eyes, we perceive color.
+         
+      .uk-width-medium-5-10
+         figure
+            img(src="images/marigold.jpg", alt="marigold")
+            
+
+   +pod('Color is a property of light')
+   
+      .uk-width-medium-6-10
+        figure
+          img(src="images/photon_wave.jpg", alt="photon creating waves")
+          p As a photon travels, it creates waves in the electromagnetic field. 
+          
+      .uk-width-medium-4-10
+          p
+              | To truly understand color we must first understand light.
+          p
+              | We are surrounded by charged particles. The way these charged particles attract and repel each other is called the <i>electric field</i>. The way these charged particles interact when they are in motion is called the <i>magnetic field</i>. Together, the two fields make up what’s called the <i>electromagnetic</i> field.     
+          p
+              | Light is energy that is traveling through the electromagnetic field. Light is interesting because it behaves both like a particle and a wave.
+          p
+              | The particle part of light is called a photon. Individual photons can vary in how much energy they carry. Light is also a wave because, as a photon  travels, it creates waves in the electromagnetic field.
+              
+          img(src="images/photon_wavelength.jpg", alt="wavelengths")
+          
+          p
+              | The amount of energy an individual photon carries affects the shape of the waves it creates. The distance between each ripple in the waves is called wavelength. If the photon has a lot of energy, the ripples will be closer together, that is, the wavelength will be shorter. If the photon has less energy, the wavelength it creates will be longer.
+                  
+   +pod('When light hits a molecule')
+      .uk-width-medium-6-10
+          p
+              | Molecules are made of atoms. Electrons in atoms tend towards their lowest possible energy state — they try to be as close as possible to the nucleus. The further away an electron is from the nucleus, the higher energy it is — just like when you stretch a rubber band.  When an atom comes near another atom, their electron shells interact. The electrons move to position themselves to exist at their lowest possible energy. Often achieving this state requires that the atoms “share” electrons in their shells. This is how atoms become bonded to each other and form molecules. 
+          p
+              | Atoms in molecules are always in motion; vibrating and rotating around their molecular bonds. The more a molecule vibrates, the higher its energy level. A molecule is also rarely alone, so its energy level is also affected by the other molecules in its surrounding environment.  
+          p
+              | When a photon hit a molecule, what happens next depends on two things — first, the amount of energy the photon carries (it’s wavelength) and second, the molecule’s overall energy level (how much it is moving). 
+          p
+              | If the photon energy level is HIGHER than the energy in the molecule, the photon will be absorbed by the molecule’s atoms. That is, the energy of the photon will be transferred to the atoms in the molecule, making them vibrate, move or rotate. 
+          p
+              | If the photon energy level is LOWER than the molecule’s energy level, the photon will not be absorbed but will instead be reflected. That is, the photon energy will not be accepted by the atoms. The energy will be turned away. 
+          p
+              +well
+                  h3 Related content
+                  | This 
+                  a(href="https://www.youtube.com/watch?v=3RqEIr8NtMI") animated educational video 
+                  | from the 1960’s explores the relationship between molecular vibration and light absorption. 
+      
+      .uk-width-medium-4-10
+        figure
+          img.lg-no-shadow(src="images/atoms_in_flower.jpg", alt="atom")
+          p The petals of our flower are made of molecules which are made of atoms. Electrons exist in shells around each atom’s nucleus. When two atoms share electrons they become bonded. 
+      
+          .uk-container.uk-container-center
+            +hype(425, 496, 'photon_animation.hyperesources/photonanimation_hype_generated_script.js', 'photonanimation_hype_container', 'controlledWidth')
+
+   +pod('How Eyes Detect Color')
+          
+      .uk-width-medium-4-10
+        figure
+          img.lg-no-shadow(src="images/light_reaches_earth_surface.jpg", alt="wavelengths that reach earth's surface")
+          p The sun produces light at all wavelengths of the electromagnetic spectrum, but most sunlight that reaches the surface of the Earth is within the visible range. Wavelength measured here in nanometers (nm).  
+          
+        figure
+          img.lg-no-shadow(src="images/eye_flower.jpg", alt="light from flower to eye")
+          p Molecules in the marigold flower’s petals absorb photons with wavelengths between 400-500 nm. Wavelengths in the visible range longer than that (that is, those that have lower energy) are reflected.   
+              
+        figure
+          img.lg-no-shadow(src="images/different_eyes.jpg", alt="different eyes different wavelengths")
+          p Humans, honeybees and hummingbirds have opsin proteins with varying sensitivities to different light wavelengths thanks to “spectral tuning”.  
+                
+          
+      .uk-width-medium-6-10
+          p
+            | When we look at an object, we are experiencing the unique photon signature that the object’s molecules are absorbing and reflecting.  We see a molecule as  “colored” when the object absorbs light at a wavelength that matches some wavelength in the visible part of the electromagnetic spectrum. If a molecule absorbs blue light, the object reflects orange light and we see the object as orange.
+          
+          p
+            | For all animals, the ability to perceive the color of objects relies on just one molecule, retinal. This molecule is extremely reactive to photons because it contains several double bonds with high energy electrons.
+          
+            figure
+              img.lg-no-shadow(src="images/photon_retinal.jpg", alt="photon hits retinal")
+              p The retinal molecule changes shape when it absorbs a photon. Retinal that is on its own (not bound to opsin protein) absorbs photons between 370 and 380 nm.
+          
+          p
+            | Retinal is bound to opsin, the first protein in a signaling cascade that tells the brain a certain light wavelength has been detected, which our brain perceives as color. Slightly different versions of the opsin protein can respond to photons with specific wavelengths. Through very minor chemical changes, an opsin can tweak the photon sensitivity of its resident retinal molecule. Scientists call this “spectral tuning.”
+          
+            figure
+              img.lg-no-shadow(src="images/opsin.jpg", alt="opsin protein")
+              p Retinal molecules are tucked inside opsin proteins. Slight amino acid variations in the opsin protein can change the stability of the retinal molecule. The less stable retinal is, the more its reactivity is shifted towards shorter wavelengths in the spectrum (blue).
+          
+          p
+            | In humans there are three kinds of opsins that respond to a different range of light wavelengths ranging between 390 and 700 nm.
+              
+          p
+            | Like humans, bees also have three kinds of color-detecting opsins but they’re tuned to a different range of wavelengths. Bees can detect wavelengths between 300 and 650 nm. This means they can see ultraviolet light (UV) but not the color red.
+
+          p
+            | Hummingbirds have four color-detecting opsins stretching their range of detectable wavelengths into the 370 to 700 nm range. This means they can see both UV and the color red.     
+            
+            +well
+                h3 Related content
+                a(href="/content/selection/toolkit/") Why do all eyes use opsin proteins and retinal molecules to detect light? 
+
+   +pod('Biological pigments in plants')
+   
+      .uk-width-medium-6-10
+        p
+          | Many plants exploit chemistry to make use of the phenomenon of color. The earliest pigment molecules were probably used by primitive bacteria about 3.4 million years ago. These bacteria used their pigment molecules to harvest energy from photons to power chemical reactions. This is the process of photosynthesis. These early bacteria are beleived to have harvested infrared wavelength light. Today, plants with the pigment molecule chlorophyll use photosynthesis to generate energy from light wavelengths in the visible range. Over time these pigments evolved to also attract pollinators.
+          
+          h3 Carotenoids
+          
+        p
+          | The petals in our marigold flower contain a large amount of carotenoid pigment molecules. Carotenoids are made of long chains of alternating single and double bonds. Because of these bonds, the atoms that make up these chains share electron shells all along the length of the chain. This makes the electrons highly reactive to photons. 
+          
+        p
+          | There are over 700 known naturally-occurring carotenoids. Variations in the length of the molecule shift the range of photon wavelengths that are absorbed. The longer the chain, the longer photon wavelengths the molecule can absorb.
+          
+          figure
+            img.lg-no-shadow(src="images/carotene_molecule.jpg", alt="beta-carotene")
+            p Beta-carotene has eleven alternating double and single bonds resulting in delocalized electrons that make the molecule highly reactive to photons. Molecules generally need at least eight of these kinds of bonds to produce visible color.
+          
+          h3 Anthocyanins
+          
+        p
+          | Other molecules in flowers, called anthocyanins, also produce color because of alternating double and single bonds — but with a different structure based on rings. 
+        p
+          | Anthocyanins are unstable compounds. Conditions like temperature, interaction with other molecules and pH can all alter the structure of anthocyanins. Some flowers keep their anthocyanins in vacuoles with a certain pH to ensure their stability. Others stabilize them by forming elaborate stacks with other flavonoid pigments (e.g., flavones, flavonols) and metal ions, like iron and magnesium. This instability is why it has been so difficult for horticulturists to create blue versions of flowers and also perhaps why blue flowers are less common in nature than flowers with other colors.
+          <br>
+          figure
+            img.lg-no-shadow(src="images/anthocyanins.jpg", alt="anthocyanin molecules")
+            p Increasing the number of hydroxyl groups (-OH) on the anthocyanin molecule shifts its visible color from red to blue. Flowers from left to right; Red Geranium, Stokes Aster and Delphinium.
+          
+          h3 Pigment Concentrations and Combinations
+          
+        p
+          | Flowers come in a wide range of hues and colors. Altering the amount of carotenoid results in different hues of yellow, orange or red. Altering the amount of anthocyanin can result in different hues of red, purple or blue. Further nuances in flower color can be achieved with different concentrations of both types of pigment.
+          
+      .uk-width-medium-4-10
+          figure
+            img.lg-no-shadow(src="images/carotenoid_flowers.jpg", alt="flowers with carotenoids")
+            p Many flowers are colored by carotenoid pigments. From left to right; Yellow Monkey Flower, California Poppy, Daffodil and Sunflower.
+            
+          +well
+            h3 Retinal comes from eating carotenoids. 
+            
+              img.lg-no-shadow(src="images/papaya.png", alt="papaya" style='float:right')
+            
+            p
+              | Vitamin A is an essential nutrient we get from eating foods with carotenoids like papaya, mango and cantalope. For instance, when we eat the carotenoid beta-carotene, it is broken in half to form two molecules of vitamin A. Each vitamin A molecule is then converted into retinal. So in this way, the same pigment molecule responsible for creating our flower’s color is also responsible for our ability to perceive the flower’s color. 
+          <br>
+          <br>
+          <br>
+          figure
+            img.lg-no-shadow(src="images/combinations.jpg", alt="flower pigment combinations")
+            p The color of these Scarlet Monkeyflowers result from different combinations of biological pigments.   
+  
+  
+      +references
+          p
+            | Lee, D. (2007). Nature's Palette: The Science of Plant Color. Chicago, IL: University of Chicago Press Books.
+          p
+            | Lynch, D.K. &amp; Livingston, W.C. (2001). Color and Light in Nature. Cambridge, UK: Cambridge University Press.
+          p
+            | Skorupski P. &amp; Chittka L. (2010). Photoreceptor Spectral Sensitivity in the Bumblebee, Bombus impatiens (Hymenoptera: Apidae). PLoS ONE 5(8): e12049. 
+          p
+            | Briggs, R. &amp; Spudich, J. (2006). Handbook of Photosensory Receptors. Germany:  Wiley-VCH.
+          p
+            | Yokoyama S. &amp; Radlwimmer F. (2001). The Molecular Genetics and Evolution of Red and Green Color Vision in Vertebrates. Genetics Society of America, 158: 1697–1710.
+          p
+            | Chemistry LibreTexts library (2016). Chemistry of Vision. Retrieved January 24, 2018 from 
+            a(href="https://chem.libretexts.org/Core/Biological_Chemistry/Photoreceptors/Chemistry_of_Vision" target="_blank")  https://chem.libretexts.org
+          
+          p
+            | Chemistry LibreTexts library (2016). Delocalization of Electrons. Retrieved January 24, 2018 from 
+            a(href="https://chem.libretexts.org/Core/Physical_and_Theoretical_Chemistry/Chemical_Bonding/Valence_Bond_Theory/Delocalization_of_Electrons" target="_blank")  https://chem.libretexts.org
+          
+          p
+            | Clark, J. chemguide. (2016) UV-Visible Absorption Spectra. Retrieved January 24, 2018 from 
+            a(href="http://www.chemguide.co.uk/analysis/uvvisible/theory.html" target="_blank")  http://www.chemguide.co.uk/analysis/uvvisible/theory.html
+            
+          p
+            | Averill, B. a&amp; Eldredge, P. (2011). General Chemistry: Principles, Patterns, and Applications. Boston, MA: Flat World.
+
+          p
+            | Katayama, K., Nonaka, Y., Tsutsui, K., Imai, H., Kandori, H. (2017). Spectral Tuning Mechanism of Primate Blue-sensitive Visual Pigment Elucidated by FTIR Spectroscopy. Scientific Reports 7:4904. 
+
+          p
+            | Ernst, O., Lodowski, D., Elstner, M., Hegemann, P., Brown, L., Kandori H. (2014). Microbial and Animal Rhodopsins: Structures, Functions, and Molecular Mechanisms. Chemical Reviews 114 (1), 126-163.
+
+          p
+            | Lind, O., Mitkus, M., Olsson, P., Kelber, A. (2013). Ultraviolet vision in birds: the importance of transparent eye media. Proc. R. Soc. B 281: 20132209.
+
+          p
+            | Vershinin, A. (1999). Biological functions of carotenoids - diversity and evolution. BioFactors 10 (1999) 99–104.
+
+          p
+            | Yoshida, K., Mori, M., Kondo, T. (2009). Blue flower color development by anthocyanins: from chemical structure to cell physiology. Nat. Prod. Rep., 2009, 26, 884-915. 
+
+          p
+            | Institute of Medicine (US) Panel on Dietary Antioxidants and Related Compounds. Dietary Reference Intakes for Vitamin C, Vitamin E, Selenium, and Carotenoids. 8, β-Carotene and Other Carotenoids. (2000). Washington (DC): National Academies Press.
+
+          p
+            | Landrum, J. (2009). Carotenoids: Physical, Chemical, and Biological Functions and Properties. Boca Raton, FL: CRC Press.
+
+          p
+            | Ng, J. &amp; Smith, S. (2016). How to make a red flower: the combinatorial effect of pigments. AoB PLANTS 8: plw013.

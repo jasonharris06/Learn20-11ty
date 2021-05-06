@@ -1,0 +1,72 @@
+extends /shared/layout
+block append head
+   style.
+      .flexHeader {
+         display: flex;
+         width: 100%;
+         justify-content: space-between;
+         align-items: flex-end;
+      }
+      .slideContainer {
+         max-width: 550px;
+         margin: auto;
+      }
+      .appstore {
+         width: 120px;
+      }
+      @media screen and (min-width: 800px) {
+         .appstore {
+           width: 160px;
+         }
+      }
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-4-10
+         a(href='https://itunes.apple.com/us/app/see-neuroscience/id1211370724' style="margin-right: 25px;")
+            img.appstore(src="../images/App_Store.svg" width="200" height="66.6")
+         p
+            | Have you ever wondered what your dog sees? Download See and look through the eyes of a dog, an octopus, a color blind person, and more.
+      .uk-width-medium-6-10
+         h3 App Screenshots
+         .slideContainer
+            include seeshots.pug
+         
+   +references
+      p
+         | Barber, VC (2010). Chapter 14: The sense organs of Nautilus. Nautilus: The biology and paleobiology of a living fossil, Reprint with additions. Saunders, WB &amp; Landman, N, Eds. (2010). Springer Netherlands. doi: 10.1007/978-90-481-3299-7
+      p
+         | Donaghy, M. (1980). The contrast sensitivity, spatial resolution and velocity tuning of the cat's optokinetic reflex. The Journal of Physiology, 300, 353-365.
+      p
+         | Harland, DP &amp; Jackson, RR (2000). 'Eight-legged cats' and how they see — a review of recent research on jumping spiders (Aranaea: Salticidae). Cimbebasia, 16, 231-240. 
+      p
+         | Hatt, NS, Theiss, SM, Harahush, BK &amp; Collin SP (2011). Microspectrophotometric evidence for cone monochromacy in sharks. Naturwissenschaften, 98: 3, 193-201. doi: doi:10.1007/s00114-010-0758-8
+      p          
+         | Lamb, TD (2013). Evolution of Phototransduction, Vertebrate Receptors and Retina. Webvision: The Organization of the Retina and Visual System. Kolb, H, Fernandez, E &amp; Nelson R, Eds. Salt Lake City: University of Utah Health Sciences Center. Accessed 17 March, 2017, from  
+         a(href="https://www.ncbi.nlm.nih.gov/books/NBK153508/.") https://www.ncbi.nlm.nih.gov/books/NBK153508/
+      p
+         | Litherland, L &amp; Collin, SP (2008). Comparative visual function in elasmobranchs: spatial arrangement and ecological correlates of photoreceptor and ganglion cell distributions. Visual Neuroscience, 25, 5490561. doi: 10.1017/S0952523808080693 
+      p
+         | Nilsson, D-E (2009). The evolution of eyes and visually guided behavior. Philosophical Transactions of the Royal Society of Britain, 364, 2833-2847. doi: 10.1098/rstb.2009.0083 
+      p
+         | Nilsson, D-E, Land, MF (2012). Animal Eyes, second edition. Oxford: Oxford University Press.
+      p
+         | Nixon, M &amp; Young, JZ (2003). The brains and Lives of Cephalopods. Oxford University Press.
+      p
+         | Nordsieck, R. The living world of molluscs. Accessed 3 March, 2017, at 
+         a(href="http://www.molluscs.at/gastropoda/terrestrial/helix.html?/gastropoda/terrestrial/helix/senses.html") http://www.molluscs.at/gastropoda/terrestrial/helix.html?/gastropoda/terrestrial/helix/senses.html
+      p
+         | Odom, JV, Bromberg, NM &amp; Dawson, WW. Canine visual acuity: retinal and cortical field potentials evoked by pattern stimulation (1983). American Journal of Physiology—Regulatory, Integrative and Comparative Physiology, 245, 5, R637-R641.  
+      p
+         | Paskin, TR, Jellies, J, Bacher, J &amp; Beane, WS (2014). Planarian phototactic assay reveals differential behavioral responses based on wavelength. PLoS One, 9, 12, e114708. doi: 10.1371/journal.pone.0114708
+      p          
+         | Ramirez, MD &amp; Oakley, TH. (2015). Eye-independent, light-activated chromatophore expansion (LACE) and expression of phototransduction genes in teh skin of Octopus bimaculoides. Journal of Experimental Biology, 218, 1513-1520. doi: 10.1242/jeb.110908
+      p
+         | Ryan, LA, Hart, NS, Collin, SP, Hemmi, JM. (2016). Visual resolution and contrast sensitivity in two benthic sharks. Journal of Experimental Biology, 219, 3971-3980. doi: 10.1242/jeb.132100 
+      p
+         | Zieger, M &amp; Meyer-Rochow, VB. Understanding the cephalic eyes of pulmonate gastropods: a review. American Malacalogical Bulletin, 26, 47-66.
+
+
+   block append endscripts
+      script(src="/lib/slideshow.js")
+      script(src="/lib/slideshow-fx.js")

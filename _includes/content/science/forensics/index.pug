@@ -1,0 +1,83 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-5-10
+         p
+            | In 1987, forensic DNA analysis made its first appearance in a US courtroom. Originally known as &quot;DNA fingerprinting,&quot; this type of analysis is now called &quot;DNA profiling&quot; or &quot;DNA testing&quot; to distinguish it from traditional skin fingerprinting.
+         p
+            | Even though it is used in less than 1% of all criminal cases, DNA profiling has helped to acquit or convict suspects in many of the most violent crimes, including rape and murder.
+      .uk-width-medium-5-10
+         figure
+            img(src='images/dnaprofile.jpg', alt='dna fingerprint')
+   +pod('How can DNA be used to identify an individual?')
+      .uk-width-medium-5-10
+         p
+            | Almost every cell in our bodies contains DNA, the genetic material that programs how cells work. Any two people share, on average, 99.9% of their DNA, meaning that only 0.1% of your DNA is unique to you! The only exception is identical twins, who share 100% of their DNA.
+         p
+            | Each human cell contains three billion DNA base pairs. Our unique DNA, 0.1% of 3 billion, amounts to 3 million base pairs. That&apos;s more than enough to provide a profile that accurately identifies a person.
+         p
+            | DNA is often left behind at a crime scene. It is present in all kinds of evidence, including blood, hair, skin, saliva, and semen. Scientists can analyze the DNA in evidence samples to see if it matches a suspect&apos;s DNA.
+
+      .uk-width-medium-5-10
+         figure(style='margin-top: 20px;')
+            img.lg-no-shadow(src='images/dna-pairing.png', height='254', width='488', alt='DNA pairing')
+   +pod('Forensic DNA Analysis')
+      .uk-width-medium-5-10
+         p
+            | On the right, you can see how DNA evidence used to be collected and analyzed. In its early days, DNA analysis required an evidence sample at least the size of a dime. Today&apos;s techniques can amplify the DNA using
+            a(href='/content/labs/pcr/') PCR
+            | , making millions of copies from tiny amounts of evidence, such as the saliva from a cigarette butt. This approach is also helpful for analyzing poor-quality DNA in evidence samples collected from dirty crime scenes or in very old samples.
+         h3 Blood relatives have more similar DNA
+         p
+            | Unrelated individuals have three million DNA bases that differ between them, but blood relatives have fewer differences. If the DNA profile from a piece of evidence is similar&mdash;but not identical&mdash;to that of a suspect, officials may investigate blood relatives of the suspect.
+
+         h3 What about human error?
+         p
+            | Forensic investigators take many precautions to prevent mistakes, but human error can never be eliminated. The National Research Council (NRC) recommends that evidence samples be divided soon after they&apos;re collected, so that if a mix-up were to occur, there would be backup samples to analyze.
+         p
+            | To detect possible contamination of DNA samples during collection or handling, evidence DNA profiles are typically compared with those from detectives at the crime scene, the victim, a randomly chosen person, or a DNA profile from a database. Each sample is assigned a code, and testers don&apos;t know who the samples came from.
+         p
+            | The NRC recommends that forensic DNA analysis be conducted by an unbiased outside laboratory that maintains a high level of quality control and a low error rate.
+
+      .uk-width-medium-5-10
+         figure
+            img(src='images/forensicdna.png', height='608', width='488', alt='DNA Analysis')
+            p
+               | Restriction fragment length polymorphism (RFLP), shown above, is an older DNA-profiling technique. It has largely been replaced by PCR amplification of repetitive DNA segments that vary in length among individuals.
+   +pod('Is DNA evidence alone enough to acquit or convict?')
+      .uk-width-medium-6-10
+         p
+            | It is easier to exclude a suspect than to convict someone based on a DNA match. The FBI estimates that one-third of initial rape suspects are excluded because DNA samples fail to match.
+         p
+            | Forensic DNA is just one of many types of evidence. Investigators also look at other clues, such as motive, weapons, alibis, and additional evidence linking a suspect to the crime scene. When multiple lines of evidence tell a consistent story, investigators can be assured that samples from a particular suspect were not planted, either on purpose or by accident, at the crime scene.
+         | &#x9;&#x9;
+         h3 Can DNA evidence exonerate wrongfully convicted prisoners?
+         | &#x9;&#x9;
+         p
+            | The Innocence Project at New York&apos;s Benjamin N. Cardozo School of Law aims to exonerate prisoners wrongfully convicted of crimes. The project uses DNA profiling evidence to support the re-evaluation of criminal cases. But DNA evidence alone is not enough to get a person out of jail: the case must be re-examined by a judge, along with lawyers representing both sides of the case. Since 1992, the Innocence Project and others have used DNA evidence to exonerated over 300 prisoners, including eighteen who were on death row&mdash;one of whom was only five days from execution.
+         p
+            | While some states will reconsider cases with compelling DNA evidence regardless of when the trial ended, several states restrict the time for post-trial submission of DNA evidence to six months or less. And unfortunately, the evidence from some cases has been lost or destroyed, making DNA analysis impossible. The Innocence Project seeks to reform the criminal justice system in ways that will improve access to DNA testing, improve evidence preservation, and permit re-evaluation of DNA evidence in closed cases.
+         | &#x9;&#x9;
+         h3 Is DNA-profiling technology used appropriately for justice?
+         p
+            | DNA profiling can be a powerful tool in criminal investigations. Its success in the courtroom depends upon many factors, including:
+         | &#x9;&#x9;
+         ul
+            li Proper handling of evidence
+            | &#x9;&#x9;&#x9;
+            li Careful analysis by an unbiased forensic laboratory
+            | &#x9;&#x9;&#x9;
+            li Fair and appropriate interpretation of the results
+            | &#x9;&#x9;&#x9;
+            li Accurate and effective reporting of results to judges and jurors
+         | &#x9;&#x9;
+         p
+            | When used correctly, DNA profiling is a powerful forensic tool. It can be used to quickly eliminate a suspect, saving time in searches for perpetrators. And it can provide compelling evidence to support a conviction and, most importantly, reduce the chances of a wrongful conviction.
+      .uk-width-medium-4-10
+         figure
+            img.lg-no-shadow(src='images/lawscience.jpg', height='579', width='352', alt='dna and the law')
+            p
+      .clear
+      .uk-width-medium-6-10
+         +bottom-menu("",'erdc')

@@ -1,0 +1,299 @@
+extends /shared/layout
+block append headscripts
+   link(rel="stylesheet" href="../senses-curriculum.css" type="text/css")
+block append endscripts
+   script(src="/lib/accordion.js")
+
+block content
+   - page.title="Sensory Systems - Companion activities"
+   +pageTitle
+   +pod('')
+      .uk-width-medium-6-10
+         p.
+            Use these simple activities and demonstrations along with the Sensory Systems apps to enhance the experience of each sense. All use inexpensive or on-hand materials and can be used in a variety of ways. For example:
+         ul
+            li For a whole-classroom activity, distribute copies and materials to students to work on individually or in pairs.
+            li Place copies and materials at stations, and have students rotate through them.
+
+   .lg-section
+      .uk-container.uk-container-center
+         .uk-grid
+            .uk-width-1-1
+               .uk-accordion(data-uk-accordion={collapse: false, showfirst: false})
+
+
+                  .subheader.title Touch
+                  .lg-accordian-container
+                     .uk-accordion-title Two-point touch test
+                     .uk-accordion-content
+                        .uk-grid
+                           .uk-width-medium-1-2.uk-width-small-1
+                              .lg-content-header Description &amp; Instructions
+                              p.
+                                 Which areas of the skin have more sensory receptors? Find out by gently pressing several “touch testers” to the skin on the face, arm, and hands. Work in pairs.
+                              p.uk-visible-small
+
+                           .uk-width-medium-1-4.uk-width-small-1
+                              .lg-content-header Materials
+                              p.
+                                 Make these with any small, dull objects that can be fixed level with one another at a specific distance apart. Follow the link to the right for ideas.
+                              ul
+                                 li 1-point
+                                 li 30mm apart
+                                 li 15mm apart
+                                 li 5 mm apart
+                              p.
+                                 copies
+                              p.uk-visible-small
+                           .uk-width-medium-1-4.uk-width-small-1
+                              .lg-content-header Downloads &amp; Links
+                              p
+                                 a(href="two-point touch test.pdf" target="_blank") Two-point Touch Test
+                                 br
+                                 br
+                                 a(href='/content/senses/companion/touchtesters') Touch Testers
+
+                     .uk-accordion-title Temperature touch test
+                     .uk-accordion-content
+                        .uk-grid
+                           .uk-width-medium-1-2.uk-width-small-1
+                              .lg-content-header Description &amp; Instructions
+                              p.
+                                 Which areas of the skin have more temperature-sensitive sensory receptors? Find out gently touching warm and cool “temperature probes” to the skin on the arm and hands. Work in pairs.
+                              p.uk-visible-small
+                           .uk-width-medium-1-4.uk-width-small-1
+                              .lg-content-header Materials
+                              p.
+                                 Cool temperature probes (one per pair): Place blunt dissection probes in a beaker full of cold tap water or ice water. (You may use any other small, blunt object that retains temperature.)
+                              p.
+                                 Warm temperature probes (one per pair):  Place blunt dissection probes, one per pair, in a beaker full of warm tap water or an insulated cup.
+                              p.
+                                 Paper towels to dry the probes
+                              p.
+                                 copies
+                              p.uk-visible-small
+                           .uk-width-medium-1-4.uk-width-small-1
+                              .lg-content-header Downloads &amp; Links
+                              p
+                                 a(href="temperature touch test.pdf" target="_blank") Temperature Touch Test
+
+                  .subheader.title Hearing
+                  .lg-accordian-container
+                     .uk-accordion-title What Hearing Looks Like
+                     .uk-accordion-content
+                        .uk-grid
+                           .uk-width-medium-1-2.uk-width-small-1
+                              .lg-content-header Description &amp; Instructions
+                              p.
+                                 Use the microphone function on the Hear: The Neuroscience of Our Senses app and a set of prompts to compare how different sounds are registered in the cochlea.
+                              p.uk-visible-small
+                           .uk-width-medium-1-4.uk-width-small-1
+                              .lg-content-header Materials
+                              p.
+                                 iPads with the Hear: The Neuroscience of Our Senses app
+                              p.
+                                 copies
+                              p.uk-visible-small
+                           .uk-width-medium-1-4.uk-width-small-1
+                              .lg-content-header Downloads &amp; Links
+                              p
+                                 a(href="hearing looks like.pdf" target="_blank") What Hearing Looks Like
+
+                  .subheader.title Proprioception
+                  .uk-width-medium-1-1
+                     p.
+                        The proprioception system helps us keep track of where all of our body parts are relative to each other, and how the body is oriented relative to gravity. It gathers input not only from the vestibular system in the inner ear, but also from the eyes, and from stretch and pressure receptors in the skin, muscles, and joints.
+                     p.
+                        The activities below demonstrate various aspects of proprioception.
+                  .lg-accordian-container
+                     .uk-accordion-title Proprioception Test
+                     .uk-accordion-content
+                        .uk-grid
+                           .uk-width-medium-1-2.uk-width-small-1
+                              .lg-content-header Description &amp; Instructions
+                              p.
+                                 These simple tasks, performed with eyes closed and then open, highlight the role vision plays in helping us know where the parts of our body are in space.
+                              figure
+                                 img(src="proprioceptiontest.jpg", alt=proprioceptiontest)
+                              p.uk-visible-small
+                           .uk-width-medium-1-4.uk-width-small-1
+                              .lg-content-header Materials
+                              ul
+                                 li Chair with a back
+                                 li Copies of instructions (optional)
+                              p.uk-visible-small
+                           .uk-width-medium-1-4.uk-width-small-1
+                              .lg-content-header Downloads &amp; Links
+                              p
+                                 a(href="proprioception test.pdf" target="_bank") Proprioception test
+
+                  .lg-accordian-container
+                     .uk-accordion-title The Vesibulo-Ocular Reflex
+                     .uk-accordion-content
+                        .uk-grid
+                           .uk-width-medium-1-2.uk-width-small-1
+                              .lg-content-header Description &amp; Instructions
+                              p.
+                                 When the vestibular system is activated by spinning, the eyes automatically move to stabilize images—even when they are closed. Groups of four work together to observe this reflex by spinning a test subject in a chair and then watching how their eyes track immediately upon stopping.
+                              p.uk-visible-small
+                           .uk-width-medium-1-4.uk-width-small-1
+                              .lg-content-header Materials
+                              ul
+                                 li Chair that spins 360 degrees
+                                 li Copies of instructions (optional)
+                              p.uk-visible-small
+                           .uk-width-medium-1-4.uk-width-small-1
+                              .lg-content-header Downloads &amp; Links
+                              p
+                                 a(href="vestibulo-ocular reflex.pdf" target="_blank") Vestibulo-ocular reflex
+
+                  .lg-accordian-container
+                     .uk-accordion-title Semi-circular Canal Demonstration
+                     .uk-accordion-content
+                        .uk-grid
+                           .uk-width-medium-1-2.uk-width-small-1
+                              .lg-content-header Description &amp; Instructions
+                              p.
+                                 This simple demonstration illustrates the relative motion of fluid in the rotation-sensing structures of the inner ear.
+                              figure
+                                 img(src="glass.jpg", alt=glass)
+                              p.uk-visible-small
+                           .uk-width-medium-1-4.uk-width-small-1
+                              .lg-content-header Materials
+                              ul
+                                 li Cup
+                                 li Water
+                                 li 2 cm x 2 cm square of paper
+                                 li Copies of instructions (optional)
+                              p.uk-visible-small
+                           .uk-width-medium-1-4.uk-width-small-1
+                              .lg-content-header Downloads &amp; Links
+                              p
+                                 a(href="Semicircular canal demo.pdf" target="_blank") Semicircular canal demo
+
+                  .subheader.title Vision
+                  .lg-accordian-container
+                     .uk-accordion-title Lens demonstration
+                     .uk-accordion-content
+                        .uk-grid
+                           .uk-width-medium-1-2.uk-width-small-1
+                              .lg-content-header Description &amp; Instructions
+                              p.
+                                 This demonstration shows how a lens gathers light from a large area and projects a miniature, reversed image.                              p.
+                                 You can use this demo along with a pinhole viewer to show how a lens enables an eye to make an image that is smaller and brighter.
+                              figure
+                                 img(src="lens.jpg", alt=lensdemo)
+                              p.uk-visible-small
+                           .uk-width-medium-1-4.uk-width-small-1
+                              .lg-content-header Materials
+                              ul
+                                 li Magnifying glass
+                                 li White paper
+                                 li Access to a room with an overhead light and/or a well-lit window
+                                 li Copies of instructions (optional)
+                              p.uk-visible-small
+                           .uk-width-medium-1-4.uk-width-small-1
+                              .lg-content-header Downloads &amp; Links
+                              p
+                                 a(href="lens demo.pdf" target="_blank") Lens demonstration
+
+                  .lg-accordian-container
+                     .uk-accordion-title Visual acuity
+                     .uk-accordion-content
+                        .uk-grid
+                           .uk-width-medium-1-2.uk-width-small-1
+                              .lg-content-header Description &amp; Instructions
+                              p.
+                                 Use the See: The Neuroscience of our Senses app to compare the visual acuity of different animals. Look at information in the app about eye anatomy to understand how the structure of an eye helps to determine what an animal can see.
+                              p.uk-visible-small
+                           .uk-width-medium-1-4.uk-width-small-1
+                              .lg-content-header Materials
+                              ul
+                                 li iPads with the See: The Neuroscience of our Senses app
+                                 li Visual acuity chart
+                                 li Copies of instructions (optional)
+                              p.uk-visible-small
+                           .uk-width-medium-1-4.uk-width-small-1
+                              .lg-content-header Downloads &amp; Links
+                              p
+                                 a(href="visual acuity.pdf" target="_blank") Visual acuity (includes instructions and visual acuity chart)
+                  .subheader.title Taste &amp; Smell
+                  .lg-accordian-container
+                     .uk-accordion-title Taste vs. Flavor
+                     .uk-accordion-content
+                        .uk-grid
+                           .uk-width-medium-1-2.uk-width-small-1
+                              .lg-content-header Description &amp; Instructions
+                              p.
+                                 In part 1, students chew a jellybean with their nose first plugged and then unplugged. This demonstrates the how taste and smell work together to make flavor.
+                              p.
+                                 In part 2, students repeat the exercise with a mint candy. This demonstrates how menthol activates cold-sensing touch receptors on the tongue.
+                              p.
+                                 You may wish to repeat this again with cinnamon candy, which activates heat-sensing receptors.
+                              p.uk-visible-small
+                           .uk-width-medium-1-4.uk-width-small-1
+                              .lg-content-header Materials
+                              ul
+                                 li Fruit flavored jellybeans. Jelly Belly candies are good because it is hard to guess their flavor from the color.
+                                 li Mint candy, such as wintergreen or peppermint life savers, Altoids, or peppermint candies.
+                                 li Cinnamon candy (optional)
+                                 li Copy of instructions (optional)
+                              p.uk-visible-small
+                           .uk-width-medium-1-4.uk-width-small-1
+                              .lg-content-header Downloads &amp; Links
+                              p
+                                 a(href="taste vs flavor.pdf" target="_blank") Taste vs flavor
+                  .lg-accordian-container
+                     .uk-accordion-title Find your Odor Threshold
+                     .uk-accordion-content
+                        .uk-grid
+                           .uk-width-medium-1-2.uk-width-small-1
+                              .lg-content-header Description &amp; Instructions
+                              p.
+                                 Students gauge the sensitivity of their sense of smell by determining the lowest concentration of an odorant they can detect.
+                              p.
+                                 <i>Follow the link for more information about odorants you can use and how to set up dilutions.</i>
+                              ol
+                                 li Arrange beakers or cups containing different concentrations of odorant in order from weakest to strongest. Label the concentration, but not the odorant.
+                                 li Starting with the weakest concentration, ask test subjects to sniff each one. When they can detect an odor, they should stop. This is their odor threshold.
+                                 li Compare results with the larger group.
+                              p.uk-visible-small
+                           .uk-width-medium-1-4.uk-width-small-1
+                              .lg-content-header Materials
+                              p.
+                                 Dilutions of odorants, labeled with the concentrations. Group each odorant separately.
+                              p.uk-visible-small
+                           .uk-width-medium-1-4.uk-width-small-1
+                              .lg-content-header Downloads &amp; Links
+                              p
+                                 a(href='/content/senses/companion/odorants/') Setting up Odorant Dilutions
+
+
+
+
+block append endscripts
+   script.
+      $(document).ready(function () {
+         /*var beforePrint = function() {
+            $('.accordion-body').removeClass('collapse').css('height', 'auto');
+            $('.x-accordion-toggle').removeClass('collapsed');
+         };
+         var afterPrint = function() {
+            $('.accordion-body').removeClass('collapse').css('height', 'auto');
+            $('.x-accordion-toggle').removeClass('collapsed');
+         };
+
+         if (window.matchMedia) {
+            var mediaQueryList = window.matchMedia('print');
+            mediaQueryList.addListener(function(mql) {
+               if (mql.matches) {
+                  beforePrint();
+               } else {
+                  afterPrint();
+               }
+            });
+         }
+
+         window.onbeforeprint = beforePrint;
+         window.onafterprint = afterPrint;*/
+      });

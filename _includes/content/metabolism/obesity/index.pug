@@ -1,0 +1,274 @@
+extends /shared/layout
+
+block append head
+   link(rel='stylesheet', href='obesity.css')
+
+block content
+   +pageTitle
+
+   +pod('')
+      .uk-width-medium-6-10
+         p.
+            A century ago, obesity was rare. Now people all over the world are gaining weight, with 69% of adults in the US
+            currently overweight or obese. Obesity is linked to rising rates of health problems such as cardiovascular disease
+            and diabetes. Why the sudden change? Is obesity in our genes, or has something in our environment made us fat in recent
+            decades?
+         p.
+            The answer is both. People vary in how easily they gain weight, and much of that variation is coded in genes and passed
+            down through families. However, the rise of obesity has happened too quickly to be caused by genetic changes. Genetic
+            variations linked to obesity have been with us for millennia, but only in combination with the modern environment do
+            they make us obese.
+         p.
+            For example, FTO (also known as “Fatso”) is the gene with the strongest known effect on common types of obesity. Some
+            variants of the gene increase obesity risk, while others lower it. However, the effects of FTO depend on environment.
+            Even high-risk forms of FTO have little effect on body fat among people who get lots of exercise or eat low-fat diets.
+         +well
+            h3 Related content
+            p.
+               What does it mean to be at risk? Learn more about <a href="http://learn.genetics.utah.edu/content/history/geneticrisk/">genetic</a> and <a href="http://learn.genetics.utah.edu/content/history/environment/">environmental risk</a>.
+
+      .uk-width-medium-4-10
+         figure
+            img.lg-no-shadow(src="images/EO1_Infographic.svg" alt="Obesity")
+            p It takes somewhere between 184 and 1840 generations of natural selection (5,300 to 53,000 years) for a human population to undergo meaningful genetic change. Since obesity rates have nearly tripled in just a few generations, the rise probably has more to do with changes to our environment and lifestyle than to our genes. (Graph based on CDC report)
+
+   +pod('Why Do Some People Gain Weight While Others Stay Thin?')
+      .uk-width-medium-6-10
+         p.
+            Changes shaped by early experience interact with our genes and with environmental and lifestyle factors throughout our
+            lives. For thousands of years, these interactions helped people maintain a healthy body weight. But in the last few
+            decades, our environment has changed, unbalancing our biology and pushing more and more of us toward obesity.
+         p.
+            While obesity rates are rising in our society, many people remain lean, and this variation is not just a matter of
+            willpower. People vary widely in how easily they put on fat and how difficult it is for them to lose it.
+
+         h3 Genes
+         p.
+            Genetic variation between people accounts for 50 to 70% of variation in BMI, but the genetics are complex. Amount of
+            body fat is affected by many different factors, including how efficiently the digestive system extracts nutrients from
+            food, how readily nutrients are stored as fat or burned as fuel, and how hungry we feel. Each of these factors is
+            influenced by hundreds of genes.
+         p.
+            While there are a few gene variants that dramatically increase obesity risk, these are uncommon. For most of us, each
+            gene contributes only a tiny amount to risk, but all of them combined can make the difference between being naturally
+            thin and having to struggle to maintain a healthy weight.
+         p.
+            Even people with a similar obesity risk may have different genetic reasons for that risk. Because of this, different
+            people may need different approaches to weight management.
+
+         h3 Epigenetics
+         p.
+            When a baby is conceived, the sequence of their genes is set for life. However, the activity of those genes is flexible.
+            Signals from the environment influence our genes, guiding them down different developmental pathways. Some of those
+            developmental decisions influence how easily people put on fat later in life.
+         p.
+            Either too little or too much nutrition in the womb can “program” fetuses to gain weight as children and adults. Women
+            who undergo food shortages during pregnancy tend to have small babies, but if food is available after birth, the babies
+            catch up and put on large amounts of fat. Such babies often go on to suffer from obesity, diabetes, and cardiovascular
+            disease. Women who are overweight or who gain excess weight during pregnancy tend to have larger, fatter babies, and
+            those babies are also at increased risk of developing obesity.
+
+         h3 Microbiome
+         p.
+            A person’s intestines contain two to three pounds of microorganisms, most of which are bacteria. These bacteria help us
+            get more energy from food by breaking down nutrients that we can’t digest on our own. They can have other effects too,
+            such as protecting the intestinal lining or stimulating the production of appetite-controlling hormones. Different
+            people have different types of bacteria, and these differences may play a role in obesity.
+         p.
+            Obese people tend to have fewer species of gut bacteria than thin people do, and the bacterial species are in different
+            proportions. Transplanting bacteria between the intestines of fat and slim mice can change how efficiently the mice
+            digest food, and similar experiments are ongoing in humans. Human babies with certain gut bacteria are more likely to
+            become obese as children. Researchers are now studying whether humans can fight obesity by supplementing their diet
+            with healthy bacteria, or "probiotics."
+         p.
+            Much remains unknown about how gut bacteria interact with body fat. This is partly because different bacteria feed on
+            different kinds of nutrients, so the populations in your gut are largely determined by which foods you eat. When diet,
+            weight, and gut bacteria are all changing, it’s hard for researchers to separate cause from effect.
+
+      .uk-width-medium-4-10
+         figure
+            img(src="images/EO2_twins.svg" alt="Twins")
+            p.
+               To calculate how much of the variation in a trait is caused by genetic factors, researchers can compare identical and fraternal twins. Because they share more genetic information, identical twins tend to have more similar body weights than fraternal twins.
+
+         figure
+            img(src="images/EO3_Epigenetics.png" alt="DNA winding around histones")
+            p.
+               Only a fraction of a cell’s genes are active at any one time. In response to signals from the environment, cells attach molecular tags to their DNA, regulating the on/off state of their genes. Often, these tags are copied along with the DNA when a cell divides. Some may even pass, through the eggs and sperm, from parent to child.
+
+            +well
+               h3 Related content
+               p.
+                  The study of such long-term factors that affect gene expression without changing the DNA sequence is called <a href="http://learn.genetics.utah.edu/content/epigenetics/">epigenetics</a>.
+
+         figure
+            img(src="images/EO4_LabMice.png" alt="thin vs. obese mice")
+            p.
+               Young mice that had been raised in a sterile environment received gut microbes from lean or obese mice. The microbes they received strongly influenced their likelihood of gaining weight.
+
+            +well
+               h3 Related content
+               p.
+                  To learn more about how microbes influence our health, visit <a href="http://learn.genetics.utah.edu/content/microbiome/">the Human Microbiome</a>.
+
+   +pod('How Have Our Lives Changed?')
+      .uk-width-medium-10-10
+         p.
+            Human lifestyles have changed dramatically through the course of history. The timeline below shows changes that may be
+            important in understanding our current obesity epidemic. Further down, you will find explanations of how these changes
+            may interact with our biology to make us fat. Each explanation has some researchers who support it and others who are
+            skeptical.
+
+         include liveschanged.pug
+
+   +pod('When in Doubt, Store Fat')
+      .uk-width-medium-6-10
+         p.
+            Until the last century, people were at more risk from malnutrition or starvation than they were from obesity. This lopsided pressure may have shaped humans to be more prone to store fat than to lose it. The ability to store extra calories as fat during times of plenty could help someone stay healthy and fertile when food was scarce.
+         p.
+            Over thousands of generations, selective pressure from food scarcity could cause many different kinds of adaptations to evolve. These adaptations could make us crave rich foods that are easy to digest, or drive us to keep eating after we’ve had enough. They could act on our desire to exercise, making us inclined to sit still and conserve energy. They could allow us to extract more nutrients from food, or channel those nutrients to fat cells and away from other body functions. Unreliable food supplies have likely shaped our evolution in all these ways and more.
+         p.
+            The same adaptations that let our ancestors succeed now predispose people to gain dangerous amounts of fat. Most people in the developed world can get as much food as they want without working up a sweat. Humans are still evolving, but evolution is a slow process, and widespread obesity has been possible for only a tiny sliver of our history. We get fat because our bodies are adapted to overcome our ancestors’ challenges.
+
+      .uk-width-medium-4-10
+         figure
+            img(src="images/EO_BMIGrid_FIX.svg" alt="BMI Grid")
+            p.uk-text-small To determine whether people have excess fat, researchers often use a measure called “Body Mass Index,” or BMI, which is a ratio of weight to height. BMI is easy to calculate for large numbers of people, and it can give useful information about obesity rates in a population. However, BMI is a poor way to judge whether a particular individual has a healthy amount of fat. Body shapes vary, and even lean people may have high BMIs if they have a lot of muscle or a robust bone structure.
+
+   +pod('Milk for Grown-Ups: An Adaptation to Get More from Food')
+      .uk-width-medium-6-10
+         p.
+            Among most mammals, only babies drink milk. The same is true of most humans, but in some societies, people have the ability to digest milk throughout their lives. Why, and when did this ability evolve?
+         p.
+            Milk contains a unique sugar called lactose, and baby mammals digest it with an enzyme called lactase, which they stop producing after they are weaned. Genetic and archaeological evidence shows that the ability to produce lactase throughout life, a condition known as lactase persistence, evolved around the same time as dairy farming. Today, around 35% of adults can digest milk, and they are concentrated in populations with a history of dairying.
+         p.
+            Lactase persistence allows people who raise cows to get more calories from the resources available to them. The mutations for lactase persistence spread rapidly through populations, which shows that they helped people to survive and reproduce. Now most people have no trouble getting enough calories, but Europeans with lactase persistence still tend to be heavier than those who are lactose intolerant. The ability to digest milk is an adaptation shaped by the food scarcity of past generations.
+
+      .uk-width-medium-4-10
+         figure
+            img(src="images/EO7_LP-01.svg" alt="lactase persistence")
+            p.uk-text-small Human lactase persistence has become common within the last 10,000 years. It is thought to have arisen in regions of the world where people raised dairy cows. (Based on Gerbault et al, 2009)
+
+   +pod('The Cycle of the Day')
+      .uk-width-medium-1-3
+         p The body has an internal clock known as the “circadian rhythm.” This clock regulates daily cycles of activity on every level, from molecular processes inside cells to behaviors like sleeping. Under natural circumstances, the circadian rhythm is set by sunlight entering the eyes during the day. Each cycle is about twenty-four hours, with body processes matched to the rising and setting of the sun.
+      .uk-width-medium-1-3
+         p We no longer live under natural circumstances. Artificial light exposure has increased 100,000 times since the kerosene lamps of the 1800s, and it shines on us at every time of the day and night. Many people have disrupted sleep schedules, and there is growing evidence that the disruptions go beyond sleep, predisposing people to obesity and a wide variety of illnesses.
+      .uk-width-medium-1-3
+         p People who regularly don’t get enough sleep are more likely to be obese, and two nights of bad sleep can cause hormonal changes that increase hunger. Sleep deprivation and shifts in schedule both cause changes in the body similar to those seen in diabetes, and shift workers are at increased risk for obesity regardless of food intake and exercise. In today’s world, a light in the darkness may be more of a threat than a beacon.
+
+      .uk-width-medium-1
+         br
+
+      .uk-width-medium-1-10 &nbsp;
+      .uk-width-medium-3-10(data-uk-scrollspy="{cls: 'uk-animation-slide-left'}")
+         img#early.early.flip-back(src='images/EO8-1.png', alt='Sleep Cycles')
+      .uk-width-medium-2-10.uk-text-center
+         script(type='text/javascript').
+          function flipcards() {
+            if ($("#early").hasClass('flip-cc')) {
+            $("#early").removeClass('flip-cc').addClass('flip-back');
+            } else {
+            $("#early").removeClass('flip-back').addClass('flip-cc');
+            };
+            if ($("#modern").hasClass('flip-c')) {
+            $("#modern").removeClass('flip-c').addClass('flip-back');
+            } else {
+            $("#modern").removeClass('flip-back').addClass('flip-c');
+            };
+            }
+
+         a.uk-icon-button.uk-icon-refresh(type='button', onclick='javascript: flipcards();', data-uk-scrollspy="{cls: 'uk-animation-slide-top', delay:800}")
+
+      .uk-width-medium-3-10(data-uk-scrollspy="{cls: 'uk-animation-slide-right'}")
+         img#modern.modern.flip-back(src='images/EO8-2.png', alt='Sleep Cycles')
+      .uk-width-medium-1-10 &nbsp;
+
+      .uk-width-medium-1
+         br
+
+      .uk-width-medium-1
+         +well
+            .uk-text-center How do our bodies know what time it is? Learn more about circadian rhythms at <a href="/content/basics/clockgenes/">The Time of Our Lives</a>.
+
+   +pod('New Chemicals')
+      .uk-width-medium-6-10
+         p.
+            Synthetic chemicals are everywhere, and our exposure has been increasing exponentially since the 1800s. We add synthetic chemicals to food and manufactured products, use them in industrial processes, and release them into our air and water. During the 20th century, people evaluating the safety of these chemicals generally didn’t look for weight gain over long periods of time, and the effects of the chemicals on body weight are only now coming to light.
+         p.
+            A variety of common chemicals have recently been linked to weight gain. Most of them are “endocrine disruptors”—substances that interfere with the regulatory molecules known as hormones. The doses that cause weight gain are often small, similar to amounts many people are exposed to. Many such chemicals accumulate in fat, and when people lose weight they are released back into the blood. Their effects vary with age, and exposure in the womb or early childhood can cause life-long changes.
+         p.
+            Some endocrine disruptors have been banned after decades of use, while others, such as phthalates and bisphenol A, are still being produced and added to products like plastics and can linings. According to the World Health Organization, hundreds of chemicals are known endocrine disruptors, while thousands more have not been adequately studied.
+
+      .uk-width-medium-4-10
+         figure
+            img(src="images/EO9_Chemicals.jpg" alt="Toxins")
+
+   +references
+      p.
+         Baillie-Hamilton, P. F. (2002). Chemical toxins: a hypothesis to explain the global obesity epidemic. J Altern Complement Med, 8(2), 185-92.
+      p.
+         Bergman, A., et al., Eds. (2012). State of the science of endocrine disrupting chemicals 2012: Summary for decision makers. A publication by the Inter-Organization Program for the Sound Management of Chemicals. Available: http://apps.who.int/iris/bitstream/10665/78102/1/WHO_HSE_PHE_IHE_2013.1_eng.pdf (accessed 6/20/14).
+      p.
+         Bogucki, P. (1996). The spread of early farming in Europe. American Scientist, 84(3), 242-253.
+      p.
+         Caballero, B. (2007). The global epidemic of obesity: an overview. Epidemiol Rev, 29(1), 1-5. doi: 10.1093/epirev/mxm012
+      p.
+         Choquet, H. & Meyre, David. (2011). Genetics of obesity: what have we learned? Curr Genomics, 12(3), 169-79. doi: 10.2174/138920211795677895
+      p.
+         Eaton, S. B. & Eaton, S. B. (2003). An evolutionary perspective on human physical activity: implications for health. Comp Biochem Physiol A Mol Integr Physiol, 136(1), 153-9.
+      p.
+         Ganswisch, J. E. (2009). Epidemiological evidence for the links between sleep, circadian rhythms and metabolism. Obes Rev, 2, 37-45. doi: 10.1111/j.1467-789X.2009.00663.x.
+      p.
+         Gerbault, P., Liebert, A., Itan, Y., Powell, A., Currat, M., Burger, J., Swallow, D., & Thomas, M. (2011). Evolution of lactase persistence: an example of human niche construction. Philosophical Transactions of the Royal Society B: Biological Sciences, 366(1566), 863-77.
+      p.
+         Gluckman, P. D. & Hanson, M. A. (2008). Developmental and epigenetic pathways to obesity: an evolutionary-developmental perspective. International Journal of Obesity, 32, S62-S71. doi:10.1038/ijo.2008.240
+      p.
+         Holtcamp, W. (2012). Obesogens: An Environmental Link to Obesity. Environmental Health Perspectives, 120:a62-a68. (Updated 01 February 2012). Available: http://ehp.niehs.nih.gov/120-a62/#r8 (accessed 6/18/14).
+      p.
+         Kalliomaki, M., Collado, M. C., Salminen, S., & Isolauri, E. (2008). Early differences in fecal microbiota composition in children may predict overweight. Am J Clin Nutr, 87(3), 534-8.
+      p.
+         Kettunen, J., Silander, K., et al. (2010). European lactase persistence genotype shows evidence of association with increase in body mass index. Hum Mol Genet, 19(6), 1129-36.
+      p.
+         Lillycrop, K. A. & Burdge, G. C. (2010). Epigenetic changes in early life and future risk of obesity. International Journal of Obesity, 35, 72-83. doi:10.1038/ijo.2010.122
+      p.
+         Maes H. H., Neale, M. C., & Eaves, L. J. (1997). Genetic and environmental factors in relative body weight and human adiposity. Behav Genet, 27(4), 325-51.
+      p.
+         Newbold, R., Padilla-Banks, E., Jefferson, W. N., & Heindel, J. J. (2008). Effects of endocrine disruptors on obesity. International Journal of Andrology, 31(2), 201-208. doi: 10.1111/j.1365-2605.2007.00858.x
+      p.
+         Ogden, C. L., Carroll, M. D., Kitt, B. K., & Flegal, K. M. (2014). Prevalence of childhood and adult obesity in the United States, 2011-2012. The Journal of the American Medical Association, 311(3), 806-814. doi: 10.1001/jama.2014.732
+      p.
+         Power, M. L. & Schulkin, J. The evolution of obesity. (Maryland: Johns Hopkins University Press, 2009). 302-03.
+      p.
+         Rickard, I. J., & Lummaa, V. (2007). The predictive adaptive response and metabolic syndrome: challenges for the hypothesis. Trends Endocrinol Metab, 18(3), 94-9. doi:10.1016/j.tem.2007.02.004
+      p.
+         Rogers, A. R. The Evidence for Evolution. (Chicago: The University of Chicago Press, 2011).
+      p.
+         Shen, J., Obin, M. S., & Zhao, L. (2013). The gut microbiota, obesity and insulin resistance. Mol Aspects Med, 34(1), 39-58. doi: 10.1016/j.mam.2012.11.001
+      p.
+         Spiegel, K., Tasali, E., Penev, V. & Van Cauter, E. (2004). Brief communication: Sleep curtailment in healthy young men is associated with decreased leptin levels, elevated ghrelin levels, and increased hunger and appetite. Ann Intern Med, 141(11), 846-50. doi:10.7326/0003-4819-141-11-200412070-00008
+      p.
+         Stringer, C. (2003). Human evolution: Out of Ethiopia. Nature 423, 692-95. doi:10.1038/423692a
+      p.
+         Tagiabue, A. & Elli M. (2013). The role of gut microbiota in human obesity: recent findings and future perspectives. Nutr Metab Cardiovasc Dis, 23(3), 160-8. doi: 10.1016/j.numecd.2012.09.002
+      p.
+         Tang-Peronard, J. L., Anderson, H. R., Hensen, T. K., & Heitman, B. L. (2011). Endocrine-disrupting chemicals and obesity development in humans: a review. Obes Rev. 12(8), 622-36. doi: 10.1111/j.1467-789X.2011.00871.x.
+      p.
+         Vickers, M. H. Ikenasio, B. Al, Chan, K. Y., et al. Fetal programming of appetite and obesity. Molecular and Cellular Endocrinology, 185(1-2), 73-79. doi: 10.1016/S0303-7207(01)00634-7
+      p.
+         Walley, A. J., Asher, J. E., & Froguel, P. (2009). The genetic contribution to non-syndromic human obesity. Nat Rev Genet, 10(7), 431-42. doi: 10.1038/nrg2594
+      p.
+         Well, J. C. (2007). Flaws in the theory of predictive adaptive responses.
+         Trends Endocrinol Metab, 18(9), 331-7. doi:10.1016/j.tem.2007.07.006
+      p.
+         Wells, J. C. (2012). The evolution of human adiposity and obesity: where did it all go wrong? Dis Model Mech, 5(5), 595-607. doi: 10.1242/dmm.009613
+      p.
+         Wyce, C. A., Selman, C., Page, M. M. ,Coogan, A. N., & Hazlerigg, D. G. (2011). Circadian desynchrony and metabolic dysfunction; did light pollution make us fat? Med Hypotheses, 77(6), 1139-44. doi: 10.1016/j.mehy.2011.09.023
+      p.
+         Excellent general reference:
+         Zinn, A. R. (2010).  Unconventional wisdom about the obesity epidemic. Am J Med Sci, 340(6), 481-91.
+
+
+block append endscripts
+   script(src="/lib/slideshow.js")
+   script(src="/lib/slideshow-fx.js")

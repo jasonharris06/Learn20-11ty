@@ -1,0 +1,72 @@
+extends /shared/layout
+block content
+   +pageTitle
+   script(src='/Scripts/swfobject_modified.js', type='text/javascript')
+   +pod('')
+      .uk-width-medium-6-10
+         p
+            | Because identical twins develop from a single fertilized egg, they have the same genome. So any differences between twins are due to their environments, not genetics. Recent studies have shown that many environmentally induced differences are reflected in the epigenome.
+         br
+      .uk-width-1-1
+         +vimeo('42573554', 920, 518)
+         //- iframe.uk-responsive-width(src='http://player.vimeo.com/video/42573554', width='920', height='518', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+
+   +pod('Nature AND Nurture')
+      .uk-width-medium-4-10
+         img(src='images/chrom.jpg', width='352', height='361')
+         |  
+         p.uk-text-small
+            | Chromosome 3 pairs in each set of twins are digitally superimposed. One twin&apos;s epigenetic tags are dyed red and the other twin&apos;s tags are dyed green.
+            | When red and green overlap, that region shows up as yellow. The 50-year old twins have more epigenetic tags in different places than do 3-year-old twins.
+      |    
+      .uk-width-medium-6-10
+         p
+            | The insight we gain from studying twins helps us to better understand how nature and nurture work together. For well over a century, researchers have compared characteristics in twins in an effort to determine the extent to which certain traits are inherited, like eye color, and which traits are learned from the environment, such as language. Typically taking place in the field of Behavioral Genetics, classical twin studies have identified a number of behavioral traits and diseases that are likely to have a genetic component, and others that are more strongly influenced by the environment.
+         p
+            | Depending on the study and the particular trait of interest, data is collected and compared from identical or fraternal twins who have been raised together or apart. Finding similarities and differences between these sets of twins is the start to determining the degree to which nature and environment play a role in the trait of interest.
+         img(src='images/twin_studies.jpg', alt='Twin studies', width='455', height='172')
+         |   
+         |     
+         p.uk-text-small
+            | Twin studies have identified some traits that have a strong genetic component, including reading disabilities like dyslexia. Other traits, like arthritis, are more likely influenced by the environment.
+   +pod('Twin studies uncover genetic and environmental contributions')
+      |    
+      .uk-width-medium-6-10
+         p
+            | Twins share the same genes but their environments become more different as they age. This unique aspect of twins makes them an excellent model for understanding how genes and the environment contribute to certain traits, especially complex behaviors and diseases.
+         |  
+         p
+            | For example, when just one twin gets a disease, researchers can look for elements in the twins&apos; environments that are different. Or when both twins get a disease, researchers can look for genetic elements shared among similar twin pairs. These types of data are especially powerful when collected from large numbers of twins. Such studies can help pinpoint the molecular mechanism of a disease and determine the extent of environmental influence, potentially leading to the prevention and treatment of complex diseases.
+         p
+            | To illustrate, for twins with schizophrenia, 50% identical twins share the disease, while only about 10-15% of fraternal twins do. This difference is evidence for a strong genetic component in susceptibility to schizophrenia. However, the fact that both identical twins in a pair don&apos;t develop the disease 100% of the time indicates that other factors are involved.
+         |        
+         img(src='images/ident_twins.jpg', alt='Identical twins', width='458', height='185')
+         |   
+         |    
+         |    
+         p.uk-text-small
+            | Identical twins (left) share all their genes and their home environment. Fraternal twins (right) also share their home environment, but only half of their genes. So a greater similarity between identical twins for a particular trait compared to fraternal twins provides evidence that genetic factors play a role.
+      |    
+      .uk-width-medium-4-10
+         img(src='images/twin_table.jpg', alt='Twins table', width='352', height='489')
+         |   
+         |    
+         |    
+         p.uk-text-small
+            | Comparing Identical and Fraternal Twins: A higher percentage of disease incidence in both identical twins is the first indication of a genetic component. Percentages lower than 100% in identical twins indicates that DNA alone does not determine susceptibility to disease.
+      +references
+         p
+            | Wong A.H., Gottesman I., Petronis A. (2005) 
+            a(href='http://hmg.oxfordjournals.org/cgi/content/full/14/suppl_1/R11 ')
+               | Phenotypic differences in genetically identical organisms: the epigenetic perspective
+            | . Human Molecular Genetics, 14: Review Issue 1, R11-R18.
+         |       
+         p
+            | Fraga, M.F. et al. (2005) 
+            a(href='http://www.pnas.org/content/102/30/10604.long') Epigenetic differences arise during the lifetime of monozygotic twins
+            | . PNAS, 102:10604-9.
+         p
+            | Poulsen P., Esteller M., Vaag A., Fraga M.F. (2007) 
+            a(href='http://journals.lww.com/pedresearch/Fulltext/2007/05001/The_Epigenetic_Basis_of_Twin_Discordance_in.7.aspx') The Epigenetic Basis of Twin Discordance in Age-Related Diseases
+            | . Pediatric Research, 61: 38R-42R (subscription required).
+   

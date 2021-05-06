@@ -1,0 +1,55 @@
+extends /shared/layout
+
+block content
+   +pageTitle()(teach="earth")
+   .lg-section
+      .uk-container.uk-container-center
+         .uk-grid
+            .uk-width-medium-5-10
+               h2 Models
+               .lg-index-items
+                  .lg-index-box-text
+                     p.
+                        Models are simplified versions of things in the real world. Models help us visualize things we can&rsquo;t
+                        directly observe or easily understand. While models are based on observations and measurements, they always
+                        involve assumptions and estimates.
+                  +index-item('Why We Need Models','explore','whymodels','images/whymodels.jpg')
+                     p Models help us make sense of the world and share our ideas. We all use models every day without even thinking about it.
+                  +index-item('Pick-a-Model','interactive explore','pickamodel','images/pickamodel.jpg')
+                     p A model may be great for solving one problem, but not so great for another. Can you figure out which model is best for the task?
+               h2 What You Can Do With Models
+               .lg-index-items
+                  .lg-index-box-text
+                     p We can use models to show, explain, recreate, and predict. When we use multiple models to approach a problem, we get a more complete understanding.
+                  +index-item('Show Form and Function','learn more','formfunction','images/formfunction.jpg')
+                     p From life-size robotic dinosaurs to an inventor&rsquo;s patent drawings, models help us see how things work.
+                  +index-item('Define a System','explore','definesystem','images/definesystem.jpg')
+                     p A system is a set of related elements that come together to form a functioning whole. Models help map the relationships that make up systems.
+                  +index-item('Simulate Something','learn more','simulate','images/simulate.jpg')
+                     p A simulation is a model that looks at how a system changes over time, often under varying conditions.
+                  +index-item('Make Predictions','learn more','predictions','images/predictions.jpg')
+                     p Natural events often follow patterns. Predictive models use what we know about the past to forecast the future.
+
+
+
+            .uk-width-medium-5-10
+               h2 Modeling Water in the West
+               .lg-index-items
+                  .lg-index-box-text
+                     p.
+                        Water is Earth&rsquo;s most important resource&mdash;nothing can live without it. In the arid American West,
+                        our tense relationship with water creates friction. As demand for water increases, modeling plays a central
+                        role in balancing the needs of our growing population while sustaining a healthy ecosystem.
+                  +index-item('Manage a Watershed','interactive explore','watershed','images/watershed.jpg')
+                     p Choose a city type, then step inside a model of its watershed. Can you brave climate challenges and manage the city&rsquo;s water supply, all while keeping your citizens happy?
+                  +index-item('How Water is Modeled','learn more','howmodeled','images/howmodeled.jpg')
+                     p From large-scale physical models to complex computer simulations, modeling helps us understand water&rsquo;s dynamic nature.
+                  +index-item('Water Allocation: An Ongoing Challenge','learn more','waterallocation','images/waterallocation.jpg')
+                     p Water in the west is a limited resource. Learn who wants water, what they want to do with it, and who decides who gets it.
+                  +index-item('What the Future Holds','learn more','future','images/future.jpg')
+                     p How much water will we have in the future? Are we in danger of running out? Learn how water scientists use modeling tools to answer these and related questions.
+
+         +references
+            include references/index.pug
+
+         +bottom-menu("credits",'nsf-model')

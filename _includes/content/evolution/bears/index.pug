@@ -1,0 +1,94 @@
+extends /shared/layout
+
+block content
+    +pageTitle
+    article.lg-pod.lg-section
+        .uk-container.uk-container-center(style="padding:0 150px;")
+            div(style="padding-top:78%; position:relative; overflow:hidden;")
+                #controlledWidth.uk-width-1-1(style="position:absolute; top:0;")
+                    div(id="bearsspeciation_hype_container" class="HYPE_document" style="margin:auto;position:relative;width:1300px;height:1000px;overflow:hidden;transform-origin:top left;")
+                        script(type="text/javascript" charset="utf-8" src="BearsSpeciation.hyperesources/bearsspeciation_hype_generated_script.js?81083")
+        
+        +bottom-menu('', 'nsf-philosophy')
+    +credits
+        p
+            | The content on this page is the product of a collaboration between the Genetic Science Learning Center and Matt Haber’s research group at the University of Utah.
+        p
+            | Funding was provided by the National Science Foundation under Program Award #1557117, "Evolution and the Levels of Lineage"; the University of Utah Department of Philosophy; and the University of Utah Philosophy of Biology Lab.
+        h3 Contributors
+        p
+            img(src="images/2018-Haber-crop.jpg")
+        p Matthew H. Haber, PhD
+            br
+            | Associate Professor
+            br
+            | Department of Philosophy
+            br
+            | School of Biology (Adjunct)
+            br
+            | Center for Quantitative Biology (Affiliate)
+            br
+            | Center for Latin American Studies (Affiliate)
+            br
+            | University of Utah
+        p Richard Figueroa
+            br
+            | Graduate Student
+            br
+            | Department of Philosophy
+            br
+            | University of Utah
+        p The following GSLC staff contributed to this project:
+            ul(style="list-style: none;")
+                li Sheila Homburger
+                li Julia Peterson
+                li Kagan Breitenbach
+                li Jonathan Conger
+        p Voiceover:
+            ul(style="list-style: none;")
+                li Kendra Hoffman
+        
+
+    +references
+        p
+            | Haber, M. (2019). Species in the Age of Discordance. 
+            i Philosophy, Theory, and Practice in Biology
+            | , 11(21). doi:
+            a(href='https://dx.doi.org/10.3998/ptpbio.16039257.0011.021') 10.3998/ptpbio.16039257.0011.021
+        p
+            | Haber, M. and Molter, D. (2019) Species in the Age of Discordance: Meeting Report and Introduction. 
+            i Philosophy, Theory, and Practice in Biology
+            | , 11(12). doi:
+            a(href='https://dx.doi.org/10.3998/ptpbio.16039257.0011.012') 10.3998/ptpbio.16039257.0011.012
+        p
+            | Hailer, F., Kutschera, V. E., Hallström, B. M., Klassert, D., Fain, S. R., Leonard, J. A., ... &amp; Janke, A. (2012). Nuclear genomic sequences reveal that polar bears are an old and distinct bear lineage. 
+            i Science
+            | , 336(6079), 344-347.
+        p
+            | Kumar, V., Lammers, F., Bidon, T., Pfenninger, M., Kolter, L., Nilsson, M. A., &amp; Janke, A. (2017). The evolutionary history of bears is characterized by gene flow across species. 
+            i Scientific Reports
+            | , 7, 46487.
+        p
+            | Kutschera, V. E., Bidon, T., Hailer, F., Rodi, J. L., Fain, S. R., &amp; Janke, A. (2014). Bears in a forest of gene trees: phylogenetic inference is complicated by incomplete lineage sorting and gene flow. 
+            i Molecular biology and evolution
+            | , 31(8), 2004-2017.
+        p
+            | Nakhleh, L. (2013). Computational approaches to species phylogeny inference and gene tree reconciliation. 
+            i Trends in ecology &amp; evolution
+            | , 28(12), 719-728.
+
+block append endscripts
+   script.
+      $(document).ready(function() {
+         var container = document.getElementById('controlledWidth');
+         var item = document.getElementById('bearsspeciation_hype_container');
+
+         function updateItemWidth () {
+            var pad = parseInt(window.getComputedStyle(container).paddingLeft);
+            var newScale = (container.offsetWidth - pad) / 1300;
+            item.style.transform = "scale(" + newScale + "," + newScale + ")";
+         };
+
+         updateItemWidth();
+         window.addEventListener('resize', updateItemWidth);
+      });

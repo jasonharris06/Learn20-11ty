@@ -1,0 +1,167 @@
+extends /shared/layout
+block content
+   +pageTitle
+
+   link(rel='stylesheet', href='royalslider/royalslider.css')
+
+   link(rel='stylesheet', href='royalslider/skins/default/rs-default.css')
+
+   script(src='royalslider/jquery-1.8.3.min.js')
+
+   script(src='royalslider/jquery.royalslider.min.js')
+   |  
+   |   
+   style.
+      .royalSlider {
+      width: 100%;
+      height: 600px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 13px; font-weight: 400; line-height: 1.5em;
+      }
+      .royalSlider,
+      .royalSlider .rsOverflow,
+      .royalSlider .rsSlide,
+      .royalSlider .rsVideoFrameHolder,
+      .royalSlider .rsThumbs {
+      background: #fff;
+      color: #000;
+      }
+      .royalSlider .rsTmb {
+      font-family: "Open Sans", sans-serif;
+      font-size: 12px; font-weight: 400; line-height: 1.2em;
+      }
+      .royalSlider .rsSlide,
+      .royalSlider .rsOverflow {
+      background: #fff;
+      }
+      .royalSlider h3 {
+      margin: 12px 0 8px 20px;
+      }
+      .royalSlider p {
+      margin: 0 20px 18px 20px;
+      }
+      .royalSlider img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      }
+
+   +pod('')
+      .uk-width-medium-4-10
+         p
+            | One of the first models you ever encountered was probably a toy. Baby dolls, teddy bears, and die-cast cars are all physical models. Kids can even build their own physical models with construction toys like Legos and Lincoln Logs. With toys like these, kids can not only express their creativity but also learn important life skills.
+         | &ZeroWidthSpace;
+         p
+            | &ZeroWidthSpace;Like toys, physical models help us explore and interact with structures&mdash;especially things that are too small or too big to be observed directly.
+         p
+            | Models can help us understand how bits and pieces come together to form a whole object or even perform a function.
+      |     
+      .uk-width-medium-6-10
+         figure
+            img.lg-no-shadow(src='images/toys.jpg', alt='Toys')
+   +pod('Showing structural function with models')
+      |     
+      .uk-width-medium-4-10
+         p
+            | There are many ways to show structural form and function with models. Depending on their purpose, physical and visual models can either be two-dimensional or three-dimensional.
+         |         
+         p
+            | Two-dimensional models are often drawings, like an architectural or engineering blueprint, or a technical drawing for a patent application.
+         |         
+         p
+            | Three-dimensional models can be tangible real-life structures, like an artistic sculpture, a military strategy diorama, or a working scale model of a dam.
+         |         
+         p
+            | Three-dimensional models can also exist in digital form on computers, like a model of a protein, the T-rex in Jurassic Park, or an animation of Earth&rsquo;s magnetic fields.
+      |     
+      .uk-width-medium-6-10
+         .royalSlider.rsDefault
+            // Slide 1
+            div
+               img.rsImg(src='images/WaterCinemagraph488.gif', alt='Water Flow', data-rsw='488', data-rsh='275')
+               |                 
+               p
+                  | Engineers use this working scale physical model of a dam spillway at the Utah State University Hydraulics Modeling Lab to test how water flow responds to different structural modifications.
+            // Slide 2
+            div
+               img.rsImg(src='images/3d_model.jpg', alt='3d Model', data-rsw='488', data-rsh='290')
+               |                 
+               p
+                  | This researcher is using a threee-dimensional computer model of an optical fiber to test its structure and function. Photo by Tanya Monro
+            // Slide 3
+            div
+               img.rsImg(src='images/nefertiti.jpg', alt='Nefertiti', data-rsw='352', data-rsh='339')
+               |                 
+               p
+                  | This artistic sculpture is a three-dimensional model of 14th-century BC Egyptian Queen Nefertiti.
+            // Slide 4
+            div
+               img.rsImg(src='images/blueprints.jpg', alt='Blueprints', data-rsw='352', data-rsh='339')
+               |                 
+               p
+                  | An engineer reviews blueprints for a construction project in Israel. Blueprints are two-dimensional structural models. Photo by Claudette Jerez
+   +pod('Visual models are powerful - use with caution')
+      |     
+      .uk-width-medium-4-10
+         p
+            | Visual models can be very powerful, often giving us that  &quot;aha&quot; feeling when something &ldquo;finally clicks.&rdquo; But because models, by their very nature, gloss over details, they have their pitfalls. When the details aren&apos;t just right, models can lead to misconceptions that can be stubbornly persistent.
+         |         
+         h3 VISUAL MODELS CASE STUDY: <br>THE PRIVATE UNIVERSE PROJECT
+         |         
+         p
+            | In the 90s, an astrophysicist started asking recent Harvard graduates why the Earth has seasons. Most said it was because the Earth is closer to the sun in the summer and farther away in the winter. The researchers wondered why so many Ivy-league educated students shared this misconception. They traced the likely culprit back to a visual model common to most science textbooks.
+         |         
+         p
+            | The illustration shown in the lower video on the right is typical of most science textbooks. It shows Earth&rsquo;s orbit as a very flat ellipse. Simply glancing at this diagram, you might not even notice the tiny lines that show the tilt of the Earth&rsquo;s axis relative to its plane of orbit, which is the real reason we have seasons.
+         p
+            | Contrary to the exaggerated diagram, Earth&rsquo;s orbit is much closer to a  circle, as shown in the diagram below the videos.
+         |        
+         p
+            | So why is the flattened ellipse model so common? For one, it saves space on the printed page. Another benefit is that it leaves room to label key features like the solstice and equinox. However, these small gains lead to persistent misconceptions that could be avoided by using a slightly different model.
+         p
+            | There are many ways to show form and function using models. Often multiple models can be used together to show different aspects of the same object. For instance, the 2D diagram of Earth&apos;s orbit might be best for showing certain static features. But coupling the diagram with an animated 3D model or a physical model could show how the system works in motion and over time.
+      |     
+      .uk-width-medium-6-10
+         figure
+            iframe(src='//player.vimeo.com/video/114057947?title=0&byline=0&portrait=0', width='488', height='360', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='')
+
+            p
+               | Recent Harvard graduates explain what they believe causes the seasons in the 1987 film, A Private Universe.
+            |    
+         figure     
+            iframe(src='//player.vimeo.com/video/114059429?title=0&byline=0&portrait=0', width='488', height='360', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+
+            p
+               | A middle school student describes how a visual model in her textbook lead to misconceptions about Earth&rsquo;s orbit in the 1987 film, A Private Universe.
+            |         
+            p
+               a(href='http://www.learner.org/resources/series28.html') You can watch A Private Universe online in its entirety.
+         figure     
+            img(src='images/earth_orbit_circle.jpg', alt="Earth's Orbit as a Circle")
+            |         
+            p
+               | Earth&apos;s orbit is more like a circle. This visual model is an improvement over the common textbook model, which shows earth&apos;s orbit as a flattened ellipse.
+   +references
+      p
+         | Schneps, M. (1989). Private universe project: Harvard-Smithsonian Center for Astrophysics. Video resource retrieved February 6, 2015, from 
+         a(href='http://www.learner.org/resources/series28.html') http://www.learner.org/resources/series28.html
+      p
+         | To see the nearly circular orbit of the Earth for yourself and compare it to other planetary orbits visit the Planetary Orbit Simulator Module of the Nebraska Astronomy Applet Project. 
+         a(href='http://astro.unl.edu/classaction/animations/renaissance/kepler.html') http://astro.unl.edu/classaction/animations/renaissance/kepler.html
+   
+   script.
+      jQuery(document).ready(function($) {
+      $(".royalSlider").royalSlider({
+      autoHeight: true,
+      arrowsNav: true,
+      fadeinLoadedSlide: true,
+      controlNavigationSpacing: 0,
+      imageScaleMode: 'none',
+      imageAlignCenter:false,
+      loop: true,
+      numImagesToPreload: 9,
+      keyboardNavEnabled: true,
+      usePreloader: false
+      });
+      });
+   

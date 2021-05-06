@@ -1,0 +1,118 @@
+extends /shared/layout
+block content
+   +pageTitle
+   +pod('')
+      .uk-width-medium-5-10
+         p The pigeon parents on the right can produce offspring with 16 possible combinations of sex chromosomes and 
+            em crest alleles
+            | .
+         p The probability of an offspring being a non-crested male is 4/16, which can be simplified to 1/4 or 25%.
+         p How did we come up with these numbers?
+         p The calculations are actually very simple, as long as you understand a little about independent assortment and probability.
+      |     
+      .uk-width-medium-5-10
+         img(src='images/probability-1.jpg', alt='Probability')
+   +pod('Inheritance of Sex Chromosomes')
+      |     
+      .uk-width-medium-5-10
+         img(src='images/probability-2.jpg', alt='Inheritance', width='488', height='491')
+      |     
+      .uk-width-medium-5-10
+         p The idea behind independent assortment is that genes are inherited independently of one another. In other words, the genetic factors that control crest and sex are physically separate. Because the genetic factors are physically separate, they segregate independently during gamete (egg and sperm) formation. Let&rsquo;s walk through this process, first with sex.
+         p Each pigeon parent has two sex chromosomes. During gamete formation, each egg or sperm gets just one sex chromosome. So when a male bird (with two Z chromosomes) makes sperm, some sperm get one of the Z chromosomes and some get the other. And when a female bird (with one Z and one W chromosome) makes eggs, some get Z and others get W.
+         p The Punnett square shows what happens when these gametes get together to make offspring. As you can see, there are 4 possible combinations&mdash;2 male and 2 female.
+   +pod('Inheritance of Crest')
+      .uk-width-medium-5-10
+         p
+            | The same principle applies to the inheritance of 
+            a(href='../crest/') crest
+            | . Each pigeon parent has two copies, or alleles, of the crest gene. The two copies can be the same, or they can be different.
+         p
+            | Each gamete gets just one 
+            em crest
+            |  allele. Half of the gametes will get one of the parent&rsquo;s alleles, and the other half will get the other allele.
+         p
+            | The Punnett square shows the possible 
+            em crest
+            |  allele combinations in the offspring. There are 4 possible combinations in all. 2 of the possible combinations make crested offspring, and the other 2 make non-crested offspring.
+         |         
+         +well
+            | In the squares, the allele combination (e.g., &lsquo;crest&rsquo; and &lsquo;no crest,&rsquo; shown with icons) is the genotype, and the physical appearance (e.g. non-crested) is the phenotype.
+      |     
+      .uk-width-medium-5-10
+         img(src='images/probability-3.jpg', alt='Genes Working Together', width='488', height='494')
+   +pod('Independent Inheritance of Sex & Crest')
+      |     
+      .uk-width-medium-5-10
+         img(src='images/probability-4.jpg', alt='Independent Inheritance', width='488', height='653')
+      |     
+      .uk-width-medium-5-10
+         p
+            | Now let&rsquo;s apply the rules of independent assortment and look at the inheritance of sex and crest together.
+         p
+            | During gamete formation, each egg or sperm gets one sex chromosome and one 
+            em crest
+            |  allele. Remember, the genetic factors that control sex and crest are physically separate from one another, so they segregate independently during gamete formation. That means each parent can make gametes with 4 possible sex chromosome / 
+            em crest
+            |  allele combinations.
+         p
+            | The Punnett square shows what happens when these gametes get together to make offspring. As you can see, there are 16 possible combinations. However, many of these combinations are identical at the genotype and phenotype level. For example, as was mentioned at the top of the page, 4 of the 16 are crested males.
+         p
+            | Punnett squares are useful for showing where the alleles came from to make the possible allele combinations. But with crosses that involve increasing numbers of genes, they become awkward and not very useful. Imagine plotting a Punnett square of a cross involving sex, crest, and pattern. Each parent would have 8 possible gametes, and there would be 64 possible offspring!
+         p There is an easier way to calculate the numbers.
+         |         
+         +well
+            p
+               | In female birds (and male mammals), 
+               a(href='../sexlinkage/') sex-linked
+               |  genes (like 
+               a(href='../color/') color
+               | ) do not segregate independently.
+            br
+            p
+               a(href='../geneticlinkage/') Genetically linked
+               |  genes also do not segregate independently. This is true in both males and females.
+   +pod('Calculating Probability Using Fractions')
+      |     
+      |     
+      .uk-width-medium-5-10
+         p
+            | Using multiplication, we can calculate (1) the number of possible allele combinations for a given cross, and (2) the probability of an offspring having a particular allele combination.
+         p
+            | 1. First, we&rsquo;ll apply math to the sex chromosome example. Here&rsquo;s the math for calculating the number of possible combinations:
+         |     
+         |     
+         ul
+            li The father can make sperm with 2 possible sex chromosomes: Z or the other Z.
+            |         
+            li The mother can make eggs with 2 possible sex chromosomes: Z or W.
+            |         
+            li Multiplying these numbers together gives us 4 possible offspring.
+         |  
+         p
+            | 2. Here&rsquo;s how to calculate the probability of the parents making a female offspring:
+         |      
+         ul
+            li
+               | In the father, 2 of the 2 possible sex chromosomes (Z or Z) will contribute to making a female offspring.
+            |         
+            li
+               | In the mother, 1 of the 2 possible sex chromosomes (just W) will contribute to making a female offspring.
+         |   
+         p
+            | Notice that the denominator also tells you the number of possible combinations. To see where these numbers came from and to check the calculation, you can look back at the first Punnet square near the top of the page.
+         p
+            | 3. We can also add crest to our calculations. We&rsquo;ll jump straight to the probability calculation, since we know that will also tell us the number of possible combinations.
+         p
+            | a. To make a non-crested male, the father must contribute a Z chromosome and a &lsquo;crest&rsquo; allele. 2 out of the 2 possible sex chromosomes will give us what we need. And 2 out of the 2 possible crest alleles will give us the desired offspring. Multiplying those numbers, we get 4 out of 4. Out of the 4 possible allele combinations in the sperm (denominator), 4 will be Z + &lsquo;crest&rsquo; (numerator).
+         p
+            | b. The mother must contribute a Z chromosome and a &lsquo;no crest&rsquo; allele. Just 1 out of the 2 possible sex chromosomes will give us what we need. Likewise, just 1 out of the 2 possible crest alleles will give us the desired offspring. Multiplying those numbers, we get 1 out of 4. Out of the 4 possible allele combinations in the egg, 1 will be Z + &lsquo;no crest.&rsquo;
+         p
+            | c. To get our final number, we multiple the gamete fractions together. Out of 16 possible allele combinations in the offspring, 4 will be non-crested males (ZZ and &lsquo;crest&rsquo; &lsquo;no crest&rsquo;). Our Punnett square above gave us the same values.
+         p
+            | Calculate these values for more-complex problems is simply a matter of adding another fraction to the multiplication problem.
+      |     
+      .uk-width-medium-5-10
+         img(src='images/probability-5.jpg', alt='Genes Working Together', width='352', height='838')
+   
+   
